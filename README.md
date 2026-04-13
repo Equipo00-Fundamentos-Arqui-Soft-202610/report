@@ -34,8 +34,8 @@
          <td>[COMPLETAR]</td>
       </tr>
       <tr>
-         <td>[COMPLETAR]</td>
-         <td>[COMPLETAR]</td>
+         <td>u202312966</td>
+         <td>Gonzales Alvarado, Javier Sebastian</td>
       </tr>
       <tr>
          <td>[COMPLETAR]</td>
@@ -238,6 +238,13 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ### 1.1.1. Descripción de la Startup
 
+Pafi Solutions es una startup tecnológica enfocada en el desarrollo de soluciones digitales en el sector salud. Está conformada por estudiantes de Ingeniería de Software de séptimo ciclo comprometidos con la innovación y el uso de tecnologías modernas para resolver problemas en la realidad peruana. La startup busca aplicar principios de arquitectura de software, desarrollo ágil y buenas prácticas de ingeniería para crear productos digitales escalables y de alto impacto.
+
+Misión: Desarrollar soluciones de software que permitan mejorar procesos relacionados a la salud.
+
+Visión: Convertirse en la startup referente en el desarrollo de soluciones tecnológicas que contribuyan a mejorar la salud de las personas. 
+
+Alcance del proyecto: Pafi Solutions tiene como alcance el diseño y desarrollo de soluciones digitales enfocadas en el sector salud, inicialmente centradas en la gestión y seguimiento de tratamientos médicos. La startup busca validar su propuesta mediante el desarrollo de un producto mínimo viable, con el objetivo de escalar hacia soluciones más completas dentro del ámbito de la salud digital.
 
 
 ### 1.1.2. Perfiles de integrantes del equipo
@@ -255,7 +262,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
       <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
+      <td><strong>Gonzales Alvarado, Javier Sebastian</strong><br>Mi nombre es Javier Gonzales, soy estudiante de Ingeniería de Software de séptimo ciclo. Tengo conocimientos en diversos lenguajes de programación como C++, Python y JavaScript, entre otros. Además, he desarrollado proyectos de software utilizando distintos frameworks como Angular y Vue. Me considero una persona responsable, empática y analítica. Mi objetivo personal es desarrollar soluciones tecnológicas que contribuyan a mejorar la calidad de vida de las personas y aportar a la construcción de un mundo más innovador y conectado</td>
       <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
     </tr>
     <tr>
@@ -279,55 +286,181 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ### 1.2.1. Nombre del producto
 
-
+MediTrack es una aplicación móvil que busca ayudar a pacientes a cumplir con sus tratamientos médicos. La solución busca reducir los olvidos y errores en la toma de medicamentos mediante la generación de recordatorios inteligentes, así como facilitar el seguimiento de citas médicas y exámenes. De este modo se prevenimos los olvidos de pacientes, errores de dosis, falta de segumiento, abandono del tratamiento, etc.
 
 ### 1.2.2. Antecedentes y problemática
 
 #### WHAT (Qué)
 
+¿Cuál es el problema?
+
+En el Perú, muchas personas no siguen correctamente sus tratamientos médicos, especialmente quienes tienen enfermedades crónicas. Esto ocurre porque olvidan tomar sus medicamentos, se confunden con las dosis o no cumplen con los horarios indicados. Según un estudio sobre adherencia terapéutica en pacientes con enfermedades crónicas en Lima, existe un nivel importante de incumplimiento en los tratamientos, lo cual afecta directamente la calidad de vida de los pacientes (Vargas Rodríguez, 2022). Esta situación representa un problema relevante en el sistema de salud, ya que puede empeorar las enfermedades si no se controla adecuadamente.
 
 
 #### WHEN (Cuándo)
 
+¿Cuándo sucede el problema?
+
+Este problema ocurre principalmente durante el día a día del tratamiento, especialmente cuando los pacientes deben seguir rutinas constantes por largos periodos. Es común que el incumplimiento se presente con el paso del tiempo, cuando los pacientes olvidan sus dosis o dejan de seguir las indicaciones médicas de manera continua. Según un estudio de la universidad cayetano heredia, el incumplimiento del tratamiento es un fenómeno frecuente a lo largo del proceso de atención médica, sobre todo en tratamientos prolongados (Luzeve Gutiérrez, 2019).
 
 
 #### WHERE (Dónde)
 
+¿Dónde surge el problema?
+
+El problema se presenta en el sistema de salud peruano, tanto en hospitales como, principalmente, en el entorno cotidiano del paciente, debido a la falta de supervisión constante. Como evidencia, en el año 2022 se registraron más de 5.5 millones de personas con hipertensión arterial en el Perú. Según el Dr. Chuquiruna, el 56.7% de estos pacientes no se adhiere al tratamiento por diversos motivos, entre los cuales destaca el olvido de tomar uno o más medicamentos (Consultor Salud, 2023).
 
 
 #### WHO (Quién)
 
+¿Quiénes son los afectados?
+
+Los principales afectados son los pacientes con enfermedades crónicas, como diabetes, hipertensión o problemas cardíacos, quienes deben seguir tratamientos de forma constante. En muchos casos, estos pacientes presentan dificultades para cumplir correctamente con sus medicamentos y controles.
+
+Adicionalmente, esta solución también beneficia al sistema de salud, ya que puede funcionar como un canal de comunicación entre médicos y pacientes. Los médicos podrán registrar o subir las recetas desde un portal, mientras que los pacientes recibirán automáticamente los recordatorios en sus dispositivos móviles, facilitando el seguimiento del tratamiento.
 
 
 #### WHY (Por qué)
 
+¿Cuál es la causa del problema?
 
+Este problema se debe principalmente a factores como el olvido, la falta de información y la complejidad de los tratamientos médicos. Muchos pacientes no siguen correctamente sus indicaciones porque deben tomar varios medicamentos en distintos horarios, lo que genera confusión. En el Perú, esta situación se agrava por factores como la desorganización en los tratamientos y la ausencia de herramientas que ayuden a los pacientes a cumplir sus horarios. 
 
 #### HOW (Cómo)
 
+¿Cómo se utilizará el producto?
+
+El producto se utilizará a través de una aplicación móvil donde el paciente podrá visualizar y gestionar su tratamiento de manera sencilla. Los médicos podrán registrar o subir la receta desde un portal web, la cual será procesada para generar automáticamente los horarios y recordatorios de medicación. A partir de ello, el paciente recibirá notificaciones en su celular que le indicarán cuándo tomar sus medicamentos, asistir a citas o realizar exámenes, facilitando así el seguimiento continuo del tratamiento en su vida diaria.
 
 
 #### HOW MUCH (Cuánto)
 
+¿Cuánto costará implementar la solución?
 
+Para esta primera versión de la aplicación, el costo será relativamente bajo, ya que se desarrollará utilizando tecnologías accesibles. Se emplearán frameworks modernos y servicios cloud gratuitos, como Azure for Students. Por el momento, nos concentraremos en el contexto académico, pero con la visión de expandirnos en el futuro hacia un ámbito más profesional.
 
 ### 1.2.3. Lean UX Process
 
 #### 1.2.3.1. Lean UX Problem Statement
 
+El propósito de MediTrack es brindar a los pacientes con enfermedades crónicas en el Perú una herramienta digital accesible que les permita llevar un seguimiento adecuado de sus tratamientos médicos, recordándoles la toma de medicamentos y ayudándolos a mantener una mejor adherencia, con el fin de mejorar su calidad de vida.
 
+El problema se presenta en el sistema de salud peruano, principalmente fuera de los entornos hospitalarios, donde los pacientes no cuentan con una supervisión constante. Esto provoca que muchos de ellos olviden tomar sus medicamentos o no sigan correctamente las indicaciones médicas.
+
+Hemos observado que esta situación genera complicaciones en la salud de los pacientes, incrementa el riesgo de enfermedades graves y reduce la efectividad de los tratamientos. Además, evidencia una falta de herramientas tecnológicas simples y accesibles que acompañen al paciente en su vida diaria, fuera del entorno clínico. Esta desconexión entre la indicación médica y el seguimiento real del tratamiento representa una brecha importante en el cuidado de la salud.
+
+Y ante esta problemática nos surge la siguiente pregunta: ¿Cómo podríamos ayudar a los pacientes a cumplir correctamente sus tratamientos médicos en su día a día, mediante una solución accesible, simple y efectiva?
+
++ **Domain:** Salud digital y monitoreo de tratamientos médicos.
+
++ **Customer Segments:** Pacientes peruanos con enfermedades crónicas.
+
++ **Pain Points:** 
+
+  + Olvido de medicamentos
+  + Falta de seguimiento continuo
+  + Ausencia de supervisión médica diaria
+  + Falta de comunicación o entendimiento entre el doctor y paciente
+
++ **Gap:** No existe una solución accesible y enfocada en el contexto peruano que ayude a los pacientes a gestionar y cumplir sus tratamientos de manera constante.
+
++ **Vision/Strategy:** Desarrollar una aplicación que permita a los pacientes llevar un control de sus tratamientos mediante recordatorios, alertas y seguimiento, mejorando su adherencia y reduciendo riesgos de salud.
+
++ **Initial Segment:** Pacientes con hipertensión en Lima Metropolitana que cuentan con acceso a smartphones.
 
 #### 1.2.3.2. Lean UX Assumptions
 
 ##### Business Assumptions
 
+1. **Creo nuestros usuarios tienen la necesidad** de recordar y cumplir correctamente sus tratamientos médicos en su vida diaria.
+
+2. **Estas necesidades se pueden satisfacer** mediante una aplicación móvil con recordatorios, alertas y seguimiento personalizado.
+
+3. **Nuestros clientes iniciales serán** serán pacientes con enfermedades crónicas en Lima Metropolitana, especialmente con hipertensión.
+
+4. **El valor más importante que un cliente quiere de nuestros servicios es** la facilidad para no olvidar tomar sus medicamentos.
+
+5. **El cliente también va a obtener** mayor control de su salud y reducción de riesgos asociados a su enfermedad.
+
+6. **Vamos a obtener la mayoría de los clientes mediante** recomendaciones médicas, integrandonos en clínicas y hospitales, donde se recomendará la aplicación a los pacientes como apoyo para el seguimiento de sus tratamientos.
+
+7. **Vamos a obtener ingresos mediante** suscripciones premium (para los centros de salud) y alianzas con clínicas o hospitales. 
+
+8. **Nuestra competencia en el mercado serán** aplicaciones de salud genéricas y recordatorios de medicamentos existentes.
+
+9. **Vamos a tener ventaja frente a nuestra competencia debido a** nuestra simplicidad, enfoque en el contexto peruano y facilidad de uso.
+
+10. **El mayor riesgo del servicio es** que los usuarios no adopten o abandonen la aplicación con el tiempo.
+
+11. **Lo resolveremos realizando** mejoras continuas en la experiencia de usuario y funcionalidades de valor.
+
+12. **Otro riesgo que debemos considerar es que** los usuarios no confíen en la aplicación para gestionar información de salud.
 
 
 ##### User Assumptions
 
+1. ¿Quién es el usuario? 
 
+Pacientes con enfermedades crónicas que necesitan seguir un tratamiento médico constante, y también clínicas y hospitales que gestionan el historial clínico y recetas del paciente para generar recordatorios y dar seguimiento al tratamiento.
+
+2. ¿Dónde encaja nuestro producto en su vida? 
+
+Encaja en la rutina diaria del paciente como una herramienta de apoyo para el cuidado de su salud. Para las clínicas y hospitales, encaja como un complemento digital que extiende el seguimiento del tratamiento más allá de la consulta médica.
+
+3. ¿Qué problemas resuelve nuestro producto? 
+
+Resuelve el olvido en la toma de medicamentos, la falta de organización en los tratamientos y la ausencia de seguimiento continuo. Además, ayuda a reducir errores en la medicación y mejora la comunicación indirecta entre paciente y centro de salud.
+
+4. ¿Cuándo y cómo se usa nuestro producto? 
+
+Se utiliza diariamente en momentos clave, como horarios de medicación o revisiones del tratamiento. Funciona mediante notificaciones automáticas, alertas y una interfaz donde el usuario puede registrar el cumplimiento de su tratamiento de forma sencilla.
+
+5. ¿Qué características son importantes? 
+
+Son importantes la facilidad de uso, recordatorios automáticos y configurables, registro del cumplimiento del tratamiento, integración con información médica (recetas e historial médico) y notificaciones claras.
+
+6. ¿Cómo debería lucir y comportarse el producto?
+
+Debe tener un diseño simple, intuitivo y accesible para todo tipo de usuarios, incluyendo personas mayores. Su comportamiento debe ser confiable, rápido y amigable, brindando información clara y precisa, así evitando generar confusión o sobrecarga de notificaciones.
+
+
+##### Feature Assumptions
+
++ Creemos que los usuarios necesitan recordatorios automáticos de medicamentos que se ajusten a los horarios indicados en su tratamiento.
+
++ Creemos que los usuarios necesitan un sistema de registro digital de recetas médicas accesible desde su dispositivo móvil, para poder consultar en cualquier momento las indicaciones de su tratamiento sin depender de documentos físicos.
+
++ Creemos que las clínicas y hospitales necesitan una funcionalidad que les permita subir recetas e historiales clínicos directamente a la plataforma, de modo que el paciente reciba información confiable y centralizada desde su médico.
+
++ Creemos que los usuarios necesitan notificaciones personalizadas basadas en su tipo de tratamiento, frecuencia y rutina diaria, para mejorar la adherencia y evitar interrupciones en su medicación.
+
++ Creemos que los usuarios necesitan visualizar el progreso de su tratamiento mediante indicadores claros de cumplimiento, lo que les permitirá mantenerse motivados y conscientes de su avance.
 
 #### 1.2.3.3. Lean UX Hypothesis
+
+1. Hypothesis Statement 01:
+
+**Creemos que** implementar recordatorios automáticos de medicamentos para pacientes resultará en un mayor cumplimiento de sus tratamientos médicos.
+
+**Sabremos que** hemos tenido éxito
+
+**Cuando** al menos el 80% de las dosis programadas sean marcadas como completadas por los usuarios.
+
+2. Hypothesis Statement 02:
+
+**Creemos que** permitir a clínicas y hospitales subir recetas e historiales clínicos directamente en la plataforma para pacientes resultará en un incremento en la cantidad de usuarios activos en la aplicación.
+
+**Sabremos que** esto es cierto
+
+**Cuando** al menos el 60% de los nuevos usuarios registrados provengan de instituciones de salud afiliadas.
+
+3. Hypothesis Statement 03:
+
+**Creemos que** enviar notificaciones personalizadas según el tratamiento de cada paciente resultará en un mayor nivel de interacción de los usuarios con la aplicación.
+
+**Sabremos que** esto es cierto
+
+**Cuando** más del 70% de los usuarios interactúen con las notificaciones recibidas.
 
 
 
@@ -337,6 +470,52 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 <hr class="page-break">
 
 ## 1.3. Segmentos objetivo
+
++ Segmento 1: Pacientes
+
+Este segmento está conformado por personas que siguen tratamientos médicos de corta, mediana o larga duración y requieren apoyo para cumplir correctamente con la toma de sus medicamentos y el seguimiento de indicaciones médicas. Incluye pacientes con enfermedades crónicas, tratamientos postoperatorios o cualquier condición que implique una medicación constante. Estos usuarios buscan herramientas que les faciliten organizar su tratamiento, reducir olvidos y mejorar su salud.
+
++ Características Demográficas:
+
+  + Edad: 18 a más de 65 años
+  + Género: Masculino y femenino
+  + Nivel socioeconómico: Medio
+  + Nivel educativo: Secundaria completa y superior.
+  + Ocupación: Estudiantes, trabajadores dependientes e independientes.
+  + Condición: Personas con tratamientos médicos activos (crónicos o temporales).
+
++ Características Geográficas:
+
+  + Ubicación: Principalmente zonas urbanas.
+  + Región: Lima Metropolitana (fase inicial), expansión a nivel nacional (a futuro)
+  + Entorno: Ciudades con acceso a servicios de salud.
+
+
++ Sustento estadístico:
+
+En el Perú, la adherencia a tratamientos médicos representa un problema relevante, ya que diversos estudios indican que entre el 59% y 69% de los pacientes no cumplen adecuadamente sus tratamientos farmacológicos, especialmente en enfermedades crónicas como la hipertensión  . Asimismo, investigaciones evidencian que aproximadamente el 71% de los pacientes ha olvidado tomar su medicación al menos una vez, lo que refleja una alta incidencia de incumplimiento terapéutico . Estos datos demuestran la necesidad de soluciones tecnológicas que ayuden a mejorar la adherencia, reducir olvidos y optimizar el seguimiento de tratamientos en la población.
+
++ Segmento 2: Clínicas y Hospitales
+
+Este segmento está compuesto por instituciones de salud que brindan servicios médicos a pacientes y buscan mejorar el seguimiento de los tratamientos prescritos. Incluye clínicas privadas, hospitales y centros médicos que desean optimizar la comunicación con sus pacientes, digitalizar procesos y mejorar la adherencia a tratamientos mediante herramientas tecnológicas.
+
++ Características Organizacionales:
+
+  + Entidades: Clínicas privadas, hospitales públicos y centros médicos.
+  + Tamaño: Pequeñas, medianas y grandes instituciones.
+  + Sector: Salud
+  + Personal: Médicos, enfermeros, personal administrativo
+
++ Características Geográficas:
+
+  + Ubicación: Zonas urbanas
+  + Región: Lima Metropolitana (fase inicial)
+  + Infraestructura: Centros con acceso a sistemas digitales e internet
+
+
++ Sustento estadístico:
+
+En el contexto del sistema de salud peruano, se ha identificado que problemas en la gestión y seguimiento de tratamientos afectan directamente a los pacientes, evidenciándose que hasta el 25% de personas con enfermedades graves como cáncer experimentan retrasos o interrupciones en sus tratamientos, en parte debido a fallas en la coordinación y disponibilidad de información médica. Además, la creciente digitalización del sector salud impulsa a clínicas y hospitales a adoptar soluciones tecnológicas que mejoren la comunicación con pacientes y el control de tratamientos, lo que posiciona a estas instituciones como actores clave en la implementación de plataformas digitales orientadas al seguimiento médico.
 
 
 
