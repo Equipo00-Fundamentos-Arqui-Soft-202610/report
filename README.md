@@ -474,7 +474,7 @@ Debe tener un diseño simple, intuitivo y accesible para todo tipo de usuarios, 
 
 ## 1.3. Segmentos objetivo
 
-+ Segmento 1: Pacientes
+#### Segmento 1: Pacientes
 
 Este segmento está conformado por personas que siguen tratamientos médicos de corta, mediana o larga duración y requieren apoyo para cumplir correctamente con la toma de sus medicamentos y el seguimiento de indicaciones médicas. Incluye pacientes con enfermedades crónicas, tratamientos postoperatorios o cualquier condición que implique una medicación constante. Estos usuarios buscan herramientas que les faciliten organizar su tratamiento, reducir olvidos y mejorar su salud.
 
@@ -498,7 +498,7 @@ Este segmento está conformado por personas que siguen tratamientos médicos de 
 
 En el Perú, la adherencia a tratamientos médicos representa un problema relevante, ya que diversos estudios indican que entre el 59% y 69% de los pacientes no cumplen adecuadamente sus tratamientos farmacológicos, especialmente en enfermedades crónicas como la hipertensión  . Asimismo, investigaciones evidencian que aproximadamente el 71% de los pacientes ha olvidado tomar su medicación al menos una vez, lo que refleja una alta incidencia de incumplimiento terapéutico . Estos datos demuestran la necesidad de soluciones tecnológicas que ayuden a mejorar la adherencia, reducir olvidos y optimizar el seguimiento de tratamientos en la población.
 
-+ Segmento 2: Clínicas y Hospitales
+#### Segmento 2: Personal técnico de centros médicos
 
 Este segmento está conformado por el personal técnico y el área de sistemas de clínicas, hospitales y centros médicos, responsables de gestionar, implementar y mantener las soluciones tecnológicas dentro de la institución. Estos usuarios buscan herramientas que permitan digitalizar procesos, mejorar la gestión de información médica y facilitar la integración de sistemas que optimicen el seguimiento de los tratamientos de los pacientes.
 
@@ -530,118 +530,151 @@ En el contexto del sistema de salud peruano, se ha identificado que problemas en
 
 <table>
   <tr>
-    <th colspan="5">Competitive Analysis Landscape</th>
+    <th colspan="6">Competitive Analysis Landscape</th>
   </tr>
   <tr>
     <td colspan="2" align="center"><b>¿Por qué llevar a cabo este análisis?</b></td>
-    <td colspan="3">[COMPLETAR]</td>
+    <td colspan="4">Es importante analizar a la competencia para entender las necesidades y expectativas de los clientes, así como las fortalezas y debilidades de las competencias. Esto ayudará a identificar oportunidades de mejora y desafíos para la empresa.</td>
   </tr>
   <tr>
     <th colspan="2">Nombre</th>
-    <th>[Startup Talki]</th>
-    <th>[Competidor 1]</th>
-    <th>[Competidor 2]</th>
+    <th>MediTrack</th>
+    <th>MyTherapy</th>
+    <th>CareClinic</th>
+    <th>Medisafe</th>
   </tr>
   <tr>
     <td colspan="2" align="center"><b>Logo</b></td>
-    <td align="center"><img src="assets/images/logos/talki-logo.png" alt="Talki logo" width="100"></td>
-    <td align="center"><img src="assets/images/logos/[competidor1].png" alt="[Competidor 1]" width="100"></td>
-    <td align="center"><img src="assets/images/logos/[competidor2].png" alt="[Competidor 2]" width="100"></td>
+    <td align="center"><img src="assets/images/competidores/Meditrack.png" alt="Talki logo" width="100"></td>
+    <td align="center"><img src="assets/images/competidores/mytherapy.png" alt="[Competidor 1]" width="100"></td>
+    <td align="center"><img src="assets/images/competidores/careClinic.png" alt="[Competidor 2]" width="100"></td>
+    <td align="center"><img src="assets/images/competidores/R.jpeg" alt="[Competidor 2]" width="100"></td>
   </tr>
   <tr>
     <td rowspan="2"><b>Perfil</b></td>
     <td><b>Overview</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Es una app diseñada para cerrar la brecha entre la indicación médica y el cumplimiento real del paciente-</td>
+    <td>Es como un "compañero diario" para la gestión de medicación y diario de salud, enfocado en simplicidad.</td>
+    <td>Es una plataforma de gestión de salud basada en marcos clínicos para el autocuidado proactivo.</td>
+    <td>Es el lider en gestión de medicación con alertas inteligentes y soporte para cuidadores.</td>
   </tr>
   <tr>
     <td><b>Ventaja competitiva ¿Qué valor ofrece a los clientes?</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Automatización del flujo de información médico-paciente. Elimina la carga manual de datos, reduciendo el riesgo de errores de dosis y olvidos.</td>
+    <td>Simplicidad de la app y en los reportes de salud gratuitos listos para entregar al médico tratante.</td>
+    <td>Análisis avanzado de patrones; correlaciona hábitos, síntomas y clima con la salud.</td>
+    <td>Red de seguridad mediante "Medfriends" y alertas de interacciones medicamentosas</td>
   </tr>
   <tr>
     <td rowspan="2"><b>Perfil de Marketing</b></td>
     <td><b>Mercado objetivo</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Pacientes en Lima Metropolitana y personal técnico de clínicas y hospitales privados/públicos.</td>
+    <td>Pacientes crónicos (Diabetes, Esclerosis Múltiple, TDAH) que requieren diarios de salud.</td>
+    <td>Usuarios que buscan "biohacking" o gestión compleja de enfermedades crónicas.</td>
+    <td>Adultos mayores y familias que requieren supervisar la toma de medicamentos a distancia.</td>
   </tr>
   <tr>
     <td><b>Estrategias de Marketing</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Convenios de digitalización con clínicas para reducir sus retrasos operativos.</td>
+    <td>Alianzas con sociedades médicas (ej. Sociedad de Diabetes) y blogs de salud científica..</td>
+    <td>Marketing de contenidos sobre protocolos médicos (Stanford/Mayo Clinic) y SEO técnico.</td>
+    <td>Recomendaciones en farmacias (Walgreens/CVS) y pauta en buscadores médicos.</td>
   </tr>
   <tr>
     <td rowspan="3"><b>Perfil de Producto</b></td>
     <td><b>Productos &amp; Servicios</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>App móvil centrada para el Paciente y portal web para clínicas donde pueden gestionar de recetas y monitoreo.</td>
+    <td>Alarmas de pastillas, registro de síntomas y contador de pasos integrado.</td>
+    <td>Rastreador de dolor, diario de humor, planes de nutrición y sincronización con Apple Health.</td>
+    <td>Recordatorios de dosis, aviso de reabastecimiento y base de datos de fármacos.</td>
   </tr>
   <tr>
     <td><b>Precios y Costos</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Modelo de suscripción para instituciones y versión gratuita para pacientes con opciones de reportes avanzados (Freemium).</td>
+    <td>100% Gratuito (sin publicidad ni compras dentro de la app).</td>
+    <td>Freemium (Versión Pro para análisis de datos avanzados).</td>
+    <td>Gratis con opción Premium (aprox. $4.99/mes) para más voces y temas.</td>
   </tr>
   <tr>
     <td><b>Canales de distribución</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Implementación directa en sistemas de clínicas, Google Play, App Store.</td>
+    <td>App Store, Google Play y pagina web oficial.</td>
+    <td>App Store, Google Play y pagina web oficial.</td>
+    <td>App Store, Google Play y pagina web oficial.</td>
   </tr>
   <tr>
     <td rowspan="4"><b>Análisis SWOT</b></td>
     <td><b>Fortalezas</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Conocimiento del sistema de salud local y capacidad de integración técnica con centros médicos peruanos.</td>
+    <td>Alta privacidad de datos y avalada por estudios de investigación en Europa.</td>
+    <td>Basada en protocolos clínicos reales; alta capacidad de personalización.</td>
+    <td>Posee la mayor base de datos de medicamentos y gran reconocimiento de marca.</td>
   </tr>
   <tr>
     <td><b>Oportunidades</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Alta tasa de incumplimiento en Perú (59%-69%) y la necesidad de digitalización post-pandemia en el sector salud.</td>
+    <td>Convertirse en la app estándar para investigaciones clínicas a nivel global.</td>
+    <td>Integración con sistemas de farmacia (PMS) para pedidos de recetas en tiempo real.</td>
+    <td>Alianzas con compañías de seguros de salud para monitorear pacientes en riesgo.</td>
   </tr>
   <tr>
     <td><b>Debilidades</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Dependencia inicial de la adopción por parte del personal técnico de las clínicas.</td>
+    <td>El diseño es muy austero y puede resultar poco motivador para usuarios jóvenes.</td>
+    <td>Curva de aprendizaje elevada; puede ser difícil de usar para personas mayores.</td>
+    <td>La mayoría de funciones de valor (como el Medfriend ilimitado) son de pago.</td>
   </tr>
   <tr>
     <td><b>Amenazas</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Resistencia al cambio en procesos burocráticos de hospitales públicos y competencia de apps gratuitas globales.</td>
+    <td>Riesgo de sostenibilidad financiera al no cobrar al usuario final.</td>
+    <td>Competencia de apps de nicho que se enfocan en una sola enfermedad.</td>
+    <td>Regulaciones estrictas de privacidad de datos (HIPAA/GDPR) que limiten el uso de datos.</td>
   </tr>
 </table>
 
+#### Estrategias y tácticas frente a competidores
+
+Para Meditrack, nos enfocaremos en la mayor ventaja: la unificación. Mientras los competidores obligan al usuario a saltar entre la app de la farmacia, el calendario de Google y un diario de salud, ofreceremos un ecosistema cerrado.
+
+Ademas, aplicaremos las siguientes estrategias y tácticas frente a los competidores:
+
+- **Estrategia de Doble Valor** Se buscar diferenciarse de Medisafe y MyTherapy atacando simultáneamentea los problemas del paciente y del centro médico.
+
+  - **Táctica de Integración para TI:** A diferencia de la competencia que es aislada, MediTrack ofrecerá una API de Carga Masiva para el personal técnico de clínicas. Esto reduce el retraso en tratamientos por fallas de coordinación.
+  
+  - **Táctica de Receta Digital Automática:** El paciente no configura su tratamiento; el centro médico lo hace por él. Esto ataca directamente el 71% de olvidos por falta de organización.
+
+En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al incluir al Personal Técnico, convertimos a las clínicas en nuestro principal promotor, asegurando que el paciente use la app por recomendación de su propia institución de salud, lo que garantiza la confianza y la retención a largo plazo.
+
 <hr class="page-break">
+
 
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
 
-
-
 ### 2.2.2. Registro de entrevistas
-
 
 
 ### 2.2.3. Análisis de entrevistas
 
 
-
 <hr class="page-break">
 
 ## 2.3. Needfinding
+En esta sección, el equipo presenta el análisis detallado de las necesidades, dolores y comportamientos de nuestros segmentos objetivo.
 
 ### 2.3.1. User Personas
+En esta sección, se presentan las fichas de User Persona diseñadas para representar a nuestros dos segmentos objetivo. Estos perfiles son el resultado de la síntesis de las entrevistas a profundidad realizadas y el análisis comparativo de la competencia.
 
+#### Segmento 1: Pacientes
+
+<td align="center"><img src="assets/images/Ricardo Alberto Luján.png" alt="User persona 2"></td>
+
+#### Segmento 2: Personal técnico de centros médicos
+
+<td align="center"><img src="assets/images/Claudia Valdivia.png" alt="User persona 1" ></td>
 
 
 ### 2.3.2. User Task Matrix
@@ -1101,7 +1134,11 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
 
 # Referencias Bibliográficas
 
+- CareClinic. (s.f.). Health Tracker: Symptoms, Meds, and Chronic Illness. Recuperado el 14 de abril de 2026, de https://careclinic.io/
 
+- Medisafe. (s.f.). Digital Health Platform: Adherence, Persistence, and Solutions. Recuperado el 14 de abril de 2026, de https://www.medisafe.com
+
+- MyTherapy. (s.f.). Aplicación de recordatorio de medicación y gestión de la salud. Recuperado el 14 de abril de 2026, de https://www.mytherapyapp.com/es
 
 <hr class="page-break">
 
