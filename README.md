@@ -263,7 +263,7 @@ Alcance del proyecto: Pafi Solutions tiene como alcance el diseño y desarrollo 
     </tr>
     <tr>
       <td><strong>Gonzales Alvarado, Javier Sebastian</strong><br>Mi nombre es Javier Gonzales, soy estudiante de Ingeniería de Software de séptimo ciclo. Tengo conocimientos en diversos lenguajes de programación como C++, Python y JavaScript, entre otros. Además, he desarrollado proyectos de software utilizando distintos frameworks como Angular y Vue. Me considero una persona responsable, empática y analítica. Mi objetivo personal es desarrollar soluciones tecnológicas que contribuyan a mejorar la calidad de vida de las personas y aportar a la construcción de un mundo más innovador y conectado</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><img src="assets/images/photos/gonzales.jpeg" alt="[COMPLETAR]" width="200"></td>
     </tr>
     <tr>
       <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
@@ -466,6 +466,9 @@ Debe tener un diseño simple, intuitivo y accesible para todo tipo de usuarios, 
 
 #### 1.2.3.4. Lean UX Canvas
 
+<p align="center">
+    <img src="assets/images/Lean Ux Canvas - Fundamentos.png" alt="upc-logo" width="1000px" height="560px"/>
+</p>
 
 <hr class="page-break">
 
@@ -497,14 +500,14 @@ En el Perú, la adherencia a tratamientos médicos representa un problema releva
 
 + Segmento 2: Clínicas y Hospitales
 
-Este segmento está compuesto por instituciones de salud que brindan servicios médicos a pacientes y buscan mejorar el seguimiento de los tratamientos prescritos. Incluye clínicas privadas, hospitales y centros médicos que desean optimizar la comunicación con sus pacientes, digitalizar procesos y mejorar la adherencia a tratamientos mediante herramientas tecnológicas.
+Este segmento está conformado por el personal técnico y el área de sistemas de clínicas, hospitales y centros médicos, responsables de gestionar, implementar y mantener las soluciones tecnológicas dentro de la institución. Estos usuarios buscan herramientas que permitan digitalizar procesos, mejorar la gestión de información médica y facilitar la integración de sistemas que optimicen el seguimiento de los tratamientos de los pacientes.
 
 + Características Organizacionales:
 
   + Entidades: Clínicas privadas, hospitales públicos y centros médicos.
   + Tamaño: Pequeñas, medianas y grandes instituciones.
   + Sector: Salud
-  + Personal: Médicos, enfermeros, personal administrativo
+  + Personal: Ingenieros de sistemas, técnicos de TI, soporte tecnológico.
 
 + Características Geográficas:
 
