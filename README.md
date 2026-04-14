@@ -679,12 +679,14 @@ En esta sección, se presentan las fichas de User Persona diseñadas para repres
 
 ### 2.3.2. User Task Matrix
 
+Para la sección del User Task Matrix, es fundamental separar las actividades cotidianas de los usuarios de las funciones específicas del software. Aquí analizamos cómo Ricardo y Claudia gestionan sus responsabilidades actuales, lo que nos permitirá identificar dónde MediTrack puede aportar el mayor valor.
+
 <table>
   <thead>
     <tr>
       <th rowspan="2">Tareas</th>
-      <th colspan="2">[Segmento 1]</th>
-      <th colspan="2">[Segmento 2]</th>
+      <th colspan="2">Pacientes </th>
+      <th colspan="2">Personal técnico de centros médicos</th>
     </tr>
     <tr>
       <th>Frecuencia</th>
@@ -695,14 +697,82 @@ En esta sección, se presentan las fichas de User Persona diseñadas para repres
   </thead>
   <tbody>
     <tr>
-      <td>[COMPLETAR]</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Tomar los medicamentos en el horario indicado</td>
+      <td>Alta</td>
+      <td>Critica</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Contar manualmente las pastillas que le quedan</td>
+      <td>Media</td>
+      <td>Alta</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Leer las instrucciones de la receta física</td>
+      <td>Media</td>
+      <td>Alta</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Preparar requisitos para exámenes</td>
+      <td>Baja</td>
+      <td>Alta</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Trasladarse al hospital para agendar citas</td>
+      <td>Baja</td>
+      <td>Media</td>
+      <td>Alta</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td>Transcribir datos del paciente al archivo físico</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Alta</td>
+      <td>Crítica</td>
+    </tr>
+    <tr>
+      <td>Informar al paciente sobre su próximo control</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Media</td>
+      <td>Alta</td>
+    </tr>
+    <tr>
+      <td>Revisar el inventario de citas del día</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Alta</td>
+      <td>Media</td>
     </tr>
   </tbody>
 </table>
+
+#### Análisis de la Matriz
+Al observar las tareas que realizan Ricardo y Claudia en su entorno natural, sin asistencia digital especializada, se identifican los siguientes puntos clave:
+
+**Tareas con mayor carga (Frecuencia e Importancia):**
+- Para Ricardo, la tarea diaria y crítica es la ingesta de medicamentos. Al depender de su memoria o de alarmas genéricas de reloj, el riesgo de error es máximo. 
+- Para Claudia, la transcripción de datos y la búsqueda de expedientes consumen la mayor parte de su tiempo, siendo tareas críticas para evitar errores administrativos en el hospital.
+
+**Principales Contradicciones:**
+- Las tareas de Ricardo son logísticas y de autocuidado (contar pastillas, recordar horarios, leer papeles). 
+- Las tareas de Claudia son organizacionales y de archivo (gestionar expedientes físicos, transcribir información). 
+- Ricardo sufre por la memoria individual, mientras que Claudia sufre por el caos del volumen de información.
+
+**Principales Coincidencias:**
+- Ambos segmentos coinciden en la alta importancia de la coordinación de citas y controles. 
+- Ambos consideran que la pérdida de una cita rompe la continuidad del tratamiento.
+
+**Puntos de Dolor Identificados:**
+La matriz revela que el proceso actual es altamente manual. Tareas como "contar pastillas" o "buscar expedientes físicos" son ineficientes y propensas al error humano. Esta es precisamente la brecha que MediTrack vendrá a digitalizar para transformar estas tareas pesadas en procesos automáticos.
 
 ### 2.3.3. Empathy Maps
 
