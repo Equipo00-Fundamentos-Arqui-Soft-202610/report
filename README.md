@@ -776,7 +776,15 @@ La matriz revela que el proceso actual es altamente manual. Tareas como "contar 
 
 ### 2.3.3. Empathy Maps
 
+Los Empathy Maps son herramientas de diseño efectivas, que responder a la realidad humana y psicológica de cada segmento. A continuación, se presentan los Empathy Maps para los dos segmentos objetivo.
 
+#### Segmento 1: Pacientes
+
+<td align="center"><img src="assets/images/Empathy map - Pacientes.png" alt="Empathy Map - Pacientes" ></td>
+
+#### Segmento 2: Personal técnico de centros médicos
+
+<td align="center"><img src="assets/images/Empathy map - Tecnicos.png" alt="Empathy Map - Tecnicos" ></td>
 
 ### 2.3.4. As-is Scenario Mapping
 
