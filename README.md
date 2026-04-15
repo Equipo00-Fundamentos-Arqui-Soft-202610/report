@@ -805,6 +805,18 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 ## 3.1. To-Be Scenario Mapping
 
+En esta sección se presenta un análisis detallado de la situación futura (TO-BE) para los diferentes segmentos. A través de este mapeo, proyectamos los procesos automatizados, las interacciones digitales y los factores de éxito clave, ofreciendo una visión clara de los puntos de mejora resueltos.
+
+Para tener una visión más clara de los escenarios, puede revisar el siguiente link: https://lucid.app/lucidspark/a26b2a1e-0c17-4428-aba7-c0949b7349e3/edit?viewport_loc=-141%2C-63%2C2265%2C1035%2C0_0&invitationId=inv_5a727633-905e-446c-bbfc-4069c628a26c
+
+
+#### Segmento 1: Pacientes
+
+<td align="center"><img src="assets/images/TO-BE-pacientes.png" alt="TO BE PACIENTES" ></td>
+
+#### Segmento 2: Personal técnico de centros médicos
+
+<td align="center"><img src="assets/images/TO-BE-tecnicos.png" alt="TO BE TECNICOS" ></td>
 
 
 <hr class="page-break">
