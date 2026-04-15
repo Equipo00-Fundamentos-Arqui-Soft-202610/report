@@ -38,8 +38,8 @@
          <td>Gonzales Alvarado, Javier Sebastian</td>
       </tr>
       <tr>
-         <td>[COMPLETAR]</td>
-         <td>[COMPLETAR]</td>
+         <td>u20231d974</td>
+         <td>Rivera Ratachi, Renzo Sebastian</td>
       </tr>
       <tr>
          <td>[COMPLETAR]</td>
@@ -266,8 +266,8 @@ Alcance del proyecto: Pafi Solutions tiene como alcance el diseño y desarrollo 
       <td><img src="assets/images/photos/gonzales.jpeg" alt="[COMPLETAR]" width="200"></td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br>Soy Renzo Sebastian Rivera Ratachi y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy cursando el 7mo ciclo de mi carrera y tengo conocimientos intermedios de JavaScript y C++. Me considero una persona responsable y puntual. </td>
+      <td><img src="assets/images/photos/fotointegrante-renzo(1).jpg" width="200"></td>
     </tr>
     <tr>
       <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
