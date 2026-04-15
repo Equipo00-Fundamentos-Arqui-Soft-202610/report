@@ -789,82 +789,15 @@ Los Empathy Maps son herramientas de diseño efectivas, que responder a la reali
 ### 2.3.4. As-is Scenario Mapping
 En esta sección se presenta un análisis detallado de la situación actual (AS-IS) para los diferentes segmentos. A través de este mapeo, identificamos los procesos, las interacciones y las emociones clave, proporcionando una visión clara de los puntos críticos.
 
+Para tener una visión más clara de los escenarios, puede revisar el siguiente link: https://lucid.app/lucidspark/a26b2a1e-0c17-4428-aba7-c0949b7349e3/edit?viewport_loc=-141%2C-63%2C2265%2C1035%2C0_0&invitationId=inv_5a727633-905e-446c-bbfc-4069c628a26c
+
 #### Segmento 1: Pacientes
 
-<table>
-<thead>
-<tr>
-<th>Fases</th>
-<th>1. Recepción de Receta</th>
-<th>2. Organización en Casa</th>
-<th>3. Ejecución Diaria</th>
-<th>4. Control de Stock</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Doing (Acciones)</strong></td>
-<td>Recibe la receta manuscrita en el consultorio. 
-Intenta descifrar la letra del médico mientras camina a la farmacia.</td>
-<td>Llega a casa y coloca la receta en un cajón. 
-Trata de memorizar las dosis y los horarios (ej. 8 am y 8 pm).</td>
-<td>Confía en su memoria o pone alarmas de reloj genéricas. 
-Toma la pastilla si recuerda haberlo hecho antes.</td>
-<td>Abre la caja de medicamentos el domingo por la noche para ver si le alcanzan para el lunes de trabajo.</td>
-</tr>
-<tr>
-<td><strong>Thinking (Pensamientos)</strong></td>
-<td>"¿Dijo cada 8 o cada 12 horas? No entiendo bien si este número es un 5 o un 8."</td>
-<td>"Parece sencillo, mañana empiezo temprano y no creo que se me pase la hora."</td>
-<td>"¿Ya me la tomé hoy o esa fue la de ayer? No recuerdo haber abierto el frasco hace un rato."</td>
-<td>"Rayos, solo me quedan dos pastillas y mañana es feriado, la farmacia estará cerrada."</td>
-</tr>
-<tr>
-<td><strong>Feeling (Sentimientos)</strong></td>
-<td>Confundido e inseguro por la falta de claridad en el papel (-).</td>
-<td>Optimista pero con una ligera ansiedad por la responsabilidad (+/-).</td>
-<td>Estresado por la duda constante; siente que su salud depende de su suerte diario (-).</td>
-<td>Frustrado con su falta de organización y preocupado por la interrupción (-).</td>
-</tr>
-</tbody>
-</table>
+<td align="center"><img src="assets/images/AS-IS-pacientes.png" alt="AS IS PACIENTES" ></td>
 
 #### Segmento 2: Personal técnico de centros médicos
 
-<table>
-<thead>
-<tr>
-<th>Fases</th>
-<th>1. Recolección de Datos</th>
-<th>2. Ingreso al Sistema</th>
-<th>3. Seguimiento Manual</th>
-<th>4. Generación de Reportes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Doing (Acciones)</strong></td>
-<td>Recopila copias de las recetas físicas emitidas. Organiza los papeles por fecha y especialidad médica.</td>
-<td>Digita la información en hojas de cálculo (Excel). Valida códigos de medicamentos manualmente.</td>
-<td>Llama por teléfono a pacientes con enfermedades críticas para preguntarles si están siguiendo el tratamiento.</td>
-<td>Elabora un informe estadístico semanal sobre la cantidad de citas y recetas entregadas.</td>
-</tr>
-<tr>
-<td><strong>Thinking (Pensamientos)</strong></td>
-<td>"Otra semana llena de papeles que procesar. Es una labor administrativa que no añade valor."</td>
-<td>"Espero no haber cometido un error de dedo en las dosis; los nombres de los fármacos son muy parecidos."</td>
-<td>"Solo puedo contactar a un 5% de los pacientes; del resto no tengo ninguna visibilidad."</td>
-<td>"Este reporte es una foto del pasado. No me sirve para prevenir que el paciente abandone el tratamiento hoy."</td>
-</tr>
-<tr>
-<td><strong>Feeling (Sentimientos)</strong></td>
-<td>Agobiada por la ineficiencia del proceso y el volumen físico de documentos (-).</td>
-<td>Aburrida y con miedo constante a cometer un error humano durante la transcripción (-).</td>
-<td>Impotente ante la falta de una conexión real con el hogar del paciente (-).</td>
-<td>Insatisfecha con la imprecisión de los resultados obtenidos (+/-).</td>
-</tr>
-</tbody>
-</table>
+<td align="center"><img src="assets/images/AS-IS-tecnicos.png" alt="AS IS TECNICOS" ></td>
 
 <hr class="page-break">
 
