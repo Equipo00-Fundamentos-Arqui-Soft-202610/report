@@ -812,7 +812,7 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 #### Segmento 1: Pacientes
 
-<td align="center"><img src="assets/images/TO-BE-pacientes.png" alt="TO BE PACIENTES" ></td>
+<td align="center"><img src="assets/images/chapter3/TO-BE-pacientes.png" alt="TO BE PACIENTES" ></td>
 
 #### Segmento 2: Personal técnico de centros médicos
 
@@ -854,9 +854,20 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 <hr class="page-break">
 
 ## 3.3. Impact Map
+<td align="center"><img src="assets/images/chapter3/paciente1impact.png" alt="AS IS PACIENTES" ></td>
+
+![alt text](/assets/images/chapter3/image.png)
 
 
 
+<td align="center"><img src="assets/images/chapter3/paciente1impact.png" alt="AS IS PACIENTES" ></td>
+
+![alt text](/assets/images/chapter3/image.png)
+
+
+
+![alt text](/assets/images/chapter3/impactmappingtecnico1.png)
+![alt text](/assets/images/chapter3/impactmappingtecnico2.png)
 <hr class="page-break">
 
 ## 3.4. Product Backlog
