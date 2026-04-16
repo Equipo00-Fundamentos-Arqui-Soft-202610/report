@@ -816,7 +816,7 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 #### Segmento 2: Personal técnico de centros médicos
 
-<td align="center"><img src="assets/images/TO-BE-tecnicos.png" alt="TO BE TECNICOS" ></td>
+<td align="center"><img src="assets/images/chapter3/TO-BE-tecnicos.png" alt="TO BE TECNICOS" ></td>
 
 
 <hr class="page-break">
