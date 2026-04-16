@@ -864,10 +864,25 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 ![alt text](/assets/images/chapter3/image.png)
 
+<p align="center">
+  Impact Mapping 1 - Elaboración propia
+</p>
+
+
+
+<hr class="page-break">
+
+
 
 
 ![alt text](/assets/images/chapter3/impactmappingtecnico1.png)
 ![alt text](/assets/images/chapter3/impactmappingtecnico2.png)
+
+<p align="center">
+  Impact Mapping 2 - Elaboración propia
+</p>
+
+
 <hr class="page-break">
 
 ## 3.4. Product Backlog
