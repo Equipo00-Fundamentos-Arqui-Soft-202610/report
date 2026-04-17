@@ -887,8 +887,6 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 ## 3.4. Product Backlog
 
-El Product Backlog se ordena por valor de negocio, no por dependencia técnica. La cadena de valor de MediTrack inicia con la carga de recetas (US13) porque es el habilitador del flujo de adherencia, núcleo del producto. Le siguen las historias del paciente que materializan ese valor: visualizar, recordar, registrar cumplimiento y controlar stock (US04–US07). A continuación se ubica la gestión de citas y exámenes (US08–US12), segundo flujo funcional del paciente. Luego vienen las capacidades del personal técnico — carga masiva de historiales y búsqueda (US14–US15) — seguidas de la analítica (US16–US18), que requiere datos acumulados para aportar valor. Finalmente, las historias de registro, autenticación y gestión de perfil (US01–US03, US19) se colocan al cierre, no porque carezcan de importancia técnica, sino porque no entregan valor directo al negocio: son infraestructura transversal que habilita el resto. El orden de desarrollo técnico se refleja en los Sprint Backlogs del Capítulo V.
-
 | # Orden | User Story ID | Título | Descripción | Story Points |
 |:-------:|:-------------:|--------|-------------|:------------:|
 | 1 | US13 | Subir receta médica con horarios | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su app. | 8 |
