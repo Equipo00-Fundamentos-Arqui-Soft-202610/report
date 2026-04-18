@@ -30,8 +30,8 @@
          <th>Apellidos y Nombres</th>
       </tr>
       <tr>
-         <td>[COMPLETAR]</td>
-         <td>[COMPLETAR]</td>
+         <td>u202123655</td>
+         <td>Rojas Reategui, Victor Manuel</td>
       </tr>
       <tr>
          <td>u202312966</td>
@@ -258,16 +258,16 @@ Alcance del proyecto: Pafi Solutions tiene como alcance el diseño y desarrollo 
   </thead>
   <tbody>
     <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><strong>Rojas Reategui, Victor Manuel</strong><br>Soy Victor Rojas y voy en el 7mo ciclo de la carrera de Ingeniería de Software. Me gusta lo rápido que cambia la tecnología en la actualidad, por lo que este curso me ayudará a expandir mis conocimientos y a explorar nuevas aplicaciones de mi carrera que no había experimentado antes.</td>
+      <td><img src="assets/images/photos/victor.jpg" alt="victor" width="200"></td>
     </tr>
     <tr>
       <td><strong>Gonzales Alvarado, Javier Sebastian</strong><br>Mi nombre es Javier Gonzales, soy estudiante de Ingeniería de Software de séptimo ciclo. Tengo conocimientos en diversos lenguajes de programación como C++, Python y JavaScript, entre otros. Además, he desarrollado proyectos de software utilizando distintos frameworks como Angular y Vue. Me considero una persona responsable, empática y analítica. Mi objetivo personal es desarrollar soluciones tecnológicas que contribuyan a mejorar la calidad de vida de las personas y aportar a la construcción de un mundo más innovador y conectado</td>
-      <td><img src="assets/images/photos/gonzales.jpeg" alt="[COMPLETAR]" width="200"></td>
+      <td><img src="assets/images/photos/gonzales.jpeg" alt="javier" width="200"></td>
     </tr>
     <tr>
       <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br>Soy Renzo Sebastian Rivera Ratachi y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy cursando el 7mo ciclo de mi carrera y tengo conocimientos intermedios de JavaScript y C++. Me considero una persona responsable y puntual. </td>
-      <td><img src="assets/images/photos/fotointegrante-renzo(1).jpg" width="200"></td>
+      <td><img src="assets/images/photos/fotointegrante-renzo(1).jpg" alt="renzo" width="200"></td>
     </tr>
     <tr>
       <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
@@ -654,6 +654,74 @@ En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al 
 
 ### 2.2.1. Diseño de entrevistas
 
+#### A. Segmento: Pacientes
+
+**Datos demográficos y de contexto**
+
+1. ¿Cuál es su nombre completo, edad y en qué distrito vive?
+2. ¿Cuál es su ocupación y con quién vive actualmente?
+3. ¿Actualmente sigue algún tratamiento médico y desde hace cuánto tiempo aproximadamente?
+4. ¿Qué tipo de tratamiento realiza y cuántos medicamentos distintos toma durante el día?
+5. ¿Qué dispositivos tecnológicos usa en el día a día y cuáles son sus aplicaciones más utilizadas?
+
+**Preguntas principales**
+
+1. Cuénteme cómo organiza actualmente la toma de sus medicamentos en el día a día.
+2. ¿Qué dificultades suele tener para recordar horarios, dosis o indicaciones médicas?
+3. ¿Con qué frecuencia olvida una dosis, cita o examen?
+4. ¿Qué consecuencias le genera cuando eso ocurre?
+5. ¿Qué herramientas usa hoy para acordarse de sus medicamentos o citas?
+6. ¿Ha usado alguna vez una aplicación, alarma o recordatorio digital para su tratamiento? ¿Cómo fue esa experiencia?
+7. ¿Cómo hace seguimiento de sus próximas citas médicas o exámenes?
+8. ¿Qué tan fácil o difícil le resulta entender una receta médica o las indicaciones que le dan?
+9. ¿Qué problemas aparecen cuando se queda sin medicamento o le falta stock?
+10. ¿Qué tipo de ayuda le haría más fácil cumplir su tratamiento en el día a día?
+11. ¿Qué información le gustaría ver en una aplicación para sentir que realmente le ayuda en el seguimiento de su tratamiento?
+12. ¿Qué aspectos le generarían confianza o desconfianza al usar una aplicación de salud digital?
+
+**Preguntas complementarias**
+
+1. ¿Cómo cree que su tratamiento afecta su calidad de vida o sus actividades diarias?
+2. ¿Qué papel juegan su familia o cuidadores en el seguimiento de su tratamiento?
+3. ¿Cómo se comunica con su médico cuando tiene una duda fuera de la consulta?
+4. ¿De qué manera influyen los factores económicos en el cumplimiento de su tratamiento?
+5. ¿Ha dejado de tomar algún medicamento por efectos secundarios o por otra razón? ¿Qué sucedió después?
+6. ¿Qué personas, recursos o herramientas cree que realmente ayudan a cumplir un tratamiento?
+
+#### B. Segmento: Personal técnico de centros médicos
+
+**Datos demográficos y de contexto**
+
+1. ¿Cuál es su nombre, edad y en qué distrito vive?
+2. ¿Cuál es su cargo o función dentro del centro médico y hace cuántos años trabaja en ese rol?
+3. ¿En qué tipo de institución trabaja actualmente y cuál es el volumen aproximado de pacientes que gestionan por semana?
+4. ¿Qué sistemas informáticos usa actualmente en su trabajo diario?
+5. ¿Qué dispositivos tecnológicos utiliza durante su jornada laboral?
+
+**Preguntas principales**
+
+1. Cuénteme cómo se registra actualmente la información clínica y las recetas en su centro médico.
+2. ¿Qué problemas aparecen al trabajar con recetas, historiales o seguimiento de pacientes?
+3. ¿Qué tareas manuales consumen más tiempo en ese proceso?
+4. ¿Qué errores son más frecuentes cuando la información se maneja de forma manual o dispersa?
+5. ¿Cómo buscan actualmente la información de un paciente cuando necesitan revisar su seguimiento?
+6. ¿Ha utilizado o conocido herramientas digitales para cargar recetas o historiales clínicos? ¿Cómo fue esa experiencia?
+7. ¿Qué indicadores o reportes consulta con más frecuencia o le gustaría consultar para hacer seguimiento de pacientes?
+8. ¿Qué parte del proceso actual le genera más frustración o retrabajo?
+9. ¿Qué resultados o metas busca cumplir en el seguimiento o la gestión de pacientes?
+10. ¿Qué barreras existirían para implementar una herramienta digital de seguimiento de pacientes en su institución?
+11. ¿Qué condiciones deberían cumplirse para que el personal adopte una plataforma de este tipo?
+12. ¿Qué cambios concretos se generarían en su trabajo diario si contara con una herramienta digital para seguimiento de pacientes?
+
+**Preguntas complementarias**
+
+1. ¿Qué diferencias nota entre pacientes que cumplen el tratamiento y los que no?
+2. ¿Cómo se coordina actualmente con otros profesionales de salud que atienden al mismo paciente?
+3. ¿Qué información recibe del paciente sobre su evolución entre consultas?
+4. ¿Qué costos o ineficiencias operativas percibe en el proceso actual de gestión de pacientes?
+5. ¿Qué consideraciones éticas o de confidencialidad serían clave al digitalizar el historial clínico?
+6. ¿Qué capacitación o acompañamiento necesitaría el personal para adoptar una herramienta digital de gestión clínica?
+
 ### 2.2.2. Registro de entrevistas
 
 
@@ -824,7 +892,7 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 ## 3.2. User Stories
 
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relación con Epic |
-|----------------|--------|-------------|------------------------|-------------------|
+|-----------------|--------|-------------|--------------------------|-------------------|
 | EP01 | Registro y roles | Como usuario de MediTrack, quiero registrarme y acceder al sistema con un rol específico, para usar las funciones correspondientes a paciente o personal técnico. | No corresponde | No corresponde |
 | EP02 | Gestión de medicamentos para pacientes | Como paciente con tratamiento activo, quiero gestionar mis medicamentos con recordatorios y alertas de stock, para no olvidar ninguna dosis ni quedarme sin pastillas. | No corresponde | No corresponde |
 | EP03 | Gestión de citas y exámenes | Como paciente, quiero gestionar mis citas médicas y exámenes clínicos, para estar preparado y no faltar a ninguna. | No corresponde | No corresponde |
@@ -839,17 +907,26 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 | US06 | Registrar cumplimiento de medicamento | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento. | **Escenario 1:** Dado que recibo una notificación de medicamento, cuando presiono "Tomado", entonces se registra el cumplimiento con fecha y hora. **Escenario 2:** Dado que olvidé marcar en el momento, cuando entro a la app y presiono "Tomado" después, entonces se registra igualmente. | EP02 |
 | US07 | Alerta de stock bajo | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento. | **Escenario 1:** Dado que me quedan 3 pastillas de un medicamento, cuando abro la app, entonces veo la alerta "Te quedan 3 pastillas de [nombre]". **Escenario 2:** Dado que me quedan 3 pastillas, cuando llega el horario de la siguiente toma, entonces recibo una notificación adicional de stock bajo. | EP02 |
 | US08 | Agendar cita médica | Como paciente, quiero registrar una nueva cita médica en la app, para tenerla en mi calendario y recibir recordatorios. | **Escenario 1:** Dado que ingreso fecha, hora y tipo de cita, cuando presiono "Agendar", entonces la cita se guarda y aparece en mi lista. **Escenario 2:** Dado que ingreso una fecha pasada, cuando intento agendar, entonces veo "La fecha debe ser posterior a hoy". | EP03 |
-| US09 | Recibir recordatorio de cita médica | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla. | **Escenario 1:** Dado que tengo una cita mañana a las 10am, cuando faltan 24 horas, entonces recibo una notificación con fecha, hora y lugar. **Escenario 2:** Dado que tengo una cita en 2 horas, cuando falta ese tiempo, entonces recibo una segunda notificación de recordatorio. | EP03 |
+| US09 | Recibir recordatorio de cita médica | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla. | **Escenario 1:** Dado que tengo una cita mañana a las 10am, cuando faltan 24 horas, entonces recibo una notificación con fecha, hora y lugar. **Escenario 2:** Dado que tengo una cita en 2 horas, cuando falta ese tiempo, entonces recibo una segunda notificación. | EP03 |
 | US10 | Registrar cumplimiento de cita | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado. | **Escenario 1:** Dado que tengo una cita agendada para hoy, cuando presiono "Asistí", entonces se registra el cumplimiento. **Escenario 2:** Dado que no pude asistir, cuando presiono "No asistí", entonces queda registrada como inasistencia. | EP03 |
 | US11 | Ver requisitos de cita | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado. | **Escenario 1:** Dado que mi cita requiere muestra de orina, cuando abro el detalle de la cita, entonces veo "Requisito: traer muestra de orina". **Escenario 2:** Dado que la cita no tiene requisitos, cuando abro el detalle, entonces veo "No se requiere preparación especial". | EP03 |
 | US12 | Recordatorio de examen clínico | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados. | **Escenario 1:** Dado que tengo un examen programado, cuando llega la fecha de recojo, entonces recibo una notificación con el tipo de examen. **Escenario 2:** Dado que ya pasó la fecha de recojo, cuando abro la app, entonces veo un aviso pendiente. | EP03 |
 | US13 | Subir receta médica con horarios | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su app. | **Escenario 1:** Dado que ingreso nombre del medicamento, dosis y horarios, cuando presiono "Subir receta", entonces el paciente la recibe automáticamente. **Escenario 2:** Dado que falta el horario de una toma, cuando intento subir, entonces veo "Completa todos los horarios". | EP04 |
-| US14 | Subir historial clínico  | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos. | **Escenario 1:** Dado que selecciono un archivo de dataset válido, cuando presiono "Cargar", entonces el historial se vincula al paciente correspondiente. **Escenario 2:** Dado que el paciente no existe en el dataset, cuando intento cargarlo, entonces veo "Paciente no encontrado". | EP04 |
+| US14 | Subir historial clínico | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos. | **Escenario 1:** Dado que selecciono un archivo de dataset válido, cuando presiono "Cargar", entonces el historial se vincula al paciente correspondiente. **Escenario 2:** Dado que el paciente no existe en el dataset, cuando intento cargarlo, entonces veo "Paciente no encontrado". | EP04 |
 | US15 | Buscar paciente individual | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento. | **Escenario 1:** Dado que ingreso un DNI válido, cuando busco, entonces veo el perfil completo del paciente. **Escenario 2:** Dado que no hay coincidencias, cuando busco, entonces veo "No se encontraron pacientes". | EP04 |
 | US16 | Ver dashboard de tendencias de adherencia | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento. | **Escenario 1:** Dado que hay datos de cumplimiento registrados, cuando accedo al dashboard, entonces veo gráficos de tendencia por paciente. **Escenario 2:** Dado que no hay datos suficientes, cuando accedo, entonces veo "Sin datos disponibles para mostrar tendencias". | EP05 |
 | US17 | Ver estadísticas de cumplimiento de recetas | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento. | **Escenario 1:** Dado que hay múltiples recetas activas, cuando accedo a estadísticas, entonces veo porcentaje de cumplimiento por cada receta. **Escenario 2:** Dado que una receta tiene bajo cumplimiento, entonces aparece resaltada en el gráfico. | EP05 |
-| US18 | Ver estadísticas de citas médicas | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones. | **Escenario 1:** Dado que hay citas registradas, cuando accedo a la sección, entonces veo un gráfico circular con tipos de cita. **Escenario 2:** Dado que no hay citas, cuando accedo, entonces veo "No hay datos de citas disponibles". | EP05 |
+| US18 | Ver estadísticas de citas | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones. | **Escenario 1:** Dado que hay citas registradas, cuando accedo a la sección, entonces veo un gráfico circular con tipos de cita. **Escenario 2:** Dado que no hay citas, cuando accedo, entonces veo "No hay datos de citas disponibles". | EP05 |
 | US19 | Editar perfil de paciente | Como paciente, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada. | **Escenario 1:** Dado que modifico mi teléfono, cuando presiono "Guardar", entonces el cambio se refleja inmediatamente. **Escenario 2:** Dado que ingreso un formato inválido, cuando intento guardar, entonces veo "Formato incorrecto". | EP06 |
+| US20 | Recuperar contraseña | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta. | **Escenario 1:** Dado que ingreso mi correo registrado, cuando presiono "Recuperar contraseña", entonces recibo un enlace por correo. **Escenario 2:** Dado que el correo no existe, entonces veo "Correo no registrado". **Escenario 3:** Dado que uso el enlace, cuando ingreso una nueva contraseña válida, entonces la cuenta se actualiza. | EP01 |
+| US21 | Cerrar sesión | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información. | **Escenario 1:** Dado que estoy logueado, cuando presiono "Cerrar sesión", entonces se cierra la sesión y regresa a la pantalla de login. **Escenario 2:** Dado que cierro la app, cuando la abro nuevamente, entonces debo iniciar sesión otra vez. | EP01 |
+| US22 | Configurar preferencias de notificaciones | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad. | **Escenario 1:** Dado que accedo a Configuración, cuando elijo sonido, vibración y número de repeticiones, entonces las notificaciones se aplican según mi elección. **Escenario 2:** Dado que desactivo temporalmente las notificaciones, entonces no recibo recordatorios hasta que las reactive. | EP02 |
+| US23 | Funcionar en modo offline | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la app en cualquier lugar. | **Escenario 1:** Dado que no tengo internet, cuando abro la app, entonces veo la lista de medicamentos y puedo marcar "Tomado". **Escenario 2:** Dado que recupero internet, entonces se sincronizan automáticamente los registros. | EP02 |
+| US24 | Editar o cancelar medicamento/cita | Como paciente, quiero editar o cancelar un medicamento o cita (cuando el médico lo autorice), para corregir errores. | **Escenario 1:** Dado que el personal técnico autoriza el cambio, cuando edito un medicamento, entonces se actualiza y se notifica al paciente. **Escenario 2:** Dado que intento cancelar sin autorización, entonces veo "Solo el personal técnico puede cancelar". | EP02 / EP03 |
+| US25 | Ver historial de adherencia y progreso | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución. | **Escenario 1:** Dado que tengo registros de cumplimiento, cuando accedo a "Mi progreso", entonces veo gráfico de porcentaje de adherencia semanal. **Escenario 2:** Dado que no hay datos suficientes, entonces veo "Aún no hay suficiente información para mostrar progreso". | EP02 / EP03 |
+| US26 | Validación automática de medicamentos | Como personal técnico, quiero que el sistema valide automáticamente los nombres de medicamentos al subir una receta, para evitar errores. | **Escenario 1:** Dado que ingreso un medicamento existente en la lista pre-cargada, entonces se acepta automáticamente. **Escenario 2:** Dado que ingreso un medicamento no registrado, entonces veo sugerencias o mensaje de error. | EP04 |
+| US27 | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo. | **Escenario 1:** Dado que un paciente tiene adherencia <70 %, entonces recibo notificación en el portal web. **Escenario 2:** Dado que configuro el umbral, entonces las alertas se ajustan al nuevo valor. | EP05 |
+| US28 | Actualizar foto de perfil y cambio de contraseña | Como usuario, quiero actualizar mi foto de perfil y cambiar mi contraseña, para mantener mi cuenta segura y personalizada. | **Escenario 1:** Dado que subo una nueva foto, cuando guardo, entonces se actualiza en mi perfil. **Escenario 2:** Dado que cambio mi contraseña, cuando confirmo la nueva, entonces se actualiza y se cierra la sesión actual. | EP06 |
 
 <hr class="page-break">
 
@@ -888,26 +965,35 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 ## 3.4. Product Backlog
 
 | # Orden | User Story ID | Título | Descripción | Story Points |
-|:-------:|:-------------:|--------|-------------|:------------:|
-| 1 | US13 | Subir receta médica con horarios | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su app. | 8 |
-| 2 | US04 | Ver lista de medicamentos | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora. | 3 |
-| 3 | US05 | Recibir recordatorio de medicamento | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo. | 5 |
-| 4 | US06 | Registrar cumplimiento de medicamento | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento. | 3 |
-| 5 | US07 | Alerta de stock bajo | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento. | 3 |
-| 6 | US08 | Agendar cita médica | Como paciente, quiero registrar una nueva cita médica en la app, para tenerla en mi calendario y recibir recordatorios. | 3 |
-| 7 | US09 | Recibir recordatorio de cita médica | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla. | 3 |
-| 8 | US11 | Ver requisitos de cita | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado. | 2 |
-| 9 | US12 | Recordatorio de examen clínico | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados. | 3 |
-| 10 | US10 | Registrar cumplimiento de cita | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado. | 2 |
-| 11 | US14 | Subir historial clínico | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos. | 8 |
-| 12 | US15 | Buscar paciente individual | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento. | 3 |
-| 13 | US16 | Ver dashboard de tendencias de adherencia | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento. | 5 |
-| 14 | US17 | Ver estadísticas de cumplimiento de recetas | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento. | 3 |
-| 15 | US18 | Ver estadísticas de citas médicas | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones. | 3 |
-| 16 | US01 | Registro de paciente | Como paciente, quiero crear una cuenta en la app móvil, para gestionar mis tratamientos y citas. | 2 |
-| 17 | US02 | Registro de personal técnico | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes. | 2 |
-| 18 | US03 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol. | 3 |
-| 19 | US19 | Editar perfil de paciente | Como paciente, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada. | 2 |
+|---------|---------------|--------|-------------|--------------|
+| 1 | US01 | Registro de paciente | Como paciente, quiero crear una cuenta en la app móvil, para gestionar mis tratamientos y citas. | 5 |
+| 2 | US02 | Registro de personal técnico | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes. | 5 |
+| 3 | US03 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol. | 3 |
+| 4 | US05 | Recibir recordatorio de medicamento | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo. | 8 |
+| 5 | US06 | Registrar cumplimiento de medicamento | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento. | 5 |
+| 6 | US04 | Ver lista de medicamentos | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora. | 5 |
+| 7 | US07 | Alerta de stock bajo | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento. | 5 |
+| 8 | US20 | Recuperar contraseña | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta. | 3 |
+| 9 | US21 | Cerrar sesión | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información. | 3 |
+| 10 | US08 | Agendar cita médica | Como paciente, quiero registrar una nueva cita médica en la app, para tenerla en mi calendario y recibir recordatorios. | 5 |
+| 11 | US09 | Recibir recordatorio de cita médica | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla. | 5 |
+| 12 | US10 | Registrar cumplimiento de cita | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado. | 3 |
+| 13 | US11 | Ver requisitos de cita | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado. | 3 |
+| 14 | US12 | Recordatorio de examen clínico | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados. | 5 |
+| 15 | US25 | Ver historial de adherencia y progreso | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución. | 8 |
+| 16 | US13 | Subir receta médica con horarios | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su app. | 8 |
+| 17 | US26 | Validación automática de medicamentos | Como personal técnico, quiero que el sistema valide automáticamente los nombres de medicamentos al subir una receta, para evitar errores. | 5 |
+| 18 | US14 | Subir historial clínico | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos. | 8 |
+| 19 | US15 | Buscar paciente individual | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento. | 5 |
+| 20 | US16 | Ver dashboard de tendencias de adherencia | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento. | 8 |
+| 21 | US17 | Ver estadísticas de cumplimiento de recetas | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento. | 8 |
+| 22 | US18 | Ver estadísticas de citas | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones. | 5 |
+| 23 | US27 | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo. | 5 |
+| 24 | US19 | Editar perfil de paciente | Como paciente, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada. | 3 |
+| 25 | US22 | Configurar preferencias de notificaciones | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad. | 5 |
+| 26 | US23 | Funcionar en modo offline | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la app en cualquier lugar. | 8 |
+| 27 | US24 | Editar o cancelar medicamento/cita | Como paciente, quiero editar o cancelar un medicamento o cita (cuando el médico lo autorice), para corregir errores. | 5 |
+| 28 | US28 | Actualizar foto de perfil y cambio de contraseña | Como usuario, quiero actualizar mi foto de perfil y cambiar mi contraseña, para mantener mi cuenta segura y personalizada. | 5 |
 
 <hr class="page-break">
 
