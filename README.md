@@ -654,6 +654,74 @@ En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al 
 
 ### 2.2.1. Diseño de entrevistas
 
+#### A. Segmento: Pacientes
+
+**Datos demográficos y de contexto**
+
+1. ¿Cuál es su nombre completo, edad y en qué distrito vive?
+2. ¿Cuál es su ocupación y con quién vive actualmente?
+3. ¿Actualmente sigue algún tratamiento médico y desde hace cuánto tiempo aproximadamente?
+4. ¿Qué tipo de tratamiento realiza y cuántos medicamentos distintos toma durante el día?
+5. ¿Qué dispositivos tecnológicos usa en el día a día y cuáles son sus aplicaciones más utilizadas?
+
+**Preguntas principales**
+
+1. Cuénteme cómo organiza actualmente la toma de sus medicamentos en el día a día.
+2. ¿Qué dificultades suele tener para recordar horarios, dosis o indicaciones médicas?
+3. ¿Con qué frecuencia olvida una dosis, cita o examen?
+4. ¿Qué consecuencias le genera cuando eso ocurre?
+5. ¿Qué herramientas usa hoy para acordarse de sus medicamentos o citas?
+6. ¿Ha usado alguna vez una aplicación, alarma o recordatorio digital para su tratamiento? ¿Cómo fue esa experiencia?
+7. ¿Cómo hace seguimiento de sus próximas citas médicas o exámenes?
+8. ¿Qué tan fácil o difícil le resulta entender una receta médica o las indicaciones que le dan?
+9. ¿Qué problemas aparecen cuando se queda sin medicamento o le falta stock?
+10. ¿Qué tipo de ayuda le haría más fácil cumplir su tratamiento en el día a día?
+11. ¿Qué información le gustaría ver en una aplicación para sentir que realmente le ayuda en el seguimiento de su tratamiento?
+12. ¿Qué aspectos le generarían confianza o desconfianza al usar una aplicación de salud digital?
+
+**Preguntas complementarias**
+
+1. ¿Cómo cree que su tratamiento afecta su calidad de vida o sus actividades diarias?
+2. ¿Qué papel juegan su familia o cuidadores en el seguimiento de su tratamiento?
+3. ¿Cómo se comunica con su médico cuando tiene una duda fuera de la consulta?
+4. ¿De qué manera influyen los factores económicos en el cumplimiento de su tratamiento?
+5. ¿Ha dejado de tomar algún medicamento por efectos secundarios o por otra razón? ¿Qué sucedió después?
+6. ¿Qué personas, recursos o herramientas cree que realmente ayudan a cumplir un tratamiento?
+
+#### B. Segmento: Personal técnico de centros médicos
+
+**Datos demográficos y de contexto**
+
+1. ¿Cuál es su nombre, edad y en qué distrito vive?
+2. ¿Cuál es su cargo o función dentro del centro médico y hace cuántos años trabaja en ese rol?
+3. ¿En qué tipo de institución trabaja actualmente y cuál es el volumen aproximado de pacientes que gestionan por semana?
+4. ¿Qué sistemas informáticos usa actualmente en su trabajo diario?
+5. ¿Qué dispositivos tecnológicos utiliza durante su jornada laboral?
+
+**Preguntas principales**
+
+1. Cuénteme cómo se registra actualmente la información clínica y las recetas en su centro médico.
+2. ¿Qué problemas aparecen al trabajar con recetas, historiales o seguimiento de pacientes?
+3. ¿Qué tareas manuales consumen más tiempo en ese proceso?
+4. ¿Qué errores son más frecuentes cuando la información se maneja de forma manual o dispersa?
+5. ¿Cómo buscan actualmente la información de un paciente cuando necesitan revisar su seguimiento?
+6. ¿Ha utilizado o conocido herramientas digitales para cargar recetas o historiales clínicos? ¿Cómo fue esa experiencia?
+7. ¿Qué indicadores o reportes consulta con más frecuencia o le gustaría consultar para hacer seguimiento de pacientes?
+8. ¿Qué parte del proceso actual le genera más frustración o retrabajo?
+9. ¿Qué resultados o metas busca cumplir en el seguimiento o la gestión de pacientes?
+10. ¿Qué barreras existirían para implementar una herramienta digital de seguimiento de pacientes en su institución?
+11. ¿Qué condiciones deberían cumplirse para que el personal adopte una plataforma de este tipo?
+12. ¿Qué cambios concretos se generarían en su trabajo diario si contara con una herramienta digital para seguimiento de pacientes?
+
+**Preguntas complementarias**
+
+1. ¿Qué diferencias nota entre pacientes que cumplen el tratamiento y los que no?
+2. ¿Cómo se coordina actualmente con otros profesionales de salud que atienden al mismo paciente?
+3. ¿Qué información recibe del paciente sobre su evolución entre consultas?
+4. ¿Qué costos o ineficiencias operativas percibe en el proceso actual de gestión de pacientes?
+5. ¿Qué consideraciones éticas o de confidencialidad serían clave al digitalizar el historial clínico?
+6. ¿Qué capacitación o acompañamiento necesitaría el personal para adoptar una herramienta digital de gestión clínica?
+
 ### 2.2.2. Registro de entrevistas
 
 
