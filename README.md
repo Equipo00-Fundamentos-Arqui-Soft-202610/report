@@ -279,7 +279,7 @@ Alcance del proyecto: Pafi Solutions tiene como alcance el diseño y desarrollo 
       <td><img src="assets/images/photos/piero-sulca.jpg" alt="piero" width="200"></td>
     </tr>
     <tr>
-      <td><strong>Quijada Magro, Jeremy Alexander — U202219657</strong><br>Soy Jeremy Alexander Quijada Magro y soy estudiante de la carrera de Ingeniería de Software. Me considero una persona responsable y analítica. Ademas, tengo conocimientos intermedios en programación y analisis de datos.</td>
+      <td><strong>Quijada Magro, Jeremy Alexander — U202219657</strong><br>Soy Jeremy Alexander Quijada Magro y soy estudiante de la carrera de Ingeniería de Software. Me considero una persona responsable y analítica. Además, tengo conocimientos intermedios en programación y análisis de datos.</td>
       <td><img src="assets/images/photos/Jeremy.jpeg" alt="Jeremy" width="200"></td>
     </tr>
   </tbody>
@@ -291,7 +291,7 @@ Alcance del proyecto: Pafi Solutions tiene como alcance el diseño y desarrollo 
 
 ### 1.2.1. Nombre del producto
 
-MediTrack es una aplicación móvil que busca ayudar a pacientes a cumplir con sus tratamientos médicos. La solución busca reducir los olvidos y errores en la toma de medicamentos mediante la generación de recordatorios inteligentes, así como facilitar el seguimiento de citas médicas y exámenes. De este modo se prevenimos los olvidos de pacientes, errores de dosis, falta de segumiento, abandono del tratamiento, etc.
+MediTrack es una aplicación móvil que busca ayudar a pacientes a cumplir con sus tratamientos médicos. La solución busca reducir los olvidos y errores en la toma de medicamentos mediante la generación de recordatorios inteligentes, así como facilitar el seguimiento de citas médicas y exámenes. De este modo prevenimos los olvidos de pacientes, errores de dosis, falta de seguimiento, abandono del tratamiento, etc.
 
 ### 1.2.2. Antecedentes y problemática
 
@@ -305,7 +305,7 @@ En el Perú, muchas personas no siguen correctamente sus tratamientos médicos, 
 
 ¿Cuándo sucede el problema?
 
-Este problema ocurre principalmente durante el día a día del tratamiento, especialmente cuando los pacientes deben seguir rutinas constantes por largos periodos. Es común que el incumplimiento se presente con el paso del tiempo, cuando los pacientes olvidan sus dosis o dejan de seguir las indicaciones médicas de manera continua. Según un estudio de la universidad cayetano heredia, el incumplimiento del tratamiento es un fenómeno frecuente a lo largo del proceso de atención médica, sobre todo en tratamientos prolongados (Luzeve Gutiérrez, 2019).
+Este problema ocurre principalmente durante el día a día del tratamiento, especialmente cuando los pacientes deben seguir rutinas constantes por largos periodos. Es común que el incumplimiento se presente con el paso del tiempo, cuando los pacientes olvidan sus dosis o dejan de seguir las indicaciones médicas de manera continua. Según un estudio de la Universidad Cayetano Heredia, el incumplimiento del tratamiento es un fenómeno frecuente a lo largo del proceso de atención médica, sobre todo en tratamientos prolongados (Luzeve Gutiérrez, 2019).
 
 #### WHERE (Dónde)
 
@@ -375,13 +375,13 @@ Y ante esta problemática nos surge la siguiente pregunta: ¿Cómo podríamos ay
 
 2. **Estas necesidades se pueden satisfacer** mediante una aplicación móvil con recordatorios, alertas y seguimiento personalizado.
 
-3. **Nuestros clientes iniciales serán** serán pacientes con enfermedades crónicas en Lima Metropolitana, especialmente con hipertensión.
+3. **Nuestros clientes iniciales serán** pacientes con enfermedades crónicas en Lima Metropolitana, especialmente con hipertensión.
 
 4. **El valor más importante que un cliente quiere de nuestros servicios es** la facilidad para no olvidar tomar sus medicamentos.
 
 5. **El cliente también va a obtener** mayor control de su salud y reducción de riesgos asociados a su enfermedad.
 
-6. **Vamos a obtener la mayoría de los clientes mediante** recomendaciones médicas, integrandonos en clínicas y hospitales, donde se recomendará la aplicación a los pacientes como apoyo para el seguimiento de sus tratamientos.
+6. **Vamos a obtener la mayoría de los clientes mediante** recomendaciones médicas, integrándonos en clínicas y hospitales, donde se recomendará la aplicación a los pacientes como apoyo para el seguimiento de sus tratamientos.
 
 7. **Vamos a obtener ingresos mediante** suscripciones premium (para los centros de salud) y alianzas con clínicas o hospitales.
 
@@ -488,7 +488,7 @@ Este segmento está conformado por personas que siguen tratamientos médicos de 
 
 - Sustento estadístico:
 
-En el Perú, la adherencia a tratamientos médicos representa un problema relevante, ya que diversos estudios indican que entre el 59% y 69% de los pacientes no cumplen adecuadamente sus tratamientos farmacológicos, especialmente en enfermedades crónicas como la hipertensión . Asimismo, investigaciones evidencian que aproximadamente el 71% de los pacientes ha olvidado tomar su medicación al menos una vez, lo que refleja una alta incidencia de incumplimiento terapéutico . Estos datos demuestran la necesidad de soluciones tecnológicas que ayuden a mejorar la adherencia, reducir olvidos y optimizar el seguimiento de tratamientos en la población.
+En el Perú, la adherencia a tratamientos médicos representa un problema relevante, ya que diversos estudios indican que entre el 59% y 69% de los pacientes no cumplen adecuadamente sus tratamientos farmacológicos, especialmente en enfermedades crónicas como la hipertensión. Asimismo, investigaciones evidencian que aproximadamente el 71% de los pacientes ha olvidado tomar su medicación al menos una vez, lo que refleja una alta incidencia de incumplimiento terapéutico. Estos datos demuestran la necesidad de soluciones tecnológicas que ayuden a mejorar la adherencia, reducir olvidos y optimizar el seguimiento de tratamientos en la población.
 
 #### Segmento 2: Personal técnico de centros médicos
 
@@ -540,15 +540,15 @@ En el contexto del sistema de salud peruano, se ha identificado que problemas en
   <tr>
     <td rowspan="2"><b>Perfil</b></td>
     <td><b>Overview</b></td>
-    <td>Es una app diseñada para cerrar la brecha entre la indicación médica y el cumplimiento real del paciente-</td>
+    <td>Es una aplicación diseñada para cerrar la brecha entre la indicación médica y el cumplimiento real del paciente.</td>
     <td>Es como un "compañero diario" para la gestión de medicación y diario de salud, enfocado en simplicidad.</td>
     <td>Es una plataforma de gestión de salud basada en marcos clínicos para el autocuidado proactivo.</td>
-    <td>Es el lider en gestión de medicación con alertas inteligentes y soporte para cuidadores.</td>
+    <td>Es el líder en gestión de medicación con alertas inteligentes y soporte para cuidadores.</td>
   </tr>
   <tr>
     <td><b>Ventaja competitiva ¿Qué valor ofrece a los clientes?</b></td>
     <td>Automatización del flujo de información médico-paciente. Elimina la carga manual de datos, reduciendo el riesgo de errores de dosis y olvidos.</td>
-    <td>Simplicidad de la app y en los reportes de salud gratuitos listos para entregar al médico tratante.</td>
+    <td>Simplicidad de la aplicación y en los reportes de salud gratuitos listos para entregar al médico tratante.</td>
     <td>Análisis avanzado de patrones; correlaciona hábitos, síntomas y clima con la salud.</td>
     <td>Red de seguridad mediante "Medfriends" y alertas de interacciones medicamentosas</td>
   </tr>
@@ -563,14 +563,14 @@ En el contexto del sistema de salud peruano, se ha identificado que problemas en
   <tr>
     <td><b>Estrategias de Marketing</b></td>
     <td>Convenios de digitalización con clínicas para reducir sus retrasos operativos.</td>
-    <td>Alianzas con sociedades médicas (ej. Sociedad de Diabetes) y blogs de salud científica..</td>
+    <td>Alianzas con sociedades médicas (ej. Sociedad de Diabetes) y blogs de salud científica.</td>
     <td>Marketing de contenidos sobre protocolos médicos (Stanford/Mayo Clinic) y SEO técnico.</td>
     <td>Recomendaciones en farmacias (Walgreens/CVS) y pauta en buscadores médicos.</td>
   </tr>
   <tr>
     <td rowspan="3"><b>Perfil de Producto</b></td>
     <td><b>Productos &amp; Servicios</b></td>
-    <td>App móvil centrada para el Paciente y portal web para clínicas donde pueden gestionar de recetas y monitoreo.</td>
+    <td>Aplicación móvil centrada para el Paciente y portal web para clínicas donde pueden gestionar recetas y monitoreo.</td>
     <td>Alarmas de pastillas, registro de síntomas y contador de pasos integrado.</td>
     <td>Rastreador de dolor, diario de humor, planes de nutrición y sincronización con Apple Health.</td>
     <td>Recordatorios de dosis, aviso de reabastecimiento y base de datos de fármacos.</td>
@@ -578,16 +578,16 @@ En el contexto del sistema de salud peruano, se ha identificado que problemas en
   <tr>
     <td><b>Precios y Costos</b></td>
     <td>Modelo de suscripción para instituciones y versión gratuita para pacientes con opciones de reportes avanzados (Freemium).</td>
-    <td>100% Gratuito (sin publicidad ni compras dentro de la app).</td>
+    <td>100% Gratuito (sin publicidad ni compras dentro de la aplicación).</td>
     <td>Freemium (Versión Pro para análisis de datos avanzados).</td>
     <td>Gratis con opción Premium (aprox. $4.99/mes) para más voces y temas.</td>
   </tr>
   <tr>
     <td><b>Canales de distribución</b></td>
     <td>Implementación directa en sistemas de clínicas, Google Play, App Store.</td>
-    <td>App Store, Google Play y pagina web oficial.</td>
-    <td>App Store, Google Play y pagina web oficial.</td>
-    <td>App Store, Google Play y pagina web oficial.</td>
+    <td>App Store, Google Play y página web oficial.</td>
+    <td>App Store, Google Play y página web oficial.</td>
+    <td>App Store, Google Play y página web oficial.</td>
   </tr>
   <tr>
     <td rowspan="4"><b>Análisis SWOT</b></td>
@@ -600,7 +600,7 @@ En el contexto del sistema de salud peruano, se ha identificado que problemas en
   <tr>
     <td><b>Oportunidades</b></td>
     <td>Alta tasa de incumplimiento en Perú (59%-69%) y la necesidad de digitalización post-pandemia en el sector salud.</td>
-    <td>Convertirse en la app estándar para investigaciones clínicas a nivel global.</td>
+    <td>Convertirse en la aplicación estándar para investigaciones clínicas a nivel global.</td>
     <td>Integración con sistemas de farmacia (PMS) para pedidos de recetas en tiempo real.</td>
     <td>Alianzas con compañías de seguros de salud para monitorear pacientes en riesgo.</td>
   </tr>
@@ -613,24 +613,24 @@ En el contexto del sistema de salud peruano, se ha identificado que problemas en
   </tr>
   <tr>
     <td><b>Amenazas</b></td>
-    <td>Resistencia al cambio en procesos burocráticos de hospitales públicos y competencia de apps gratuitas globales.</td>
+    <td>Resistencia al cambio en procesos burocráticos de hospitales públicos y competencia de aplicaciones gratuitas globales.</td>
     <td>Riesgo de sostenibilidad financiera al no cobrar al usuario final.</td>
-    <td>Competencia de apps de nicho que se enfocan en una sola enfermedad.</td>
+    <td>Competencia de aplicaciones de nicho que se enfocan en una sola enfermedad.</td>
     <td>Regulaciones estrictas de privacidad de datos (HIPAA/GDPR) que limiten el uso de datos.</td>
   </tr>
 </table>
 
 #### Estrategias y tácticas frente a competidores
 
-Para Meditrack, nos enfocaremos en la mayor ventaja: la unificación. Mientras los competidores obligan al usuario a saltar entre la app de la farmacia, el calendario de Google y un diario de salud, ofreceremos un ecosistema cerrado.
+Para MediTrack, nos enfocaremos en la mayor ventaja: la unificación. Mientras los competidores obligan al usuario a saltar entre la aplicación de la farmacia, el calendario de Google y un diario de salud, ofreceremos un ecosistema cerrado.
 
-Ademas, aplicaremos las siguientes estrategias y tácticas frente a los competidores:
+Además, aplicaremos las siguientes estrategias y tácticas frente a los competidores:
 
-- **Estrategia de Doble Valor** Se buscar diferenciarse de Medisafe y MyTherapy atacando simultáneamentea los problemas del paciente y del centro médico.
+- **Estrategia de Doble Valor:** Se busca diferenciarse de Medisafe y MyTherapy atacando simultáneamente los problemas del paciente y del centro médico.
   - **Táctica de Integración para TI:** A diferencia de la competencia que es aislada, MediTrack ofrecerá una API de Carga Masiva para el personal técnico de clínicas. Esto reduce el retraso en tratamientos por fallas de coordinación.
   - **Táctica de Receta Digital Automática:** El paciente no configura su tratamiento; el centro médico lo hace por él. Esto ataca directamente el 71% de olvidos por falta de organización.
 
-En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al incluir al Personal Técnico, convertimos a las clínicas en nuestro principal promotor, asegurando que el paciente use la app por recomendación de su propia institución de salud, lo que garantiza la confianza y la retención a largo plazo.
+En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al incluir al Personal Técnico, convertimos a las clínicas en nuestro principal promotor, asegurando que el paciente use la aplicación por recomendación de su propia institución de salud, lo que garantiza la confianza y la retención a largo plazo.
 
 <hr class="page-break">
 
@@ -753,7 +753,7 @@ En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al 
 **Fecha:**  17/04/2026
 **Duración:** 9 minutos
 
-**Resumen:** Janet enfatiza la problemática de la falta de interoperabilidad y actualización en los sistemas de salud, explicando cómo el deterioro de las historias clínicas físicas y la caligrafía ilegible de los colegas entorpecen la continuidad del tratamiento. Señala que, si bien la digitalización ayuda, la falta de capacitación del personal y la lentitud en la carga de resultados (como exámenes de laboratorio) generan costos adicionales y pérdida de tiempo tanto para el estado como para el paciente. Asimismo, resalta que un diagnóstico correcto, apoyado en un sistema digital eficiente, es vital para asegurar que el paciente cumpla su tratamiento y asista a sus citas de control.
+**Resumen:** Yanet enfatiza la problemática de la falta de interoperabilidad y actualización en los sistemas de salud, explicando cómo el deterioro de las historias clínicas físicas y la caligrafía ilegible de los colegas entorpecen la continuidad del tratamiento. Señala que, si bien la digitalización ayuda, la falta de capacitación del personal y la lentitud en la carga de resultados (como exámenes de laboratorio) generan costos adicionales y pérdida de tiempo tanto para el Estado como para el paciente. Asimismo, resalta que un diagnóstico correcto, apoyado en un sistema digital eficiente, es vital para asegurar que el paciente cumpla su tratamiento y asista a sus citas de control.
 
 
 ### 2.2.3. Análisis de entrevistas
@@ -773,7 +773,7 @@ Al contrastar diferentes perspectivas, se identifican puntos de dolor críticos 
 
 -  Existe una **desconexión total** entre lo que sucede en el consultorio y la realidad del paciente en casa. Ambas profesionales coinciden en que el seguimiento depende de que el paciente recuerde la información o de que el sistema médico logre ubicar un documento físico, lo cual falla en un alto porcentaje de los casos.
 
-- El uso de papel es peligroso. La pérdida de recetas y la dificultad para leer indicaciones médicas (mencionada por Janet) son causas directas de los errores de dosis y el abandono del tratamiento que MediTrack busca resolver.
+- El uso de papel es peligroso. La pérdida de recetas y la dificultad para leer indicaciones médicas (mencionada por Yanet) son causas directas de los errores de dosis y el abandono del tratamiento que MediTrack busca resolver.
 
 - Las entrevistas sugieren que el **éxito terapéutico** está ligado a la **organización**. Mientras que los pacientes organizados "se curan", aquellos que olvidan sus citas o dosis (debido al caos administrativo) recaen, generando mayores costos hospitalarios y complicaciones graves.
 
@@ -899,7 +899,7 @@ La matriz revela que el proceso actual es altamente manual. Tareas como "contar 
 
 ### 2.3.3. Empathy Maps
 
-Los Empathy Maps son herramientas de diseño efectivas, que responder a la realidad humana y psicológica de cada segmento. A continuación, se presentan los Empathy Maps para los dos segmentos objetivo.
+Los Empathy Maps son herramientas de diseño efectivas, que responden a la realidad humana y psicológica de cada segmento. A continuación, se presentan los Empathy Maps para los dos segmentos objetivo.
 
 #### Segmento 1: Pacientes
 
@@ -953,19 +953,19 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 | EP04            | Carga de datos clínicos para personal técnico    | Como personal técnico de hospital, quiero subir recetas e historiales clínicos, para que los pacientes reciban su información automáticamente.                         | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
 | EP05            | Estadísticas y tendencias para personal técnico  | Como personal técnico, quiero ver estadísticas de adherencia y cumplimiento, para analizar la evolución de mis pacientes.                                              | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
 | EP06            | Edición de perfil                                | Como usuario de MediTrack, quiero editar mi información personal, para mantener mis datos actualizados.                                                                | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
-| US01            | Registro de paciente                             | Como paciente, quiero crear una cuenta en la app móvil, para gestionar mis tratamientos y citas.                                                                       | **Escenario 1:** Dado que el paciente ingresa nombre, correo y contraseña válidos, cuando presiona "Registrarse", entonces la cuenta se crea y accede al home. **Escenario 2:** Dado que el correo ya existe, cuando intenta registrarse, entonces ve el mensaje "Correo ya registrado".                                                        | EP01              |
+| US01            | Registro de paciente                             | Como paciente, quiero crear una cuenta en la aplicación móvil, para gestionar mis tratamientos y citas.                                                                       | **Escenario 1:** Dado que el paciente ingresa nombre, correo y contraseña válidos, cuando presiona "Registrarse", entonces la cuenta se crea y accede al home. **Escenario 2:** Dado que el correo ya existe, cuando intenta registrarse, entonces ve el mensaje "Correo ya registrado".                                                        | EP01              |
 | US02            | Registro de personal técnico                     | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes.                                                    | **Escenario 1:** Dado que el personal ingresa sus datos y selecciona su institución, cuando presiona "Registrarse", entonces la cuenta se crea con rol "Personal Técnico". **Escenario 2:** Dado que falta un campo obligatorio, cuando intenta registrarse, entonces ve "Completa todos los campos".                                           | EP01              |
 | US03            | Inicio de sesión                                 | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol.                                                   | **Escenario 1:** Dado que el usuario tiene cuenta activa, cuando ingresa credenciales correctas, entonces accede a su dashboard. **Escenario 2:** Dado que las credenciales son incorrectas, cuando presiona "Ingresar", entonces ve "Correo o contraseña incorrectos".                                                                         | EP01              |
 | US04            | Ver lista de medicamentos                        | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                                             | **Escenario 1:** Dado que el personal técnico subió mi receta, cuando abro la sección "Mis medicamentos", entonces veo nombre, dosis y horario de cada uno. **Escenario 2:** Dado que no tengo receta cargada, cuando accedo a la sección, entonces veo "No tienes medicamentos registrados".                                                   | EP02              |
 | US05            | Recibir recordatorio de medicamento              | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                                               | **Escenario 1:** Dado que tengo un medicamento programado a las 8am, cuando llega esa hora, entonces recibo una notificación push con el nombre y la dosis. **Escenario 2:** Dado que son múltiples medicamentos, cuando llega cada horario, entonces recibo una notificación por cada uno.                                                     | EP02              |
-| US06            | Registrar cumplimiento de medicamento            | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                                                     | **Escenario 1:** Dado que recibo una notificación de medicamento, cuando presiono "Tomado", entonces se registra el cumplimiento con fecha y hora. **Escenario 2:** Dado que olvidé marcar en el momento, cuando entro a la app y presiono "Tomado" después, entonces se registra igualmente.                                                   | EP02              |
-| US07            | Alerta de stock bajo                             | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.                                    | **Escenario 1:** Dado que me quedan 3 pastillas de un medicamento, cuando abro la app, entonces veo la alerta "Te quedan 3 pastillas de [nombre]". **Escenario 2:** Dado que me quedan 3 pastillas, cuando llega el horario de la siguiente toma, entonces recibo una notificación adicional de stock bajo.                                     | EP02              |
-| US08            | Agendar cita médica                              | Como paciente, quiero registrar una nueva cita médica en la app, para tenerla en mi calendario y recibir recordatorios.                                                | **Escenario 1:** Dado que ingreso fecha, hora y tipo de cita, cuando presiono "Agendar", entonces la cita se guarda y aparece en mi lista. **Escenario 2:** Dado que ingreso una fecha pasada, cuando intento agendar, entonces veo "La fecha debe ser posterior a hoy".                                                                        | EP03              |
+| US06            | Registrar cumplimiento de medicamento            | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                                                     | **Escenario 1:** Dado que recibo una notificación de medicamento, cuando presiono "Tomado", entonces se registra el cumplimiento con fecha y hora. **Escenario 2:** Dado que olvidé marcar en el momento, cuando entro a la aplicación y presiono "Tomado" después, entonces se registra igualmente.                                                   | EP02              |
+| US07            | Alerta de stock bajo                             | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.                                    | **Escenario 1:** Dado que me quedan 3 pastillas de un medicamento, cuando abro la aplicación, entonces veo la alerta "Te quedan 3 pastillas de [nombre]". **Escenario 2:** Dado que me quedan 3 pastillas, cuando llega el horario de la siguiente toma, entonces recibo una notificación adicional de stock bajo.                                     | EP02              |
+| US08            | Agendar cita médica                              | Como paciente, quiero registrar una nueva cita médica en la aplicación, para tenerla en mi calendario y recibir recordatorios.                                                | **Escenario 1:** Dado que ingreso fecha, hora y tipo de cita, cuando presiono "Agendar", entonces la cita se guarda y aparece en mi lista. **Escenario 2:** Dado que ingreso una fecha pasada, cuando intento agendar, entonces veo "La fecha debe ser posterior a hoy".                                                                        | EP03              |
 | US09            | Recibir recordatorio de cita médica              | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla.                                                                                    | **Escenario 1:** Dado que tengo una cita mañana a las 10am, cuando faltan 24 horas, entonces recibo una notificación con fecha, hora y lugar. **Escenario 2:** Dado que tengo una cita en 2 horas, cuando falta ese tiempo, entonces recibo una segunda notificación.                                                                           | EP03              |
 | US10            | Registrar cumplimiento de cita                   | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado.                                                                         | **Escenario 1:** Dado que tengo una cita agendada para hoy, cuando presiono "Asistí", entonces se registra el cumplimiento. **Escenario 2:** Dado que no pude asistir, cuando presiono "No asistí", entonces queda registrada como inasistencia.                                                                                                | EP03              |
 | US11            | Ver requisitos de cita                           | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado.                                                                                    | **Escenario 1:** Dado que mi cita requiere muestra de orina, cuando abro el detalle de la cita, entonces veo "Requisito: traer muestra de orina". **Escenario 2:** Dado que la cita no tiene requisitos, cuando abro el detalle, entonces veo "No se requiere preparación especial".                                                            | EP03              |
-| US12            | Recordatorio de examen clínico                   | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados.                                                | **Escenario 1:** Dado que tengo un examen programado, cuando llega la fecha de recojo, entonces recibo una notificación con el tipo de examen. **Escenario 2:** Dado que ya pasó la fecha de recojo, cuando abro la app, entonces veo un aviso pendiente.                                                                                       | EP03              |
-| US13            | Subir receta médica con horarios                 | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su app.                              | **Escenario 1:** Dado que ingreso nombre del medicamento, dosis y horarios, cuando presiono "Subir receta", entonces el paciente la recibe automáticamente. **Escenario 2:** Dado que falta el horario de una toma, cuando intento subir, entonces veo "Completa todos los horarios".                                                           | EP04              |
+| US12            | Recordatorio de examen clínico                   | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados.                                                | **Escenario 1:** Dado que tengo un examen programado, cuando llega la fecha de recojo, entonces recibo una notificación con el tipo de examen. **Escenario 2:** Dado que ya pasó la fecha de recojo, cuando abro la aplicación, entonces veo un aviso pendiente.                                                                                       | EP03              |
+| US13            | Subir receta médica con horarios                 | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su aplicación.                              | **Escenario 1:** Dado que ingreso nombre del medicamento, dosis y horarios, cuando presiono "Subir receta", entonces el paciente la recibe automáticamente. **Escenario 2:** Dado que falta el horario de una toma, cuando intento subir, entonces veo "Completa todos los horarios".                                                           | EP04              |
 | US14            | Subir historial clínico                          | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                                          | **Escenario 1:** Dado que selecciono un archivo de dataset válido, cuando presiono "Cargar", entonces el historial se vincula al paciente correspondiente. **Escenario 2:** Dado que el paciente no existe en el dataset, cuando intento cargarlo, entonces veo "Paciente no encontrado".                                                       | EP04              |
 | US15            | Buscar paciente individual                       | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento.                                                              | **Escenario 1:** Dado que ingreso un DNI válido, cuando busco, entonces veo el perfil completo del paciente. **Escenario 2:** Dado que no hay coincidencias, cuando busco, entonces veo "No se encontraron pacientes".                                                                                                                          | EP04              |
 | US16            | Ver dashboard de tendencias de adherencia        | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento.                        | **Escenario 1:** Dado que hay datos de cumplimiento registrados, cuando accedo al dashboard, entonces veo gráficos de tendencia por paciente. **Escenario 2:** Dado que no hay datos suficientes, cuando accedo, entonces veo "Sin datos disponibles para mostrar tendencias".                                                                  | EP05              |
@@ -973,9 +973,9 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 | US18            | Ver estadísticas de citas                        | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones.                                                 | **Escenario 1:** Dado que hay citas registradas, cuando accedo a la sección, entonces veo un gráfico circular con tipos de cita. **Escenario 2:** Dado que no hay citas, cuando accedo, entonces veo "No hay datos de citas disponibles".                                                                                                       | EP05              |
 | US19            | Editar perfil de usuario                         | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada.                                            | **Escenario 1:** Dado que modifico mi teléfono o subo una nueva foto, cuando presiono "Guardar", entonces el cambio se refleja inmediatamente. **Escenario 2:** Dado que ingreso un formato inválido, cuando intento guardar, entonces veo "Formato incorrecto".                                                                               | EP06              |
 | US20            | Recuperar contraseña                             | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta.                                                                      | **Escenario 1:** Dado que ingreso mi correo registrado, cuando presiono "Recuperar contraseña", entonces recibo un enlace por correo. **Escenario 2:** Dado que el correo no existe, entonces veo "Correo no registrado". **Escenario 3:** Dado que uso el enlace, cuando ingreso una nueva contraseña válida, entonces la cuenta se actualiza. | EP01              |
-| US21            | Cerrar sesión                                    | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información.                                                                                      | **Escenario 1:** Dado que estoy logueado, cuando presiono "Cerrar sesión", entonces se cierra la sesión y regresa a la pantalla de login. **Escenario 2:** Dado que cierro la app, cuando la abro nuevamente, entonces debo iniciar sesión otra vez.                                                                                            | EP01              |
+| US21            | Cerrar sesión                                    | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información.                                                                                      | **Escenario 1:** Dado que estoy logueado, cuando presiono "Cerrar sesión", entonces se cierra la sesión y regresa a la pantalla de login. **Escenario 2:** Dado que cierro la aplicación, cuando la abro nuevamente, entonces debo iniciar sesión otra vez.                                                                                            | EP01              |
 | US22            | Configurar preferencias de notificaciones        | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.                                 | **Escenario 1:** Dado que accedo a Configuración, cuando elijo sonido, vibración y número de repeticiones, entonces las notificaciones se aplican según mi elección. **Escenario 2:** Dado que desactivo temporalmente las notificaciones, entonces no recibo recordatorios hasta que las reactive.                                             | EP02              |
-| US23            | Funcionar en modo offline                        | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la app en cualquier lugar.                                              | **Escenario 1:** Dado que no tengo internet, cuando abro la app, entonces veo la lista de medicamentos y puedo marcar "Tomado". **Escenario 2:** Dado que recupero internet, entonces se sincronizan automáticamente los registros.                                                                                                             | EP02              |
+| US23            | Funcionar en modo offline                        | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar.                                              | **Escenario 1:** Dado que no tengo internet, cuando abro la aplicación, entonces veo la lista de medicamentos y puedo marcar "Tomado". **Escenario 2:** Dado que recupero internet, entonces se sincronizan automáticamente los registros.                                                                                                             | EP02              |
 | US24            | Editar o cancelar medicamento                    | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                                        | **Escenario 1:** Dado que el personal técnico autoriza el cambio, cuando edito un medicamento, entonces se actualiza y se notifica al paciente. **Escenario 2:** Dado que intento cancelar sin autorización, entonces veo "Solo el personal técnico puede cancelar".                                                                            | EP02              |
 | US25            | Ver historial de adherencia y progreso           | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                                        | **Escenario 1:** Dado que tengo registros de cumplimiento, cuando accedo a "Mi progreso", entonces veo gráfico de porcentaje de adherencia semanal. **Escenario 2:** Dado que no hay datos suficientes, entonces veo "Aún no hay suficiente información para mostrar progreso".                                                                 | EP02 / EP03       |
 | US26            | Validación automática de medicamentos            | Como personal técnico, quiero que el sistema valide automáticamente los nombres de medicamentos al subir una receta, para evitar errores.                              | **Escenario 1:** Dado que ingreso un medicamento existente en la lista pre-cargada, entonces se acepta automáticamente. **Escenario 2:** Dado que ingreso un medicamento no registrado, entonces veo sugerencias o mensaje de error.                                                                                                            | EP04              |
