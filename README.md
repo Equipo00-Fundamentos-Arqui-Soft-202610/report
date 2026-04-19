@@ -34,7 +34,7 @@
       </tr>
       <tr>
          <td>U202219657</td>
-         <td>Quijada Magro, Alexander</td>
+         <td>Quijada Magro, Jeremy Alexander</td>
       </tr>
       <tr>
          <td>U20231D974</td>
@@ -61,7 +61,13 @@
 
 | Version | Fecha | Autor | Descripción de modificación |
 | ------- | ----- | ----- | --------------------------- |
-|         |       |       |                             |
+| 1.0 | 11/04/2026 | Rojas Reategui, Victor Manuel | Creación de la estructura inicial del informe |
+| 1.1 | 13/04/2026 | Gonzales Alvarado, Javier Sebastian | Capítulo I: descripción de la startup, Solution Profile, Lean UX Process y segmentos objetivo (1.1–1.3) |
+| 1.2 | 17/04/2026 | Sulca Sanchez, Piero Angel | Capítulo II: diseño de entrevistas (2.2.1) |
+| 1.3 | 17/04/2026 | Quijada Magro, Jeremy Alexander | Capítulo II: análisis de competidores (2.1), registro y análisis de entrevistas del segmento de personal técnico (2.2.2, 2.2.3) y needfinding — User Personas (2.3.1), User Task Matrix (2.3.2), Empathy Maps (2.3.3), As-Is Scenario Mapping (2.3.4) |
+| 1.4 | 18/04/2026 | Rivera Ratachi, Renzo Sebastian | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3) |
+| 1.5 | 18/04/2026 | Sulca Sanchez, Piero Angel | Capítulo III: Product Backlog (3.4) |
+| 1.6 | 18/04/2026 | Rojas Reategui, Victor Manuel | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4) |
 
 <hr class="page-break">
 
