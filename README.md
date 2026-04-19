@@ -1081,6 +1081,8 @@ El orden del Product Backlog se determina por el valor de negocio que aporta cad
 | 29      | US28          | Cambiar contraseña                              | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura.                                                                     | 3            |
 
 ![trello](assets/images/chapter3/product-backlog-trello.png)
+<br>
+Enlace del tablero en Trello: https://trello.com/b/uqAJCw99
 
 <hr class="page-break">
 
