@@ -1080,6 +1080,8 @@ El orden del Product Backlog se determina por el valor de negocio que aporta cad
 | 28      | US21          | Cerrar sesión                                   | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información.                                                               | 3            |
 | 29      | US28          | Cambiar contraseña                              | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura.                                                                     | 3            |
 
+![trello](assets/images/chapter3/product-backlog-trello.png)
+
 <hr class="page-break">
 
 # Capítulo IV: Product Architecture Design
