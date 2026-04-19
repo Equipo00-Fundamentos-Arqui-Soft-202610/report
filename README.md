@@ -278,7 +278,7 @@ Alcance del proyecto: Pafi Solutions tiene como alcance el diseño y desarrollo 
       <td><img src="assets/images/photos/piero-sulca.jpg" alt="piero" width="200"></td>
     </tr>
     <tr>
-      <td><strong>Quijada Magro, Jeremy Alexander — U202219657</strong><br>Soy Jeremy Alexander Quijada Magro y soy estudiante de la carrera de Ingeniería de Software. Me considero una persona responsable y analítica. Ademas, tengo conocimientos intermedios en programación y analisis de datos.</td>
+      <td><strong>Quijada Magro, Jeremy Alexander — U202219657</strong><br>Soy Jeremy Alexander Quijada Magro y soy estudiante de la carrera de Ingeniería de Software. Me considero una persona responsable y analítica. Además, tengo conocimientos intermedios en programación y análisis de datos.</td>
       <td><img src="assets/images/photos/Jeremy.jpeg" alt="Jeremy" width="200"></td>
     </tr>
   </tbody>
@@ -290,7 +290,7 @@ Alcance del proyecto: Pafi Solutions tiene como alcance el diseño y desarrollo 
 
 ### 1.2.1. Nombre del producto
 
-MediTrack es una aplicación móvil que busca ayudar a pacientes a cumplir con sus tratamientos médicos. La solución busca reducir los olvidos y errores en la toma de medicamentos mediante la generación de recordatorios inteligentes, así como facilitar el seguimiento de citas médicas y exámenes. De este modo se prevenimos los olvidos de pacientes, errores de dosis, falta de segumiento, abandono del tratamiento, etc.
+MediTrack es una aplicación móvil que busca ayudar a pacientes a cumplir con sus tratamientos médicos. La solución busca reducir los olvidos y errores en la toma de medicamentos mediante la generación de recordatorios inteligentes, así como facilitar el seguimiento de citas médicas y exámenes. De este modo prevenimos los olvidos de pacientes, errores de dosis, falta de seguimiento, abandono del tratamiento, etc.
 
 ### 1.2.2. Antecedentes y problemática
 
@@ -304,7 +304,7 @@ En el Perú, muchas personas no siguen correctamente sus tratamientos médicos, 
 
 ¿Cuándo sucede el problema?
 
-Este problema ocurre principalmente durante el día a día del tratamiento, especialmente cuando los pacientes deben seguir rutinas constantes por largos periodos. Es común que el incumplimiento se presente con el paso del tiempo, cuando los pacientes olvidan sus dosis o dejan de seguir las indicaciones médicas de manera continua. Según un estudio de la universidad cayetano heredia, el incumplimiento del tratamiento es un fenómeno frecuente a lo largo del proceso de atención médica, sobre todo en tratamientos prolongados (Luzeve Gutiérrez, 2019).
+Este problema ocurre principalmente durante el día a día del tratamiento, especialmente cuando los pacientes deben seguir rutinas constantes por largos periodos. Es común que el incumplimiento se presente con el paso del tiempo, cuando los pacientes olvidan sus dosis o dejan de seguir las indicaciones médicas de manera continua. Según un estudio de la Universidad Cayetano Heredia, el incumplimiento del tratamiento es un fenómeno frecuente a lo largo del proceso de atención médica, sobre todo en tratamientos prolongados (Luzeve Gutiérrez, 2019).
 
 #### WHERE (Dónde)
 
@@ -374,13 +374,13 @@ Y ante esta problemática nos surge la siguiente pregunta: ¿Cómo podríamos ay
 
 2. **Estas necesidades se pueden satisfacer** mediante una aplicación móvil con recordatorios, alertas y seguimiento personalizado.
 
-3. **Nuestros clientes iniciales serán** serán pacientes con enfermedades crónicas en Lima Metropolitana, especialmente con hipertensión.
+3. **Nuestros clientes iniciales serán** pacientes con enfermedades crónicas en Lima Metropolitana, especialmente con hipertensión.
 
 4. **El valor más importante que un cliente quiere de nuestros servicios es** la facilidad para no olvidar tomar sus medicamentos.
 
 5. **El cliente también va a obtener** mayor control de su salud y reducción de riesgos asociados a su enfermedad.
 
-6. **Vamos a obtener la mayoría de los clientes mediante** recomendaciones médicas, integrandonos en clínicas y hospitales, donde se recomendará la aplicación a los pacientes como apoyo para el seguimiento de sus tratamientos.
+6. **Vamos a obtener la mayoría de los clientes mediante** recomendaciones médicas, integrándonos en clínicas y hospitales, donde se recomendará la aplicación a los pacientes como apoyo para el seguimiento de sus tratamientos.
 
 7. **Vamos a obtener ingresos mediante** suscripciones premium (para los centros de salud) y alianzas con clínicas o hospitales.
 
@@ -487,7 +487,7 @@ Este segmento está conformado por personas que siguen tratamientos médicos de 
 
 - Sustento estadístico:
 
-En el Perú, la adherencia a tratamientos médicos representa un problema relevante, ya que diversos estudios indican que entre el 59% y 69% de los pacientes no cumplen adecuadamente sus tratamientos farmacológicos, especialmente en enfermedades crónicas como la hipertensión . Asimismo, investigaciones evidencian que aproximadamente el 71% de los pacientes ha olvidado tomar su medicación al menos una vez, lo que refleja una alta incidencia de incumplimiento terapéutico . Estos datos demuestran la necesidad de soluciones tecnológicas que ayuden a mejorar la adherencia, reducir olvidos y optimizar el seguimiento de tratamientos en la población.
+En el Perú, la adherencia a tratamientos médicos representa un problema relevante, ya que diversos estudios indican que entre el 59% y 69% de los pacientes no cumplen adecuadamente sus tratamientos farmacológicos, especialmente en enfermedades crónicas como la hipertensión. Asimismo, investigaciones evidencian que aproximadamente el 71% de los pacientes ha olvidado tomar su medicación al menos una vez, lo que refleja una alta incidencia de incumplimiento terapéutico. Estos datos demuestran la necesidad de soluciones tecnológicas que ayuden a mejorar la adherencia, reducir olvidos y optimizar el seguimiento de tratamientos en la población.
 
 #### Segmento 2: Personal técnico de centros médicos
 
@@ -539,10 +539,10 @@ En el contexto del sistema de salud peruano, se ha identificado que problemas en
   <tr>
     <td rowspan="2"><b>Perfil</b></td>
     <td><b>Overview</b></td>
-    <td>Es una app diseñada para cerrar la brecha entre la indicación médica y el cumplimiento real del paciente-</td>
+    <td>Es una app diseñada para cerrar la brecha entre la indicación médica y el cumplimiento real del paciente.</td>
     <td>Es como un "compañero diario" para la gestión de medicación y diario de salud, enfocado en simplicidad.</td>
     <td>Es una plataforma de gestión de salud basada en marcos clínicos para el autocuidado proactivo.</td>
-    <td>Es el lider en gestión de medicación con alertas inteligentes y soporte para cuidadores.</td>
+    <td>Es el líder en gestión de medicación con alertas inteligentes y soporte para cuidadores.</td>
   </tr>
   <tr>
     <td><b>Ventaja competitiva ¿Qué valor ofrece a los clientes?</b></td>
@@ -562,14 +562,14 @@ En el contexto del sistema de salud peruano, se ha identificado que problemas en
   <tr>
     <td><b>Estrategias de Marketing</b></td>
     <td>Convenios de digitalización con clínicas para reducir sus retrasos operativos.</td>
-    <td>Alianzas con sociedades médicas (ej. Sociedad de Diabetes) y blogs de salud científica..</td>
+    <td>Alianzas con sociedades médicas (ej. Sociedad de Diabetes) y blogs de salud científica.</td>
     <td>Marketing de contenidos sobre protocolos médicos (Stanford/Mayo Clinic) y SEO técnico.</td>
     <td>Recomendaciones en farmacias (Walgreens/CVS) y pauta en buscadores médicos.</td>
   </tr>
   <tr>
     <td rowspan="3"><b>Perfil de Producto</b></td>
     <td><b>Productos &amp; Servicios</b></td>
-    <td>App móvil centrada para el Paciente y portal web para clínicas donde pueden gestionar de recetas y monitoreo.</td>
+    <td>App móvil centrada para el Paciente y portal web para clínicas donde pueden gestionar recetas y monitoreo.</td>
     <td>Alarmas de pastillas, registro de síntomas y contador de pasos integrado.</td>
     <td>Rastreador de dolor, diario de humor, planes de nutrición y sincronización con Apple Health.</td>
     <td>Recordatorios de dosis, aviso de reabastecimiento y base de datos de fármacos.</td>
@@ -584,9 +584,9 @@ En el contexto del sistema de salud peruano, se ha identificado que problemas en
   <tr>
     <td><b>Canales de distribución</b></td>
     <td>Implementación directa en sistemas de clínicas, Google Play, App Store.</td>
-    <td>App Store, Google Play y pagina web oficial.</td>
-    <td>App Store, Google Play y pagina web oficial.</td>
-    <td>App Store, Google Play y pagina web oficial.</td>
+    <td>App Store, Google Play y página web oficial.</td>
+    <td>App Store, Google Play y página web oficial.</td>
+    <td>App Store, Google Play y página web oficial.</td>
   </tr>
   <tr>
     <td rowspan="4"><b>Análisis SWOT</b></td>
@@ -621,11 +621,11 @@ En el contexto del sistema de salud peruano, se ha identificado que problemas en
 
 #### Estrategias y tácticas frente a competidores
 
-Para Meditrack, nos enfocaremos en la mayor ventaja: la unificación. Mientras los competidores obligan al usuario a saltar entre la app de la farmacia, el calendario de Google y un diario de salud, ofreceremos un ecosistema cerrado.
+Para MediTrack, nos enfocaremos en la mayor ventaja: la unificación. Mientras los competidores obligan al usuario a saltar entre la app de la farmacia, el calendario de Google y un diario de salud, ofreceremos un ecosistema cerrado.
 
-Ademas, aplicaremos las siguientes estrategias y tácticas frente a los competidores:
+Además, aplicaremos las siguientes estrategias y tácticas frente a los competidores:
 
-- **Estrategia de Doble Valor** Se buscar diferenciarse de Medisafe y MyTherapy atacando simultáneamentea los problemas del paciente y del centro médico.
+- **Estrategia de Doble Valor:** Se busca diferenciarse de Medisafe y MyTherapy atacando simultáneamente los problemas del paciente y del centro médico.
   - **Táctica de Integración para TI:** A diferencia de la competencia que es aislada, MediTrack ofrecerá una API de Carga Masiva para el personal técnico de clínicas. Esto reduce el retraso en tratamientos por fallas de coordinación.
   - **Táctica de Receta Digital Automática:** El paciente no configura su tratamiento; el centro médico lo hace por él. Esto ataca directamente el 71% de olvidos por falta de organización.
 
@@ -752,7 +752,7 @@ En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al 
 **Fecha:**  17/04/2026
 **Duración:** 9 minutos
 
-**Resumen:** Janet enfatiza la problemática de la falta de interoperabilidad y actualización en los sistemas de salud, explicando cómo el deterioro de las historias clínicas físicas y la caligrafía ilegible de los colegas entorpecen la continuidad del tratamiento. Señala que, si bien la digitalización ayuda, la falta de capacitación del personal y la lentitud en la carga de resultados (como exámenes de laboratorio) generan costos adicionales y pérdida de tiempo tanto para el estado como para el paciente. Asimismo, resalta que un diagnóstico correcto, apoyado en un sistema digital eficiente, es vital para asegurar que el paciente cumpla su tratamiento y asista a sus citas de control.
+**Resumen:** Yanet enfatiza la problemática de la falta de interoperabilidad y actualización en los sistemas de salud, explicando cómo el deterioro de las historias clínicas físicas y la caligrafía ilegible de los colegas entorpecen la continuidad del tratamiento. Señala que, si bien la digitalización ayuda, la falta de capacitación del personal y la lentitud en la carga de resultados (como exámenes de laboratorio) generan costos adicionales y pérdida de tiempo tanto para el Estado como para el paciente. Asimismo, resalta que un diagnóstico correcto, apoyado en un sistema digital eficiente, es vital para asegurar que el paciente cumpla su tratamiento y asista a sus citas de control.
 
 
 ### 2.2.3. Análisis de entrevistas
@@ -772,7 +772,7 @@ Al contrastar diferentes perspectivas, se identifican puntos de dolor críticos 
 
 -  Existe una **desconexión total** entre lo que sucede en el consultorio y la realidad del paciente en casa. Ambas profesionales coinciden en que el seguimiento depende de que el paciente recuerde la información o de que el sistema médico logre ubicar un documento físico, lo cual falla en un alto porcentaje de los casos.
 
-- El uso de papel es peligroso. La pérdida de recetas y la dificultad para leer indicaciones médicas (mencionada por Janet) son causas directas de los errores de dosis y el abandono del tratamiento que MediTrack busca resolver.
+- El uso de papel es peligroso. La pérdida de recetas y la dificultad para leer indicaciones médicas (mencionada por Yanet) son causas directas de los errores de dosis y el abandono del tratamiento que MediTrack busca resolver.
 
 - Las entrevistas sugieren que el **éxito terapéutico** está ligado a la **organización**. Mientras que los pacientes organizados "se curan", aquellos que olvidan sus citas o dosis (debido al caos administrativo) recaen, generando mayores costos hospitalarios y complicaciones graves.
 
@@ -898,7 +898,7 @@ La matriz revela que el proceso actual es altamente manual. Tareas como "contar 
 
 ### 2.3.3. Empathy Maps
 
-Los Empathy Maps son herramientas de diseño efectivas, que responder a la realidad humana y psicológica de cada segmento. A continuación, se presentan los Empathy Maps para los dos segmentos objetivo.
+Los Empathy Maps son herramientas de diseño efectivas, que responden a la realidad humana y psicológica de cada segmento. A continuación, se presentan los Empathy Maps para los dos segmentos objetivo.
 
 #### Segmento 1: Pacientes
 
