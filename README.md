@@ -750,7 +750,7 @@ En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al 
 
 **Resumen:** Vicenta Ramos es una adulta mayor de 76 años que padece artritis, una enfermedad crónica que le causa dolor en las manos y la obliga a seguir un tratamiento con pastillas, inyecciones y citas médicas cada tres meses. Aunque actualmente ya se ha acostumbrado a sus medicamentos y puede recordarlos con facilidad, al inicio le resultaba complicado. Sus hijas se encargan de coordinar sus citas médicas, y aunque ella está agradecida por su apoyo, le gustaría ser más independiente. Por eso, considera que una aplicación que le ayude a recordar sus medicamentos y citas sería de gran utilidad.
 
-#### B. Segmento: Personal técnico de centros médicos
+#### B. Segmento: Personal de Apoyo
 
 ##### Entrevista 1:
 
