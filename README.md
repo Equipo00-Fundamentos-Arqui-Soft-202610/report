@@ -724,8 +724,53 @@ En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al 
 
 ### 2.2.2. Registro de entrevistas
 
+#### A. Segmento: Pacientes
+
+#### B. Segmento: Personal técnico de centros médicos
+
+##### Entrevista 1:
+
+<td align="center"><img src="assets/images//entrevistas//Entrevista 1.png" alt="Entrevista 1"></td>
+
+**Link de la entrevista:**  https://youtu.be/Yh0xtK4cxbM
+
+##### Datos de la entrevista:
+**Nombre:** Gabrielle Coronel
+**Edad:**  22 años
+**Fecha:**  17/04/2026
+**Duración:** 7 minutos
+
+**Resumen:** Gabrielle describe un entorno hospitalario donde el desorden administrativo es la norma, resaltando que la mayoría de los procesos de seguimiento y gestión de recetas se realizan de forma manual mediante papeles, cuadernos y fólderes que frecuentemente se pierden o se deterioran por factores ambientales. Menciona que, aunque existen algunos sistemas, ella debe recurrir a herramientas personales como Excel para llevar un control propio de sus pacientes, enfrentando dificultades constantes para acceder a historiales clínicos completos o previos que facilitarían una atención de mayor calidad y eficiencia.
+
+
+##### Entrevista 2:
+
+<td align="center"><img src="assets/images//entrevistas/Entrevista 2.png" alt="Entrevista 2"></td>
+
+**Link de la entrevista:**  https://youtu.be/l2zcC1aD70Q
+
+##### Datos de la entrevista:
+**Nombre:** Yanet Magro
+**Edad:**  49 años
+**Fecha:**  17/04/2026
+**Duración:** 9 minutos
+
+**Resumen:** Janet enfatiza la problemática de la falta de interoperabilidad y actualización en los sistemas de salud, explicando cómo el deterioro de las historias clínicas físicas y la caligrafía ilegible de los colegas entorpecen la continuidad del tratamiento. Señala que, si bien la digitalización ayuda, la falta de capacitación del personal y la lentitud en la carga de resultados (como exámenes de laboratorio) generan costos adicionales y pérdida de tiempo tanto para el estado como para el paciente. Asimismo, resalta que un diagnóstico correcto, apoyado en un sistema digital eficiente, es vital para asegurar que el paciente cumpla su tratamiento y asista a sus citas de control.
+
 
 ### 2.2.3. Análisis de entrevistas
+
+
+#### A. Segmento: Pacientes
+
+#### B. Segmento: Personal técnico de centros médicos
+Al contrastar diferentes perspectivas, se identifican puntos de dolor críticos que validan la necesidad de una solución:
+
+-  Existe una **desconexión total** entre lo que sucede en el consultorio y la realidad del paciente en casa. Ambas profesionales coinciden en que el seguimiento depende de que el paciente recuerde la información o de que el sistema médico logre ubicar un documento físico, lo cual falla en un alto porcentaje de los casos.
+
+- El uso de papel es peligroso. La pérdida de recetas y la dificultad para leer indicaciones médicas (mencionada por Janet) son causas directas de los errores de dosis y el abandono del tratamiento que MediTrack busca resolver.
+
+- Las entrevistas sugieren que el **éxito terapéutico** está ligado a la **organización**. Mientras que los pacientes organizados "se curan", aquellos que olvidan sus citas o dosis (debido al caos administrativo) recaen, generando mayores costos hospitalarios y complicaciones graves.
 
 
 <hr class="page-break">
