@@ -709,6 +709,20 @@ En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al 
 
 #### A. Segmento: Pacientes
 
+##### Entrevista 1:
+
+<td align="center"><img src="assets/images//entrevistas//Entrevista 3.png" alt="Entrevista 1"></td>
+
+**Link de la entrevista:**  https://youtu.be/QLU1UJcwt7Q
+
+##### Datos de la entrevista:
+**Nombre:** Vicenta Ramos Coronado
+**Edad:**  76 años
+**Fecha:**  17/04/2026
+**Duración:** 11 minutos
+
+**Resumen:** Vicenta Ramos es una adulta mayor de 76 años que padece artritis, una enfermedad crónica que le causa dolor en las manos y la obliga a seguir un tratamiento con pastillas, inyecciones y citas médicas cada tres meses. Aunque actualmente ya se ha acostumbrado a sus medicamentos y puede recordarlos con facilidad, al inicio le resultaba complicado. Sus hijas se encargan de coordinar sus citas médicas, y aunque ella está agradecida por su apoyo, le gustaría ser más independiente. Por eso, considera que una aplicación que le ayude a recordar sus medicamentos y citas sería de gran utilidad.
+
 #### B. Segmento: Personal técnico de centros médicos
 
 ##### Entrevista 1:
@@ -745,6 +759,13 @@ En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al 
 
 
 #### A. Segmento: Pacientes
+Al analizar las entrevistas del segmento de pacientes, se identifican varios puntos de dolor que refuerzan la necesidad de una solución:
+
+- Existe una dependencia significativa del entorno familiar para gestionar el tratamiento. Muchos pacientes, especialmente adultos mayores, delegan la organización de sus citas médicas y seguimiento a familiares, lo que limita su autonomía.
+
+- Al inicio del tratamiento, los pacientes presentan dificultades para recordar horarios de medicación y citas, lo que puede afectar la adherencia al tratamiento y retrasar su recuperación.
+
+- Se evidencia una necesidad de mayor independencia y apoyo personalizado, ya que, aunque con el tiempo algunos pacientes logran adaptarse, valoran herramientas que les permitan gestionar su salud de forma más autónoma y segura, reduciendo la carga sobre sus familiares.
 
 #### B. Segmento: Personal técnico de centros médicos
 Al contrastar diferentes perspectivas, se identifican puntos de dolor críticos que validan la necesidad de una solución:
