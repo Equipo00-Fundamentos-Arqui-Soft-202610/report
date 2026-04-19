@@ -515,20 +515,21 @@ Este segmento está conformado por personas que siguen tratamientos médicos de 
 
 En el Perú, la adherencia a tratamientos médicos representa un problema relevante, ya que diversos estudios indican que entre el 59% y 69% de los pacientes no cumplen adecuadamente sus tratamientos farmacológicos, especialmente en enfermedades crónicas como la hipertensión. Asimismo, investigaciones evidencian que aproximadamente el 71% de los pacientes ha olvidado tomar su medicación al menos una vez, lo que refleja una alta incidencia de incumplimiento terapéutico. Estos datos demuestran la necesidad de soluciones tecnológicas que ayuden a mejorar la adherencia, reducir olvidos y optimizar el seguimiento de tratamientos en la población.
 
-#### Segmento 2: Personal técnico de centros médicos
+#### Segmento 2: Personal de Apoyo
 
-Este segmento está conformado por el personal técnico y el área de sistemas de clínicas, hospitales y centros médicos, responsables de gestionar, implementar y mantener las soluciones tecnológicas dentro de la institución. Estos usuarios buscan herramientas que permitan digitalizar procesos, mejorar la gestión de información médica y facilitar la integración de sistemas que optimicen el seguimiento de los tratamientos de los pacientes.
+Este segmento agrupa al personal que sostiene la operatividad diaria de la atención médica. Son los encargados de la transcripción de la receta hasta la coordinación de la siguiente cita. Su labor es vital para que el tratamiento no se quede en un papel, sino que se convierta en una realidad para el paciente. Ellos son quienes sufren directamente el caos de los archivos físicos y quienes más necesitan que la información esté disponible para evitar errores que afecten la salud de las personas.
 
 - Características Organizacionales:
   - Entidades: Clínicas privadas, hospitales públicos y centros médicos.
   - Tamaño: Pequeñas, medianas y grandes instituciones.
   - Sector: Salud
-  - Personal: Ingenieros de sistemas, técnicos de TI, soporte tecnológico.
+  - Personal: Internos de medicina, técnicos de enfermería, coordinadores de piso.
 
 - Características Geográficas:
-  - Ubicación: Zonas urbanas
+
+  - Ubicación: Zonas urbanas.
   - Región: Lima Metropolitana (fase inicial)
-  - Infraestructura: Centros con acceso a sistemas digitales e internet
+  - Infraestructura: Instituciones que aún dependen fuertemente del papel y que presentan cuellos de botella en la entrega de información.
 
 - Sustento estadístico:
 
@@ -697,7 +698,7 @@ En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al 
 5. ¿Ha dejado de tomar algún medicamento por efectos secundarios o por otra razón? ¿Qué sucedió después?
 6. ¿Qué personas, recursos o herramientas cree que realmente ayudan a cumplir un tratamiento?
 
-#### B. Segmento: Personal técnico de centros médicos
+#### B. Segmento: Personal de Apoyo
 
 **Datos demográficos y de contexto**
 
@@ -793,7 +794,7 @@ Al analizar las entrevistas del segmento de pacientes, se identifican varios pun
 
 - Se evidencia una necesidad de mayor independencia y apoyo personalizado, ya que, aunque con el tiempo algunos pacientes logran adaptarse, valoran herramientas que les permitan gestionar su salud de forma más autónoma y segura, reduciendo la carga sobre sus familiares.
 
-#### B. Segmento: Personal técnico de centros médicos
+#### B. Segmento: Personal de Apoyo
 Al contrastar diferentes perspectivas, se identifican puntos de dolor críticos que validan la necesidad de una solución:
 
 -  Existe una **desconexión total** entre lo que sucede en el consultorio y la realidad del paciente en casa. Ambas profesionales coinciden en que el seguimiento depende de que el paciente recuerde la información o de que el sistema médico logre ubicar un documento físico, lo cual falla en un alto porcentaje de los casos.
@@ -817,7 +818,7 @@ En esta sección, se presentan las fichas de User Persona diseñadas para repres
 
 <td align="center"><img src="assets/images/Ricardo Alberto Luján.png" alt="User persona 2"></td>
 
-#### Segmento 2: Personal técnico de centros médicos
+#### Segmento 2: Personal de Apoyo
 
 <td align="center"><img src="assets/images/Claudia Valdivia.png" alt="User persona 1" ></td>
 
@@ -930,7 +931,7 @@ Los Empathy Maps son herramientas de diseño efectivas, que responden a la reali
 
 <td align="center"><img src="assets/images/Empathy map - Pacientes.png" alt="Empathy Map - Pacientes" ></td>
 
-#### Segmento 2: Personal técnico de centros médicos
+#### Segmento 2: Personal de Apoyo
 
 <td align="center"><img src="assets/images/Empathy map - Tecnicos.png" alt="Empathy Map - Tecnicos" ></td>
 
@@ -944,7 +945,7 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 <td align="center"><img src="assets/images/AS-IS-pacientes.png" alt="AS IS PACIENTES" ></td>
 
-#### Segmento 2: Personal técnico de centros médicos
+#### Segmento 2: Personal de Apoyo
 
 <td align="center"><img src="assets/images/AS-IS-tecnicos.png" alt="AS IS TECNICOS" ></td>
 
@@ -962,7 +963,7 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 <td align="center"><img src="assets/images/chapter3/TO-BE-pacientes.png" alt="TO BE PACIENTES" ></td>
 
-#### Segmento 2: Personal técnico de centros médicos
+#### Segmento 2: Personal de Apoyo
 
 <td align="center"><img src="assets/images/chapter3/TO-BE-tecnicos.png" alt="TO BE TECNICOS" ></td>
 
