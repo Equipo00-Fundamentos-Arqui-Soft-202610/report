@@ -987,8 +987,13 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 ## 3.3. Impact Map
 
-![alt text](/assets/images/chapter3/paciente1impact.png)
-![alt text](/assets/images/chapter3/image.png)
+
+<td align="center"><img src="assets/images/chapter3/paciente1impact.png" alt="impact map" ></td>
+
+
+
+<td align="center"><img src="assets/images/chapter3/image.png" alt="impact map" ></td>
+
 
 <p align="center">
   Impact Mapping 1 - Elaboración propia
@@ -996,14 +1001,23 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 <hr class="page-break">
 
-![alt text](/assets/images/chapter3/impactmappingtecnico1.png)
-![alt text](/assets/images/chapter3/impactmappingtecnico2.png)
+
+
+<td align="center"><img src="assets/images/chapter3/impactmappingtecnico1.png" alt="impact map" ></td>
+
+
+
+<td align="center"><img src="assets/images/chapter3/impactmappingtecnico2.png" alt="impact map" ></td>
 
 <p align="center">
   Impact Mapping 2 - Elaboración propia
 </p>
 
+
+
+
 <hr class="page-break">
+
 
 ## 3.4. Product Backlog
 
