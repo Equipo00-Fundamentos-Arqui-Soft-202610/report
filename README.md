@@ -181,7 +181,7 @@
 
 # Student Outcome
 
-En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome.
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
 <table>
   <thead>
@@ -193,38 +193,38 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </thead>
   <tbody>
     <tr>
-      <td rowspan="5"><strong>[COMPLETAR: Criterio 1]</strong></td>
-      <td><strong>[COMPLETAR: Integrante 1]</strong><br><b>TB1:</b></td>
-      <td rowspan="5"><b>TB1:</b></td>
+      <td rowspan="5"><strong>Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.</strong></td>
+       <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Análisis de competidores, desarrollo de entrevistas y aplicación de needfinding para identificar necesidades de los usuarios.</td>
+      <td rowspan="5"><b>TB1:</b> El equipo aplicó conceptos clave de ingeniería de software y diseño centrado en el usuario. El uso de entrevistas, needfinding, Lean UX y backlog permitió estructurar una base sólida para el desarrollo del proyecto, fortaleciendo las capacidades técnicas de los integrantes.</td>
+    </tr>
+  <tr>
+      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> Elaboración de To-Be Scenario Mapping, definición de User Stories y desarrollo de Impact Map para estructurar el alcance del proyecto.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 2]</strong><br><b>TB1:</b></td>
+      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Definición de la startup, nombre del producto, análisis de antecedentes y problemática, desarrollo del Lean UX Process y segmentación del público objetivo.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 3]</strong><br><b>TB1:</b></td>
+      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Elaboración y organización del Product Backlog, priorizando funcionalidades del sistema.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 4]</strong><br><b>TB1:</b></td>
+      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en entrevistas para la recolección de información de usuarios.</td>
+    </tr>
+   <tr>
+      <td rowspan="5"><strong>Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.</strong></td>
+      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Aplicó técnicas de needfinding y entrevistas, fortaleciendo su capacidad de investigación de usuarios.</td>
+      <td rowspan="5"><b>TB1:</b> El equipo demostró una actitud orientada al aprendizaje continuo, incorporando nuevas metodologías y herramientas en el desarrollo del proyecto. Esto permitió mejorar la comprensión del problema y establecer bases sólidas para las siguientes etapas.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 5]</strong><br><b>TB1:</b></td>
+      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> Utilizó herramientas como Impact Map y Scenario Mapping, ampliando su enfoque en el diseño y planificación del sistema.</td>
     </tr>
     <tr>
-      <td rowspan="5"><strong>[COMPLETAR: Criterio 2]</strong></td>
-      <td><strong>[COMPLETAR: Integrante 1]</strong><br><b>TB1:</b></td>
-      <td rowspan="5"><b>TB1:</b></td>
+      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Desarrolló habilidades en Lean UX, definición de producto y segmentación de usuarios.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 2]</strong><br><b>TB1:</b></td>
+      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Fortaleció conocimientos en gestión de backlog y priorización de requerimientos.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 3]</strong><br><b>TB1:</b></td>
-    </tr>
-    <tr>
-      <td><strong>[COMPLETAR: Integrante 4]</strong><br><b>TB1:</b></td>
-    </tr>
-    <tr>
-      <td><strong>[COMPLETAR: Integrante 5]</strong><br><b>TB1:</b></td>
+      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participó en el levantamiento de información, reconociendo la importancia del aprendizaje continuo en la interacción con usuarios.</td>
     </tr>
   </tbody>
 </table>
