@@ -16,9 +16,9 @@
 
 <h3 style="text-align: center;"> Informe de Trabajo Final </h3>
 
-<h4 style="text-align: center"> Startup: COMPLETAR </h4>
+<h4 style="text-align: center"> Startup: Pafi Solutions </h4>
 
-<h4 style="text-align: center"> Producto: COMPLETAR </h4>
+<h4 style="text-align: center"> Producto: MediTrack </h4>
 
 <h4 style="text-align: center">Integrantes:</h4>
 
@@ -29,24 +29,24 @@
          <th>Apellidos y Nombres</th>
       </tr>
       <tr>
-         <td>u202123655</td>
-         <td>Rojas Reategui, Victor Manuel</td>
-      </tr>
-      <tr>
-         <td>u202312966</td>
+         <td>U202312966</td>
          <td>Gonzales Alvarado, Javier Sebastian</td>
       </tr>
       <tr>
-         <td>u20231d974</td>
+         <td>U202219657</td>
+         <td>Quijada Magro, Alexander</td>
+      </tr>
+      <tr>
+         <td>U20231D974</td>
          <td>Rivera Ratachi, Renzo Sebastian</td>
       </tr>
       <tr>
-         <td>[COMPLETAR]</td>
-         <td>[COMPLETAR]</td>
+         <td>U202123655</td>
+         <td>Rojas Reategui, Victor Manuel</td>
       </tr>
       <tr>
-         <td>[COMPLETAR]</td>
-         <td>[COMPLETAR]</td>
+         <td>U202423711</td>
+         <td>Sulca Sanchez, Piero Angel</td>
       </tr>
    </table>
 </div>
