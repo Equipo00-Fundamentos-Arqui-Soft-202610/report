@@ -343,7 +343,7 @@ Para esta primera versión de la aplicación, el costo será relativamente bajo,
 
 #### 1.2.3.1. Lean UX Problem Statement
 
-El propósito de MediTrack es brindar a los pacientes con enfermedades crónicas en el Perú una herramienta digital accesible que les permita llevar un seguimiento adecuado de sus tratamientos médicos, recordándoles la toma de medicamentos y ayudándolos a mantener una mejor adherencia, con el fin de mejorar su calidad de vida.
+El propósito de MediTrack es brindar a los pacientes peruanos una herramienta digital accesible que les permita llevar un seguimiento adecuado de sus tratamientos médicos, recordándoles la toma de medicamentos y ayudándolos a mantener una mejor adherencia, con el fin de mejorar su calidad de vida.
 
 El problema se presenta en el sistema de salud peruano, principalmente fuera de los entornos hospitalarios, donde los pacientes no cuentan con una supervisión constante. Esto provoca que muchos de ellos olviden tomar sus medicamentos o no sigan correctamente las indicaciones médicas.
 
@@ -353,7 +353,7 @@ Y ante esta problemática nos surge la siguiente pregunta: ¿Cómo podríamos ay
 
 - **Domain:** Salud digital y monitoreo de tratamientos médicos.
 
-- **Customer Segments:** Pacientes peruanos con enfermedades crónicas.
+- **Customer Segments:** Pacientes.
 
 - **Pain Points:**
   - Olvido de medicamentos
@@ -366,6 +366,31 @@ Y ante esta problemática nos surge la siguiente pregunta: ¿Cómo podríamos ay
 - **Vision/Strategy:** Desarrollar una aplicación que permita a los pacientes llevar un control de sus tratamientos mediante recordatorios, alertas y seguimiento, mejorando su adherencia y reduciendo riesgos de salud.
 
 - **Initial Segment:** Pacientes con hipertensión en Lima Metropolitana que cuentan con acceso a smartphones.
+
+El propósito de MediTrack hacia el personal técnico de clínicas y hospitales es ofrecer una plataforma web que les permita cargar digitalmente recetas e historiales clínicos, reduciendo la transcripción manual y asegurando que la información llegue directamente al paciente.
+
+El problema se presenta en clínicas y hospitales peruanos, donde la gestión de recetas y expedientes sigue dependiendo de papel, caligrafía ilegible y archivos físicos propensos al deterioro o pérdida. Esto provoca retrabajo constante, errores de dosis por interpretación incorrecta y dificultad para recuperar información previa del paciente.
+
+Hemos observado que esta situación genera retrasos en la atención, interrumpe la continuidad del tratamiento y limita la capacidad del personal para hacer seguimiento real de la adherencia de sus pacientes más allá de la consulta. Esta desconexión entre el centro médico y el paciente representa una brecha crítica en la operación hospitalaria.
+
+Y ante esta problemática nos surge la siguiente pregunta: ¿Cómo podríamos facilitar al personal técnico la gestión digital de recetas e historiales clínicos para extender el seguimiento del paciente más allá de la consulta?
+
+- **Domain:** Digitalización de información clínica y seguimiento de pacientes en centros médicos.
+
+- **Customer Segments:** Personal técnico.
+
+- **Pain Points:**
+  - Gestión manual de recetas en papel
+  - Pérdida y deterioro de expedientes físicos
+  - Caligrafía ilegible entre colegas
+  - Retrabajo por transcripción manual
+  - Dificultad para acceder a historiales previos
+
+- **Gap:** No existe una plataforma local integrada que conecte la carga de recetas del centro médico con el seguimiento diario del paciente.
+
+- **Vision/Strategy:** Ofrecer un portal web donde el personal técnico cargue recetas, suba historiales clínicos y visualice dashboards de adherencia, centralizando la información del paciente.
+
+- **Initial Segment:** Personal técnico de clínicas privadas en Lima Metropolitana.
 
 #### 1.2.3.2. Lean UX Assumptions
 
