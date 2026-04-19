@@ -68,6 +68,7 @@
 | 1.4 | 18/04/2026 | Rivera Ratachi, Renzo Sebastian | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3) |
 | 1.5 | 18/04/2026 | Sulca Sanchez, Piero Angel | Capítulo III: Product Backlog (3.4) |
 | 1.6 | 18/04/2026 | Rojas Reategui, Victor Manuel | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4) |
+| 1.7 | 18/04/2026 | Sulca Sanchez, Piero Angel | Capítulo III: reordenamiento del Product Backlog por valor de negocio, ubicando las User Stories de autenticación al final (3.4) |
 
 <hr class="page-break">
 
@@ -965,12 +966,7 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 ## 3.3. Impact Map
 
-<td align="center"><img src="assets/images/chapter3/paciente1impact.png" alt="AS IS PACIENTES" ></td>
-
-![alt text](/assets/images/chapter3/image.png)
-
-<td align="center"><img src="assets/images/chapter3/paciente1impact.png" alt="AS IS PACIENTES" ></td>
-
+![alt text](/assets/images/chapter3/paciente1impact.png)
 ![alt text](/assets/images/chapter3/image.png)
 
 <p align="center">
@@ -990,34 +986,36 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 ## 3.4. Product Backlog
 
+El orden del Product Backlog se determina por el valor de negocio que aporta cada User Story, priorizando aquellas que resuelven directamente los Pain Points identificados (adherencia al tratamiento, digitalización de recetas y seguimiento de pacientes). Las User Stories relacionadas con autenticación, recuperación de contraseña y operaciones de soporte se ubican al final, ya que son habilitadoras del flujo pero no representan el valor core que MediTrack ofrece a pacientes e instituciones de salud.
+
 | # Orden | User Story ID | Título                                          | Descripción                                                                                                                                     | Story Points |
 | ------- | ------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| 1       | US01          | Registro de paciente                            | Como paciente, quiero crear una cuenta en la app móvil, para gestionar mis tratamientos y citas.                                                | 5            |
-| 2       | US02          | Registro de personal técnico                    | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes.                             | 5            |
-| 3       | US03          | Inicio de sesión                                | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol.                            | 3            |
-| 4       | US15          | Buscar paciente individual                      | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento.                                       | 5            |
-| 5       | US13          | Subir receta médica con horarios                | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su app.       | 8            |
-| 6       | US26          | Validación automática de medicamentos           | Como personal técnico, quiero que el sistema valide automáticamente los nombres de medicamentos al subir una receta, para evitar errores.       | 5            |
-| 7       | US14          | Subir historial clínico                         | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                   | 8            |
-| 8       | US04          | Ver lista de medicamentos                       | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                      | 5            |
-| 9       | US05          | Recibir recordatorio de medicamento             | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                        | 8            |
-| 10      | US06          | Registrar cumplimiento de medicamento           | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                              | 5            |
-| 11      | US24          | Editar o cancelar medicamento                   | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                 | 3            |
-| 12      | US22          | Configurar preferencias de notificaciones       | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.          | 5            |
-| 13      | US07          | Alerta de stock bajo                            | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.             | 5            |
-| 14      | US08          | Agendar cita médica                             | Como paciente, quiero registrar una nueva cita médica en la app, para tenerla en mi calendario y recibir recordatorios.                         | 5            |
-| 15      | US09          | Recibir recordatorio de cita médica             | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla.                                                             | 5            |
-| 16      | US10          | Registrar cumplimiento de cita                  | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado.                                                  | 3            |
-| 17      | US11          | Ver requisitos de cita                          | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado.                                                             | 3            |
-| 18      | US29          | Editar o cancelar cita médica                   | Como paciente, quiero editar o cancelar una cita médica, para corregir errores en mi agenda.                                                    | 3            |
-| 19      | US12          | Recordatorio de examen clínico                  | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados.                         | 5            |
-| 20      | US25          | Ver historial de adherencia y progreso          | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                 | 8            |
-| 21      | US23          | Funcionar en modo offline                       | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la app en cualquier lugar.                       | 8            |
-| 22      | US16          | Ver dashboard de tendencias de adherencia       | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento. | 8            |
-| 23      | US17          | Ver estadísticas de cumplimiento de recetas     | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento.                      | 8            |
-| 24      | US18          | Ver estadísticas de citas                       | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones.                          | 5            |
-| 25      | US27          | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo.          | 5            |
-| 26      | US19          | Editar perfil de usuario                        | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada.                     | 3            |
+| 1       | US13          | Subir receta médica con horarios                | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su app.       | 8            |
+| 2       | US04          | Ver lista de medicamentos                       | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                      | 5            |
+| 3       | US05          | Recibir recordatorio de medicamento             | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                        | 8            |
+| 4       | US06          | Registrar cumplimiento de medicamento           | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                              | 5            |
+| 5       | US14          | Subir historial clínico                         | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                   | 8            |
+| 6       | US15          | Buscar paciente individual                      | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento.                                       | 5            |
+| 7       | US26          | Validación automática de medicamentos           | Como personal técnico, quiero que el sistema valide automáticamente los nombres de medicamentos al subir una receta, para evitar errores.       | 5            |
+| 8       | US07          | Alerta de stock bajo                            | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.             | 5            |
+| 9       | US24          | Editar o cancelar medicamento                   | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                 | 3            |
+| 10      | US22          | Configurar preferencias de notificaciones       | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.          | 5            |
+| 11      | US08          | Agendar cita médica                             | Como paciente, quiero registrar una nueva cita médica en la app, para tenerla en mi calendario y recibir recordatorios.                         | 5            |
+| 12      | US09          | Recibir recordatorio de cita médica             | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla.                                                             | 5            |
+| 13      | US10          | Registrar cumplimiento de cita                  | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado.                                                  | 3            |
+| 14      | US11          | Ver requisitos de cita                          | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado.                                                             | 3            |
+| 15      | US29          | Editar o cancelar cita médica                   | Como paciente, quiero editar o cancelar una cita médica, para corregir errores en mi agenda.                                                    | 3            |
+| 16      | US12          | Recordatorio de examen clínico                  | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados.                         | 5            |
+| 17      | US25          | Ver historial de adherencia y progreso          | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                 | 8            |
+| 18      | US16          | Ver dashboard de tendencias de adherencia       | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento. | 8            |
+| 19      | US17          | Ver estadísticas de cumplimiento de recetas     | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento.                      | 8            |
+| 20      | US27          | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo.          | 5            |
+| 21      | US18          | Ver estadísticas de citas                       | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones.                          | 5            |
+| 22      | US23          | Funcionar en modo offline                       | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la app en cualquier lugar.                       | 8            |
+| 23      | US19          | Editar perfil de usuario                        | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada.                     | 3            |
+| 24      | US01          | Registro de paciente                            | Como paciente, quiero crear una cuenta en la app móvil, para gestionar mis tratamientos y citas.                                                | 5            |
+| 25      | US02          | Registro de personal técnico                    | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes.                             | 5            |
+| 26      | US03          | Inicio de sesión                                | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol.                            | 3            |
 | 27      | US20          | Recuperar contraseña                            | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta.                                               | 3            |
 | 28      | US21          | Cerrar sesión                                   | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información.                                                               | 3            |
 | 29      | US28          | Cambiar contraseña                              | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura.                                                                     | 3            |
