@@ -272,8 +272,8 @@ Alcance del proyecto: Pafi Solutions tiene como alcance el diseño y desarrollo 
       <td><img src="assets/images/photos/piero-sulca.jpg" alt="piero" width="200"></td>
     </tr>
     <tr>
-      <td><strong>Quijada Magro, Alexander — U202219657</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><strong>Quijada Magro, Jeremy Alexander — U202219657</strong><br>Soy Jeremy Alexander Quijada Magro y soy estudiante de la carrera de Ingeniería de Software. Me considero una persona responsable y analítica. Ademas, tengo conocimientos intermedios en programación y analisis de datos.</td>
+      <td><img src="assets/images/photos/Jeremy.jpeg" alt="Jeremy" width="200"></td>
     </tr>
   </tbody>
 </table>
