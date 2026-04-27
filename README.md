@@ -1091,11 +1091,58 @@ Enlace del tablero en Trello: https://trello.com/b/uqAJCw99
 
 ## 4.1. Design Concepts, ViewPoints & ER Diagrams
 
+En esta sección se presentan los conceptos de diseño y las perspectivas arquitectónicas que guían el desarrollo de MediTrack. Se busca mostrar cómo los principios arquitectónicos, los enfoques adoptados, los estilos y patrones seleccionados, así como los diagramas de contexto y 
+de entidades, permiten estructurar una solución tecnológica coherente, escalable y alineada con las necesidades de la gestión ganadera. Cada subsección detalla los lineamientos y representaciones que sirven de base para asegurar la calidad y sostenibilidad del sistema en el tiempo.
+
 ### 4.1.1. Principles Statements
+
+Los principios arquitectónicos de MediTrack actúan como reglas de gobierno para el diseño y evolución del sistema, asegurando que las decisiones técnicas apoyen los objetivos estratégicos de la startup.
+
+- **Disponibilidad "Offline-First" para el Paciente:** Dado que el cumplimiento del tratamiento no puede depender de la conectividad (especialmente en contextos locales con redes inestables), la arquitectura debe priorizar el funcionamiento de recordatorios y registros de forma local, sincronizando datos de manera asíncrona cuando la conexión se restablezca.
+
+- **Seguridad y Privacidad por Diseño:** Tratándose de información de salud sensible, el acceso a los datos debe regirse por el principio de "menor privilegio". La separación de roles (Paciente vs. Personal Técnico) debe ser estricta a nivel de servicios y base de datos, asegurando el cumplimiento de normativas de protección de datos personales.
+
+- **Desacoplamiento mediante Microservicios:** Se adoptará un enfoque de servicios independientes para las funcionalidades de "Gestión de Tratamientos", "Notificaciones" y "Analítica de Datos". Esto permite que un fallo en el módulo de estadísticas no afecte la entrega crítica de recordatorios de medicación a los pacientes.
+
+- **Escalabilidad Horizontal sobre Vertical:** La infraestructura debe estar preparada para crecer en número de usuarios (pacientes) sin comprometer el rendimiento, utilizando servicios en la nube que permitan replicar instancias de los microservicios según la demanda.
+
+- **Simplicidad en la Interfaz de Usuario:** La arquitectura de información debe reducir la carga cognitiva del usuario. El backend debe entregar datos procesados y simplificados para que el frontend pueda renderizar interfaces limpias, aptas para adultos mayores o personas con dificultades tecnológicas.
 
 ### 4.1.2. Approaches Statements Architectural Styles & Patterns
 
+En esta sección se describen los enfoques metodológicos que rigen el desarrollo de la solución, garantizando que el software sea mantenible y fiel a las reglas de negocio.
+
+#### Enfoques adopatados:
+
+* **Domain-Driven Design (DDD):** Dado que el dominio de la salud es complejo, se adopta DDD para centrar el desarrollo en el modelo de negocio. Se identificarán **Bounded Contexts** claros permitiendo que el lenguaje ubicuo sea compartido entre desarrolladores y expertos del dominio médico.
+
+* **Attribute-Driven Design (ADD):** Las decisiones arquitectónicas se basan en atributos de calidad como seguridad, escalabilidad, disponibilidad y facilidad de uso, asegurando que el sistema cumpla con las expectativas técnicas y de los usuarios. 
+
+#### Estilos arquitectónicos:
+
+* **Microservicios:** El sistema se descompone en servicios pequeños e independientes que se comunican a través de protocolos ligeros (HTTP/REST). Este estilo facilita el despliegue independiente y la escalabilidad selectiva de las funciones más demandadas, como el motor de notificaciones.
+
+#### Patrones de diseño:
+
+* **API Gateway:** Se implementará un punto de entrada único que actúe como intermediario entre los clientes (App Móvil y Portal Web) y los microservicios. El Gateway se encargará de la autenticación, el enrutamiento de peticiones y la agregación de respuestas, simplificando la lógica en el lado del cliente.
+* **CQRS (Command Query Responsibility Segregation):** Para módulos con alta carga de lectura (como los dashboards de estadísticas para el personal técnico), se evaluará la separación de las operaciones de lectura y escritura. Esto optimiza el rendimiento al permitir modelos de datos específicos para consultas complejas sin penalizar las actualizaciones del tratamiento.
+
 ### 4.1.3. Context Diagram
+
+El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el que opera la solución. En el centro se ubica el sistema MediTrack, el cual actúa como el núcleo de interacción entre los dos actores principales: el Paciente, quien consume la información de su tratamiento, y el Personal Técnico, encargado de la gestión clínica. Asimismo, se detallan las dependencias con sistemas externos.
+
+<td align="center"><img src="assets/images/chapter4/structurizr-109687-Contexto.png" alt="Context diagram" ></td>
+
+<p align="center">
+  Diagrama de contexto Meditrack - Elaboración propia
+</p>
+
+<td align="center"><img src="assets/images/chapter4/structurizr-109687-Contexto-key.png" alt="Context diagram" ></td>
+
+<p align="center">
+  Anexo del diagrama de contexto Meditrack - Elaboración propia
+</p>
+
 
 ### 4.1.4. Approach driven ViewPoints Diagrams
 
