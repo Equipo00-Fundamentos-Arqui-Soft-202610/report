@@ -317,7 +317,7 @@ El problema se presenta en el sistema de salud peruano, tanto en hospitales como
 
 ¿Quiénes son los afectados?
 
-Los principales afectados son los pacientes con enfermedades crónicas, como diabetes, hipertensión o problemas cardíacos, quienes deben seguir tratamientos de forma constante. En muchos casos, estos pacientes presentan dificultades para cumplir correctamente con sus medicamentos y controles.
+Los principales afectados son los pacientes con enfermedades crónicas, como diabetes, hipertensión o problemas cardíacos, quienes deben seguir tratamientos de forma constante. En muchos casos, estos pacientes presentan dificultades para cumplir correctamente con sus medicamentos y controles, lo que afecta directamente su estado de salud y calidad de vida (Patel, 2025).
 
 Adicionalmente, esta solución también beneficia al sistema de salud, ya que puede funcionar como un canal de comunicación entre médicos y pacientes. Los médicos podrán registrar o subir las recetas desde un portal, mientras que los pacientes recibirán automáticamente los recordatorios en sus dispositivos móviles, facilitando el seguimiento del tratamiento.
 
@@ -325,7 +325,7 @@ Adicionalmente, esta solución también beneficia al sistema de salud, ya que pu
 
 ¿Cuál es la causa del problema?
 
-Este problema se debe principalmente a factores como el olvido, la falta de información y la complejidad de los tratamientos médicos. Muchos pacientes no siguen correctamente sus indicaciones porque deben tomar varios medicamentos en distintos horarios, lo que genera confusión. En el Perú, esta situación se agrava por factores como la desorganización en los tratamientos y la ausencia de herramientas que ayuden a los pacientes a cumplir sus horarios.
+Este problema se debe principalmente a factores como el olvido, la falta de información y la complejidad de los tratamientos médicos. Muchos pacientes no siguen correctamente sus indicaciones porque deben tomar varios medicamentos en distintos horarios, lo que genera confusión y errores en la administración (Schnorrerova, 2025). En el Perú, esta situación se agrava por factores como la desorganización en los tratamientos y la ausencia de herramientas tecnológicas que ayuden a los pacientes a cumplir sus horarios.
 
 #### HOW (Cómo)
 
@@ -490,6 +490,12 @@ Debe tener un diseño simple, intuitivo y accesible para todo tipo de usuarios, 
     <img src="assets/images/Lean Ux Canvas - Fundamentos.png" alt="upc-logo" width="1000px" height="560px"/>
 </p>
 
+<div align = center>
+
+  *Figura 1. Lean UX Canvas del producto MediTrack. Elaboración propia.*
+</div>
+
+
 <hr class="page-break">
 
 ## 1.3. Segmentos objetivo
@@ -513,7 +519,7 @@ Este segmento está conformado por personas que siguen tratamientos médicos de 
 
 - Sustento estadístico:
 
-En el Perú, la adherencia a tratamientos médicos representa un problema relevante, ya que diversos estudios indican que entre el 59% y 69% de los pacientes no cumplen adecuadamente sus tratamientos farmacológicos, especialmente en enfermedades crónicas como la hipertensión. Asimismo, investigaciones evidencian que aproximadamente el 71% de los pacientes ha olvidado tomar su medicación al menos una vez, lo que refleja una alta incidencia de incumplimiento terapéutico. Estos datos demuestran la necesidad de soluciones tecnológicas que ayuden a mejorar la adherencia, reducir olvidos y optimizar el seguimiento de tratamientos en la población.
+En el Perú, la adherencia a tratamientos médicos representa un problema relevante, ya que diversos estudios indican que entre el 44% y 76% de los pacientes con enfermedades crónicas no siguen correctamente sus tratamientos farmacológicos. Asimismo, investigaciones evidencian que el olvido es una de las principales causas de incumplimiento terapéutico (Kardas, 2024). Estos datos demuestran la necesidad de soluciones tecnológicas que ayuden a mejorar la adherencia, reducir olvidos y optimizar el seguimiento de tratamientos en la población.
 
 #### Segmento 2: Personal de Apoyo
 
@@ -533,7 +539,7 @@ Este segmento agrupa al personal que sostiene la operatividad diaria de la atenc
 
 - Sustento estadístico:
 
-En el contexto del sistema de salud peruano, se ha identificado que problemas en la gestión y seguimiento de tratamientos afectan directamente a los pacientes, evidenciándose que hasta el 25% de personas con enfermedades graves como cáncer experimentan retrasos o interrupciones en sus tratamientos, en parte debido a fallas en la coordinación y disponibilidad de información médica. Además, la creciente digitalización del sector salud impulsa a clínicas y hospitales a adoptar soluciones tecnológicas que mejoren la comunicación con pacientes y el control de tratamientos, lo que posiciona a estas instituciones como actores clave en la implementación de plataformas digitales orientadas al seguimiento médico.
+En el contexto del sistema de salud, se ha identificado que problemas en la gestión y seguimiento de tratamientos afectan directamente a los pacientes, evidenciándose que la falta de coordinación y digitalización de la información médica incrementa los errores y retrasos en la atención. Además, la digitalización del sector salud permite mejorar la comunicación entre pacientes y profesionales, optimizando el seguimiento de tratamientos (Kruse et al., 2017).
 
 <hr class="page-break">
 
@@ -818,9 +824,19 @@ En esta sección, se presentan las fichas de User Persona diseñadas para repres
 
 <td align="center"><img src="assets/images/Ricardo Alberto Luján.png" alt="User persona 2"></td>
 
+<div align = center>
+
+  *Figura 2. User Persona del segmento Pacientes (Ricardo Alberto Luján). Elaboración propia.*
+</div>
+
 #### Segmento 2: Personal de Apoyo
 
 <td align="center"><img src="assets/images/Claudia Valdivia.png" alt="User persona 1" ></td>
+
+<div align = center>
+
+  *Figura 3. User Persona del segmento Personal de Apoyo (Claudia Valdivia). Elaboración propia.*
+</div>
 
 ### 2.3.2. User Task Matrix
 
@@ -931,9 +947,20 @@ Los Empathy Maps son herramientas de diseño efectivas, que responden a la reali
 
 <td align="center"><img src="assets/images/Empathy map - Pacientes.png" alt="Empathy Map - Pacientes" ></td>
 
+<div align = center>
+
+  *Figura 4. Empathy Map del segmento Pacientes. Elaboración propia.*
+</div>
+
 #### Segmento 2: Personal de Apoyo
 
 <td align="center"><img src="assets/images/Empathy map - Tecnicos.png" alt="Empathy Map - Tecnicos" ></td>
+
+<div align = center>
+
+  *Figura 5. Empathy Map del segmento Personal de Apoyo. Elaboración propia.*
+</div>
+
 
 ### 2.3.4. As-is Scenario Mapping
 
@@ -945,9 +972,19 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 <td align="center"><img src="assets/images/AS-IS-pacientes.png" alt="AS IS PACIENTES" ></td>
 
+<div align = center>
+
+  *Figura 6. As-Is Scenario Mapping del segmento Pacientes. Elaboración propia.*
+</div>
+
 #### Segmento 2: Personal de Apoyo
 
 <td align="center"><img src="assets/images/AS-IS-tecnicos.png" alt="AS IS TECNICOS" ></td>
+
+<div align = center>
+
+  *Figura 7. As-Is Scenario Mapping del segmento Personal de Apoyo. Elaboración propia.*
+</div>
 
 <hr class="page-break">
 
@@ -963,9 +1000,19 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 <td align="center"><img src="assets/images/chapter3/TO-BE-pacientes.png" alt="TO BE PACIENTES" ></td>
 
+<div align = center>
+
+  *Figura 8. To-Be Scenario Mapping del segmento Pacientes. Elaboración propia.*
+</div>
+
 #### Segmento 2: Personal de Apoyo
 
 <td align="center"><img src="assets/images/chapter3/TO-BE-tecnicos.png" alt="TO BE TECNICOS" ></td>
+
+<div align = center>
+
+  *Figura 9. To-Be Scenario Mapping del segmento Personal de Apoyo. Elaboración propia.*
+</div>
 
 <hr class="page-break">
 
@@ -1021,9 +1068,11 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 <td align="center"><img src="assets/images/chapter3/image.png" alt="impact map" ></td>
 
 
-<p align="center">
-  Impact Mapping 1 - Elaboración propia
-</p>
+<div align = center>
+
+  *Figura 10. Impact Mapping del segmento Pacientes. Elaboración propia.*
+</div>
+
 
 <hr class="page-break">
 
@@ -1035,9 +1084,10 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 <td align="center"><img src="assets/images/chapter3/impactmappingtecnico2.png" alt="impact map" ></td>
 
-<p align="center">
-  Impact Mapping 2 - Elaboración propia
-</p>
+<div align = center>
+
+  *Figura 11. Impact Mapping del segmento Personal de Apoyo. Elaboración propia.*
+</div>
 
 
 
@@ -1133,15 +1183,17 @@ El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el q
 
 <td align="center"><img src="assets/images/chapter4/structurizr-109687-Contexto.png" alt="Context diagram" ></td>
 
-<p align="center">
-  Diagrama de contexto Meditrack - Elaboración propia
-</p>
+<div align = center>
+
+  *Figura 12. Diagrama de contexto del sistema MediTrack. Elaboración propia.*
+</div>
 
 <td align="center"><img src="assets/images/chapter4/structurizr-109687-Contexto-key.png" alt="Context diagram" ></td>
 
-<p align="center">
-  Anexo del diagrama de contexto Meditrack - Elaboración propia
-</p>
+<div align = center>
+
+  *Figura 13. Anexo del diagrama de contexto del sistema MediTrack. Elaboración propia.*
+</div>
 
 
 ### 4.1.4. Approach driven ViewPoints Diagrams
@@ -1467,6 +1519,22 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
 - Medisafe. (s.f.). Digital Health Platform: Adherence, Persistence, and Solutions. Recuperado el 14 de abril de 2026, de https://www.medisafe.com
 
 - MyTherapy. (s.f.). Aplicación de recordatorio de medicación y gestión de la salud. Recuperado el 14 de abril de 2026, de https://www.mytherapyapp.com/es
+
+- Patel, S. (2025). Understanding treatment adherence in chronic diseases. Journal of Clinical Medicine. https://pmc.ncbi.nlm.nih.gov/articles/PMC12429436/
+
+- Schnorrerova, P. (2025). Medication adherence and intervention strategies. Springer. https://link.springer.com/article/10.1007/s44411-025-00227-0
+
+- Kardas, P. (2024). Medication non-adherence: Reflecting on two decades and future directions. Frontiers in Pharmacology. https://www.frontiersin.org/articles/10.3389/fphar.2024.1444012
+
+- Kruse, C. S., Bolton, K., & Freriks, G. (2017). The effect of patient portals on quality outcomes. Journal of Medical Internet Research, 19(2), e44. https://doi.org/10.2196/jmir.6771
+
+- Vargas Rodríguez, L. (2022). Adherencia terapéutica en pacientes con enfermedades crónicas en Lima. Universidad Peruana Cayetano Heredia.
+
+- Luzeve Gutiérrez, M. (2019). Factores asociados al incumplimiento del tratamiento en pacientes con enfermedades crónicas. Universidad Peruana Cayetano Heredia.
+
+- Consultor Salud. (2023). Adherencia al tratamiento en pacientes con hipertensión en Perú. https://consultorsalud.com
+
+- Altamirano Carbajal, G. I., Bringas Villalba, E. F., & Ventura Hernández, E. M. (2021). Adherencia al tratamiento terapéutico en pacientes con hipertensión arterial en Lima Norte. Revista Científica Cuidado y Salud Pública, 1(2), 3–8. https://doi.org/10.53684/csp.v1i2.18
 
 <hr class="page-break">
 
