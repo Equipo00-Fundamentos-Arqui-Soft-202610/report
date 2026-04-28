@@ -1099,6 +1099,74 @@ Enlace del tablero en Trello: https://trello.com/b/uqAJCw99
 
 ### 4.1.4. Approach driven ViewPoints Diagrams
 
+#### Container Diagram:
+
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+#### Identity & Profiles Service:
+
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+#### Treatment Service:
+
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+#### Reminder Service:
+
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+#### Follow-up Service:
+
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+#### Medical Analysis Service:
+
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+
+#### Appointment Service:
+
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+#### Diagramas de Actividades
+
+##### Medical Analysis Activity
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+##### Appointment Activity
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/appointment_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+##### Follow-up Activity
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/followup_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+
+##### Identity & Profiles Activity
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/profilesactivity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+
+##### Treatment Activity
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/treatment_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+
+##### Reminder Activity
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/reminder_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+#### Class Diagram
+
+<td align="center"><img src="assets/images/chapter4/diagrams/classdiagram.png" alt="Class diagram" ></td>
+
+
 ### 4.1.5. Relational/Non Relational Database Diagram
 
 ### 4.1.6. Design Patterns
