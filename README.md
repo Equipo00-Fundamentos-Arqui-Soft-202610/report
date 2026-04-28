@@ -1169,6 +1169,9 @@ Enlace del tablero en Trello: https://trello.com/b/uqAJCw99
 
 ### 4.1.5. Relational/Non Relational Database Diagram
 
+<td align="center"><img src="assets/images/chapter4/diagrams/Meditrack_Schema-2026-04-28_07-34.png" alt="DB diagram" ></td>
+
+
 ### 4.1.6. Design Patterns
 
 ### 4.1.7. Tactics
