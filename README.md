@@ -1142,7 +1142,7 @@ Enlace del tablero en Trello: https://trello.com/b/uqAJCw99
 ## 4.1. Design Concepts, ViewPoints & ER Diagrams
 
 En esta sección se presentan los conceptos de diseño y las perspectivas arquitectónicas que guían el desarrollo de MediTrack. Se busca mostrar cómo los principios arquitectónicos, los enfoques adoptados, los estilos y patrones seleccionados, así como los diagramas de contexto y 
-de entidades, permiten estructurar una solución tecnológica coherente, escalable y alineada con las necesidades de la gestión ganadera. Cada subsección detalla los lineamientos y representaciones que sirven de base para asegurar la calidad y sostenibilidad del sistema en el tiempo.
+de entidades, permiten estructurar una solución tecnológica coherente, escalable y alineada con las necesidades de la gestión medicinal de pacientes. Cada subsección detalla los lineamientos y representaciones que sirven de base para asegurar la calidad y sostenibilidad del sistema en el tiempo.
 
 ### 4.1.1. Principles Statements
 
