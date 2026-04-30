@@ -1142,7 +1142,7 @@ Enlace del tablero en Trello: https://trello.com/b/uqAJCw99
 ## 4.1. Design Concepts, ViewPoints & ER Diagrams
 
 En esta sección se presentan los conceptos de diseño y las perspectivas arquitectónicas que guían el desarrollo de MediTrack. Se busca mostrar cómo los principios arquitectónicos, los enfoques adoptados, los estilos y patrones seleccionados, así como los diagramas de contexto y 
-de entidades, permiten estructurar una solución tecnológica coherente, escalable y alineada con las necesidades de la gestión ganadera. Cada subsección detalla los lineamientos y representaciones que sirven de base para asegurar la calidad y sostenibilidad del sistema en el tiempo.
+de entidades, permiten estructurar una solución tecnológica coherente, escalable y alineada con las necesidades de la gestión medicinal de pacientes. Cada subsección detalla los lineamientos y representaciones que sirven de base para asegurar la calidad y sostenibilidad del sistema en el tiempo.
 
 ### 4.1.1. Principles Statements
 
@@ -1422,11 +1422,16 @@ Se han seleccionado las User Stories de mayor prioridad del Product Backlog que 
 |US07|Alertar stock bajo de medicamento|Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.                      |
 |US25|Ver historial de adherencia y progreso|Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                      |
 
-### 4.1.10. Quality Attribute Scenarios
 
-| ID  | Atributo de Calidad | Fuente | Estímulo | Artefacto | Entorno | Respuesta | Medida de Respuesta |
-| --- | ------------------- | ------ | -------- | --------- | ------- | --------- | ------------------- |
-|     |                     |        |          |           |         |           |                     |
+**4.1.10 Quality Attribute Scenarios**
+
+
+| ID      | Atributo de Calidad | Fuente                        | Estímulo                                              | Artefacto                                      | Entorno                              | Respuesta                                                                 | Medida de Respuesta                                      |
+|---------|---------------------|-------------------------------|-------------------------------------------------------|------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------|
+| QAS-0   | Rendimiento        | Paciente (app móvil)          | Solicitud de visualización de lista de medicamentos o envío de recordatorio push inmediato | API Gateway + Notification Service + Mobile Application | Producción, carga normal             | El sistema responde rápidamente y entrega el recordatorio o muestra la lista de medicamentos (US04, US05, US13, US16) | Latencia ≤ 2 segundos (percentil 95)                     |
+| QAS-1   | Durabilidad        | Paciente                      | Pérdida temporal de conexión a internet al registrar cumplimiento de medicamento o al consultar historial | Mobile Application (Frontend + Local Storage)  | Entorno sin conexión (modo offline)  | El cumplimiento o historial se guarda localmente y se sincroniza automáticamente cuando se recupera la conexión (US06, US07, US25) | 100 % de los registros locales se sincronizan correctamente en menos de 5 minutos tras reconexión |
+| QAS-2   | Disponibilidad     | Sistema de notificaciones / Scheduler | Fallo en el servicio de envío de recordatorios o registro de cumplimiento | Notification Service + Compliance Service      | Producción, carga normal             | El sistema detecta el fallo, reintenta automáticamente y activa fallback (SMS o notificación local) (US05, US06, US07, US13) | Tiempo de recuperación ≤ 30 segundos; 99.9 % de recordatorios críticos entregados |
+
 
 ### 4.1.11. Constraints
 
