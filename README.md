@@ -1364,9 +1364,19 @@ Service cuando el conteo de pastillas alcanza el umbral definido:
 
 ### 4.1.9. Primary Functionality (Primary User Stories)
 
+Las Primary User Stories representan las funcionalidades núcleo del sistema que ejercen la mayor influencia en la definición de la arquitectura de microservicios. Estas historias impulsan directamente la identificación de bounded contexts (DDD), los flujos de datos críticos, los mecanismos de comunicación entre servicios (sincrónicos y asíncronos), el diseño de persistencia y las estrategias de notificación y procesamiento de eventos.
+Se han seleccionado las User Stories de mayor prioridad del Product Backlog que impactan significativamente la estructura arquitectónica del producto MediTrack.
+
 | ID  | Título | Descripción |
 | --- | ------ | ----------- |
-|     |        |             |
+|US13|Subir receta médica con horarios|Como personal técnico de clínica, quiero subir una receta médica digital (PDF o formulario estructurado) con la lista de medicamentos, dosis, horarios y duración del tratamiento para que el sistema genere automáticamente los recordatorios para el paciente.             |
+|US04|Ver lista de medicamentos|Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                      |
+|US05|Recibir recordatorio de medicamento|Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                        |
+|US06|Registrar cumplimiento de medicamento|Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                              |
+|US14|Subir historial clínico|Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                   |
+|US16|Ver dashboard de tendencias de adherencia|Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento. |
+|US07|Alertar stock bajo de medicamento|Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.                      |
+|US25|Ver historial de adherencia y progreso|Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                      |
 
 ### 4.1.10. Quality Attribute Scenarios
 
