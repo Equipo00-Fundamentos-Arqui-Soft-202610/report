@@ -1356,11 +1356,55 @@ Service cuando el conteo de pastillas alcanza el umbral definido:
   registrado, llegue a los servicios correctos en el momento oportuno.
 ### 4.1.7. Tactics
 
++ **Optimización de la Base de Datos:**
+
+  + Utilizar índices en las consultas relacionadas con pacientes, medicamentos, recetas e historiales clínicos para mejorar la velocidad de acceso a la información.
+
+  + Implementar una estructura de datos eficiente que permita manejar relaciones entre pacientes, tratamientos y personal técnico sin redundancias.
+
+  + Realizar análisis periódicos para identificar consultas ineficientes, especialmente en dashboards de adherencia y búsqueda de pacientes.
+
++ **Caché de Datos y Consultas:**
+
+  + Implementar mecanismos de caché para almacenar información frecuente como lista de medicamentos, horarios y datos del paciente, reduciendo la carga del sistema.
+
+  + Aplicar caché a nivel de aplicación para mejorar la experiencia del usuario en consultas repetitivas, como visualización de tratamientos o historial clínico.
+
++ **Optimización de Código y Arquitectura:**
+
+  + Realizar pruebas de rendimiento para identificar cuellos de botella en procesos críticos como generación de recordatorios y carga de recetas.
+
+  + Aplicar patrones de diseño que favorezcan la escalabilidad y mantenibilidad del sistema.
+
+  + Utilizar una arquitectura basada en microservicios para separar funcionalidades como gestión de usuarios, tratamientos, notificaciones y análisis de datos.
+
++ **Optimización de Recursos en el Frontend:**
+
+  + Minimizar el uso de recursos en la aplicación móvil y web mediante técnicas de compresión y optimización de archivos.
+
+  + Implementar carga eficiente de datos para asegurar una experiencia fluida, especialmente en dispositivos móviles y en usuarios adultos mayores.
+
++ **Monitorización y Gestión de Errores:**
+
+  + Implementar herramientas de monitoreo para supervisar el rendimiento del sistema en tiempo real, especialmente en el envío de notificaciones y procesamiento de datos clínicos.
+
+  + Desarrollar un sistema robusto de manejo de errores que permita registrar fallos y garantizar la continuidad del servicio sin afectar al usuario.
+
 <hr class="page-break">
 
 ## 4.2. Architectural Drivers
 
 ### 4.1.8. Design Purpose
+
+Para el desarrollo de la aplicación MediTrack, orientada al seguimiento de tratamientos médicos y la integración entre pacientes y centros de salud, se propone la implementación de una arquitectura basada en microservicios.
+
+Esta arquitectura permite organizar el sistema en componentes independientes, facilitando el desarrollo, mantenimiento y escalabilidad de funcionalidades clave como gestión de medicamentos, recordatorios, citas médicas y carga de información clínica. Esto resulta especialmente importante considerando que el sistema debe atender tanto a pacientes como al personal técnico de clínicas y hospitales.
+
+La escalabilidad es un factor crítico, ya que el sistema debe soportar incrementos en el número de usuarios y en la cantidad de datos clínicos procesados. Por ejemplo, a medida que más instituciones de salud se integren a la plataforma, el sistema deberá manejar grandes volúmenes de recetas, historiales y notificaciones sin afectar el rendimiento.
+
+Además, la arquitectura de microservicios permite desplegar y actualizar componentes de manera independiente. Esto es clave en MediTrack, donde módulos como notificaciones, gestión de pacientes o dashboards de adherencia pueden evolucionar de forma continua sin interrumpir el funcionamiento general del sistema.
+
+Este enfoque también facilita la integración con sistemas externos de salud y permite incorporar nuevas funcionalidades en el futuro, como análisis predictivo de adherencia o integración con dispositivos médicos, alineándose con la evolución del sector de salud digital.
 
 ### 4.1.9. Primary Functionality (Primary User Stories)
 
