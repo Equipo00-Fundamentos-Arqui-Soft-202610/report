@@ -1198,10 +1198,162 @@ El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el q
 
 ### 4.1.4. Approach driven ViewPoints Diagrams
 
+#### Container Diagram:
+
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+#### Component Diagrams:
+
+#### Identity & Profiles Service:
+
+<td align="center"><img src="assets/images/chapter4/diagrams/component/identityprofile.jpeg" alt="" ></td>
+
+
+#### Treatment Service:
+
+<td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="analytics" ></td>
+
+
+#### Reminder Service:
+
+<td align="center"><img src="assets/images/chapter4/diagrams/component/reminder.jpeg" alt="reminder service" ></td>
+
+
+#### Follow-up Service:
+
+<td align="center"><img src="assets/images/chapter4/diagrams/component/followup.jpeg" ></td>
+
+#### Medical Analysis Service:
+
+<td align="center"><img src="assets/images/chapter4/diagrams//component/medical_analysis.jpeg" alt="medical analysis" ></td>
+
+
+
+#### Appointment Service:
+
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+#### Diagramas de Actividades
+
+##### Medical Analysis Activity
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+##### Appointment Activity
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/appointment_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+##### Follow-up Activity
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/followup_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+
+##### Identity & Profiles Activity
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/profilesactivity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+
+##### Treatment Activity
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/treatment_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+
+##### Reminder Activity
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/reminder_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+
+#### Class Diagram
+
+<td align="center"><img src="assets/images/chapter4/diagrams/classdiagram.png" alt="Class diagram" ></td>
+
+
 ### 4.1.5. Relational/Non Relational Database Diagram
+
+<td align="center"><img src="assets/images/chapter4/diagrams/Meditrack_Schema-2026-04-28_07-34.png" alt="DB diagram" ></td>
+
 
 ### 4.1.6. Design Patterns
 
+#### Repository
+El presente patrón se aplica en todos los microservicios de MediTrack para abstraer
+el acceso a datos. Cada servicio cuenta con repositorios especializados como
+`MedicationRepository`, `AppointmentRepository` o `ComplianceRepository`, que
+encapsulan las consultas a MySQL detrás de una interfaz limpia:
+
+- Desacopla la lógica de negocio del mecanismo de persistencia, permitiendo que
+  el Treatment Service busque medicamentos con `medicationRepository.getByPatientId(id)`
+  sin conocer el SQL subyacente.
+- Facilita las pruebas unitarias al permitir reemplazar el repositorio real por
+  un mock sin modificar la lógica del servicio.
+- Centraliza las consultas a base de datos, evitando duplicación y asegurando
+  consistencia en el acceso a los datos clínicos.
+
+#### Singleton
+Se utiliza en cada microservicio para gestionar la conexión al pool de base de
+datos MySQL, garantizando que exista una única instancia durante todo el ciclo
+de vida del servicio:
+
+- Garantiza un único punto de acceso al pool de conexiones, evitando el
+  agotamiento de recursos ante múltiples instancias simultáneas.
+- Asegura que `DatabaseConnectionPool.getInstance()` devuelva siempre la misma
+  instancia ya inicializada, sin importar desde qué repositorio se invoque.
+- Simplifica la configuración y el monitoreo del uso de conexiones en cada
+  microservicio.
+
+#### Factory Method
+El presente patrón se aplica en el Reminder Service para la creación de
+recordatorios. Dependiendo del tipo de entidad (`medication`, `appointment`,
+`exam`), se instancia una fábrica especializada: `MedicationReminderFactory`,
+`AppointmentReminderFactory` o `ExamReminderFactory`, cada una con su propio
+mensaje, tiempo de anticipación y comportamiento:
+
+- Elimina bloques condicionales complejos al centralizar la lógica de
+  construcción de cada tipo de recordatorio en su propia fábrica.
+- Facilita la incorporación de nuevos tipos de recordatorio en el futuro sin
+  modificar el código existente, respetando el principio Open/Closed.
+- Asegura consistencia en la creación de recordatorios, garantizando que cada
+  tipo se construya con los parámetros correctos.
+
+#### Strategy
+El presente patrón se aplica en el Medical Analysis Service para el cálculo del
+porcentaje de adherencia. Se define una interfaz `AdherenceCalculator` con
+implementaciones intercambiables: `MedicationAdherenceStrategy` y
+`AppointmentAdherenceStrategy`, utilizadas según el contexto del reporte:
+
+- Permite calcular la adherencia de medicamentos y citas con algoritmos
+  independientes sin que el servicio conozca cuál estrategia está ejecutando.
+- Facilita la incorporación de nuevas métricas de adherencia (por ejemplo, por
+  examen clínico) sin modificar el código del servicio principal.
+- Mejora la mantenibilidad al separar cada lógica de cálculo en una clase
+  dedicada y fácilmente testeable.
+
+#### Decorator
+El presente patrón se emplea en el Treatment Service durante la carga de recetas
+médicas. La receta pasa por capas de validación encadenadas:
+verificación de existencia del paciente, validación del medicamento contra el
+catálogo oficial y verificación de horarios completos:
+
+- Permite agregar o quitar validaciones de forma independiente sin modificar las
+  capas existentes, respetando el principio Open/Closed.
+- Mejora la legibilidad del flujo de validación al separar cada responsabilidad
+  en su propio decorador.
+- Reduce el riesgo de errores en recetas cargadas al sistema, garantizando que
+  toda prescripción pase por las verificaciones necesarias antes de persistirse.
+
+#### Observer
+En MediTrack se aplica para la comunicación asíncrona entre microservicios. Cuando
+el Follow-up Service registra el cumplimiento de un medicamento, publica el evento
+`CumplimientoRegistrado`; el Reminder Service lo escucha y cancela el recordatorio
+pendiente. De forma similar, el evento `StockBajo` es publicado por el Treatment
+Service cuando el conteo de pastillas alcanza el umbral definido:
+
+- Facilita la comunicación desacoplada entre microservicios, ya que el emisor no
+  necesita conocer a los receptores del evento.
+- Permite añadir nuevos suscriptores en el futuro (por ejemplo, un servicio de
+  alertas al médico) sin modificar el código del servicio emisor.
+- Garantiza que la información crítica, como el stock bajo o el cumplimiento
+  registrado, llegue a los servicios correctos en el momento oportuno.
 ### 4.1.7. Tactics
 
 + **Optimización de la Base de Datos:**
@@ -1256,9 +1408,19 @@ Este enfoque también facilita la integración con sistemas externos de salud y 
 
 ### 4.1.9. Primary Functionality (Primary User Stories)
 
+Las Primary User Stories representan las funcionalidades núcleo del sistema que ejercen la mayor influencia en la definición de la arquitectura de microservicios. Estas historias impulsan directamente la identificación de bounded contexts (DDD), los flujos de datos críticos, los mecanismos de comunicación entre servicios (sincrónicos y asíncronos), el diseño de persistencia y las estrategias de notificación y procesamiento de eventos.
+Se han seleccionado las User Stories de mayor prioridad del Product Backlog que impactan significativamente la estructura arquitectónica del producto MediTrack.
+
 | ID  | Título | Descripción |
 | --- | ------ | ----------- |
-|     |        |             |
+|US13|Subir receta médica con horarios|Como personal técnico de clínica, quiero subir una receta médica digital (PDF o formulario estructurado) con la lista de medicamentos, dosis, horarios y duración del tratamiento para que el sistema genere automáticamente los recordatorios para el paciente.             |
+|US04|Ver lista de medicamentos|Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                      |
+|US05|Recibir recordatorio de medicamento|Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                        |
+|US06|Registrar cumplimiento de medicamento|Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                              |
+|US14|Subir historial clínico|Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                   |
+|US16|Ver dashboard de tendencias de adherencia|Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento. |
+|US07|Alertar stock bajo de medicamento|Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.                      |
+|US25|Ver historial de adherencia y progreso|Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                      |
 
 ### 4.1.10. Quality Attribute Scenarios
 
