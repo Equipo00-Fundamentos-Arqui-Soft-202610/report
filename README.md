@@ -1101,7 +1101,7 @@ Enlace del tablero en Trello: https://trello.com/b/uqAJCw99
 
 #### Container Diagram:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Container Diagram" ></td>
 
 
 #### Component Diagrams:
