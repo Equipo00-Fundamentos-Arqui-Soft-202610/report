@@ -113,20 +113,20 @@
     - [4.1.6. Design Patterns](#416-design-patterns)
     - [4.1.7. Tactics](#417-tactics)
   - [4.2. Architectural Drivers](#42-architectural-drivers)
-    - [4.1.8. Design Purpose](#418-design-purpose)
-    - [4.1.9. Primary Functionality (Primary User Stories)](#419-primary-functionality-primary-user-stories)
-    - [4.1.10. Quality Attribute Scenarios](#4110-quality-attribute-scenarios)
-    - [4.1.11. Constraints](#4111-constraints)
-    - [4.1.12. Architectural Concerns](#4112-architectural-concerns)
+    - [4.2.1. Design Purpose](#421-design-purpose)
+    - [4.2.2. Primary Functionality (Primary User Stories)](#422-primary-functionality-primary-user-stories)
+    - [4.2.3. Quality Attribute Scenarios](#423-quality-attribute-scenarios)
+    - [4.2.4. Constraints](#424-constraints)
+    - [4.2.5. Architectural Concerns](#425-architectural-concerns)
   - [4.3. ADD Iterations](#43-add-iterations)
-    - [4.2.X. Iteration N: Iteration Name](#42x-iteration-n-iteration-name)
-      - [4.2.X.1. Architectural Design Backlog N](#42x1-architectural-design-backlog-n)
-      - [4.2.X.2. Establish Iteration Goal by Selecting Drivers](#42x2-establish-iteration-goal-by-selecting-drivers)
-      - [4.2.X.3. Choose One or More Elements of the System to Refine](#42x3-choose-one-or-more-elements-of-the-system-to-refine)
-      - [4.2.X.4. Choose One or More Design Concepts That Satisfy the Selected Drivers](#42x4-choose-one-or-more-design-concepts-that-satisfy-the-selected-drivers)
-      - [4.2.X.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces](#42x5-instantiate-architectural-elements-allocate-responsibilities-and-define-interfaces)
-      - [4.2.X.6. Sketch Views (C4 & UML) and Record Design Decisions](#42x6-sketch-views-c4--uml-and-record-design-decisions)
-      - [4.2.X.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)](#42x7-analysis-of-current-design-and-review-iteration-goal-kanban-board)
+    - [4.3. Iteration N: Iteration Name](#42x-iteration-n-iteration-name)
+      - [4.3.1. Architectural Design Backlog N](#42x1-architectural-design-backlog-n)
+      - [4.3.2. Establish Iteration Goal by Selecting Drivers](#42x2-establish-iteration-goal-by-selecting-drivers)
+      - [4.3.3. Choose One or More Elements of the System to Refine](#42x3-choose-one-or-more-elements-of-the-system-to-refine)
+      - [4.3.4. Choose One or More Design Concepts That Satisfy the Selected Drivers](#42x4-choose-one-or-more-design-concepts-that-satisfy-the-selected-drivers)
+      - [4.3.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces](#42x5-instantiate-architectural-elements-allocate-responsibilities-and-define-interfaces)
+      - [4.3.6. Sketch Views (C4 & UML) and Record Design Decisions](#42x6-sketch-views-c4--uml-and-record-design-decisions)
+      - [4.3.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)](#42x7-analysis-of-current-design-and-review-iteration-goal-kanban-board)
 
 - [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
   - [5.1. Testing Suites & General Patterns](#51-testing-suites--general-patterns)
@@ -1141,8 +1141,7 @@ Enlace del tablero en Trello: https://trello.com/b/uqAJCw99
 
 ## 4.1. Design Concepts, ViewPoints & ER Diagrams
 
-En esta sección se presentan los conceptos de diseño y las perspectivas arquitectónicas que guían el desarrollo de MediTrack. Se busca mostrar cómo los principios arquitectónicos, los enfoques adoptados, los estilos y patrones seleccionados, así como los diagramas de contexto y 
-de entidades, permiten estructurar una solución tecnológica coherente, escalable y alineada con las necesidades de la gestión medicinal de pacientes. Cada subsección detalla los lineamientos y representaciones que sirven de base para asegurar la calidad y sostenibilidad del sistema en el tiempo.
+En esta sección se presentan los conceptos de diseño y las perspectivas arquitectónicas que guían el desarrollo de MediTrack. Se busca mostrar cómo los principios arquitectónicos, los enfoques adoptados, los estilos y patrones seleccionados, así como los diagramas de contexto y de entidades, permiten estructurar una solución tecnológica coherente, escalable y alineada con las necesidades de la gestión medicinal de pacientes. Cada subsección detalla los lineamientos y representaciones que sirven de base para asegurar la calidad y sostenibilidad del sistema en el tiempo.
 
 ### 4.1.1. Principles Statements
 
@@ -1394,7 +1393,7 @@ Service cuando el conteo de pastillas alcanza el umbral definido:
 
 ## 4.2. Architectural Drivers
 
-### 4.1.8. Design Purpose
+### 4.2.1. Design Purpose
 
 Para el desarrollo de la aplicación MediTrack, orientada al seguimiento de tratamientos médicos y la integración entre pacientes y centros de salud, se propone la implementación de una arquitectura basada en microservicios.
 
@@ -1406,7 +1405,7 @@ Además, la arquitectura de microservicios permite desplegar y actualizar compon
 
 Este enfoque también facilita la integración con sistemas externos de salud y permite incorporar nuevas funcionalidades en el futuro, como análisis predictivo de adherencia o integración con dispositivos médicos, alineándose con la evolución del sector de salud digital.
 
-### 4.1.9. Primary Functionality (Primary User Stories)
+### 4.2.2. Primary Functionality (Primary User Stories)
 
 Las Primary User Stories representan las funcionalidades núcleo del sistema que ejercen la mayor influencia en la definición de la arquitectura de microservicios. Estas historias impulsan directamente la identificación de bounded contexts (DDD), los flujos de datos críticos, los mecanismos de comunicación entre servicios (sincrónicos y asíncronos), el diseño de persistencia y las estrategias de notificación y procesamiento de eventos.
 Se han seleccionado las User Stories de mayor prioridad del Product Backlog que impactan significativamente la estructura arquitectónica del producto MediTrack.
@@ -1423,8 +1422,9 @@ Se han seleccionado las User Stories de mayor prioridad del Product Backlog que 
 |US25|Ver historial de adherencia y progreso|Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                      |
 
 
-**4.1.10 Quality Attribute Scenarios**
+### 4.2.3 Quality Attribute Scenarios
 
+Los escenarios de atributos de calidad permiten analizar cómo debe reaccionar la aplicación ante distintos estímulos y condiciones críticas. 
 
 | ID      | Atributo de Calidad | Fuente                        | Estímulo                                              | Artefacto                                      | Entorno                              | Respuesta                                                                 | Medida de Respuesta                                      |
 |---------|---------------------|-------------------------------|-------------------------------------------------------|------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------|
@@ -1433,25 +1433,42 @@ Se han seleccionado las User Stories de mayor prioridad del Product Backlog que 
 | QAS-2   | Disponibilidad     | Sistema de notificaciones / Scheduler | Fallo en el servicio de envío de recordatorios o registro de cumplimiento | Notification Service + Compliance Service      | Producción, carga normal             | El sistema detecta el fallo, reintenta automáticamente y activa fallback (SMS o notificación local) (US05, US06, US07, US13) | Tiempo de recuperación ≤ 30 segundos; 99.9 % de recordatorios críticos entregados |
 
 
-### 4.1.11. Constraints
+### 4.2.4. Constraints
+
+En esta sección se documentan las restricciones tecnológicas, legales y operativas que acotan el espacio de decisiones arquitectónicas de MediTrack.
 
 | ID  | Restricción |
 | --- | ----------- |
-|     |             |
+|  CON-01   | Todos los microservicios utilizarán MySQL como único motor de persistencia relacional. No se introducirán otros motores relacionales.|
+|  CON-02   |  El despliegue se realizará sobre el plan gratuito de Azure for Students, lo que limita instancias simultáneas, RAM por servicio y ancho de banda disponible.|
+|  CON-03   | Los clientes (app móvil y portal web) se comunicarán con el backend exclusivamente mediante API REST bajo HTTPS. No se usará GraphQL ni gRPC en la versión inicial.|
+|  CON-04   |  La gestión de sesiones y roles (Paciente y Personal Técnico) se implementará con JSON Web Tokens. No se integrará proveedor externo de identidad en la primera versión.|
+|  CON-05   |  El envío de recordatorios push se realizará exclusivamente con Firebase Cloud Messaging, al ser gratuito y compatible con Android. No se contratará servicio de mensajería de pago.|
+|  CON-06   | Todo el tráfico externo pasará por un único API Gateway. Los microservicios no expondrán puertos directos al internet público.|
+|  CON-07   | Backend en Java con Spring Boot, frontend web en React y cliente móvil en Flutter. No se incorporarán otros lenguajes sin consenso del equipo.|
 
-### 4.1.12. Architectural Concerns
+### 4.2.5. Architectural Concerns
+
+En esta sección se identifican las preocupaciones arquitectónicas de mayor impacto, derivadas tanto de los requisitos funcionales como de los riesgos y necesidades de los stakeholders.
 
 | ID  | Concern | Descripción |
 | --- | ------- | ----------- |
-|     |         |             |
+|  AC-01  |   Separación estricta de roles y datos |     El sistema atiende dos segmentos con permisos distintos. Un fallo en la separación Paciente/Personal Técnico implicaría una violación de privacidad. Debe garantizarse tanto en el API Gateway como a nivel de base de datos por microservicio |
+|  AC-02  |   Entrega garantizada de recordatorios |    El Reminder Service es el componente de mayor impacto clínico. Un fallo en el envío de un recordatorio puede derivar en una dosis omitida. Se requieren reintentos automáticos y un mecanismo de fallback ante fallo de FCM. |
+|  AC-03  |   Coherencia en modo offline y sincronización |     Los pacientes deben poder registrar cumplimientos sin conexión. La arquitectura debe definir la estrategia de resolución de conflictos al sincronizar registros locales con el servidor.|
+|  AC-04  |   Trazabilidad de fallos en producción|     EDado que MediTrack maneja datos clínicos sensibles, cualquier fallo (notificación no entregada, receta mal cargada) debe poder rastrearse mediante logging centralizado. |
+|  AC-05  |   Accesibilidad para adultos mayores |    Una parte del segmento Paciente tiene baja alfabetización digital. El backend debe entregar datos ya procesados y simplificados para que el frontend reduzca la carga cognitiva del usuario.|
+|  AC-06  |   Mantenibilidad e independencia de servicios |    El equipo es pequeño. Cada microservicio debe poder modificarse, testearse y desplegarse de forma independiente para reducir el riesgo de regresiones entre módulos. |
 
 <hr class="page-break">
 
 ## 4.3. ADD Iterations
 
-### 4.2.1. Iteration 1: [Nombre de la Iteración]
+El proceso ADD (Attribute-Driven Design) permite tomar decisiones arquitectónicas guiadas por los atributos de calidad y drivers del sistema. A continuación se presenta la primera iteración, orientada a establecer la estructura base de microservicios.
 
-#### 4.2.1.1. Architectural Design Backlog 1
+### 4.3.1. Iteration 1: [Nombre de la Iteración]
+
+#### 4.3.1.1. Architectural Design Backlog 1
 
 <table>
   <thead>
@@ -1714,8 +1731,6 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
 ### 5.4.2. Cloud Architecture Deployment (AWS, Microsoft Azure o Google Cloud)
 
 <hr class="page-break">
-
-# Conclusiones
 
 ## Conclusiones y recomendaciones
 
