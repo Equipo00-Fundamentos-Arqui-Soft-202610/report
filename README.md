@@ -59,16 +59,16 @@
 
 # Registro de Versiones del Informe
 
-| Version | Fecha | Autor | Descripción de modificación |
-| ------- | ----- | ----- | --------------------------- |
-| 1.0 | 11/04/2026 | Rojas Reategui, Victor Manuel | Creación de la estructura inicial del informe |
-| 1.1 | 13/04/2026 | Gonzales Alvarado, Javier Sebastian | Capítulo I: descripción de la startup, Solution Profile, Lean UX Process y segmentos objetivo (1.1–1.3) |
-| 1.2 | 17/04/2026 | Sulca Sanchez, Piero Angel | Capítulo II: diseño de entrevistas (2.2.1) |
-| 1.3 | 17/04/2026 | Quijada Magro, Jeremy Alexander | Capítulo II: análisis de competidores (2.1), registro y análisis de entrevistas del segmento de personal técnico (2.2.2, 2.2.3) y needfinding — User Personas (2.3.1), User Task Matrix (2.3.2), Empathy Maps (2.3.3), As-Is Scenario Mapping (2.3.4) |
-| 1.4 | 18/04/2026 | Rivera Ratachi, Renzo Sebastian | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3) |
-| 1.5 | 18/04/2026 | Sulca Sanchez, Piero Angel | Capítulo III: Product Backlog (3.4) |
-| 1.6 | 18/04/2026 | Rojas Reategui, Victor Manuel | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4) |
-| 1.7 | 18/04/2026 | Sulca Sanchez, Piero Angel | Capítulo III: reordenamiento del Product Backlog por valor de negocio, ubicando las User Stories de autenticación al final (3.4) |
+| Version | Fecha      | Autor                               | Descripción de modificación                                                                                                                                                                                                                           |
+| ------- | ---------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.0     | 11/04/2026 | Rojas Reategui, Victor Manuel       | Creación de la estructura inicial del informe                                                                                                                                                                                                         |
+| 1.1     | 13/04/2026 | Gonzales Alvarado, Javier Sebastian | Capítulo I: descripción de la startup, Solution Profile, Lean UX Process y segmentos objetivo (1.1–1.3)                                                                                                                                               |
+| 1.2     | 17/04/2026 | Sulca Sanchez, Piero Angel          | Capítulo II: diseño de entrevistas (2.2.1)                                                                                                                                                                                                            |
+| 1.3     | 17/04/2026 | Quijada Magro, Jeremy Alexander     | Capítulo II: análisis de competidores (2.1), registro y análisis de entrevistas del segmento de personal técnico (2.2.2, 2.2.3) y needfinding — User Personas (2.3.1), User Task Matrix (2.3.2), Empathy Maps (2.3.3), As-Is Scenario Mapping (2.3.4) |
+| 1.4     | 18/04/2026 | Rivera Ratachi, Renzo Sebastian     | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3)                                                                                                                                               |
+| 1.5     | 18/04/2026 | Sulca Sanchez, Piero Angel          | Capítulo III: Product Backlog (3.4)                                                                                                                                                                                                                   |
+| 1.6     | 18/04/2026 | Rojas Reategui, Victor Manuel       | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4)                                                                                                                                                               |
+| 1.7     | 18/04/2026 | Sulca Sanchez, Piero Angel          | Capítulo III: reordenamiento del Product Backlog por valor de negocio, ubicando las User Stories de autenticación al final (3.4)                                                                                                                      |
 
 <hr class="page-break">
 
@@ -500,9 +500,9 @@ Debe tener un diseño simple, intuitivo y accesible para todo tipo de usuarios, 
 
 <div align = center>
 
-  *Figura 1. Lean UX Canvas del producto MediTrack. Elaboración propia.*
-</div>
+_Figura 1. Lean UX Canvas del producto MediTrack. Elaboración propia._
 
+</div>
 
 <hr class="page-break">
 
@@ -540,7 +540,6 @@ Este segmento agrupa al personal que sostiene la operatividad diaria de la atenc
   - Personal: Internos de medicina, técnicos de enfermería, coordinadores de piso.
 
 - Características Geográficas:
-
   - Ubicación: Zonas urbanas.
   - Región: Lima Metropolitana (fase inicial)
   - Infraestructura: Instituciones que aún dependen fuertemente del papel y que presentan cuellos de botella en la entrega de información.
@@ -754,12 +753,13 @@ En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al 
 
 <td align="center"><img src="assets/images//entrevistas//Entrevista 3.png" alt="Entrevista 1"></td>
 
-**Link de la entrevista:**  https://youtu.be/QLU1UJcwt7Q
+**Link de la entrevista:** https://youtu.be/QLU1UJcwt7Q
 
 ##### Datos de la entrevista:
+
 **Nombre:** Vicenta Ramos Coronado
-**Edad:**  76 años
-**Fecha:**  17/04/2026
+**Edad:** 76 años
+**Fecha:** 17/04/2026
 **Duración:** 11 minutos
 
 **Resumen:** Vicenta Ramos es una adulta mayor de 76 años que padece artritis, una enfermedad crónica que le causa dolor en las manos y la obliga a seguir un tratamiento con pastillas, inyecciones y citas médicas cada tres meses. Aunque actualmente ya se ha acostumbrado a sus medicamentos y puede recordarlos con facilidad, al inicio le resultaba complicado. Sus hijas se encargan de coordinar sus citas médicas, y aunque ella está agradecida por su apoyo, le gustaría ser más independiente. Por eso, considera que una aplicación que le ayude a recordar sus medicamentos y citas sería de gran utilidad.
@@ -770,36 +770,36 @@ En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al 
 
 <td align="center"><img src="assets/images//entrevistas//Entrevista 1.png" alt="Entrevista 1"></td>
 
-**Link de la entrevista:**  https://youtu.be/Yh0xtK4cxbM
+**Link de la entrevista:** https://youtu.be/Yh0xtK4cxbM
 
 ##### Datos de la entrevista:
+
 **Nombre:** Gabrielle Coronel
-**Edad:**  22 años
-**Fecha:**  17/04/2026
+**Edad:** 22 años
+**Fecha:** 17/04/2026
 **Duración:** 7 minutos
 
 **Resumen:** Gabrielle describe un entorno hospitalario donde el desorden administrativo es la norma, resaltando que la mayoría de los procesos de seguimiento y gestión de recetas se realizan de forma manual mediante papeles, cuadernos y fólderes que frecuentemente se pierden o se deterioran por factores ambientales. Menciona que, aunque existen algunos sistemas, ella debe recurrir a herramientas personales como Excel para llevar un control propio de sus pacientes, enfrentando dificultades constantes para acceder a historiales clínicos completos o previos que facilitarían una atención de mayor calidad y eficiencia.
-
 
 ##### Entrevista 2:
 
 <td align="center"><img src="assets/images//entrevistas/Entrevista 2.png" alt="Entrevista 2"></td>
 
-**Link de la entrevista:**  https://youtu.be/l2zcC1aD70Q
+**Link de la entrevista:** https://youtu.be/l2zcC1aD70Q
 
 ##### Datos de la entrevista:
+
 **Nombre:** Yanet Magro
-**Edad:**  49 años
-**Fecha:**  17/04/2026
+**Edad:** 49 años
+**Fecha:** 17/04/2026
 **Duración:** 9 minutos
 
 **Resumen:** Yanet enfatiza la problemática de la falta de interoperabilidad y actualización en los sistemas de salud, explicando cómo el deterioro de las historias clínicas físicas y la caligrafía ilegible de los colegas entorpecen la continuidad del tratamiento. Señala que, si bien la digitalización ayuda, la falta de capacitación del personal y la lentitud en la carga de resultados (como exámenes de laboratorio) generan costos adicionales y pérdida de tiempo tanto para el Estado como para el paciente. Asimismo, resalta que un diagnóstico correcto, apoyado en un sistema digital eficiente, es vital para asegurar que el paciente cumpla su tratamiento y asista a sus citas de control.
 
-
 ### 2.2.3. Análisis de entrevistas
 
-
 #### A. Segmento: Pacientes
+
 Al analizar las entrevistas del segmento de pacientes, se identifican varios puntos de dolor que refuerzan la necesidad de una solución:
 
 - Existe una dependencia significativa del entorno familiar para gestionar el tratamiento. Muchos pacientes, especialmente adultos mayores, delegan la organización de sus citas médicas y seguimiento a familiares, lo que limita su autonomía.
@@ -809,14 +809,14 @@ Al analizar las entrevistas del segmento de pacientes, se identifican varios pun
 - Se evidencia una necesidad de mayor independencia y apoyo personalizado, ya que, aunque con el tiempo algunos pacientes logran adaptarse, valoran herramientas que les permitan gestionar su salud de forma más autónoma y segura, reduciendo la carga sobre sus familiares.
 
 #### B. Segmento: Personal de Apoyo
+
 Al contrastar diferentes perspectivas, se identifican puntos de dolor críticos que validan la necesidad de una solución:
 
--  Existe una **desconexión total** entre lo que sucede en el consultorio y la realidad del paciente en casa. Ambas profesionales coinciden en que el seguimiento depende de que el paciente recuerde la información o de que el sistema médico logre ubicar un documento físico, lo cual falla en un alto porcentaje de los casos.
+- Existe una **desconexión total** entre lo que sucede en el consultorio y la realidad del paciente en casa. Ambas profesionales coinciden en que el seguimiento depende de que el paciente recuerde la información o de que el sistema médico logre ubicar un documento físico, lo cual falla en un alto porcentaje de los casos.
 
 - El uso de papel es peligroso. La pérdida de recetas y la dificultad para leer indicaciones médicas (mencionada por Yanet) son causas directas de los errores de dosis y el abandono del tratamiento que MediTrack busca resolver.
 
 - Las entrevistas sugieren que el **éxito terapéutico** está ligado a la **organización**. Mientras que los pacientes organizados "se curan", aquellos que olvidan sus citas o dosis (debido al caos administrativo) recaen, generando mayores costos hospitalarios y complicaciones graves.
-
 
 <hr class="page-break">
 
@@ -834,7 +834,8 @@ En esta sección, se presentan las fichas de User Persona diseñadas para repres
 
 <div align = center>
 
-  *Figura 2. User Persona del segmento Pacientes (Ricardo Alberto Luján). Elaboración propia.*
+_Figura 2. User Persona del segmento Pacientes (Ricardo Alberto Luján). Elaboración propia._
+
 </div>
 
 #### Segmento 2: Personal de Apoyo
@@ -843,7 +844,8 @@ En esta sección, se presentan las fichas de User Persona diseñadas para repres
 
 <div align = center>
 
-  *Figura 3. User Persona del segmento Personal de Apoyo (Claudia Valdivia). Elaboración propia.*
+_Figura 3. User Persona del segmento Personal de Apoyo (Claudia Valdivia). Elaboración propia._
+
 </div>
 
 ### 2.3.2. User Task Matrix
@@ -957,7 +959,8 @@ Los Empathy Maps son herramientas de diseño efectivas, que responden a la reali
 
 <div align = center>
 
-  *Figura 4. Empathy Map del segmento Pacientes. Elaboración propia.*
+_Figura 4. Empathy Map del segmento Pacientes. Elaboración propia._
+
 </div>
 
 #### Segmento 2: Personal de Apoyo
@@ -966,9 +969,9 @@ Los Empathy Maps son herramientas de diseño efectivas, que responden a la reali
 
 <div align = center>
 
-  *Figura 5. Empathy Map del segmento Personal de Apoyo. Elaboración propia.*
-</div>
+_Figura 5. Empathy Map del segmento Personal de Apoyo. Elaboración propia._
 
+</div>
 
 ### 2.3.4. As-is Scenario Mapping
 
@@ -982,7 +985,8 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 <div align = center>
 
-  *Figura 6. As-Is Scenario Mapping del segmento Pacientes. Elaboración propia.*
+_Figura 6. As-Is Scenario Mapping del segmento Pacientes. Elaboración propia._
+
 </div>
 
 #### Segmento 2: Personal de Apoyo
@@ -991,7 +995,8 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 <div align = center>
 
-  *Figura 7. As-Is Scenario Mapping del segmento Personal de Apoyo. Elaboración propia.*
+_Figura 7. As-Is Scenario Mapping del segmento Personal de Apoyo. Elaboración propia._
+
 </div>
 
 <hr class="page-break">
@@ -1010,7 +1015,8 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 <div align = center>
 
-  *Figura 8. To-Be Scenario Mapping del segmento Pacientes. Elaboración propia.*
+_Figura 8. To-Be Scenario Mapping del segmento Pacientes. Elaboración propia._
+
 </div>
 
 #### Segmento 2: Personal de Apoyo
@@ -1019,125 +1025,115 @@ Para tener una visión más clara de los escenarios, puede revisar el siguiente 
 
 <div align = center>
 
-  *Figura 9. To-Be Scenario Mapping del segmento Personal de Apoyo. Elaboración propia.*
+_Figura 9. To-Be Scenario Mapping del segmento Personal de Apoyo. Elaboración propia._
+
 </div>
 
 <hr class="page-break">
 
 ## 3.2. User Stories
 
-| Epic / Story ID | Título                                           | Descripción                                                                                                                                                            | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                         | Relación con Epic |
-| --------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| EP01            | Registro y roles                                 | Como usuario de MediTrack, quiero registrarme y acceder al sistema con un rol específico, para usar las funciones correspondientes a paciente o personal técnico.      | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
-| EP02            | Gestión de medicamentos para pacientes           | Como paciente con tratamiento activo, quiero gestionar mis medicamentos con recordatorios y alertas de stock, para no olvidar ninguna dosis ni quedarme sin pastillas. | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
-| EP03            | Gestión de citas y exámenes                      | Como paciente, quiero gestionar mis citas médicas y exámenes clínicos, para estar preparado y no faltar a ninguna.                                                     | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
-| EP04            | Carga de datos clínicos para personal técnico    | Como personal técnico de hospital, quiero subir recetas e historiales clínicos, para que los pacientes reciban su información automáticamente.                         | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
-| EP05            | Estadísticas y tendencias para personal técnico  | Como personal técnico, quiero ver estadísticas de adherencia y cumplimiento, para analizar la evolución de mis pacientes.                                              | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
-| EP06            | Edición de perfil                                | Como usuario de MediTrack, quiero editar mi información personal, para mantener mis datos actualizados.                                                                | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
-| US01            | Registro de paciente                             | Como paciente, quiero crear una cuenta en la aplicación móvil, para gestionar mis tratamientos y citas.                                                                       | **Escenario 1:** Dado que el paciente ingresa nombre, correo y contraseña válidos, cuando presiona "Registrarse", entonces la cuenta se crea y accede al home. **Escenario 2:** Dado que el correo ya existe, cuando intenta registrarse, entonces ve el mensaje "Correo ya registrado".                                                        | EP01              |
-| US02            | Registro de personal técnico                     | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes.                                                    | **Escenario 1:** Dado que el personal ingresa sus datos y selecciona su institución, cuando presiona "Registrarse", entonces la cuenta se crea con rol "Personal Técnico". **Escenario 2:** Dado que falta un campo obligatorio, cuando intenta registrarse, entonces ve "Completa todos los campos".                                           | EP01              |
-| US03            | Inicio de sesión                                 | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol.                                                   | **Escenario 1:** Dado que el usuario tiene cuenta activa, cuando ingresa credenciales correctas, entonces accede a su dashboard. **Escenario 2:** Dado que las credenciales son incorrectas, cuando presiona "Ingresar", entonces ve "Correo o contraseña incorrectos".                                                                         | EP01              |
-| US04            | Ver lista de medicamentos                        | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                                             | **Escenario 1:** Dado que el personal técnico subió mi receta, cuando abro la sección "Mis medicamentos", entonces veo nombre, dosis y horario de cada uno. **Escenario 2:** Dado que no tengo receta cargada, cuando accedo a la sección, entonces veo "No tienes medicamentos registrados".                                                   | EP02              |
-| US05            | Recibir recordatorio de medicamento              | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                                               | **Escenario 1:** Dado que tengo un medicamento programado a las 8am, cuando llega esa hora, entonces recibo una notificación push con el nombre y la dosis. **Escenario 2:** Dado que son múltiples medicamentos, cuando llega cada horario, entonces recibo una notificación por cada uno.                                                     | EP02              |
-| US06            | Registrar cumplimiento de medicamento            | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                                                     | **Escenario 1:** Dado que recibo una notificación de medicamento, cuando presiono "Tomado", entonces se registra el cumplimiento con fecha y hora. **Escenario 2:** Dado que olvidé marcar en el momento, cuando entro a la aplicación y presiono "Tomado" después, entonces se registra igualmente.                                                   | EP02              |
-| US07            | Alerta de stock bajo                             | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.                                    | **Escenario 1:** Dado que me quedan 3 pastillas de un medicamento, cuando abro la aplicación, entonces veo la alerta "Te quedan 3 pastillas de [nombre]". **Escenario 2:** Dado que me quedan 3 pastillas, cuando llega el horario de la siguiente toma, entonces recibo una notificación adicional de stock bajo.                                     | EP02              |
-| US08            | Agendar cita médica                              | Como paciente, quiero registrar una nueva cita médica en la aplicación, para tenerla en mi calendario y recibir recordatorios.                                                | **Escenario 1:** Dado que ingreso fecha, hora y tipo de cita, cuando presiono "Agendar", entonces la cita se guarda y aparece en mi lista. **Escenario 2:** Dado que ingreso una fecha pasada, cuando intento agendar, entonces veo "La fecha debe ser posterior a hoy".                                                                        | EP03              |
-| US09            | Recibir recordatorio de cita médica              | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla.                                                                                    | **Escenario 1:** Dado que tengo una cita mañana a las 10am, cuando faltan 24 horas, entonces recibo una notificación con fecha, hora y lugar. **Escenario 2:** Dado que tengo una cita en 2 horas, cuando falta ese tiempo, entonces recibo una segunda notificación.                                                                           | EP03              |
-| US10            | Registrar cumplimiento de cita                   | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado.                                                                         | **Escenario 1:** Dado que tengo una cita agendada para hoy, cuando presiono "Asistí", entonces se registra el cumplimiento. **Escenario 2:** Dado que no pude asistir, cuando presiono "No asistí", entonces queda registrada como inasistencia.                                                                                                | EP03              |
-| US11            | Ver requisitos de cita                           | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado.                                                                                    | **Escenario 1:** Dado que mi cita requiere muestra de orina, cuando abro el detalle de la cita, entonces veo "Requisito: traer muestra de orina". **Escenario 2:** Dado que la cita no tiene requisitos, cuando abro el detalle, entonces veo "No se requiere preparación especial".                                                            | EP03              |
-| US12            | Recordatorio de examen clínico                   | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados.                                                | **Escenario 1:** Dado que tengo un examen programado, cuando llega la fecha de recojo, entonces recibo una notificación con el tipo de examen. **Escenario 2:** Dado que ya pasó la fecha de recojo, cuando abro la aplicación, entonces veo un aviso pendiente.                                                                                       | EP03              |
-| US13            | Subir receta médica con horarios                 | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su aplicación.                              | **Escenario 1:** Dado que ingreso nombre del medicamento, dosis y horarios, cuando presiono "Subir receta", entonces el paciente la recibe automáticamente. **Escenario 2:** Dado que falta el horario de una toma, cuando intento subir, entonces veo "Completa todos los horarios".                                                           | EP04              |
-| US14            | Subir historial clínico                          | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                                          | **Escenario 1:** Dado que selecciono un archivo de dataset válido, cuando presiono "Cargar", entonces el historial se vincula al paciente correspondiente. **Escenario 2:** Dado que el paciente no existe en el dataset, cuando intento cargarlo, entonces veo "Paciente no encontrado".                                                       | EP04              |
-| US15            | Buscar paciente individual                       | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento.                                                              | **Escenario 1:** Dado que ingreso un DNI válido, cuando busco, entonces veo el perfil completo del paciente. **Escenario 2:** Dado que no hay coincidencias, cuando busco, entonces veo "No se encontraron pacientes".                                                                                                                          | EP04              |
-| US16            | Ver dashboard de tendencias de adherencia        | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento.                        | **Escenario 1:** Dado que hay datos de cumplimiento registrados, cuando accedo al dashboard, entonces veo gráficos de tendencia por paciente. **Escenario 2:** Dado que no hay datos suficientes, cuando accedo, entonces veo "Sin datos disponibles para mostrar tendencias".                                                                  | EP05              |
-| US17            | Ver estadísticas de cumplimiento de recetas      | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento.                                             | **Escenario 1:** Dado que hay múltiples recetas activas, cuando accedo a estadísticas, entonces veo porcentaje de cumplimiento por cada receta. **Escenario 2:** Dado que una receta tiene bajo cumplimiento, entonces aparece resaltada en el gráfico.                                                                                         | EP05              |
-| US18            | Ver estadísticas de citas                        | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones.                                                 | **Escenario 1:** Dado que hay citas registradas, cuando accedo a la sección, entonces veo un gráfico circular con tipos de cita. **Escenario 2:** Dado que no hay citas, cuando accedo, entonces veo "No hay datos de citas disponibles".                                                                                                       | EP05              |
-| US19            | Editar perfil de usuario                         | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada.                                            | **Escenario 1:** Dado que modifico mi teléfono o subo una nueva foto, cuando presiono "Guardar", entonces el cambio se refleja inmediatamente. **Escenario 2:** Dado que ingreso un formato inválido, cuando intento guardar, entonces veo "Formato incorrecto".                                                                               | EP06              |
-| US20            | Recuperar contraseña                             | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta.                                                                      | **Escenario 1:** Dado que ingreso mi correo registrado, cuando presiono "Recuperar contraseña", entonces recibo un enlace por correo. **Escenario 2:** Dado que el correo no existe, entonces veo "Correo no registrado". **Escenario 3:** Dado que uso el enlace, cuando ingreso una nueva contraseña válida, entonces la cuenta se actualiza. | EP01              |
-| US21            | Cerrar sesión                                    | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información.                                                                                      | **Escenario 1:** Dado que estoy logueado, cuando presiono "Cerrar sesión", entonces se cierra la sesión y regresa a la pantalla de login. **Escenario 2:** Dado que cierro la aplicación, cuando la abro nuevamente, entonces debo iniciar sesión otra vez.                                                                                            | EP01              |
-| US22            | Configurar preferencias de notificaciones        | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.                                 | **Escenario 1:** Dado que accedo a Configuración, cuando elijo sonido, vibración y número de repeticiones, entonces las notificaciones se aplican según mi elección. **Escenario 2:** Dado que desactivo temporalmente las notificaciones, entonces no recibo recordatorios hasta que las reactive.                                             | EP02              |
-| US23            | Funcionar en modo offline                        | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar.                                              | **Escenario 1:** Dado que no tengo internet, cuando abro la aplicación, entonces veo la lista de medicamentos y puedo marcar "Tomado". **Escenario 2:** Dado que recupero internet, entonces se sincronizan automáticamente los registros.                                                                                                             | EP02              |
-| US24            | Editar o cancelar medicamento                    | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                                        | **Escenario 1:** Dado que el personal técnico autoriza el cambio, cuando edito un medicamento, entonces se actualiza y se notifica al paciente. **Escenario 2:** Dado que intento cancelar sin autorización, entonces veo "Solo el personal técnico puede cancelar".                                                                            | EP02              |
-| US25            | Ver historial de adherencia y progreso           | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                                        | **Escenario 1:** Dado que tengo registros de cumplimiento, cuando accedo a "Mi progreso", entonces veo gráfico de porcentaje de adherencia semanal. **Escenario 2:** Dado que no hay datos suficientes, entonces veo "Aún no hay suficiente información para mostrar progreso".                                                                 | EP02 / EP03       |
-| US26            | Validación automática de medicamentos            | Como personal técnico, quiero que el sistema valide automáticamente los nombres de medicamentos al subir una receta, para evitar errores.                              | **Escenario 1:** Dado que ingreso un medicamento existente en la lista pre-cargada, entonces se acepta automáticamente. **Escenario 2:** Dado que ingreso un medicamento no registrado, entonces veo sugerencias o mensaje de error.                                                                                                            | EP04              |
-| US27            | Recibir alertas automáticas por baja adherencia  | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo.                                 | **Escenario 1:** Dado que un paciente tiene adherencia <70 %, entonces recibo notificación en el portal web. **Escenario 2:** Dado que configuro el umbral, entonces las alertas se ajustan al nuevo valor.                                                                                                                                     | EP05              |
-| US28            | Cambiar contraseña                               | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura.                                                                                            | **Escenario 1:** Dado que ingreso la contraseña actual y la nueva, cuando confirmo, entonces la contraseña se actualiza y se cierra la sesión actual. **Escenario 2:** Dado que la contraseña actual es incorrecta, cuando confirmo, entonces veo "Contraseña actual incorrecta".                                                               | EP01              |
-| US29            | Editar o cancelar cita médica                    | Como paciente, quiero editar o cancelar una cita médica, para corregir errores en mi agenda.                                                                           | **Escenario 1:** Dado que tengo una cita agendada a futuro, cuando la edito o cancelo, entonces se actualiza en mi calendario y se eliminan sus recordatorios. **Escenario 2:** Dado que intento modificar una cita pasada, entonces veo "No se pueden modificar citas pasadas".                                                                | EP03              |
+| Epic / Story ID | Título                                          | Descripción                                                                                                                                                            | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                         | Relación con Epic |
+| --------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| EP01            | Registro y roles                                | Como usuario de MediTrack, quiero registrarme y acceder al sistema con un rol específico, para usar las funciones correspondientes a paciente o personal técnico.      | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
+| EP02            | Gestión de medicamentos para pacientes          | Como paciente con tratamiento activo, quiero gestionar mis medicamentos con recordatorios y alertas de stock, para no olvidar ninguna dosis ni quedarme sin pastillas. | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
+| EP03            | Gestión de citas y exámenes                     | Como paciente, quiero gestionar mis citas médicas y exámenes clínicos, para estar preparado y no faltar a ninguna.                                                     | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
+| EP04            | Carga de datos clínicos para personal técnico   | Como personal técnico de hospital, quiero subir recetas e historiales clínicos, para que los pacientes reciban su información automáticamente.                         | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
+| EP05            | Estadísticas y tendencias para personal técnico | Como personal técnico, quiero ver estadísticas de adherencia y cumplimiento, para analizar la evolución de mis pacientes.                                              | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
+| EP06            | Edición de perfil                               | Como usuario de MediTrack, quiero editar mi información personal, para mantener mis datos actualizados.                                                                | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
+| US01            | Registro de paciente                            | Como paciente, quiero crear una cuenta en la aplicación móvil, para gestionar mis tratamientos y citas.                                                                | **Escenario 1:** Dado que el paciente ingresa nombre, correo y contraseña válidos, cuando presiona "Registrarse", entonces la cuenta se crea y accede al home. **Escenario 2:** Dado que el correo ya existe, cuando intenta registrarse, entonces ve el mensaje "Correo ya registrado".                                                        | EP01              |
+| US02            | Registro de personal técnico                    | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes.                                                    | **Escenario 1:** Dado que el personal ingresa sus datos y selecciona su institución, cuando presiona "Registrarse", entonces la cuenta se crea con rol "Personal Técnico". **Escenario 2:** Dado que falta un campo obligatorio, cuando intenta registrarse, entonces ve "Completa todos los campos".                                           | EP01              |
+| US03            | Inicio de sesión                                | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol.                                                   | **Escenario 1:** Dado que el usuario tiene cuenta activa, cuando ingresa credenciales correctas, entonces accede a su dashboard. **Escenario 2:** Dado que las credenciales son incorrectas, cuando presiona "Ingresar", entonces ve "Correo o contraseña incorrectos".                                                                         | EP01              |
+| US04            | Ver lista de medicamentos                       | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                                             | **Escenario 1:** Dado que el personal técnico subió mi receta, cuando abro la sección "Mis medicamentos", entonces veo nombre, dosis y horario de cada uno. **Escenario 2:** Dado que no tengo receta cargada, cuando accedo a la sección, entonces veo "No tienes medicamentos registrados".                                                   | EP02              |
+| US05            | Recibir recordatorio de medicamento             | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                                               | **Escenario 1:** Dado que tengo un medicamento programado a las 8am, cuando llega esa hora, entonces recibo una notificación push con el nombre y la dosis. **Escenario 2:** Dado que son múltiples medicamentos, cuando llega cada horario, entonces recibo una notificación por cada uno.                                                     | EP02              |
+| US06            | Registrar cumplimiento de medicamento           | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                                                     | **Escenario 1:** Dado que recibo una notificación de medicamento, cuando presiono "Tomado", entonces se registra el cumplimiento con fecha y hora. **Escenario 2:** Dado que olvidé marcar en el momento, cuando entro a la aplicación y presiono "Tomado" después, entonces se registra igualmente.                                            | EP02              |
+| US07            | Alerta de stock bajo                            | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.                                    | **Escenario 1:** Dado que me quedan 3 pastillas de un medicamento, cuando abro la aplicación, entonces veo la alerta "Te quedan 3 pastillas de [nombre]". **Escenario 2:** Dado que me quedan 3 pastillas, cuando llega el horario de la siguiente toma, entonces recibo una notificación adicional de stock bajo.                              | EP02              |
+| US08            | Agendar cita médica                             | Como paciente, quiero registrar una nueva cita médica en la aplicación, para tenerla en mi calendario y recibir recordatorios.                                         | **Escenario 1:** Dado que ingreso fecha, hora y tipo de cita, cuando presiono "Agendar", entonces la cita se guarda y aparece en mi lista. **Escenario 2:** Dado que ingreso una fecha pasada, cuando intento agendar, entonces veo "La fecha debe ser posterior a hoy".                                                                        | EP03              |
+| US09            | Recibir recordatorio de cita médica             | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla.                                                                                    | **Escenario 1:** Dado que tengo una cita mañana a las 10am, cuando faltan 24 horas, entonces recibo una notificación con fecha, hora y lugar. **Escenario 2:** Dado que tengo una cita en 2 horas, cuando falta ese tiempo, entonces recibo una segunda notificación.                                                                           | EP03              |
+| US10            | Registrar cumplimiento de cita                  | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado.                                                                         | **Escenario 1:** Dado que tengo una cita agendada para hoy, cuando presiono "Asistí", entonces se registra el cumplimiento. **Escenario 2:** Dado que no pude asistir, cuando presiono "No asistí", entonces queda registrada como inasistencia.                                                                                                | EP03              |
+| US11            | Ver requisitos de cita                          | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado.                                                                                    | **Escenario 1:** Dado que mi cita requiere muestra de orina, cuando abro el detalle de la cita, entonces veo "Requisito: traer muestra de orina". **Escenario 2:** Dado que la cita no tiene requisitos, cuando abro el detalle, entonces veo "No se requiere preparación especial".                                                            | EP03              |
+| US12            | Recordatorio de examen clínico                  | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados.                                                | **Escenario 1:** Dado que tengo un examen programado, cuando llega la fecha de recojo, entonces recibo una notificación con el tipo de examen. **Escenario 2:** Dado que ya pasó la fecha de recojo, cuando abro la aplicación, entonces veo un aviso pendiente.                                                                                | EP03              |
+| US13            | Subir receta médica con horarios                | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su aplicación.                       | **Escenario 1:** Dado que ingreso nombre del medicamento, dosis y horarios, cuando presiono "Subir receta", entonces el paciente la recibe automáticamente. **Escenario 2:** Dado que falta el horario de una toma, cuando intento subir, entonces veo "Completa todos los horarios".                                                           | EP04              |
+| US14            | Subir historial clínico                         | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                                          | **Escenario 1:** Dado que selecciono un archivo de dataset válido, cuando presiono "Cargar", entonces el historial se vincula al paciente correspondiente. **Escenario 2:** Dado que el paciente no existe en el dataset, cuando intento cargarlo, entonces veo "Paciente no encontrado".                                                       | EP04              |
+| US15            | Buscar paciente individual                      | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento.                                                              | **Escenario 1:** Dado que ingreso un DNI válido, cuando busco, entonces veo el perfil completo del paciente. **Escenario 2:** Dado que no hay coincidencias, cuando busco, entonces veo "No se encontraron pacientes".                                                                                                                          | EP04              |
+| US16            | Ver dashboard de tendencias de adherencia       | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento.                        | **Escenario 1:** Dado que hay datos de cumplimiento registrados, cuando accedo al dashboard, entonces veo gráficos de tendencia por paciente. **Escenario 2:** Dado que no hay datos suficientes, cuando accedo, entonces veo "Sin datos disponibles para mostrar tendencias".                                                                  | EP05              |
+| US17            | Ver estadísticas de cumplimiento de recetas     | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento.                                             | **Escenario 1:** Dado que hay múltiples recetas activas, cuando accedo a estadísticas, entonces veo porcentaje de cumplimiento por cada receta. **Escenario 2:** Dado que una receta tiene bajo cumplimiento, entonces aparece resaltada en el gráfico.                                                                                         | EP05              |
+| US18            | Ver estadísticas de citas                       | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones.                                                 | **Escenario 1:** Dado que hay citas registradas, cuando accedo a la sección, entonces veo un gráfico circular con tipos de cita. **Escenario 2:** Dado que no hay citas, cuando accedo, entonces veo "No hay datos de citas disponibles".                                                                                                       | EP05              |
+| US19            | Editar perfil de usuario                        | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada.                                            | **Escenario 1:** Dado que modifico mi teléfono o subo una nueva foto, cuando presiono "Guardar", entonces el cambio se refleja inmediatamente. **Escenario 2:** Dado que ingreso un formato inválido, cuando intento guardar, entonces veo "Formato incorrecto".                                                                                | EP06              |
+| US20            | Recuperar contraseña                            | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta.                                                                      | **Escenario 1:** Dado que ingreso mi correo registrado, cuando presiono "Recuperar contraseña", entonces recibo un enlace por correo. **Escenario 2:** Dado que el correo no existe, entonces veo "Correo no registrado". **Escenario 3:** Dado que uso el enlace, cuando ingreso una nueva contraseña válida, entonces la cuenta se actualiza. | EP01              |
+| US21            | Cerrar sesión                                   | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información.                                                                                      | **Escenario 1:** Dado que estoy logueado, cuando presiono "Cerrar sesión", entonces se cierra la sesión y regresa a la pantalla de login. **Escenario 2:** Dado que cierro la aplicación, cuando la abro nuevamente, entonces debo iniciar sesión otra vez.                                                                                     | EP01              |
+| US22            | Configurar preferencias de notificaciones       | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.                                 | **Escenario 1:** Dado que accedo a Configuración, cuando elijo sonido, vibración y número de repeticiones, entonces las notificaciones se aplican según mi elección. **Escenario 2:** Dado que desactivo temporalmente las notificaciones, entonces no recibo recordatorios hasta que las reactive.                                             | EP02              |
+| US23            | Funcionar en modo offline                       | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar.                                       | **Escenario 1:** Dado que no tengo internet, cuando abro la aplicación, entonces veo la lista de medicamentos y puedo marcar "Tomado". **Escenario 2:** Dado que recupero internet, entonces se sincronizan automáticamente los registros.                                                                                                      | EP02              |
+| US24            | Editar o cancelar medicamento                   | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                                        | **Escenario 1:** Dado que el personal técnico autoriza el cambio, cuando edito un medicamento, entonces se actualiza y se notifica al paciente. **Escenario 2:** Dado que intento cancelar sin autorización, entonces veo "Solo el personal técnico puede cancelar".                                                                            | EP02              |
+| US25            | Ver historial de adherencia y progreso          | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                                        | **Escenario 1:** Dado que tengo registros de cumplimiento, cuando accedo a "Mi progreso", entonces veo gráfico de porcentaje de adherencia semanal. **Escenario 2:** Dado que no hay datos suficientes, entonces veo "Aún no hay suficiente información para mostrar progreso".                                                                 | EP02 / EP03       |
+| US26            | Validación automática de medicamentos           | Como personal técnico, quiero que el sistema valide automáticamente los nombres de medicamentos al subir una receta, para evitar errores.                              | **Escenario 1:** Dado que ingreso un medicamento existente en la lista pre-cargada, entonces se acepta automáticamente. **Escenario 2:** Dado que ingreso un medicamento no registrado, entonces veo sugerencias o mensaje de error.                                                                                                            | EP04              |
+| US27            | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo.                                 | **Escenario 1:** Dado que un paciente tiene adherencia <70 %, entonces recibo notificación en el portal web. **Escenario 2:** Dado que configuro el umbral, entonces las alertas se ajustan al nuevo valor.                                                                                                                                     | EP05              |
+| US28            | Cambiar contraseña                              | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura.                                                                                            | **Escenario 1:** Dado que ingreso la contraseña actual y la nueva, cuando confirmo, entonces la contraseña se actualiza y se cierra la sesión actual. **Escenario 2:** Dado que la contraseña actual es incorrecta, cuando confirmo, entonces veo "Contraseña actual incorrecta".                                                               | EP01              |
+| US29            | Editar o cancelar cita médica                   | Como paciente, quiero editar o cancelar una cita médica, para corregir errores en mi agenda.                                                                           | **Escenario 1:** Dado que tengo una cita agendada a futuro, cuando la edito o cancelo, entonces se actualiza en mi calendario y se eliminan sus recordatorios. **Escenario 2:** Dado que intento modificar una cita pasada, entonces veo "No se pueden modificar citas pasadas".                                                                | EP03              |
 
 <hr class="page-break">
 
 ## 3.3. Impact Map
 
-
 <td align="center"><img src="assets/images/chapter3/paciente1impact.png" alt="impact map" ></td>
-
-
 
 <td align="center"><img src="assets/images/chapter3/image.png" alt="impact map" ></td>
 
-
 <div align = center>
 
-  *Figura 10. Impact Mapping del segmento Pacientes. Elaboración propia.*
-</div>
+_Figura 10. Impact Mapping del segmento Pacientes. Elaboración propia._
 
+</div>
 
 <hr class="page-break">
 
-
-
 <td align="center"><img src="assets/images/chapter3/impactmappingtecnico1.png" alt="impact map" ></td>
-
-
 
 <td align="center"><img src="assets/images/chapter3/impactmappingtecnico2.png" alt="impact map" ></td>
 
 <div align = center>
 
-  *Figura 11. Impact Mapping del segmento Personal de Apoyo. Elaboración propia.*
+_Figura 11. Impact Mapping del segmento Personal de Apoyo. Elaboración propia._
+
 </div>
 
-
-
-
 <hr class="page-break">
-
 
 ## 3.4. Product Backlog
 
 El orden del Product Backlog se determina por el valor de negocio que aporta cada User Story, priorizando aquellas que resuelven directamente los Pain Points identificados (adherencia al tratamiento, digitalización de recetas y seguimiento de pacientes). Las User Stories relacionadas con autenticación, recuperación de contraseña y operaciones de soporte se ubican al final, ya que son habilitadoras del flujo pero no representan el valor core que MediTrack ofrece a pacientes e instituciones de salud.
 
-| # Orden | User Story ID | Título                                          | Descripción                                                                                                                                     | Story Points |
-| ------- | ------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| # Orden | User Story ID | Título                                          | Descripción                                                                                                                                      | Story Points |
+| ------- | ------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
 | 1       | US13          | Subir receta médica con horarios                | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su aplicación. | 8            |
-| 2       | US04          | Ver lista de medicamentos                       | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                      | 5            |
-| 3       | US05          | Recibir recordatorio de medicamento             | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                        | 8            |
-| 4       | US06          | Registrar cumplimiento de medicamento           | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                              | 5            |
-| 5       | US14          | Subir historial clínico                         | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                   | 8            |
-| 6       | US15          | Buscar paciente individual                      | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento.                                       | 5            |
-| 7       | US26          | Validación automática de medicamentos           | Como personal técnico, quiero que el sistema valide automáticamente los nombres de medicamentos al subir una receta, para evitar errores.       | 5            |
-| 8       | US07          | Alerta de stock bajo                            | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.             | 5            |
-| 9       | US24          | Editar o cancelar medicamento                   | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                 | 3            |
-| 10      | US22          | Configurar preferencias de notificaciones       | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.          | 5            |
-| 11      | US08          | Agendar cita médica                             | Como paciente, quiero registrar una nueva cita médica en la aplicación, para tenerla en mi calendario y recibir recordatorios.                  | 5            |
-| 12      | US09          | Recibir recordatorio de cita médica             | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla.                                                             | 5            |
-| 13      | US10          | Registrar cumplimiento de cita                  | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado.                                                  | 3            |
-| 14      | US11          | Ver requisitos de cita                          | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado.                                                             | 3            |
-| 15      | US29          | Editar o cancelar cita médica                   | Como paciente, quiero editar o cancelar una cita médica, para corregir errores en mi agenda.                                                    | 3            |
-| 16      | US12          | Recordatorio de examen clínico                  | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados.                         | 5            |
-| 17      | US25          | Ver historial de adherencia y progreso          | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                 | 8            |
-| 18      | US16          | Ver dashboard de tendencias de adherencia       | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento. | 8            |
-| 19      | US17          | Ver estadísticas de cumplimiento de recetas     | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento.                      | 8            |
-| 20      | US27          | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo.          | 5            |
-| 21      | US18          | Ver estadísticas de citas                       | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones.                          | 5            |
-| 22      | US23          | Funcionar en modo offline                       | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar.                | 8            |
-| 23      | US19          | Editar perfil de usuario                        | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada.                     | 3            |
-| 24      | US01          | Registro de paciente                            | Como paciente, quiero crear una cuenta en la aplicación móvil, para gestionar mis tratamientos y citas.                                         | 5            |
-| 25      | US02          | Registro de personal técnico                    | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes.                             | 5            |
-| 26      | US03          | Inicio de sesión                                | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol.                            | 3            |
-| 27      | US20          | Recuperar contraseña                            | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta.                                               | 3            |
-| 28      | US21          | Cerrar sesión                                   | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información.                                                               | 3            |
-| 29      | US28          | Cambiar contraseña                              | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura.                                                                     | 3            |
+| 2       | US04          | Ver lista de medicamentos                       | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                       | 5            |
+| 3       | US05          | Recibir recordatorio de medicamento             | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                         | 8            |
+| 4       | US06          | Registrar cumplimiento de medicamento           | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                               | 5            |
+| 5       | US14          | Subir historial clínico                         | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                    | 8            |
+| 6       | US15          | Buscar paciente individual                      | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento.                                        | 5            |
+| 7       | US26          | Validación automática de medicamentos           | Como personal técnico, quiero que el sistema valide automáticamente los nombres de medicamentos al subir una receta, para evitar errores.        | 5            |
+| 8       | US07          | Alerta de stock bajo                            | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.              | 5            |
+| 9       | US24          | Editar o cancelar medicamento                   | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                  | 3            |
+| 10      | US22          | Configurar preferencias de notificaciones       | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.           | 5            |
+| 11      | US08          | Agendar cita médica                             | Como paciente, quiero registrar una nueva cita médica en la aplicación, para tenerla en mi calendario y recibir recordatorios.                   | 5            |
+| 12      | US09          | Recibir recordatorio de cita médica             | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla.                                                              | 5            |
+| 13      | US10          | Registrar cumplimiento de cita                  | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado.                                                   | 3            |
+| 14      | US11          | Ver requisitos de cita                          | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado.                                                              | 3            |
+| 15      | US29          | Editar o cancelar cita médica                   | Como paciente, quiero editar o cancelar una cita médica, para corregir errores en mi agenda.                                                     | 3            |
+| 16      | US12          | Recordatorio de examen clínico                  | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados.                          | 5            |
+| 17      | US25          | Ver historial de adherencia y progreso          | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                  | 8            |
+| 18      | US16          | Ver dashboard de tendencias de adherencia       | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento.  | 8            |
+| 19      | US17          | Ver estadísticas de cumplimiento de recetas     | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento.                       | 8            |
+| 20      | US27          | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo.           | 5            |
+| 21      | US18          | Ver estadísticas de citas                       | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones.                           | 5            |
+| 22      | US23          | Funcionar en modo offline                       | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar.                 | 8            |
+| 23      | US19          | Editar perfil de usuario                        | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada.                      | 3            |
+| 24      | US01          | Registro de paciente                            | Como paciente, quiero crear una cuenta en la aplicación móvil, para gestionar mis tratamientos y citas.                                          | 5            |
+| 25      | US02          | Registro de personal técnico                    | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes.                              | 5            |
+| 26      | US03          | Inicio de sesión                                | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol.                             | 3            |
+| 27      | US20          | Recuperar contraseña                            | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta.                                                | 3            |
+| 28      | US21          | Cerrar sesión                                   | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información.                                                                | 3            |
+| 29      | US28          | Cambiar contraseña                              | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura.                                                                      | 3            |
 
 ![trello](assets/images/chapter3/product-backlog-trello.png)
 <br>
@@ -1171,18 +1167,18 @@ En esta sección se describen los enfoques metodológicos que rigen el desarroll
 
 #### Enfoques adopatados:
 
-* **Domain-Driven Design (DDD):** Dado que el dominio de la salud es complejo, se adopta DDD para centrar el desarrollo en el modelo de negocio. Se identificarán **Bounded Contexts** claros permitiendo que el lenguaje ubicuo sea compartido entre desarrolladores y expertos del dominio médico.
+- **Domain-Driven Design (DDD):** Dado que el dominio de la salud es complejo, se adopta DDD para centrar el desarrollo en el modelo de negocio. Se identificarán **Bounded Contexts** claros permitiendo que el lenguaje ubicuo sea compartido entre desarrolladores y expertos del dominio médico.
 
-* **Attribute-Driven Design (ADD):** Las decisiones arquitectónicas se basan en atributos de calidad como seguridad, escalabilidad, disponibilidad y facilidad de uso, asegurando que el sistema cumpla con las expectativas técnicas y de los usuarios. 
+- **Attribute-Driven Design (ADD):** Las decisiones arquitectónicas se basan en atributos de calidad como seguridad, escalabilidad, disponibilidad y facilidad de uso, asegurando que el sistema cumpla con las expectativas técnicas y de los usuarios.
 
 #### Estilos arquitectónicos:
 
-* **Microservicios:** El sistema se descompone en servicios pequeños e independientes que se comunican a través de protocolos ligeros (HTTP/REST). Este estilo facilita el despliegue independiente y la escalabilidad selectiva de las funciones más demandadas, como el motor de notificaciones.
+- **Microservicios:** El sistema se descompone en servicios pequeños e independientes que se comunican a través de protocolos ligeros (HTTP/REST). Este estilo facilita el despliegue independiente y la escalabilidad selectiva de las funciones más demandadas, como el motor de notificaciones.
 
 #### Patrones de diseño:
 
-* **API Gateway:** Se implementará un punto de entrada único que actúe como intermediario entre los clientes (App Móvil y Portal Web) y los microservicios. El Gateway se encargará de la autenticación, el enrutamiento de peticiones y la agregación de respuestas, simplificando la lógica en el lado del cliente.
-* **CQRS (Command Query Responsibility Segregation):** Para módulos con alta carga de lectura (como los dashboards de estadísticas para el personal técnico), se evaluará la separación de las operaciones de lectura y escritura. Esto optimiza el rendimiento al permitir modelos de datos específicos para consultas complejas sin penalizar las actualizaciones del tratamiento.
+- **API Gateway:** Se implementará un punto de entrada único que actúe como intermediario entre los clientes (App Móvil y Portal Web) y los microservicios. El Gateway se encargará de la autenticación, el enrutamiento de peticiones y la agregación de respuestas, simplificando la lógica en el lado del cliente.
+- **CQRS (Command Query Responsibility Segregation):** Para módulos con alta carga de lectura (como los dashboards de estadísticas para el personal técnico), se evaluará la separación de las operaciones de lectura y escritura. Esto optimiza el rendimiento al permitir modelos de datos específicos para consultas complejas sin penalizar las actualizaciones del tratamiento.
 
 ### 4.1.3. Context Diagram
 
@@ -1192,16 +1188,17 @@ El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el q
 
 <div align = center>
 
-  *Figura 12. Diagrama de contexto del sistema MediTrack. Elaboración propia.*
+_Figura 12. Diagrama de contexto del sistema MediTrack. Elaboración propia._
+
 </div>
 
 <td align="center"><img src="assets/images/chapter4/structurizr-109687-Contexto-key.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-  *Figura 13. Anexo del diagrama de contexto del sistema MediTrack. Elaboración propia.*
-</div>
+_Figura 13. Anexo del diagrama de contexto del sistema MediTrack. Elaboración propia._
 
+</div>
 
 ### 4.1.4. Approach driven ViewPoints Diagrams
 
@@ -1209,23 +1206,19 @@ El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el q
 
 <td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Container Diagram" ></td>
 
-
 #### Component Diagrams:
 
 #### Identity & Profiles Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/identityprofile.jpeg" alt="" ></td>
 
-
 #### Treatment Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="analytics" ></td>
 
-
 #### Reminder Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/reminder.jpeg" alt="reminder service" ></td>
-
 
 #### Follow-up Service:
 
@@ -1235,8 +1228,6 @@ El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el q
 
 <td align="center"><img src="assets/images/chapter4/diagrams//component/medical_analysis.jpeg" alt="medical analysis" ></td>
 
-
-
 #### Appointment Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
@@ -1244,45 +1235,41 @@ El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el q
 #### Diagramas de Actividades
 
 ##### Medical Analysis Activity
+
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
 
-
 ##### Appointment Activity
+
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/appointment_activity.png" alt="Empathy Map - Pacientes" ></td>
 
-
 ##### Follow-up Activity
+
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/followup_activity.png" alt="Empathy Map - Pacientes" ></td>
 
-
-
 ##### Identity & Profiles Activity
+
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/profilesactivity.png" alt="Empathy Map - Pacientes" ></td>
 
-
-
 ##### Treatment Activity
+
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/treatment_activity.png" alt="Empathy Map - Pacientes" ></td>
 
-
-
 ##### Reminder Activity
-<td align="center"><img src="assets/images/chapter4/diagrams/activities/reminder_activity.png" alt="Empathy Map - Pacientes" ></td>
 
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/reminder_activity.png" alt="Empathy Map - Pacientes" ></td>
 
 #### Class Diagram
 
 <td align="center"><img src="assets/images/chapter4/diagrams/classdiagram.png" alt="Class diagram" ></td>
 
-
 ### 4.1.5. Relational/Non Relational Database Diagram
 
 <td align="center"><img src="assets/images/chapter4/diagrams/Meditrack_Schema-2026-04-28_07-34.png" alt="DB diagram" ></td>
 
-
 ### 4.1.6. Design Patterns
 
 #### Repository
+
 El presente patrón se aplica en todos los microservicios de MediTrack para abstraer
 el acceso a datos. Cada servicio cuenta con repositorios especializados como
 `MedicationRepository`, `AppointmentRepository` o `ComplianceRepository`, que
@@ -1297,6 +1284,7 @@ encapsulan las consultas a MySQL detrás de una interfaz limpia:
   consistencia en el acceso a los datos clínicos.
 
 #### Singleton
+
 Se utiliza en cada microservicio para gestionar la conexión al pool de base de
 datos MySQL, garantizando que exista una única instancia durante todo el ciclo
 de vida del servicio:
@@ -1309,6 +1297,7 @@ de vida del servicio:
   microservicio.
 
 #### Factory Method
+
 El presente patrón se aplica en el Reminder Service para la creación de
 recordatorios. Dependiendo del tipo de entidad (`medication`, `appointment`,
 `exam`), se instancia una fábrica especializada: `MedicationReminderFactory`,
@@ -1323,6 +1312,7 @@ mensaje, tiempo de anticipación y comportamiento:
   tipo se construya con los parámetros correctos.
 
 #### Strategy
+
 El presente patrón se aplica en el Medical Analysis Service para el cálculo del
 porcentaje de adherencia. Se define una interfaz `AdherenceCalculator` con
 implementaciones intercambiables: `MedicationAdherenceStrategy` y
@@ -1336,6 +1326,7 @@ implementaciones intercambiables: `MedicationAdherenceStrategy` y
   dedicada y fácilmente testeable.
 
 #### Decorator
+
 El presente patrón se emplea en el Treatment Service durante la carga de recetas
 médicas. La receta pasa por capas de validación encadenadas:
 verificación de existencia del paciente, validación del medicamento contra el
@@ -1349,6 +1340,7 @@ catálogo oficial y verificación de horarios completos:
   toda prescripción pase por las verificaciones necesarias antes de persistirse.
 
 #### Observer
+
 En MediTrack se aplica para la comunicación asíncrona entre microservicios. Cuando
 el Follow-up Service registra el cumplimiento de un medicamento, publica el evento
 `CumplimientoRegistrado`; el Reminder Service lo escucha y cancela el recordatorio
@@ -1361,41 +1353,37 @@ Service cuando el conteo de pastillas alcanza el umbral definido:
   alertas al médico) sin modificar el código del servicio emisor.
 - Garantiza que la información crítica, como el stock bajo o el cumplimiento
   registrado, llegue a los servicios correctos en el momento oportuno.
+
 ### 4.1.7. Tactics
 
-+ **Optimización de la Base de Datos:**
+- **Optimización de la Base de Datos:**
+  - Utilizar índices en las consultas relacionadas con pacientes, medicamentos, recetas e historiales clínicos para mejorar la velocidad de acceso a la información.
 
-  + Utilizar índices en las consultas relacionadas con pacientes, medicamentos, recetas e historiales clínicos para mejorar la velocidad de acceso a la información.
+  - Implementar una estructura de datos eficiente que permita manejar relaciones entre pacientes, tratamientos y personal técnico sin redundancias.
 
-  + Implementar una estructura de datos eficiente que permita manejar relaciones entre pacientes, tratamientos y personal técnico sin redundancias.
+  - Realizar análisis periódicos para identificar consultas ineficientes, especialmente en dashboards de adherencia y búsqueda de pacientes.
 
-  + Realizar análisis periódicos para identificar consultas ineficientes, especialmente en dashboards de adherencia y búsqueda de pacientes.
+- **Caché de Datos y Consultas:**
+  - Implementar mecanismos de caché para almacenar información frecuente como lista de medicamentos, horarios y datos del paciente, reduciendo la carga del sistema.
 
-+ **Caché de Datos y Consultas:**
+  - Aplicar caché a nivel de aplicación para mejorar la experiencia del usuario en consultas repetitivas, como visualización de tratamientos o historial clínico.
 
-  + Implementar mecanismos de caché para almacenar información frecuente como lista de medicamentos, horarios y datos del paciente, reduciendo la carga del sistema.
+- **Optimización de Código y Arquitectura:**
+  - Realizar pruebas de rendimiento para identificar cuellos de botella en procesos críticos como generación de recordatorios y carga de recetas.
 
-  + Aplicar caché a nivel de aplicación para mejorar la experiencia del usuario en consultas repetitivas, como visualización de tratamientos o historial clínico.
+  - Aplicar patrones de diseño que favorezcan la escalabilidad y mantenibilidad del sistema.
 
-+ **Optimización de Código y Arquitectura:**
+  - Utilizar una arquitectura basada en microservicios para separar funcionalidades como gestión de usuarios, tratamientos, notificaciones y análisis de datos.
 
-  + Realizar pruebas de rendimiento para identificar cuellos de botella en procesos críticos como generación de recordatorios y carga de recetas.
+- **Optimización de Recursos en el Frontend:**
+  - Minimizar el uso de recursos en la aplicación móvil y web mediante técnicas de compresión y optimización de archivos.
 
-  + Aplicar patrones de diseño que favorezcan la escalabilidad y mantenibilidad del sistema.
+  - Implementar carga eficiente de datos para asegurar una experiencia fluida, especialmente en dispositivos móviles y en usuarios adultos mayores.
 
-  + Utilizar una arquitectura basada en microservicios para separar funcionalidades como gestión de usuarios, tratamientos, notificaciones y análisis de datos.
+- **Monitorización y Gestión de Errores:**
+  - Implementar herramientas de monitoreo para supervisar el rendimiento del sistema en tiempo real, especialmente en el envío de notificaciones y procesamiento de datos clínicos.
 
-+ **Optimización de Recursos en el Frontend:**
-
-  + Minimizar el uso de recursos en la aplicación móvil y web mediante técnicas de compresión y optimización de archivos.
-
-  + Implementar carga eficiente de datos para asegurar una experiencia fluida, especialmente en dispositivos móviles y en usuarios adultos mayores.
-
-+ **Monitorización y Gestión de Errores:**
-
-  + Implementar herramientas de monitoreo para supervisar el rendimiento del sistema en tiempo real, especialmente en el envío de notificaciones y procesamiento de datos clínicos.
-
-  + Desarrollar un sistema robusto de manejo de errores que permita registrar fallos y garantizar la continuidad del servicio sin afectar al usuario.
+  - Desarrollar un sistema robusto de manejo de errores que permita registrar fallos y garantizar la continuidad del servicio sin afectar al usuario.
 
 <hr class="page-break">
 
@@ -1418,54 +1406,60 @@ Este enfoque también facilita la integración con sistemas externos de salud y 
 Las Primary User Stories representan las funcionalidades núcleo del sistema que ejercen la mayor influencia en la definición de la arquitectura de microservicios. Estas historias impulsan directamente la identificación de bounded contexts (DDD), los flujos de datos críticos, los mecanismos de comunicación entre servicios (sincrónicos y asíncronos), el diseño de persistencia y las estrategias de notificación y procesamiento de eventos.
 Se han seleccionado las User Stories de mayor prioridad del Product Backlog que impactan significativamente la estructura arquitectónica del producto MediTrack.
 
-| ID  | Título | Descripción |
-| --- | ------ | ----------- |
-|US13|Subir receta médica con horarios|Como personal técnico de clínica, quiero subir una receta médica digital (PDF o formulario estructurado) con la lista de medicamentos, dosis, horarios y duración del tratamiento para que el sistema genere automáticamente los recordatorios para el paciente.             |
-|US04|Ver lista de medicamentos|Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                      |
-|US05|Recibir recordatorio de medicamento|Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                        |
-|US06|Registrar cumplimiento de medicamento|Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                              |
-|US14|Subir historial clínico|Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                   |
-|US16|Ver dashboard de tendencias de adherencia|Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento. |
-|US07|Alertar stock bajo de medicamento|Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.                      |
-|US25|Ver historial de adherencia y progreso|Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                      |
-
+| ID   | Título                                    | Descripción                                                                                                                                                                                                                                                      |
+| ---- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| US13 | Subir receta médica con horarios          | Como personal técnico de clínica, quiero subir una receta médica digital (PDF o formulario estructurado) con la lista de medicamentos, dosis, horarios y duración del tratamiento para que el sistema genere automáticamente los recordatorios para el paciente. |
+| US04 | Ver lista de medicamentos                 | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                                                                                                                                       |
+| US05 | Recibir recordatorio de medicamento       | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                                                                                                                                         |
+| US06 | Registrar cumplimiento de medicamento     | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                                                                                                                                               |
+| US14 | Subir historial clínico                   | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                                                                                                                                    |
+| US16 | Ver dashboard de tendencias de adherencia | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento.                                                                                                                  |
+| US07 | Alertar stock bajo de medicamento         | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.                                                                                                                              |
+| US25 | Ver historial de adherencia y progreso    | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                                                                                                                                  |
 
 ### 4.2.3 Quality Attribute Scenarios
 
-Los escenarios de atributos de calidad permiten analizar cómo debe reaccionar la aplicación ante distintos estímulos y condiciones críticas. 
+Los escenarios de atributos de calidad permiten analizar cómo debe reaccionar la aplicación ante distintos estímulos y condiciones críticas.
 
-| ID      | Atributo de Calidad | Fuente                        | Estímulo                                              | Artefacto                                      | Entorno                              | Respuesta                                                                 | Medida de Respuesta                                      |
-|---------|---------------------|-------------------------------|-------------------------------------------------------|------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------|
-| QAS-0   | Rendimiento        | Paciente (app móvil)          | Solicitud de visualización de lista de medicamentos o envío de recordatorio push inmediato | API Gateway + Notification Service + Mobile Application | Producción, carga normal             | El sistema responde rápidamente y entrega el recordatorio o muestra la lista de medicamentos (US04, US05, US13, US16) | Latencia ≤ 2 segundos (percentil 95)                     |
-| QAS-1   | Durabilidad        | Paciente                      | Pérdida temporal de conexión a internet al registrar cumplimiento de medicamento o al consultar historial | Mobile Application (Frontend + Local Storage)  | Entorno sin conexión (modo offline)  | El cumplimiento o historial se guarda localmente y se sincroniza automáticamente cuando se recupera la conexión (US06, US07, US25) | 100 % de los registros locales se sincronizan correctamente en menos de 5 minutos tras reconexión |
-| QAS-2   | Disponibilidad     | Sistema de notificaciones / Scheduler | Fallo en el servicio de envío de recordatorios o registro de cumplimiento | Notification Service + Compliance Service      | Producción, carga normal             | El sistema detecta el fallo, reintenta automáticamente y activa fallback (SMS o notificación local) (US05, US06, US07, US13) | Tiempo de recuperación ≤ 30 segundos; 99.9 % de recordatorios críticos entregados |
-
+| ID    | Atributo de Calidad | Fuente                                | Estímulo                                                                                                  | Artefacto                                               | Entorno                             | Respuesta                                                                                                                          | Medida de Respuesta                                                                               |
+| ----- | ------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| QAS-0 | Rendimiento         | Paciente (app móvil)                  | Solicitud de visualización de lista de medicamentos o envío de recordatorio push inmediato                | API Gateway + Notification Service + Mobile Application | Producción, carga normal            | El sistema responde rápidamente y entrega el recordatorio o muestra la lista de medicamentos (US04, US05, US13, US16)              | Latencia ≤ 2 segundos (percentil 95)                                                              |
+| QAS-1 | Durabilidad         | Paciente                              | Pérdida temporal de conexión a internet al registrar cumplimiento de medicamento o al consultar historial | Mobile Application (Frontend + Local Storage)           | Entorno sin conexión (modo offline) | El cumplimiento o historial se guarda localmente y se sincroniza automáticamente cuando se recupera la conexión (US06, US07, US25) | 100 % de los registros locales se sincronizan correctamente en menos de 5 minutos tras reconexión |
+| QAS-2 | Disponibilidad      | Sistema de notificaciones / Scheduler | Fallo en el servicio de envío de recordatorios o registro de cumplimiento                                 | Notification Service + Compliance Service               | Producción, carga normal            | El sistema detecta el fallo, reintenta automáticamente y activa fallback (SMS o notificación local) (US05, US06, US07, US13)       | Tiempo de recuperación ≤ 30 segundos; 99.9 % de recordatorios críticos entregados                 |
 
 ### 4.2.4. Constraints
 
 En esta sección se documentan las restricciones tecnológicas, legales y operativas que acotan el espacio de decisiones arquitectónicas de MediTrack.
 
-| ID  | Categoria | Restricción | Impacto en la arquitectura | 
-| --- | --------- | ----------- | -------------------------- | 
-| CON-01 | Base de datos | Todos los microservicios utilizarán MySQL como único motor de persistencia relacional. | Cada microservicio tendrá su propio esquema MySQL (Database per Service). No se evaluarán bases de datos NoSQL ni otros motores relacionales en esta versión. |
-| CON-02 | Infraestructura cloud | El despliegue se realizará sobre Azure for Students (plan gratuito). | Limita el número de instancias simultáneas, la RAM por servicio y el ancho de banda. Las decisiones de escalabilidad deben contemplar estos topes desde el diseño. |
-| CON-03 | Comunicación | Los clientes se comunicarán con el backend exclusivamente mediante API REST bajo HTTPS. | Se descarta GraphQL y gRPC. Todos los contratos de integración serán endpoints REST documentados con OpenAPI. |
-| CON-04 | Seguridad | La gestión de sesiones y roles se implementará con JSON Web Tokens (JWT). | El API Gateway será el único punto de validación de tokens. Los microservicios confiarán en el token ya validado por el Gateway, sin autenticación propia. |
-| CON-05 | Notificaciones | El envío de notificaciones push se realizará exclusivamente con Firebase Cloud Messaging (FCM). | El Reminder Service dependerá de FCM para la entrega final al dispositivo. Debe contemplarse un mecanismo de reintento ante fallos de FCM. |
-| CON-07 | Stack tecnológico | Backend en Java con Spring Boot, frontend web en React y cliente móvil en Flutter. | Las decisiones de frameworks, librerías y patrones de integración quedan acotadas al ecosistema Java/Spring, React y Flutter. No se incorporarán otros lenguajes sin consenso del equipo. |
+| ID     | Categoria                 | Restricción                                                                                                                                                                                                                                                                       | Impacto en la arquitectura                                                                                                                                                                                                                                                                                                                                                                    |
+| ------ | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CON-01 | Base de datos             | Todos los microservicios utilizarán MySQL como único motor de persistencia relacional bajo el patrón Database per Service. Los modelos de lectura derivados del patrón CQRS se construirán sobre el mismo motor mediante vistas materializadas o réplicas de lectura.             | Cada microservicio tendrá su propio esquema MySQL aislado. No se evaluarán bases de datos NoSQL ni otros motores relacionales en esta versión. Los read models del enfoque CQRS (sección 4.1.2) se materializarán sobre MySQL, evitando la introducción de motores adicionales.                                                                                                               |
+| CON-02 | Infraestructura cloud     | El despliegue se realizará sobre Azure for Students (plan gratuito).                                                                                                                                                                                                              | Limita el número de instancias simultáneas, la RAM por servicio y el ancho de banda. Las decisiones de escalabilidad horizontal deben contemplar estos topes desde el diseño.                                                                                                                                                                                                                 |
+| CON-03 | Comunicación              | Los clientes se comunicarán con el backend exclusivamente mediante API REST bajo HTTPS.                                                                                                                                                                                           | Se descarta GraphQL y gRPC como protocolos de cliente. Todos los contratos de integración serán endpoints REST documentados con OpenAPI.                                                                                                                                                                                                                                                      |
+| CON-04 | Seguridad                 | La gestión de sesiones y roles se implementará con JSON Web Tokens (JWT). El API Gateway actuará como punto principal de validación y autorización por rol, pero cada microservicio deberá validar la firma del token de forma independiente como capa de defensa en profundidad. | El Gateway centraliza la lógica de autenticación, pero los microservicios no confían ciegamente en él. La validación local de la firma JWT es obligatoria, alineándose con el principio de menor privilegio (Principle 4.1.1 #2).                                                                                                                                                             |
+| CON-05 | Notificaciones            | El envío de notificaciones push remotas se realizará exclusivamente con Firebase Cloud Messaging (FCM).                                                                                                                                                                           | El Reminder Service dependerá de FCM para la entrega final al dispositivo. Debe contemplarse un mecanismo de reintento ante fallos de FCM y un canal de fallback (ver AC-09).                                                                                                                                                                                                                 |
+| CON-06 | Almacenamiento offline    | El cliente móvil utilizará SQLite como motor de persistencia local para soportar el funcionamiento offline-first.                                                                                                                                                                 | La aplicación Flutter mantendrá un esquema local sincronizable mediante un ORM compatible con SQLite. La sincronización con el backend se realizará de forma asíncrona al recuperar conexión, cumpliendo con QAS-1 (100 % de registros sincronizados en ≤ 5 minutos).                                                                                                                         |
+| CON-07 | Stack tecnológico         | Backend en Java con Spring Boot, frontend web en React y cliente móvil en Flutter.                                                                                                                                                                                                | Las decisiones de frameworks, librerías y patrones de integración quedan acotadas al ecosistema Java/Spring, React y Flutter. No se incorporarán otros lenguajes sin consenso del equipo.                                                                                                                                                                                                     |
+| CON-08 | Plataforma móvil objetivo | El cliente móvil se distribuirá exclusivamente para Android en la fase inicial del producto.                                                                                                                                                                                      | La estrategia de notificaciones push se diseña sobre FCM (CON-05) para Android. Las pruebas de compatibilidad se ejecutarán únicamente sobre versiones recientes de Android, alineadas con el dispositivo predominante en el segmento Paciente (Lima Metropolitana, NSE medio, incluyendo adultos mayores). iOS queda fuera del alcance de la versión 1.                                      |
+| CON-09 | Cumplimiento legal        | El sistema deberá cumplir con la Ley N° 29733 — Ley de Protección de Datos Personales del Perú y su reglamento, particularmente en lo referido al tratamiento de datos personales sensibles relacionados con la salud (Art. 2.5).                                                 | La arquitectura debe contemplar consentimiento informado del usuario, cifrado de datos en tránsito (HTTPS/TLS) y en reposo, control de accesos basado en roles, registros de auditoría, y procesos de retención y eliminación de datos. El alojamiento y procesamiento deben mantenerse dentro del marco legal peruano. Aterriza el Principle 4.1.1 #2 ("Seguridad y Privacidad por Diseño"). |
 
 ### 4.2.5. Architectural Concerns
 
 En esta sección se identifican las preocupaciones arquitectónicas de mayor impacto, derivadas tanto de los requisitos funcionales como de los riesgos y necesidades de los stakeholders.
 
-| ID  | Aspecto | Preocupacion/Restricción | Impacto en la Arquitectura |
-| --- | ------- |------------------------- | -------------------------- |
-|  AC-01  | Seguridad y control de acceso | El sistema atiende dos segmentos con permisos radicalmente distintos. Un fallo en la separación Paciente/Personal Técnico implicaría una violación de privacidad | La arquitectura debe aplicar separación de roles a nivel del API Gateway (validación JWT con claim de rol) y a nivel de datos (cada microservicio solo expone la información que corresponde al rol autenticado). |
-|  AC-02  | Disponibilidad de notificaciones críticas | El Reminder Service es el componente de mayor impacto clínico. Un fallo en la entrega de un recordatorio puede derivar en una dosis omitida con consecuencias directas para la salud del paciente. | El Reminder Service debe implementar reintentos automáticos con backoff exponencial, colas de mensajes con garantía de entrega y comunicación asíncrona para desacoplarse de los servicios que originan los eventos. |
-|  AC-03  | Coherencia de datos en modo offline | Los pacientes deben poder registrar cumplimientos sin conexión a internet, situación frecuente en el contexto peruano. | La app móvil debe mantener un estado local sincronizable (SQLite). La arquitectura debe definir la estrategia de resolución de conflictos al sincronizar registros locales con el servidor (timestamp como criterio de precedencia). |
-|  AC-04  | Escalabilidad del motor de notificaciones | El Reminder Service puede disparar miles de notificaciones simultáneas si múltiples pacientes comparten el mismo horario de medicación. | Debe diseñarse para escalar horizontalmente de forma independiente al resto de microservicios, sin que su carga afecte la disponibilidad del Treatment Service o el Follow-up Service. |
-|  AC-05  | Mantenibilidad e independencia entre servicios | El equipo de desarrollo es pequeño. Un cambio en un servicio no debe obligar a modificar ni redesplegar otros servicios. | Cada microservicio debe poder modificarse, testearse y desplegarse de forma autónoma. La comunicación entre servicios se realizará exclusivamente mediante interfaces bien definidas (REST o eventos), sin dependencias directas entre repositorios o bases de datos. |
-|  AC-06  | Accesibilidad para adultos mayores | Una parte significativa del segmento Paciente tiene baja alfabetización digital, incluyendo adultos mayores como el perfil identificado en las entrevistas. | El backend debe entregar datos ya procesados y simplificados (listas ordenadas por horario, estados en lenguaje natural) para que el frontend móvil minimice la lógica de presentación y reduzca la carga cognitiva del usuario. |
+| ID    | Aspecto                                               | Preocupacion/Restricción                                                                                                                                                                                                                                                                                                         | Impacto en la Arquitectura                                                                                                                                                                                                                                                                                                                                                                   |
+| ----- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| AC-01 | Seguridad y control de acceso                         | El sistema atiende dos segmentos con permisos radicalmente distintos. Un fallo en la separación Paciente/Personal Técnico implicaría una violación de privacidad y un incumplimiento de CON-09 (Ley N° 29733).                                                                                                                   | La arquitectura debe aplicar autorización por rol en el API Gateway (validación JWT con claim de rol) y validación local de la firma del token en cada microservicio (defensa en profundidad, alineado con CON-04). Cada servicio expone únicamente la información correspondiente al rol autenticado.                                                                                       |
+| AC-02 | Disponibilidad de notificaciones críticas             | El Reminder Service es el componente de mayor impacto clínico. Un fallo en la entrega de un recordatorio puede derivar en una dosis omitida con consecuencias directas para la salud del paciente.                                                                                                                               | El Reminder Service debe implementar reintentos automáticos con backoff exponencial, colas de mensajes con garantía de entrega y comunicación asíncrona para desacoplarse de los servicios que originan los eventos.                                                                                                                                                                         |
+| AC-03 | Coherencia de datos en modo offline                   | Los pacientes deben poder registrar cumplimientos sin conexión a internet (situación frecuente en el contexto peruano). Cuando un mismo paciente sincroniza registros desde el dispositivo tras periodos prolongados sin conexión, pueden producirse conflictos entre el estado local y el estado remoto.                        | La arquitectura debe definir una estrategia explícita de resolución de conflictos en la sincronización entre el almacenamiento offline (CON-06) y los microservicios. La estrategia concreta (timestamp, vector clocks u otra) se decidirá en las iteraciones ADD (sección 4.3).                                                                                                             |
+| AC-04 | Escalabilidad del motor de notificaciones             | El Reminder Service puede disparar miles de notificaciones simultáneas si múltiples pacientes comparten el mismo horario de medicación.                                                                                                                                                                                          | Debe diseñarse para escalar horizontalmente de forma independiente al resto de microservicios, dentro de los topes impuestos por CON-02, sin que su carga afecte la disponibilidad del Treatment Service o el Follow-up Service.                                                                                                                                                             |
+| AC-05 | Mantenibilidad e independencia entre servicios        | El equipo de desarrollo es pequeño. Un cambio en un servicio no debe obligar a modificar ni redesplegar otros servicios.                                                                                                                                                                                                         | Cada microservicio debe poder modificarse, testearse y desplegarse de forma autónoma. La comunicación entre servicios se realizará exclusivamente mediante interfaces bien definidas (REST o eventos), sin dependencias directas entre repositorios o bases de datos.                                                                                                                        |
+| AC-06 | Accesibilidad y simplicidad para el segmento Paciente | Una parte significativa del segmento Paciente tiene baja alfabetización digital, incluyendo adultos mayores identificados en las entrevistas. La interfaz móvil debe minimizar la carga cognitiva sin acoplar el dominio del backend a la presentación.                                                                          | La arquitectura debe incorporar un componente Backend-For-Frontend (BFF) específico para la app móvil, encargado de adaptar y simplificar las respuestas del dominio (ordenamiento, agregaciones, estados en lenguaje natural) a las necesidades de presentación móvil. Los microservicios de dominio se mantienen agnósticos de la UI, preservando el Principle 4.1.1 #3 (Desacoplamiento). |
+| AC-07 | Definición de Bounded Contexts                        | La cercanía funcional entre Treatment, Reminder y Follow-up genera riesgo de límites mal definidos. Un modelado incorrecto derivaría en un monolito distribuido con servicios fuertemente acoplados, contradiciendo el enfoque DDD adoptado en 4.1.2.                                                                            | La arquitectura debe partir de un modelado DDD explícito con Context Map documentado, identificando claramente las relaciones (Customer-Supplier, Conformist, Anti-Corruption Layer) entre los Bounded Contexts. Se evitará compartir entidades de dominio entre servicios mediante librerías comunes.                                                                                       |
+| AC-08 | Consistencia de datos entre servicios                 | Operaciones críticas como el registro de cumplimiento (US06) o la generación automática de recordatorios al subir una receta (US13) atraviesan varios servicios (Treatment, Follow-up, Reminder) con bases de datos independientes (CON-01). Una transacción ACID distribuida no es viable.                                      | La arquitectura debe adoptar un modelo de eventual consistency mediante mensajería asíncrona, aplicando el patrón Saga para flujos que cruzan servicios y el patrón Outbox para garantizar la publicación confiable de eventos desde cada microservicio sin perder atomicidad con su escritura local.                                                                                        |
+| AC-09 | Estrategia de fallback de notificaciones              | QAS-2 exige una entrega del 99.9 % de recordatorios críticos. Un fallo prolongado de FCM (CON-05) o la ausencia de conectividad del dispositivo pueden impedir la entrega del recordatorio en el horario clínico.                                                                                                                | La arquitectura debe contemplar canales de fallback: notificación local programada en el dispositivo (gestionada por la app Flutter sobre el almacenamiento offline de CON-06) como respaldo principal, y un canal SMS gestionado por un proveedor externo, activado cuando FCM no confirma la entrega dentro de una ventana definida.                                                       |
+| AC-10 | Asimetría de carga entre segmentos                    | Pacientes (cliente móvil Android, conectividad fluctuante, alta frecuencia de escrituras pequeñas como cumplimiento de medicación) y Personal Técnico (cliente web, conectividad estable, lecturas pesadas como historiales US14 y dashboards de adherencia US16) presentan patrones de tráfico opuestos sobre el mismo backend. | La arquitectura debe aplicar el patrón CQRS (4.1.2) separando los modelos de escritura transaccional de los modelos de lectura analítica del Personal Técnico, de modo que las consultas pesadas no degraden la latencia de las operaciones del Paciente (QAS-0: ≤ 2 s p95).                                                                                                                 |
+| AC-11 | Observabilidad en arquitectura distribuida            | Con seis microservicios y flujos que cruzan varios servicios (US06, US13), un fallo aislado es difícil de diagnosticar sin trazabilidad transversal. QAS-2 exige detección de fallos en ≤ 30 segundos y un 99.9 % de entregas críticas.                                                                                          | La arquitectura debe incorporar tracing distribuido con correlation IDs propagados desde el API Gateway a través de todos los servicios, logging centralizado y métricas por servicio expuestas a un sistema de monitoreo. La observabilidad se trata como capa transversal obligatoria, no como añadido posterior.                                                                          |
 
 <hr class="page-break">
 
@@ -1520,38 +1514,38 @@ En esta tabla se registran los requisitos priorizados que guían las decisiones 
 
 **Objetivo:** Definir el flujo principal del sistema: desde la carga de una receta hasta la notificación al paciente y el registro de su cumplimiento.
 
-| Driver | Justificación |
-|--------|--------------|
-| US13 — Subir receta médica | Define el punto de entrada del flujo de tratamiento y la necesidad de validación previa a la persistencia. |
-| US05 — Recibir recordatorio | Establece la necesidad de generar eventos derivados de la receta para la creación de recordatorios. |
-| US06 — Registrar cumplimiento | Permite cerrar el ciclo del tratamiento mediante la persistencia del comportamiento del paciente. |
-| AC-05 — Integridad de datos | Justifica la validación estructurada de recetas antes de generar efectos secundarios como recordatorios. |
+| Driver                        | Justificación                                                                                              |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| US13 — Subir receta médica    | Define el punto de entrada del flujo de tratamiento y la necesidad de validación previa a la persistencia. |
+| US05 — Recibir recordatorio   | Establece la necesidad de generar eventos derivados de la receta para la creación de recordatorios.        |
+| US06 — Registrar cumplimiento | Permite cerrar el ciclo del tratamiento mediante la persistencia del comportamiento del paciente.          |
+| AC-05 — Integridad de datos   | Justifica la validación estructurada de recetas antes de generar efectos secundarios como recordatorios.   |
 
 #### 4.3.1.3. Choose One or More Elements of the System to Refine
 
 Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes elementos:
 
-| Elemento seleccionado | Justificación |
-|----------------------|---------------|
-| **Treatment Service** | Es el receptor del flujo de mayor prioridad (US13). Se refina el pipeline de validación de recetas mediante el patrón Decorator antes de la persistencia. |
-| **Reminder Service** | Es el componente de mayor criticidad clínica. Se refina a nivel de componentes internos para garantizar la entrega de recordatorios vía FCM con reintentos. |
-| **Follow-up Service** | Es el responsable de registrar el cumplimiento del paciente y cerrar el ciclo del tratamiento. |
+| Elemento seleccionado | Justificación                                                                                                                                               |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Treatment Service** | Es el receptor del flujo de mayor prioridad (US13). Se refina el pipeline de validación de recetas mediante el patrón Decorator antes de la persistencia.   |
+| **Reminder Service**  | Es el componente de mayor criticidad clínica. Se refina a nivel de componentes internos para garantizar la entrega de recordatorios vía FCM con reintentos. |
+| **Follow-up Service** | Es el responsable de registrar el cumplimiento del paciente y cerrar el ciclo del tratamiento.                                                              |
 
 #### 4.3.1.4. Choose One or More Design Concepts That Satisfy the Selected Drivers
 
-| Concepto de Diseño | Relación con Drivers |
-|--------------------|---------------------|
-| **Pipeline de validación con patrón Decorator** en Treatment Service | AC-05, US13, US26. Encadena validaciones (existencia del paciente, nombre del medicamento en catálogo, horarios completos) antes de persistir la receta, evitando recordatorios incorrectos. |
-| **Comunicación asíncrona por eventos**  | AC-02, AC-04, US06, US07. El Follow-up Service publica `CumplimientoRegistrado`; el Reminder Service lo consume y cancela el recordatorio pendiente. Alternativa descartada: REST síncrono, por riesgo de fallos en cascada. |
-| **Patrón Observer entre servicios** | US06. El registro de cumplimiento genera eventos que pueden ser consumidos por otros servicios sin acoplamiento directo. |
+| Concepto de Diseño                                                   | Relación con Drivers                                                                                                                                                                                                         |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Pipeline de validación con patrón Decorator** en Treatment Service | AC-05, US13, US26. Encadena validaciones (existencia del paciente, nombre del medicamento en catálogo, horarios completos) antes de persistir la receta, evitando recordatorios incorrectos.                                 |
+| **Comunicación asíncrona por eventos**                               | AC-02, AC-04, US06, US07. El Follow-up Service publica `CumplimientoRegistrado`; el Reminder Service lo consume y cancela el recordatorio pendiente. Alternativa descartada: REST síncrono, por riesgo de fallos en cascada. |
+| **Patrón Observer entre servicios**                                  | US06. El registro de cumplimiento genera eventos que pueden ser consumidos por otros servicios sin acoplamiento directo.                                                                                                     |
 
 #### 4.3.1.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 
-| Elemento | Responsabilidad | Interfaces |
-|----------|-----------------|------------|
-| **Treatment Service** | Recibe recetas del Personal Técnico, ejecuta pipeline de validación (Decorator), persiste medicamentos con horarios y publica los eventos `RecetaCargada` y `StockBajo`. | `POST /treatments/prescriptions`, `GET /treatments/patients/{patientId}/medications`, `PUT /treatments/medications/{id}`, `DELETE /treatments/medications/{id}`, `POST /treatments/clinical-history` |
-| **Reminder Service** | Genera recordatorios vía Factory Method al recibir `RecetaCargada` y `CitaAgendada`. Ejecuta scheduler para envío vía FCM con backoff exponencial. Cancela recordatorios al recibir `CumplimientoRegistrado`. | `GET /reminders/patients/{patientId}`, `PUT /reminders/{id}/cancel`. Consume eventos: `RecetaCargada`, `CitaAgendada`, `CumplimientoRegistrado` |
-| **Follow-up Service** | Registra cumplimiento/incumplimiento de medicamentos y citas. Publica el evento `CumplimientoRegistrado` tras persistir un cumplimiento. | `POST /followup/compliance`, `GET /followup/patients/{patientId}/history` |
+| Elemento              | Responsabilidad                                                                                                                                                                                               | Interfaces                                                                                                                                                                                           |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Treatment Service** | Recibe recetas del Personal Técnico, ejecuta pipeline de validación (Decorator), persiste medicamentos con horarios y publica los eventos `RecetaCargada` y `StockBajo`.                                      | `POST /treatments/prescriptions`, `GET /treatments/patients/{patientId}/medications`, `PUT /treatments/medications/{id}`, `DELETE /treatments/medications/{id}`, `POST /treatments/clinical-history` |
+| **Reminder Service**  | Genera recordatorios vía Factory Method al recibir `RecetaCargada` y `CitaAgendada`. Ejecuta scheduler para envío vía FCM con backoff exponencial. Cancela recordatorios al recibir `CumplimientoRegistrado`. | `GET /reminders/patients/{patientId}`, `PUT /reminders/{id}/cancel`. Consume eventos: `RecetaCargada`, `CitaAgendada`, `CumplimientoRegistrado`                                                      |
+| **Follow-up Service** | Registra cumplimiento/incumplimiento de medicamentos y citas. Publica el evento `CumplimientoRegistrado` tras persistir un cumplimiento.                                                                      | `POST /followup/compliance`, `GET /followup/patients/{patientId}/history`                                                                                                                            |
 
 #### 4.3.1.6. Sketch Views (C4 & UML) and Record Design Decisions
 
@@ -1582,51 +1576,50 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 En esta tabla se registran los requisitos priorizados que guían las decisiones de diseño de esta segunda iteración.
 
-| ID | Requisito / Historia de Usuario | Prioridad | Estado |
-|----|--------------------------------|-----------|--------|
-| 1 | Como paciente, quiero poder registrar cumplimiento sin internet para continuar mi tratamiento en cualquier contexto. (US23) | Alta | Pendiente |
-| 2 | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento. (US07) | Alta | Pendiente |
-| 3 | Como paciente, quiero configurar las preferencias de notificaciones para ajustar sonido, vibración y repeticiones según mi necesidad. (US22) | Media | Pendiente |
+| ID  | Requisito / Historia de Usuario                                                                                                              | Prioridad | Estado    |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --------- |
+| 1   | Como paciente, quiero poder registrar cumplimiento sin internet para continuar mi tratamiento en cualquier contexto. (US23)                  | Alta      | Pendiente |
+| 2   | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento. (US07)   | Alta      | Pendiente |
+| 3   | Como paciente, quiero configurar las preferencias de notificaciones para ajustar sonido, vibración y repeticiones según mi necesidad. (US22) | Media     | Pendiente |
 
 #### 4.3.2.2. Establish Iteration Goal by Selecting Drivers
 
 **Objetivo:**
 Permitir la continuidad del tratamiento del paciente en tres frentes: soporte a funcionamiento sin conexión (offline-first)y resiliencia del motor de notificaciones ante alta concurrencia.
 
-| Driver | Justificación |
-|--------|--------------|
-| US23 — Modo offline | Define la necesidad de persistencia local en el cliente. |
-| US07 — Alerta de stock bajo | El Treatment Service debe detectar cuando el conteo de pastillas cae al umbral y publicar el evento `StockBajo` para que el Reminder Service genere la alerta al paciente. |
-| US22 — Preferencias de notificaciones | Los pacientes, especialmente adultos mayores, deben poder ajustar el comportamiento de los recordatorios. Requiere un módulo de preferencias en el Follow-up Service. |
-| AC-03 — Coherencia offline | Justifica la estrategia de resolución de conflictos en sincronización. |
-| AC-04 — Escalabilidad del Reminder Service | El servicio debe poder escalar horizontalmente ante picos de notificaciones simultáneas. |
-| QAS-1 — Durabilidad | Garantiza que los datos registrados offline no se pierdan. |
+| Driver                                     | Justificación                                                                                                                                                              |
+| ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| US23 — Modo offline                        | Define la necesidad de persistencia local en el cliente.                                                                                                                   |
+| US07 — Alerta de stock bajo                | El Treatment Service debe detectar cuando el conteo de pastillas cae al umbral y publicar el evento `StockBajo` para que el Reminder Service genere la alerta al paciente. |
+| US22 — Preferencias de notificaciones      | Los pacientes, especialmente adultos mayores, deben poder ajustar el comportamiento de los recordatorios. Requiere un módulo de preferencias en el Follow-up Service.      |
+| AC-03 — Coherencia offline                 | Justifica la estrategia de resolución de conflictos en sincronización.                                                                                                     |
+| AC-04 — Escalabilidad del Reminder Service | El servicio debe poder escalar horizontalmente ante picos de notificaciones simultáneas.                                                                                   |
+| QAS-1 — Durabilidad                        | Garantiza que los datos registrados offline no se pierdan.                                                                                                                 |
 
 #### 4.3.2.3. Choose One or More Elements of the System to Refine
 
-| Elemento seleccionado | Justificación |
-|----------------------|---------------|
-| **App Móvil Flutter** | Se añade la capa de persistencia local SQLite y el mecanismo de sincronización batch con el Follow-up Service al reconectar. |
+| Elemento seleccionado | Justificación                                                                                                                                  |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **App Móvil Flutter** | Se añade la capa de persistencia local SQLite y el mecanismo de sincronización batch con el Follow-up Service al reconectar.                   |
 | **Follow-up Service** | Se añade el endpoint de sincronización batch offline (`POST /followup/compliance/sync`) y la lógica de resolución de conflictos por timestamp. |
-| **Treatment Service** | Se refina la lógica de conteo de stock y publicación del evento `StockBajo` al alcanzar el umbral de pastillas restantes. |
-
+| **Treatment Service** | Se refina la lógica de conteo de stock y publicación del evento `StockBajo` al alcanzar el umbral de pastillas restantes.                      |
 
 #### 4.3.2.4. Choose One or More Design Concepts That Satisfy the Selected Drivers
 
-| Concepto de Diseño | Relación con Drivers |
-|--------------------|---------------------|
-| **Persistencia local SQLite con sincronización optimista** en la app móvil | AC-03, QAS-1, US23. La app persiste cumplimientos localmente. Al reconectar, envía los registros pendientes al Follow-up Service vía endpoint batch. El timestamp determina la precedencia en caso de conflicto. Alternativa descartada: solo funcionamiento online, no satisface QAS-1 ni el principio Offline-First definido en 4.1.1. |
-| **Módulo de preferencias de notificación** integrado en el Follow-up Service | US22, AC-08. Almacena la configuración de sonido, vibración y repeticiones por paciente. El Reminder Service consulta estas preferencias antes de generar cada notificación. |
-| **Detección de stock bajo y evento `StockBajo`** en el Treatment Service | US07, AC-02. Cuando el conteo de pastillas restantes alcanza el umbral de 3 unidades, el Treatment Service publica `StockBajo`; el Reminder Service genera la notificación al paciente. |
+| Concepto de Diseño                                                           | Relación con Drivers                                                                                                                                                                                                                                                                                                                     |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Persistencia local SQLite con sincronización optimista** en la app móvil   | AC-03, QAS-1, US23. La app persiste cumplimientos localmente. Al reconectar, envía los registros pendientes al Follow-up Service vía endpoint batch. El timestamp determina la precedencia en caso de conflicto. Alternativa descartada: solo funcionamiento online, no satisface QAS-1 ni el principio Offline-First definido en 4.1.1. |
+| **Módulo de preferencias de notificación** integrado en el Follow-up Service | US22, AC-08. Almacena la configuración de sonido, vibración y repeticiones por paciente. El Reminder Service consulta estas preferencias antes de generar cada notificación.                                                                                                                                                             |
+| **Detección de stock bajo y evento `StockBajo`** en el Treatment Service     | US07, AC-02. Cuando el conteo de pastillas restantes alcanza el umbral de 3 unidades, el Treatment Service publica `StockBajo`; el Reminder Service genera la notificación al paciente.                                                                                                                                                  |
 
 #### 4.3.2.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 
-| Elemento | Responsabilidad | Interfaces |
-|----------|-----------------|------------|
-| **App Móvil Flutter (capa offline)** | Persiste en SQLite la lista de medicamentos y los registros de cumplimiento. Al detectar reconexión, envía los registros pendientes al Follow-up Service vía endpoint batch y actualiza el estado local con la respuesta del servidor. | Consume: `POST /followup/compliance/sync`, lectura/escritura de DB local SQLite |
-| **Follow-up Service (sincronización batch)** | Recibe registros offline en lote, aplica resolución de conflictos por timestamp y persiste los cumplimientos. Almacena y expone las preferencias de notificación del paciente. | `POST /followup/compliance/sync`, `GET /followup/preferences/{patientId}`, `PUT /followup/preferences/{patientId}` |
-| **Reminder Service (resiliencia y preferencias)** | Antes de enviar cada notificación, consulta las preferencias del paciente. Implementa reintentos con backoff exponencial ante fallo de FCM. Escala horizontalmente de forma independiente ante picos de concurrencia. | `GET /reminders/patients/{patientId}`, `PUT /reminders/{id}/cancel`. Consume eventos: `RecetaCargada`, `CitaAgendada`, `CumplimientoRegistrado`, `StockBajo` |
-| **Treatment Service (detección de stock bajo)** | Al registrar una toma de medicamento, decrementa el contador de stock. Cuando el stock llega a 3 unidades, publica el evento `StockBajo` para que el Reminder Service genere la alerta al paciente. | `PUT /treatments/medications/{id}/stock`. Publica evento: `StockBajo` |
+| Elemento                                          | Responsabilidad                                                                                                                                                                                                                        | Interfaces                                                                                                                                                   |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **App Móvil Flutter (capa offline)**              | Persiste en SQLite la lista de medicamentos y los registros de cumplimiento. Al detectar reconexión, envía los registros pendientes al Follow-up Service vía endpoint batch y actualiza el estado local con la respuesta del servidor. | Consume: `POST /followup/compliance/sync`, lectura/escritura de DB local SQLite                                                                              |
+| **Follow-up Service (sincronización batch)**      | Recibe registros offline en lote, aplica resolución de conflictos por timestamp y persiste los cumplimientos. Almacena y expone las preferencias de notificación del paciente.                                                         | `POST /followup/compliance/sync`, `GET /followup/preferences/{patientId}`, `PUT /followup/preferences/{patientId}`                                           |
+| **Reminder Service (resiliencia y preferencias)** | Antes de enviar cada notificación, consulta las preferencias del paciente. Implementa reintentos con backoff exponencial ante fallo de FCM. Escala horizontalmente de forma independiente ante picos de concurrencia.                  | `GET /reminders/patients/{patientId}`, `PUT /reminders/{id}/cancel`. Consume eventos: `RecetaCargada`, `CitaAgendada`, `CumplimientoRegistrado`, `StockBajo` |
+| **Treatment Service (detección de stock bajo)**   | Al registrar una toma de medicamento, decrementa el contador de stock. Cuando el stock llega a 3 unidades, publica el evento `StockBajo` para que el Reminder Service genere la alerta al paciente.                                    | `PUT /treatments/medications/{id}/stock`. Publica evento: `StockBajo`                                                                                        |
 
 #### 4.3.2.6. Sketch Views (C4 & UML) and Record Design Decisions
 
@@ -1888,6 +1881,10 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
 - Consultor Salud. (2023). Adherencia al tratamiento en pacientes con hipertensión en Perú. https://consultorsalud.com
 
 - Altamirano Carbajal, G. I., Bringas Villalba, E. F., & Ventura Hernández, E. M. (2021). Adherencia al tratamiento terapéutico en pacientes con hipertensión arterial en Lima Norte. Revista Científica Cuidado y Salud Pública, 1(2), 3–8. https://doi.org/10.53684/csp.v1i2.18
+
+- Congreso de la República del Perú. (2011, 3 de julio). Ley N° 29733 — Ley de Protección de Datos Personales. Diario Oficial El Peruano. https://www.leyes.congreso.gob.pe/documentos/leyes/29733.pdf
+
+- Ministerio de Justicia y Derechos Humanos del Perú. (2013, 22 de marzo). Decreto Supremo N° 003-2013-JUS — Reglamento de la Ley N° 29733, Ley de Protección de Datos Personales. Diario Oficial El Peruano. https://cdn.www.gob.pe/uploads/document/file/1913756/DS-3-2013-JUS.REGLAMENTO.LPDP_.pdf.pdf?v=1643315587
 
 <hr class="page-break">
 
