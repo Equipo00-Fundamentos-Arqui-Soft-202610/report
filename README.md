@@ -1519,7 +1519,7 @@ En esta tabla se registran los requisitos priorizados que guían las decisiones 
 | US13 — Subir receta médica    | Define el punto de entrada del flujo de tratamiento y la necesidad de validación previa a la persistencia. |
 | US05 — Recibir recordatorio   | Establece la necesidad de generar eventos derivados de la receta para la creación de recordatorios.        |
 | US06 — Registrar cumplimiento | Permite cerrar el ciclo del tratamiento mediante la persistencia del comportamiento del paciente.          |
-| AC-05 — Integridad de datos   | Justifica la validación estructurada de recetas antes de generar efectos secundarios como recordatorios.   |
+| AC-08 — Consistencia de datos entre servicios | Justifica la validación estructurada de recetas antes de generar efectos secundarios (eventos `RecetaCargada`) que disparan flujos en otros servicios como Reminder. |
 
 #### 4.3.1.3. Choose One or More Elements of the System to Refine
 
@@ -1535,8 +1535,8 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 | Concepto de Diseño                                                   | Relación con Drivers                                                                                                                                                                                                         |
 | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Pipeline de validación con patrón Decorator** en Treatment Service | AC-05, US13, US26. Encadena validaciones (existencia del paciente, nombre del medicamento en catálogo, horarios completos) antes de persistir la receta, evitando recordatorios incorrectos.                                 |
-| **Comunicación asíncrona por eventos**                               | AC-02, AC-04, US06, US07. El Follow-up Service publica `CumplimientoRegistrado`; el Reminder Service lo consume y cancela el recordatorio pendiente. Alternativa descartada: REST síncrono, por riesgo de fallos en cascada. |
+| **Pipeline de validación con patrón Decorator** en Treatment Service | AC-08, US13. Encadena validaciones (existencia del paciente, nombre del medicamento en catálogo, horarios completos) antes de persistir la receta, evitando que datos inválidos se propaguen a Reminder vía eventos. |
+| **Comunicación asíncrona por eventos**                               | AC-02, AC-04, AC-08, US06. El Follow-up Service publica `CumplimientoRegistrado`; el Reminder Service lo consume y cancela el recordatorio pendiente. Alternativa descartada: REST síncrono, por riesgo de fallos en cascada. |
 | **Patrón Observer entre servicios**                                  | US06. El registro de cumplimiento genera eventos que pueden ser consumidos por otros servicios sin acoplamiento directo.                                                                                                     |
 
 #### 4.3.1.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
