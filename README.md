@@ -1437,46 +1437,124 @@ Los escenarios de atributos de calidad permiten analizar cómo debe reaccionar l
 
 En esta sección se documentan las restricciones tecnológicas, legales y operativas que acotan el espacio de decisiones arquitectónicas de MediTrack.
 
-| ID  | Restricción |
-| --- | ----------- |
-|  CON-01   | Todos los microservicios utilizarán MySQL como único motor de persistencia relacional. No se introducirán otros motores relacionales.|
-|  CON-02   |  El despliegue se realizará sobre el plan gratuito de Azure for Students, lo que limita instancias simultáneas, RAM por servicio y ancho de banda disponible.|
-|  CON-03   | Los clientes (app móvil y portal web) se comunicarán con el backend exclusivamente mediante API REST bajo HTTPS. No se usará GraphQL ni gRPC en la versión inicial.|
-|  CON-04   |  La gestión de sesiones y roles (Paciente y Personal Técnico) se implementará con JSON Web Tokens. No se integrará proveedor externo de identidad en la primera versión.|
-|  CON-05   |  El envío de recordatorios push se realizará exclusivamente con Firebase Cloud Messaging, al ser gratuito y compatible con Android. No se contratará servicio de mensajería de pago.|
-|  CON-06   | Todo el tráfico externo pasará por un único API Gateway. Los microservicios no expondrán puertos directos al internet público.|
-|  CON-07   | Backend en Java con Spring Boot, frontend web en React y cliente móvil en Flutter. No se incorporarán otros lenguajes sin consenso del equipo.|
+| ID  | Categoria | Restricción | Impacto en la arquitectura | 
+| --- | --------- | ----------- | -------------------------- | 
+| CON-01 | Base de datos | Todos los microservicios utilizarán MySQL como único motor de persistencia relacional. | Cada microservicio tendrá su propio esquema MySQL (Database per Service). No se evaluarán bases de datos NoSQL ni otros motores relacionales en esta versión. |
+| CON-02 | Infraestructura cloud | El despliegue se realizará sobre Azure for Students (plan gratuito). | Limita el número de instancias simultáneas, la RAM por servicio y el ancho de banda. Las decisiones de escalabilidad deben contemplar estos topes desde el diseño. |
+| CON-03 | Comunicación | Los clientes se comunicarán con el backend exclusivamente mediante API REST bajo HTTPS. | Se descarta GraphQL y gRPC. Todos los contratos de integración serán endpoints REST documentados con OpenAPI. |
+| CON-04 | Seguridad | La gestión de sesiones y roles se implementará con JSON Web Tokens (JWT). | El API Gateway será el único punto de validación de tokens. Los microservicios confiarán en el token ya validado por el Gateway, sin autenticación propia. |
+| CON-05 | Notificaciones | El envío de notificaciones push se realizará exclusivamente con Firebase Cloud Messaging (FCM). | El Reminder Service dependerá de FCM para la entrega final al dispositivo. Debe contemplarse un mecanismo de reintento ante fallos de FCM. |
+| CON-07 | Stack tecnológico | Backend en Java con Spring Boot, frontend web en React y cliente móvil en Flutter. | Las decisiones de frameworks, librerías y patrones de integración quedan acotadas al ecosistema Java/Spring, React y Flutter. No se incorporarán otros lenguajes sin consenso del equipo. |
 
 ### 4.2.5. Architectural Concerns
 
 En esta sección se identifican las preocupaciones arquitectónicas de mayor impacto, derivadas tanto de los requisitos funcionales como de los riesgos y necesidades de los stakeholders.
 
-| ID  | Concern | Descripción |
-| --- | ------- | ----------- |
-|  AC-01  |   Separación estricta de roles y datos |     El sistema atiende dos segmentos con permisos distintos. Un fallo en la separación Paciente/Personal Técnico implicaría una violación de privacidad. Debe garantizarse tanto en el API Gateway como a nivel de base de datos por microservicio |
-|  AC-02  |   Entrega garantizada de recordatorios |    El Reminder Service es el componente de mayor impacto clínico. Un fallo en el envío de un recordatorio puede derivar en una dosis omitida. Se requieren reintentos automáticos y un mecanismo de fallback ante fallo de FCM. |
-|  AC-03  |   Coherencia en modo offline y sincronización |     Los pacientes deben poder registrar cumplimientos sin conexión. La arquitectura debe definir la estrategia de resolución de conflictos al sincronizar registros locales con el servidor.|
-|  AC-04  |   Trazabilidad de fallos en producción|     EDado que MediTrack maneja datos clínicos sensibles, cualquier fallo (notificación no entregada, receta mal cargada) debe poder rastrearse mediante logging centralizado. |
-|  AC-05  |   Accesibilidad para adultos mayores |    Una parte del segmento Paciente tiene baja alfabetización digital. El backend debe entregar datos ya procesados y simplificados para que el frontend reduzca la carga cognitiva del usuario.|
-|  AC-06  |   Mantenibilidad e independencia de servicios |    El equipo es pequeño. Cada microservicio debe poder modificarse, testearse y desplegarse de forma independiente para reducir el riesgo de regresiones entre módulos. |
+| ID  | Aspecto | Preocupacion/Restricción | Impacto en la Arquitectura |
+| --- | ------- |------------------------- | -------------------------- |
+|  AC-01  | Seguridad y control de acceso | El sistema atiende dos segmentos con permisos radicalmente distintos. Un fallo en la separación Paciente/Personal Técnico implicaría una violación de privacidad | La arquitectura debe aplicar separación de roles a nivel del API Gateway (validación JWT con claim de rol) y a nivel de datos (cada microservicio solo expone la información que corresponde al rol autenticado). |
+|  AC-02  | Disponibilidad de notificaciones críticas | El Reminder Service es el componente de mayor impacto clínico. Un fallo en la entrega de un recordatorio puede derivar en una dosis omitida con consecuencias directas para la salud del paciente. | El Reminder Service debe implementar reintentos automáticos con backoff exponencial, colas de mensajes con garantía de entrega y comunicación asíncrona para desacoplarse de los servicios que originan los eventos. |
+|  AC-03  | Coherencia de datos en modo offline | Los pacientes deben poder registrar cumplimientos sin conexión a internet, situación frecuente en el contexto peruano. | La app móvil debe mantener un estado local sincronizable (SQLite). La arquitectura debe definir la estrategia de resolución de conflictos al sincronizar registros locales con el servidor (timestamp como criterio de precedencia). |
+|  AC-04  | Escalabilidad del motor de notificaciones | El Reminder Service puede disparar miles de notificaciones simultáneas si múltiples pacientes comparten el mismo horario de medicación. | Debe diseñarse para escalar horizontalmente de forma independiente al resto de microservicios, sin que su carga afecte la disponibilidad del Treatment Service o el Follow-up Service. |
+|  AC-05  | Mantenibilidad e independencia entre servicios | El equipo de desarrollo es pequeño. Un cambio en un servicio no debe obligar a modificar ni redesplegar otros servicios. | Cada microservicio debe poder modificarse, testearse y desplegarse de forma autónoma. La comunicación entre servicios se realizará exclusivamente mediante interfaces bien definidas (REST o eventos), sin dependencias directas entre repositorios o bases de datos. |
+|  AC-06  | Accesibilidad para adultos mayores | Una parte significativa del segmento Paciente tiene baja alfabetización digital, incluyendo adultos mayores como el perfil identificado en las entrevistas. | El backend debe entregar datos ya procesados y simplificados (listas ordenadas por horario, estados en lenguaje natural) para que el frontend móvil minimice la lógica de presentación y reduzca la carga cognitiva del usuario. |
 
 <hr class="page-break">
 
 ## 4.3. ADD Iterations
 
-El proceso ADD (Attribute-Driven Design) permite tomar decisiones arquitectónicas guiadas por los atributos de calidad y drivers del sistema. A continuación se presenta la primera iteración, orientada a establecer la estructura base de microservicios.
+El proceso ADD (Attribute-Driven Design) permite tomar decisiones arquitectónicas guiadas por los atributos de calidad y drivers del sistema. A continuación se presentan dos iteraciones: la primera orientada a establecer la estructura base de microservicios y la segunda a garantizar la escalabilidad del motor de notificaciones y la continuidad del tratamiento del paciente.
 
-### 4.3.1. Iteration 1: [Nombre de la Iteración]
+### 4.3.1. Iteration 1: Flujo Core del Tratamiento
 
 #### 4.3.1.1. Architectural Design Backlog 1
+
+En esta tabla se registran los requisitos priorizados que guían las decisiones de diseño de esta iteración.
 
 <table>
   <thead>
     <tr>
       <th>ID</th>
-      <th>Decisión de Diseño</th>
+      <th>Requisito / Historia de Usuario</th>
+      <th>Prioridad</th>
       <th>Estado</th>
-      <th>Driver(s) Relacionados</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios, para que el paciente la reciba en su aplicación. (US13)</td>
+      <td>Alta</td>
+      <td>Pendiente</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora. (US04)</td>
+      <td>Alta</td>
+      <td>Pendiente</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo. (US05)</td>
+      <td>Alta</td>
+      <td>Pendiente</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia. (US06)</td>
+      <td>Alta</td>
+      <td>Pendiente</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 4.3.1.2. Establish Iteration Goal by Selecting Drivers
+
+**Objetivo:** Definir el flujo principal del sistema: desde la carga de una receta hasta la notificación al paciente y el registro de su cumplimiento.
+
+| Driver | Justificación |
+|--------|--------------|
+| US13 — Subir receta médica | Define el punto de entrada del flujo de tratamiento y la necesidad de validación previa a la persistencia. |
+| US05 — Recibir recordatorio | Establece la necesidad de generar eventos derivados de la receta para la creación de recordatorios. |
+| US06 — Registrar cumplimiento | Permite cerrar el ciclo del tratamiento mediante la persistencia del comportamiento del paciente. |
+| AC-05 — Integridad de datos | Justifica la validación estructurada de recetas antes de generar efectos secundarios como recordatorios. |
+
+#### 4.3.1.3. Choose One or More Elements of the System to Refine
+
+Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes elementos:
+
+| Elemento seleccionado | Justificación |
+|----------------------|---------------|
+| **Treatment Service** | Es el receptor del flujo de mayor prioridad (US13). Se refina el pipeline de validación de recetas mediante el patrón Decorator antes de la persistencia. |
+| **Reminder Service** | Es el componente de mayor criticidad clínica. Se refina a nivel de componentes internos para garantizar la entrega de recordatorios vía FCM con reintentos. |
+| **Follow-up Service** | Es el responsable de registrar el cumplimiento del paciente y cerrar el ciclo del tratamiento. |
+
+#### 4.3.1.4. Choose One or More Design Concepts That Satisfy the Selected Drivers
+
+| Concepto de Diseño | Relación con Drivers |
+|--------------------|---------------------|
+| **Pipeline de validación con patrón Decorator** en Treatment Service | AC-05, US13, US26. Encadena validaciones (existencia del paciente, nombre del medicamento en catálogo, horarios completos) antes de persistir la receta, evitando recordatorios incorrectos. |
+| **Comunicación asíncrona por eventos**  | AC-02, AC-04, US06, US07. El Follow-up Service publica `CumplimientoRegistrado`; el Reminder Service lo consume y cancela el recordatorio pendiente. Alternativa descartada: REST síncrono, por riesgo de fallos en cascada. |
+| **Patrón Observer entre servicios** | US06. El registro de cumplimiento genera eventos que pueden ser consumidos por otros servicios sin acoplamiento directo. |
+
+#### 4.3.1.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+
+| Elemento | Responsabilidad | Interfaces |
+|----------|-----------------|------------|
+| **Treatment Service** | Recibe recetas del Personal Técnico, ejecuta pipeline de validación (Decorator), persiste medicamentos con horarios y publica los eventos `RecetaCargada` y `StockBajo`. | `POST /treatments/prescriptions`, `GET /treatments/patients/{patientId}/medications`, `PUT /treatments/medications/{id}`, `DELETE /treatments/medications/{id}`, `POST /treatments/clinical-history` |
+| **Reminder Service** | Genera recordatorios vía Factory Method al recibir `RecetaCargada` y `CitaAgendada`. Ejecuta scheduler para envío vía FCM con backoff exponencial. Cancela recordatorios al recibir `CumplimientoRegistrado`. | `GET /reminders/patients/{patientId}`, `PUT /reminders/{id}/cancel`. Consume eventos: `RecetaCargada`, `CitaAgendada`, `CumplimientoRegistrado` |
+| **Follow-up Service** | Registra cumplimiento/incumplimiento de medicamentos y citas. Publica el evento `CumplimientoRegistrado` tras persistir un cumplimiento. | `POST /followup/compliance`, `GET /followup/patients/{patientId}/history` |
+
+#### 4.3.1.6. Sketch Views (C4 & UML) and Record Design Decisions
+
+#### 4.3.1.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)
+
+<table>
+  <thead>
+    <tr>
+      <th>Por hacer</th>
+      <th>En progreso</th>
+      <th>Hecho</th>
     </tr>
   </thead>
   <tbody>
@@ -1484,26 +1562,67 @@ El proceso ADD (Attribute-Driven Design) permite tomar decisiones arquitectónic
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
     </tr>
   </tbody>
 </table>
 
-#### 4.2.1.2. Establish Iteration Goal by Selecting Drivers
+<hr class="page-break">
 
-#### 4.2.1.3. Choose One or More Elements of the System to Refine
+### 4.3.2. Iteration 2: Continuidad del Tratamiento — Modo Offline
 
-#### 4.2.1.4. Choose One or More Design Concepts That Satisfy the Selected Drivers
+#### 4.3.2.1. Architectural Design Backlog 1
 
-#### 4.2.1.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+En esta tabla se registran los requisitos priorizados que guían las decisiones de diseño de esta segunda iteración.
+
+| ID | Requisito / Historia de Usuario | Prioridad | Estado |
+|----|--------------------------------|-----------|--------|
+| 1 | Como paciente, quiero poder registrar cumplimiento sin internet para continuar mi tratamiento en cualquier contexto. (US23) | Alta | Pendiente |
+| 2 | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento. (US07) | Alta | Pendiente |
+| 3 | Como paciente, quiero configurar las preferencias de notificaciones para ajustar sonido, vibración y repeticiones según mi necesidad. (US22) | Media | Pendiente |
+
+#### 4.3.2.2. Establish Iteration Goal by Selecting Drivers
+
+**Objetivo:**
+Permitir la continuidad del tratamiento del paciente en tres frentes: soporte a funcionamiento sin conexión (offline-first)y resiliencia del motor de notificaciones ante alta concurrencia.
+
+| Driver | Justificación |
+|--------|--------------|
+| US23 — Modo offline | Define la necesidad de persistencia local en el cliente. |
+| US07 — Alerta de stock bajo | El Treatment Service debe detectar cuando el conteo de pastillas cae al umbral y publicar el evento `StockBajo` para que el Reminder Service genere la alerta al paciente. |
+| US22 — Preferencias de notificaciones | Los pacientes, especialmente adultos mayores, deben poder ajustar el comportamiento de los recordatorios. Requiere un módulo de preferencias en el Follow-up Service. |
+| AC-03 — Coherencia offline | Justifica la estrategia de resolución de conflictos en sincronización. |
+| AC-04 — Escalabilidad del Reminder Service | El servicio debe poder escalar horizontalmente ante picos de notificaciones simultáneas. |
+| QAS-1 — Durabilidad | Garantiza que los datos registrados offline no se pierdan. |
+
+#### 4.3.2.3. Choose One or More Elements of the System to Refine
+
+| Elemento seleccionado | Justificación |
+|----------------------|---------------|
+| **App Móvil Flutter** | Se añade la capa de persistencia local SQLite y el mecanismo de sincronización batch con el Follow-up Service al reconectar. |
+| **Follow-up Service** | Se añade el endpoint de sincronización batch offline (`POST /followup/compliance/sync`) y la lógica de resolución de conflictos por timestamp. |
+| **Treatment Service** | Se refina la lógica de conteo de stock y publicación del evento `StockBajo` al alcanzar el umbral de pastillas restantes. |
+
+
+#### 4.3.2.4. Choose One or More Design Concepts That Satisfy the Selected Drivers
+
+| Concepto de Diseño | Relación con Drivers |
+|--------------------|---------------------|
+| **Persistencia local SQLite con sincronización optimista** en la app móvil | AC-03, QAS-1, US23. La app persiste cumplimientos localmente. Al reconectar, envía los registros pendientes al Follow-up Service vía endpoint batch. El timestamp determina la precedencia en caso de conflicto. Alternativa descartada: solo funcionamiento online, no satisface QAS-1 ni el principio Offline-First definido en 4.1.1. |
+| **Módulo de preferencias de notificación** integrado en el Follow-up Service | US22, AC-08. Almacena la configuración de sonido, vibración y repeticiones por paciente. El Reminder Service consulta estas preferencias antes de generar cada notificación. |
+| **Detección de stock bajo y evento `StockBajo`** en el Treatment Service | US07, AC-02. Cuando el conteo de pastillas restantes alcanza el umbral de 3 unidades, el Treatment Service publica `StockBajo`; el Reminder Service genera la notificación al paciente. |
+
+#### 4.3.2.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 
 | Elemento | Responsabilidad | Interfaces |
-| -------- | --------------- | ---------- |
-|          |                 |            |
+|----------|-----------------|------------|
+| **App Móvil Flutter (capa offline)** | Persiste en SQLite la lista de medicamentos y los registros de cumplimiento. Al detectar reconexión, envía los registros pendientes al Follow-up Service vía endpoint batch y actualiza el estado local con la respuesta del servidor. | Consume: `POST /followup/compliance/sync`, lectura/escritura de DB local SQLite |
+| **Follow-up Service (sincronización batch)** | Recibe registros offline en lote, aplica resolución de conflictos por timestamp y persiste los cumplimientos. Almacena y expone las preferencias de notificación del paciente. | `POST /followup/compliance/sync`, `GET /followup/preferences/{patientId}`, `PUT /followup/preferences/{patientId}` |
+| **Reminder Service (resiliencia y preferencias)** | Antes de enviar cada notificación, consulta las preferencias del paciente. Implementa reintentos con backoff exponencial ante fallo de FCM. Escala horizontalmente de forma independiente ante picos de concurrencia. | `GET /reminders/patients/{patientId}`, `PUT /reminders/{id}/cancel`. Consume eventos: `RecetaCargada`, `CitaAgendada`, `CumplimientoRegistrado`, `StockBajo` |
+| **Treatment Service (detección de stock bajo)** | Al registrar una toma de medicamento, decrementa el contador de stock. Cuando el stock llega a 3 unidades, publica el evento `StockBajo` para que el Reminder Service genere la alerta al paciente. | `PUT /treatments/medications/{id}/stock`. Publica evento: `StockBajo` |
 
-#### 4.2.1.6. Sketch Views (C4 & UML) and Record Design Decisions
+#### 4.3.2.6. Sketch Views (C4 & UML) and Record Design Decisions
 
-#### 4.2.1.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)
+#### 4.3.2.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)
 
 <table>
   <thead>
