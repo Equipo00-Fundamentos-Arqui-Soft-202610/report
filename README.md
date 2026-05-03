@@ -197,7 +197,6 @@
 # Student Outcome
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
-
 <table>
   <thead>
     <tr>
@@ -208,38 +207,38 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </thead>
   <tbody>
     <tr>
-      <td rowspan="5"><strong>Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.</strong></td>
-       <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Análisis de competidores, desarrollo de entrevistas y aplicación de needfinding para identificar necesidades de los usuarios.</td>
-      <td rowspan="5"><b>TB1:</b> El equipo aplicó conceptos clave de ingeniería de software y diseño centrado en el usuario. El uso de entrevistas, needfinding, Lean UX y backlog permitió estructurar una base sólida para el desarrollo del proyecto, fortaleciendo las capacidades técnicas de los integrantes.</td>
-    </tr>
-  <tr>
-      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> Elaboración de To-Be Scenario Mapping, definición de User Stories y desarrollo de Impact Map para estructurar el alcance del proyecto.</td>
+      <td rowspan="5"><strong>A: Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.</strong></td>
+      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Análisis de competidores, entrevistas y needfinding.<br><b>TB2:</b> Desarrollo de Problem Statements, definición de enfoques arquitectónicos (Architectural Styles & Patterns), elaboración del Context Diagram y participación en ADD iteration 2.</td>
+      <td rowspan="5"><b>TB1:</b> El equipo aplicó conceptos clave de ingeniería de software y diseño centrado en el usuario, estructurando una base sólida del proyecto.<br><br><b>TB2:</b> El equipo profundizó en el diseño arquitectónico del sistema, aplicando patrones, tácticas y metodologías como ADD. Esto permitió consolidar una estructura más robusta, alineada a atributos de calidad y necesidades del sistema.</td>
     </tr>
     <tr>
-      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Definición de la startup, nombre del producto, análisis de antecedentes y problemática, desarrollo del Lean UX Process y segmentación del público objetivo.</td>
+      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> To-Be Scenario Mapping, User Stories e Impact Map.<br><b>TB2:</b> Desarrollo de ViewPoint Diagrams basados en enfoques arquitectónicos y diseño de diagramas de base de datos relacionales y no relacionales.</td>
     </tr>
     <tr>
-      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Elaboración y organización del Product Backlog, priorizando funcionalidades del sistema.</td>
+      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Definición de startup, problemática, Lean UX Process y segmentos objetivo.<br><b>TB2:</b> Aplicación de Design Patterns, definición de tácticas arquitectónicas y establecimiento del propósito del diseño.</td>
     </tr>
     <tr>
-      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en entrevistas para la recolección de información de usuarios.</td>
-    </tr>
-   <tr>
-      <td rowspan="5"><strong>Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.</strong></td>
-      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Aplicó técnicas de needfinding y entrevistas, fortaleciendo su capacidad de investigación de usuarios.</td>
-      <td rowspan="5"><b>TB1:</b> El equipo demostró una actitud orientada al aprendizaje continuo, incorporando nuevas metodologías y herramientas en el desarrollo del proyecto. Esto permitió mejorar la comprensión del problema y establecer bases sólidas para las siguientes etapas.</td>
+      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Elaboración del Product Backlog.<br><b>TB2:</b> Definición de funcionalidades principales del sistema y desarrollo de Quality Attribute Scenarios.</td>
     </tr>
     <tr>
-      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> Utilizó herramientas como Impact Map y Scenario Mapping, ampliando su enfoque en el diseño y planificación del sistema.</td>
+      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en entrevistas.<br><b>TB2:</b> Identificación de restricciones (Constraints), preocupaciones arquitectónicas (Architectural Concerns) y desarrollo de ADD iteration 1.</td>
     </tr>
     <tr>
-      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Desarrolló habilidades en Lean UX, definición de producto y segmentación de usuarios.</td>
+      <td rowspan="5"><strong>B: Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.</strong></td>
+      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Aplicación de entrevistas y needfinding.<br><b>TB2:</b> Aprendizaje en definición de arquitecturas, estilos y uso del método ADD para diseño iterativo.</td>
+      <td rowspan="5"><b>TB1:</b> El equipo demostró una actitud orientada al aprendizaje continuo, incorporando nuevas metodologías.<br><br><b>TB2:</b> Los integrantes fortalecieron su aprendizaje en arquitectura de software, adoptando nuevas herramientas y enfoques como ADD, patrones y modelado de datos, lo que evidencia una evolución técnica y compromiso con su desarrollo profesional.</td>
     </tr>
     <tr>
-      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Fortaleció conocimientos en gestión de backlog y priorización de requerimientos.</td>
+      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> Uso de herramientas de modelado como Impact Map.<br><b>TB2:</b> Profundización en modelado arquitectónico y diseño de bases de datos híbridas.</td>
     </tr>
     <tr>
-      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participó en el levantamiento de información, reconociendo la importancia del aprendizaje continuo en la interacción con usuarios.</td>
+      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Desarrollo de Lean UX y definición de producto.<br><b>TB2:</b> Aprendizaje en patrones de diseño y tácticas arquitectónicas aplicadas al sistema.</td>
+    </tr>
+    <tr>
+      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Gestión de backlog.<br><b>TB2:</b> Desarrollo de escenarios de atributos de calidad y definición funcional del sistema.</td>
+    </tr>
+    <tr>
+      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en levantamiento de información.<br><b>TB2:</b> Comprensión de restricciones y preocupaciones arquitectónicas, además del uso de ADD en etapas iniciales.</td>
     </tr>
   </tbody>
 </table>
