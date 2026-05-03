@@ -1110,7 +1110,9 @@ _Figura 11. Impact Mapping del segmento Personal de Apoyo. Elaboración propia._
 
 ## 3.4. Product Backlog
 
-El orden del Product Backlog se determina por el valor de negocio que aporta cada User Story, priorizando aquellas que resuelven directamente los Pain Points identificados (adherencia al tratamiento, digitalización de recetas y seguimiento de pacientes). Las User Stories relacionadas con autenticación, recuperación de contraseña y operaciones de soporte se ubican al final, ya que son habilitadoras del flujo pero no representan el valor core que MediTrack ofrece a pacientes e instituciones de salud.
+El orden del Product Backlog se determina por el valor de negocio que aporta cada User Story, priorizando aquellas que resuelven directamente los Pain Points identificados (adherencia al tratamiento, digitalización de recetas y seguimiento de pacientes). Las User Stories relacionadas con autenticación, recuperación de contraseña y operaciones de soporte se ubican al final, ya que son habilitadoras del flujo pero no representan el valor core que MediTrack ofrece a pacientes e instituciones de salud. 
+
+Para la estimación del esfuerzo de los elementos del Product Backlog, se ha optado por utilizar la sucesión de Fibonacci (1,2,3,5,8,…).
 
 | # Orden | User Story ID | Título                                          | Descripción                                                                                                                                      | Story Points |
 | ------- | ------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
