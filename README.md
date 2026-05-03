@@ -1147,6 +1147,15 @@ Para la estimación del esfuerzo de los elementos del Product Backlog, se ha opt
 | 29      | US28          | Cambiar contraseña                              | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura.                                                                      | 3            |
 
 ![trello](assets/images/chapter3/product-backlog-trello.png)
+
+<div align = center>
+
+_Figura 12. Product Backlog. Elaboración propia._
+
+</div>
+
+
+
 <br>
 Enlace del tablero en Trello: https://trello.com/b/uqAJCw99
 
@@ -1199,7 +1208,7 @@ El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el q
 
 <div align = center>
 
-_Figura 12. Diagrama de contexto del sistema MediTrack. Elaboración propia._
+_Figura 13. Diagrama de contexto del sistema MediTrack. Elaboración propia._
 
 </div>
 
@@ -1207,7 +1216,7 @@ _Figura 12. Diagrama de contexto del sistema MediTrack. Elaboración propia._
 
 <div align = center>
 
-_Figura 13. Anexo del diagrama de contexto del sistema MediTrack. Elaboración propia._
+_Figura 14. Anexo del diagrama de contexto del sistema MediTrack. Elaboración propia._
 
 </div>
 
@@ -1217,31 +1226,91 @@ _Figura 13. Anexo del diagrama de contexto del sistema MediTrack. Elaboración p
 
 <td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Container Diagram" ></td>
 
+<div align = center>
+
+_Figura 15. Anexo del diagrama de contenedores del sistema MediTrack. Elaboración propia._
+
+</div>
+
+
 #### Component Diagrams:
 
 #### Identity & Profiles Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/identityprofile.jpeg" alt="" ></td>
 
+<div align = center>
+
+_Figura 16. Anexo del diagrama de componentes de Identity & Profiles Service . Elaboración propia._
+
+</div>
+
+
+
 #### Treatment Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="analytics" ></td>
+
+<div align = center>
+
+_Figura 17. Anexo del diagrama de componentes de Treatment Service . Elaboración propia._
+
+</div>
+
+
+
+
 
 #### Reminder Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/reminder.jpeg" alt="reminder service" ></td>
 
+
+<div align = center>
+
+_Figura 18. Anexo del diagrama de componentes de Reminder Service. Elaboración propia._
+
+</div>
+
+
+
 #### Follow-up Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/followup.jpeg" ></td>
+
+
+<div align = center>
+
+_Figura 19. Anexo del diagrama de componentes de Follow-up Service. Elaboración propia._
+
+</div>
+
+
 
 #### Medical Analysis Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams//component/medical_analysis.jpeg" alt="medical analysis" ></td>
 
+
+<div align = center>
+
+_Figura 20. Anexo del diagrama de componentes de Medical Analysis Service. Elaboración propia._
+
+</div>
+
+
+
 #### Appointment Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+<div align = center>
+
+_Figura 21. Anexo del diagrama de componentes de Appointment Service. Elaboración propia._
+
+</div>
+
+
 
 #### Diagramas de Actividades
 
@@ -1249,33 +1318,95 @@ _Figura 13. Anexo del diagrama de contexto del sistema MediTrack. Elaboración p
 
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
 
+<div align = center>
+
+_Figura 22. Anexo del diagrama de actividades de Medical Analysis. Elaboración propia._
+
+</div>
+
+
+
 ##### Appointment Activity
 
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/appointment_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+<div align = center>
+
+_Figura 23. Anexo del diagrama de actividades de Appointment. Elaboración propia._
+
+</div>
+
+
 
 ##### Follow-up Activity
 
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/followup_activity.png" alt="Empathy Map - Pacientes" ></td>
 
+<div align = center>
+
+_Figura 24. Anexo del diagrama de actividades de Follow-up. Elaboración propia._
+
+</div>
+
+
+
+
 ##### Identity & Profiles Activity
 
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/profilesactivity.png" alt="Empathy Map - Pacientes" ></td>
+
+<div align = center>
+
+_Figura 25. Anexo del diagrama de actividades de Identity & Profiles. Elaboración propia._
+
+</div>
+
+
 
 ##### Treatment Activity
 
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/treatment_activity.png" alt="Empathy Map - Pacientes" ></td>
 
+<div align = center>
+
+_Figura 26. Anexo del diagrama de actividades de Treatment. Elaboración propia._
+
+</div>
+
+
+
 ##### Reminder Activity
 
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/reminder_activity.png" alt="Empathy Map - Pacientes" ></td>
+
+<div align = center>
+
+_Figura 27. Anexo del diagrama de actividades de Reminder. Elaboración propia._
+
+</div>
+
+
 
 #### Class Diagram
 
 <td align="center"><img src="assets/images/chapter4/diagrams/classdiagram.png" alt="Class diagram" ></td>
 
+<div align = center>
+
+_Figura 28. Anexo del diagrama de clases del sistema MediTrack. Elaboración propia._
+
+</div>
+
 ### 4.1.5. Relational/Non Relational Database Diagram
 
 <td align="center"><img src="assets/images/chapter4/diagrams/Meditrack_Schema-2026-04-28_07-34.png" alt="DB diagram" ></td>
+
+<div align = center>
+
+_Figura 29. Anexo del diagrama de la base de datos relacional de MediTrack. Elaboración propia._
+
+</div>
+
 
 ### 4.1.6. Design Patterns
 
@@ -1566,18 +1697,46 @@ Se muestra al paciente y personal tecnico como actores principales y su interacc
 
 <td align="center"><img src="assets/images/chapter4/Iteration-1-SystemContext.png" alt="Context diagram" ></td>
 
+<div align = center>
+
+_Figura 30. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
+
+</div>
+
+
 **C4 -  Container Diagram**
 Se muestra los contenedores del sistema, destacando el microservicio de tratamiento y su base de datos dedicada, así como cómo se comunican con los otros servicios internos del sistema.
 
 <td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Context diagram" ></td>
 
+<div align = center>
+
+_Figura 31. Anexo del diagrama de contenedores de MediTrack. Elaboración propia._
+
+</div>
+
+
 **C4 -  Component Diagram**
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
 <td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="Context diagram" ></td>
 
+
+<div align = center>
+
+_Figura 32. Anexo del diagrama de componentes de Treatment Service. Elaboración propia._
+
+</div>
+
+
 #### 4.3.1.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)
 
 <td align="center"><img src="assets/images/chapter4/Flujo-tratamiento.png" alt="Context diagram" ></td>
+
+<div align = center>
+
+_Figura 33. Kanban Board Iteration 1. Elaboración propia._
+
+</div>
 
 Link del Trello: https://trello.com/invite/b/69f68ffd0f1cabd66eb3d654/ATTIfa866b418b39e6f9b6af171adf8cdfc370BCEFBD/flujo-tratamiento
 
@@ -1642,11 +1801,24 @@ Se muestra al paciente y personal tecnico como actores principales y su interacc
 
 <td align="center"><img src="assets/images/chapter4/Iteration-1-SystemContext.png" alt="Context diagram" ></td>
 
+<div align = center>
+
+_Figura 34. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
+
+</div>
+
+
 **C4 -  Container Diagram**
 
 Se muestra los contenedores del sistema, destacando el microservicio del seguimiento del tratamiento y su base de datos dedicada, así como cómo lee los servicios internos del sistema.
 
 <td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Context diagram" ></td>
+
+<div align = center>
+
+_Figura 35. Anexo del diagrama de contenedores de MediTrack. Elaboración propia._
+
+</div>
 
 **C4 -  Component Diagram**
 
@@ -1655,10 +1827,21 @@ Se detalla los componentes internos del microservicio, como Controller, Event Li
 <td align="center"><img src="assets/images/chapter4/diagrams/component/followup.jpeg" alt="Context diagram" ></td>
 
 
+<div align = center>
+
+_Figura 36. Anexo del diagrama de componentes de Follow-up service. Elaboración propia._
+
+</div>
+
 #### 4.3.2.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)
 
 <td align="center"><img src="assets/images/chapter4/Continuidad-Seguimiento.png" alt="Context diagram" ></td>
 
+<div align = center>
+
+_Figura 37. Kanban Board Iteration 2._
+
+</div>
 Link del Trello: https://trello.com/invite/b/69f6752f9be88dc527f213a9/ATTIfba9ad9e2b8975b1696794b6ecf0382cED03D548/continuidad-del-tratamiento
 
 <hr class="page-break">
