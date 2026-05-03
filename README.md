@@ -57,18 +57,28 @@
 
 <hr class="page-break">
 
+
+
 # Registro de Versiones del Informe
 
-| Version | Fecha      | Autor                               | Descripción de modificación                                                                                                                                                                                                                           |
-| ------- | ---------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.0     | 11/04/2026 | Rojas Reategui, Victor Manuel       | Creación de la estructura inicial del informe                                                                                                                                                                                                         |
-| 1.1     | 13/04/2026 | Gonzales Alvarado, Javier Sebastian | Capítulo I: descripción de la startup, Solution Profile, Lean UX Process y segmentos objetivo (1.1–1.3)                                                                                                                                               |
-| 1.2     | 17/04/2026 | Sulca Sanchez, Piero Angel          | Capítulo II: diseño de entrevistas (2.2.1)                                                                                                                                                                                                            |
-| 1.3     | 17/04/2026 | Quijada Magro, Jeremy Alexander     | Capítulo II: análisis de competidores (2.1), registro y análisis de entrevistas del segmento de personal técnico (2.2.2, 2.2.3) y needfinding — User Personas (2.3.1), User Task Matrix (2.3.2), Empathy Maps (2.3.3), As-Is Scenario Mapping (2.3.4) |
-| 1.4     | 18/04/2026 | Rivera Ratachi, Renzo Sebastian     | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3)                                                                                                                                               |
-| 1.5     | 18/04/2026 | Sulca Sanchez, Piero Angel          | Capítulo III: Product Backlog (3.4)                                                                                                                                                                                                                   |
-| 1.6     | 18/04/2026 | Rojas Reategui, Victor Manuel       | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4)                                                                                                                                                               |
-| 1.7     | 18/04/2026 | Sulca Sanchez, Piero Angel          | Capítulo III: reordenamiento del Product Backlog por valor de negocio, ubicando las User Stories de autenticación al final (3.4)                                                                                                                      |
+| Versión | Fecha | Autor | Descripción de modificación |
+| :--- | :--- | :--- | :--- |
+| 1.0 | 11/04/2026 | Rojas Reategui, Victor Manuel | Creación de la estructura inicial del informe |
+| 1.1 | 13/04/2026 | Gonzales Alvarado, Javier Sebastian | Capítulo I: descripción de la startup, Solution Profile, Lean UX Process y segmentos objetivo (1.1–1.3) |
+| 1.2 | 17/04/2026 | Sulca Sanchez, Piero Angel | Capítulo II: diseño de entrevistas (2.2.1) |
+| 1.3 | 17/04/2026 | Quijada Magro, Jeremy Alexander | Capítulo II: análisis de competidores (2.1), registro y análisis de entrevistas (2.2.2, 2.2.3) y needfinding (2.3.1 - 2.3.4) |
+| 1.4 | 18/04/2026 | Rivera Ratachi, Renzo Sebastian | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3) |
+| 1.5 | 18/04/2026 | Sulca Sanchez, Piero Angel | Capítulo III: Product Backlog (3.4) |
+| 1.6 | 18/04/2026 | Rojas Reategui, Victor Manuel | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4) |
+| 1.7 | 18/04/2026 | Sulca Sanchez, Piero Angel | Capítulo III: reordenamiento del Product Backlog por valor de negocio (3.4) |
+| 2.0 | 27/04/2026 | Quijada Magro, Jeremy Alexander | Capítulo IV: Design Concepts, ViewPoints & ER Diagrams, Principles Statements, Architectural Styles & Patterns y Context Diagram (4.1.1 - 4.1.3) |
+| 2.1 | 28/04/2026 | Rivera Ratachi, Renzo Sebastian | Capítulo IV: Approach driven ViewPoints Diagrams, Relational/Non Relational Database Diagram y Design Patterns (4.1.4 - 4.1.6) |
+| 2.2 | 29/04/2026 | Gonzales Alvarado, Javier Sebastian | Capítulo IV: Tactics, Architectural Drivers y Design Purpose (4.1.7, 4.2, 4.1.8) |
+| 2.3 | 30/04/2026 | Rojas Reategui, Victor Manuel | Capítulo IV: Primary Functionality (Primary User Stories) y Quality Attribute Scenarios (4.1.9, 4.1.10) |
+| 2.4 | 01/05/2026 | Sulca Sanchez, Piero Angel | Capítulo IV: Constraints y Architectural Concerns (4.1.11, 4.1.12) |
+| 2.5 | 02/05/2026 |  Jeremy Quijada Magro y  Piero  Sulca Sanchez | Capítulo IV: ADD Iterations 1 & 2 |
+
+
 
 <hr class="page-break">
 
