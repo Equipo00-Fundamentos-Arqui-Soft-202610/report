@@ -1549,24 +1549,26 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 #### 4.3.1.6. Sketch Views (C4 & UML) and Record Design Decisions
 
+**C4 -  Context Diagram**
+
+Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
+
+<td align="center"><img src="assets/images/chapter4/Iteration-1-SystemContext.png" alt="Context diagram" ></td>
+
+**C4 -  Container Diagram**
+Se muestra los contenedores del sistema, destacando el microservicio de tratamiento y su base de datos dedicada, así como cómo se comunican con los otros servicios internos del sistema.
+
+<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Context diagram" ></td>
+
+**C4 -  Component Diagram**
+Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
+<td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="Context diagram" ></td>
+
 #### 4.3.1.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)
 
-<table>
-  <thead>
-    <tr>
-      <th>Por hacer</th>
-      <th>En progreso</th>
-      <th>Hecho</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+<td align="center"><img src="assets/images/chapter4/Flujo-tratamiento.png" alt="Context diagram" ></td>
+
+Link del Trello: https://trello.com/invite/b/69f68ffd0f1cabd66eb3d654/ATTIfa866b418b39e6f9b6af171adf8cdfc370BCEFBD/flujo-tratamiento
 
 <hr class="page-break">
 
@@ -1623,24 +1625,30 @@ Permitir la continuidad del tratamiento del paciente en tres frentes: soporte a 
 
 #### 4.3.2.6. Sketch Views (C4 & UML) and Record Design Decisions
 
+**C4 -  Context Diagram**
+
+Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
+
+<td align="center"><img src="assets/images/chapter4/Iteration-1-SystemContext.png" alt="Context diagram" ></td>
+
+**C4 -  Container Diagram**
+
+Se muestra los contenedores del sistema, destacando el microservicio del seguimiento del tratamiento y su base de datos dedicada, así como cómo lee los servicios internos del sistema.
+
+<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Context diagram" ></td>
+
+**C4 -  Component Diagram**
+
+Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
+
+<td align="center"><img src="assets/images/chapter4/diagrams/component/followup.jpeg" alt="Context diagram" ></td>
+
+
 #### 4.3.2.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)
 
-<table>
-  <thead>
-    <tr>
-      <th>Por hacer</th>
-      <th>En progreso</th>
-      <th>Hecho</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+<td align="center"><img src="assets/images/chapter4/Continuidad-Seguimiento.png" alt="Context diagram" ></td>
+
+Link del Trello: https://trello.com/invite/b/69f6752f9be88dc527f213a9/ATTIfba9ad9e2b8975b1696794b6ecf0382cED03D548/continuidad-del-tratamiento
 
 <hr class="page-break">
 
