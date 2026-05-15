@@ -1587,7 +1587,7 @@ En esta sección se documentan las restricciones tecnológicas, legales y operat
 | CON-04 | Seguridad                 | La gestión de sesiones y roles se implementará con JSON Web Tokens (JWT). El API Gateway actuará como punto principal de validación y autorización por rol, pero cada microservicio deberá validar la firma del token de forma independiente como capa de defensa en profundidad. | El Gateway centraliza la lógica de autenticación, pero los microservicios no confían ciegamente en él. La validación local de la firma JWT es obligatoria, alineándose con el principio de menor privilegio (Principle 4.1.1 #2).                                                                                                                                                             |
 | CON-05 | Notificaciones            | El envío de notificaciones push remotas se realizará exclusivamente con Firebase Cloud Messaging (FCM).                                                                                                                                                                           | El Reminder Service dependerá de FCM para la entrega final al dispositivo. Debe contemplarse un mecanismo de reintento ante fallos de FCM y un canal de fallback (ver AC-09).                                                                                                                                                                                                                 |
 | CON-06 | Almacenamiento offline    | El cliente móvil utilizará SQLite como motor de persistencia local para soportar el funcionamiento offline-first.                                                                                                                                                                 | La aplicación Flutter mantendrá un esquema local sincronizable mediante un ORM compatible con SQLite. La sincronización con el backend se realizará de forma asíncrona al recuperar conexión, cumpliendo con QAS-1 (100 % de registros sincronizados en ≤ 5 minutos).                                                                                                                         |
-| CON-07 | Stack tecnológico         | Backend en Java con Spring Boot, frontend web en React y cliente móvil en Flutter.                                                                                                                                                                                                | Las decisiones de frameworks, librerías y patrones de integración quedan acotadas al ecosistema Java/Spring, React y Flutter. No se incorporarán otros lenguajes sin consenso del equipo.                                                                                                                                                                                                     |
+| CON-07 | Stack tecnológico         | Backend en .NET 8, frontend web en React y cliente móvil en Flutter.                                                                                                                                                                                                              | Las decisiones de frameworks, librerías y patrones de integración quedan acotadas al ecosistema .NET, React y Flutter. No se incorporarán otros lenguajes sin consenso del equipo.                                                                                                                                                                                                           |
 | CON-08 | Plataforma móvil objetivo | El cliente móvil se distribuirá exclusivamente para Android en la fase inicial del producto.                                                                                                                                                                                      | La estrategia de notificaciones push se diseña sobre FCM (CON-05) para Android. Las pruebas de compatibilidad se ejecutarán únicamente sobre versiones recientes de Android, alineadas con el dispositivo predominante en el segmento Paciente (Lima Metropolitana, NSE medio, incluyendo adultos mayores). iOS queda fuera del alcance de la versión 1.                                      |
 | CON-09 | Cumplimiento legal        | El sistema deberá cumplir con la Ley N° 29733 — Ley de Protección de Datos Personales del Perú y su reglamento, particularmente en lo referido al tratamiento de datos personales sensibles relacionados con la salud (Art. 2.5).                                                 | La arquitectura debe contemplar consentimiento informado del usuario, cifrado de datos en tránsito (HTTPS/TLS) y en reposo, control de accesos basado en roles, registros de auditoría, y procesos de retención y eliminación de datos. El alojamiento y procesamiento deben mantenerse dentro del marco legal peruano. Aterriza el Principle 4.1.1 #2 ("Seguridad y Privacidad por Diseño"). |
 
@@ -1869,6 +1869,77 @@ Link del Trello: https://trello.com/invite/b/69f6752f9be88dc527f213a9/ATTIfba9ad
 ## 5.2. Software Configuration Management
 
 ### 5.2.1. Software Development Environment Configuration
+
+De acuerdo con las decisiones arquitectónicas definidas para MediTrack, el equipo trabajará sobre un entorno homogéneo de desarrollo coherente con el stack tecnológico del proyecto. En ese sentido, se ha establecido el uso de `.NET 8` para el backend, `React` para el frontend web, `Flutter` para la aplicación móvil, `MySQL` como motor de base de datos, `Azure for Students` como entorno de despliegue y `OpenAPI` para la documentación de servicios. Asimismo, se emplearán las herramientas exigidas por el curso para cubrir de forma colaborativa todas las actividades del ciclo de vida: gestión del proyecto, levantamiento y especificación de requisitos, diseño del producto, desarrollo, pruebas, despliegue y documentación.
+
+Para asegurar que todos los integrantes trabajen sobre un entorno consistente, a continuación se detallan las herramientas por tipo de actividad, indicando su propósito dentro del proyecto y su ruta de referencia o descarga.
+
+#### Project Management
+
+| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
+| -------------------- | ------ | --------------------------------- | ----------------------------- |
+| Trello | SaaS | Gestión del Product Backlog, Sprint Backlog y tableros Kanban de iteraciones y sprints. Se utiliza para organizar historias de usuario, tareas, responsables y estado de avance. | https://trello.com/ |
+| Discord | SaaS | Medio principal de comunicación del equipo para coordinación diaria, reuniones, seguimiento de acuerdos y soporte durante el desarrollo colaborativo del proyecto. | https://discord.com/ |
+
+#### Requirements Management
+
+| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
+| -------------------- | ------ | --------------------------------- | ----------------------------- |
+| UXPressia | SaaS | Elaboración de User Personas, Empathy Maps e Impact Map, manteniendo consistencia con los artefactos de análisis del capítulo II y III. | https://uxpressia.com/ |
+| Lucidchart / Lucidspark | SaaS | Construcción de As-Is Scenario Mapping, To-Be Scenario Mapping y otros artefactos colaborativos de análisis visual del dominio. | https://www.lucidchart.com/ |
+
+#### Product Design
+
+| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
+| -------------------- | ------ | --------------------------------- | ----------------------------- |
+| Figma | SaaS | Diseño colaborativo de interfaces, wireframes y propuestas visuales previas a la implementación de las pantallas del producto. | https://www.figma.com/ |
+| Structurizr | SaaS / Desktop | Modelado C4 de la arquitectura de software, especialmente para Context Diagram, Container Diagram y Component Diagram. | https://structurizr.com/ |
+| Lucidchart | SaaS | Elaboración de diagramas UML, diagramas de actividades, diagramas de clases y diagrama de base de datos que complementan la arquitectura definida. | https://www.lucidchart.com/ |
+
+#### Software Development
+
+| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
+| -------------------- | ------ | --------------------------------- | ----------------------------- |
+| Visual Studio Code | Desktop | Editor principal para documentación técnica, frontend web en React y soporte general de edición colaborativa del repositorio. | https://code.visualstudio.com/ |
+| Visual Studio 2022 Community | Desktop | Entorno de desarrollo principal para los microservicios implementados en .NET 8. Facilita construcción, depuración, ejecución local y administración de soluciones del backend. | https://visualstudio.microsoft.com/es/vs/community/ |
+| Git | Desktop | Control local de versiones para ejecutar el workflow GitFlow definido por el equipo y sincronizar cambios con GitHub. | https://git-scm.com/downloads |
+| Node.js LTS | Desktop | Runtime y gestor de paquetes requerido para el frontend web desarrollado en React y para herramientas basadas en JavaScript del proyecto. | https://nodejs.org/ |
+| .NET 8 SDK | Desktop | Kit de desarrollo requerido para compilar y ejecutar los microservicios definidos en la arquitectura bajo .NET 8. | https://dotnet.microsoft.com/en-us/download/dotnet/8.0 |
+| Android Studio | Desktop | IDE de apoyo para el cliente móvil Android, emulador y administración del Android SDK requerido por Flutter. | https://developer.android.com/studio |
+| Flutter SDK | Desktop | Framework base para la aplicación móvil Android del segmento Paciente, incluyendo soporte a SQLite y notificaciones locales. | https://docs.flutter.dev/get-started/install |
+| MySQL Workbench | Desktop | Administración y validación del motor MySQL utilizado por los microservicios bajo el patrón Database per Service. | https://dev.mysql.com/downloads/workbench/ |
+
+#### Software Testing
+
+| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
+| -------------------- | ------ | --------------------------------- | ----------------------------- |
+| Postman | Desktop | Validación manual y semiautomatizada de endpoints REST, registro de evidencias de ejecución y preparación de colecciones para Sprint Review. | https://www.postman.com/downloads/ |
+| Swagger UI / OpenAPI | SaaS / Local | Verificación funcional de contratos REST, consulta interactiva de endpoints y soporte a la documentación técnica de servicios. | https://swagger.io/tools/swagger-ui/ |
+
+#### Software Deployment
+
+| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
+| -------------------- | ------ | --------------------------------- | ----------------------------- |
+| Azure Portal | SaaS | Administración del entorno cloud de despliegue bajo Azure for Students, incluyendo recursos de cómputo, red y configuración general del proyecto. | https://portal.azure.com/ |
+| Azure CLI | Desktop | Soporte a tareas de automatización, validación de recursos y despliegue desde entorno local o CI/CD. | https://learn.microsoft.com/cli/azure/install-azure-cli |
+| Firebase Console | SaaS | Configuración del servicio de Firebase Cloud Messaging (FCM) utilizado por el Reminder Service para el envío de notificaciones push. | https://console.firebase.google.com/ |
+
+#### Software Documentation
+
+| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
+| -------------------- | ------ | --------------------------------- | ----------------------------- |
+| GitHub | SaaS | Almacenamiento central del código fuente, seguimiento de cambios, revisión colaborativa y publicación de documentación técnica versionada. | https://github.com/ |
+| Swagger Editor / Swagger UI | SaaS / Local | Elaboración y publicación de la especificación OpenAPI de los microservicios del sistema. | https://swagger.io/tools/swagger-editor/ |
+
+Como configuración mínima compartida, todos los integrantes del equipo deben contar con acceso a Trello, Discord, Lucidchart, Figma, Structurizr y GitHub mediante navegador web actualizado. Adicionalmente, para trabajo local sobre el código fuente, cada integrante deberá instalar Git y al menos un editor o IDE compatible con su responsabilidad principal dentro del proyecto.
+
+En función del componente asignado, el entorno local se completa de la siguiente manera:
+
+- Para backend: Visual Studio 2022 Community, .NET 8 SDK y MySQL Workbench.
+- Para frontend web: Visual Studio Code y Node.js LTS.
+- Para cliente móvil Android: Flutter SDK y Android Studio.
+- Para pruebas y documentación de APIs: Postman y acceso a Swagger UI / OpenAPI.
+- Para despliegue y operación básica: acceso a Azure Portal y Firebase Console.
 
 ### 5.2.2. Source Code Management
 
