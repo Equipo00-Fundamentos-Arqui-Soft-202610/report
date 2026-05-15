@@ -1230,7 +1230,7 @@ _Figura 14. Anexo del diagrama de contexto del sistema MediTrack. Elaboración p
 
 #### Container Diagram:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Container Diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Container Diagram" ></td>
 
 <div align = center>
 
@@ -1713,7 +1713,7 @@ _Figura 30. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 **C4 -  Container Diagram**
 Se muestra los contenedores del sistema, destacando el microservicio de tratamiento y su base de datos dedicada, así como cómo se comunican con los otros servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1818,7 +1818,7 @@ _Figura 34. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 
 Se muestra los contenedores del sistema, destacando el microservicio del seguimiento del tratamiento y su base de datos dedicada, así como cómo lee los servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
