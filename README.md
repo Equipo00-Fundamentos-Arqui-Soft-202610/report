@@ -1943,17 +1943,66 @@ En función del componente asignado, el entorno local se completa de la siguient
 
 ### 5.2.2. Source Code Management
 
-Se utilizó **GitHub** como plataforma de control de versiones y colaboración en equipo.
+Para el seguimiento de modificaciones y la colaboración entre integrantes, el equipo utilizará **GitHub** como plataforma central de almacenamiento y control de versiones. A través de esta plataforma se gestionarán los cambios sobre el código fuente, la documentación técnica y el historial de evolución del proyecto, permitiendo mantener trazabilidad sobre cada aporte realizado durante el desarrollo.
 
-Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes:
+En el caso de los **Web Services**, el repositorio incluirá tanto el proyecto de los microservicios como los archivos de pruebas asociados, incluyendo los archivos `.feature` definidos para pruebas bajo enfoque BDD. El repositorio central del proyecto se encuentra en la siguiente ruta:
+
+**Repositorio GitHub del proyecto:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/report
+
+Los integrantes del equipo y los nombres de usuario identificados en GitHub son los siguientes:
 
 | Integrantes | Nombre en GitHub |
 | ----------- | ---------------- |
-|             |                  |
-|             |                  |
-|             |                  |
-|             |                  |
-|             |                  |
+| Gonzales Alvarado, Javier Sebastian | WoodsDos |
+| Quijada Magro, Jeremy Alexander | jquijada-dev |
+| Rivera Ratachi, Renzo Sebastian | 1sopod |
+| Rojas Reategui, Victor Manuel | VRojas1603 |
+| Sulca Sanchez, Piero Angel | psulca |
+
+Con la finalidad de mantener un flujo de trabajo ordenado y alineado con buenas prácticas de ingeniería de software, el equipo aplicará el modelo **GitFlow** como estrategia de branching. Esta estrategia permite separar claramente el código estable, el código en integración, las nuevas funcionalidades y las correcciones urgentes.
+
+Las ramas principales consideradas por el equipo son las siguientes:
+
+- `main`: almacena las versiones estables y listas para entrega o publicación.
+- `dev`: concentra la integración de cambios aprobados antes de su paso a `main`.
+
+Además de las ramas principales, el equipo utilizará ramas de soporte para organizar el trabajo incremental:
+
+- `feature/<short-description>`: se utilizará para el desarrollo de nuevas funcionalidades, mejoras del producto o avances específicos del informe técnico.
+- `release/v<major>.<minor>.<patch>`: se empleará para preparar una versión candidata a entrega, permitiendo realizar ajustes finales y validaciones sin afectar la rama de desarrollo.
+- `hotfix/v<major>.<minor>.<patch>-<short-description>`: se utilizará para corregir errores críticos detectados en una versión ya estable publicada en `main`.
+
+En el caso de las ramas `feature`, el criterio de nombrado será breve, descriptivo y en inglés, evitando espacios y utilizando guiones para separar palabras. Algunos ejemplos coherentes con este proyecto son `feature/5-2-2-source-code-management`, `feature/sprint-1` o `feature/interviews`.
+
+Para las ramas de `release`, el equipo seguirá **Semantic Versioning**, utilizando el formato `vMAJOR.MINOR.PATCH`. Bajo esta convención:
+
+- `MAJOR` representa cambios de alto impacto o entregas de gran alcance.
+- `MINOR` representa incorporación de funcionalidades compatibles con el trabajo previo.
+- `PATCH` representa correcciones puntuales o ajustes menores.
+
+De esta manera, una versión preliminar de entrega podría identificarse como `v1.0.0`, mientras que una corrección posterior de errores menores podría registrarse como `v1.0.1`.
+
+Del mismo modo, los mensajes de commit seguirán el estándar **Conventional Commits**, con el propósito de facilitar la lectura del historial, la identificación rápida del tipo de cambio y la preparación de futuras versiones. El formato general adoptado será:
+
+`type(scope): short description`
+
+Los tipos de commit que se priorizarán en el proyecto son:
+
+- `feat`: incorporación de nuevas funcionalidades.
+- `fix`: corrección de errores.
+- `docs`: cambios en documentación.
+- `refactor`: mejoras internas sin alterar el comportamiento funcional esperado.
+- `test`: incorporación o ajuste de pruebas.
+- `chore`: tareas de mantenimiento o configuración.
+
+Algunos ejemplos consistentes con este flujo de trabajo son los siguientes:
+
+- `feat(reminder): add medication notification scheduling`
+- `fix(treatment): correct prescription validation flow`
+- `docs(report): add software development environment configuration`
+- `test(followup): add compliance feature scenarios`
+
+Con esta organización, el equipo asegura trazabilidad sobre cada cambio, consistencia en la nomenclatura de ramas y commits, y una base clara para integrar de forma progresiva los avances de desarrollo de los Web Services y sus pruebas asociadas.
 
 ### 5.2.3. Source Code Style Guide & Conventions
 
