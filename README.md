@@ -1067,17 +1067,17 @@ _Figura 9. To-Be Scenario Mapping del segmento Personal de Apoyo. Elaboración p
 | US14            | Subir historial clínico                         | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                                          | **Escenario 1:** Dado que selecciono un archivo de dataset válido, cuando presiono "Cargar", entonces el historial se vincula al paciente correspondiente. **Escenario 2:** Dado que el paciente no existe en el dataset, cuando intento cargarlo, entonces veo "Paciente no encontrado".                                                       | EP04              |
 | US15            | Buscar paciente individual                      | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento.                                                              | **Escenario 1:** Dado que ingreso un DNI válido, cuando busco, entonces veo el perfil completo del paciente. **Escenario 2:** Dado que no hay coincidencias, cuando busco, entonces veo "No se encontraron pacientes".                                                                                                                          | EP04              |
 | US16            | Ver dashboard de tendencias de adherencia       | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento.                        | **Escenario 1:** Dado que hay datos de cumplimiento registrados, cuando accedo al dashboard, entonces veo gráficos de tendencia por paciente. **Escenario 2:** Dado que no hay datos suficientes, cuando accedo, entonces veo "Sin datos disponibles para mostrar tendencias".                                                                  | EP05              |
-| US17            | Ver estadísticas de cumplimiento de recetas     | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento.                                             | **Escenario 1:** Dado que hay múltiples recetas activas, cuando accedo a estadísticas, entonces veo porcentaje de cumplimiento por cada receta. **Escenario 2:** Dado que una receta tiene bajo cumplimiento, entonces aparece resaltada en el gráfico.                                                                                         | EP05              |
+| US17            | Ver estadísticas de cumplimiento de recetas     | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento.                                             | **Escenario 1:** Dado que hay múltiples recetas activas, cuando accedo a estadísticas, entonces veo porcentaje de cumplimiento por cada receta. **Escenario 2:** Dado que una receta tiene bajo cumplimiento, cuando accedo al dashboard, entonces aparece resaltada en el gráfico.                                                                                         | EP05              |
 | US18            | Ver estadísticas de citas                       | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones.                                                 | **Escenario 1:** Dado que hay citas registradas, cuando accedo a la sección, entonces veo un gráfico circular con tipos de cita. **Escenario 2:** Dado que no hay citas, cuando accedo, entonces veo "No hay datos de citas disponibles".                                                                                                       | EP05              |
 | US19            | Editar perfil de usuario                        | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada.                                            | **Escenario 1:** Dado que modifico mi teléfono o subo una nueva foto, cuando presiono "Guardar", entonces el cambio se refleja inmediatamente. **Escenario 2:** Dado que ingreso un formato inválido, cuando intento guardar, entonces veo "Formato incorrecto".                                                                                | EP06              |
 | US20            | Recuperar contraseña                            | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta.                                                                      | **Escenario 1:** Dado que ingreso mi correo registrado, cuando presiono "Recuperar contraseña", entonces recibo un enlace por correo. **Escenario 2:** Dado que el correo no existe, entonces veo "Correo no registrado". **Escenario 3:** Dado que uso el enlace, cuando ingreso una nueva contraseña válida, entonces la cuenta se actualiza. | EP01              |
 | US21            | Cerrar sesión                                   | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información.                                                                                      | **Escenario 1:** Dado que estoy logueado, cuando presiono "Cerrar sesión", entonces se cierra la sesión y regresa a la pantalla de login. **Escenario 2:** Dado que cierro la aplicación, cuando la abro nuevamente, entonces debo iniciar sesión otra vez.                                                                                     | EP01              |
 | US22            | Configurar preferencias de notificaciones       | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.                                 | **Escenario 1:** Dado que accedo a Configuración, cuando elijo sonido, vibración y número de repeticiones, entonces las notificaciones se aplican según mi elección. **Escenario 2:** Dado que desactivo temporalmente las notificaciones, entonces no recibo recordatorios hasta que las reactive.                                             | EP02              |
-| US23            | Funcionar en modo offline                       | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar.                                       | **Escenario 1:** Dado que no tengo internet, cuando abro la aplicación, entonces veo la lista de medicamentos y puedo marcar "Tomado". **Escenario 2:** Dado que recupero internet, entonces se sincronizan automáticamente los registros.                                                                                                      | EP02              |
+| US23            | Funcionar en modo offline                       | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar.                                       | **Escenario 1:** Dado que no tengo internet, cuando abro la aplicación Y tengo una medicación por tomar, puedo marcar "Tomado". **Escenario 2:** Dado que registré tomas de medicamento offline, cuando recupere conexión a  internet entonces se sincronizan automáticamente los registros.                                                                                                      | EP02              |
 | US24            | Editar o cancelar medicamento                   | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                                        | **Escenario 1:** Dado que el personal técnico autoriza el cambio, cuando edito un medicamento, entonces se actualiza y se notifica al paciente. **Escenario 2:** Dado que intento cancelar sin autorización, entonces veo "Solo el personal técnico puede cancelar".                                                                            | EP02              |
-| US25            | Ver historial de adherencia y progreso          | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                                        | **Escenario 1:** Dado que tengo registros de cumplimiento, cuando accedo a "Mi progreso", entonces veo gráfico de porcentaje de adherencia semanal. **Escenario 2:** Dado que no hay datos suficientes, entonces veo "Aún no hay suficiente información para mostrar progreso".                                                                 | EP02 / EP03       |
+| US25            | Ver historial de adherencia y progreso          | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                                        | **Escenario 1:** Dado que tengo registros de cumplimiento, cuando accedo a "Mi progreso", entonces veo gráfico de porcentaje de adherencia semanal. **Escenario 2:** Dado que no hay datos suficientes, cuando accedo al dashboard,  entonces veo "Aún no hay suficiente información para mostrar progreso".                                                                 | EP02 / EP03       |
 | US26            | Ver próxima toma pendiente                      | Como paciente, quiero ver cuál es mi próxima toma programada y en cuánto tiempo es, para estar preparado.                                                             | **Escenario 1:** Dado que el paciente tiene un tratamiento activo con medicamentos programados, cuando ingresa a la pantalla principal  de la aplicación móvil, entonces el sistema debe mostrar una tarjeta con el nombre del medicamento, la dosis y la hora exacta de la próxima toma más cercana al tiempo actual, y debe mostrar un contador regresivo en tiempo real. | EP02              |
-| US27            | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo.                                 | **Escenario 1:** Dado que un paciente tiene adherencia <70 %, entonces recibo notificación en el portal web. **Escenario 2:** Dado que configuro el umbral, entonces las alertas se ajustan al nuevo valor.                                                                                                                                     | EP05              |
+| US27            | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo.                                 | **Escenario 1:** Dado que un paciente tiene adherencia <70 %, entonces recibo notificación en el portal web. **Escenario 2:** Dado que accedo al apartado de configuración, cuando configuro el umbral,  entonces las alertas se ajustan al nuevo valor.                                                                                                                                     | EP05              |
 | US28            | Cambiar contraseña                              | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura.                                                                                            | **Escenario 1:** Dado que ingreso la contraseña actual y la nueva, cuando confirmo, entonces la contraseña se actualiza y se cierra la sesión actual. **Escenario 2:** Dado que la contraseña actual es incorrecta, cuando confirmo, entonces veo "Contraseña actual incorrecta".                                                               | EP01              |
 | US29            | Editar o cancelar cita médica                   | Como paciente, quiero editar o cancelar una cita médica, para corregir errores en mi agenda.                                                                           | **Escenario 1:** Dado que tengo una cita agendada a futuro, cuando la edito o cancelo, entonces se actualiza en mi calendario y se eliminan sus recordatorios. **Escenario 2:** Dado que intento modificar una cita pasada, entonces veo "No se pueden modificar citas pasadas".                                                                | EP03              |
 | US30            | Ver propuesta de valor                          | Como visitante, quiero entender qué hace MediTrack en la página principal, para decidir si me interesa.                                                                 | **Escenario 1:** Dado que soy visitante nuevo, cuando accedo a la Landing Page, entonces veo una descripción clara de qué es MediTrack y su propuesta de valor.                                         | EP07              |
@@ -1210,7 +1210,7 @@ En esta sección se describen los enfoques metodológicos que rigen el desarroll
 
 El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el que opera la solución. En el centro se ubica el sistema MediTrack, el cual actúa como el núcleo de interacción entre los dos actores principales: el Paciente, quien consume la información de su tratamiento, y el Personal Técnico, encargado de la gestión clínica. Asimismo, se detallan las dependencias con sistemas externos.
 
-<td align="center"><img src="assets/images/chapter4/structurizr-109687-Contexto.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1218,23 +1218,17 @@ _Figura 13. Diagrama de contexto del sistema MediTrack. Elaboración propia._
 
 </div>
 
-<td align="center"><img src="assets/images/chapter4/structurizr-109687-Contexto-key.png" alt="Context diagram" ></td>
 
-<div align = center>
-
-_Figura 14. Anexo del diagrama de contexto del sistema MediTrack. Elaboración propia._
-
-</div>
 
 ### 4.1.4. Approach driven ViewPoints Diagrams
 
 #### Container Diagram:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Container Diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Container Diagram" ></td>
 
 <div align = center>
 
-_Figura 15. Anexo del diagrama de contenedores del sistema MediTrack. Elaboración propia._
+_Figura 14. Anexo del diagrama de contenedores del sistema MediTrack. Elaboración propia._
 
 </div>
 
@@ -1243,11 +1237,11 @@ _Figura 15. Anexo del diagrama de contenedores del sistema MediTrack. Elaboraci�
 
 #### Identity & Profiles Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/identityprofile.jpeg" alt="" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_Identity.png" alt="" ></td>
 
 <div align = center>
 
-_Figura 16. Anexo del diagrama de componentes de Identity & Profiles Service . Elaboración propia._
+_Figura 15. Anexo del diagrama de componentes de Identity & Profiles Service . Elaboración propia._
 
 </div>
 
@@ -1255,11 +1249,11 @@ _Figura 16. Anexo del diagrama de componentes de Identity & Profiles Service . E
 
 #### Treatment Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="analytics" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_TreatmentService.png" alt="analytics" ></td>
 
 <div align = center>
 
-_Figura 17. Anexo del diagrama de componentes de Treatment Service . Elaboración propia._
+_Figura 16. Anexo del diagrama de componentes de Treatment Service . Elaboración propia._
 
 </div>
 
@@ -1269,12 +1263,12 @@ _Figura 17. Anexo del diagrama de componentes de Treatment Service . Elaboració
 
 #### Reminder Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/reminder.jpeg" alt="reminder service" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_ReminderService.png" alt="reminder service" ></td>
 
 
 <div align = center>
 
-_Figura 18. Anexo del diagrama de componentes de Reminder Service. Elaboración propia._
+_Figura 17. Anexo del diagrama de componentes de Reminder Service. Elaboración propia._
 
 </div>
 
@@ -1282,12 +1276,12 @@ _Figura 18. Anexo del diagrama de componentes de Reminder Service. Elaboración 
 
 #### Follow-up Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/followup.jpeg" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_FollowUpService.png" ></td>
 
 
 <div align = center>
 
-_Figura 19. Anexo del diagrama de componentes de Follow-up Service. Elaboración propia._
+_Figura 18. Anexo del diagrama de componentes de Follow-up Service. Elaboración propia._
 
 </div>
 
@@ -1295,12 +1289,12 @@ _Figura 19. Anexo del diagrama de componentes de Follow-up Service. Elaboración
 
 #### Medical Analysis Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams//component/medical_analysis.jpeg" alt="medical analysis" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams//component/structurizr-93540-Components_AnalysisService.png" alt="medical analysis" ></td>
 
 
 <div align = center>
 
-_Figura 20. Anexo del diagrama de componentes de Medical Analysis Service. Elaboración propia._
+_Figura 19. Anexo del diagrama de componentes de Medical Analysis Service. Elaboración propia._
 
 </div>
 
@@ -1312,7 +1306,7 @@ _Figura 20. Anexo del diagrama de componentes de Medical Analysis Service. Elabo
 
 <div align = center>
 
-_Figura 21. Anexo del diagrama de componentes de Appointment Service. Elaboración propia._
+_Figura 20. Anexo del diagrama de componentes de Appointment Service. Elaboración propia._
 
 </div>
 
@@ -1326,7 +1320,7 @@ _Figura 21. Anexo del diagrama de componentes de Appointment Service. Elaboraci�
 
 <div align = center>
 
-_Figura 22. Anexo del diagrama de actividades de Medical Analysis. Elaboración propia._
+_Figura 21. Anexo del diagrama de actividades de Medical Analysis. Elaboración propia._
 
 </div>
 
@@ -1338,7 +1332,7 @@ _Figura 22. Anexo del diagrama de actividades de Medical Analysis. Elaboración 
 
 <div align = center>
 
-_Figura 23. Anexo del diagrama de actividades de Appointment. Elaboración propia._
+_Figura 22. Anexo del diagrama de actividades de Appointment. Elaboración propia._
 
 </div>
 
@@ -1350,7 +1344,7 @@ _Figura 23. Anexo del diagrama de actividades de Appointment. Elaboración propi
 
 <div align = center>
 
-_Figura 24. Anexo del diagrama de actividades de Follow-up. Elaboración propia._
+_Figura 23. Anexo del diagrama de actividades de Follow-up. Elaboración propia._
 
 </div>
 
@@ -1363,7 +1357,7 @@ _Figura 24. Anexo del diagrama de actividades de Follow-up. Elaboración propia.
 
 <div align = center>
 
-_Figura 25. Anexo del diagrama de actividades de Identity & Profiles. Elaboración propia._
+_Figura 24. Anexo del diagrama de actividades de Identity & Profiles. Elaboración propia._
 
 </div>
 
@@ -1375,7 +1369,7 @@ _Figura 25. Anexo del diagrama de actividades de Identity & Profiles. Elaboraci�
 
 <div align = center>
 
-_Figura 26. Anexo del diagrama de actividades de Treatment. Elaboración propia._
+_Figura 25. Anexo del diagrama de actividades de Treatment. Elaboración propia._
 
 </div>
 
@@ -1387,7 +1381,7 @@ _Figura 26. Anexo del diagrama de actividades de Treatment. Elaboración propia.
 
 <div align = center>
 
-_Figura 27. Anexo del diagrama de actividades de Reminder. Elaboración propia._
+_Figura 26. Anexo del diagrama de actividades de Reminder. Elaboración propia._
 
 </div>
 
@@ -1399,7 +1393,7 @@ _Figura 27. Anexo del diagrama de actividades de Reminder. Elaboración propia._
 
 <div align = center>
 
-_Figura 28. Anexo del diagrama de clases del sistema MediTrack. Elaboración propia._
+_Figura 27. Anexo del diagrama de clases del sistema MediTrack. Elaboración propia._
 
 </div>
 
@@ -1409,7 +1403,7 @@ _Figura 28. Anexo del diagrama de clases del sistema MediTrack. Elaboración pro
 
 <div align = center>
 
-_Figura 29. Anexo del diagrama de la base de datos relacional de MediTrack. Elaboración propia._
+_Figura 28. Anexo del diagrama de la base de datos relacional de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1701,11 +1695,11 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/Iteration-1-SystemContext.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 30. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
+_Figura 29. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1713,23 +1707,23 @@ _Figura 30. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 **C4 -  Container Diagram**
 Se muestra los contenedores del sistema, destacando el microservicio de tratamiento y su base de datos dedicada, así como cómo se comunican con los otros servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 31. Anexo del diagrama de contenedores de MediTrack. Elaboración propia._
+_Figura 30. Anexo del diagrama de contenedores de MediTrack. Elaboración propia._
 
 </div>
 
 
 **C4 -  Component Diagram**
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
-<td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_TreatmentService.png" alt="Context diagram" ></td>
 
 
 <div align = center>
 
-_Figura 32. Anexo del diagrama de componentes de Treatment Service. Elaboración propia._
+_Figura 31. Anexo del diagrama de componentes de Treatment Service. Elaboración propia._
 
 </div>
 
@@ -1740,7 +1734,7 @@ _Figura 32. Anexo del diagrama de componentes de Treatment Service. Elaboración
 
 <div align = center>
 
-_Figura 33. Kanban Board Iteration 1. Elaboración propia._
+_Figura 32. Kanban Board Iteration 1. Elaboración propia._
 
 </div>
 
@@ -1805,11 +1799,11 @@ Permitir la continuidad del tratamiento del paciente en tres frentes: soporte a 
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/Iteration-1-SystemContext.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 34. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
+_Figura 33. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1818,11 +1812,11 @@ _Figura 34. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 
 Se muestra los contenedores del sistema, destacando el microservicio del seguimiento del tratamiento y su base de datos dedicada, así como cómo lee los servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 35. Anexo del diagrama de contenedores de MediTrack. Elaboración propia._
+_Figura 34. Anexo del diagrama de contenedores de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1830,12 +1824,12 @@ _Figura 35. Anexo del diagrama de contenedores de MediTrack. Elaboración propia
 
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/followup.jpeg" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_FollowUpService.png" alt="Context diagram" ></td>
 
 
 <div align = center>
 
-_Figura 36. Anexo del diagrama de componentes de Follow-up service. Elaboración propia._
+_Figura 35. Anexo del diagrama de componentes de Follow-up service. Elaboración propia._
 
 </div>
 
@@ -1845,7 +1839,7 @@ _Figura 36. Anexo del diagrama de componentes de Follow-up service. Elaboración
 
 <div align = center>
 
-_Figura 37. Kanban Board Iteration 2._
+_Figura 36. Kanban Board Iteration 2._
 
 </div>
 Link del Trello: https://trello.com/invite/b/69f6752f9be88dc527f213a9/ATTIfba9ad9e2b8975b1696794b6ecf0382cED03D548/continuidad-del-tratamiento
