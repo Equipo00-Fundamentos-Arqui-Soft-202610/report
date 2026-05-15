@@ -2006,6 +2006,31 @@ Con esta organización, el equipo asegura trazabilidad sobre cada cambio, consis
 
 ### 5.2.3. Source Code Style Guide & Conventions
 
+Con el propósito de mantener consistencia, legibilidad y mantenibilidad en todos los componentes de MediTrack, el equipo adoptará un conjunto común de convenciones para nombrar elementos, estructurar archivos y redactar código fuente. Estas convenciones se aplicarán tanto al backend desarrollado en `.NET 8`, como al frontend web en `React` con `TypeScript`, a la aplicación móvil en `Flutter` y a los artefactos de pruebas y documentación técnica asociados al proyecto.
+
+Como criterio general, el equipo utilizará **nomenclatura en inglés** para todos los lenguajes, artefactos y elementos técnicos de la solución. Esto incluye nombres de clases, interfaces, métodos, variables, componentes, endpoints, tablas, columnas, archivos, ramas y escenarios de prueba. De esta manera se busca uniformidad en el código fuente, mayor claridad técnica y alineamiento con las convenciones estándar de la industria.
+
+Las referencias y convenciones adoptadas por el equipo se resumen a continuación:
+
+| Lenguaje / Artefacto | Referencia adoptada | Convenciones aplicadas en el proyecto |
+| -------------------- | ------------------- | ------------------------------------- |
+| C# / .NET 8 | Microsoft C# Coding Conventions y .NET Naming Guidelines | Se utilizará `PascalCase` para clases, interfaces, enums, records, DTOs y métodos públicos. Las interfaces iniciarán con prefijo `I`. Los parámetros, variables locales y atributos usarán `camelCase`, mientras que los campos privados usarán `_camelCase`. Los métodos asíncronos finalizarán con sufijo `Async`. Los nombres de controladores, servicios, repositorios y casos de uso se expresarán en inglés y de forma descriptiva. |
+| TypeScript / React | Google TypeScript Style Guide | Se utilizará `PascalCase` para componentes, tipos, interfaces y props models; `camelCase` para variables, funciones y hooks; y nombres descriptivos en inglés para archivos, módulos y utilitarios. Los hooks personalizados iniciarán con prefijo `use`, y se evitarán abreviaturas ambiguas en nombres de funciones o estados. |
+| Dart / Flutter | Effective Dart: Style | Se aplicará `PascalCase` para clases, widgets, enums y tipos, y `lowerCamelCase` para métodos, variables y propiedades. Los archivos se nombrarán en `snake_case`, siguiendo la práctica recomendada del ecosistema Dart. Los widgets y pantallas tendrán nombres expresivos en inglés, alineados con la funcionalidad que representan. |
+| Archivos `.feature` / Gherkin | Gherkin Conventions for Readable Specifications | Los escenarios de prueba se redactarán en inglés técnico legible, utilizando la estructura `Feature`, `Scenario`, `Given`, `When`, `Then` y, cuando corresponda, `And`. Cada escenario describirá un único comportamiento observable, evitando mezclar varios flujos en un mismo caso. Los títulos deberán ser breves, orientados al negocio y comprensibles para el equipo. |
+| SQL / MySQL | Convenciones internas del proyecto alineadas con buenas prácticas relacionales | Las tablas, columnas, índices y restricciones se nombrarán en inglés, empleando `snake_case` para los objetos de base de datos. Como criterio de modelado, el equipo adoptará nombres de tablas en **singular**, por ejemplo `patient`, `medication` o `medical_appointment`, ya que esta convención se alinea mejor con el modelado por entidad y con prácticas ampliamente utilizadas en entornos empresariales. Las claves primarias y foráneas utilizarán nombres descriptivos y consistentes, permitiendo una lectura clara del modelo relacional en todos los microservicios. |
+| OpenAPI / documentación REST | OpenAPI Specification | Los endpoints REST se documentarán con rutas claras y recursos expresados en inglés. Los paths mantendrán nombres consistentes y orientados a recursos, mientras que los esquemas y modelos documentados seguirán la misma convención de nombres aplicada en backend y frontend para facilitar trazabilidad entre implementación y documentación. |
+
+Además de las reglas anteriores, el equipo aplicará los siguientes lineamientos transversales durante la implementación:
+
+- Evitar nombres genéricos como `data`, `temp`, `manager2` o `test123`, salvo en contextos estrictamente temporales o de prueba aislada.
+- Favorecer nombres que expresen intención de negocio, por ejemplo `MedicationReminder`, `PatientProfile`, `RegisterComplianceCommand` o `GetAdherenceReport`.
+- Mantener consistencia entre nombres de dominio, nombres de endpoints, nombres de entidades y nombres de escenarios de prueba.
+- Separar responsabilidades por archivo y por clase, evitando archivos excesivamente grandes o con múltiples comportamientos no relacionados.
+- Conservar formatos de código homogéneos dentro de cada lenguaje, de modo que la lectura y revisión en equipo resulte predecible.
+
+Con la adopción de estas guías, el equipo establece una base común para programar, documentar y probar la solución de manera uniforme, reduciendo ambigüedades y facilitando el trabajo colaborativo entre los distintos componentes del sistema.
+
 ### 5.2.4. Software Deployment Configuration
 
 <hr class="page-break">
