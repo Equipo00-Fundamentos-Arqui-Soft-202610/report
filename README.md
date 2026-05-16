@@ -68,18 +68,26 @@
 | 1.0     | 11/04/2026 | Rojas Reategui, Victor Manuel              | Creación de la estructura inicial del informe                                                                                                    |
 | 1.1     | 13/04/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo I: descripción de la startup, Solution Profile, Lean UX Process y segmentos objetivo (1.1–1.3)                                          |
 | 1.2     | 17/04/2026 | Sulca Sanchez, Piero Angel                 | Capítulo II: diseño de entrevistas (2.2.1)                                                                                                       |
-| 1.3     | 17/04/2026 | Quijada Magro, Jeremy Alexander            | Capítulo II: análisis de competidores (2.1), registro y análisis de entrevistas (2.2.2, 2.2.3) y needfinding (2.3.1 - 2.3.4)                     |
-| 1.4     | 18/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3)                                          |
+| 1.3     | 17/04/2026 | Quijada Magro, Jeremy Alexander            | Capítulo II: análisis de competidores (2.1), registro y análisis de entrevistas (2.2.2, 2.2.3) y needfinding (2.3.1 - 2.3.4)                  |
+| 1.4     | 18/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3)                                         |
 | 1.5     | 18/04/2026 | Sulca Sanchez, Piero Angel                 | Capítulo III: Product Backlog (3.4)                                                                                                              |
-| 1.6     | 18/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4)                                                          |
+| 1.6     | 18/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4)                                                         |
 | 1.7     | 18/04/2026 | Sulca Sanchez, Piero Angel                 | Capítulo III: reordenamiento del Product Backlog por valor de negocio (3.4)                                                                      |
 | 2.0     | 27/04/2026 | Quijada Magro, Jeremy Alexander            | Capítulo IV: Design Concepts, ViewPoints & ER Diagrams, Principles Statements, Architectural Styles & Patterns y Context Diagram (4.1.1 - 4.1.3) |
-| 2.1     | 28/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo IV: Approach driven ViewPoints Diagrams, Relational/Non Relational Database Diagram y Design Patterns (4.1.4 - 4.1.6)                   |
-| 2.2     | 29/04/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo IV: Tactics, Architectural Drivers y Design Purpose (4.1.7, 4.2, 4.1.8)                                                                 |
-| 2.3     | 30/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo IV: Primary Functionality (Primary User Stories) y Quality Attribute Scenarios (4.1.9, 4.1.10)                                          |
+| 2.1     | 28/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo IV: Approach driven ViewPoints Diagrams, Relational/Non Relational Database Diagram y Design Patterns (4.1.4 - 4.1.6)                |
+| 2.2     | 29/04/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo IV: Tactics, Architectural Drivers y Design Purpose (4.1.7, 4.2, 4.1.8)                                                                |
+| 2.3     | 30/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo IV: Primary Functionality (Primary User Stories) y Quality Attribute Scenarios (4.1.9, 4.1.10)                                         |
 | 2.4     | 01/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo IV: Constraints y Architectural Concerns (4.1.11, 4.1.12)                                                                               |
-| 2.5     | 02/05/2026 | Jeremy Quijada Magro y Piero Sulca Sanchez | Capítulo IV: ADD Iterations 1 & 2                                                                                                                |
-
+| 2.5     | 02/05/2026 | Jeremy Quijada Magro y Piero Sulca Sanchez | Capítulo IV: ADD Iterations 1 & 2                                                                                                                 |
+| 3.0     | 10/05/2026 | Rojas Reategui, Victor Manuel              | Capítulo V: Backend Application Core Testing Suite y Pattern Based Backend Application(s) (5.1.1, 5.1.2)                                        |
+| 3.1     | 10/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo V: Pattern Based Custom Software Library y Framework Pattern Driven Refactoring Report (5.1.3, 5.1.4)                                  |
+| 3.2     | 11/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo V: Software Development Environment Configuration, Source Code Management y Source Code Style Guide & Conventions (5.2.1 - 5.2.3)     |
+| 3.3     | 11/05/2026 | Quijada Magro, Jeremy Alexander            | Capítulo V: Software Deployment Configuration y Development Evidence for Sprint Review (5.2.4, 5.3.1.2)                                         |
+| 3.4     | 12/05/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo V: Sprint Backlog 1, Team Collaboration Insights during Sprint y Kanban Board (5.3.1.1, 5.3.1.7, 5.3.1.8)                             |
+| 3.5     | 12/05/2026 | Rojas Reategui, Victor Manuel              | Capítulo V: Testing Suite Evidence for Sprint Review y Execution Evidence for Sprint Review (5.3.1.3, 5.3.1.4)                                  |
+| 3.6     | 13/05/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo V: Microservices Documentation Evidence for Sprint Review y documentación de arquitectura de microservicios (5.3.1.5)                  |
+| 3.7     | 13/05/2026 | Quijada Magro, Jeremy Alexander            | Capítulo V: Software Deployment Evidence for Sprint Review y consolidación de evidencias del sprint (5.3.1.6)                                   |
+| 3.8     | 14/05/2026 | Todo el equipo                             | Revisión general, integración de capítulos, corrección de formato APA y validación final del informe TP1                                         |
 
 <hr class="page-break">
 
@@ -224,37 +232,37 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   <tbody>
     <tr>
       <td rowspan="5"><strong>A: Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.</strong></td>
-      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Análisis de competidores, entrevistas y needfinding.<br><b>TB2:</b> Desarrollo de Problem Statements, definición de enfoques arquitectónicos (Architectural Styles & Patterns), elaboración del Context Diagram y participación en ADD iteration 2.</td>
-      <td rowspan="5"><b>TB1:</b> El equipo aplicó conceptos clave de ingeniería de software y diseño centrado en el usuario, estructurando una base sólida del proyecto.<br><br><b>TB2:</b> El equipo profundizó en el diseño arquitectónico del sistema, aplicando patrones, tácticas y metodologías como ADD. Esto permitió consolidar una estructura más robusta, alineada a atributos de calidad y necesidades del sistema.</td>
+      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Análisis de competidores, entrevistas y needfinding.<br><b>TB2:</b> Desarrollo de Problem Statements, definición de enfoques arquitectónicos (Architectural Styles & Patterns), elaboración del Context Diagram y participación en ADD iteration 2.<br><b>TP1:</b> Investigó y aplicó conceptos de Static Testing & Verification, además de participar en el desarrollo del prototipo visual y evidencias del Sprint Review.</td>
+      <td rowspan="5"><b>TB1:</b> El equipo aplicó conceptos clave de ingeniería de software y diseño centrado en el usuario, estructurando una base sólida del proyecto.<br><br><b>TB2:</b> El equipo profundizó en el diseño arquitectónico del sistema, aplicando patrones, tácticas y metodologías como ADD. Esto permitió consolidar una estructura más robusta, alineada a atributos de calidad y necesidades del sistema.<br><br><b>TP1:</b> El equipo fortaleció conocimientos técnicos relacionados al desarrollo de soluciones modernas de software, aplicando conceptos de testing, arquitectura de microservicios, gestión ágil y configuración de entornos de desarrollo, permitiendo mejorar la calidad y organización del proyecto Meditrack.</td>
     </tr>
     <tr>
-      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> To-Be Scenario Mapping, User Stories e Impact Map.<br><b>TB2:</b> Desarrollo de ViewPoint Diagrams basados en enfoques arquitectónicos y diseño de diagramas de base de datos relacionales y no relacionales.</td>
+      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> To-Be Scenario Mapping, User Stories e Impact Map.<br><b>TB2:</b> Desarrollo de ViewPoint Diagrams basados en enfoques arquitectónicos y diseño de diagramas de base de datos relacionales y no relacionales.<br><b>TP1:</b> Desarrollo del Sprint Backlog 1 y Kanban Board, aplicando metodologías ágiles y herramientas de gestión colaborativa.</td>
     </tr>
     <tr>
-      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Definición de startup, problemática, Lean UX Process y segmentos objetivo.<br><b>TB2:</b> Aplicación de Design Patterns, definición de tácticas arquitectónicas y establecimiento del propósito del diseño.</td>
+      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Definición de startup, problemática, Lean UX Process y segmentos objetivo.<br><b>TB2:</b> Aplicación de Design Patterns, definición de tácticas arquitectónicas y establecimiento del propósito del diseño.<br><b>TP1:</b> Elaboración de documentación de microservicios y organización de evidencias técnicas para el Sprint Review.</td>
     </tr>
     <tr>
-      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Elaboración del Product Backlog.<br><b>TB2:</b> Definición de funcionalidades principales del sistema y desarrollo de Quality Attribute Scenarios.</td>
+      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Elaboración del Product Backlog.<br><b>TB2:</b> Definición de funcionalidades principales del sistema y desarrollo de Quality Attribute Scenarios.<br><b>TP1:</b> Implementación de Testing Suites y General Patterns para reforzar buenas prácticas de desarrollo y pruebas de software.</td>
     </tr>
     <tr>
-      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en entrevistas.<br><b>TB2:</b> Identificación de restricciones (Constraints), preocupaciones arquitectónicas (Architectural Concerns) y desarrollo de ADD iteration 1.</td>
+      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en entrevistas.<br><b>TB2:</b> Identificación de restricciones (Constraints), preocupaciones arquitectónicas (Architectural Concerns) y desarrollo de ADD iteration 1.<br><b>TP1:</b> Trabajo en Software Configuration Management aplicando herramientas de control de versiones y configuración del entorno de desarrollo.</td>
     </tr>
     <tr>
       <td rowspan="5"><strong>B: Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.</strong></td>
-      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Aplicación de entrevistas y needfinding.<br><b>TB2:</b> Aprendizaje en definición de arquitecturas, estilos y uso del método ADD para diseño iterativo.</td>
-      <td rowspan="5"><b>TB1:</b> El equipo demostró una actitud orientada al aprendizaje continuo, incorporando nuevas metodologías.<br><br><b>TB2:</b> Los integrantes fortalecieron su aprendizaje en arquitectura de software, adoptando nuevas herramientas y enfoques como ADD, patrones y modelado de datos, lo que evidencia una evolución técnica y compromiso con su desarrollo profesional.</td>
+      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Aplicación de entrevistas y needfinding.<br><b>TB2:</b> Aprendizaje en definición de arquitecturas, estilos y uso del método ADD para diseño iterativo.<br><b>TP1:</b> Investigación de herramientas de validación y verificación para mejorar la calidad del software y el prototipo desarrollado.</td>
+      <td rowspan="5"><b>TB1:</b> El equipo demostró una actitud orientada al aprendizaje continuo, incorporando nuevas metodologías.<br><br><b>TB2:</b> Los integrantes fortalecieron su aprendizaje en arquitectura de software, adoptando nuevas herramientas y enfoques como ADD, patrones y modelado de datos, lo que evidencia una evolución técnica y compromiso con su desarrollo profesional.<br><br><b>TP1:</b> El equipo reforzó su aprendizaje continuo mediante el uso de nuevas herramientas, metodologías ágiles, testing y gestión de configuración, fortaleciendo competencias técnicas necesarias para el desarrollo profesional y la construcción de soluciones de software modernas.</td>
     </tr>
     <tr>
-      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> Uso de herramientas de modelado como Impact Map.<br><b>TB2:</b> Profundización en modelado arquitectónico y diseño de bases de datos híbridas.</td>
+      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> Uso de herramientas de modelado como Impact Map.<br><b>TB2:</b> Profundización en modelado arquitectónico y diseño de bases de datos híbridas.<br><b>TP1:</b> Aprendizaje y aplicación de metodologías ágiles mediante el uso de Sprint Backlog y Kanban Board.</td>
     </tr>
     <tr>
-      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Desarrollo de Lean UX y definición de producto.<br><b>TB2:</b> Aprendizaje en patrones de diseño y tácticas arquitectónicas aplicadas al sistema.</td>
+      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Desarrollo de Lean UX y definición de producto.<br><b>TB2:</b> Aprendizaje en patrones de diseño y tácticas arquitectónicas aplicadas al sistema.<br><b>TP1:</b> Reforzamiento de conocimientos en documentación de microservicios y buenas prácticas de arquitectura backend.</td>
     </tr>
     <tr>
-      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Gestión de backlog.<br><b>TB2:</b> Desarrollo de escenarios de atributos de calidad y definición funcional del sistema.</td>
+      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Gestión de backlog.<br><b>TB2:</b> Desarrollo de escenarios de atributos de calidad y definición funcional del sistema.<br><b>TP1:</b> Investigación y aplicación de patrones generales de desarrollo y testing para mejorar la confiabilidad del sistema.</td>
     </tr>
     <tr>
-      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en levantamiento de información.<br><b>TB2:</b> Comprensión de restricciones y preocupaciones arquitectónicas, además del uso de ADD en etapas iniciales.</td>
+      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en levantamiento de información.<br><b>TB2:</b> Comprensión de restricciones y preocupaciones arquitectónicas, además del uso de ADD en etapas iniciales.<br><b>TP1:</b> Actualización de conocimientos relacionados a Software Configuration Management y herramientas colaborativas de desarrollo.</td>
     </tr>
   </tbody>
 </table>
@@ -1051,6 +1059,7 @@ _Figura 9. To-Be Scenario Mapping del segmento Personal de Apoyo. Elaboración p
 
 
 
+
 #### Requisitos Funcionales
 
 | Componente del sistema | Id | Requisito Funcional |
@@ -1108,6 +1117,11 @@ _Figura 9. To-Be Scenario Mapping del segmento Personal de Apoyo. Elaboración p
 | Disponibilidad | NFR-AVAIL1 | El sistema deberá mantener un 99% de uptime mensual, exceptuando ventanas de mantenimiento programado. |
 | | NFR-AVAIL2 | El sistema deberá reintentar operaciones fallidas de publicación de eventos al Message Bus hasta 3 veces antes de registrar el error. |
 | | NFR-AVAIL3 | El Reminder Service deberá mantener la cola de recordatorios pendientes disponible de forma independiente, de modo que un fallo en otro microservicio no interrumpa el envío de notificaciones. |
+
+
+
+
+
 
 
 
@@ -1278,7 +1292,7 @@ En esta sección se describen los enfoques metodológicos que rigen el desarroll
 
 El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el que opera la solución. En el centro se ubica el sistema MediTrack, el cual actúa como el núcleo de interacción entre los dos actores principales: el Paciente, quien consume la información de su tratamiento, y el Personal Técnico, encargado de la gestión clínica. Asimismo, se detallan las dependencias con sistemas externos.
 
-<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1292,7 +1306,7 @@ _Figura 13. Diagrama de contexto del sistema MediTrack. Elaboración propia._
 
 #### Container Diagram:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Container Diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Container Diagram" ></td>
 
 <div align = center>
 
@@ -1304,7 +1318,7 @@ _Figura 14. Anexo del diagrama de contenedores del sistema MediTrack. Elaboraci�
 
 #### Identity & Profiles Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_Identity.png" alt="" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/identityservicecomponent.png" alt="" ></td>
 
 <div align = center>
 
@@ -1314,7 +1328,7 @@ _Figura 15. Anexo del diagrama de componentes de Identity & Profiles Service . E
 
 #### Treatment Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_TreatmentService.png" alt="analytics" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/treatmentservicecomponent.png" alt="analytics" ></td>
 
 <div align = center>
 
@@ -1324,7 +1338,7 @@ _Figura 16. Anexo del diagrama de componentes de Treatment Service . Elaboració
 
 #### Reminder Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_ReminderService.png" alt="reminder service" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/reminderservicomponent.png" alt="reminder service" ></td>
 
 <div align = center>
 
@@ -1334,7 +1348,7 @@ _Figura 17. Anexo del diagrama de componentes de Reminder Service. Elaboración 
 
 #### Follow-up Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_FollowUpService.png" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/followupserviceomponent.png" ></td>
 
 <div align = center>
 
@@ -1344,7 +1358,7 @@ _Figura 18. Anexo del diagrama de componentes de Follow-up Service. Elaboración
 
 #### Medical Analysis Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams//component/structurizr-93540-Components_AnalysisService.png" alt="medical analysis" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams//component/analysisservice.png" alt="medical analysis" ></td>
 
 <div align = center>
 
@@ -1731,7 +1745,7 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1742,7 +1756,7 @@ _Figura 29. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 **C4 - Container Diagram**
 Se muestra los contenedores del sistema, destacando el microservicio de tratamiento y su base de datos dedicada, así como cómo se comunican con los otros servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1752,7 +1766,7 @@ _Figura 30. Anexo del diagrama de contenedores de MediTrack. Elaboración propia
 
 **C4 - Component Diagram**
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_TreatmentService.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/treatmentservicecomponent.png" alt="Context diagram" ></td>
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="Context diagram" ></td>
 
@@ -1833,7 +1847,7 @@ Permitir la continuidad del tratamiento del paciente en tres frentes: soporte a 
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1845,7 +1859,7 @@ _Figura 33. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 
 Se muestra los contenedores del sistema, destacando el microservicio del seguimiento del tratamiento y su base de datos dedicada, así como cómo lee los servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1857,7 +1871,7 @@ _Figura 34. Anexo del diagrama de contenedores de MediTrack. Elaboración propia
 
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_FollowUpService.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/followupserviceomponent.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -2518,7 +2532,6 @@ El siguiente diagrama representa el modelo de despliegue de MediTrack siguiendo 
 Durante el Sprint backlog, el equipo tuvo la tarea de completar la landing page y user stories principales . La herramienta para la organización y gestion a los mienbros fue Trello. Esta herramienta nos sirvio para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
 
 
-
 #### 5.3.1.1. Sprint Backlog 1
 
 <table border="1" cellspacing="0" cellpadding="5">
@@ -2691,13 +2704,29 @@ Durante este Sprint no se realizó un deployment formal de los Web Services en u
 
 #### 5.3.1.7. Team Collaboration Insights during Sprint
 
-| Integrantes | Tarea asignada |
-| ----------- | -------------- |
-|             |                |
+| Integrantes   | Tarea asignada |
+|----------------|----------------|
+| Jeremy | Desarrollo del microservicio **Follow Up** en C# y .NET: visualización de lista de medicamentos y horarios de toma, además del registro de cumplimiento de medicamentos según la hora programada (US04, US06, US26). |
+| Renzo | Desarrollo del microservicio **Follow Up** en C# y .NET: implementación de funcionalidades para seguimiento de medicación y control de tomas registradas por el paciente (US04, US06, US26). |
+| Victor | Desarrollo del microservicio **Treatment** en C# y .NET: implementación de carga y gestión de recetas médicas digitales, además de soporte para historial clínico (US13, US14, US15, US24). |
+| Piero | Desarrollo del microservicio **Treatment** en C# y .NET: desarrollo de lógica para almacenamiento y consulta de tratamientos e historial clínico de pacientes (US13, US14, US15, US24). |
+| Javier Gonzales | Desarrollo del microservicio **Treatment** en C# y .NET: apoyo en diseño e implementación de APIs REST para recetas médicas e historial clínico, integrando la arquitectura del sistema (US13, US14, US15, US24). |
+
+ <td align="center"><img src="assets//images//insight/in1.png" alt="insight1" ></td>
+
+ <td align="center"><img src="assets//images//insight/in2.png" alt="insight2" ></td>
+
+ <td align="center"><img src="assets//images//insight/in3.png" alt="insight3" ></td>
+
+ <td align="center"><img src="assets//images//insight/in4.png" alt="insight4" ></td>
+
+ <td align="center"><img src="assets//images//insight/in5.png" alt="insight5" ></td>
 
 #### 5.3.1.8. Kanban Board
 
 <hr class="page-break">
+
+ <td align="center"><img src="assets//images/kanban-board.png" alt="kanban-board" ></td>
 
 ### 5.3.2. Sprint 2
 
