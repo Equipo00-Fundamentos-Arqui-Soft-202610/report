@@ -2081,13 +2081,85 @@ Durante este Sprint, se lograron avances significativos en la implementación de
 
 #### 5.3.1.4. Execution Evidence for Sprint Review
 
+Durante este Sprint se lograron avances significativos en el desarrollo y documentación de los Web Services. Aunque no se realizó un despliegue formal en un entorno productivo, se construyeron dos componentes clave:
+
+- Microservicios desarrollados: Compliance y Medications.
+- Landing Page para visualización inicial.
+- Prototipo funcional accesible mediante un enlace compartido, que permitió validar la lógica de los servicios y su interacción.
+
+**Evidencias:**
+- Screenshots de Postman mostrando las operaciones principales:
+
+  <td align="center"><img src="assets/images/Prueba_Postman.png" alt="Context diagram" ></td>
+
+  _Anexo de Prueba Postman. Elaboración propia._
+
+- Capturas del Swagger UI con los endpoints documentados.
+
+  <td align="center"><img src="assets/images/Cap-treatment.png" alt="Context diagram" ></td>
+
+  _Anexo del Treatment Service. Elaboración propia._
+  
+
+  <td align="center"><img src="assets/images/Cap - FollowUp.png" alt="Context diagram" ></td>
+
+  _Anexo del FollowUp Service. Elaboración propia._
+
+- Enlace al prototipo: https://stitch.withgoogle.com/preview/2917742923999304642?node-id=3f7c03713a40437494706973672a2c87
+
+  <td align="center"><img src="assets/images/Protitipo.png" alt="Context diagram" ></td>
+
+  _Anexo del prototipo. Elaboración propia._
+
 #### 5.3.1.5. Microservices Documentation Evidence for Sprint Review
 
-| Microservicio | Verbo | Endpoint | Parámetros | Response |
-| ------------- | ----- | -------- | ---------- | -------- |
-|               |       |          |            |          |
+Durante este Sprint se consolidó la realizacion de 2 Microservices mediante OpenAPI (Swagger UI), asegurando que cada microservicio esté descrito con sus acciones, parámetros y respuestas. Esto facilita la validación de servicios RESTful, la integración con aplicaciones móviles/web y la trazabilidad de cambios en el repositorio.
+
+#### Treatment Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Treatment-service
+
+**Imagen de prueba:**
+<td align="center"><img src="assets/images/Cap-treatment.png" alt="Context diagram" ></td>
+
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| TreatmentService | POST | ``/api/v1/clinical-records`` | Body: ``{ ``"patientId":0,"uploadedBy":0,"datasetSource":"string","fileUrl":"string" ``}`` | ``{ ``"id":1,"patientId":0,"uploadedBy":0,"datasetSource":"string","fileUrl":"string","status":"ok" ``}`` |
+| TreatmentService | PUT | ``/api/v1/medications/{medicationId}`` | Path: ``medicationId``, Body: ``{ ``"dose":"string","frequencyHour":0,"startDate":"2026-05-16T00:52:17.777Z","endDate":"2026-05-16T00:52:17.777Z","stockCount":0,"stockAlertThre":0,"authorizedByTechnicalStaff":true ``}`` | ``{ ``"id":5,"dose":"string","frequencyHour":0,"status":"updated" ``}`` |
+| TreatmentService | PATCH | ``/api/v1/medications/{medicationId}/cancel`` | Path: ``medicationId``, Body: ``{ ``"authorizedByTechnicalStaff":true ``}`` | ``{ ``"id":5,"status":"cancelled" ``}`` |
+| TreatmentService | GET | ``/api/v1/patients/search`` | Query: ``?query=Juan`` | ``[{"id":1,"name":"Juan Perez","age":30}]`` |
+| TreatmentService | POST | ``/api/v1/prescriptions`` | Body: ``{ ``"patientId":0,"technicalId":0,"notes":"string","medications":[{"catalogId":0,"dose":"string","frequencyHour":0,"startDate":"2026-05-16T00:52:17.784Z","endDate":"2026-05-16T00:52:17.784Z","stockCount":0,"stockAlertThre":0,"doseSchedules":[{"scheduledTime":"string"}]}] ``}`` | ``{ ``"id":20,"patientId":0,"status":"created" ``}`` |
+
+#### Treatment Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/FollowUp-Service
+
+**Imagen de prueba:**
+<td align="center"><img src="assets/images/Cap - FollowUp.png" alt="Context diagram" ></td>
+
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| FollowUpService | POST | ``/api/v1/compliance`` | Query: ``patientId``, Body: ``{ ``"patientId":0,"doseScheduleId":0,"status":"string","videoUrl":"string","offlineRecordedAt":"2026-05-16T00:48:58.697Z" ``}`` | ``{ ``"id":0,"patientId":0,"doseScheduleId":0,"status":"string","recordedAt":"2026-05-16T00:48:58.698Z","videoUrl":"string","synced":true,"offlineRecordedAt":"2026-05-16T00:48:58.698Z" ``}`` |
+| FollowUpService | GET | ``/api/v1/compliance/{id}`` | Path: ``id`` | ``{ ``"id":0,"patientId":0,"doseScheduleId":0,"status":"string","recordedAt":"2026-05-16T00:48:58.700Z","videoUrl":"string","synced":true,"offlineRecordedAt":"2026-05-16T00:48:58.700Z" ``}`` |
+| FollowUpService | GET | ``/api/v1/medications`` | Query: ``patientId`` | ``[{"id":0,"patientId":0,"name":"string","dose":"string","frequencyHours":0,"startDate":"2026-05-16T00:48:58.702Z","endDate":"2026-05-16T00:48:58.702Z","stockCount":0,"isActive":true,"schedules":[{"id":0,"scheduledTime":"string","isActive":true}]}]`` |
+| FollowUpService | GET | ``/api/v1/medications/next-dose`` | Query: ``patientId`` | ``{ ``"medicationName":"string","dose":"string","scheduledTime":"string","minutesUntilDose":0 ``}`` |
 
 #### 5.3.1.6. Software Deployment Evidence for Sprint Review
+
+Durante este Sprint no se realizó un deployment formal de los Web Services en un entorno productivo ni staging. Sin embargo, se avanzó en la construcción de un prototipo funcional, el cual permite visualizar y validar la lógica de los servicios desarrollados. Este prototipo se encuentra disponible mediante un enlace público, lo que facilita la revisión por parte del equipo y stakeholders.
+
+**Actividades realizadas**
+- Configuración inicial de repositorios en GitHub para centralizar el código de los Web Services.
+- Definición de endpoints y documentación con Swagger UI, asegurando trazabilidad y pruebas locales.
+- Prototipo accesible 
+- Validación interna: se realizaron pruebas locales con datos de muestra para confirmar la correcta respuesta de los endpoints.
+
+**Evidencias:**
+- Endpoints:
+  <td align="center"><img src="assets/images/Cap - FollowUp.png" alt="Context diagram" ></td>
+- Prototipo accesible:
+  <td align="center"><img src="assets/images/Protitipo.png" alt="Context diagram" ></td>
+  Link: https://stitch.withgoogle.com/preview/2917742923999304642?node-id=3f7c03713a40437494706973672a2c87
 
 #### 5.3.1.7. Team Collaboration Insights during Sprint
 
@@ -2266,5 +2338,7 @@ Durante este Sprint, se lograron avances significativos en la implementación de
 <hr class="page-break">
 
 # Anexos
+
+Link del prototipo: https://stitch.withgoogle.com/preview/2917742923999304642?node-id=3f7c03713a40437494706973672a2c87
 
 ## Links
