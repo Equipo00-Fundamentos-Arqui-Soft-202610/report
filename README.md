@@ -31,7 +31,6 @@
          <th>Apellidos y Nombres</th>
       </tr>
       <tr>
-
          <td>U202312966</td>
          <td>Gonzales Alvarado, Javier Sebastian</td>
       </tr>
@@ -68,18 +67,26 @@
 | 1.0     | 11/04/2026 | Rojas Reategui, Victor Manuel              | Creación de la estructura inicial del informe                                                                                                    |
 | 1.1     | 13/04/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo I: descripción de la startup, Solution Profile, Lean UX Process y segmentos objetivo (1.1–1.3)                                          |
 | 1.2     | 17/04/2026 | Sulca Sanchez, Piero Angel                 | Capítulo II: diseño de entrevistas (2.2.1)                                                                                                       |
-| 1.3     | 17/04/2026 | Quijada Magro, Jeremy Alexander            | Capítulo II: análisis de competidores (2.1), registro y análisis de entrevistas (2.2.2, 2.2.3) y needfinding (2.3.1 - 2.3.4)                     |
-| 1.4     | 18/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3)                                          |
+| 1.3     | 17/04/2026 | Quijada Magro, Jeremy Alexander            | Capítulo II: análisis de competidores (2.1), registro y análisis de entrevistas (2.2.2, 2.2.3) y needfinding (2.3.1 - 2.3.4)                  |
+| 1.4     | 18/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3)                                         |
 | 1.5     | 18/04/2026 | Sulca Sanchez, Piero Angel                 | Capítulo III: Product Backlog (3.4)                                                                                                              |
-| 1.6     | 18/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4)                                                          |
+| 1.6     | 18/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4)                                                         |
 | 1.7     | 18/04/2026 | Sulca Sanchez, Piero Angel                 | Capítulo III: reordenamiento del Product Backlog por valor de negocio (3.4)                                                                      |
 | 2.0     | 27/04/2026 | Quijada Magro, Jeremy Alexander            | Capítulo IV: Design Concepts, ViewPoints & ER Diagrams, Principles Statements, Architectural Styles & Patterns y Context Diagram (4.1.1 - 4.1.3) |
-| 2.1     | 28/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo IV: Approach driven ViewPoints Diagrams, Relational/Non Relational Database Diagram y Design Patterns (4.1.4 - 4.1.6)                   |
-| 2.2     | 29/04/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo IV: Tactics, Architectural Drivers y Design Purpose (4.1.7, 4.2, 4.1.8)                                                                 |
-| 2.3     | 30/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo IV: Primary Functionality (Primary User Stories) y Quality Attribute Scenarios (4.1.9, 4.1.10)                                          |
+| 2.1     | 28/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo IV: Approach driven ViewPoints Diagrams, Relational/Non Relational Database Diagram y Design Patterns (4.1.4 - 4.1.6)                |
+| 2.2     | 29/04/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo IV: Tactics, Architectural Drivers y Design Purpose (4.1.7, 4.2, 4.1.8)                                                                |
+| 2.3     | 30/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo IV: Primary Functionality (Primary User Stories) y Quality Attribute Scenarios (4.1.9, 4.1.10)                                         |
 | 2.4     | 01/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo IV: Constraints y Architectural Concerns (4.1.11, 4.1.12)                                                                               |
-| 2.5     | 02/05/2026 | Jeremy Quijada Magro y Piero Sulca Sanchez | Capítulo IV: ADD Iterations 1 & 2                                                                                                                |
-
+| 2.5     | 02/05/2026 | Jeremy Quijada Magro y Piero Sulca Sanchez | Capítulo IV: ADD Iterations 1 & 2                                                                                                                 |
+| 3.0     | 10/05/2026 | Rojas Reategui, Victor Manuel              | Capítulo V: Backend Application Core Testing Suite y Pattern Based Backend Application(s) (5.1.1, 5.1.2)                                        |
+| 3.1     | 10/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo V: Pattern Based Custom Software Library y Framework Pattern Driven Refactoring Report (5.1.3, 5.1.4)                                  |
+| 3.2     | 11/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo V: Software Development Environment Configuration, Source Code Management y Source Code Style Guide & Conventions (5.2.1 - 5.2.3)     |
+| 3.3     | 11/05/2026 | Quijada Magro, Jeremy Alexander            | Capítulo V: Software Deployment Configuration y Development Evidence for Sprint Review (5.2.4, 5.3.1.2)                                         |
+| 3.4     | 12/05/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo V: Sprint Backlog 1, Team Collaboration Insights during Sprint y Kanban Board (5.3.1.1, 5.3.1.7, 5.3.1.8)                             |
+| 3.5     | 12/05/2026 | Rojas Reategui, Victor Manuel              | Capítulo V: Testing Suite Evidence for Sprint Review y Execution Evidence for Sprint Review (5.3.1.3, 5.3.1.4)                                  |
+| 3.6     | 13/05/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo V: Microservices Documentation Evidence for Sprint Review y documentación de arquitectura de microservicios (5.3.1.5)                  |
+| 3.7     | 13/05/2026 | Quijada Magro, Jeremy Alexander            | Capítulo V: Software Deployment Evidence for Sprint Review y consolidación de evidencias del sprint (5.3.1.6)                                   |
+| 3.8     | 14/05/2026 | Todo el equipo                             | Revisión general, integración de capítulos, corrección de formato APA y validación final del informe TP1                                         |
 
 <hr class="page-break">
 
@@ -224,37 +231,37 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   <tbody>
     <tr>
       <td rowspan="5"><strong>A: Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.</strong></td>
-      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Análisis de competidores, entrevistas y needfinding.<br><b>TB2:</b> Desarrollo de Problem Statements, definición de enfoques arquitectónicos (Architectural Styles & Patterns), elaboración del Context Diagram y participación en ADD iteration 2.</td>
-      <td rowspan="5"><b>TB1:</b> El equipo aplicó conceptos clave de ingeniería de software y diseño centrado en el usuario, estructurando una base sólida del proyecto.<br><br><b>TB2:</b> El equipo profundizó en el diseño arquitectónico del sistema, aplicando patrones, tácticas y metodologías como ADD. Esto permitió consolidar una estructura más robusta, alineada a atributos de calidad y necesidades del sistema.</td>
+      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Análisis de competidores, entrevistas y needfinding.<br><b>TB2:</b> Desarrollo de Problem Statements, definición de enfoques arquitectónicos (Architectural Styles & Patterns), elaboración del Context Diagram y participación en ADD iteration 2.<br><b>TP1:</b> Investigó y aplicó conceptos de Static Testing & Verification, además de participar en el desarrollo del prototipo visual y evidencias del Sprint Review.</td>
+      <td rowspan="5"><b>TB1:</b> El equipo aplicó conceptos clave de ingeniería de software y diseño centrado en el usuario, estructurando una base sólida del proyecto.<br><br><b>TB2:</b> El equipo profundizó en el diseño arquitectónico del sistema, aplicando patrones, tácticas y metodologías como ADD. Esto permitió consolidar una estructura más robusta, alineada a atributos de calidad y necesidades del sistema.<br><br><b>TP1:</b> El equipo fortaleció conocimientos técnicos relacionados al desarrollo de soluciones modernas de software, aplicando conceptos de testing, arquitectura de microservicios, gestión ágil y configuración de entornos de desarrollo, permitiendo mejorar la calidad y organización del proyecto Meditrack.</td>
     </tr>
     <tr>
-      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> To-Be Scenario Mapping, User Stories e Impact Map.<br><b>TB2:</b> Desarrollo de ViewPoint Diagrams basados en enfoques arquitectónicos y diseño de diagramas de base de datos relacionales y no relacionales.</td>
+      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> To-Be Scenario Mapping, User Stories e Impact Map.<br><b>TB2:</b> Desarrollo de ViewPoint Diagrams basados en enfoques arquitectónicos y diseño de diagramas de base de datos relacionales y no relacionales.<br><b>TP1:</b> Desarrollo del Sprint Backlog 1 y Kanban Board, aplicando metodologías ágiles y herramientas de gestión colaborativa.</td>
     </tr>
     <tr>
-      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Definición de startup, problemática, Lean UX Process y segmentos objetivo.<br><b>TB2:</b> Aplicación de Design Patterns, definición de tácticas arquitectónicas y establecimiento del propósito del diseño.</td>
+      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Definición de startup, problemática, Lean UX Process y segmentos objetivo.<br><b>TB2:</b> Aplicación de Design Patterns, definición de tácticas arquitectónicas y establecimiento del propósito del diseño.<br><b>TP1:</b> Elaboración de documentación de microservicios y organización de evidencias técnicas para el Sprint Review.</td>
     </tr>
     <tr>
-      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Elaboración del Product Backlog.<br><b>TB2:</b> Definición de funcionalidades principales del sistema y desarrollo de Quality Attribute Scenarios.</td>
+      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Elaboración del Product Backlog.<br><b>TB2:</b> Definición de funcionalidades principales del sistema y desarrollo de Quality Attribute Scenarios.<br><b>TP1:</b> Implementación de Testing Suites y General Patterns para reforzar buenas prácticas de desarrollo y pruebas de software.</td>
     </tr>
     <tr>
-      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en entrevistas.<br><b>TB2:</b> Identificación de restricciones (Constraints), preocupaciones arquitectónicas (Architectural Concerns) y desarrollo de ADD iteration 1.</td>
+      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en entrevistas.<br><b>TB2:</b> Identificación de restricciones (Constraints), preocupaciones arquitectónicas (Architectural Concerns) y desarrollo de ADD iteration 1.<br><b>TP1:</b> Trabajo en Software Configuration Management aplicando herramientas de control de versiones y configuración del entorno de desarrollo.</td>
     </tr>
     <tr>
       <td rowspan="5"><strong>B: Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.</strong></td>
-      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Aplicación de entrevistas y needfinding.<br><b>TB2:</b> Aprendizaje en definición de arquitecturas, estilos y uso del método ADD para diseño iterativo.</td>
-      <td rowspan="5"><b>TB1:</b> El equipo demostró una actitud orientada al aprendizaje continuo, incorporando nuevas metodologías.<br><br><b>TB2:</b> Los integrantes fortalecieron su aprendizaje en arquitectura de software, adoptando nuevas herramientas y enfoques como ADD, patrones y modelado de datos, lo que evidencia una evolución técnica y compromiso con su desarrollo profesional.</td>
+      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Aplicación de entrevistas y needfinding.<br><b>TB2:</b> Aprendizaje en definición de arquitecturas, estilos y uso del método ADD para diseño iterativo.<br><b>TP1:</b> Investigación de herramientas de validación y verificación para mejorar la calidad del software y el prototipo desarrollado.</td>
+      <td rowspan="5"><b>TB1:</b> El equipo demostró una actitud orientada al aprendizaje continuo, incorporando nuevas metodologías.<br><br><b>TB2:</b> Los integrantes fortalecieron su aprendizaje en arquitectura de software, adoptando nuevas herramientas y enfoques como ADD, patrones y modelado de datos, lo que evidencia una evolución técnica y compromiso con su desarrollo profesional.<br><br><b>TP1:</b> El equipo reforzó su aprendizaje continuo mediante el uso de nuevas herramientas, metodologías ágiles, testing y gestión de configuración, fortaleciendo competencias técnicas necesarias para el desarrollo profesional y la construcción de soluciones de software modernas.</td>
     </tr>
     <tr>
-      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> Uso de herramientas de modelado como Impact Map.<br><b>TB2:</b> Profundización en modelado arquitectónico y diseño de bases de datos híbridas.</td>
+      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> Uso de herramientas de modelado como Impact Map.<br><b>TB2:</b> Profundización en modelado arquitectónico y diseño de bases de datos híbridas.<br><b>TP1:</b> Aprendizaje y aplicación de metodologías ágiles mediante el uso de Sprint Backlog y Kanban Board.</td>
     </tr>
     <tr>
-      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Desarrollo de Lean UX y definición de producto.<br><b>TB2:</b> Aprendizaje en patrones de diseño y tácticas arquitectónicas aplicadas al sistema.</td>
+      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Desarrollo de Lean UX y definición de producto.<br><b>TB2:</b> Aprendizaje en patrones de diseño y tácticas arquitectónicas aplicadas al sistema.<br><b>TP1:</b> Reforzamiento de conocimientos en documentación de microservicios y buenas prácticas de arquitectura backend.</td>
     </tr>
     <tr>
-      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Gestión de backlog.<br><b>TB2:</b> Desarrollo de escenarios de atributos de calidad y definición funcional del sistema.</td>
+      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Gestión de backlog.<br><b>TB2:</b> Desarrollo de escenarios de atributos de calidad y definición funcional del sistema.<br><b>TP1:</b> Investigación y aplicación de patrones generales de desarrollo y testing para mejorar la confiabilidad del sistema.</td>
     </tr>
     <tr>
-      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en levantamiento de información.<br><b>TB2:</b> Comprensión de restricciones y preocupaciones arquitectónicas, además del uso de ADD en etapas iniciales.</td>
+      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en levantamiento de información.<br><b>TB2:</b> Comprensión de restricciones y preocupaciones arquitectónicas, además del uso de ADD en etapas iniciales.<br><b>TP1:</b> Actualización de conocimientos relacionados a Software Configuration Management y herramientas colaborativas de desarrollo.</td>
     </tr>
   </tbody>
 </table>
