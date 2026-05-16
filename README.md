@@ -1888,11 +1888,56 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
 
 ### 5.3.1. Sprint 1
 
+Durante el Sprint backlog, el equipo tuvo la tarea de completar la landing page y user stories principales . La herramienta para la organización y gestion a los mienbros fue Trello. Esta herramienta nos sirvio para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
+
+
 #### 5.3.1.1. Sprint Backlog 1
 
-| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (horas) | Asignado a | Estado |
-| -------- | ---------- | ---------------- | ----------- | ------------------ | ---------- | ------ |
-| Sprint 1 |            |                  |             |                    |            |        |
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th colspan="8">Sprint 1</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="2">WorkItem / Task</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status (To-do / In-Process / To-Review / Done)</th>
+    </tr>
+    <tr>
+      <th>Id</th><th>Title</th>
+      <th>Id</th><th>Title</th>
+      <th></th><th></th><th></th><th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>US30</td><td>Ver propuesta de valor</td><td>TK01</td><td>Maquetar sección Hero</td><td>Diseñar e implementar la sección principal de la landing con descripción clara de qué es MediTrack y su propuesta de valor</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US31</td><td>Ver funcionalidades por segmento</td><td>TK02</td><td>Maquetar sección Funcionalidades</td><td>Implementar sección con tarjetas diferenciadas que muestren características específicas para pacientes y personal técnico</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US32</td><td>Ver testimonios o casos de uso</td><td>TK03</td><td>Maquetar sección Testimonios</td><td>Implementar sección con casos de uso representativos o testimonios de pacientes para generar confianza en la plataforma</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US34</td><td>Ver información de contacto</td><td>TK04</td><td>Maquetar sección Contacto</td><td>Implementar sección con correo, teléfono y/o formulario de contacto visible para visitantes con dudas</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US13</td><td>Subir receta médica con horarios</td><td>TK05</td><td>Crear endpoint de recetas</td><td>Implementar endpoint POST /api/v1/prescriptions con validación de paciente, medicamentos y horarios</td><td>4</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK06</td><td>Implementar PrescriptionCommandService</td><td>Desarrollar servicio de comando con validación contra MedicationCatalog y reglas de negocio de la receta</td><td>3</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK07</td><td>Crear assemblers y recursos REST</td><td>Implementar CreatePrescriptionCommandFromResourceAssembler y records de entrada/salida para el endpoint</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td>US14</td><td>Subir historial clínico</td><td>TK08</td><td>Crear endpoint de historial clínico</td><td>Implementar endpoint POST /api/v1/clinical-records con validación de existencia del paciente</td><td>3</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK09</td><td>Implementar ClinicalRecordCommandService</td><td>Desarrollar servicio con validación via IPatientValidationClient (mock para el sprint) y creación del registro</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td>US15</td><td>Buscar paciente individual</td><td>TK10</td><td>Crear endpoint de búsqueda de pacientes</td><td>Implementar endpoint GET /api/v1/patients/search con búsqueda por nombre y DNI</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK11</td><td>Implementar MockPatientSearchClient</td><td>Desarrollar cliente mock con lógica de búsqueda por DNI y nombre completo, con TODO documentado para reemplazo futuro</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td>US24</td><td>Editar o cancelar medicamento</td><td>TK12</td><td>Crear endpoint de edición de medicamento</td><td>Implementar endpoint PUT /api/v1/medications/{id} con validación de autorización de personal técnico</td><td>3</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK13</td><td>Crear endpoint de cancelación de medicamento</td><td>Implementar endpoint PATCH /api/v1/medications/{id}/cancel con validación de autorización y cambio de estado IsActive</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK14</td><td>Implementar MedicationCommandService</td><td>Desarrollar servicio con handlers para actualización y cancelación, incluyendo validaciones de negocio</td><td>3</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td>US04</td><td>Ver lista de medicamentos</td><td>TK15</td><td>Crear endpoint de medicamentos por paciente</td><td>Implementar endpoint GET /api/v1/medications?patientId= en Follow-up Service con schedules anidados</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK16</td><td>Implementar MedicationQueryService</td><td>Desarrollar servicio de consulta con GetMedicationsByPatientIdQuery y validación de patientId</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK17</td><td>Crear MedicationResourceFromEntityAssembler</td><td>Implementar assembler que mapea Medication a MedicationResource con lista de DoseScheduleResource anidados</td><td>1</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US06</td><td>Registrar cumplimiento de medicamento</td><td>TK18</td><td>Crear endpoint de cumplimiento</td><td>Implementar endpoint POST /api/v1/compliance con soporte para videoUrl y offlineRecordedAt</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK19</td><td>Implementar MedicationComplianceCommandService</td><td>Desarrollar servicio con validación de DoseSchedule existente, reglas de ComplianceStatus y registro de cumplimiento</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK20</td><td>Implementar Value Object ComplianceStatus</td><td>Crear Value Object con instancias estáticas Taken/Skipped y conversión implícita a string para compatibilidad con EF Core</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US26</td><td>Ver siguiente toma pendiente</td><td>TK21</td><td>Crear endpoint de siguiente toma</td><td>Implementar endpoint GET /api/v1/medications/next-dose?patientId= con respuesta de nombre, dosis y minutos restantes</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK22</td><td>Implementar NextPendingDoseQueryService</td><td>Desarrollar servicio con lógica de zona horaria Lima (SA Pacific Standard Time), filtrado de schedules activos y exclusión de tomas ya completadas hoy</td><td>4</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK23</td><td>Crear NextPendingDoseResourceFromEntityAssembler</td><td>Implementar assembler que calcula MinutesUntilDose considerando cruce de medianoche y formatea ScheduledTime en HH:mm</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+  </tbody>
+</table>
 
 #### 5.3.1.2. Development Evidence for Sprint Review
 
