@@ -2357,13 +2357,29 @@ Durante este Sprint no se realizó un deployment formal de los Web Services en u
 
 #### 5.3.1.7. Team Collaboration Insights during Sprint
 
-| Integrantes | Tarea asignada |
-| ----------- | -------------- |
-|             |                |
+| Integrantes   | Tarea asignada |
+|----------------|----------------|
+| Jeremy | Desarrollo del microservicio **Follow Up** en C# y .NET: visualización de lista de medicamentos y horarios de toma, además del registro de cumplimiento de medicamentos según la hora programada (US04, US06, US26). |
+| Renzo | Desarrollo del microservicio **Follow Up** en C# y .NET: implementación de funcionalidades para seguimiento de medicación y control de tomas registradas por el paciente (US04, US06, US26). |
+| Victor | Desarrollo del microservicio **Treatment** en C# y .NET: implementación de carga y gestión de recetas médicas digitales, además de soporte para historial clínico (US13, US14, US15, US24). |
+| Piero | Desarrollo del microservicio **Treatment** en C# y .NET: desarrollo de lógica para almacenamiento y consulta de tratamientos e historial clínico de pacientes (US13, US14, US15, US24). |
+| Javier Gonzales | Desarrollo del microservicio **Treatment** en C# y .NET: apoyo en diseño e implementación de APIs REST para recetas médicas e historial clínico, integrando la arquitectura del sistema (US13, US14, US15, US24). |
+
+ <td align="center"><img src="assets//images//insight/in1.png" alt="insight1" ></td>
+
+ <td align="center"><img src="assets//images//insight/in2.png" alt="insight2" ></td>
+
+ <td align="center"><img src="assets//images//insight/in3.png" alt="insight3" ></td>
+
+ <td align="center"><img src="assets//images//insight/in4.png" alt="insight4" ></td>
+
+ <td align="center"><img src="assets//images//insight/in5.png" alt="insight5" ></td>
 
 #### 5.3.1.8. Kanban Board
 
 <hr class="page-break">
+
+ <td align="center"><img src="assets//images/kanban-board.png" alt="kanban-board" ></td>
 
 ### 5.3.2. Sprint 2
 
