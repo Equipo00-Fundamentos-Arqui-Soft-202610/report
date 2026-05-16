@@ -1048,6 +1048,76 @@ _Figura 9. To-Be Scenario Mapping del segmento Personal de Apoyo. Elaboración p
 
 ## 3.2. User Stories
 
+
+
+
+
+#### Requisitos Funcionales
+
+| Componente del sistema | Id | Requisito Funcional |
+|---|---|---|
+| Identity & Profile Service | IAM-RF1 | El sistema deberá permitir a los pacientes crear una cuenta con nombre, correo y contraseña. |
+| | IAM-RF2 | El sistema deberá permitir al personal técnico registrarse seleccionando su institución y rol. |
+| | IAM-RF3 | El sistema deberá validar que el correo electrónico no esté previamente registrado. |
+| | IAM-RF4 | El sistema deberá permitir cerrar sesión de forma segura e invalidar la sesión activa. |
+| | IAM-RF5 | El sistema deberá permitir recuperar la contraseña enviando un enlace al correo registrado. |
+| | IAM-RF6 | El sistema deberá permitir cambiar la contraseña validando la contraseña actual antes de actualizarla. |
+| | IAM-RF7 | El sistema deberá permitir editar el nombre, teléfono y foto de perfil del usuario. |
+| Treatment Service | TRT-RF1 | El sistema deberá permitir al personal técnico subir una receta médica indicando medicamento, dosis y horarios de toma. |
+| | TRT-RF2 | El sistema deberá validar automáticamente el nombre del medicamento contra un catálogo oficial antes de guardar la receta. |
+| | TRT-RF3 | El sistema deberá mostrar sugerencias o un mensaje de error cuando el medicamento ingresado no exista en el catálogo. |
+| | TRT-RF4 | El sistema deberá permitir al personal técnico editar los datos de un medicamento cuando esté autorizado. |
+| | TRT-RF5 | El sistema deberá permitir cancelar un medicamento únicamente cuando el personal técnico lo autorice. |
+| | TRT-RF6 | El sistema deberá mostrar al paciente la lista de sus medicamentos activos con nombre, dosis y horario. |
+| | TRT-RF7 | El sistema deberá emitir una alerta cuando el stock de un medicamento llegue al umbral configurado. |
+| Medical Appointment Service | APT-RF1 | El sistema deberá permitir al paciente agendar una cita médica indicando fecha, hora y tipo de cita. |
+| | APT-RF2 | El sistema deberá validar que la fecha de la cita sea posterior a la fecha actual. |
+| | APT-RF3 | El sistema deberá mostrar los requisitos previos asociados a cada cita médica. |
+| | APT-RF4 | El sistema deberá permitir al paciente editar o cancelar una cita futura. |
+| | APT-RF5 | El sistema deberá impedir la modificación de citas con fecha pasada. |
+| | APT-RF6 | El sistema deberá permitir registrar y consultar exámenes clínicos pendientes de recojo. |
+| Reminder Service | REM-RF1 | El sistema deberá enviar una notificación push al paciente en el horario programado de cada medicamento. |
+| | REM-RF2 | El sistema deberá enviar una notificación push 24 horas antes de una cita médica y una segunda notificación 2 horas antes. |
+| | REM-RF3 | El sistema deberá enviar un recordatorio cuando llegue la fecha de recojo de un examen clínico. |
+| | REM-RF4 | El sistema deberá cancelar automáticamente un recordatorio cuando se registre el cumplimiento correspondiente. |
+| | REM-RF5 | El sistema deberá permitir desactivar temporalmente todas las notificaciones y reactivarlas cuando el paciente lo indique. |
+| Follow-up Service | FUP-RF1 | El sistema deberá permitir al paciente registrar el cumplimiento de un medicamento adjuntando un video de evidencia de máximo 30 segundos. |
+| | FUP-RF2 | El sistema deberá registrar el cumplimiento automáticamente al recibir la URL del video, sin requerir validación humana. |
+| | FUP-RF3 | El sistema deberá almacenar el video de evidencia en Azure Blob Storage y guardar únicamente la URL en la base de datos. |
+| | FUP-RF4 | El sistema deberá permitir al paciente registrar el cumplimiento de una cita médica indicando si asistió o no. |
+| | FUP-RF5 | El sistema deberá permitir visualizar los medicamentos y registrar cumplimiento en modo offline, sincronizando los datos al recuperar la conexión. |
+| | FUP-RF6 | El sistema deberá mostrar al paciente su historial de adherencia con porcentaje de cumplimiento semanal. |
+| Medical Analysis Service | ANA-RF1 | El sistema deberá generar un dashboard con tendencias de adherencia por paciente para el personal técnico. |
+| | ANA-RF2 | El sistema deberá mostrar estadísticas de cumplimiento por receta, resaltando las de bajo cumplimiento. |
+| | ANA-RF3 | El sistema deberá mostrar un diagrama circular con la distribución de citas por tipo. |
+| | ANA-RF4 | El sistema deberá permitir configurar el umbral de adherencia a partir del cual se generan las alertas. |
+| | ANA-RF5 | El sistema deberá permitir al personal técnico buscar un paciente por nombre o DNI y consultar su información de seguimiento. |
+
+---
+
+#### Requisitos No Funcionales
+
+| Atributo de Calidad | Id | Requisito No Funcional |
+|---|---|---|
+| Rendimiento | NFR-PERF1 | El sistema deberá responder a consultas de medicamentos, citas y cumplimiento en ≤200ms para la mayoría de casos. |
+| | NFR-PERF2 | El sistema deberá procesar operaciones de creación y actualización (recetas, cumplimiento, citas) en ≤500ms para la mayoría de casos. |
+| | NFR-PERF3 | El dashboard de adherencia del personal técnico deberá cargar completamente en ≤3 segundos desde el inicio de sesión. |
+| | NFR-PERF4 | La subida de videos de cumplimiento a Azure Blob Storage deberá completarse en ≤10 segundos para videos de hasta 30 segundos de duración. |
+| Durabilidad | NFR-DUR1 | Los registros de cumplimiento generados en modo offline deberán encolarse localmente y sincronizarse íntegramente al recuperar la conexión, sin pérdida de datos. |
+| | NFR-DUR2 | Los videos de evidencia de cumplimiento deberán almacenarse en Azure Blob Storage con redundancia, garantizando que no se pierdan ante fallos del servicio. |
+| | NFR-DUR3 | Todas las fechas y timestamps deberán almacenarse en formato UTC para garantizar consistencia entre zonas horarias. |
+| Disponibilidad | NFR-AVAIL1 | El sistema deberá mantener un 99% de uptime mensual, exceptuando ventanas de mantenimiento programado. |
+| | NFR-AVAIL2 | El sistema deberá reintentar operaciones fallidas de publicación de eventos al Message Bus hasta 3 veces antes de registrar el error. |
+| | NFR-AVAIL3 | El Reminder Service deberá mantener la cola de recordatorios pendientes disponible de forma independiente, de modo que un fallo en otro microservicio no interrumpa el envío de notificaciones. |
+
+
+
+
+
+
+
+
+
 | Epic / Story ID | Título                                          | Descripción                                                                                                                                                            | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                         | Relación con Epic |
 | --------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
 | EP01            | Registro y roles                                | Como usuario de MediTrack, quiero registrarme y acceder al sistema con un rol específico, para usar las funciones correspondientes a paciente o personal técnico.      | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
@@ -2105,11 +2175,56 @@ El siguiente diagrama representa el modelo de despliegue de MediTrack siguiendo 
 
 ### 5.3.1. Sprint 1
 
+Durante el Sprint backlog, el equipo tuvo la tarea de completar la landing page y user stories principales . La herramienta para la organización y gestion a los mienbros fue Trello. Esta herramienta nos sirvio para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
+
+
 #### 5.3.1.1. Sprint Backlog 1
 
-| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (horas) | Asignado a | Estado |
-| -------- | ---------- | ---------------- | ----------- | ------------------ | ---------- | ------ |
-| Sprint 1 |            |                  |             |                    |            |        |
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th colspan="8">Sprint 1</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="2">WorkItem / Task</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status (To-do / In-Process / To-Review / Done)</th>
+    </tr>
+    <tr>
+      <th>Id</th><th>Title</th>
+      <th>Id</th><th>Title</th>
+      <th></th><th></th><th></th><th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>US30</td><td>Ver propuesta de valor</td><td>TK01</td><td>Maquetar sección Hero</td><td>Diseñar e implementar la sección principal de la landing con descripción clara de qué es MediTrack y su propuesta de valor</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US31</td><td>Ver funcionalidades por segmento</td><td>TK02</td><td>Maquetar sección Funcionalidades</td><td>Implementar sección con tarjetas diferenciadas que muestren características específicas para pacientes y personal técnico</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US32</td><td>Ver testimonios o casos de uso</td><td>TK03</td><td>Maquetar sección Testimonios</td><td>Implementar sección con casos de uso representativos o testimonios de pacientes para generar confianza en la plataforma</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US34</td><td>Ver información de contacto</td><td>TK04</td><td>Maquetar sección Contacto</td><td>Implementar sección con correo, teléfono y/o formulario de contacto visible para visitantes con dudas</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US13</td><td>Subir receta médica con horarios</td><td>TK05</td><td>Crear endpoint de recetas</td><td>Implementar endpoint POST /api/v1/prescriptions con validación de paciente, medicamentos y horarios</td><td>4</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK06</td><td>Implementar PrescriptionCommandService</td><td>Desarrollar servicio de comando con validación contra MedicationCatalog y reglas de negocio de la receta</td><td>3</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK07</td><td>Crear assemblers y recursos REST</td><td>Implementar CreatePrescriptionCommandFromResourceAssembler y records de entrada/salida para el endpoint</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td>US14</td><td>Subir historial clínico</td><td>TK08</td><td>Crear endpoint de historial clínico</td><td>Implementar endpoint POST /api/v1/clinical-records con validación de existencia del paciente</td><td>3</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK09</td><td>Implementar ClinicalRecordCommandService</td><td>Desarrollar servicio con validación via IPatientValidationClient (mock para el sprint) y creación del registro</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td>US15</td><td>Buscar paciente individual</td><td>TK10</td><td>Crear endpoint de búsqueda de pacientes</td><td>Implementar endpoint GET /api/v1/patients/search con búsqueda por nombre y DNI</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK11</td><td>Implementar MockPatientSearchClient</td><td>Desarrollar cliente mock con lógica de búsqueda por DNI y nombre completo, con TODO documentado para reemplazo futuro</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td>US24</td><td>Editar o cancelar medicamento</td><td>TK12</td><td>Crear endpoint de edición de medicamento</td><td>Implementar endpoint PUT /api/v1/medications/{id} con validación de autorización de personal técnico</td><td>3</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK13</td><td>Crear endpoint de cancelación de medicamento</td><td>Implementar endpoint PATCH /api/v1/medications/{id}/cancel con validación de autorización y cambio de estado IsActive</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK14</td><td>Implementar MedicationCommandService</td><td>Desarrollar servicio con handlers para actualización y cancelación, incluyendo validaciones de negocio</td><td>3</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td>US04</td><td>Ver lista de medicamentos</td><td>TK15</td><td>Crear endpoint de medicamentos por paciente</td><td>Implementar endpoint GET /api/v1/medications?patientId= en Follow-up Service con schedules anidados</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK16</td><td>Implementar MedicationQueryService</td><td>Desarrollar servicio de consulta con GetMedicationsByPatientIdQuery y validación de patientId</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK17</td><td>Crear MedicationResourceFromEntityAssembler</td><td>Implementar assembler que mapea Medication a MedicationResource con lista de DoseScheduleResource anidados</td><td>1</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US06</td><td>Registrar cumplimiento de medicamento</td><td>TK18</td><td>Crear endpoint de cumplimiento</td><td>Implementar endpoint POST /api/v1/compliance con soporte para videoUrl y offlineRecordedAt</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK19</td><td>Implementar MedicationComplianceCommandService</td><td>Desarrollar servicio con validación de DoseSchedule existente, reglas de ComplianceStatus y registro de cumplimiento</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK20</td><td>Implementar Value Object ComplianceStatus</td><td>Crear Value Object con instancias estáticas Taken/Skipped y conversión implícita a string para compatibilidad con EF Core</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US26</td><td>Ver siguiente toma pendiente</td><td>TK21</td><td>Crear endpoint de siguiente toma</td><td>Implementar endpoint GET /api/v1/medications/next-dose?patientId= con respuesta de nombre, dosis y minutos restantes</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK22</td><td>Implementar NextPendingDoseQueryService</td><td>Desarrollar servicio con lógica de zona horaria Lima (SA Pacific Standard Time), filtrado de schedules activos y exclusión de tomas ya completadas hoy</td><td>4</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK23</td><td>Crear NextPendingDoseResourceFromEntityAssembler</td><td>Implementar assembler que calcula MinutesUntilDose considerando cruce de medianoche y formatea ScheduledTime en HH:mm</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+  </tbody>
+</table>
 
 #### 5.3.1.2. Development Evidence for Sprint Review
 
