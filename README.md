@@ -1205,7 +1205,7 @@ En esta sección se describen los enfoques metodológicos que rigen el desarroll
 
 El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el que opera la solución. En el centro se ubica el sistema MediTrack, el cual actúa como el núcleo de interacción entre los dos actores principales: el Paciente, quien consume la información de su tratamiento, y el Personal Técnico, encargado de la gestión clínica. Asimismo, se detallan las dependencias con sistemas externos.
 
-<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1219,7 +1219,7 @@ _Figura 13. Diagrama de contexto del sistema MediTrack. Elaboración propia._
 
 #### Container Diagram:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Container Diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Container Diagram" ></td>
 
 <div align = center>
 
@@ -1231,7 +1231,7 @@ _Figura 14. Anexo del diagrama de contenedores del sistema MediTrack. Elaboraci�
 
 #### Identity & Profiles Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_Identity.png" alt="" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/identityservicecomponent.png" alt="" ></td>
 
 <div align = center>
 
@@ -1241,7 +1241,7 @@ _Figura 15. Anexo del diagrama de componentes de Identity & Profiles Service . E
 
 #### Treatment Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_TreatmentService.png" alt="analytics" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/treatmentservicecomponent.png" alt="analytics" ></td>
 
 <div align = center>
 
@@ -1251,7 +1251,7 @@ _Figura 16. Anexo del diagrama de componentes de Treatment Service . Elaboració
 
 #### Reminder Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_ReminderService.png" alt="reminder service" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/reminderservicomponent.png" alt="reminder service" ></td>
 
 <div align = center>
 
@@ -1261,7 +1261,7 @@ _Figura 17. Anexo del diagrama de componentes de Reminder Service. Elaboración 
 
 #### Follow-up Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_FollowUpService.png" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/followupserviceomponent.png" ></td>
 
 <div align = center>
 
@@ -1271,7 +1271,7 @@ _Figura 18. Anexo del diagrama de componentes de Follow-up Service. Elaboración
 
 #### Medical Analysis Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams//component/structurizr-93540-Components_AnalysisService.png" alt="medical analysis" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams//component/analysisservice.png" alt="medical analysis" ></td>
 
 <div align = center>
 
@@ -1658,7 +1658,7 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1669,7 +1669,7 @@ _Figura 29. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 **C4 - Container Diagram**
 Se muestra los contenedores del sistema, destacando el microservicio de tratamiento y su base de datos dedicada, así como cómo se comunican con los otros servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1679,9 +1679,8 @@ _Figura 30. Anexo del diagrama de contenedores de MediTrack. Elaboración propia
 
 **C4 - Component Diagram**
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_TreatmentService.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/treatmentservicecomponent.png" alt="Context diagram" ></td>
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1760,7 +1759,7 @@ Permitir la continuidad del tratamiento del paciente en tres frentes: soporte a 
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1772,7 +1771,7 @@ _Figura 33. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 
 Se muestra los contenedores del sistema, destacando el microservicio del seguimiento del tratamiento y su base de datos dedicada, así como cómo lee los servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1784,7 +1783,7 @@ _Figura 34. Anexo del diagrama de contenedores de MediTrack. Elaboración propia
 
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_FollowUpService.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/followupserviceomponent.png" alt="Context diagram" ></td>
 
 <div align = center>
 
