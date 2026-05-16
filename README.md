@@ -57,28 +57,24 @@
 
 <hr class="page-break">
 
-
-
 # Registro de Versiones del Informe
 
-| Versión | Fecha | Autor | Descripción de modificación |
-| :--- | :--- | :--- | :--- |
-| 1.0 | 11/04/2026 | Rojas Reategui, Victor Manuel | Creación de la estructura inicial del informe |
-| 1.1 | 13/04/2026 | Gonzales Alvarado, Javier Sebastian | Capítulo I: descripción de la startup, Solution Profile, Lean UX Process y segmentos objetivo (1.1–1.3) |
-| 1.2 | 17/04/2026 | Sulca Sanchez, Piero Angel | Capítulo II: diseño de entrevistas (2.2.1) |
-| 1.3 | 17/04/2026 | Quijada Magro, Jeremy Alexander | Capítulo II: análisis de competidores (2.1), registro y análisis de entrevistas (2.2.2, 2.2.3) y needfinding (2.3.1 - 2.3.4) |
-| 1.4 | 18/04/2026 | Rivera Ratachi, Renzo Sebastian | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3) |
-| 1.5 | 18/04/2026 | Sulca Sanchez, Piero Angel | Capítulo III: Product Backlog (3.4) |
-| 1.6 | 18/04/2026 | Rojas Reategui, Victor Manuel | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4) |
-| 1.7 | 18/04/2026 | Sulca Sanchez, Piero Angel | Capítulo III: reordenamiento del Product Backlog por valor de negocio (3.4) |
-| 2.0 | 27/04/2026 | Quijada Magro, Jeremy Alexander | Capítulo IV: Design Concepts, ViewPoints & ER Diagrams, Principles Statements, Architectural Styles & Patterns y Context Diagram (4.1.1 - 4.1.3) |
-| 2.1 | 28/04/2026 | Rivera Ratachi, Renzo Sebastian | Capítulo IV: Approach driven ViewPoints Diagrams, Relational/Non Relational Database Diagram y Design Patterns (4.1.4 - 4.1.6) |
-| 2.2 | 29/04/2026 | Gonzales Alvarado, Javier Sebastian | Capítulo IV: Tactics, Architectural Drivers y Design Purpose (4.1.7, 4.2, 4.1.8) |
-| 2.3 | 30/04/2026 | Rojas Reategui, Victor Manuel | Capítulo IV: Primary Functionality (Primary User Stories) y Quality Attribute Scenarios (4.1.9, 4.1.10) |
-| 2.4 | 01/05/2026 | Sulca Sanchez, Piero Angel | Capítulo IV: Constraints y Architectural Concerns (4.1.11, 4.1.12) |
-| 2.5 | 02/05/2026 |  Jeremy Quijada Magro y  Piero  Sulca Sanchez | Capítulo IV: ADD Iterations 1 & 2 |
-
-
+| Versión | Fecha      | Autor                                      | Descripción de modificación                                                                                                                      |
+| :------ | :--------- | :----------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.0     | 11/04/2026 | Rojas Reategui, Victor Manuel              | Creación de la estructura inicial del informe                                                                                                    |
+| 1.1     | 13/04/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo I: descripción de la startup, Solution Profile, Lean UX Process y segmentos objetivo (1.1–1.3)                                          |
+| 1.2     | 17/04/2026 | Sulca Sanchez, Piero Angel                 | Capítulo II: diseño de entrevistas (2.2.1)                                                                                                       |
+| 1.3     | 17/04/2026 | Quijada Magro, Jeremy Alexander            | Capítulo II: análisis de competidores (2.1), registro y análisis de entrevistas (2.2.2, 2.2.3) y needfinding (2.3.1 - 2.3.4)                     |
+| 1.4     | 18/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3)                                          |
+| 1.5     | 18/04/2026 | Sulca Sanchez, Piero Angel                 | Capítulo III: Product Backlog (3.4)                                                                                                              |
+| 1.6     | 18/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4)                                                          |
+| 1.7     | 18/04/2026 | Sulca Sanchez, Piero Angel                 | Capítulo III: reordenamiento del Product Backlog por valor de negocio (3.4)                                                                      |
+| 2.0     | 27/04/2026 | Quijada Magro, Jeremy Alexander            | Capítulo IV: Design Concepts, ViewPoints & ER Diagrams, Principles Statements, Architectural Styles & Patterns y Context Diagram (4.1.1 - 4.1.3) |
+| 2.1     | 28/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo IV: Approach driven ViewPoints Diagrams, Relational/Non Relational Database Diagram y Design Patterns (4.1.4 - 4.1.6)                   |
+| 2.2     | 29/04/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo IV: Tactics, Architectural Drivers y Design Purpose (4.1.7, 4.2, 4.1.8)                                                                 |
+| 2.3     | 30/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo IV: Primary Functionality (Primary User Stories) y Quality Attribute Scenarios (4.1.9, 4.1.10)                                          |
+| 2.4     | 01/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo IV: Constraints y Architectural Concerns (4.1.11, 4.1.12)                                                                               |
+| 2.5     | 02/05/2026 | Jeremy Quijada Magro y Piero Sulca Sanchez | Capítulo IV: ADD Iterations 1 & 2                                                                                                                |
 
 <hr class="page-break">
 
@@ -207,6 +203,7 @@
 # Student Outcome
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
+
 <table>
   <thead>
     <tr>
@@ -1116,7 +1113,7 @@ _Figura 11. Impact Mapping del segmento Personal de Apoyo. Elaboración propia._
 
 ## 3.4. Product Backlog
 
-El orden del Product Backlog se determina por el valor de negocio que aporta cada User Story, priorizando aquellas que resuelven directamente los Pain Points identificados (adherencia al tratamiento, digitalización de recetas y seguimiento de pacientes). Las User Stories relacionadas con autenticación, recuperación de contraseña y operaciones de soporte se ubican al final, ya que son habilitadoras del flujo pero no representan el valor core que MediTrack ofrece a pacientes e instituciones de salud. 
+El orden del Product Backlog se determina por el valor de negocio que aporta cada User Story, priorizando aquellas que resuelven directamente los Pain Points identificados (adherencia al tratamiento, digitalización de recetas y seguimiento de pacientes). Las User Stories relacionadas con autenticación, recuperación de contraseña y operaciones de soporte se ubican al final, ya que son habilitadoras del flujo pero no representan el valor core que MediTrack ofrece a pacientes e instituciones de salud.
 
 Para la estimación del esfuerzo de los elementos del Product Backlog, se ha optado por utilizar la sucesión de Fibonacci (1,2,3,5,8,…).
 
@@ -1128,7 +1125,7 @@ Para la estimación del esfuerzo de los elementos del Product Backlog, se ha opt
 | 4       | US06          | Registrar cumplimiento de medicamento           | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                               | 5            |
 | 5       | US14          | Subir historial clínico                         | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                    | 8            |
 | 6       | US15          | Buscar paciente individual                      | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento.                                        | 5            |
-| 7       | US26          | Ver próxima toma pendiente                      | Como paciente, quiero ver cuál es mi próxima toma programada y en cuánto tiempo es, para estar preparado.                                       | 5            |
+| 7       | US26          | Ver próxima toma pendiente                      | Como paciente, quiero ver cuál es mi próxima toma programada y en cuánto tiempo es, para estar preparado.                                        | 5            |
 | 8       | US07          | Alerta de stock bajo                            | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.              | 5            |
 | 9       | US24          | Editar o cancelar medicamento                   | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                  | 3            |
 | 10      | US22          | Configurar preferencias de notificaciones       | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.           | 5            |
@@ -1159,8 +1156,6 @@ Para la estimación del esfuerzo de los elementos del Product Backlog, se ha opt
 _Figura 12. Product Backlog. Elaboración propia._
 
 </div>
-
-
 
 <br>
 Enlace del tablero en Trello: https://trello.com/b/uqAJCw99
@@ -1232,7 +1227,6 @@ _Figura 14. Anexo del diagrama de contenedores del sistema MediTrack. Elaboraci�
 
 </div>
 
-
 #### Component Diagrams:
 
 #### Identity & Profiles Service:
@@ -1245,8 +1239,6 @@ _Figura 15. Anexo del diagrama de componentes de Identity & Profiles Service . E
 
 </div>
 
-
-
 #### Treatment Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_TreatmentService.png" alt="analytics" ></td>
@@ -1257,14 +1249,9 @@ _Figura 16. Anexo del diagrama de componentes de Treatment Service . Elaboració
 
 </div>
 
-
-
-
-
 #### Reminder Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_ReminderService.png" alt="reminder service" ></td>
-
 
 <div align = center>
 
@@ -1272,12 +1259,9 @@ _Figura 17. Anexo del diagrama de componentes de Reminder Service. Elaboración 
 
 </div>
 
-
-
 #### Follow-up Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_FollowUpService.png" ></td>
-
 
 <div align = center>
 
@@ -1285,20 +1269,15 @@ _Figura 18. Anexo del diagrama de componentes de Follow-up Service. Elaboración
 
 </div>
 
-
-
 #### Medical Analysis Service:
 
 <td align="center"><img src="assets/images/chapter4/diagrams//component/structurizr-93540-Components_AnalysisService.png" alt="medical analysis" ></td>
-
 
 <div align = center>
 
 _Figura 19. Anexo del diagrama de componentes de Medical Analysis Service. Elaboración propia._
 
 </div>
-
-
 
 #### Appointment Service:
 
@@ -1309,8 +1288,6 @@ _Figura 19. Anexo del diagrama de componentes de Medical Analysis Service. Elabo
 _Figura 20. Anexo del diagrama de componentes de Appointment Service. Elaboración propia._
 
 </div>
-
-
 
 #### Diagramas de Actividades
 
@@ -1324,8 +1301,6 @@ _Figura 21. Anexo del diagrama de actividades de Medical Analysis. Elaboración 
 
 </div>
 
-
-
 ##### Appointment Activity
 
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/appointment_activity.png" alt="Empathy Map - Pacientes" ></td>
@@ -1335,8 +1310,6 @@ _Figura 21. Anexo del diagrama de actividades de Medical Analysis. Elaboración 
 _Figura 22. Anexo del diagrama de actividades de Appointment. Elaboración propia._
 
 </div>
-
-
 
 ##### Follow-up Activity
 
@@ -1348,9 +1321,6 @@ _Figura 23. Anexo del diagrama de actividades de Follow-up. Elaboración propia.
 
 </div>
 
-
-
-
 ##### Identity & Profiles Activity
 
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/profilesactivity.png" alt="Empathy Map - Pacientes" ></td>
@@ -1360,8 +1330,6 @@ _Figura 23. Anexo del diagrama de actividades de Follow-up. Elaboración propia.
 _Figura 24. Anexo del diagrama de actividades de Identity & Profiles. Elaboración propia._
 
 </div>
-
-
 
 ##### Treatment Activity
 
@@ -1373,8 +1341,6 @@ _Figura 25. Anexo del diagrama de actividades de Treatment. Elaboración propia.
 
 </div>
 
-
-
 ##### Reminder Activity
 
 <td align="center"><img src="assets/images/chapter4/diagrams/activities/reminder_activity.png" alt="Empathy Map - Pacientes" ></td>
@@ -1384,8 +1350,6 @@ _Figura 25. Anexo del diagrama de actividades de Treatment. Elaboración propia.
 _Figura 26. Anexo del diagrama de actividades de Reminder. Elaboración propia._
 
 </div>
-
-
 
 #### Class Diagram
 
@@ -1406,7 +1370,6 @@ _Figura 27. Anexo del diagrama de clases del sistema MediTrack. Elaboración pro
 _Figura 28. Anexo del diagrama de la base de datos relacional de MediTrack. Elaboración propia._
 
 </div>
-
 
 ### 4.1.6. Design Patterns
 
@@ -1581,7 +1544,7 @@ En esta sección se documentan las restricciones tecnológicas, legales y operat
 | CON-04 | Seguridad                 | La gestión de sesiones y roles se implementará con JSON Web Tokens (JWT). El API Gateway actuará como punto principal de validación y autorización por rol, pero cada microservicio deberá validar la firma del token de forma independiente como capa de defensa en profundidad. | El Gateway centraliza la lógica de autenticación, pero los microservicios no confían ciegamente en él. La validación local de la firma JWT es obligatoria, alineándose con el principio de menor privilegio (Principle 4.1.1 #2).                                                                                                                                                             |
 | CON-05 | Notificaciones            | El envío de notificaciones push remotas se realizará exclusivamente con Firebase Cloud Messaging (FCM).                                                                                                                                                                           | El Reminder Service dependerá de FCM para la entrega final al dispositivo. Debe contemplarse un mecanismo de reintento ante fallos de FCM y un canal de fallback (ver AC-09).                                                                                                                                                                                                                 |
 | CON-06 | Almacenamiento offline    | El cliente móvil utilizará SQLite como motor de persistencia local para soportar el funcionamiento offline-first.                                                                                                                                                                 | La aplicación Flutter mantendrá un esquema local sincronizable mediante un ORM compatible con SQLite. La sincronización con el backend se realizará de forma asíncrona al recuperar conexión, cumpliendo con QAS-1 (100 % de registros sincronizados en ≤ 5 minutos).                                                                                                                         |
-| CON-07 | Stack tecnológico         | Backend en .NET 8, frontend web en React y cliente móvil en Flutter.                                                                                                                                                                                                              | Las decisiones de frameworks, librerías y patrones de integración quedan acotadas al ecosistema .NET, React y Flutter. No se incorporarán otros lenguajes sin consenso del equipo.                                                                                                                                                                                                           |
+| CON-07 | Stack tecnológico         | Backend en .NET 8, frontend web en Flutter Web y cliente móvil en Flutter (Android).                                                                                                                                                                                              | Las decisiones de frameworks, librerías y patrones de integración quedan acotadas al ecosistema .NET y Flutter. El uso unificado de Flutter en mobile y web permite compartir librerías de dominio entre ambos clientes. No se incorporarán otros lenguajes sin consenso del equipo.                                                                                                          |
 | CON-08 | Plataforma móvil objetivo | El cliente móvil se distribuirá exclusivamente para Android en la fase inicial del producto.                                                                                                                                                                                      | La estrategia de notificaciones push se diseña sobre FCM (CON-05) para Android. Las pruebas de compatibilidad se ejecutarán únicamente sobre versiones recientes de Android, alineadas con el dispositivo predominante en el segmento Paciente (Lima Metropolitana, NSE medio, incluyendo adultos mayores). iOS queda fuera del alcance de la versión 1.                                      |
 | CON-09 | Cumplimiento legal        | El sistema deberá cumplir con la Ley N° 29733 — Ley de Protección de Datos Personales del Perú y su reglamento, particularmente en lo referido al tratamiento de datos personales sensibles relacionados con la salud (Art. 2.5).                                                 | La arquitectura debe contemplar consentimiento informado del usuario, cifrado de datos en tránsito (HTTPS/TLS) y en reposo, control de accesos basado en roles, registros de auditoría, y procesos de retención y eliminación de datos. El alojamiento y procesamiento deben mantenerse dentro del marco legal peruano. Aterriza el Principle 4.1.1 #2 ("Seguridad y Privacidad por Diseño"). |
 
@@ -1601,7 +1564,7 @@ En esta sección se identifican las preocupaciones arquitectónicas de mayor imp
 | AC-08 | Consistencia de datos entre servicios                 | Operaciones críticas como el registro de cumplimiento (US06) o la generación automática de recordatorios al subir una receta (US13) atraviesan varios servicios (Treatment, Follow-up, Reminder) con bases de datos independientes (CON-01). Una transacción ACID distribuida no es viable.                                      | La arquitectura debe adoptar un modelo de eventual consistency mediante mensajería asíncrona, aplicando el patrón Saga para flujos que cruzan servicios y el patrón Outbox para garantizar la publicación confiable de eventos desde cada microservicio sin perder atomicidad con su escritura local.                                                                                        |
 | AC-09 | Estrategia de fallback de notificaciones              | QAS-2 exige una entrega del 99.9 % de recordatorios críticos. Un fallo prolongado de FCM (CON-05) o la ausencia de conectividad del dispositivo pueden impedir la entrega del recordatorio en el horario clínico.                                                                                                                | La arquitectura debe contemplar canales de fallback: notificación local programada en el dispositivo (gestionada por la app Flutter sobre el almacenamiento offline de CON-06) como respaldo principal, y un canal SMS gestionado por un proveedor externo, activado cuando FCM no confirma la entrega dentro de una ventana definida.                                                       |
 | AC-10 | Asimetría de carga entre segmentos                    | Pacientes (cliente móvil Android, conectividad fluctuante, alta frecuencia de escrituras pequeñas como cumplimiento de medicación) y Personal Técnico (cliente web, conectividad estable, lecturas pesadas como historiales US14 y dashboards de adherencia US16) presentan patrones de tráfico opuestos sobre el mismo backend. | La arquitectura debe aplicar el patrón CQRS (4.1.2) separando los modelos de escritura transaccional de los modelos de lectura analítica del Personal Técnico, de modo que las consultas pesadas no degraden la latencia de las operaciones del Paciente (QAS-0: ≤ 2 s p95).                                                                                                                 |
-| AC-11 | Observabilidad en arquitectura distribuida            | Con seis microservicios y flujos que cruzan varios servicios (US06, US13), un fallo aislado es difícil de diagnosticar sin trazabilidad transversal. QAS-2 exige detección de fallos en ≤ 30 segundos y un 99.9 % de entregas críticas.                                                                                          | La arquitectura debe incorporar tracing distribuido con correlation IDs propagados desde el API Gateway a través de todos los servicios, logging centralizado y métricas por servicio expuestas a un sistema de monitoreo. La observabilidad se trata como capa transversal obligatoria, no como añadido posterior.                                                                          |
+| AC-11 | Observabilidad en arquitectura distribuida            | Con seis microservicios de dominio más el API Gateway, y flujos que cruzan varios servicios (US06, US13), un fallo aislado es difícil de diagnosticar sin trazabilidad transversal. QAS-2 exige detección de fallos en ≤ 30 segundos y un 99.9 % de entregas críticas.                                                                                          | La arquitectura debe incorporar tracing distribuido con correlation IDs propagados desde el API Gateway a través de todos los servicios, logging centralizado y métricas por servicio expuestas a un sistema de monitoreo. La observabilidad se trata como capa transversal obligatoria, no como añadido posterior.                                                                          |
 
 <hr class="page-break">
 
@@ -1656,11 +1619,11 @@ En esta tabla se registran los requisitos priorizados que guían las decisiones 
 
 **Objetivo:** Definir el flujo principal del sistema: desde la carga de una receta hasta la notificación al paciente y el registro de su cumplimiento.
 
-| Driver                        | Justificación                                                                                              |
-| ----------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| US13 — Subir receta médica    | Define el punto de entrada del flujo de tratamiento y la necesidad de validación previa a la persistencia. |
-| US05 — Recibir recordatorio   | Establece la necesidad de generar eventos derivados de la receta para la creación de recordatorios.        |
-| US06 — Registrar cumplimiento | Permite cerrar el ciclo del tratamiento mediante la persistencia del comportamiento del paciente.          |
+| Driver                                        | Justificación                                                                                                                                                        |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| US13 — Subir receta médica                    | Define el punto de entrada del flujo de tratamiento y la necesidad de validación previa a la persistencia.                                                           |
+| US05 — Recibir recordatorio                   | Establece la necesidad de generar eventos derivados de la receta para la creación de recordatorios.                                                                  |
+| US06 — Registrar cumplimiento                 | Permite cerrar el ciclo del tratamiento mediante la persistencia del comportamiento del paciente.                                                                    |
 | AC-08 — Consistencia de datos entre servicios | Justifica la validación estructurada de recetas antes de generar efectos secundarios (eventos `RecetaCargada`) que disparan flujos en otros servicios como Reminder. |
 
 #### 4.3.1.3. Choose One or More Elements of the System to Refine
@@ -1675,11 +1638,11 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 #### 4.3.1.4. Choose One or More Design Concepts That Satisfy the Selected Drivers
 
-| Concepto de Diseño                                                   | Relación con Drivers                                                                                                                                                                                                         |
-| -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Pipeline de validación con patrón Decorator** en Treatment Service | AC-08, US13. Encadena validaciones (existencia del paciente, nombre del medicamento en catálogo, horarios completos) antes de persistir la receta, evitando que datos inválidos se propaguen a Reminder vía eventos. |
+| Concepto de Diseño                                                   | Relación con Drivers                                                                                                                                                                                                          |
+| -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Pipeline de validación con patrón Decorator** en Treatment Service | AC-08, US13. Encadena validaciones (existencia del paciente, nombre del medicamento en catálogo, horarios completos) antes de persistir la receta, evitando que datos inválidos se propaguen a Reminder vía eventos.          |
 | **Comunicación asíncrona por eventos**                               | AC-02, AC-04, AC-08, US06. El Follow-up Service publica `CumplimientoRegistrado`; el Reminder Service lo consume y cancela el recordatorio pendiente. Alternativa descartada: REST síncrono, por riesgo de fallos en cascada. |
-| **Patrón Observer entre servicios**                                  | US06. El registro de cumplimiento genera eventos que pueden ser consumidos por otros servicios sin acoplamiento directo.                                                                                                     |
+| **Patrón Observer entre servicios**                                  | US06. El registro de cumplimiento genera eventos que pueden ser consumidos por otros servicios sin acoplamiento directo.                                                                                                      |
 
 #### 4.3.1.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 
@@ -1691,7 +1654,7 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 #### 4.3.1.6. Sketch Views (C4 & UML) and Record Design Decisions
 
-**C4 -  Context Diagram**
+**C4 - Context Diagram**
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
@@ -1703,8 +1666,7 @@ _Figura 29. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 
 </div>
 
-
-**C4 -  Container Diagram**
+**C4 - Container Diagram**
 Se muestra los contenedores del sistema, destacando el microservicio de tratamiento y su base de datos dedicada, así como cómo se comunican con los otros servicios internos del sistema.
 
 <td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Context diagram" ></td>
@@ -1715,18 +1677,17 @@ _Figura 30. Anexo del diagrama de contenedores de MediTrack. Elaboración propia
 
 </div>
 
-
-**C4 -  Component Diagram**
+**C4 - Component Diagram**
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
 <td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_TreatmentService.png" alt="Context diagram" ></td>
 
+<td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="Context diagram" ></td>
 
 <div align = center>
 
 _Figura 31. Anexo del diagrama de componentes de Treatment Service. Elaboración propia._
 
 </div>
-
 
 #### 4.3.1.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)
 
@@ -1781,7 +1742,7 @@ Permitir la continuidad del tratamiento del paciente en tres frentes: soporte a 
 | Concepto de Diseño                                                           | Relación con Drivers                                                                                                                                                                                                                                                                                                                     |
 | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Persistencia local SQLite con sincronización optimista** en la app móvil   | AC-03, QAS-1, US23. La app persiste cumplimientos localmente. Al reconectar, envía los registros pendientes al Follow-up Service vía endpoint batch. El timestamp determina la precedencia en caso de conflicto. Alternativa descartada: solo funcionamiento online, no satisface QAS-1 ni el principio Offline-First definido en 4.1.1. |
-| **Módulo de preferencias de notificación** integrado en el Follow-up Service | US22, AC-06. Almacena la configuración de sonido, vibración y repeticiones por paciente, permitiendo simplificar la experiencia de notificación para el segmento Paciente (especialmente adultos mayores). El Reminder Service consulta estas preferencias antes de generar cada notificación. |
+| **Módulo de preferencias de notificación** integrado en el Follow-up Service | US22, AC-06. Almacena la configuración de sonido, vibración y repeticiones por paciente, permitiendo simplificar la experiencia de notificación para el segmento Paciente (especialmente adultos mayores). El Reminder Service consulta estas preferencias antes de generar cada notificación.                                           |
 | **Detección de stock bajo y evento `StockBajo`** en el Treatment Service     | US07, AC-02. Cuando el conteo de pastillas restantes alcanza el umbral de 3 unidades, el Treatment Service publica `StockBajo`; el Reminder Service genera la notificación al paciente.                                                                                                                                                  |
 
 #### 4.3.2.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
@@ -1795,7 +1756,7 @@ Permitir la continuidad del tratamiento del paciente en tres frentes: soporte a 
 
 #### 4.3.2.6. Sketch Views (C4 & UML) and Record Design Decisions
 
-**C4 -  Context Diagram**
+**C4 - Context Diagram**
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
@@ -1807,8 +1768,7 @@ _Figura 33. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 
 </div>
 
-
-**C4 -  Container Diagram**
+**C4 - Container Diagram**
 
 Se muestra los contenedores del sistema, destacando el microservicio del seguimiento del tratamiento y su base de datos dedicada, así como cómo lee los servicios internos del sistema.
 
@@ -1820,12 +1780,11 @@ _Figura 34. Anexo del diagrama de contenedores de MediTrack. Elaboración propia
 
 </div>
 
-**C4 -  Component Diagram**
+**C4 - Component Diagram**
 
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_FollowUpService.png" alt="Context diagram" ></td>
-
 
 <div align = center>
 
@@ -1864,74 +1823,73 @@ Link del Trello: https://trello.com/invite/b/69f6752f9be88dc527f213a9/ATTIfba9ad
 
 ### 5.2.1. Software Development Environment Configuration
 
-De acuerdo con las decisiones arquitectónicas definidas para MediTrack, el equipo trabajará sobre un entorno homogéneo de desarrollo coherente con el stack tecnológico del proyecto. En ese sentido, se ha establecido el uso de `.NET 8` para el backend, `React` para el frontend web, `Flutter` para la aplicación móvil, `MySQL` como motor de base de datos, `Azure for Students` como entorno de despliegue y `OpenAPI` para la documentación de servicios. Asimismo, se emplearán las herramientas exigidas por el curso para cubrir de forma colaborativa todas las actividades del ciclo de vida: gestión del proyecto, levantamiento y especificación de requisitos, diseño del producto, desarrollo, pruebas, despliegue y documentación.
+De acuerdo con las decisiones arquitectónicas definidas para MediTrack, el equipo trabajará sobre un entorno homogéneo de desarrollo coherente con el stack tecnológico del proyecto. En ese sentido, se ha establecido el uso de `.NET 8` para el backend, `Flutter` para la aplicación móvil Android, `Flutter Web` para el frontend web, `MySQL` como motor de base de datos, `Azure for Students` como entorno de despliegue y `OpenAPI` para la documentación de servicios. Asimismo, se emplearán las herramientas exigidas por el curso para cubrir de forma colaborativa todas las actividades del ciclo de vida: gestión del proyecto, levantamiento y especificación de requisitos, diseño del producto, desarrollo, pruebas, despliegue y documentación.
 
 Para asegurar que todos los integrantes trabajen sobre un entorno consistente, a continuación se detallan las herramientas por tipo de actividad, indicando su propósito dentro del proyecto y su ruta de referencia o descarga.
 
 #### Project Management
 
-| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
-| -------------------- | ------ | --------------------------------- | ----------------------------- |
-| Trello | SaaS | Gestión del Product Backlog, Sprint Backlog y tableros Kanban de iteraciones y sprints. Se utiliza para organizar historias de usuario, tareas, responsables y estado de avance. | https://trello.com/ |
-| Discord | SaaS | Medio principal de comunicación del equipo para coordinación diaria, reuniones, seguimiento de acuerdos y soporte durante el desarrollo colaborativo del proyecto. | https://discord.com/ |
+| Producto de software | Modelo | Uso dentro del proyecto MediTrack                                                                                                                                                | Ruta de referencia / descarga |
+| -------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| Trello               | SaaS   | Gestión del Product Backlog, Sprint Backlog y tableros Kanban de iteraciones y sprints. Se utiliza para organizar historias de usuario, tareas, responsables y estado de avance. | https://trello.com/           |
+| Discord              | SaaS   | Medio principal de comunicación del equipo para coordinación diaria, reuniones, seguimiento de acuerdos y soporte durante el desarrollo colaborativo del proyecto.               | https://discord.com/          |
 
 #### Requirements Management
 
-| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
-| -------------------- | ------ | --------------------------------- | ----------------------------- |
-| UXPressia | SaaS | Elaboración de User Personas, Empathy Maps e Impact Map, manteniendo consistencia con los artefactos de análisis del capítulo II y III. | https://uxpressia.com/ |
-| Lucidchart / Lucidspark | SaaS | Construcción de As-Is Scenario Mapping, To-Be Scenario Mapping y otros artefactos colaborativos de análisis visual del dominio. | https://www.lucidchart.com/ |
+| Producto de software    | Modelo | Uso dentro del proyecto MediTrack                                                                                                       | Ruta de referencia / descarga |
+| ----------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| UXPressia               | SaaS   | Elaboración de User Personas, Empathy Maps e Impact Map, manteniendo consistencia con los artefactos de análisis del capítulo II y III. | https://uxpressia.com/        |
+| Lucidchart / Lucidspark | SaaS   | Construcción de As-Is Scenario Mapping, To-Be Scenario Mapping y otros artefactos colaborativos de análisis visual del dominio.         | https://www.lucidchart.com/   |
 
 #### Product Design
 
-| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
-| -------------------- | ------ | --------------------------------- | ----------------------------- |
-| Figma | SaaS | Diseño colaborativo de interfaces, wireframes y propuestas visuales previas a la implementación de las pantallas del producto. | https://www.figma.com/ |
-| Structurizr | SaaS / Desktop | Modelado C4 de la arquitectura de software, especialmente para Context Diagram, Container Diagram y Component Diagram. | https://structurizr.com/ |
-| Lucidchart | SaaS | Elaboración de diagramas UML, diagramas de actividades, diagramas de clases y diagrama de base de datos que complementan la arquitectura definida. | https://www.lucidchart.com/ |
+| Producto de software | Modelo         | Uso dentro del proyecto MediTrack                                                                                                                  | Ruta de referencia / descarga |
+| -------------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| Figma                | SaaS           | Diseño colaborativo de interfaces, wireframes y propuestas visuales previas a la implementación de las pantallas del producto.                     | https://www.figma.com/        |
+| Structurizr          | SaaS / Desktop | Modelado C4 de la arquitectura de software, especialmente para Context Diagram, Container Diagram y Component Diagram.                             | https://structurizr.com/      |
+| Lucidchart           | SaaS           | Elaboración de diagramas UML, diagramas de actividades, diagramas de clases y diagrama de base de datos que complementan la arquitectura definida. | https://www.lucidchart.com/   |
 
 #### Software Development
 
-| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
-| -------------------- | ------ | --------------------------------- | ----------------------------- |
-| Visual Studio Code | Desktop | Editor principal para documentación técnica, frontend web en React y soporte general de edición colaborativa del repositorio. | https://code.visualstudio.com/ |
-| Visual Studio 2022 Community | Desktop | Entorno de desarrollo principal para los microservicios implementados en .NET 8. Facilita construcción, depuración, ejecución local y administración de soluciones del backend. | https://visualstudio.microsoft.com/es/vs/community/ |
-| Git | Desktop | Control local de versiones para ejecutar el workflow GitFlow definido por el equipo y sincronizar cambios con GitHub. | https://git-scm.com/downloads |
-| Node.js LTS | Desktop | Runtime y gestor de paquetes requerido para el frontend web desarrollado en React y para herramientas basadas en JavaScript del proyecto. | https://nodejs.org/ |
-| .NET 8 SDK | Desktop | Kit de desarrollo requerido para compilar y ejecutar los microservicios definidos en la arquitectura bajo .NET 8. | https://dotnet.microsoft.com/en-us/download/dotnet/8.0 |
-| Android Studio | Desktop | IDE de apoyo para el cliente móvil Android, emulador y administración del Android SDK requerido por Flutter. | https://developer.android.com/studio |
-| Flutter SDK | Desktop | Framework base para la aplicación móvil Android del segmento Paciente, incluyendo soporte a SQLite y notificaciones locales. | https://docs.flutter.dev/get-started/install |
-| MySQL Workbench | Desktop | Administración y validación del motor MySQL utilizado por los microservicios bajo el patrón Database per Service. | https://dev.mysql.com/downloads/workbench/ |
+| Producto de software         | Modelo  | Uso dentro del proyecto MediTrack                                                                                                                                               | Ruta de referencia / descarga                          |
+| ---------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| Visual Studio Code           | Desktop | Editor principal para documentación técnica, frontend web y móvil en Flutter, y soporte general de edición colaborativa del repositorio.                                        | https://code.visualstudio.com/                         |
+| Visual Studio 2022 Community | Desktop | Entorno de desarrollo principal para los microservicios implementados en .NET 8. Facilita construcción, depuración, ejecución local y administración de soluciones del backend. | https://visualstudio.microsoft.com/es/vs/community/    |
+| Git                          | Desktop | Control local de versiones para ejecutar el workflow GitFlow definido por el equipo y sincronizar cambios con GitHub.                                                           | https://git-scm.com/downloads                          |
+| .NET 8 SDK                   | Desktop | Kit de desarrollo requerido para compilar y ejecutar los microservicios definidos en la arquitectura bajo .NET 8.                                                               | https://dotnet.microsoft.com/en-us/download/dotnet/8.0 |
+| Android Studio               | Desktop | IDE de apoyo para el cliente móvil Android, emulador y administración del Android SDK requerido por Flutter.                                                                    | https://developer.android.com/studio                   |
+| Flutter SDK                  | Desktop | Framework base para la aplicación móvil Android del segmento Paciente y para la aplicación web del Personal Técnico mediante Flutter Web. Incluye soporte a SQLite y notificaciones locales en el cliente móvil. | https://docs.flutter.dev/get-started/install           |
+| MySQL Workbench              | Desktop | Administración y validación del motor MySQL utilizado por los microservicios bajo el patrón Database per Service.                                                               | https://dev.mysql.com/downloads/workbench/             |
 
 #### Software Testing
 
-| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
-| -------------------- | ------ | --------------------------------- | ----------------------------- |
-| Postman | Desktop | Validación manual y semiautomatizada de endpoints REST, registro de evidencias de ejecución y preparación de colecciones para Sprint Review. | https://www.postman.com/downloads/ |
-| Swagger UI / OpenAPI | SaaS / Local | Verificación funcional de contratos REST, consulta interactiva de endpoints y soporte a la documentación técnica de servicios. | https://swagger.io/tools/swagger-ui/ |
+| Producto de software | Modelo       | Uso dentro del proyecto MediTrack                                                                                                            | Ruta de referencia / descarga        |
+| -------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| Postman              | Desktop      | Validación manual y semiautomatizada de endpoints REST, registro de evidencias de ejecución y preparación de colecciones para Sprint Review. | https://www.postman.com/downloads/   |
+| Swagger UI / OpenAPI | SaaS / Local | Verificación funcional de contratos REST, consulta interactiva de endpoints y soporte a la documentación técnica de servicios.               | https://swagger.io/tools/swagger-ui/ |
 
 #### Software Deployment
 
-| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
-| -------------------- | ------ | --------------------------------- | ----------------------------- |
-| Azure Portal | SaaS | Administración del entorno cloud de despliegue bajo Azure for Students, incluyendo recursos de cómputo, red y configuración general del proyecto. | https://portal.azure.com/ |
-| Azure CLI | Desktop | Soporte a tareas de automatización, validación de recursos y despliegue desde entorno local o CI/CD. | https://learn.microsoft.com/cli/azure/install-azure-cli |
-| Firebase Console | SaaS | Configuración del servicio de Firebase Cloud Messaging (FCM) utilizado por el Reminder Service para el envío de notificaciones push. | https://console.firebase.google.com/ |
+| Producto de software | Modelo  | Uso dentro del proyecto MediTrack                                                                                                                 | Ruta de referencia / descarga                           |
+| -------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| Azure Portal         | SaaS    | Administración del entorno cloud de despliegue bajo Azure for Students, incluyendo recursos de cómputo, red y configuración general del proyecto. | https://portal.azure.com/                               |
+| Azure CLI            | Desktop | Soporte a tareas de automatización, validación de recursos y despliegue desde entorno local o CI/CD.                                              | https://learn.microsoft.com/cli/azure/install-azure-cli |
+| Firebase Console     | SaaS    | Configuración del servicio de Firebase Cloud Messaging (FCM) utilizado por el Reminder Service para el envío de notificaciones push.              | https://console.firebase.google.com/                    |
+| Azure Communication Services | SaaS    | Servicio gestionado de Azure utilizado por Identity & Profile Service para el envío de correos de recuperación de cuenta mediante dominio Azure-managed. | https://azure.microsoft.com/services/communication-services/ |
 
 #### Software Documentation
 
-| Producto de software | Modelo | Uso dentro del proyecto MediTrack | Ruta de referencia / descarga |
-| -------------------- | ------ | --------------------------------- | ----------------------------- |
-| GitHub | SaaS | Almacenamiento central del código fuente, seguimiento de cambios, revisión colaborativa y publicación de documentación técnica versionada. | https://github.com/ |
-| Swagger Editor / Swagger UI | SaaS / Local | Elaboración y publicación de la especificación OpenAPI de los microservicios del sistema. | https://swagger.io/tools/swagger-editor/ |
+| Producto de software        | Modelo       | Uso dentro del proyecto MediTrack                                                                                                          | Ruta de referencia / descarga            |
+| --------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------- |
+| GitHub                      | SaaS         | Almacenamiento central del código fuente, seguimiento de cambios, revisión colaborativa y publicación de documentación técnica versionada. | https://github.com/                      |
+| Swagger Editor / Swagger UI | SaaS / Local | Elaboración y publicación de la especificación OpenAPI de los microservicios del sistema.                                                  | https://swagger.io/tools/swagger-editor/ |
 
 Como configuración mínima compartida, todos los integrantes del equipo deben contar con acceso a Trello, Discord, Lucidchart, Figma, Structurizr y GitHub mediante navegador web actualizado. Adicionalmente, para trabajo local sobre el código fuente, cada integrante deberá instalar Git y al menos un editor o IDE compatible con su responsabilidad principal dentro del proyecto.
 
 En función del componente asignado, el entorno local se completa de la siguiente manera:
 
 - Para backend: Visual Studio 2022 Community, .NET 8 SDK y MySQL Workbench.
-- Para frontend web: Visual Studio Code y Node.js LTS.
-- Para cliente móvil Android: Flutter SDK y Android Studio.
+- Para frontend web y cliente móvil Android: Flutter SDK, Visual Studio Code y Android Studio.
 - Para pruebas y documentación de APIs: Postman y acceso a Swagger UI / OpenAPI.
 - Para despliegue y operación básica: acceso a Azure Portal y Firebase Console.
 
@@ -1939,19 +1897,36 @@ En función del componente asignado, el entorno local se completa de la siguient
 
 Para el seguimiento de modificaciones y la colaboración entre integrantes, el equipo utilizará **GitHub** como plataforma central de almacenamiento y control de versiones. A través de esta plataforma se gestionarán los cambios sobre el código fuente, la documentación técnica y el historial de evolución del proyecto, permitiendo mantener trazabilidad sobre cada aporte realizado durante el desarrollo.
 
-En el caso de los **Web Services**, el repositorio incluirá tanto el proyecto de los microservicios como los archivos de pruebas asociados, incluyendo los archivos `.feature` definidos para pruebas bajo enfoque BDD. El repositorio central del proyecto se encuentra en la siguiente ruta:
+El equipo adopta un esquema de **polyrepo**: cada microservicio, la aplicación móvil del Paciente, la aplicación web del Personal Técnico y la documentación técnica del proyecto residen en repositorios independientes bajo la organización GitHub del equipo. Cada repositorio de Web Service incluye tanto el código fuente del microservicio como los archivos de pruebas asociados, incluyendo los archivos `.feature` definidos para pruebas bajo enfoque BDD. Esta separación refuerza la independencia operativa exigida por la arquitectura de microservicios y evita que un cambio en un componente obligue a tocar repositorios ajenos.
 
-**Repositorio GitHub del proyecto:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/report
+Los repositorios del proyecto se organizan de la siguiente manera:
+
+| Componente                          | Repositorio                       |
+| ----------------------------------- | --------------------------------- |
+| API Gateway                         | `meditrack-gateway`               |
+| Identity & Profile Service          | `meditrack-identity-service`      |
+| Treatment Service                   | `meditrack-treatment-service`     |
+| Medical Appointment Service         | `meditrack-appointment-service`   |
+| Follow-up Service                   | `meditrack-followup-service`      |
+| Medical Analysis Service            | `meditrack-analysis-service`      |
+| Reminder Service                    | `meditrack-reminder-service`      |
+| Aplicación móvil (Flutter Android)  | `meditrack-mobile`                |
+| Aplicación web (Flutter Web)        | `meditrack-web`                   |
+| Documentación técnica del proyecto  | `meditrack-report`                |
+
+El repositorio principal donde se concentra la documentación técnica del proyecto, los diagramas y los scripts operativos compartidos es:
+
+**Repositorio de documentación:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/report
 
 Los integrantes del equipo y los nombres de usuario identificados en GitHub son los siguientes:
 
-| Integrantes | Nombre en GitHub |
-| ----------- | ---------------- |
-| Gonzales Alvarado, Javier Sebastian | WoodsDos |
-| Quijada Magro, Jeremy Alexander | jquijada-dev |
-| Rivera Ratachi, Renzo Sebastian | 1sopod |
-| Rojas Reategui, Victor Manuel | VRojas1603 |
-| Sulca Sanchez, Piero Angel | psulca |
+| Integrantes                         | Nombre en GitHub |
+| ----------------------------------- | ---------------- |
+| Gonzales Alvarado, Javier Sebastian | WoodsDos         |
+| Quijada Magro, Jeremy Alexander     | jquijada-dev     |
+| Rivera Ratachi, Renzo Sebastian     | 1sopod           |
+| Rojas Reategui, Victor Manuel       | VRojas1603       |
+| Sulca Sanchez, Piero Angel          | psulca           |
 
 Con la finalidad de mantener un flujo de trabajo ordenado y alineado con buenas prácticas de ingeniería de software, el equipo aplicará el modelo **GitFlow** como estrategia de branching. Esta estrategia permite separar claramente el código estable, el código en integración, las nuevas funcionalidades y las correcciones urgentes.
 
@@ -2000,20 +1975,19 @@ Con esta organización, el equipo asegura trazabilidad sobre cada cambio, consis
 
 ### 5.2.3. Source Code Style Guide & Conventions
 
-Con el propósito de mantener consistencia, legibilidad y mantenibilidad en todos los componentes de MediTrack, el equipo adoptará un conjunto común de convenciones para nombrar elementos, estructurar archivos y redactar código fuente. Estas convenciones se aplicarán tanto al backend desarrollado en `.NET 8`, como al frontend web en `React` con `TypeScript`, a la aplicación móvil en `Flutter` y a los artefactos de pruebas y documentación técnica asociados al proyecto.
+Con el propósito de mantener consistencia, legibilidad y mantenibilidad en todos los componentes de MediTrack, el equipo adoptará un conjunto común de convenciones para nombrar elementos, estructurar archivos y redactar código fuente. Estas convenciones se aplicarán tanto al backend desarrollado en `.NET 8`, como al frontend web y al cliente móvil desarrollados en `Flutter` (Dart) y a los artefactos de pruebas y documentación técnica asociados al proyecto.
 
 Como criterio general, el equipo utilizará **nomenclatura en inglés** para todos los lenguajes, artefactos y elementos técnicos de la solución. Esto incluye nombres de clases, interfaces, métodos, variables, componentes, endpoints, tablas, columnas, archivos, ramas y escenarios de prueba. De esta manera se busca uniformidad en el código fuente, mayor claridad técnica y alineamiento con las convenciones estándar de la industria.
 
 Las referencias y convenciones adoptadas por el equipo se resumen a continuación:
 
-| Lenguaje / Artefacto | Referencia adoptada | Convenciones aplicadas en el proyecto |
-| -------------------- | ------------------- | ------------------------------------- |
-| C# / .NET 8 | Microsoft C# Coding Conventions y .NET Naming Guidelines | Se utilizará `PascalCase` para clases, interfaces, enums, records, DTOs y métodos públicos. Las interfaces iniciarán con prefijo `I`. Los parámetros, variables locales y atributos usarán `camelCase`, mientras que los campos privados usarán `_camelCase`. Los métodos asíncronos finalizarán con sufijo `Async`. Los nombres de controladores, servicios, repositorios y casos de uso se expresarán en inglés y de forma descriptiva. |
-| TypeScript / React | Google TypeScript Style Guide | Se utilizará `PascalCase` para componentes, tipos, interfaces y props models; `camelCase` para variables, funciones y hooks; y nombres descriptivos en inglés para archivos, módulos y utilitarios. Los hooks personalizados iniciarán con prefijo `use`, y se evitarán abreviaturas ambiguas en nombres de funciones o estados. |
-| Dart / Flutter | Effective Dart: Style | Se aplicará `PascalCase` para clases, widgets, enums y tipos, y `lowerCamelCase` para métodos, variables y propiedades. Los archivos se nombrarán en `snake_case`, siguiendo la práctica recomendada del ecosistema Dart. Los widgets y pantallas tendrán nombres expresivos en inglés, alineados con la funcionalidad que representan. |
-| Archivos `.feature` / Gherkin | Gherkin Conventions for Readable Specifications | Los escenarios de prueba se redactarán en inglés técnico legible, utilizando la estructura `Feature`, `Scenario`, `Given`, `When`, `Then` y, cuando corresponda, `And`. Cada escenario describirá un único comportamiento observable, evitando mezclar varios flujos en un mismo caso. Los títulos deberán ser breves, orientados al negocio y comprensibles para el equipo. |
-| SQL / MySQL | Convenciones internas del proyecto alineadas con buenas prácticas relacionales | Las tablas, columnas, índices y restricciones se nombrarán en inglés, empleando `snake_case` para los objetos de base de datos. Como criterio de modelado, el equipo adoptará nombres de tablas en **singular**, por ejemplo `patient`, `medication` o `medical_appointment`, ya que esta convención se alinea mejor con el modelado por entidad y con prácticas ampliamente utilizadas en entornos empresariales. Las claves primarias y foráneas utilizarán nombres descriptivos y consistentes, permitiendo una lectura clara del modelo relacional en todos los microservicios. |
-| OpenAPI / documentación REST | OpenAPI Specification | Los endpoints REST se documentarán con rutas claras y recursos expresados en inglés. Los paths mantendrán nombres consistentes y orientados a recursos, mientras que los esquemas y modelos documentados seguirán la misma convención de nombres aplicada en backend y frontend para facilitar trazabilidad entre implementación y documentación. |
+| Lenguaje / Artefacto          | Referencia adoptada                                                            | Convenciones aplicadas en el proyecto                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ----------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| C# / .NET 8                   | Microsoft C# Coding Conventions y .NET Naming Guidelines                       | Se utilizará `PascalCase` para clases, interfaces, enums, records, DTOs y métodos públicos. Las interfaces iniciarán con prefijo `I`. Los parámetros, variables locales y atributos usarán `camelCase`, mientras que los campos privados usarán `_camelCase`. Los métodos asíncronos finalizarán con sufijo `Async`. Los nombres de controladores, servicios, repositorios y casos de uso se expresarán en inglés y de forma descriptiva.                                                                                                                                           |
+| Dart / Flutter                | Effective Dart: Style                                                          | Se aplicará `PascalCase` para clases, widgets, enums y tipos, y `lowerCamelCase` para métodos, variables y propiedades. Los archivos se nombrarán en `snake_case`, siguiendo la práctica recomendada del ecosistema Dart. Los widgets y pantallas tendrán nombres expresivos en inglés, alineados con la funcionalidad que representan.                                                                                                                                                                                                                                             |
+| Archivos `.feature` / Gherkin | Gherkin Conventions for Readable Specifications                                | Los escenarios de prueba se redactarán en inglés técnico legible, utilizando la estructura `Feature`, `Scenario`, `Given`, `When`, `Then` y, cuando corresponda, `And`. Cada escenario describirá un único comportamiento observable, evitando mezclar varios flujos en un mismo caso. Los títulos deberán ser breves, orientados al negocio y comprensibles para el equipo.                                                                                                                                                                                                        |
+| SQL / MySQL                   | Convenciones internas del proyecto alineadas con buenas prácticas relacionales | Las tablas, columnas, índices y restricciones se nombrarán en inglés, empleando `snake_case` para los objetos de base de datos. Como criterio de modelado, el equipo adoptará nombres de tablas en **singular**, por ejemplo `patient`, `medication` o `medical_appointment`, ya que esta convención se alinea mejor con el modelado por entidad y con prácticas ampliamente utilizadas en entornos empresariales. Las claves primarias y foráneas utilizarán nombres descriptivos y consistentes, permitiendo una lectura clara del modelo relacional en todos los microservicios. |
+| OpenAPI / documentación REST  | OpenAPI Specification                                                          | Los endpoints REST se documentarán con rutas claras y recursos expresados en inglés. Los paths mantendrán nombres consistentes y orientados a recursos, mientras que los esquemas y modelos documentados seguirán la misma convención de nombres aplicada en backend y frontend para facilitar trazabilidad entre implementación y documentación.                                                                                                                                                                                                                                   |
 
 Además de las reglas anteriores, el equipo aplicará los siguientes lineamientos transversales durante la implementación:
 
@@ -2026,6 +2000,96 @@ Además de las reglas anteriores, el equipo aplicará los siguientes lineamiento
 Con la adopción de estas guías, el equipo establece una base común para programar, documentar y probar la solución de manera uniforme, reduciendo ambigüedades y facilitando el trabajo colaborativo entre los distintos componentes del sistema.
 
 ### 5.2.4. Software Deployment Configuration
+
+En esta sección se documenta cómo el equipo despliega los Web Services y demás productos digitales de MediTrack en un entorno cloud accesible desde internet, partiendo del código fuente de cada repositorio hasta llegar a los servicios publicados sobre HTTPS. La configuración respeta el stack tecnológico definido por el equipo y los recursos disponibles bajo el plan **Azure for Students**.
+
+#### Plataforma cloud y stack tecnológico
+
+El despliegue se realiza sobre **Microsoft Azure**, aprovechando servicios gestionados que liberan al equipo de administrar sistemas operativos y servidores. Para los Web Services backend, desarrollados en **.NET 8**, se utiliza **Azure App Service**: la plataforma recibe el código compilado y lo expone sobre HTTPS sin requerir contenedores ni configuración de máquinas virtuales. Para el broker de mensajería **RabbitMQ** se utiliza **Azure Container Apps**, el servicio gestionado de Azure pensado para correr contenedores Docker sin administrar el clúster subyacente. La persistencia se concentra en **Azure Database for MySQL Flexible Server**, y los archivos multimedia (evidencias de cumplimiento) se almacenan en **Azure Blob Storage**.
+
+Los clientes finales se desarrollan ambos con **Flutter**: una aplicación móvil compilada como APK Android para el segmento Paciente, y una aplicación web servida como build estático generado con **Flutter Web** para el Personal Técnico. Esta uniformidad de stack en el frontend simplifica el mantenimiento y permite compartir librerías de dominio entre ambos clientes.
+
+#### Repositorios fuente
+
+El equipo adopta un esquema de **polyrepo**: cada microservicio, cada cliente y cada componente del sistema vive en su propio repositorio de GitHub, con su propio historial, su propio pipeline de CI/CD y su propio ciclo de vida. Esto refuerza la independencia operativa de los microservicios, evita que un cambio en un componente obligue a modificar repositorios ajenos y permite que cada subequipo trabaje sin interferencias.
+
+| Producto digital              | Repositorio                       |
+| ----------------------------- | --------------------------------- |
+| API Gateway                   | `meditrack-gateway`               |
+| Identity & Profile Service    | `meditrack-identity-service`      |
+| Treatment Service             | `meditrack-treatment-service`     |
+| Medical Appointment Service   | `meditrack-appointment-service`   |
+| Follow-up Service             | `meditrack-followup-service`      |
+| Medical Analysis Service      | `meditrack-analysis-service`      |
+| Reminder Service              | `meditrack-reminder-service`      |
+| Aplicación móvil              | `meditrack-mobile`                |
+| Aplicación web                | `meditrack-web`                   |
+
+Adicionalmente, el repositorio `meditrack-report` concentra la documentación técnica del proyecto, los diagramas y los scripts operativos compartidos.
+
+#### Productos digitales sujetos al despliegue
+
+La siguiente tabla enumera los productos digitales del sistema y la configuración con la que cada uno se publica en el entorno cloud:
+
+| Producto digital | Tecnología | Configuración de despliegue |
+| ---------------- | ---------- | --------------------------- |
+| API Gateway | .NET 8 + YARP | Azure App Service Linux sobre `plan-meditrack-gateway-prod` (SKU B1). Plan dedicado por su rol como punto único de entrada. |
+| Identity & Profile Service | .NET 8 | Azure App Service Linux sobre `plan-meditrack-care-prod` (SKU B1). |
+| Treatment Service | .NET 8 | Azure App Service Linux sobre `plan-meditrack-care-prod` (SKU B1). |
+| Medical Appointment Service | .NET 8 | Azure App Service Linux sobre `plan-meditrack-care-prod` (SKU B1). |
+| Follow-up Service | .NET 8 | Azure App Service Linux sobre `plan-meditrack-adherence-prod` (SKU B2). |
+| Medical Analysis Service | .NET 8 | Azure App Service Linux sobre `plan-meditrack-adherence-prod` (SKU B2). |
+| Reminder Service | .NET 8 | Azure App Service Linux sobre `plan-meditrack-reminder-prod` (SKU B1). Plan dedicado por su necesidad de escalado independiente. |
+| Identity DB, Treatment DB, Appointment DB, Follow-up DB, Analysis DB, Reminder DB | MySQL 8 | Una instancia de Azure Database for MySQL Flexible Server (Burstable B1ms) por microservicio, alineada con el patrón Database per Service. |
+| Message Bus | RabbitMQ 3 | Azure Container Apps con imagen oficial `rabbitmq:3-management`, configurada para escalar a cero cuando no recibe tráfico. |
+| Almacenamiento de evidencias | Azure Blob Storage | Storage Account con contenedor privado, consumido por Follow-up Service e Identity & Profile Service. |
+| Gestor de secretos | Azure Key Vault | Recurso compartido por todos los Web Services mediante Managed Identity. |
+| Observabilidad | Application Insights | Instancia centralizada que recibe métricas y trazas distribuidas de los siete Web Services. |
+| Aplicación móvil del Paciente | Flutter (Android) | APK firmado distribuido al dispositivo del paciente. |
+| Aplicación web del Personal Técnico | Flutter Web | Build estático publicado vía Azure Static Web Apps. |
+| Envío de correo transaccional | Azure Communication Services Email | Recurso de Azure dentro del Resource Group, configurado con dominio Azure-managed (sin necesidad de comprar dominio propio ni configurar DNS). Consumido por Identity & Profile Service para flujos de recuperación de cuenta. |
+| Notificaciones push | Firebase Cloud Messaging | Servicio externo consumido por Reminder Service. |
+
+#### Cómo se distribuyen los servicios en los App Service Plans
+
+El equipo distribuye los siete Web Services en **cuatro App Service Plans**, agrupados por rol arquitectónico y patrón de tráfico. Cada plan agrupa servicios que comparten características similares, lo que permite compartir compute sin comprometer la independencia operativa:
+
+- **`plan-meditrack-gateway-prod` (B1, solo el API Gateway).** El Gateway recibe el tráfico agregado de todo el sistema y ejecuta validación criptográfica de JWT en cada petición. Aislarlo en un plan propio protege a los servicios de dominio de las variaciones de carga del Gateway, y al revés.
+- **`plan-meditrack-care-prod` (B1, Identity + Treatment + Appointment).** Estos tres servicios sostienen el ciclo de atención clínica del paciente y del personal médico. Comparten un patrón de tráfico interactivo y volúmenes equivalentes, por lo que cohabitan sin afectarse entre sí.
+- **`plan-meditrack-adherence-prod` (B2, Follow-up + Analysis).** Estos servicios procesan información de adherencia y generan estadísticas analíticas. Su consumo de memoria puede ser mayor por las consultas agregadas, por eso utilizan un SKU superior con más RAM.
+- **`plan-meditrack-reminder-prod` (B1, solo el Reminder Service).** Dado que el envío masivo de recordatorios puede dispararse en horarios específicos con alta concurrencia, este servicio requiere escalar horizontalmente de forma independiente al resto del sistema.
+
+#### Pasos para el despliegue
+
+El proceso parte de cada repositorio individual y culmina con cada Web Service publicado sobre HTTPS en Azure. Se compone de cuatro pasos esenciales:
+
+1. **Aprovisionamiento del entorno cloud.** El equipo crea, mediante Azure CLI, el Resource Group `rg-meditrack-prod` y dentro de él los recursos necesarios: los cuatro App Service Plans, un App Service por microservicio, seis instancias de Azure Database for MySQL Flexible Server, un entorno de Azure Container Apps para RabbitMQ, una cuenta de Azure Blob Storage, un recurso de Azure Communication Services Email con su Email Communication Service asociado y un dominio Azure-managed, un Azure Key Vault y un recurso de Application Insights. Las cadenas de conexión, claves de firma de tokens, credenciales de Firebase y la connection string de Azure Communication Services Email se cargan en Azure Key Vault antes del primer despliegue; cada App Service las consume en tiempo de ejecución mediante Managed Identity, sin que existan secretos en el código fuente. Se aplica una convención de nombres uniforme (`app-meditrack-<service>-prod`, `mysql-meditrack-<service>-prod`, etc.).
+
+2. **Configuración de los pipelines de CI/CD.** Cada repositorio incluye su propio workflow de GitHub Actions, alineado al flujo GitFlow descrito en la sección 5.2.2. Un push a la rama `develop` despliega el servicio sobre el entorno de staging; un push a una rama `release/*` o un tag sobre `main` despliega sobre el entorno de producción. La independencia de pipelines entre repositorios garantiza que un cambio en un microservicio nunca obligue a redesplegar a otro.
+
+3. **Construcción, prueba y publicación por servicio.** Para cada microservicio el pipeline ejecuta las siguientes acciones: restauración de dependencias (`dotnet restore`), compilación en modo Release (`dotnet build --configuration Release`), ejecución de pruebas unitarias y escenarios BDD (`dotnet test`), generación del artefacto autocontenido (`dotnet publish`) y publicación sobre Azure App Service mediante la acción oficial `azure/webapps-deploy@v3` con autenticación OIDC. La publicación se realiza primero sobre un slot `staging`, donde se ejecuta un smoke test que valida el endpoint `/health` y la documentación Swagger; recién entonces se realiza el `swap` hacia el slot `production`, evitando interrupciones para los clientes. Inmediatamente después del swap, el pipeline aplica las migraciones de Entity Framework Core (`dotnet ef database update`) sobre la instancia MySQL correspondiente para mantener el esquema sincronizado con la versión publicada.
+
+4. **Verificación post-despliegue.** Concluido el swap, el pipeline valida la disponibilidad del endpoint HTTPS del servicio, la accesibilidad de su documentación Swagger en `/swagger`, la conectividad con su instancia MySQL y, donde corresponda, la conectividad con RabbitMQ y con Firebase Cloud Messaging. Los resultados de estas verificaciones forman parte de la evidencia documentada en cada Sprint Review.
+
+Ante una falla detectada en producción, el rollback se ejecuta mediante un `swap` inverso entre los slots `production` y `staging`, restituyendo la versión previa en cuestión de segundos sin necesidad de un nuevo despliegue.
+
+#### Operación del entorno desplegado
+
+Para mantener un consumo controlado de los créditos disponibles bajo Azure for Students, el equipo administra el entorno mediante un esquema de **stop/start**: los recursos se mantienen detenidos por defecto y se inician únicamente durante sesiones de testing del equipo, validaciones técnicas previas a un Sprint Review y la ejecución del propio Sprint Review.
+
+La operación se automatiza con dos scripts de Azure CLI versionados en el repositorio de documentación: `scripts/azure-env-start.sh` inicia los cuatro App Service Plans y las seis instancias de MySQL; `scripts/azure-env-stop.sh` los detiene al finalizar cada sesión. La instancia de RabbitMQ sobre Azure Container Apps se configura para escalar a cero automáticamente cuando no recibe tráfico, sin requerir administración manual.
+
+Los datos persistidos en las bases MySQL y en Azure Blob Storage permanecen intactos entre sesiones de stop/start, garantizando la continuidad del estado del sistema a lo largo de los sprints.
+
+#### Deployment Diagram (C4 Model)
+
+El siguiente diagrama representa el modelo de despliegue de MediTrack siguiendo la notación del C4 Model. Muestra los Web Services publicados como App Services dentro de sus respectivos planes, las seis instancias de MySQL bajo el patrón Database per Service, el broker RabbitMQ sobre Azure Container Apps, la cuenta de Azure Blob Storage, el recurso de Azure Communication Services Email, la integración con el servicio externo de Firebase Cloud Messaging y los dispositivos finales donde corren las aplicaciones Flutter del paciente y del personal técnico.
+
+<div align="center"><img src="assets/images/chapter5/diagrams/deployment-diagram.png" alt="MediTrack — Deployment Diagram (C4 Model)"></div>
+
+<div align="center">
+
+</div>
 
 <hr class="page-break">
 
