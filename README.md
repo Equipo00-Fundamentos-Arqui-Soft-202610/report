@@ -1042,6 +1042,76 @@ _Figura 9. To-Be Scenario Mapping del segmento Personal de Apoyo. Elaboración p
 
 ## 3.2. User Stories
 
+
+
+
+
+#### Requisitos Funcionales
+
+| Componente del sistema | Id | Requisito Funcional |
+|---|---|---|
+| Identity & Profile Service | IAM-RF1 | El sistema deberá permitir a los pacientes crear una cuenta con nombre, correo y contraseña. |
+| | IAM-RF2 | El sistema deberá permitir al personal técnico registrarse seleccionando su institución y rol. |
+| | IAM-RF3 | El sistema deberá validar que el correo electrónico no esté previamente registrado. |
+| | IAM-RF4 | El sistema deberá permitir cerrar sesión de forma segura e invalidar la sesión activa. |
+| | IAM-RF5 | El sistema deberá permitir recuperar la contraseña enviando un enlace al correo registrado. |
+| | IAM-RF6 | El sistema deberá permitir cambiar la contraseña validando la contraseña actual antes de actualizarla. |
+| | IAM-RF7 | El sistema deberá permitir editar el nombre, teléfono y foto de perfil del usuario. |
+| Treatment Service | TRT-RF1 | El sistema deberá permitir al personal técnico subir una receta médica indicando medicamento, dosis y horarios de toma. |
+| | TRT-RF2 | El sistema deberá validar automáticamente el nombre del medicamento contra un catálogo oficial antes de guardar la receta. |
+| | TRT-RF3 | El sistema deberá mostrar sugerencias o un mensaje de error cuando el medicamento ingresado no exista en el catálogo. |
+| | TRT-RF4 | El sistema deberá permitir al personal técnico editar los datos de un medicamento cuando esté autorizado. |
+| | TRT-RF5 | El sistema deberá permitir cancelar un medicamento únicamente cuando el personal técnico lo autorice. |
+| | TRT-RF6 | El sistema deberá mostrar al paciente la lista de sus medicamentos activos con nombre, dosis y horario. |
+| | TRT-RF7 | El sistema deberá emitir una alerta cuando el stock de un medicamento llegue al umbral configurado. |
+| Medical Appointment Service | APT-RF1 | El sistema deberá permitir al paciente agendar una cita médica indicando fecha, hora y tipo de cita. |
+| | APT-RF2 | El sistema deberá validar que la fecha de la cita sea posterior a la fecha actual. |
+| | APT-RF3 | El sistema deberá mostrar los requisitos previos asociados a cada cita médica. |
+| | APT-RF4 | El sistema deberá permitir al paciente editar o cancelar una cita futura. |
+| | APT-RF5 | El sistema deberá impedir la modificación de citas con fecha pasada. |
+| | APT-RF6 | El sistema deberá permitir registrar y consultar exámenes clínicos pendientes de recojo. |
+| Reminder Service | REM-RF1 | El sistema deberá enviar una notificación push al paciente en el horario programado de cada medicamento. |
+| | REM-RF2 | El sistema deberá enviar una notificación push 24 horas antes de una cita médica y una segunda notificación 2 horas antes. |
+| | REM-RF3 | El sistema deberá enviar un recordatorio cuando llegue la fecha de recojo de un examen clínico. |
+| | REM-RF4 | El sistema deberá cancelar automáticamente un recordatorio cuando se registre el cumplimiento correspondiente. |
+| | REM-RF5 | El sistema deberá permitir desactivar temporalmente todas las notificaciones y reactivarlas cuando el paciente lo indique. |
+| Follow-up Service | FUP-RF1 | El sistema deberá permitir al paciente registrar el cumplimiento de un medicamento adjuntando un video de evidencia de máximo 30 segundos. |
+| | FUP-RF2 | El sistema deberá registrar el cumplimiento automáticamente al recibir la URL del video, sin requerir validación humana. |
+| | FUP-RF3 | El sistema deberá almacenar el video de evidencia en Azure Blob Storage y guardar únicamente la URL en la base de datos. |
+| | FUP-RF4 | El sistema deberá permitir al paciente registrar el cumplimiento de una cita médica indicando si asistió o no. |
+| | FUP-RF5 | El sistema deberá permitir visualizar los medicamentos y registrar cumplimiento en modo offline, sincronizando los datos al recuperar la conexión. |
+| | FUP-RF6 | El sistema deberá mostrar al paciente su historial de adherencia con porcentaje de cumplimiento semanal. |
+| Medical Analysis Service | ANA-RF1 | El sistema deberá generar un dashboard con tendencias de adherencia por paciente para el personal técnico. |
+| | ANA-RF2 | El sistema deberá mostrar estadísticas de cumplimiento por receta, resaltando las de bajo cumplimiento. |
+| | ANA-RF3 | El sistema deberá mostrar un diagrama circular con la distribución de citas por tipo. |
+| | ANA-RF4 | El sistema deberá permitir configurar el umbral de adherencia a partir del cual se generan las alertas. |
+| | ANA-RF5 | El sistema deberá permitir al personal técnico buscar un paciente por nombre o DNI y consultar su información de seguimiento. |
+
+---
+
+#### Requisitos No Funcionales
+
+| Atributo de Calidad | Id | Requisito No Funcional |
+|---|---|---|
+| Rendimiento | NFR-PERF1 | El sistema deberá responder a consultas de medicamentos, citas y cumplimiento en ≤200ms para la mayoría de casos. |
+| | NFR-PERF2 | El sistema deberá procesar operaciones de creación y actualización (recetas, cumplimiento, citas) en ≤500ms para la mayoría de casos. |
+| | NFR-PERF3 | El dashboard de adherencia del personal técnico deberá cargar completamente en ≤3 segundos desde el inicio de sesión. |
+| | NFR-PERF4 | La subida de videos de cumplimiento a Azure Blob Storage deberá completarse en ≤10 segundos para videos de hasta 30 segundos de duración. |
+| Durabilidad | NFR-DUR1 | Los registros de cumplimiento generados en modo offline deberán encolarse localmente y sincronizarse íntegramente al recuperar la conexión, sin pérdida de datos. |
+| | NFR-DUR2 | Los videos de evidencia de cumplimiento deberán almacenarse en Azure Blob Storage con redundancia, garantizando que no se pierdan ante fallos del servicio. |
+| | NFR-DUR3 | Todas las fechas y timestamps deberán almacenarse en formato UTC para garantizar consistencia entre zonas horarias. |
+| Disponibilidad | NFR-AVAIL1 | El sistema deberá mantener un 99% de uptime mensual, exceptuando ventanas de mantenimiento programado. |
+| | NFR-AVAIL2 | El sistema deberá reintentar operaciones fallidas de publicación de eventos al Message Bus hasta 3 veces antes de registrar el error. |
+| | NFR-AVAIL3 | El Reminder Service deberá mantener la cola de recordatorios pendientes disponible de forma independiente, de modo que un fallo en otro microservicio no interrumpa el envío de notificaciones. |
+
+
+
+
+
+
+
+
+
 | Epic / Story ID | Título                                          | Descripción                                                                                                                                                            | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                         | Relación con Epic |
 | --------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
 | EP01            | Registro y roles                                | Como usuario de MediTrack, quiero registrarme y acceder al sistema con un rol específico, para usar las funciones correspondientes a paciente o personal técnico.      | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
