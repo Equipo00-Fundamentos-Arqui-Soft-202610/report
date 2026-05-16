@@ -2105,9 +2105,37 @@ El siguiente diagrama representa el modelo de despliegue de MediTrack siguiendo 
 
 #### 5.3.1.2. Development Evidence for Sprint Review
 
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-| ---------- | ------ | --------- | -------------- | ------------------- | ------------------- |
-|            |        |           |                |                     |                     |
+Durante este Sprint, se lograron avances significativos en la implementación de la landing page Medritrack, destacando la creación del frontend usando HTML, un diseño responsivo y estilizado con CSS, y la incorporación de funcionalidades dinámicas mediante JavaScript. Realizado en el periado de 11 de Abril al 11 de Mayo. Ademas de avance en 2 de los mircroservicios.
+
+**Commits Report (Equipo00-Fundamentos-Arqui-Soft-202610):**
+
+| Repository              | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+| ----------------------- | ------ | --------- | -------------- | ------------------- | ------------------- |
+| WoodsDos/report         | dev    | 9aab934af4002f26aca4487d5e1eb8a386154336 | Merge pull request #44 from Equipo00-Fundamentos-Arqui-Soft-202610/feature/sprint-1 | Feature/sprint 1 | 2026-05-15 17:57:29 -0500 |
+| jquijada-dev/report     | dev    | 597ecf0daee34ac205deaa4ec6c989bdf3090c4a | feat: fixed diagrams background color |  | 2026-05-15 17:42:07 -0500 |
+| 1sopod/report           | dev    | 54f2ef10149ab4745a9f1340fb7e2b1c111da44d | fix: updated container diagram |  | 2026-05-15 16:26:25 -0500 |
+| VRojas1603/report       | dev    | 037ea6d0808427dbb491a512f62b7076440774a4 | Merge pull request #43 from Equipo00-Fundamentos-Arqui-Soft-202610/feature/5-2-3-source-code-style-guide | docs: add source code style guide section | 2026-05-15 13:22:20 -0500 |
+| psulca/report           | dev    | 90be5a549bcb2fe306fa8d09062df9c37500e996 | docs: add source code style guide section |  | 2026-05-15 13:12:06 -0500 |
+| WoodsDos/report         | dev    | b3ae7158631b5b37c407827dd3c163a9b35a88e2 | Merge pull request #42 from Equipo00-Fundamentos-Arqui-Soft-202610/feature/5-2-2-source-code-management | docs: add source code management section | 2026-05-15 11:27:43 -0500 |
+| jquijada-dev/report     | dev    | d80f0978290d84649713a2dfd1cff458e9f9ba38 | docs: add source code management section |  | 2026-05-15 09:18:07 -0500 |
+| 1sopod/report           | dev    | 27415c2e9484baf213acab967c9c420838203daf | Merge pull request #41 from Equipo00-Fundamentos-Arqui-Soft-202610/feature/5-2-1-software-development-environment-configuration | docs: add software development environment configuration | 2026-05-15 08:49:39 -0500 |
+| VRojas1603/report       | dev    | ad69a613113d479df37216dd99cc2c0d2994aba2 | docs: add software development environment configuration |  | 2026-05-15 08:47:19 -0500 |
+| psulca/report           | dev    | e23a846d13c19d550f9d9643d2a41a3823652880 | Merge pull request #40 from Equipo00-Fundamentos-Arqui-Soft-202610/fix/adjusted-user-stories | feat: adjusted user stories | 2026-05-12 14:33:45 -0500 |
+| WoodsDos/report         | dev    | ad0d3efe879d76e55a36c1e11e597e075394934e | feat: adjusted user stories | Fixed user story 26 and added landing page user stories | 2026-05-12 14:33:06 -0500 |
+
+---
+
+**Commits Meditrack_Landing_Page:**
+
+| Repository                          | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+| ----------------------------------- | ------ | --------- | -------------- | ------------------- | ------------------- |
+| jquijada-dev/Meditrack_Landing_Page | HEAD -> main, origin/main, origin/HEAD | 0553bb93ff965af0ed65c1dcc43689dbc8dae31e | Merge pull request #3 from Equipo00-Fundamentos-Arqui-Soft-202610/dev | Dev | 2026-05-15 13:30:48 -0500 |
+| 1sopod/Meditrack_Landing_Page       | origin/dev | 6897e4c69ab988cc6b884fc8ba24f4288b902631 | Merge pull request #2 from Equipo00-Fundamentos-Arqui-Soft-202610/feature/landing-page-content | feature: enhance UI styles, add VSCode settings & scripts | 2026-05-11 02:06:25 -0500 |
+| VRojas1603/Meditrack_Landing_Page   | origin/feature/landing-page-content | fef6d7d2fab87841b981bd263529049ce27d4dfd | feature: enhance UI styles, add VSCode settings & scripts | Large UI overhaul: refactors and extends styles.css with new layout constraints, gradients, shadows, responsive tweaks, accessibility/focus states, animations (slide, float, shimmer, glow), improved header/nav, cards, hero, features, testimonials and contact sections. Adds .vscode/settings.json with custom color theming for development environment. Enhances interactivity in js/script.js: adds IntersectionObserver scroll animations, smooth anchor scrolling, button hover effects, hero parallax, and a data-count counter animation. | 2026-05-11 02:05:15 -0500 |
+| psulca/Meditrack_Landing_Page       |        | 6cdd6005fea8633fd827cb3daf43b8e2c3cc22a5 | Merge pull request #1 from Equipo00-Fundamentos-Arqui-Soft-202610/feature/landing-page-content | Feature/landing page content | 2026-05-08 23:48:18 -0500 |
+| WoodsDos/Meditrack_Landing_Page     |        | 3dc199d77fcfb759dd2301152825e27bbd2f9240 | feat; add landing page sections | added landing page sections | 2026-05-08 23:47:40 -0500 |
+| jquijada-dev/Meditrack_Landing_Page |        | 7bd98553cec0f75b47a206648f0bcf75c8ae6db6 | feat: reorganize page contents | reorganized landing page and added placeholders for images | 2026-05-08 18:11:42 -0500 |
+| 1sopod/Meditrack_Landing_Page       |        | f74a9384708999b02a9adb249cd9529006a037d2 | feat: inital commit |  | 2026-05-08 12:17:22 -0500 |
 
 #### 5.3.1.3. Testing Suite Evidence for Sprint Review
 
@@ -2117,13 +2145,85 @@ El siguiente diagrama representa el modelo de despliegue de MediTrack siguiendo 
 
 #### 5.3.1.4. Execution Evidence for Sprint Review
 
+Durante este Sprint se lograron avances significativos en el desarrollo y documentación de los Web Services. Aunque no se realizó un despliegue formal en un entorno productivo, se construyeron dos componentes clave:
+
+- Microservicios desarrollados: Compliance y Medications.
+- Landing Page para visualización inicial.
+- Prototipo funcional accesible mediante un enlace compartido, que permitió validar la lógica de los servicios y su interacción.
+
+**Evidencias:**
+- Screenshots de Postman mostrando las operaciones principales:
+
+  <td align="center"><img src="assets/images/Prueba_Postman.png" alt="Context diagram" ></td>
+
+  _Anexo de Prueba Postman. Elaboración propia._
+
+- Capturas del Swagger UI con los endpoints documentados.
+
+  <td align="center"><img src="assets/images/Cap-treatment.png" alt="Context diagram" ></td>
+
+  _Anexo del Treatment Service. Elaboración propia._
+  
+
+  <td align="center"><img src="assets/images/Cap - FollowUp.png" alt="Context diagram" ></td>
+
+  _Anexo del FollowUp Service. Elaboración propia._
+
+- Enlace al prototipo: https://stitch.withgoogle.com/preview/2917742923999304642?node-id=3f7c03713a40437494706973672a2c87
+
+  <td align="center"><img src="assets/images/Protitipo.png" alt="Context diagram" ></td>
+
+  _Anexo del prototipo. Elaboración propia._
+
 #### 5.3.1.5. Microservices Documentation Evidence for Sprint Review
 
-| Microservicio | Verbo | Endpoint | Parámetros | Response |
-| ------------- | ----- | -------- | ---------- | -------- |
-|               |       |          |            |          |
+Durante este Sprint se consolidó la realizacion de 2 Microservices mediante OpenAPI (Swagger UI), asegurando que cada microservicio esté descrito con sus acciones, parámetros y respuestas. Esto facilita la validación de servicios RESTful, la integración con aplicaciones móviles/web y la trazabilidad de cambios en el repositorio.
+
+#### Treatment Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Treatment-service
+
+**Imagen de prueba:**
+<td align="center"><img src="assets/images/Cap-treatment.png" alt="Context diagram" ></td>
+
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| TreatmentService | POST | ``/api/v1/clinical-records`` | Body: ``{ ``"patientId":0,"uploadedBy":0,"datasetSource":"string","fileUrl":"string" ``}`` | ``{ ``"id":1,"patientId":0,"uploadedBy":0,"datasetSource":"string","fileUrl":"string","status":"ok" ``}`` |
+| TreatmentService | PUT | ``/api/v1/medications/{medicationId}`` | Path: ``medicationId``, Body: ``{ ``"dose":"string","frequencyHour":0,"startDate":"2026-05-16T00:52:17.777Z","endDate":"2026-05-16T00:52:17.777Z","stockCount":0,"stockAlertThre":0,"authorizedByTechnicalStaff":true ``}`` | ``{ ``"id":5,"dose":"string","frequencyHour":0,"status":"updated" ``}`` |
+| TreatmentService | PATCH | ``/api/v1/medications/{medicationId}/cancel`` | Path: ``medicationId``, Body: ``{ ``"authorizedByTechnicalStaff":true ``}`` | ``{ ``"id":5,"status":"cancelled" ``}`` |
+| TreatmentService | GET | ``/api/v1/patients/search`` | Query: ``?query=Juan`` | ``[{"id":1,"name":"Juan Perez","age":30}]`` |
+| TreatmentService | POST | ``/api/v1/prescriptions`` | Body: ``{ ``"patientId":0,"technicalId":0,"notes":"string","medications":[{"catalogId":0,"dose":"string","frequencyHour":0,"startDate":"2026-05-16T00:52:17.784Z","endDate":"2026-05-16T00:52:17.784Z","stockCount":0,"stockAlertThre":0,"doseSchedules":[{"scheduledTime":"string"}]}] ``}`` | ``{ ``"id":20,"patientId":0,"status":"created" ``}`` |
+
+#### Treatment Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/FollowUp-Service
+
+**Imagen de prueba:**
+<td align="center"><img src="assets/images/Cap - FollowUp.png" alt="Context diagram" ></td>
+
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| FollowUpService | POST | ``/api/v1/compliance`` | Query: ``patientId``, Body: ``{ ``"patientId":0,"doseScheduleId":0,"status":"string","videoUrl":"string","offlineRecordedAt":"2026-05-16T00:48:58.697Z" ``}`` | ``{ ``"id":0,"patientId":0,"doseScheduleId":0,"status":"string","recordedAt":"2026-05-16T00:48:58.698Z","videoUrl":"string","synced":true,"offlineRecordedAt":"2026-05-16T00:48:58.698Z" ``}`` |
+| FollowUpService | GET | ``/api/v1/compliance/{id}`` | Path: ``id`` | ``{ ``"id":0,"patientId":0,"doseScheduleId":0,"status":"string","recordedAt":"2026-05-16T00:48:58.700Z","videoUrl":"string","synced":true,"offlineRecordedAt":"2026-05-16T00:48:58.700Z" ``}`` |
+| FollowUpService | GET | ``/api/v1/medications`` | Query: ``patientId`` | ``[{"id":0,"patientId":0,"name":"string","dose":"string","frequencyHours":0,"startDate":"2026-05-16T00:48:58.702Z","endDate":"2026-05-16T00:48:58.702Z","stockCount":0,"isActive":true,"schedules":[{"id":0,"scheduledTime":"string","isActive":true}]}]`` |
+| FollowUpService | GET | ``/api/v1/medications/next-dose`` | Query: ``patientId`` | ``{ ``"medicationName":"string","dose":"string","scheduledTime":"string","minutesUntilDose":0 ``}`` |
 
 #### 5.3.1.6. Software Deployment Evidence for Sprint Review
+
+Durante este Sprint no se realizó un deployment formal de los Web Services en un entorno productivo ni staging. Sin embargo, se avanzó en la construcción de un prototipo funcional, el cual permite visualizar y validar la lógica de los servicios desarrollados. Este prototipo se encuentra disponible mediante un enlace público, lo que facilita la revisión por parte del equipo y stakeholders.
+
+**Actividades realizadas**
+- Configuración inicial de repositorios en GitHub para centralizar el código de los Web Services.
+- Definición de endpoints y documentación con Swagger UI, asegurando trazabilidad y pruebas locales.
+- Prototipo accesible 
+- Validación interna: se realizaron pruebas locales con datos de muestra para confirmar la correcta respuesta de los endpoints.
+
+**Evidencias:**
+- Endpoints:
+  <td align="center"><img src="assets/images/Cap - FollowUp.png" alt="Context diagram" ></td>
+- Prototipo accesible:
+  <td align="center"><img src="assets/images/Protitipo.png" alt="Context diagram" ></td>
+  Link: https://stitch.withgoogle.com/preview/2917742923999304642?node-id=3f7c03713a40437494706973672a2c87
 
 #### 5.3.1.7. Team Collaboration Insights during Sprint
 
@@ -2239,11 +2339,13 @@ El siguiente diagrama representa el modelo de despliegue de MediTrack siguiendo 
 
 #### 5.3.4.5. Microservices Documentation Evidence for Sprint Review
 
+
 | Microservicio | Verbo | Endpoint | Parámetros | Response |
 | ------------- | ----- | -------- | ---------- | -------- |
 |               |       |          |            |          |
 
 #### 5.3.4.6. Software Deployment Evidence for Sprint Review
+
 
 #### 5.3.4.7. Team Collaboration Insights during Sprint
 
@@ -2300,5 +2402,7 @@ El siguiente diagrama representa el modelo de despliegue de MediTrack siguiendo 
 <hr class="page-break">
 
 # Anexos
+
+Link del prototipo: https://stitch.withgoogle.com/preview/2917742923999304642?node-id=3f7c03713a40437494706973672a2c87
 
 ## Links
