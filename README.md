@@ -16,9 +16,11 @@
 
 <h3 style="text-align: center;"> Informe de Trabajo Final </h3>
 
+
 <h4 style="text-align: center"> Startup: Pafi Solutions </h4>
 
 <h4 style="text-align: center"> Producto: MediTrack </h4>
+
 
 <h4 style="text-align: center">Integrantes:</h4>
 
@@ -29,6 +31,7 @@
          <th>Apellidos y Nombres</th>
       </tr>
       <tr>
+
          <td>U202312966</td>
          <td>Gonzales Alvarado, Javier Sebastian</td>
       </tr>
@@ -59,6 +62,7 @@
 
 # Registro de Versiones del Informe
 
+
 | Versión | Fecha      | Autor                                      | Descripción de modificación                                                                                                                      |
 | :------ | :--------- | :----------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1.0     | 11/04/2026 | Rojas Reategui, Victor Manuel              | Creación de la estructura inicial del informe                                                                                                    |
@@ -76,11 +80,13 @@
 | 2.4     | 01/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo IV: Constraints y Architectural Concerns (4.1.11, 4.1.12)                                                                               |
 | 2.5     | 02/05/2026 | Jeremy Quijada Magro y Piero Sulca Sanchez | Capítulo IV: ADD Iterations 1 & 2                                                                                                                |
 
+
 <hr class="page-break">
 
 # Contenido
 
 - [Capítulo I: Introducción](#capítulo-i-introducción)
+
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
     - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
@@ -194,6 +200,7 @@
     - [5.4.1. Cloud Architecture Diagram](#541-cloud-architecture-diagram)
     - [5.4.2. Cloud Architecture Deployment](#542-cloud-architecture-deployment)
 
+
 - [Conclusiones](#conclusiones)
 - [Referencias Bibliográficas](#referencias-bibliográficas)
 - [Anexos](#anexos)
@@ -202,7 +209,9 @@
 
 # Student Outcome
 
+
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
+
 
 <table>
   <thead>
