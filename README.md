@@ -1039,49 +1039,49 @@ _Figura 9. To-Be Scenario Mapping del segmento Personal de Apoyo. Elaboración p
 
 ## 3.2. User Stories
 
-| Epic / Story ID | Título                                          | Descripción                                                                                                                                                            | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                    | Relación con Epic |
-| --------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| EP01            | Registro y roles                                | Como usuario de MediTrack, quiero registrarme y acceder al sistema con un rol específico, para usar las funciones correspondientes a paciente o personal técnico.      | No corresponde                                                                                                                                                                                                                                                                                                                                                             | No corresponde    |
-| EP02            | Gestión de medicamentos para pacientes          | Como paciente con tratamiento activo, quiero gestionar mis medicamentos con recordatorios y alertas de stock, para no olvidar ninguna dosis ni quedarme sin pastillas. | No corresponde                                                                                                                                                                                                                                                                                                                                                             | No corresponde    |
-| EP03            | Gestión de citas y exámenes                     | Como paciente, quiero gestionar mis citas médicas y exámenes clínicos, para estar preparado y no faltar a ninguna.                                                     | No corresponde                                                                                                                                                                                                                                                                                                                                                             | No corresponde    |
-| EP04            | Carga de datos clínicos para personal técnico   | Como personal técnico de hospital, quiero subir recetas e historiales clínicos, para que los pacientes reciban su información automáticamente.                         | No corresponde                                                                                                                                                                                                                                                                                                                                                             | No corresponde    |
-| EP05            | Estadísticas y tendencias para personal técnico | Como personal técnico, quiero ver estadísticas de adherencia y cumplimiento, para analizar la evolución de mis pacientes.                                              | No corresponde                                                                                                                                                                                                                                                                                                                                                             | No corresponde    |
-| EP06            | Edición de perfil                               | Como usuario de MediTrack, quiero editar mi información personal, para mantener mis datos actualizados.                                                                | No corresponde                                                                                                                                                                                                                                                                                                                                                             | No corresponde    |
-| EP07            | Landing Page                                    | Como visitante, quiero conocer sobre MediTrack y navegar hacia el registro, para decidir si deseo usar la plataforma.                                                  | No corresponde                                                                                                                                                                                                                                                                                                                                                             | No corresponde    |
-| US01            | Registro de paciente                            | Como paciente, quiero crear una cuenta en la aplicación móvil, para gestionar mis tratamientos y citas.                                                                | **Escenario 1:** Dado que el paciente ingresa nombre, correo y contraseña válidos, cuando presiona "Registrarse", entonces la cuenta se crea y accede al home. **Escenario 2:** Dado que el correo ya existe, cuando intenta registrarse, entonces ve el mensaje "Correo ya registrado".                                                                                   | EP01              |
-| US02            | Registro de personal técnico                    | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes.                                                    | **Escenario 1:** Dado que el personal ingresa sus datos y selecciona su institución, cuando presiona "Registrarse", entonces la cuenta se crea con rol "Personal Técnico". **Escenario 2:** Dado que falta un campo obligatorio, cuando intenta registrarse, entonces ve "Completa todos los campos".                                                                      | EP01              |
-| US03            | Inicio de sesión                                | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol.                                                   | **Escenario 1:** Dado que el usuario tiene cuenta activa, cuando ingresa credenciales correctas, entonces accede a su dashboard. **Escenario 2:** Dado que las credenciales son incorrectas, cuando presiona "Ingresar", entonces ve "Correo o contraseña incorrectos".                                                                                                    | EP01              |
-| US04            | Ver lista de medicamentos                       | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                                             | **Escenario 1:** Dado que el personal técnico subió mi receta, cuando abro la sección "Mis medicamentos", entonces veo nombre, dosis y horario de cada uno. **Escenario 2:** Dado que no tengo receta cargada, cuando accedo a la sección, entonces veo "No tienes medicamentos registrados".                                                                              | EP02              |
-| US05            | Recibir recordatorio de medicamento             | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                                               | **Escenario 1:** Dado que tengo un medicamento programado a las 8am, cuando llega esa hora, entonces recibo una notificación push con el nombre y la dosis. **Escenario 2:** Dado que son múltiples medicamentos, cuando llega cada horario, entonces recibo una notificación por cada uno.                                                                                | EP02              |
-| US06            | Registrar cumplimiento de medicamento           | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                                                     | **Escenario 1:** Dado que recibo una notificación de medicamento, cuando presiono "Tomado", entonces se registra el cumplimiento con fecha y hora. **Escenario 2:** Dado que olvidé marcar en el momento, cuando entro a la aplicación y presiono "Tomado" después, entonces se registra igualmente.                                                                       | EP02              |
-| US07            | Alerta de stock bajo                            | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.                                    | **Escenario 1:** Dado que me quedan 3 pastillas de un medicamento, cuando abro la aplicación, entonces veo la alerta "Te quedan 3 pastillas de [nombre]". **Escenario 2:** Dado que me quedan 3 pastillas, cuando llega el horario de la siguiente toma, entonces recibo una notificación adicional de stock bajo.                                                         | EP02              |
-| US08            | Agendar cita médica                             | Como paciente, quiero registrar una nueva cita médica en la aplicación, para tenerla en mi calendario y recibir recordatorios.                                         | **Escenario 1:** Dado que ingreso fecha, hora y tipo de cita, cuando presiono "Agendar", entonces la cita se guarda y aparece en mi lista. **Escenario 2:** Dado que ingreso una fecha pasada, cuando intento agendar, entonces veo "La fecha debe ser posterior a hoy".                                                                                                   | EP03              |
-| US09            | Recibir recordatorio de cita médica             | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla.                                                                                    | **Escenario 1:** Dado que tengo una cita mañana a las 10am, cuando faltan 24 horas, entonces recibo una notificación con fecha, hora y lugar. **Escenario 2:** Dado que tengo una cita en 2 horas, cuando falta ese tiempo, entonces recibo una segunda notificación.                                                                                                      | EP03              |
-| US10            | Registrar cumplimiento de cita                  | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado.                                                                         | **Escenario 1:** Dado que tengo una cita agendada para hoy, cuando presiono "Asistí", entonces se registra el cumplimiento. **Escenario 2:** Dado que no pude asistir, cuando presiono "No asistí", entonces queda registrada como inasistencia.                                                                                                                           | EP03              |
-| US11            | Ver requisitos de cita                          | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado.                                                                                    | **Escenario 1:** Dado que mi cita requiere muestra de orina, cuando abro el detalle de la cita, entonces veo "Requisito: traer muestra de orina". **Escenario 2:** Dado que la cita no tiene requisitos, cuando abro el detalle, entonces veo "No se requiere preparación especial".                                                                                       | EP03              |
-| US12            | Recordatorio de examen clínico                  | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados.                                                | **Escenario 1:** Dado que tengo un examen programado, cuando llega la fecha de recojo, entonces recibo una notificación con el tipo de examen. **Escenario 2:** Dado que ya pasó la fecha de recojo, cuando abro la aplicación, entonces veo un aviso pendiente.                                                                                                           | EP03              |
-| US13            | Subir receta médica con horarios                | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su aplicación.                       | **Escenario 1:** Dado que ingreso nombre del medicamento, dosis y horarios, cuando presiono "Subir receta", entonces el paciente la recibe automáticamente. **Escenario 2:** Dado que falta el horario de una toma, cuando intento subir, entonces veo "Completa todos los horarios".                                                                                      | EP04              |
-| US14            | Subir historial clínico                         | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                                          | **Escenario 1:** Dado que selecciono un archivo de dataset válido, cuando presiono "Cargar", entonces el historial se vincula al paciente correspondiente. **Escenario 2:** Dado que el paciente no existe en el dataset, cuando intento cargarlo, entonces veo "Paciente no encontrado".                                                                                  | EP04              |
-| US15            | Buscar paciente individual                      | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento.                                                              | **Escenario 1:** Dado que ingreso un DNI válido, cuando busco, entonces veo el perfil completo del paciente. **Escenario 2:** Dado que no hay coincidencias, cuando busco, entonces veo "No se encontraron pacientes".                                                                                                                                                     | EP04              |
-| US16            | Ver dashboard de tendencias de adherencia       | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento.                        | **Escenario 1:** Dado que hay datos de cumplimiento registrados, cuando accedo al dashboard, entonces veo gráficos de tendencia por paciente. **Escenario 2:** Dado que no hay datos suficientes, cuando accedo, entonces veo "Sin datos disponibles para mostrar tendencias".                                                                                             | EP05              |
-| US17            | Ver estadísticas de cumplimiento de recetas     | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento.                                             | **Escenario 1:** Dado que hay múltiples recetas activas, cuando accedo a estadísticas, entonces veo porcentaje de cumplimiento por cada receta. **Escenario 2:** Dado que una receta tiene bajo cumplimiento, entonces aparece resaltada en el gráfico.                                                                                                                    | EP05              |
-| US18            | Ver estadísticas de citas                       | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones.                                                 | **Escenario 1:** Dado que hay citas registradas, cuando accedo a la sección, entonces veo un gráfico circular con tipos de cita. **Escenario 2:** Dado que no hay citas, cuando accedo, entonces veo "No hay datos de citas disponibles".                                                                                                                                  | EP05              |
-| US19            | Editar perfil de usuario                        | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada.                                            | **Escenario 1:** Dado que modifico mi teléfono o subo una nueva foto, cuando presiono "Guardar", entonces el cambio se refleja inmediatamente. **Escenario 2:** Dado que ingreso un formato inválido, cuando intento guardar, entonces veo "Formato incorrecto".                                                                                                           | EP06              |
-| US20            | Recuperar contraseña                            | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta.                                                                      | **Escenario 1:** Dado que ingreso mi correo registrado, cuando presiono "Recuperar contraseña", entonces recibo un enlace por correo. **Escenario 2:** Dado que el correo no existe, entonces veo "Correo no registrado". **Escenario 3:** Dado que uso el enlace, cuando ingreso una nueva contraseña válida, entonces la cuenta se actualiza.                            | EP01              |
-| US21            | Cerrar sesión                                   | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información.                                                                                      | **Escenario 1:** Dado que estoy logueado, cuando presiono "Cerrar sesión", entonces se cierra la sesión y regresa a la pantalla de login. **Escenario 2:** Dado que cierro la aplicación, cuando la abro nuevamente, entonces debo iniciar sesión otra vez.                                                                                                                | EP01              |
-| US22            | Configurar preferencias de notificaciones       | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.                                 | **Escenario 1:** Dado que accedo a Configuración, cuando elijo sonido, vibración y número de repeticiones, entonces las notificaciones se aplican según mi elección. **Escenario 2:** Dado que desactivo temporalmente las notificaciones, entonces no recibo recordatorios hasta que las reactive.                                                                        | EP02              |
-| US23            | Funcionar en modo offline                       | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar.                                       | **Escenario 1:** Dado que no tengo internet, cuando abro la aplicación, entonces veo la lista de medicamentos y puedo marcar "Tomado". **Escenario 2:** Dado que recupero internet, entonces se sincronizan automáticamente los registros.                                                                                                                                 | EP02              |
-| US24            | Editar o cancelar medicamento                   | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                                        | **Escenario 1:** Dado que el personal técnico autoriza el cambio, cuando edito un medicamento, entonces se actualiza y se notifica al paciente. **Escenario 2:** Dado que intento cancelar sin autorización, entonces veo "Solo el personal técnico puede cancelar".                                                                                                       | EP02              |
-| US25            | Ver historial de adherencia y progreso          | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                                        | **Escenario 1:** Dado que tengo registros de cumplimiento, cuando accedo a "Mi progreso", entonces veo gráfico de porcentaje de adherencia semanal. **Escenario 2:** Dado que no hay datos suficientes, entonces veo "Aún no hay suficiente información para mostrar progreso".                                                                                            | EP02 / EP03       |
-| US26            | Ver próxima toma pendiente                      | Como paciente, quiero ver cuál es mi próxima toma programada y en cuánto tiempo es, para estar preparado.                                                              | **Escenario 1:** Dado que el paciente tiene un tratamiento activo con medicamentos programados, cuando ingresa a la pantalla principal de la aplicación móvil, entonces el sistema debe mostrar una tarjeta con el nombre del medicamento, la dosis y la hora exacta de la próxima toma más cercana al tiempo actual, y debe mostrar un contador regresivo en tiempo real. | EP02              |
-| US27            | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo.                                 | **Escenario 1:** Dado que un paciente tiene adherencia <70 %, entonces recibo notificación en el portal web. **Escenario 2:** Dado que configuro el umbral, entonces las alertas se ajustan al nuevo valor.                                                                                                                                                                | EP05              |
-| US28            | Cambiar contraseña                              | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura.                                                                                            | **Escenario 1:** Dado que ingreso la contraseña actual y la nueva, cuando confirmo, entonces la contraseña se actualiza y se cierra la sesión actual. **Escenario 2:** Dado que la contraseña actual es incorrecta, cuando confirmo, entonces veo "Contraseña actual incorrecta".                                                                                          | EP01              |
-| US29            | Editar o cancelar cita médica                   | Como paciente, quiero editar o cancelar una cita médica, para corregir errores en mi agenda.                                                                           | **Escenario 1:** Dado que tengo una cita agendada a futuro, cuando la edito o cancelo, entonces se actualiza en mi calendario y se eliminan sus recordatorios. **Escenario 2:** Dado que intento modificar una cita pasada, entonces veo "No se pueden modificar citas pasadas".                                                                                           | EP03              |
-| US30            | Ver propuesta de valor                          | Como visitante, quiero entender qué hace MediTrack en la página principal, para decidir si me interesa.                                                                | **Escenario 1:** Dado que soy visitante nuevo, cuando accedo a la Landing Page, entonces veo una descripción clara de qué es MediTrack y su propuesta de valor.                                                                                                                                                                                                            | EP07              |
-| US31            | Ver funcionalidades por segmento                | Como visitante, quiero ver qué funciones ofrece MediTrack para pacientes y para personal médico, para saber si aplica a mi caso.                                       | **Escenario 1:** Dado que soy visitante, cuando accedo a la sección "Funcionalidades", entonces veo características específicas para pacientes y para personal técnico. **Escenario 2:** Dado que consulto un segmento específico, entonces veo ejemplos claros de cada funcionalidad con descripciones breves.                                                            | EP07              |
-| US32            | Ver testimonios o casos de uso                  | Como visitante, quiero ver ejemplos de uso real, para generar confianza en la plataforma.                                                                              | **Escenario 1:** Dado que soy visitante nuevo, cuando accedo a la sección "Testimonios", entonces veo casos de uso reales o testimonios de pacientes.                                                                                                                                                                                                                      | EP07              |
-| US33            | Navegar a registro desde landing                | Como visitante interesado, quiero acceder al registro desde la landing, para crear mi cuenta fácilmente.                                                               | **Escenario 1:** Dado que me interesa MediTrack, cuando presiono "Registrarse" desde cualquier parte del landing, entonces accedo al formulario de registro. **Escenario 2:** Dado que completo el registro, cuando presiono "Crear cuenta", entonces mi cuenta se crea y accedo a mi dashboard.                                                                           | EP07              |
-| US34            | Ver información de contacto                     | Como visitante, quiero encontrar información de contacto o soporte, para resolver dudas antes de registrarme.                                                          | **Escenario 1:** Dado que tengo dudas, cuando accedo a la sección "Contacto", entonces veo correo, teléfono o formulario de contacto.                                                                                                                                                                                                                                      | EP07              |
+| Epic / Story ID | Título                                          | Descripción                                                                                                                                                            | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                         | Relación con Epic |
+| --------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| EP01            | Registro y roles                                | Como usuario de MediTrack, quiero registrarme y acceder al sistema con un rol específico, para usar las funciones correspondientes a paciente o personal técnico.      | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
+| EP02            | Gestión de medicamentos para pacientes          | Como paciente con tratamiento activo, quiero gestionar mis medicamentos con recordatorios y alertas de stock, para no olvidar ninguna dosis ni quedarme sin pastillas. | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
+| EP03            | Gestión de citas y exámenes                     | Como paciente, quiero gestionar mis citas médicas y exámenes clínicos, para estar preparado y no faltar a ninguna.                                                     | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
+| EP04            | Carga de datos clínicos para personal técnico   | Como personal técnico de hospital, quiero subir recetas e historiales clínicos, para que los pacientes reciban su información automáticamente.                         | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
+| EP05            | Estadísticas y tendencias para personal técnico | Como personal técnico, quiero ver estadísticas de adherencia y cumplimiento, para analizar la evolución de mis pacientes.                                              | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
+| EP06            | Edición de perfil                               | Como usuario de MediTrack, quiero editar mi información personal, para mantener mis datos actualizados.                                                                | No corresponde  | No corresponde    |
+| EP07            | Landing Page          | Como visitante, quiero conocer sobre MediTrack y navegar hacia el registro, para decidir si deseo usar la plataforma.                                                   | No corresponde           | No corresponde    |
+| US01            | Registro de paciente                            | Como paciente, quiero crear una cuenta en la aplicación móvil, para gestionar mis tratamientos y citas.                                                                | **Escenario 1:** Dado que el paciente ingresa nombre, correo y contraseña válidos, cuando presiona "Registrarse", entonces la cuenta se crea y accede al home. **Escenario 2:** Dado que el correo ya existe, cuando intenta registrarse, entonces ve el mensaje "Correo ya registrado".                                                        | EP01              |
+| US02            | Registro de personal técnico                    | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes.                                                    | **Escenario 1:** Dado que el personal ingresa sus datos y selecciona su institución, cuando presiona "Registrarse", entonces la cuenta se crea con rol "Personal Técnico". **Escenario 2:** Dado que falta un campo obligatorio, cuando intenta registrarse, entonces ve "Completa todos los campos".                                           | EP01              |
+| US03            | Inicio de sesión                                | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol.                                                   | **Escenario 1:** Dado que el usuario tiene cuenta activa, cuando ingresa credenciales correctas, entonces accede a su dashboard. **Escenario 2:** Dado que las credenciales son incorrectas, cuando presiona "Ingresar", entonces ve "Correo o contraseña incorrectos".                                                                         | EP01              |
+| US04            | Ver lista de medicamentos                       | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                                             | **Escenario 1:** Dado que el personal técnico subió mi receta, cuando abro la sección "Mis medicamentos", entonces veo nombre, dosis y horario de cada uno. **Escenario 2:** Dado que no tengo receta cargada, cuando accedo a la sección, entonces veo "No tienes medicamentos registrados".                                                   | EP02              |
+| US05            | Recibir recordatorio de medicamento             | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                                               | **Escenario 1:** Dado que tengo un medicamento programado a las 8am, cuando llega esa hora, entonces recibo una notificación push con el nombre y la dosis. **Escenario 2:** Dado que son múltiples medicamentos, cuando llega cada horario, entonces recibo una notificación por cada uno.                                                     | EP02              |
+| US06            | Registrar cumplimiento de medicamento           | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                                                     | **Escenario 1:** Dado que recibo una notificación de medicamento, cuando presiono "Tomado", entonces se registra el cumplimiento con fecha y hora. **Escenario 2:** Dado que olvidé marcar en el momento, cuando entro a la aplicación y presiono "Tomado" después, entonces se registra igualmente.                                            | EP02              |
+| US07            | Alerta de stock bajo                            | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.                                    | **Escenario 1:** Dado que me quedan 3 pastillas de un medicamento, cuando abro la aplicación, entonces veo la alerta "Te quedan 3 pastillas de [nombre]". **Escenario 2:** Dado que me quedan 3 pastillas, cuando llega el horario de la siguiente toma, entonces recibo una notificación adicional de stock bajo.                              | EP02              |
+| US08            | Agendar cita médica                             | Como paciente, quiero registrar una nueva cita médica en la aplicación, para tenerla en mi calendario y recibir recordatorios.                                         | **Escenario 1:** Dado que ingreso fecha, hora y tipo de cita, cuando presiono "Agendar", entonces la cita se guarda y aparece en mi lista. **Escenario 2:** Dado que ingreso una fecha pasada, cuando intento agendar, entonces veo "La fecha debe ser posterior a hoy".                                                                        | EP03              |
+| US09            | Recibir recordatorio de cita médica             | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla.                                                                                    | **Escenario 1:** Dado que tengo una cita mañana a las 10am, cuando faltan 24 horas, entonces recibo una notificación con fecha, hora y lugar. **Escenario 2:** Dado que tengo una cita en 2 horas, cuando falta ese tiempo, entonces recibo una segunda notificación.                                                                           | EP03              |
+| US10            | Registrar cumplimiento de cita                  | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado.                                                                         | **Escenario 1:** Dado que tengo una cita agendada para hoy, cuando presiono "Asistí", entonces se registra el cumplimiento. **Escenario 2:** Dado que no pude asistir, cuando presiono "No asistí", entonces queda registrada como inasistencia.                                                                                                | EP03              |
+| US11            | Ver requisitos de cita                          | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado.                                                                                    | **Escenario 1:** Dado que mi cita requiere muestra de orina, cuando abro el detalle de la cita, entonces veo "Requisito: traer muestra de orina". **Escenario 2:** Dado que la cita no tiene requisitos, cuando abro el detalle, entonces veo "No se requiere preparación especial".                                                            | EP03              |
+| US12            | Recordatorio de examen clínico                  | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados.                                                | **Escenario 1:** Dado que tengo un examen programado, cuando llega la fecha de recojo, entonces recibo una notificación con el tipo de examen. **Escenario 2:** Dado que ya pasó la fecha de recojo, cuando abro la aplicación, entonces veo un aviso pendiente.                                                                                | EP03              |
+| US13            | Subir receta médica con horarios                | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su aplicación.                       | **Escenario 1:** Dado que ingreso nombre del medicamento, dosis y horarios, cuando presiono "Subir receta", entonces el paciente la recibe automáticamente. **Escenario 2:** Dado que falta el horario de una toma, cuando intento subir, entonces veo "Completa todos los horarios".                                                           | EP04              |
+| US14            | Subir historial clínico                         | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                                          | **Escenario 1:** Dado que selecciono un archivo de dataset válido, cuando presiono "Cargar", entonces el historial se vincula al paciente correspondiente. **Escenario 2:** Dado que el paciente no existe en el dataset, cuando intento cargarlo, entonces veo "Paciente no encontrado".                                                       | EP04              |
+| US15            | Buscar paciente individual                      | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento.                                                              | **Escenario 1:** Dado que ingreso un DNI válido, cuando busco, entonces veo el perfil completo del paciente. **Escenario 2:** Dado que no hay coincidencias, cuando busco, entonces veo "No se encontraron pacientes".                                                                                                                          | EP04              |
+| US16            | Ver dashboard de tendencias de adherencia       | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento.                        | **Escenario 1:** Dado que hay datos de cumplimiento registrados, cuando accedo al dashboard, entonces veo gráficos de tendencia por paciente. **Escenario 2:** Dado que no hay datos suficientes, cuando accedo, entonces veo "Sin datos disponibles para mostrar tendencias".                                                                  | EP05              |
+| US17            | Ver estadísticas de cumplimiento de recetas     | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento.                                             | **Escenario 1:** Dado que hay múltiples recetas activas, cuando accedo a estadísticas, entonces veo porcentaje de cumplimiento por cada receta. **Escenario 2:** Dado que una receta tiene bajo cumplimiento, cuando accedo al dashboard, entonces aparece resaltada en el gráfico.                                                                                         | EP05              |
+| US18            | Ver estadísticas de citas                       | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones.                                                 | **Escenario 1:** Dado que hay citas registradas, cuando accedo a la sección, entonces veo un gráfico circular con tipos de cita. **Escenario 2:** Dado que no hay citas, cuando accedo, entonces veo "No hay datos de citas disponibles".                                                                                                       | EP05              |
+| US19            | Editar perfil de usuario                        | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada.                                            | **Escenario 1:** Dado que modifico mi teléfono o subo una nueva foto, cuando presiono "Guardar", entonces el cambio se refleja inmediatamente. **Escenario 2:** Dado que ingreso un formato inválido, cuando intento guardar, entonces veo "Formato incorrecto".                                                                                | EP06              |
+| US20            | Recuperar contraseña                            | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta.                                                                      | **Escenario 1:** Dado que ingreso mi correo registrado, cuando presiono "Recuperar contraseña", entonces recibo un enlace por correo. **Escenario 2:** Dado que el correo no existe, entonces veo "Correo no registrado". **Escenario 3:** Dado que uso el enlace, cuando ingreso una nueva contraseña válida, entonces la cuenta se actualiza. | EP01              |
+| US21            | Cerrar sesión                                   | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información.                                                                                      | **Escenario 1:** Dado que estoy logueado, cuando presiono "Cerrar sesión", entonces se cierra la sesión y regresa a la pantalla de login. **Escenario 2:** Dado que cierro la aplicación, cuando la abro nuevamente, entonces debo iniciar sesión otra vez.                                                                                     | EP01              |
+| US22            | Configurar preferencias de notificaciones       | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.                                 | **Escenario 1:** Dado que accedo a Configuración, cuando elijo sonido, vibración y número de repeticiones, entonces las notificaciones se aplican según mi elección. **Escenario 2:** Dado que desactivo temporalmente las notificaciones, entonces no recibo recordatorios hasta que las reactive.                                             | EP02              |
+| US23            | Funcionar en modo offline                       | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar.                                       | **Escenario 1:** Dado que no tengo internet, cuando abro la aplicación Y tengo una medicación por tomar, puedo marcar "Tomado". **Escenario 2:** Dado que registré tomas de medicamento offline, cuando recupere conexión a  internet entonces se sincronizan automáticamente los registros.                                                                                                      | EP02              |
+| US24            | Editar o cancelar medicamento                   | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                                        | **Escenario 1:** Dado que el personal técnico autoriza el cambio, cuando edito un medicamento, entonces se actualiza y se notifica al paciente. **Escenario 2:** Dado que intento cancelar sin autorización, entonces veo "Solo el personal técnico puede cancelar".                                                                            | EP02              |
+| US25            | Ver historial de adherencia y progreso          | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                                        | **Escenario 1:** Dado que tengo registros de cumplimiento, cuando accedo a "Mi progreso", entonces veo gráfico de porcentaje de adherencia semanal. **Escenario 2:** Dado que no hay datos suficientes, cuando accedo al dashboard,  entonces veo "Aún no hay suficiente información para mostrar progreso".                                                                 | EP02 / EP03       |
+| US26            | Ver próxima toma pendiente                      | Como paciente, quiero ver cuál es mi próxima toma programada y en cuánto tiempo es, para estar preparado.                                                             | **Escenario 1:** Dado que el paciente tiene un tratamiento activo con medicamentos programados, cuando ingresa a la pantalla principal  de la aplicación móvil, entonces el sistema debe mostrar una tarjeta con el nombre del medicamento, la dosis y la hora exacta de la próxima toma más cercana al tiempo actual, y debe mostrar un contador regresivo en tiempo real. | EP02              |
+| US27            | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo.                                 | **Escenario 1:** Dado que un paciente tiene adherencia <70 %, entonces recibo notificación en el portal web. **Escenario 2:** Dado que accedo al apartado de configuración, cuando configuro el umbral,  entonces las alertas se ajustan al nuevo valor.                                                                                                                                     | EP05              |
+| US28            | Cambiar contraseña                              | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura.                                                                                            | **Escenario 1:** Dado que ingreso la contraseña actual y la nueva, cuando confirmo, entonces la contraseña se actualiza y se cierra la sesión actual. **Escenario 2:** Dado que la contraseña actual es incorrecta, cuando confirmo, entonces veo "Contraseña actual incorrecta".                                                               | EP01              |
+| US29            | Editar o cancelar cita médica                   | Como paciente, quiero editar o cancelar una cita médica, para corregir errores en mi agenda.                                                                           | **Escenario 1:** Dado que tengo una cita agendada a futuro, cuando la edito o cancelo, entonces se actualiza en mi calendario y se eliminan sus recordatorios. **Escenario 2:** Dado que intento modificar una cita pasada, entonces veo "No se pueden modificar citas pasadas".                                                                | EP03              |
+| US30            | Ver propuesta de valor                          | Como visitante, quiero entender qué hace MediTrack en la página principal, para decidir si me interesa.                                                                 | **Escenario 1:** Dado que soy visitante nuevo, cuando accedo a la Landing Page, entonces veo una descripción clara de qué es MediTrack y su propuesta de valor.                                         | EP07              |
+| US31            | Ver funcionalidades por segmento                | Como visitante, quiero ver qué funciones ofrece MediTrack para pacientes y para personal médico, para saber si aplica a mi caso.                                       | **Escenario 1:** Dado que soy visitante, cuando accedo a la sección "Funcionalidades", entonces veo características específicas para pacientes y para personal técnico. **Escenario 2:** Dado que consulto un segmento específico, entonces veo ejemplos claros de cada funcionalidad con descripciones breves.                                | EP07              |
+| US32            | Ver testimonios o casos de uso                  | Como visitante, quiero ver ejemplos de uso real, para generar confianza en la plataforma.                                                                               | **Escenario 1:** Dado que soy visitante nuevo, cuando accedo a la sección "Testimonios", entonces veo casos de uso reales o testimonios de pacientes.                                                           | EP07              |
+| US33            | Navegar a registro desde landing                | Como visitante interesado, quiero acceder al registro desde la landing, para crear mi cuenta fácilmente.                                                                | **Escenario 1:** Dado que me interesa MediTrack, cuando presiono "Registrarse" desde cualquier parte del landing, entonces accedo al formulario de registro. **Escenario 2:** Dado que completo el registro, cuando presiono "Crear cuenta", entonces mi cuenta se crea y accedo a mi dashboard.                                          | EP07              |
+| US34            | Ver información de contacto                     | Como visitante, quiero encontrar información de contacto o soporte, para resolver dudas antes de registrarme.                                                           | **Escenario 1:** Dado que tengo dudas, cuando accedo a la sección "Contacto", entonces veo correo, teléfono o formulario de contacto.                                                                               | EP07              |
 
 <hr class="page-break">
 
@@ -1205,7 +1205,7 @@ En esta sección se describen los enfoques metodológicos que rigen el desarroll
 
 El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el que opera la solución. En el centro se ubica el sistema MediTrack, el cual actúa como el núcleo de interacción entre los dos actores principales: el Paciente, quien consume la información de su tratamiento, y el Personal Técnico, encargado de la gestión clínica. Asimismo, se detallan las dependencias con sistemas externos.
 
-<td align="center"><img src="assets/images/chapter4/structurizr-109687-Contexto.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1213,23 +1213,17 @@ _Figura 13. Diagrama de contexto del sistema MediTrack. Elaboración propia._
 
 </div>
 
-<td align="center"><img src="assets/images/chapter4/structurizr-109687-Contexto-key.png" alt="Context diagram" ></td>
 
-<div align = center>
-
-_Figura 14. Anexo del diagrama de contexto del sistema MediTrack. Elaboración propia._
-
-</div>
 
 ### 4.1.4. Approach driven ViewPoints Diagrams
 
 #### Container Diagram:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Container Diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Container Diagram" ></td>
 
 <div align = center>
 
-_Figura 15. Anexo del diagrama de contenedores del sistema MediTrack. Elaboración propia._
+_Figura 14. Anexo del diagrama de contenedores del sistema MediTrack. Elaboración propia._
 
 </div>
 
@@ -1237,51 +1231,51 @@ _Figura 15. Anexo del diagrama de contenedores del sistema MediTrack. Elaboraci�
 
 #### Identity & Profiles Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/identityprofile.jpeg" alt="" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_Identity.png" alt="" ></td>
 
 <div align = center>
 
-_Figura 16. Anexo del diagrama de componentes de Identity & Profiles Service . Elaboración propia._
+_Figura 15. Anexo del diagrama de componentes de Identity & Profiles Service . Elaboración propia._
 
 </div>
 
 #### Treatment Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="analytics" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_TreatmentService.png" alt="analytics" ></td>
 
 <div align = center>
 
-_Figura 17. Anexo del diagrama de componentes de Treatment Service . Elaboración propia._
+_Figura 16. Anexo del diagrama de componentes de Treatment Service . Elaboración propia._
 
 </div>
 
 #### Reminder Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/reminder.jpeg" alt="reminder service" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_ReminderService.png" alt="reminder service" ></td>
 
 <div align = center>
 
-_Figura 18. Anexo del diagrama de componentes de Reminder Service. Elaboración propia._
+_Figura 17. Anexo del diagrama de componentes de Reminder Service. Elaboración propia._
 
 </div>
 
 #### Follow-up Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/followup.jpeg" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_FollowUpService.png" ></td>
 
 <div align = center>
 
-_Figura 19. Anexo del diagrama de componentes de Follow-up Service. Elaboración propia._
+_Figura 18. Anexo del diagrama de componentes de Follow-up Service. Elaboración propia._
 
 </div>
 
 #### Medical Analysis Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams//component/medical_analysis.jpeg" alt="medical analysis" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams//component/structurizr-93540-Components_AnalysisService.png" alt="medical analysis" ></td>
 
 <div align = center>
 
-_Figura 20. Anexo del diagrama de componentes de Medical Analysis Service. Elaboración propia._
+_Figura 19. Anexo del diagrama de componentes de Medical Analysis Service. Elaboración propia._
 
 </div>
 
@@ -1291,7 +1285,7 @@ _Figura 20. Anexo del diagrama de componentes de Medical Analysis Service. Elabo
 
 <div align = center>
 
-_Figura 21. Anexo del diagrama de componentes de Appointment Service. Elaboración propia._
+_Figura 20. Anexo del diagrama de componentes de Appointment Service. Elaboración propia._
 
 </div>
 
@@ -1303,7 +1297,7 @@ _Figura 21. Anexo del diagrama de componentes de Appointment Service. Elaboraci�
 
 <div align = center>
 
-_Figura 22. Anexo del diagrama de actividades de Medical Analysis. Elaboración propia._
+_Figura 21. Anexo del diagrama de actividades de Medical Analysis. Elaboración propia._
 
 </div>
 
@@ -1313,7 +1307,7 @@ _Figura 22. Anexo del diagrama de actividades de Medical Analysis. Elaboración 
 
 <div align = center>
 
-_Figura 23. Anexo del diagrama de actividades de Appointment. Elaboración propia._
+_Figura 22. Anexo del diagrama de actividades de Appointment. Elaboración propia._
 
 </div>
 
@@ -1323,7 +1317,7 @@ _Figura 23. Anexo del diagrama de actividades de Appointment. Elaboración propi
 
 <div align = center>
 
-_Figura 24. Anexo del diagrama de actividades de Follow-up. Elaboración propia._
+_Figura 23. Anexo del diagrama de actividades de Follow-up. Elaboración propia._
 
 </div>
 
@@ -1333,7 +1327,7 @@ _Figura 24. Anexo del diagrama de actividades de Follow-up. Elaboración propia.
 
 <div align = center>
 
-_Figura 25. Anexo del diagrama de actividades de Identity & Profiles. Elaboración propia._
+_Figura 24. Anexo del diagrama de actividades de Identity & Profiles. Elaboración propia._
 
 </div>
 
@@ -1343,7 +1337,7 @@ _Figura 25. Anexo del diagrama de actividades de Identity & Profiles. Elaboraci�
 
 <div align = center>
 
-_Figura 26. Anexo del diagrama de actividades de Treatment. Elaboración propia._
+_Figura 25. Anexo del diagrama de actividades de Treatment. Elaboración propia._
 
 </div>
 
@@ -1353,7 +1347,7 @@ _Figura 26. Anexo del diagrama de actividades de Treatment. Elaboración propia.
 
 <div align = center>
 
-_Figura 27. Anexo del diagrama de actividades de Reminder. Elaboración propia._
+_Figura 26. Anexo del diagrama de actividades de Reminder. Elaboración propia._
 
 </div>
 
@@ -1363,7 +1357,7 @@ _Figura 27. Anexo del diagrama de actividades de Reminder. Elaboración propia._
 
 <div align = center>
 
-_Figura 28. Anexo del diagrama de clases del sistema MediTrack. Elaboración propia._
+_Figura 27. Anexo del diagrama de clases del sistema MediTrack. Elaboración propia._
 
 </div>
 
@@ -1373,7 +1367,7 @@ _Figura 28. Anexo del diagrama de clases del sistema MediTrack. Elaboración pro
 
 <div align = center>
 
-_Figura 29. Anexo del diagrama de la base de datos relacional de MediTrack. Elaboración propia._
+_Figura 28. Anexo del diagrama de la base de datos relacional de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1664,33 +1658,34 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/Iteration-1-SystemContext.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 30. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
+_Figura 29. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 
 </div>
 
 **C4 - Container Diagram**
 Se muestra los contenedores del sistema, destacando el microservicio de tratamiento y su base de datos dedicada, así como cómo se comunican con los otros servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 31. Anexo del diagrama de contenedores de MediTrack. Elaboración propia._
+_Figura 30. Anexo del diagrama de contenedores de MediTrack. Elaboración propia._
 
 </div>
 
 **C4 - Component Diagram**
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
+<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_TreatmentService.png" alt="Context diagram" ></td>
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 32. Anexo del diagrama de componentes de Treatment Service. Elaboración propia._
+_Figura 31. Anexo del diagrama de componentes de Treatment Service. Elaboración propia._
 
 </div>
 
@@ -1700,7 +1695,7 @@ _Figura 32. Anexo del diagrama de componentes de Treatment Service. Elaboración
 
 <div align = center>
 
-_Figura 33. Kanban Board Iteration 1. Elaboración propia._
+_Figura 32. Kanban Board Iteration 1. Elaboración propia._
 
 </div>
 
@@ -1765,11 +1760,11 @@ Permitir la continuidad del tratamiento del paciente en tres frentes: soporte a 
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/Iteration-1-SystemContext.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 34. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
+_Figura 33. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1777,11 +1772,11 @@ _Figura 34. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 
 Se muestra los contenedores del sistema, destacando el microservicio del seguimiento del tratamiento y su base de datos dedicada, así como cómo lee los servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.jpg" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 35. Anexo del diagrama de contenedores de MediTrack. Elaboración propia._
+_Figura 34. Anexo del diagrama de contenedores de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1789,11 +1784,11 @@ _Figura 35. Anexo del diagrama de contenedores de MediTrack. Elaboración propia
 
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/followup.jpeg" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_FollowUpService.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 36. Anexo del diagrama de componentes de Follow-up service. Elaboración propia._
+_Figura 35. Anexo del diagrama de componentes de Follow-up service. Elaboración propia._
 
 </div>
 
@@ -1803,7 +1798,7 @@ _Figura 36. Anexo del diagrama de componentes de Follow-up service. Elaboración
 
 <div align = center>
 
-_Figura 37. Kanban Board Iteration 2._
+_Figura 36. Kanban Board Iteration 2._
 
 </div>
 Link del Trello: https://trello.com/invite/b/69f6752f9be88dc527f213a9/ATTIfba9ad9e2b8975b1696794b6ecf0382cED03D548/continuidad-del-tratamiento
