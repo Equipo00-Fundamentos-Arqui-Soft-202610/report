@@ -2865,15 +2865,19 @@ Evidencias:
 
 + treatment service:
 
-
+<td align="center"><img src="assets//images//chapter5/evidence/treatment-service.png" alt="treatment-service-evidence" ></td>
 
 <br>
 
 + follow up service:
 
+<td align="center"><img src="assets//images//chapter5/evidence/followup-service.png" alt="followup-service-evidence" ></td>
+
 <br>
 
 + meditrack mobile:
+
+<td align="center"><img src="assets//images//chapter5/evidence/mobile-meditrack.png" alt="meditrack-mobile-evidence" ></td>
 
 <br>
 
@@ -2900,7 +2904,7 @@ Durante este Sprint se consolidó la realizacion de 5 Microservices mediante Ope
 | TreatmentService | GET | ``/api/v1/patients/search`` | Query: ``?query=Juan`` | ``[{"id":1,"name":"Juan Perez","age":30}]`` |
 | TreatmentService | POST | ``/api/v1/prescriptions`` | Body: ``{ ``"patientId":0,"technicalId":0,"notes":"string","medications":[{"catalogId":0,"dose":"string","frequencyHour":0,"startDate":"2026-05-16T00:52:17.784Z","endDate":"2026-05-16T00:52:17.784Z","stockCount":0,"stockAlertThre":0,"doseSchedules":[{"scheduledTime":"string"}]}] ``}`` | ``{ ``"id":20,"patientId":0,"status":"created" ``}`` |
 
-#### Treatment Service
+#### Follow up Service
 **Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/FollowUp-Service
 
 **Imagen de prueba:**
