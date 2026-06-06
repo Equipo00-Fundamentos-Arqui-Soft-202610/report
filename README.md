@@ -31,7 +31,6 @@
          <th>Apellidos y Nombres</th>
       </tr>
       <tr>
-
          <td>U202312966</td>
          <td>Gonzales Alvarado, Javier Sebastian</td>
       </tr>
@@ -68,18 +67,26 @@
 | 1.0     | 11/04/2026 | Rojas Reategui, Victor Manuel              | Creación de la estructura inicial del informe                                                                                                    |
 | 1.1     | 13/04/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo I: descripción de la startup, Solution Profile, Lean UX Process y segmentos objetivo (1.1–1.3)                                          |
 | 1.2     | 17/04/2026 | Sulca Sanchez, Piero Angel                 | Capítulo II: diseño de entrevistas (2.2.1)                                                                                                       |
-| 1.3     | 17/04/2026 | Quijada Magro, Jeremy Alexander            | Capítulo II: análisis de competidores (2.1), registro y análisis de entrevistas (2.2.2, 2.2.3) y needfinding (2.3.1 - 2.3.4)                     |
-| 1.4     | 18/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3)                                          |
+| 1.3     | 17/04/2026 | Quijada Magro, Jeremy Alexander            | Capítulo II: análisis de competidores (2.1), registro y análisis de entrevistas (2.2.2, 2.2.3) y needfinding (2.3.1 - 2.3.4)                  |
+| 1.4     | 18/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo III: To-Be Scenario Mapping (3.1), Impact Mapping (3.2) y especificación de User Stories (3.3)                                         |
 | 1.5     | 18/04/2026 | Sulca Sanchez, Piero Angel                 | Capítulo III: Product Backlog (3.4)                                                                                                              |
-| 1.6     | 18/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4)                                                          |
+| 1.6     | 18/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo III: ampliación y reorganización de User Stories y Product Backlog (3.3 y 3.4)                                                         |
 | 1.7     | 18/04/2026 | Sulca Sanchez, Piero Angel                 | Capítulo III: reordenamiento del Product Backlog por valor de negocio (3.4)                                                                      |
 | 2.0     | 27/04/2026 | Quijada Magro, Jeremy Alexander            | Capítulo IV: Design Concepts, ViewPoints & ER Diagrams, Principles Statements, Architectural Styles & Patterns y Context Diagram (4.1.1 - 4.1.3) |
-| 2.1     | 28/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo IV: Approach driven ViewPoints Diagrams, Relational/Non Relational Database Diagram y Design Patterns (4.1.4 - 4.1.6)                   |
-| 2.2     | 29/04/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo IV: Tactics, Architectural Drivers y Design Purpose (4.1.7, 4.2, 4.1.8)                                                                 |
-| 2.3     | 30/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo IV: Primary Functionality (Primary User Stories) y Quality Attribute Scenarios (4.1.9, 4.1.10)                                          |
+| 2.1     | 28/04/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo IV: Approach driven ViewPoints Diagrams, Relational/Non Relational Database Diagram y Design Patterns (4.1.4 - 4.1.6)                |
+| 2.2     | 29/04/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo IV: Tactics, Architectural Drivers y Design Purpose (4.1.7, 4.2, 4.1.8)                                                                |
+| 2.3     | 30/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo IV: Primary Functionality (Primary User Stories) y Quality Attribute Scenarios (4.1.9, 4.1.10)                                         |
 | 2.4     | 01/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo IV: Constraints y Architectural Concerns (4.1.11, 4.1.12)                                                                               |
-| 2.5     | 02/05/2026 | Jeremy Quijada Magro y Piero Sulca Sanchez | Capítulo IV: ADD Iterations 1 & 2                                                                                                                |
-
+| 2.5     | 02/05/2026 | Jeremy Quijada Magro y Piero Sulca Sanchez | Capítulo IV: ADD Iterations 1 & 2                                                                                                                 |
+| 3.0     | 10/05/2026 | Rojas Reategui, Victor Manuel              | Capítulo V: Backend Application Core Testing Suite y Pattern Based Backend Application(s) (5.1.1, 5.1.2)                                        |
+| 3.1     | 10/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo V: Pattern Based Custom Software Library y Framework Pattern Driven Refactoring Report (5.1.3, 5.1.4)                                  |
+| 3.2     | 11/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo V: Software Development Environment Configuration, Source Code Management y Source Code Style Guide & Conventions (5.2.1 - 5.2.3)     |
+| 3.3     | 11/05/2026 | Quijada Magro, Jeremy Alexander            | Capítulo V: Software Deployment Configuration y Development Evidence for Sprint Review (5.2.4, 5.3.1.2)                                         |
+| 3.4     | 12/05/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo V: Sprint Backlog 1, Team Collaboration Insights during Sprint y Kanban Board (5.3.1.1, 5.3.1.7, 5.3.1.8)                             |
+| 3.5     | 12/05/2026 | Rojas Reategui, Victor Manuel              | Capítulo V: Testing Suite Evidence for Sprint Review y Execution Evidence for Sprint Review (5.3.1.3, 5.3.1.4)                                  |
+| 3.6     | 13/05/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo V: Microservices Documentation Evidence for Sprint Review y documentación de arquitectura de microservicios (5.3.1.5)                  |
+| 3.7     | 13/05/2026 | Quijada Magro, Jeremy Alexander            | Capítulo V: Software Deployment Evidence for Sprint Review y consolidación de evidencias del sprint (5.3.1.6)                                   |
+| 3.8     | 14/05/2026 | Todo el equipo                             | Revisión general, integración de capítulos, corrección de formato APA y validación final del informe TP1                                         |
 
 <hr class="page-break">
 
@@ -169,36 +176,7 @@
       - [5.3.1.6. Software Deployment Evidence for Sprint Review](#5316-software-deployment-evidence-for-sprint-review)
       - [5.3.1.7. Team Collaboration Insights during Sprint](#5317-team-collaboration-insights-during-sprint)
       - [5.3.1.8. Kanban Board](#5318-kanban-board)
-    - [5.3.2. Sprint 2](#532-sprint-2)
-      - [5.3.2.1. Sprint Backlog 2](#5321-sprint-backlog-2)
-      - [5.3.2.2. Development Evidence for Sprint Review](#5322-development-evidence-for-sprint-review)
-      - [5.3.2.3. Testing Suite Evidence for Sprint Review](#5323-testing-suite-evidence-for-sprint-review)
-      - [5.3.2.4. Execution Evidence for Sprint Review](#5324-execution-evidence-for-sprint-review)
-      - [5.3.2.5. Microservices Documentation Evidence for Sprint Review](#5325-microservices-documentation-evidence-for-sprint-review)
-      - [5.3.2.6. Software Deployment Evidence for Sprint Review](#5326-software-deployment-evidence-for-sprint-review)
-      - [5.3.2.7. Team Collaboration Insights during Sprint](#5327-team-collaboration-insights-during-sprint)
-      - [5.3.2.8. Kanban Board](#5328-kanban-board)
-    - [5.3.3. Sprint 3](#533-sprint-3)
-      - [5.3.3.1. Sprint Backlog 3](#5331-sprint-backlog-3)
-      - [5.3.3.2. Development Evidence for Sprint Review](#5332-development-evidence-for-sprint-review)
-      - [5.3.3.3. Testing Suite Evidence for Sprint Review](#5333-testing-suite-evidence-for-sprint-review)
-      - [5.3.3.4. Execution Evidence for Sprint Review](#5334-execution-evidence-for-sprint-review)
-      - [5.3.3.5. Microservices Documentation Evidence for Sprint Review](#5335-microservices-documentation-evidence-for-sprint-review)
-      - [5.3.3.6. Software Deployment Evidence for Sprint Review](#5336-software-deployment-evidence-for-sprint-review)
-      - [5.3.3.7. Team Collaboration Insights during Sprint](#5337-team-collaboration-insights-during-sprint)
-      - [5.3.3.8. Kanban Board](#5338-kanban-board)
-    - [5.3.4. Sprint 4](#534-sprint-4)
-      - [5.3.4.1. Sprint Backlog 4](#5341-sprint-backlog-4)
-      - [5.3.4.2. Development Evidence for Sprint Review](#5342-development-evidence-for-sprint-review)
-      - [5.3.4.3. Testing Suite Evidence for Sprint Review](#5343-testing-suite-evidence-for-sprint-review)
-      - [5.3.4.4. Execution Evidence for Sprint Review](#5344-execution-evidence-for-sprint-review)
-      - [5.3.4.5. Microservices Documentation Evidence for Sprint Review](#5345-microservices-documentation-evidence-for-sprint-review)
-      - [5.3.4.6. Software Deployment Evidence for Sprint Review](#5346-software-deployment-evidence-for-sprint-review)
-      - [5.3.4.7. Team Collaboration Insights during Sprint](#5347-team-collaboration-insights-during-sprint)
-      - [5.3.4.8. Kanban Board](#5348-kanban-board)
-  - [5.4. Microservices Deployment](#54-microservices-deployment)
-    - [5.4.1. Cloud Architecture Diagram](#541-cloud-architecture-diagram)
-    - [5.4.2. Cloud Architecture Deployment](#542-cloud-architecture-deployment)
+
 
 
 - [Conclusiones](#conclusiones)
@@ -224,37 +202,37 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   <tbody>
     <tr>
       <td rowspan="5"><strong>A: Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.</strong></td>
-      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Análisis de competidores, entrevistas y needfinding.<br><b>TB2:</b> Desarrollo de Problem Statements, definición de enfoques arquitectónicos (Architectural Styles & Patterns), elaboración del Context Diagram y participación en ADD iteration 2.</td>
-      <td rowspan="5"><b>TB1:</b> El equipo aplicó conceptos clave de ingeniería de software y diseño centrado en el usuario, estructurando una base sólida del proyecto.<br><br><b>TB2:</b> El equipo profundizó en el diseño arquitectónico del sistema, aplicando patrones, tácticas y metodologías como ADD. Esto permitió consolidar una estructura más robusta, alineada a atributos de calidad y necesidades del sistema.</td>
+      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Análisis de competidores, entrevistas y needfinding.<br><b>TB2:</b> Desarrollo de Problem Statements, definición de enfoques arquitectónicos (Architectural Styles & Patterns), elaboración del Context Diagram y participación en ADD iteration 2.<br><b>TP1:</b> Investigó y aplicó conceptos de Static Testing & Verification, además de participar en el desarrollo del prototipo visual y evidencias del Sprint Review.</td>
+      <td rowspan="5"><b>TB1:</b> El equipo aplicó conceptos clave de ingeniería de software y diseño centrado en el usuario, estructurando una base sólida del proyecto.<br><br><b>TB2:</b> El equipo profundizó en el diseño arquitectónico del sistema, aplicando patrones, tácticas y metodologías como ADD. Esto permitió consolidar una estructura más robusta, alineada a atributos de calidad y necesidades del sistema.<br><br><b>TP1:</b> El equipo fortaleció conocimientos técnicos relacionados al desarrollo de soluciones modernas de software, aplicando conceptos de testing, arquitectura de microservicios, gestión ágil y configuración de entornos de desarrollo, permitiendo mejorar la calidad y organización del proyecto Meditrack.</td>
     </tr>
     <tr>
-      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> To-Be Scenario Mapping, User Stories e Impact Map.<br><b>TB2:</b> Desarrollo de ViewPoint Diagrams basados en enfoques arquitectónicos y diseño de diagramas de base de datos relacionales y no relacionales.</td>
+      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> To-Be Scenario Mapping, User Stories e Impact Map.<br><b>TB2:</b> Desarrollo de ViewPoint Diagrams basados en enfoques arquitectónicos y diseño de diagramas de base de datos relacionales y no relacionales.<br><b>TP1:</b> Desarrollo del Sprint Backlog 1 y Kanban Board, aplicando metodologías ágiles y herramientas de gestión colaborativa.</td>
     </tr>
     <tr>
-      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Definición de startup, problemática, Lean UX Process y segmentos objetivo.<br><b>TB2:</b> Aplicación de Design Patterns, definición de tácticas arquitectónicas y establecimiento del propósito del diseño.</td>
+      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Definición de startup, problemática, Lean UX Process y segmentos objetivo.<br><b>TB2:</b> Aplicación de Design Patterns, definición de tácticas arquitectónicas y establecimiento del propósito del diseño.<br><b>TP1:</b> Elaboración de documentación de microservicios y organización de evidencias técnicas para el Sprint Review.</td>
     </tr>
     <tr>
-      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Elaboración del Product Backlog.<br><b>TB2:</b> Definición de funcionalidades principales del sistema y desarrollo de Quality Attribute Scenarios.</td>
+      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Elaboración del Product Backlog.<br><b>TB2:</b> Definición de funcionalidades principales del sistema y desarrollo de Quality Attribute Scenarios.<br><b>TP1:</b> Implementación de Testing Suites y General Patterns para reforzar buenas prácticas de desarrollo y pruebas de software.</td>
     </tr>
     <tr>
-      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en entrevistas.<br><b>TB2:</b> Identificación de restricciones (Constraints), preocupaciones arquitectónicas (Architectural Concerns) y desarrollo de ADD iteration 1.</td>
+      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en entrevistas.<br><b>TB2:</b> Identificación de restricciones (Constraints), preocupaciones arquitectónicas (Architectural Concerns) y desarrollo de ADD iteration 1.<br><b>TP1:</b> Trabajo en Software Configuration Management aplicando herramientas de control de versiones y configuración del entorno de desarrollo.</td>
     </tr>
     <tr>
       <td rowspan="5"><strong>B: Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.</strong></td>
-      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Aplicación de entrevistas y needfinding.<br><b>TB2:</b> Aprendizaje en definición de arquitecturas, estilos y uso del método ADD para diseño iterativo.</td>
-      <td rowspan="5"><b>TB1:</b> El equipo demostró una actitud orientada al aprendizaje continuo, incorporando nuevas metodologías.<br><br><b>TB2:</b> Los integrantes fortalecieron su aprendizaje en arquitectura de software, adoptando nuevas herramientas y enfoques como ADD, patrones y modelado de datos, lo que evidencia una evolución técnica y compromiso con su desarrollo profesional.</td>
+      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Aplicación de entrevistas y needfinding.<br><b>TB2:</b> Aprendizaje en definición de arquitecturas, estilos y uso del método ADD para diseño iterativo.<br><b>TP1:</b> Investigación de herramientas de validación y verificación para mejorar la calidad del software y el prototipo desarrollado.</td>
+      <td rowspan="5"><b>TB1:</b> El equipo demostró una actitud orientada al aprendizaje continuo, incorporando nuevas metodologías.<br><br><b>TB2:</b> Los integrantes fortalecieron su aprendizaje en arquitectura de software, adoptando nuevas herramientas y enfoques como ADD, patrones y modelado de datos, lo que evidencia una evolución técnica y compromiso con su desarrollo profesional.<br><br><b>TP1:</b> El equipo reforzó su aprendizaje continuo mediante el uso de nuevas herramientas, metodologías ágiles, testing y gestión de configuración, fortaleciendo competencias técnicas necesarias para el desarrollo profesional y la construcción de soluciones de software modernas.</td>
     </tr>
     <tr>
-      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> Uso de herramientas de modelado como Impact Map.<br><b>TB2:</b> Profundización en modelado arquitectónico y diseño de bases de datos híbridas.</td>
+      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> Uso de herramientas de modelado como Impact Map.<br><b>TB2:</b> Profundización en modelado arquitectónico y diseño de bases de datos híbridas.<br><b>TP1:</b> Aprendizaje y aplicación de metodologías ágiles mediante el uso de Sprint Backlog y Kanban Board.</td>
     </tr>
     <tr>
-      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Desarrollo de Lean UX y definición de producto.<br><b>TB2:</b> Aprendizaje en patrones de diseño y tácticas arquitectónicas aplicadas al sistema.</td>
+      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Desarrollo de Lean UX y definición de producto.<br><b>TB2:</b> Aprendizaje en patrones de diseño y tácticas arquitectónicas aplicadas al sistema.<br><b>TP1:</b> Reforzamiento de conocimientos en documentación de microservicios y buenas prácticas de arquitectura backend.</td>
     </tr>
     <tr>
-      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Gestión de backlog.<br><b>TB2:</b> Desarrollo de escenarios de atributos de calidad y definición funcional del sistema.</td>
+      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Gestión de backlog.<br><b>TB2:</b> Desarrollo de escenarios de atributos de calidad y definición funcional del sistema.<br><b>TP1:</b> Investigación y aplicación de patrones generales de desarrollo y testing para mejorar la confiabilidad del sistema.</td>
     </tr>
     <tr>
-      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en levantamiento de información.<br><b>TB2:</b> Comprensión de restricciones y preocupaciones arquitectónicas, además del uso de ADD en etapas iniciales.</td>
+      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en levantamiento de información.<br><b>TB2:</b> Comprensión de restricciones y preocupaciones arquitectónicas, además del uso de ADD en etapas iniciales.<br><b>TP1:</b> Actualización de conocimientos relacionados a Software Configuration Management y herramientas colaborativas de desarrollo.</td>
     </tr>
   </tbody>
 </table>
@@ -1048,6 +1026,76 @@ _Figura 9. To-Be Scenario Mapping del segmento Personal de Apoyo. Elaboración p
 
 ## 3.2. User Stories
 
+
+
+
+
+#### Requisitos Funcionales
+
+| Componente del sistema | Id | Requisito Funcional |
+|---|---|---|
+| Identity & Profile Service | IAM-RF1 | El sistema deberá permitir a los pacientes crear una cuenta con nombre, correo y contraseña. |
+| | IAM-RF2 | El sistema deberá permitir al personal técnico registrarse seleccionando su institución y rol. |
+| | IAM-RF3 | El sistema deberá validar que el correo electrónico no esté previamente registrado. |
+| | IAM-RF4 | El sistema deberá permitir cerrar sesión de forma segura e invalidar la sesión activa. |
+| | IAM-RF5 | El sistema deberá permitir recuperar la contraseña enviando un enlace al correo registrado. |
+| | IAM-RF6 | El sistema deberá permitir cambiar la contraseña validando la contraseña actual antes de actualizarla. |
+| | IAM-RF7 | El sistema deberá permitir editar el nombre, teléfono y foto de perfil del usuario. |
+| Treatment Service | TRT-RF1 | El sistema deberá permitir al personal técnico subir una receta médica indicando medicamento, dosis y horarios de toma. |
+| | TRT-RF2 | El sistema deberá validar automáticamente el nombre del medicamento contra un catálogo oficial antes de guardar la receta. |
+| | TRT-RF3 | El sistema deberá mostrar sugerencias o un mensaje de error cuando el medicamento ingresado no exista en el catálogo. |
+| | TRT-RF4 | El sistema deberá permitir al personal técnico editar los datos de un medicamento cuando esté autorizado. |
+| | TRT-RF5 | El sistema deberá permitir cancelar un medicamento únicamente cuando el personal técnico lo autorice. |
+| | TRT-RF6 | El sistema deberá mostrar al paciente la lista de sus medicamentos activos con nombre, dosis y horario. |
+| | TRT-RF7 | El sistema deberá emitir una alerta cuando el stock de un medicamento llegue al umbral configurado. |
+| Medical Appointment Service | APT-RF1 | El sistema deberá permitir al paciente agendar una cita médica indicando fecha, hora y tipo de cita. |
+| | APT-RF2 | El sistema deberá validar que la fecha de la cita sea posterior a la fecha actual. |
+| | APT-RF3 | El sistema deberá mostrar los requisitos previos asociados a cada cita médica. |
+| | APT-RF4 | El sistema deberá permitir al paciente editar o cancelar una cita futura. |
+| | APT-RF5 | El sistema deberá impedir la modificación de citas con fecha pasada. |
+| | APT-RF6 | El sistema deberá permitir registrar y consultar exámenes clínicos pendientes de recojo. |
+| Reminder Service | REM-RF1 | El sistema deberá enviar una notificación push al paciente en el horario programado de cada medicamento. |
+| | REM-RF2 | El sistema deberá enviar una notificación push 24 horas antes de una cita médica y una segunda notificación 2 horas antes. |
+| | REM-RF3 | El sistema deberá enviar un recordatorio cuando llegue la fecha de recojo de un examen clínico. |
+| | REM-RF4 | El sistema deberá cancelar automáticamente un recordatorio cuando se registre el cumplimiento correspondiente. |
+| | REM-RF5 | El sistema deberá permitir desactivar temporalmente todas las notificaciones y reactivarlas cuando el paciente lo indique. |
+| Follow-up Service | FUP-RF1 | El sistema deberá permitir al paciente registrar el cumplimiento de un medicamento adjuntando un video de evidencia de máximo 30 segundos. |
+| | FUP-RF2 | El sistema deberá registrar el cumplimiento automáticamente al recibir la URL del video, sin requerir validación humana. |
+| | FUP-RF3 | El sistema deberá almacenar el video de evidencia en Azure Blob Storage y guardar únicamente la URL en la base de datos. |
+| | FUP-RF4 | El sistema deberá permitir al paciente registrar el cumplimiento de una cita médica indicando si asistió o no. |
+| | FUP-RF5 | El sistema deberá permitir visualizar los medicamentos y registrar cumplimiento en modo offline, sincronizando los datos al recuperar la conexión. |
+| | FUP-RF6 | El sistema deberá mostrar al paciente su historial de adherencia con porcentaje de cumplimiento semanal. |
+| Medical Analysis Service | ANA-RF1 | El sistema deberá generar un dashboard con tendencias de adherencia por paciente para el personal técnico. |
+| | ANA-RF2 | El sistema deberá mostrar estadísticas de cumplimiento por receta, resaltando las de bajo cumplimiento. |
+| | ANA-RF3 | El sistema deberá mostrar un diagrama circular con la distribución de citas por tipo. |
+| | ANA-RF4 | El sistema deberá permitir configurar el umbral de adherencia a partir del cual se generan las alertas. |
+| | ANA-RF5 | El sistema deberá permitir al personal técnico buscar un paciente por nombre o DNI y consultar su información de seguimiento. |
+
+---
+
+#### Requisitos No Funcionales
+
+| Atributo de Calidad | Id | Requisito No Funcional |
+|---|---|---|
+| Rendimiento | NFR-PERF1 | El sistema deberá responder a consultas de medicamentos, citas y cumplimiento en ≤200ms para la mayoría de casos. |
+| | NFR-PERF2 | El sistema deberá procesar operaciones de creación y actualización (recetas, cumplimiento, citas) en ≤500ms para la mayoría de casos. |
+| | NFR-PERF3 | El dashboard de adherencia del personal técnico deberá cargar completamente en ≤3 segundos desde el inicio de sesión. |
+| | NFR-PERF4 | La subida de videos de cumplimiento a Azure Blob Storage deberá completarse en ≤10 segundos para videos de hasta 30 segundos de duración. |
+| Durabilidad | NFR-DUR1 | Los registros de cumplimiento generados en modo offline deberán encolarse localmente y sincronizarse íntegramente al recuperar la conexión, sin pérdida de datos. |
+| | NFR-DUR2 | Los videos de evidencia de cumplimiento deberán almacenarse en Azure Blob Storage con redundancia, garantizando que no se pierdan ante fallos del servicio. |
+| | NFR-DUR3 | Todas las fechas y timestamps deberán almacenarse en formato UTC para garantizar consistencia entre zonas horarias. |
+| Disponibilidad | NFR-AVAIL1 | El sistema deberá mantener un 99% de uptime mensual, exceptuando ventanas de mantenimiento programado. |
+| | NFR-AVAIL2 | El sistema deberá reintentar operaciones fallidas de publicación de eventos al Message Bus hasta 3 veces antes de registrar el error. |
+| | NFR-AVAIL3 | El Reminder Service deberá mantener la cola de recordatorios pendientes disponible de forma independiente, de modo que un fallo en otro microservicio no interrumpa el envío de notificaciones. |
+
+
+
+
+
+
+
+
+
 | Epic / Story ID | Título                                          | Descripción                                                                                                                                                            | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                         | Relación con Epic |
 | --------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
 | EP01            | Registro y roles                                | Como usuario de MediTrack, quiero registrarme y acceder al sistema con un rol específico, para usar las funciones correspondientes a paciente o personal técnico.      | No corresponde                                                                                                                                                                                                                                                                                                                                  | No corresponde    |
@@ -1214,7 +1262,7 @@ En esta sección se describen los enfoques metodológicos que rigen el desarroll
 
 El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el que opera la solución. En el centro se ubica el sistema MediTrack, el cual actúa como el núcleo de interacción entre los dos actores principales: el Paciente, quien consume la información de su tratamiento, y el Personal Técnico, encargado de la gestión clínica. Asimismo, se detallan las dependencias con sistemas externos.
 
-<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1228,7 +1276,7 @@ _Figura 13. Diagrama de contexto del sistema MediTrack. Elaboración propia._
 
 #### Container Diagram:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Container Diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Container Diagram" ></td>
 
 <div align = center>
 
@@ -1240,7 +1288,7 @@ _Figura 14. Anexo del diagrama de contenedores del sistema MediTrack. Elaboraci�
 
 #### Identity & Profiles Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_Identity.png" alt="" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/identityservicecomponent.png" alt="" ></td>
 
 <div align = center>
 
@@ -1250,7 +1298,7 @@ _Figura 15. Anexo del diagrama de componentes de Identity & Profiles Service . E
 
 #### Treatment Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_TreatmentService.png" alt="analytics" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/treatmentservicecomponent.png" alt="analytics" ></td>
 
 <div align = center>
 
@@ -1260,7 +1308,7 @@ _Figura 16. Anexo del diagrama de componentes de Treatment Service . Elaboració
 
 #### Reminder Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_ReminderService.png" alt="reminder service" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/reminderservicomponent.png" alt="reminder service" ></td>
 
 <div align = center>
 
@@ -1270,7 +1318,7 @@ _Figura 17. Anexo del diagrama de componentes de Reminder Service. Elaboración 
 
 #### Follow-up Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_FollowUpService.png" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/followupserviceomponent.png" ></td>
 
 <div align = center>
 
@@ -1280,7 +1328,7 @@ _Figura 18. Anexo del diagrama de componentes de Follow-up Service. Elaboración
 
 #### Medical Analysis Service:
 
-<td align="center"><img src="assets/images/chapter4/diagrams//component/structurizr-93540-Components_AnalysisService.png" alt="medical analysis" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams//component/analysisservice.png" alt="medical analysis" ></td>
 
 <div align = center>
 
@@ -1667,7 +1715,7 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1678,7 +1726,7 @@ _Figura 29. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 **C4 - Container Diagram**
 Se muestra los contenedores del sistema, destacando el microservicio de tratamiento y su base de datos dedicada, así como cómo se comunican con los otros servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1688,7 +1736,7 @@ _Figura 30. Anexo del diagrama de contenedores de MediTrack. Elaboración propia
 
 **C4 - Component Diagram**
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_TreatmentService.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/treatmentservicecomponent.png" alt="Context diagram" ></td>
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="Context diagram" ></td>
 
@@ -1769,7 +1817,7 @@ Permitir la continuidad del tratamiento del paciente en tres frentes: soporte a 
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/structurizr-93540-SystemContext.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1781,7 +1829,7 @@ _Figura 33. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
 
 Se muestra los contenedores del sistema, destacando el microservicio del seguimiento del tratamiento y su base de datos dedicada, así como cómo lee los servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/containerdiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1793,7 +1841,7 @@ _Figura 34. Anexo del diagrama de contenedores de MediTrack. Elaboración propia
 
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/structurizr-93540-Components_FollowUpService.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/followupserviceomponent.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1820,11 +1868,356 @@ Link del Trello: https://trello.com/invite/b/69f6752f9be88dc527f213a9/ATTIfba9ad
 
 ### 5.1.1. Backend Application Core Testing Suite
 
+El backend de MediTrack implementa pruebas orientadas al comportamiento del sistema (BDD) mediante escenarios escritos en lenguaje Gherkin. Cada microservicio define sus escenarios de prueba en archivos `.feature`, los cuales describen las funcionalidades principales desde la perspectiva del negocio y sirven como evidencia de cobertura por sprint.
+
+Los escenarios se organizan por bounded context, siguiendo la misma partición de microservicios definida en la arquitectura. A continuación se presentan los escenarios de prueba correspondientes al **FollowUp Service**, único microservicio completamente implementado al cierre del Sprint 1.
+
+**FollowUp Service — Gestión de medicamentos del paciente**
+
+```gherkin
+Feature: Medication Query
+  As a patient
+  I want to retrieve my active medications and their schedules
+  So that I can follow my treatment correctly
+
+  Scenario: Get medications for a valid patient
+    Given a patient with id 5 has registered medications in the system
+    When a GET request is sent to "/api/v1/medications?patientId=5"
+    Then the response status is 200 OK
+    And the response body contains a list of medications with their dose schedules
+
+  Scenario: Get medications for a patient with no medications
+    Given no medications are registered for patient with id 99
+    When a GET request is sent to "/api/v1/medications?patientId=99"
+    Then the response status is 404 Not Found
+    And the response body contains the message "No medications found for patient 99"
+
+  Scenario: Get medications with an invalid patient id
+    When a GET request is sent to "/api/v1/medications?patientId=0"
+    Then the response status is 400 Bad Request
+    And the response body contains a validation error message
+```
+
+**FollowUp Service — Próxima dosis pendiente**
+
+```gherkin
+Feature: Next Pending Dose
+  As a patient
+  I want to know my next pending medication dose for today
+  So that I can take it on time
+
+  Scenario: Get next pending dose when one exists today
+    Given patient with id 5 has an active medication scheduled at "08:00"
+    And no compliance has been recorded for that schedule today
+    When a GET request is sent to "/api/v1/medications/next-dose?patientId=5"
+    Then the response status is 200 OK
+    And the response body contains the next pending dose with "MinutesUntilDose" calculated
+
+  Scenario: Get next pending dose when all doses are already taken
+    Given patient with id 5 has all scheduled doses marked as "taken" today
+    When a GET request is sent to "/api/v1/medications/next-dose?patientId=5"
+    Then the response status is 404 Not Found
+    And the response body contains the message "No pending doses found for patient 5 today"
+```
+
+**FollowUp Service — Registro de cumplimiento de medicación**
+
+```gherkin
+Feature: Medication Compliance Recording
+  As a patient
+  I want to record whether I took or skipped a scheduled dose
+  So that my treatment adherence is tracked
+
+  Scenario: Record a taken dose successfully
+    Given a dose schedule with id 3 exists and belongs to patient 5
+    When a POST request is sent to "/api/v1/compliance?patientId=5"
+    And the request body contains status "taken" and doseScheduleId 3
+    Then the response status is 201 Created
+    And the response body contains the compliance record with status "taken"
+    And a Location header pointing to the new resource is returned
+
+  Scenario: Record a skipped dose successfully
+    Given a dose schedule with id 3 exists and belongs to patient 5
+    When a POST request is sent to "/api/v1/compliance?patientId=5"
+    And the request body contains status "skipped" and doseScheduleId 3
+    Then the response status is 201 Created
+    And the response body contains the compliance record with status "skipped"
+
+  Scenario: Record compliance with invalid status
+    When a POST request is sent to "/api/v1/compliance?patientId=5"
+    And the request body contains status "pending" and doseScheduleId 3
+    Then the response status is 400 Bad Request
+    And the response body contains "Status must be either 'taken' or 'skipped'"
+
+  Scenario: Record compliance for a non-existent dose schedule
+    When a POST request is sent to "/api/v1/compliance?patientId=5"
+    And the request body contains status "taken" and doseScheduleId 999
+    Then the response status is 400 Bad Request
+    And the response body contains "DoseSchedule with ID 999 does not exist"
+
+  Scenario: Retrieve a compliance record by id
+    Given a compliance record with id 1 exists in the system
+    When a GET request is sent to "/api/v1/compliance/1"
+    Then the response status is 200 OK
+    And the response body contains the compliance record with its dose schedule details
+```
+
+Las pruebas se validan en dos modalidades. Para pruebas unitarias se verifica de forma aislada la lógica de los Command y Query Services, controlando los valores de los Value Objects y el flujo de validaciones de negocio. Para pruebas de integración se levanta el servicio completo con su base de datos MySQL local, verificando el comportamiento end-to-end de los endpoints a través de Swagger UI y colecciones de Postman.
+
 ### 5.1.2. Pattern Based Backend Application(s)
+
+Los microservicios de MediTrack se desarrollan aplicando los principios de **Clean Architecture** y **Domain-Driven Design (DDD)**, con una separación clara de responsabilidades organizada en cuatro capas donde el control de dependencias fluye siempre hacia el interior: el Domain no conoce a ninguna otra capa, Application solo conoce a Domain, Infrastructure y la capa de Interfaces conocen a las capas interiores pero nunca al revés.
+
+**Estructura de capas — FollowUp Service**
+
+El FollowUp Service implementa esta estructura dentro de un único proyecto `MediTrack.FollowUpService.API`, organizado en las siguientes carpetas de capa:
+
+| Carpeta | Capa | Responsabilidad |
+| ------- | ---- | --------------- |
+| `Domain/Model/` | **Domain** | Aggregates, Value Objects, Commands, Queries, interfaces de repositorio y servicios |
+| `Application/Internal/` | **Application** | Command Services y Query Services que orquestan los casos de uso |
+| `Infrastructure/Persistence/EFC/` | **Infrastructure** | `FollowUpDbContext`, repositorios concretos con EF Core y MySQL |
+| `Interfaces/REST/` | **Interfaces** | Controllers, Resources (DTOs) y Assemblers (transformadores) |
+
+**Aggregates y Value Objects del Domain**
+
+El Domain del FollowUp Service define tres aggregates principales:
+
+`Medication` es el agregado raíz que representa un medicamento prescrito a un paciente. Encapsula la dosis mediante el Value Object `DoseValue`, contiene la lista de `DoseSchedule` asociados y expone la propiedad computada `IsActive` para verificar si el tratamiento continúa vigente.
+
+`DoseSchedule` representa cada horario de toma programado para un medicamento. Su atributo de hora se encapsula en el Value Object `ScheduledHour`, que valida que el valor esté entre `00:00` y `23:59` y provee conversión implícita a `TimeSpan` para compatibilidad con EF Core.
+
+`MedicationCompliance` registra el cumplimiento de una dosis específica. El estado de cumplimiento se encapsula en el Value Object `ComplianceStatus`, que acepta únicamente los valores `"taken"` o `"skipped"`, implementa un factory method `From()` con validación estricta y proporciona conversión implícita a `string` para la persistencia en base de datos:
+
+```csharp
+public class ComplianceStatus
+{
+    public static readonly ComplianceStatus Taken = new("taken");
+    public static readonly ComplianceStatus Skipped = new("skipped");
+
+    public static ComplianceStatus From(string value)
+    {
+        var lowerValue = value.ToLowerInvariant();
+        if (!_validStatuses.TryGetValue(lowerValue, out var status))
+            throw new ArgumentException(
+                $"Invalid ComplianceStatus '{value}'. Valid values are: 'taken', 'skipped'");
+        return status;
+    }
+
+    public static implicit operator string(ComplianceStatus status) => status.Value;
+    public static implicit operator ComplianceStatus(string value) => From(value);
+}
+```
+
+**Patrón Command/Query en la capa Application**
+
+La capa Application separa las operaciones de escritura (Commands) de las de lectura (Queries), delegando su ejecución a servicios especializados cuyas interfaces se declaran en el Domain:
+
+- `IMedicationComplianceCommandService` → implementado por `MedicationComplianceCommandService`, que valida el estado de cumplimiento, verifica la existencia del `DoseSchedule` en base de datos y persiste el nuevo `MedicationCompliance`.
+- `IMedicationQueryService` → implementado por `MedicationQueryService`, que retorna todos los medicamentos activos de un paciente.
+- `INextPendingDoseQueryService` → implementado por `NextPendingDoseQueryService`, que aplica lógica de negocio compleja: filtra medicamentos activos, descarta horarios ya cumplidos en el día y calcula la próxima dosis pendiente según la zona horaria de Lima (SA Pacific Standard Time).
+
+**Patrón Repository en Infrastructure**
+
+Los repositorios concretos implementan las interfaces declaradas en Domain. Cada operación de persistencia llama a `SaveChangesAsync()` directamente sobre el `FollowUpDbContext`, que actúa como la unidad de persistencia del bounded context. Los repositorios utilizan LINQ con `Include()` para cargar las relaciones necesarias y aplican ordenamiento orientado a la experiencia del usuario:
+
+```csharp
+public async Task<ICollection<Medication>> FindByPatientIdAsync(int patientId)
+{
+    return await _context.Medications
+        .Where(m => m.PatientId == patientId)
+        .Include(m => m.Schedules)
+        .OrderBy(m => m.Name)
+        .ToListAsync();
+}
+```
+
+**Patrón Assembler en la capa Interfaces/REST**
+
+La capa Interfaces/REST utiliza el patrón **Assembler** para transformar entidades de dominio en Resources (DTOs de respuesta) y Resources en Commands (DTOs de entrada), manteniendo el modelo de dominio completamente aislado del contrato REST:
+
+- `MedicationResourceFromEntityAssembler` → convierte `Medication` en `MedicationResource`
+- `MedicationComplianceResourceFromEntityAssembler` → convierte `MedicationCompliance` en `MedicationComplianceResource`
+- `NextPendingDoseResourceFromEntityAssembler` → convierte `MedicationCompliance` en `NextPendingDoseResource`, calculando `MinutesUntilDose` en tiempo real con ajuste de zona horaria de Lima
+- `RecordComplianceCommandFromResourceAssembler` → convierte `RecordComplianceResource` en `RecordComplianceCommand`
+
+**Flujo de una solicitud POST /api/v1/compliance**
+
+1. `ComplianceController` recibe el `patientId` por query param y el `RecordComplianceResource` por body.
+2. `RecordComplianceCommandFromResourceAssembler` transforma el resource en un `RecordComplianceCommand`.
+3. `MedicationComplianceCommandService.HandleAsync()` valida el status, verifica la existencia del `DoseSchedule` en base de datos y crea el `MedicationCompliance`.
+4. `MedicationComplianceRepository.AddAsync()` persiste la entidad y llama a `SaveChangesAsync()`.
+5. `MedicationComplianceResourceFromEntityAssembler` transforma la entidad persistida en un `MedicationComplianceResource`.
+6. El controller responde `201 Created` con el resource y el header `Location` apuntando al nuevo recurso.
 
 ### 5.1.3. Pattern Based Custom Software Library
 
+Los componentes reutilizables del FollowUp Service se estructuran como clases y contratos compartidos dentro del mismo bounded context. Dado que al cierre del Sprint 1 el único microservicio completamente implementado es el FollowUp Service, los patrones base descritos a continuación se replicarán en los siguientes servicios conforme avance el desarrollo.
+
+**Value Objects como biblioteca de tipos del dominio**
+
+Los Value Objects encapsulan la lógica de validación y conversión de los atributos de negocio, actuando como una librería de tipos seguros para el dominio. Cada Value Object implementa conversiones implícitas que permiten a EF Core leer y escribir sus valores sin configuración adicional:
+
+`DoseValue` encapsula el string de la dosis con validación de longitud máxima de 100 caracteres. `ScheduledHour` encapsula un `TimeSpan` validado en el rango `00:00–23:59` con un factory method `From(hours, minutes, seconds)` para construcción explícita y segura:
+
+```csharp
+public static ScheduledHour From(int hours, int minutes = 0, int seconds = 0)
+{
+    if (hours < 0 || hours >= 24)
+        throw new ArgumentException("Hours must be between 0 and 23");
+    return new ScheduledHour(new TimeSpan(0, hours, minutes, seconds));
+}
+
+// Conversión implícita para compatibilidad con EF Core
+public static implicit operator TimeSpan(ScheduledHour hour) => hour.Value;
+public static implicit operator ScheduledHour(TimeSpan value) => new(value);
+```
+
+**Interfaces de dominio como contratos de la librería**
+
+Las interfaces declaradas en el Domain definen el contrato que las capas externas deben respetar, estableciendo el acuerdo entre capas sin revelar detalles de implementación:
+
+```csharp
+// Contrato de repositorio de medicamentos
+public interface IMedicationRepository
+{
+    Task<ICollection<Medication>> FindByPatientIdAsync(int patientId);
+    Task<Medication?> FindByIdAsync(int medicationId);
+    Task AddAsync(Medication medication);
+    Task UpdateAsync(Medication medication);
+    Task DeleteAsync(int medicationId);
+}
+
+// Contrato de repositorio de cumplimientos
+public interface IMedicationComplianceRepository
+{
+    Task<MedicationCompliance?> FindByIdAsync(int id);
+    Task<ICollection<MedicationCompliance>> FindByPatientIdAsync(int patientId);
+    Task<MedicationCompliance?> FindByDoseScheduleIdAsync(int doseScheduleId);
+    Task AddAsync(MedicationCompliance compliance);
+    Task UpdateAsync(MedicationCompliance compliance);
+    Task DeleteAsync(int id);
+}
+```
+
+**Records como Commands y Queries inmutables**
+
+Los Commands y Queries se implementan como `record` de C#, garantizando inmutabilidad y semántica de valor para los objetos de transferencia de intención de negocio:
+
+```csharp
+// Command para registrar cumplimiento
+public record RecordComplianceCommand(
+    int PatientId,
+    int DoseScheduleId,
+    string Status,
+    string? VideoUrl,
+    DateTime? OfflineRecordedAt);
+
+// Queries para consultar el estado del paciente
+public record GetMedicationsByPatientIdQuery(int PatientId);
+public record GetNextPendingDoseQuery(int PatientId);
+```
+
+**Configuración del DbContext con conversiones de Value Objects**
+
+El `FollowUpDbContext` configura mediante Fluent API las conversiones entre los Value Objects del dominio y los tipos primitivos de MySQL, habilitando la persistencia transparente sin exponer los detalles de serialización fuera de la capa Infrastructure:
+
+```csharp
+// Mapping de Medication con conversión de DoseValue
+modelBuilder.Entity<Medication>(entity =>
+{
+    entity.ToTable("medications");
+    entity.Property(m => m.Dose)
+        .HasConversion(d => d.Value, v => new DoseValue(v));
+});
+
+// Mapping de DoseSchedule con conversión de ScheduledHour
+modelBuilder.Entity<DoseSchedule>(entity =>
+{
+    entity.ToTable("dose_schedules");
+    entity.Property(ds => ds.ScheduledTime)
+        .HasConversion(sh => sh.Value, v => new ScheduledHour(v));
+});
+```
+
 ### 5.1.4. Framework Pattern Driven Refactoring Report
+
+El Sprint 1 del proyecto MediTrack concluye con el **FollowUp Service** completamente implementado bajo los principios de Clean Architecture y DDD. El **Treatment Service** cuenta únicamente con la estructura inicial del proyecto .NET 8 y será desarrollado en el Sprint 2. A continuación se documenta cómo el uso deliberado de los frameworks y patrones seleccionados produce un backend alineado con los atributos de calidad definidos en el ADD del Capítulo IV.
+
+**Organización del proyecto FollowUp Service**
+
+El microservicio se estructura en un único proyecto `MediTrack.FollowUpService.API` con carpetas que expresan la separación de capas, haciendo explícito el modelo arquitectónico sin requerir proyectos separados en esta etapa:
+
+```
+MediTrack.FollowUpService.API/
+├── Domain/
+│   └── Model/
+│       ├── Aggregates/     → Medication, DoseSchedule, MedicationCompliance
+│       ├── ValueObjects/   → ComplianceStatus, DoseValue, ScheduledHour
+│       ├── Commands/       → RecordComplianceCommand
+│       ├── Queries/        → GetMedicationsByPatientIdQuery, GetNextPendingDoseQuery
+│       └── I*Repository.cs, I*CommandService.cs, I*QueryService.cs
+├── Application/
+│   └── Internal/
+│       ├── CommandServices/ → MedicationComplianceCommandService
+│       └── QueryServices/   → MedicationQueryService, NextPendingDoseQueryService
+├── Infrastructure/
+│   └── Persistence/EFC/
+│       ├── Configuration/   → FollowUpDbContext
+│       └── Repositories/    → MedicationRepository, MedicationComplianceRepository
+├── Interfaces/
+│   └── REST/
+│       ├── Controllers/     → MedicationsController, ComplianceController
+│       ├── Resources/       → DTOs de entrada y salida
+│       └── Transform/       → Assemblers (4 clases)
+├── Migrations/              → InitialMigration (tablas medications, dose_schedules, medication_compliances)
+└── Program.cs
+```
+
+**Decisiones de diseño y su justificación**
+
+Durante el desarrollo del Sprint 1 se tomaron las siguientes decisiones de diseño deliberadas, documentadas como parte del proceso de refactoring orientado a patrones:
+
+| Decisión | Justificación |
+| --------- | ------------- |
+| `SaveChangesAsync()` en cada repositorio en lugar de un Unit of Work centralizado | El FollowUp Service opera con operaciones de escritura simples y atómicas por bounded context; la granularidad por repositorio es suficiente para este sprint y simplifica la implementación inicial |
+| Value Objects con `implicit operator` en lugar de conversores EF Core explícitos | Reduce la configuración en `OnModelCreating` y permite que los Value Objects sean utilizados directamente por LINQ sin necesidad de wrapping adicional |
+| Assemblers como clases independientes en lugar de métodos de extensión | Favorece la testabilidad individual de cada transformación y centraliza la lógica de mapeo en una sola clase con responsabilidad única |
+| Zona horaria de Lima hardcodeada en `NextPendingDoseQueryService` | Decisión pragmática para el Sprint 1 dado el contexto geográfico del producto; se parametrizará en sprints posteriores al escalar a otros mercados |
+| Auto-migración al inicio (`db.Database.Migrate()`) en `Program.cs` | Garantiza que el esquema de base de datos esté siempre sincronizado con el modelo del dominio en entornos de desarrollo y CI sin pasos manuales |
+
+**Configuración del pipeline en Program.cs**
+
+La configuración de `Program.cs` del FollowUp Service registra las dependencias siguiendo el orden de capas, manteniendo la legibilidad y permitiendo identificar qué componente pertenece a qué capa:
+
+```csharp
+// Infrastructure — proveedor MySQL
+builder.Services.AddDbContext<FollowUpDbContext>(options =>
+    options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection")!));
+
+// Domain/Infrastructure — repositorios
+builder.Services.AddScoped<IMedicationRepository, MedicationRepository>();
+builder.Services.AddScoped<IMedicationComplianceRepository, MedicationComplianceRepository>();
+
+// Application — servicios de caso de uso
+builder.Services.AddScoped<IMedicationQueryService, MedicationQueryService>();
+builder.Services.AddScoped<INextPendingDoseQueryService, NextPendingDoseQueryService>();
+builder.Services.AddScoped<IMedicationComplianceCommandService, MedicationComplianceCommandService>();
+
+// Interfaces — assemblers de transformación
+builder.Services.AddScoped<MedicationResourceFromEntityAssembler>();
+builder.Services.AddScoped<NextPendingDoseResourceFromEntityAssembler>();
+builder.Services.AddScoped<RecordComplianceCommandFromResourceAssembler>();
+builder.Services.AddScoped<MedicationComplianceResourceFromEntityAssembler>();
+
+// Presentation — documentación API
+builder.Services.AddSwaggerGen();
+builder.Services.AddOpenApi();
+```
+
+**Resultados del proceso de refactoring al cierre del Sprint 1**
+
+El FollowUp Service implementado cumple con los atributos de calidad definidos en el ADD: la separación por capas garantiza que cada cambio en la base de datos o en el framework afecte únicamente a Infrastructure sin impactar el Domain ni Application; la validación de negocio concentrada en los Value Objects y Command Services facilita la prueba unitaria sin necesidad de levantar infraestructura; y el patrón Assembler mantiene el contrato REST desacoplado del modelo de dominio, permitiendo evolucionar ambos de forma independiente.
 
 <hr class="page-break">
 
@@ -2106,11 +2499,56 @@ El siguiente diagrama representa el modelo de despliegue de MediTrack siguiendo 
 
 ### 5.3.1. Sprint 1
 
+Durante el Sprint backlog, el equipo tuvo la tarea de completar la landing page y user stories principales . La herramienta para la organización y gestion a los mienbros fue Trello. Esta herramienta nos sirvio para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
+
+
 #### 5.3.1.1. Sprint Backlog 1
 
-| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (horas) | Asignado a | Estado |
-| -------- | ---------- | ---------------- | ----------- | ------------------ | ---------- | ------ |
-| Sprint 1 |            |                  |             |                    |            |        |
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th colspan="8">Sprint 1</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="2">WorkItem / Task</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status (To-do / In-Process / To-Review / Done)</th>
+    </tr>
+    <tr>
+      <th>Id</th><th>Title</th>
+      <th>Id</th><th>Title</th>
+      <th></th><th></th><th></th><th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>US30</td><td>Ver propuesta de valor</td><td>TK01</td><td>Maquetar sección Hero</td><td>Diseñar e implementar la sección principal de la landing con descripción clara de qué es MediTrack y su propuesta de valor</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US31</td><td>Ver funcionalidades por segmento</td><td>TK02</td><td>Maquetar sección Funcionalidades</td><td>Implementar sección con tarjetas diferenciadas que muestren características específicas para pacientes y personal técnico</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US32</td><td>Ver testimonios o casos de uso</td><td>TK03</td><td>Maquetar sección Testimonios</td><td>Implementar sección con casos de uso representativos o testimonios de pacientes para generar confianza en la plataforma</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US34</td><td>Ver información de contacto</td><td>TK04</td><td>Maquetar sección Contacto</td><td>Implementar sección con correo, teléfono y/o formulario de contacto visible para visitantes con dudas</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US13</td><td>Subir receta médica con horarios</td><td>TK05</td><td>Crear endpoint de recetas</td><td>Implementar endpoint POST /api/v1/prescriptions con validación de paciente, medicamentos y horarios</td><td>4</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK06</td><td>Implementar PrescriptionCommandService</td><td>Desarrollar servicio de comando con validación contra MedicationCatalog y reglas de negocio de la receta</td><td>3</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK07</td><td>Crear assemblers y recursos REST</td><td>Implementar CreatePrescriptionCommandFromResourceAssembler y records de entrada/salida para el endpoint</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td>US14</td><td>Subir historial clínico</td><td>TK08</td><td>Crear endpoint de historial clínico</td><td>Implementar endpoint POST /api/v1/clinical-records con validación de existencia del paciente</td><td>3</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK09</td><td>Implementar ClinicalRecordCommandService</td><td>Desarrollar servicio con validación via IPatientValidationClient (mock para el sprint) y creación del registro</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td>US15</td><td>Buscar paciente individual</td><td>TK10</td><td>Crear endpoint de búsqueda de pacientes</td><td>Implementar endpoint GET /api/v1/patients/search con búsqueda por nombre y DNI</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK11</td><td>Implementar MockPatientSearchClient</td><td>Desarrollar cliente mock con lógica de búsqueda por DNI y nombre completo, con TODO documentado para reemplazo futuro</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td>US24</td><td>Editar o cancelar medicamento</td><td>TK12</td><td>Crear endpoint de edición de medicamento</td><td>Implementar endpoint PUT /api/v1/medications/{id} con validación de autorización de personal técnico</td><td>3</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK13</td><td>Crear endpoint de cancelación de medicamento</td><td>Implementar endpoint PATCH /api/v1/medications/{id}/cancel con validación de autorización y cambio de estado IsActive</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK14</td><td>Implementar MedicationCommandService</td><td>Desarrollar servicio con handlers para actualización y cancelación, incluyendo validaciones de negocio</td><td>3</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td>US04</td><td>Ver lista de medicamentos</td><td>TK15</td><td>Crear endpoint de medicamentos por paciente</td><td>Implementar endpoint GET /api/v1/medications?patientId= en Follow-up Service con schedules anidados</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK16</td><td>Implementar MedicationQueryService</td><td>Desarrollar servicio de consulta con GetMedicationsByPatientIdQuery y validación de patientId</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK17</td><td>Crear MedicationResourceFromEntityAssembler</td><td>Implementar assembler que mapea Medication a MedicationResource con lista de DoseScheduleResource anidados</td><td>1</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US06</td><td>Registrar cumplimiento de medicamento</td><td>TK18</td><td>Crear endpoint de cumplimiento</td><td>Implementar endpoint POST /api/v1/compliance con soporte para videoUrl y offlineRecordedAt</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK19</td><td>Implementar MedicationComplianceCommandService</td><td>Desarrollar servicio con validación de DoseSchedule existente, reglas de ComplianceStatus y registro de cumplimiento</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK20</td><td>Implementar Value Object ComplianceStatus</td><td>Crear Value Object con instancias estáticas Taken/Skipped y conversión implícita a string para compatibilidad con EF Core</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US26</td><td>Ver siguiente toma pendiente</td><td>TK21</td><td>Crear endpoint de siguiente toma</td><td>Implementar endpoint GET /api/v1/medications/next-dose?patientId= con respuesta de nombre, dosis y minutos restantes</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK22</td><td>Implementar NextPendingDoseQueryService</td><td>Desarrollar servicio con lógica de zona horaria Lima (SA Pacific Standard Time), filtrado de schedules activos y exclusión de tomas ya completadas hoy</td><td>4</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK23</td><td>Crear NextPendingDoseResourceFromEntityAssembler</td><td>Implementar assembler que calcula MinutesUntilDose considerando cruce de medianoche y formatea ScheduledTime en HH:mm</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+  </tbody>
+</table>
 
 #### 5.3.1.2. Development Evidence for Sprint Review
 
@@ -2148,9 +2586,12 @@ Durante este Sprint, se lograron avances significativos en la implementación de
 
 #### 5.3.1.3. Testing Suite Evidence for Sprint Review
 
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-| ---------- | ------ | --------- | -------------- | ------------------- | ------------------- |
-|            |        |           |                |                     |                     |
+| Test ID | Microservicio | Descripción | Resultado Esperado | Resultado Obtenido | Estado |
+|---------|---------------|-------------|--------------------|--------------------|--------|
+| TS-001  | Followup    | Validación de endpoint de registro de cumplimiento | Respuesta HTTP 200 con datos correctos | Respuesta HTTP 200 con datos correctos |  Passed |
+| TS-002  | Treatment   | Validación de endpoint de consulta de medicamentos | Lista de medicamentos retornada correctamente | Lista retornada correctamente |  Passed |
+
+En este Sprint se ejecutaron **dos pruebas unitarias básicas**, una por cada microservicio (Compliance y Medications). Ambas pruebas fueron exitosas, confirmando la correcta respuesta de los endpoints
 
 #### 5.3.1.4. Execution Evidence for Sprint Review
 
@@ -2236,149 +2677,29 @@ Durante este Sprint no se realizó un deployment formal de los Web Services en u
 
 #### 5.3.1.7. Team Collaboration Insights during Sprint
 
-| Integrantes | Tarea asignada |
-| ----------- | -------------- |
-|             |                |
+| Integrantes   | Tarea asignada |
+|----------------|----------------|
+| Jeremy | Desarrollo del microservicio **Follow Up** en C# y .NET: visualización de lista de medicamentos y horarios de toma, además del registro de cumplimiento de medicamentos según la hora programada (US04, US06, US26). |
+| Renzo | Desarrollo del microservicio **Follow Up** en C# y .NET: implementación de funcionalidades para seguimiento de medicación y control de tomas registradas por el paciente (US04, US06, US26). |
+| Victor | Desarrollo del microservicio **Treatment** en C# y .NET: implementación de carga y gestión de recetas médicas digitales, además de soporte para historial clínico (US13, US14, US15, US24). |
+| Piero | Desarrollo del microservicio **Treatment** en C# y .NET: desarrollo de lógica para almacenamiento y consulta de tratamientos e historial clínico de pacientes (US13, US14, US15, US24). |
+| Javier Gonzales | Desarrollo del microservicio **Treatment** en C# y .NET: apoyo en diseño e implementación de APIs REST para recetas médicas e historial clínico, integrando la arquitectura del sistema (US13, US14, US15, US24). |
+
+ <td align="center"><img src="assets//images//insight/in1.png" alt="insight1" ></td>
+
+ <td align="center"><img src="assets//images//insight/in2.png" alt="insight2" ></td>
+
+ <td align="center"><img src="assets//images//insight/in3.png" alt="insight3" ></td>
+
+ <td align="center"><img src="assets//images//insight/in4.png" alt="insight4" ></td>
+
+ <td align="center"><img src="assets//images//insight/in5.png" alt="insight5" ></td>
 
 #### 5.3.1.8. Kanban Board
 
 <hr class="page-break">
 
-### 5.3.2. Sprint 2
-
-#### 5.3.2.1. Sprint Backlog 2
-
-| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (horas) | Asignado a | Estado |
-| -------- | ---------- | ---------------- | ----------- | ------------------ | ---------- | ------ |
-| Sprint 2 |            |                  |             |                    |            |        |
-
-#### 5.3.2.2. Development Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-| ---------- | ------ | --------- | -------------- | ------------------- | ------------------- |
-|            |        |           |                |                     |                     |
-
-#### 5.3.2.3. Testing Suite Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-| ---------- | ------ | --------- | -------------- | ------------------- | ------------------- |
-|            |        |           |                |                     |                     |
-
-#### 5.3.2.4. Execution Evidence for Sprint Review
-
-#### 5.3.2.5. Microservices Documentation Evidence for Sprint Review
-
-| Microservicio | Verbo | Endpoint | Parámetros | Response |
-| ------------- | ----- | -------- | ---------- | -------- |
-|               |       |          |            |          |
-
-#### 5.3.2.6. Software Deployment Evidence for Sprint Review
-
-#### 5.3.2.7. Team Collaboration Insights during Sprint
-
-| Integrantes | Tarea asignada |
-| ----------- | -------------- |
-|             |                |
-
-#### 5.3.2.8. Kanban Board
-
-<hr class="page-break">
-
-### 5.3.3. Sprint 3
-
-#### 5.3.3.1. Sprint Backlog 3
-
-| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (horas) | Asignado a | Estado |
-| -------- | ---------- | ---------------- | ----------- | ------------------ | ---------- | ------ |
-| Sprint 3 |            |                  |             |                    |            |        |
-
-#### 5.3.3.2. Development Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-| ---------- | ------ | --------- | -------------- | ------------------- | ------------------- |
-|            |        |           |                |                     |                     |
-
-#### 5.3.3.3. Testing Suite Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-| ---------- | ------ | --------- | -------------- | ------------------- | ------------------- |
-|            |        |           |                |                     |                     |
-
-#### 5.3.3.4. Execution Evidence for Sprint Review
-
-#### 5.3.3.5. Microservices Documentation Evidence for Sprint Review
-
-| Microservicio | Verbo | Endpoint | Parámetros | Response |
-| ------------- | ----- | -------- | ---------- | -------- |
-|               |       |          |            |          |
-
-#### 5.3.3.6. Software Deployment Evidence for Sprint Review
-
-#### 5.3.3.7. Team Collaboration Insights during Sprint
-
-| Integrantes | Tarea asignada |
-| ----------- | -------------- |
-|             |                |
-
-#### 5.3.3.8. Kanban Board
-
-<hr class="page-break">
-
-### 5.3.4. Sprint 4
-
-#### 5.3.4.1. Sprint Backlog 4
-
-| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (horas) | Asignado a | Estado |
-| -------- | ---------- | ---------------- | ----------- | ------------------ | ---------- | ------ |
-| Sprint 4 |            |                  |             |                    |            |        |
-
-#### 5.3.4.2. Development Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-| ---------- | ------ | --------- | -------------- | ------------------- | ------------------- |
-|            |        |           |                |                     |                     |
-
-#### 5.3.4.3. Testing Suite Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-| ---------- | ------ | --------- | -------------- | ------------------- | ------------------- |
-|            |        |           |                |                     |                     |
-
-#### 5.3.4.4. Execution Evidence for Sprint Review
-
-#### 5.3.4.5. Microservices Documentation Evidence for Sprint Review
-
-
-| Microservicio | Verbo | Endpoint | Parámetros | Response |
-| ------------- | ----- | -------- | ---------- | -------- |
-|               |       |          |            |          |
-
-#### 5.3.4.6. Software Deployment Evidence for Sprint Review
-
-
-#### 5.3.4.7. Team Collaboration Insights during Sprint
-
-| Integrantes | Tarea asignada |
-| ----------- | -------------- |
-|             |                |
-
-#### 5.3.4.8. Kanban Board
-
-<hr class="page-break">
-
-## 5.4. Microservices Deployment
-
-### 5.4.1. Cloud Architecture Diagram
-
-### 5.4.2. Cloud Architecture Deployment (AWS, Microsoft Azure o Google Cloud)
-
-<hr class="page-break">
-
-## Conclusiones y recomendaciones
-
-## Video About-The-Team
-
-<hr class="page-break">
+ <td align="center"><img src="assets//images/kanban-board.png" alt="kanban-board" ></td>
 
 # Referencias Bibliográficas
 
