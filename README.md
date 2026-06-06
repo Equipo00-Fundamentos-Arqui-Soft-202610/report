@@ -2717,10 +2717,169 @@ Durante el Sprint backlog, el equipo tuvo la tarea de completar los microservici
 
 #### 5.3.2.2. Development Evidence for Sprint Review
 
+Durante este Sprint, realizado en el período del 15 de mayo al 06 de junio, se lograron avances significativos en el desarrollo de la solución Meditrack. Se continuó con la implementación del frontend web y de la aplicación móvil, incorporando nuevas interfaces, mejoras visuales y funcionalidades orientadas a optimizar la experiencia del usuario. Asimismo, se avanzó en el desarrollo e integración de múltiples microservicios de la arquitectura backend, destacando la implementación de Meditrack-Reminder-Service, Medical-Analysis-Service, Medical-Appointment-Service, Treatment-Service y FollowUp-Service. Estos servicios permiten gestionar recordatorios médicos, análisis clínicos, citas médicas, tratamientos y seguimientos de pacientes respectivamente. Los avances alcanzados permitieron fortalecer la comunicación entre frontend, aplicación móvil y backend basado en microservicios, consolidando así la funcionalidad y escalabilidad de la plataforma Meditrack.
+
+**Commits Report:**
+
+<br>
+
+**Treatment service:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|-----------------|---------------------|---------------------|
+| treatment-service | develop | 5432678 | Merge pull request #3 from Equipo00-Fundamentos-Arqui-Soft-202610/develop |  | 2026-06-06 |
+| treatment-service | develop | c3aff0a | feat: add get medications |  | 2026-06-06 |
+| treatment-service | develop | 3ada2a7 | Merge pull request #2 from Equipo00-Fundamentos-Arqui-Soft-202610/develop |  | 2026-06-06 |
+| treatment-service | develop | 1a3b4b5 | fix: align treatment service with database schema |  | 2026-06-05 |
+| treatment-service | develop | 14ac15e | fix: align treatment entities with database schema |  | 2026-06-05 |
+| treatment-service | develop | e6ff223 | fix: remove clinical record from treatment service |  | 2026-06-04 |
+
+<br>
+
+**Medical-Analysis-Service:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|-----------------|---------------------|---------------------|
+| medical-analysis-service | develop | f1fb47b | Add example configuration and README.md with local setup instructions. |  | 2026-06-06 |
+| medical-analysis-service | develop | a5f47e3 | feat: add context.md with stack, structure, requirements, and endpoints. |  | 2026-06-06 |
+| medical-analysis-service | develop | 04ff2f2 | feat: update API host address and add new endpoints for clinical records, statistics, and dashboard. |  | 2026-06-06 |
+| medical-analysis-service | develop | d8e015f | feat: remove unnecessary files. |  | 2026-06-06 |
+| medical-analysis-service | develop | ec1aa75 | feat: update dependency injection and add new services and repositories. |  | 2026-06-06 |
+| medical-analysis-service | develop | e21ba5e | feat: update db context to include new entities and their configurations. |  | 2026-06-06 |
+| medical-analysis-service | develop | 9c45bc6 | feat: add assembler services for REST resources and commands. |  | 2026-06-06 |
+| medical-analysis-service | develop | 50e1cf2 | feat: add REST controllers for alert, clinical data, dashboard, and statistics APIs. |  | 2026-06-06 |
+| medical-analysis-service | develop | 22bc029 | feat: add REST resources for alert, clinical data, dashboard, and statistics APIs. |  | 2026-06-06 |
+| medical-analysis-service | develop | 77e0427 | feat: add query services for adherence alert, clinical data, dashboard, and statistics queries. |  | 2026-06-06 |
+| medical-analysis-service | develop | 8262090 | feat: add adherence metric and alert command services. |  | 2026-06-06 |
+| medical-analysis-service | develop | b447fd8 | feat: add initial migration for adherence alert, metric, and clinical record entities. |  | 2026-06-06 |
+| medical-analysis-service | develop | 91b3356 | feat: add adherence alert, metric, and repository implementations. |  | 2026-06-06 |
+| medical-analysis-service | develop | 07334d9 | feat: implement event bus and subscription for integration events. |  | 2026-06-06 |
+| medical-analysis-service | develop | c2cb67e | feat: implement CSV dataset processor and parse CSV lines. |  | 2026-06-06 |
+| medical-analysis-service | develop | fbec29f | feat: add event handlers for appointment attendance and compliance registered. |  | 2026-06-06 |
+| medical-analysis-service | develop | 81df8de | feat: add interfaces for adherence alert, metric, and command services. |  | 2026-06-05 |
+| medical-analysis-service | develop | ba304ae | feat: add adherence calculator factory and strategy implementations. |  | 2026-06-05 |
+| medical-analysis-service | develop | e6a32f9 | feat: add events for appointment attendance and compliance registered. |  | 2026-06-05 |
+| medical-analysis-service | develop | d456165 | feat: add query models for active alerts, adherence trend, appointment stats, clinical history, and compliance stats. |  | 2026-06-05 |
+| medical-analysis-service | develop | 8354812 | feat: add commands for alert management and clinical dataset import. |  | 2026-06-05 |
+| medical-analysis-service | develop | 9fbc412 | feat: add value objects for adherence rate, alert severity, status, category and date range. |  | 2026-06-05 |
+| medical-analysis-service | develop | 6369b5c | feat: add aggregate models |  | 2026-06-05 |
+| medical-analysis-service | develop | 136363c | Add basic configuration |  | 2026-06-05 |
+| medical-analysis-service | develop | d451061 | Initial commit |  | 2026-06-05 |
+
+<br>
+
+**Medical-Appointment-Service:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|-----------------|---------------------|---------------------|
+| medical-appointment-service | develop | b56d16c | Merge pull request #1 from Equipo00-Fundamentos-Arqui-Soft-202610/develop |  | 2026-06-03 |
+| medical-appointment-service | develop | deb3f22 | fix/eliminando-codigo-basura |  | 2026-06-03 |
+| medical-appointment-service | develop | 7074acc | fix: configuraciones-mysql |  | 2026-06-03 |
+| medical-appointment-service | develop | a454ec5 | feat/agregar-migracion-inicial-appointment-service |  | 2026-06-03 |
+| medical-appointment-service | develop | df2ec57 | feat/configurar-arranque-appointment-service |  | 2026-06-03 |
+| medical-appointment-service | develop | a4d0f73 | feat/exponer-api-appointment-service |  | 2026-06-03 |
+| medical-appointment-service | develop | ab60a41 | feat/implementar-aplicacion-persistencia-appointment-service |  | 2026-06-03 |
+| medical-appointment-service | develop | bd21a5c | feat/modelar-dominio-appointment-service |  | 2026-06-03 |
+| medical-appointment-service | develop | 0e6db7d | feat/configurar-dependencias-appointment-service |  | 2026-06-03 |
+| medical-appointment-service | develop | 9f5933e | feat/crear-estructura-appointment-service |  | 2026-06-03 |
+| medical-appointment-service | develop | 2daebc9 | Initial commit |  | 2026-06-03 |
+
+<br>
+
+**FollowUp-Service:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|-----------------|---------------------|---------------------|
+| follow-up-service | develop | edefa90 | Merge pull request #9 from Equipo00-Fundamentos-Arqui-Soft-202610/develop |  | 2026-06-06 |
+| follow-up-service | fix/connect-frontend | c1add17 | Merge pull request #8 from Equipo00-Fundamentos-Arqui-Soft-202610/fix/connect-frontend |  | 2026-06-06 |
+| follow-up-service | fix/connect-frontend | ec69541 | fix: connection |  | 2026-06-06 |
+| follow-up-service | develop | 873d8f3 | fix: add dose schedule |  | 2026-06-06 |
+| follow-up-service | feature/low-stock-alert | 7299863 | Merge pull request #7 from Equipo00-Fundamentos-Arqui-Soft-202610/feature/low-stock-alert |  | 2026-06-01 |
+| follow-up-service | feature/low-stock-alert | 74db1d3 | feat: Add low-stock medications query and endpoint |  | 2026-06-01 |
+| follow-up-service | feature/medication-adherence | a2ca7b6 | Merge pull request #6 from Equipo00-Fundamentos-Arqui-Soft-202610/feature/medication-adherence |  | 2026-06-01 |
+| follow-up-service | feature/medication-adherence | cf68bef | feat: add GET endpoint for medical adherence |  | 2026-06-01 |
+
+<br>
+
+**Reminder-Service:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|-----------------|---------------------|---------------------|
+| reminder-service | main | d00ea16 | docs: trim README to a lightweight overview |  | 2026-06-06 |
+| reminder-service | main | e17e56e | docs: add service README with architecture and run instructions |  | 2026-06-06 |
+| reminder-service | main | 90520a7 | build: add Dockerfile and docker-compose with mysql and rabbitmq |  | 2026-06-06 |
+| reminder-service | main | 43ef766 | test: add unit tests and BDD feature for reminder flows |  | 2026-06-06 |
+| reminder-service | main | 451a94d | feat(api): add REST controllers, JWT auth, swagger and health checks |  | 2026-06-06 |
+| reminder-service | main | 0313b4d | feat(infrastructure): add EF Core/MySQL, RabbitMQ, FCM and scheduler |  | 2026-06-06 |
+| reminder-service | main | da9da8e | feat(application): add use cases, integration events and DTOs |  | 2026-06-06 |
+| reminder-service | main | 4b42b16 | feat(domain): add reminder domain model and factory method |  | 2026-06-06 |
+| reminder-service | main | 40e0768 | chore: scaffold solution structure and tooling config |  | 2026-06-06 |
+
+<br>
+
+**MediTrack-Mobile:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|-----------------|---------------------|---------------------|
+| meditrack-mobile | develop | a39593f | Merge pull request #3 from Equipo00-Fundamentos-Arqui-Soft-202610/develop |  | 2026-06-06 |
+| meditrack-mobile | feature/home | f69a032 | Merge pull request #2 from Equipo00-Fundamentos-Arqui-Soft-202610/feature/home |  | 2026-06-06 |
+| meditrack-mobile | feature/home | 9b56ec7 | fix: home screen |  | 2026-06-06 |
+| meditrack-mobile | feature/medications | 2729d65 | Merge pull request #1 from Equipo00-Fundamentos-Arqui-Soft-202610/feature/medications |  | 2026-06-06 |
+| meditrack-mobile | feature/medications | 6cd5635 | fix/ui |  | 2026-06-06 |
+| meditrack-mobile | feature/medications | e579813 | feat/medication-screen |  | 2026-06-06 |
+| meditrack-mobile | develop | a6c73cd | feat: Rename screens, update UI texts, add gradle flags |  | 2026-06-01 |
+| meditrack-mobile | develop | 3980a8e | feat: initial flutter project structure |  | 2026-06-01 |
+
+<br>
+
+
 
 #### 5.3.2.3. Testing Suite Evidence for Sprint Review
 
+| Test ID | Microservice | Description | Expected Result | Obtained Result | Status |
+|---------|--------------|-------------|-----------------|-----------------|--------|
+| TS-001 | followup-service | Validation of medication adherence endpoint | HTTP 200 response with adherence information correctly returned | HTTP 200 response with adherence information correctly returned | Passed |
+| TS-002 | treatment-service | Validation of medications query endpoint | Medication list returned successfully from the API | Medication list returned successfully from the API | Passed |
+
+
+<br>
+
+Durante este Sprint se ejecutaron pruebas funcionales básicas sobre los microservicios followup-service y treatment-service, validando el correcto funcionamiento de los endpoints principales relacionados con adherencia médica y consulta de medicamentos. Ambas pruebas fueron exitosas, confirmando la correcta integración y respuesta de los servicios implementados.
+
+<br>
+
 #### 5.3.1.4. Execution Evidence for Sprint Review
+
+Durante este Sprint se lograron avances significativos en el desarrollo, integración y validación de los componentes principales de la plataforma MediTrack. Aunque no se realizó un despliegue formal en un entorno productivo, se implementaron y consolidaron diversos componentes clave del sistema:
+
+* Microservicios desarrollados e integrados: treatment-service, followup-service, medical-analysis-service, medical-appointment-service y reminder-service.
+* Desarrollo y mejora continua del frontend web y de la aplicación móvil MediTrack.
+* Integración de endpoints RESTful para tratamientos, adherencia médica, seguimiento de pacientes, análisis clínicos y recordatorios.
+* Prototipo funcional accesible en entorno local y de desarrollo, permitiendo validar la interacción entre frontend, aplicación móvil y arquitectura basada en microservicios.
+
+Estos avances permitieron consolidar una versión funcional del ecosistema MediTrack para la validación de flujos principales del sistema durante el Sprint Review.
+
+<br>
+
+Evidencias:
+
++ treatment service:
+
+
+
+<br>
+
++ follow up service:
+
+<br>
+
++ meditrack mobile:
+
+<br>
+
+
+
+
 
 #### 5.3.1.5. Microservices Documentation Evidence for Sprint Review
 
