@@ -176,8 +176,15 @@
       - [5.3.1.6. Software Deployment Evidence for Sprint Review](#5316-software-deployment-evidence-for-sprint-review)
       - [5.3.1.7. Team Collaboration Insights during Sprint](#5317-team-collaboration-insights-during-sprint)
       - [5.3.1.8. Kanban Board](#5318-kanban-board)
-
-
+    - [5.3.2. Sprint 2](#532-sprint-2)
+      - [5.3.2.1. Sprint Backlog 2](#5321-sprint-backlog-2)
+      - [5.3.2.2. Development Evidence for Sprint Review](#5322-development-evidence-for-sprint-review)
+      - [5.3.2.3. Testing Suite Evidence for Sprint Review](#5323-testing-suite-evidence-for-sprint-review)
+      - [5.3.2.4. Execution Evidence for Sprint Review](#5324-execution-evidence-for-sprint-review)
+      - [5.3.2.5. Microservices Documentation Evidence for Sprint Review](#5325-microservices-documentation-evidence-for-sprint-review)
+      - [5.3.2.6. Software Deployment Evidence for Sprint Review](#5326-software-deployment-evidence-for-sprint-review)
+      - [5.3.2.7. Team Collaboration Insights during Sprint](#5327-team-collaboration-insights-during-sprint)
+      - [5.3.2.8. Kanban Board](#5328-kanban-board)
 
 - [Conclusiones](#conclusiones)
 - [Referencias Bibliográficas](#referencias-bibliográficas)
@@ -2501,7 +2508,6 @@ El siguiente diagrama representa el modelo de despliegue de MediTrack siguiendo 
 
 Durante el Sprint backlog, el equipo tuvo la tarea de completar la landing page y user stories principales . La herramienta para la organización y gestion a los mienbros fue Trello. Esta herramienta nos sirvio para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
 
-
 #### 5.3.1.1. Sprint Backlog 1
 
 <table border="1" cellspacing="0" cellpadding="5">
@@ -2700,6 +2706,76 @@ Durante este Sprint no se realizó un deployment formal de los Web Services en u
 <hr class="page-break">
 
  <td align="center"><img src="assets//images/kanban-board.png" alt="kanban-board" ></td>
+
+### 5.3.2. Sprint 2
+
+Durante el Sprint backlog, el equipo tuvo la tarea de completar los microservicios y tener un buen avance del Front-End . La herramienta para la organización y gestion a los mienbros fue Trello. Esta herramienta nos sirvio para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
+
+
+#### 5.3.2.1. Sprint Backlog 2
+
+
+#### 5.3.2.2. Development Evidence for Sprint Review
+
+
+#### 5.3.2.3. Testing Suite Evidence for Sprint Review
+
+#### 5.3.1.4. Execution Evidence for Sprint Review
+
+#### 5.3.1.5. Microservices Documentation Evidence for Sprint Review
+
+Durante este Sprint se consolidó la realizacion de 5 Microservices mediante OpenAPI (Swagger UI), asegurando que cada microservicio esté descrito con sus acciones, parámetros y respuestas. Esto facilita la validación de servicios RESTful, la integración con aplicaciones móviles/web y la trazabilidad de cambios en el repositorio.
+
+#### Treatment Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Treatment-service
+
+**Imagen de prueba:**
+<td align="center"><img src="assets/images/Cap-treatment.png" alt="Context diagram" ></td>
+
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| TreatmentService | POST | ``/api/v1/clinical-records`` | Body: ``{ ``"patientId":0,"uploadedBy":0,"datasetSource":"string","fileUrl":"string" ``}`` | ``{ ``"id":1,"patientId":0,"uploadedBy":0,"datasetSource":"string","fileUrl":"string","status":"ok" ``}`` |
+| TreatmentService | PUT | ``/api/v1/medications/{medicationId}`` | Path: ``medicationId``, Body: ``{ ``"dose":"string","frequencyHour":0,"startDate":"2026-05-16T00:52:17.777Z","endDate":"2026-05-16T00:52:17.777Z","stockCount":0,"stockAlertThre":0,"authorizedByTechnicalStaff":true ``}`` | ``{ ``"id":5,"dose":"string","frequencyHour":0,"status":"updated" ``}`` |
+| TreatmentService | PATCH | ``/api/v1/medications/{medicationId}/cancel`` | Path: ``medicationId``, Body: ``{ ``"authorizedByTechnicalStaff":true ``}`` | ``{ ``"id":5,"status":"cancelled" ``}`` |
+| TreatmentService | GET | ``/api/v1/patients/search`` | Query: ``?query=Juan`` | ``[{"id":1,"name":"Juan Perez","age":30}]`` |
+| TreatmentService | POST | ``/api/v1/prescriptions`` | Body: ``{ ``"patientId":0,"technicalId":0,"notes":"string","medications":[{"catalogId":0,"dose":"string","frequencyHour":0,"startDate":"2026-05-16T00:52:17.784Z","endDate":"2026-05-16T00:52:17.784Z","stockCount":0,"stockAlertThre":0,"doseSchedules":[{"scheduledTime":"string"}]}] ``}`` | ``{ ``"id":20,"patientId":0,"status":"created" ``}`` |
+
+#### Treatment Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/FollowUp-Service
+
+**Imagen de prueba:**
+<td align="center"><img src="assets/images/Cap - FollowUp.png" alt="Context diagram" ></td>
+
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| FollowUpService | POST | ``/api/v1/compliance`` | Query: ``patientId``, Body: ``{ ``"patientId":0,"doseScheduleId":0,"status":"string","videoUrl":"string","offlineRecordedAt":"2026-05-16T00:48:58.697Z" ``}`` | ``{ ``"id":0,"patientId":0,"doseScheduleId":0,"status":"string","recordedAt":"2026-05-16T00:48:58.698Z","videoUrl":"string","synced":true,"offlineRecordedAt":"2026-05-16T00:48:58.698Z" ``}`` |
+| FollowUpService | GET | ``/api/v1/compliance/{id}`` | Path: ``id`` | ``{ ``"id":0,"patientId":0,"doseScheduleId":0,"status":"string","recordedAt":"2026-05-16T00:48:58.700Z","videoUrl":"string","synced":true,"offlineRecordedAt":"2026-05-16T00:48:58.700Z" ``}`` |
+| FollowUpService | GET | ``/api/v1/medications`` | Query: ``patientId`` | ``[{"id":0,"patientId":0,"name":"string","dose":"string","frequencyHours":0,"startDate":"2026-05-16T00:48:58.702Z","endDate":"2026-05-16T00:48:58.702Z","stockCount":0,"isActive":true,"schedules":[{"id":0,"scheduledTime":"string","isActive":true}]}]`` |
+| FollowUpService | GET | ``/api/v1/medications/next-dose`` | Query: ``patientId`` | ``{ ``"medicationName":"string","dose":"string","scheduledTime":"string","minutesUntilDose":0 ``}`` |
+
+#### Medical Appoinment Service
+
+#### 5.3.1.6. Software Deployment Evidence for Sprint Review
+
+
+#### 5.3.2.7. Team Collaboration Insights during Sprint
+
+| Integrantes   | Tarea asignada |
+|----------------|----------------|
+| Jeremy |  |
+| Renzo |  |
+| Victor |  |
+| Piero |  |
+| Javier Gonzales |  |
+
+
+#### 5.3.2.8. Kanban Board
+
+
+
+
 
 # Referencias Bibliográficas
 
