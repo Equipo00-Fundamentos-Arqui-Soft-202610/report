@@ -3062,6 +3062,18 @@ Durante este Sprint se consolidó la realizacion de 5 Microservices mediante Ope
 | AppointmentService | GET | ``/api/v1/clinical-exams/pending`` | Query: ``patientId`` | ``[{"id":1,"patientId":0,"examType":"Hemograma","pickupDate":"2026-06-15T09:00:00Z","laboratoryName":"Laboratorio Central","status":"pending_pickup","createdAt":"2026-06-06T00:00:00Z","updatedAt":null}]`` |
 | AppointmentService | PATCH | ``/api/v1/clinical-exams/{id}/picked-up`` | Path: ``id`` | ``{ "id":1,"patientId":0,"examType":"Hemograma","pickupDate":"2026-06-15T09:00:00Z","laboratoryName":"Laboratorio Central","status":"picked_up","createdAt":"2026-06-06T00:00:00Z","updatedAt":"2026-06-06T00:20:00Z" }`` |
 
+#### Reminder Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Meditrack-Reminder-Service
+
+<td align="center"><img src="assets//images//chapter5/evidence/reminder-service.png" alt="reminder-service-documentation" ></td>
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| ReminderService | GET | ``/reminders/patients/{patientId}`` | Path: ``patientId`` | ``[{ ``"id":2,"patientId":1,"entityType":"Medication","entityId":88,"scheduledAt":"2030-01-01T08:00:00","status":"Scheduled","title":"Hora de tu medicamento","body":"Es momento de tomar Losartán (50 mg).","cancelledAt":null ``}]`` |
+| ReminderService | PUT | ``/reminders/{id}/cancel`` | Path: ``id`` | ``204 No Content`` (el recordatorio queda cancelado y sale de la lista de activos) |
+| ReminderService | GET | ``/reminders/preferences/patients/{patientId}`` | Path: ``patientId`` | ``{ ``"patientId":1,"soundEnabled":true,"vibrationEnabled":true,"repeatCount":1,"globalEnabled":true ``}`` |
+| ReminderService | PUT | ``/reminders/preferences/patients/{patientId}`` | Path: ``patientId``, Body: ``{ ``"soundEnabled":true,"vibrationEnabled":false,"repeatCount":2,"globalEnabled":true ``}`` | ``{ ``"patientId":1,"soundEnabled":true,"vibrationEnabled":false,"repeatCount":2,"globalEnabled":true ``}`` |
+
 #### 5.3.2.6. Software Deployment Evidence for Sprint Review
 
 Durante este Sprint no se realizó un deployment formal de los Web Services en un entorno productivo ni staging. Sin embargo, se avanzó con una primera version de la aplicacion front-end, el cual permite visualizar y validar la lógica de los servicios desarrollados. Ademas, se termino con el desarrollo de los microservisios.
