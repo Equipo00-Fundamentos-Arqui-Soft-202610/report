@@ -2981,6 +2981,12 @@ Estos avances permitieron consolidar una versión funcional del ecosistema MediT
 
 <br>
 
++ Reminder Service:
+
+<td align="center"><img src="assets//images//chapter5/evidence/reminder-service.png" alt="reminder-service-evidence" ></td>
+
+<br>
+
 + Meditrack Mobile:
 
 <td align="center"><img src="assets//images//chapter5/evidence/mobile-meditrack.png" alt="meditrack-mobile-evidence" ></td>
