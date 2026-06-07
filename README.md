@@ -2714,6 +2714,43 @@ Durante el Sprint backlog, el equipo tuvo la tarea de completar los microservici
 
 #### 5.3.2.1. Sprint Backlog 2
 
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th colspan="8">Sprint 2</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="2">WorkItem / Task</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status (To-do / In-Process / To-Review / Done)</th>
+    </tr>
+    <tr>
+      <th>Id</th><th>Title</th>
+      <th>Id</th><th>Title</th>
+      <th></th><th></th><th></th><th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>US14</td><td>Registrar historial clínico manual</td><td>TK01</td><td>Crear endpoint POST /api/v1/clinical-records</td><td>Implementar endpoint para registrar un historial clínico manual con patientId, recordDate, diagnosis y notes</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Implementar ClinicalDataCommandService</td><td>Desarrollar servicio de comando con handler para RegisterClinicalRecordCommand y creación del agregado ClinicalRecord</td><td>2</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK03</td><td>Modelar agregado ClinicalRecord y Value Objects del dominio</td><td>Crear ClinicalRecord aggregate con campos Source e ImportBatchId; definir Value Objects AdherenceRate, AlertSeverity, AlertStatus, ComplianceCategory y DateRange</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td>US17</td><td>Filtrar historial clínico por rango de fechas</td><td>TK01</td><td>Añadir parámetros opcionales from/to al endpoint GET /api/v1/clinical-records</td><td>Extender GetClinicalHistoryByPatientIdQuery con DateTime? From y DateTime? To; actualizar controller para recibir los parámetros opcionales por query string</td><td>2</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Implementar FindByPatientIdAndDateRangeAsync en ClinicalRecordRepository</td><td>Agregar método al repositorio que filtre registros clínicos por patientId y rango de fechas usando LINQ sobre EF Core</td><td>2</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td>US16</td><td>Ver tendencia de adherencia por paciente</td><td>TK01</td><td>Crear endpoint GET /api/v1/dashboards/adherence-trend</td><td>Implementar endpoint que retorna la tendencia de adherencia de un paciente en un rango de fechas, con puntos por categoría</td><td>2</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Implementar DashboardQueryService y AdherenceMetric aggregate</td><td>Desarrollar el servicio de consulta con GetAdherenceTrendByPatientIdQuery; modelar AdherenceMetric con campos TotalScheduled, TotalCompliant, TotalMissed y Rate</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK03</td><td>Crear DashboardResourceFromAggregateAssembler</td><td>Implementar assembler que convierte la colección de AdherenceMetric en AdherenceTrendResource con lista de AdherenceTrendPointResource</td><td>1</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td>US18</td><td>Ver estadísticas de cumplimiento de medicación y citas</td><td>TK01</td><td>Crear endpoints GET /api/v1/statistics/compliance y GET /api/v1/statistics/appointments</td><td>Implementar StatisticsController con dos endpoints: cumplimiento por categoría (medicación/citas) y asistencia a citas, ambos con filtro por rango de fechas</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Implementar StatisticsQueryService y ComplianceStatistic aggregate</td><td>Desarrollar servicios de consulta para GetComplianceStatisticsQuery y GetAppointmentStatisticsQuery; modelar ComplianceStatistic con WindowStart, WindowEnd y ComplianceRate</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK03</td><td>Crear StatisticsResourceFromAggregateAssembler</td><td>Implementar assembler que mapea ComplianceStatistic a ComplianceStatisticResource con todos los campos del período</td><td>1</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td>US27</td><td>Alerta cuando la adherencia cae por debajo del umbral</td><td>TK01</td><td>Crear endpoints GET, POST y PATCH /api/v1/alerts</td><td>Implementar AlertController con listado de alertas con filtro opcional por status, creación manual de alerta y reconocimiento de alerta por id</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Implementar AlertCommandService y AlertQueryService</td><td>Desarrollar servicio de comando para RaiseAdherenceAlertCommand y AcknowledgeAlertCommand; servicio de consulta para GetActiveAlertsQuery con filtro por status</td><td>2</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK03</td><td>Implementar Strategy Pattern de cálculo de adherencia</td><td>Crear interfaz IAdherenceCalculator e implementar MedicationAdherenceStrategy (umbral alerta 70%, crítico 50%) y AppointmentAdherenceStrategy (umbral alerta 80%, crítico 60%); registrar AdherenceCalculatorFactory para resolución por categoría</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK04</td><td>Implementar Observer Pattern con InMemoryEventBus y HostedEventConsumer</td><td>Crear IIntegrationEventBus con InMemoryEventBus basado en ConcurrentDictionary; implementar HostedEventConsumer como BackgroundService que suscribe los handlers ComplianceRegisteredEventHandler, AppointmentAttendanceRegisteredEventHandler y PrescriptionLoadedEventHandler</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
+  </tbody>
+</table>
 
 #### 5.3.2.2. Development Evidence for Sprint Review
 
@@ -2840,15 +2877,40 @@ Durante este Sprint, realizado en el período del 15 de mayo al 06 de junio, se 
 |---------|--------------|-------------|-----------------|-----------------|--------|
 | TS-001 | followup-service | Validation of medication adherence endpoint | HTTP 200 response with adherence information correctly returned | HTTP 200 response with adherence information correctly returned | Passed |
 | TS-002 | treatment-service | Validation of medications query endpoint | Medication list returned successfully from the API | Medication list returned successfully from the API | Passed |
+| TS-003 | medical-analysis-service | POST /api/v1/clinical-records — Registration of a manual clinical record with patientId, recordDate, diagnosis and notes | HTTP 201 Created with the new record including id, source "manual" and createdAt timestamp | HTTP 201 Created with the clinical record correctly persisted and returned | Passed |
+| TS-004 | medical-analysis-service | GET /api/v1/clinical-records?patientId=1 — Query of the full clinical history for patient 1 | HTTP 200 OK with an array containing all clinical records for the patient ordered by date descending | HTTP 200 OK with the array of clinical records returned correctly | Passed |
+| TS-005 | medical-analysis-service | GET /api/v1/clinical-records?patientId=1&from=2026-01-01&to=2026-06-30 — Filter clinical history by date range | HTTP 200 OK with only the records whose recordDate falls within the specified range | HTTP 200 OK with the filtered records returned within the requested period | Passed |
+| TS-006 | medical-analysis-service | POST /api/v1/alerts — Creation of an adherence alert with severity "warning" and a custom reason | HTTP 201 Created with the alert containing status "open", triggeredAt timestamp and acknowledgedAt null | HTTP 201 Created with the alert correctly persisted and returned | Passed |
 
 
 <br>
 
-Durante este Sprint se ejecutaron pruebas funcionales básicas sobre los microservicios followup-service y treatment-service, validando el correcto funcionamiento de los endpoints principales relacionados con adherencia médica y consulta de medicamentos. Ambas pruebas fueron exitosas, confirmando la correcta integración y respuesta de los servicios implementados.
+Durante este Sprint se ejecutaron pruebas funcionales básicas sobre los microservicios followup-service, treatment-service, medical-analysis-service, medical-appointment-service y reminder-service, validando el correcto funcionamiento de los endpoints principales relacionados con adherencia médica y consulta de medicamentos. Ambas pruebas fueron exitosas, confirmando la correcta integración y respuesta de los servicios implementados.
 
 <br>
 
-#### 5.3.1.4. Execution Evidence for Sprint Review
++ Medical-Analysis-Service:
+
+Pruebas funcionales realizadas sobre los endpoints de estadísticas de cumplimiento y tendencia de adherencia.
+
+<td align="center"><img src="assets//images//chapter5/testing/clinical-records.png" alt="clinical-records" ></td>
+
+<br>
+
+<td align="center"><img src="assets//images//chapter5/testing/get-patient.png" alt="get-patient" ></td>
+
+<br>
+
+<td align="center"><img src="assets//images//chapter5/testing/period-time.png" alt="get-patient during period of time" ></td>
+
+<br>
+
+<td align="center"><img src="assets//images//chapter5/testing/alerts.png" alt="post alerts" ></td>
+
+<br>
+
+
+#### 5.3.2.4. Execution Evidence for Sprint Review
 
 Durante este Sprint se lograron avances significativos en el desarrollo, integración y validación de los componentes principales de la plataforma MediTrack. Aunque no se realizó un despliegue formal en un entorno productivo, se implementaron y consolidaron diversos componentes clave del sistema:
 
@@ -2875,6 +2937,12 @@ Evidencias:
 
 <br>
 
++ medical analysis service:
+
+<td align="center"><img src="assets//images//chapter5/evidence/medical-analysis-service.png" alt="medical-analysis-service-evidence" ></td>
+
+<br>
+
 + meditrack mobile:
 
 <td align="center"><img src="assets//images//chapter5/evidence/mobile-meditrack.png" alt="meditrack-mobile-evidence" ></td>
@@ -2885,7 +2953,7 @@ Evidencias:
 
 
 
-#### 5.3.1.5. Microservices Documentation Evidence for Sprint Review
+#### 5.3.2.5. Microservices Documentation Evidence for Sprint Review
 
 Durante este Sprint se consolidó la realizacion de 5 Microservices mediante OpenAPI (Swagger UI), asegurando que cada microservicio esté descrito con sus acciones, parámetros y respuestas. Esto facilita la validación de servicios RESTful, la integración con aplicaciones móviles/web y la trazabilidad de cambios en el repositorio.
 
@@ -2918,9 +2986,27 @@ Durante este Sprint se consolidó la realizacion de 5 Microservices mediante Ope
 | FollowUpService | GET | ``/api/v1/medications`` | Query: ``patientId`` | ``[{"id":0,"patientId":0,"name":"string","dose":"string","frequencyHours":0,"startDate":"2026-05-16T00:48:58.702Z","endDate":"2026-05-16T00:48:58.702Z","stockCount":0,"isActive":true,"schedules":[{"id":0,"scheduledTime":"string","isActive":true}]}]`` |
 | FollowUpService | GET | ``/api/v1/medications/next-dose`` | Query: ``patientId`` | ``{ ``"medicationName":"string","dose":"string","scheduledTime":"string","minutesUntilDose":0 ``}`` |
 
-#### Medical Appoinment Service
+#### Medical Analysis Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Medical-Analysis-Service
 
-#### 5.3.1.6. Software Deployment Evidence for Sprint Review
+<td align="center"><img src="assets//images//chapter5/evidence/medical-analysis-service.png" alt="medical-analysis-service-evidence" ></td>
+
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| MedicalAnalysisService | POST | ``/api/v1/clinical-records`` | Body: ``{ ``"patientId":1,"recordDate":"2026-06-01T00:00:00","diagnosis":"Hypertension stage 2","notes":"string" ``}`` | ``{ ``"id":1,"patientId":1,"recordDate":"2026-06-01T00:00:00","diagnosis":"Hypertension stage 2","notes":"string","source":"manual","importBatchId":null,"createdAt":"2026-06-01T10:00:00" ``}`` |
+| MedicalAnalysisService | POST | ``/api/v1/clinical-records/import`` | Form-data: ``file`` (CSV con columnas patientId, date, diagnosis, notes) | ``{ ``"importBatchId":"A1B2C3D4" ``}`` |
+| MedicalAnalysisService | GET | ``/api/v1/clinical-records`` | Query: ``patientId`` (requerido), ``from`` (opcional), ``to`` (opcional) | ``[{ ``"id":1,"patientId":1,"recordDate":"2026-06-01T00:00:00","diagnosis":"Hypertension stage 2","notes":"string","source":"manual","importBatchId":null,"createdAt":"2026-06-01T10:00:00" ``}]`` |
+| MedicalAnalysisService | GET | ``/api/v1/statistics/compliance`` | Query: ``category`` ("medication"\|"appointment"), ``from``, ``to`` | ``[{ ``"category":"medication","windowStart":"2026-01-01T00:00:00","windowEnd":"2026-06-30T00:00:00","totalScheduled":120,"totalCompliant":98,"totalMissed":22,"complianceRate":81.67 ``}]`` |
+| MedicalAnalysisService | GET | ``/api/v1/statistics/appointments`` | Query: ``from``, ``to`` | ``[{ ``"category":"appointment","windowStart":"2026-01-01T00:00:00","windowEnd":"2026-06-30T00:00:00","totalScheduled":20,"totalCompliant":17,"totalMissed":3,"complianceRate":85.0 ``}]`` |
+| MedicalAnalysisService | GET | ``/api/v1/dashboards/adherence-trend`` | Query: ``patientId``, ``from``, ``to`` | ``{ ``"patientId":1,"points":[{ ``"category":"medication","totalScheduled":30,"totalCompliant":25,"totalMissed":5,"rate":83.33,"lastUpdatedAt":"2026-06-01T10:00:00" ``}] ``}`` |
+| MedicalAnalysisService | GET | ``/api/v1/alerts`` | Query: ``status`` (opcional: "open"\|"acknowledged"\|"resolved") | ``[{ ``"id":1,"patientId":1,"severity":"warning","status":"open","reason":"Medication adherence dropped below 70% threshold","triggeredAt":"2026-06-01T10:00:00","acknowledgedAt":null ``}]`` |
+| MedicalAnalysisService | POST | ``/api/v1/alerts`` | Body: ``{ ``"patientId":1,"severity":"warning","reason":"string" ``}`` | ``{ ``"id":1,"patientId":1,"severity":"warning","status":"open","reason":"string","triggeredAt":"2026-06-01T10:00:00","acknowledgedAt":null ``}`` |
+| MedicalAnalysisService | PATCH | ``/api/v1/alerts/{id}/acknowledge`` | Path: ``id`` | ``{ ``"id":1,"patientId":1,"severity":"warning","status":"acknowledged","reason":"string","triggeredAt":"2026-06-01T10:00:00","acknowledgedAt":"2026-06-01T11:00:00" ``}`` |
+
+#### Medical Appointment Service
+
+#### 5.3.2.6. Software Deployment Evidence for Sprint Review
 
 
 #### 5.3.2.7. Team Collaboration Insights during Sprint
