@@ -2870,7 +2870,6 @@ Durante este Sprint, realizado en el período del 15 de mayo al 06 de junio, se 
 <br>
 
 
-
 #### 5.3.2.3. Testing Suite Evidence for Sprint Review
 
 | Test ID | Microservice | Description | Expected Result | Obtained Result | Status |
@@ -2917,21 +2916,20 @@ Durante este Sprint se lograron avances significativos en el desarrollo, integra
 * Microservicios desarrollados e integrados: treatment-service, followup-service, medical-analysis-service, medical-appointment-service y reminder-service.
 * Desarrollo y mejora continua del frontend web y de la aplicación móvil MediTrack.
 * Integración de endpoints RESTful para tratamientos, adherencia médica, seguimiento de pacientes, análisis clínicos y recordatorios.
-* Prototipo funcional accesible en entorno local y de desarrollo, permitiendo validar la interacción entre frontend, aplicación móvil y arquitectura basada en microservicios.
 
 Estos avances permitieron consolidar una versión funcional del ecosistema MediTrack para la validación de flujos principales del sistema durante el Sprint Review.
 
 <br>
 
-Evidencias:
+**Evidencias:**
 
-+ treatment service:
++ Treatment Service:
 
 <td align="center"><img src="assets//images//chapter5/evidence/treatment-service.png" alt="treatment-service-evidence" ></td>
 
 <br>
 
-+ follow up service:
++ Follow-up Service:
 
 <td align="center"><img src="assets//images//chapter5/evidence/followup-service.png" alt="followup-service-evidence" ></td>
 
@@ -2943,14 +2941,17 @@ Evidencias:
 
 <br>
 
-+ meditrack mobile:
++ Medical Appointment Service:
+
+<td align="center"><img src="assets//images/chapter5/evidence/MedicalAppointmentService.png" alt="followup-service-evidence" ></td>
+
+<br>
+
++ Meditrack Mobile:
 
 <td align="center"><img src="assets//images//chapter5/evidence/mobile-meditrack.png" alt="meditrack-mobile-evidence" ></td>
 
 <br>
-
-
-
 
 
 #### 5.3.2.5. Microservices Documentation Evidence for Sprint Review
@@ -3005,20 +3006,78 @@ Durante este Sprint se consolidó la realizacion de 5 Microservices mediante Ope
 | MedicalAnalysisService | PATCH | ``/api/v1/alerts/{id}/acknowledge`` | Path: ``id`` | ``{ ``"id":1,"patientId":1,"severity":"warning","status":"acknowledged","reason":"string","triggeredAt":"2026-06-01T10:00:00","acknowledgedAt":"2026-06-01T11:00:00" ``}`` |
 
 #### Medical Appointment Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Medical-Appointment-Service
+
+<td align="center"><img src="assets/images/chapter5/evidence/MedicalAppointmentService.png" alt="Context diagram" ></td>
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| AppointmentService | POST | ``/api/v1/appointments`` | Body: ``{ "patientId":0,"type":"general","scheduledAt":"2026-06-10T10:00:00Z","location":"Consultorio 1","requirements":["Traer DNI","Llegar 15 minutos antes"] }`` | ``{ "id":1,"patientId":0,"type":"general","scheduledAt":"2026-06-10T10:00:00Z","location":"Consultorio 1","status":"scheduled","canBeModified":true,"createdAt":"2026-06-06T00:00:00Z","updatedAt":null,"requirements":[{"id":1,"description":"Traer DNI"}] }`` |
+| AppointmentService | GET | ``/api/v1/appointments/{id}`` | Path: ``id`` | ``{ "id":1,"patientId":0,"type":"general","scheduledAt":"2026-06-10T10:00:00Z","location":"Consultorio 1","status":"scheduled","canBeModified":true,"createdAt":"2026-06-06T00:00:00Z","updatedAt":null,"requirements":[{"id":1,"description":"Traer DNI"}] }`` |
+| AppointmentService | GET | ``/api/v1/appointments`` | Query: ``patientId`` | ``[{"id":1,"patientId":0,"type":"general","scheduledAt":"2026-06-10T10:00:00Z","location":"Consultorio 1","status":"scheduled","canBeModified":true,"createdAt":"2026-06-06T00:00:00Z","updatedAt":null,"requirements":[{"id":1,"description":"Traer DNI"}]}]`` |
+| AppointmentService | PUT | ``/api/v1/appointments/{id}`` | Path: ``id``, Body: ``{ "type":"control","scheduledAt":"2026-06-12T15:30:00Z","location":"Consultorio 2","requirements":["Traer resultados anteriores"] }`` | ``{ "id":1,"patientId":0,"type":"control","scheduledAt":"2026-06-12T15:30:00Z","location":"Consultorio 2","status":"scheduled","canBeModified":true,"createdAt":"2026-06-06T00:00:00Z","updatedAt":"2026-06-06T00:10:00Z","requirements":[{"id":2,"description":"Traer resultados anteriores"}] }`` |
+| AppointmentService | PATCH | ``/api/v1/appointments/{id}/cancel`` | Path: ``id`` | ``{ "id":1,"patientId":0,"type":"control","scheduledAt":"2026-06-12T15:30:00Z","location":"Consultorio 2","status":"cancelled","canBeModified":false,"createdAt":"2026-06-06T00:00:00Z","updatedAt":"2026-06-06T00:15:00Z","requirements":[{"id":2,"description":"Traer resultados anteriores"}] }`` |
+| AppointmentService | POST | ``/api/v1/appointments/{id}/attendance`` | Path: ``id``, Body: ``{ "status":"attended" }`` | ``{ "id":1,"patientId":0,"type":"control","scheduledAt":"2026-06-06T10:00:00Z","location":"Consultorio 2","status":"attended","canBeModified":false,"createdAt":"2026-06-06T00:00:00Z","updatedAt":"2026-06-06T11:00:00Z","requirements":[{"id":2,"description":"Traer resultados anteriores"}] }`` |
+| AppointmentService | POST | ``/api/v1/clinical-exams`` | Body: ``{ "patientId":0,"examType":"Hemograma","pickupDate":"2026-06-15T09:00:00Z","laboratoryName":"Laboratorio Central" }`` | ``{ "id":1,"patientId":0,"examType":"Hemograma","pickupDate":"2026-06-15T09:00:00Z","laboratoryName":"Laboratorio Central","status":"pending_pickup","createdAt":"2026-06-06T00:00:00Z","updatedAt":null }`` |
+| AppointmentService | GET | ``/api/v1/clinical-exams/pending`` | Query: ``patientId`` | ``[{"id":1,"patientId":0,"examType":"Hemograma","pickupDate":"2026-06-15T09:00:00Z","laboratoryName":"Laboratorio Central","status":"pending_pickup","createdAt":"2026-06-06T00:00:00Z","updatedAt":null}]`` |
+| AppointmentService | PATCH | ``/api/v1/clinical-exams/{id}/picked-up`` | Path: ``id`` | ``{ "id":1,"patientId":0,"examType":"Hemograma","pickupDate":"2026-06-15T09:00:00Z","laboratoryName":"Laboratorio Central","status":"picked_up","createdAt":"2026-06-06T00:00:00Z","updatedAt":"2026-06-06T00:20:00Z" }`` |
 
 #### 5.3.2.6. Software Deployment Evidence for Sprint Review
+
+Durante este Sprint no se realizó un deployment formal de los Web Services en un entorno productivo ni staging. Sin embargo, se avanzó con una primera version de la aplicacion front-end, el cual permite visualizar y validar la lógica de los servicios desarrollados. Ademas, se termino con el desarrollo de los microservisios.
+
+**Actividades realizadas**:
+
+- Desarrollo de la aplicación front-end: se desarrolló una versión inicial de la aplicación móvil MediTrack, que permite la consulta de medicamentos y la adherencia médica de pacientes.
+- Desarrollo de microservicios: se desarrolló el microservicio de seguimiento de pacientes, el microservicio de análisis clínicos y el microservicio de recordatorios.
+- Validación interna: se realizaron pruebas locales con datos de muestra para confirmar la correcta respuesta de los endpoints.
+
+**Evidencias:**
+
++ Treatment Service:
+
+<td align="center"><img src="assets//images//chapter5/evidence/treatment-service.png" alt="treatment-service-evidence" ></td>
+
+<br>
+
++ Follow-up Service:
+
+<td align="center"><img src="assets//images//chapter5/evidence/followup-service.png" alt="followup-service-evidence" ></td>
+
+<br>
+
++ Medical Appointment Service:
+
+<td align="center"><img src="assets//images/chapter5/evidence/MedicalAppointmentService.png" alt="followup-service-evidence" ></td>
+
+<br>
+
++ Meditrack Mobile:
+
+<td align="center"><img src="assets//images//chapter5/evidence/mobile-meditrack.png" alt="meditrack-mobile-evidence" ></td>
+
+<br>
 
 
 #### 5.3.2.7. Team Collaboration Insights during Sprint
 
 | Integrantes   | Tarea asignada |
 |----------------|----------------|
-| Jeremy |  |
-| Renzo |  |
-| Victor |  |
-| Piero |  |
-| Javier Gonzales |  |
+| Jeremy Quijada | Desarrollo del microservicio Medical Appoinment en C# y .NET.|
+| Renzo Rivera | Desarrollo de los primeras pantallas para la aplicacion móvil en Flutter|
+| Victor Rojas | Desarrollo del microservicio Medical Analysis en C# y .NET. |
+| Piero Sulca| Desarrollo del microservicio Reminder en C# y .NET.  |
+| Javier Gonzales | Desarrollo de los primeras pantallas para la aplicacion móvil en Flutter. |
 
+ <td align="center"><img src="assets//images//insight/spring 2/in1.png" alt="insight1" ></td>
+
+<td align="center"><img src="assets//images//insight/spring 2/in2.png" alt="insight1" ></td>
+
+<td align="center"><img src="assets//images//insight/spring 2/in3.png" alt="insight1" ></td>
+
+<td align="center"><img src="assets//images//insight/spring 2/in4.png" alt="insight1" ></td>
+
+<td align="center"><img src="assets//images//insight/spring 2/in5.png" alt="insight1" ></td>
 
 #### 5.3.2.8. Kanban Board
 
