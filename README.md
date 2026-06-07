@@ -2892,6 +2892,12 @@ Durante este Sprint, realizado en el período del 15 de mayo al 06 de junio, se 
 | TS-004 | medical-analysis-service | GET /api/v1/clinical-records?patientId=1 — Query of the full clinical history for patient 1 | HTTP 200 OK with an array containing all clinical records for the patient ordered by date descending | HTTP 200 OK with the array of clinical records returned correctly | Passed |
 | TS-005 | medical-analysis-service | GET /api/v1/clinical-records?patientId=1&from=2026-01-01&to=2026-06-30 — Filter clinical history by date range | HTTP 200 OK with only the records whose recordDate falls within the specified range | HTTP 200 OK with the filtered records returned within the requested period | Passed |
 | TS-006 | medical-analysis-service | POST /api/v1/alerts — Creation of an adherence alert with severity "warning" and a custom reason | HTTP 201 Created with the alert containing status "open", triggeredAt timestamp and acknowledgedAt null | HTTP 201 Created with the alert correctly persisted and returned | Passed |
+| TS-007 | reminder-service | GET /reminders/patients/{patientId} without a JWT token — verifies local token validation (CON-04) | HTTP 401 Unauthorized with WWW-Authenticate: Bearer header | HTTP 401 Unauthorized returned correctly | Passed |
+| TS-008 | reminder-service | RecetaCargada event consumed from RabbitMQ then GET /reminders/patients/1 — verifies event-driven reminder generation via Factory Method | HTTP 200 OK with one medication reminder per dose, including the factory-built title and body | HTTP 200 OK with two reminders ("Es momento de tomar Losartán / Metformina") | Passed |
+| TS-009 | reminder-service | GET /reminders/preferences/patients/1 — query of notification preferences for a patient without explicit config | HTTP 200 OK with the default preferences (sound, vibration, repeatCount 1, globalEnabled true) | HTTP 200 OK with the default preferences returned | Passed |
+| TS-010 | reminder-service | PUT /reminders/preferences/patients/1 — update notification preferences (US22) | HTTP 200 OK with the persisted preferences reflecting the new values | HTTP 200 OK with repeatCount 2 and vibrationEnabled false persisted | Passed |
+| TS-011 | reminder-service | PUT /reminders/{id}/cancel — cancel a scheduled reminder | HTTP 204 No Content and the reminder leaves the active list | HTTP 204 No Content; subsequent GET no longer lists the reminder | Passed |
+| TS-012 | reminder-service | PUT /reminders/999/cancel — cancel a non-existent reminder | HTTP 404 Not Found | HTTP 404 Not Found returned correctly | Passed |
 
 
 <br>
@@ -2917,6 +2923,22 @@ Pruebas funcionales realizadas sobre los endpoints de estadísticas de cumplimie
 <br>
 
 <td align="center"><img src="assets//images//chapter5/testing/alerts.png" alt="post alerts" ></td>
+
+<br>
+
++ Reminder-Service:
+
+Pruebas funcionales ejecutadas sobre la documentación OpenAPI (Swagger UI) del microservicio de recordatorios, validando la seguridad por JWT, la generación de recordatorios a partir del evento `RecetaCargada` mediante el patrón Factory Method, la consulta y actualización de preferencias de notificación (US22) y la cancelación de recordatorios.
+
+<td align="center"><img src="assets//images//chapter5/testing/reminder-swagger-overview.png" alt="reminder service swagger overview" ></td>
+
+<br>
+
+<td align="center"><img src="assets//images//chapter5/testing/reminder-get-patient.png" alt="reminder service get reminders by patient" ></td>
+
+<br>
+
+<td align="center"><img src="assets//images//chapter5/testing/reminder-preferences.png" alt="reminder service update notification preferences" ></td>
 
 <br>
 
