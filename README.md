@@ -761,7 +761,7 @@ En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al 
 
 <td align="center"><img src="assets/images//entrevistas//Entrevista 4.png" alt="Entrevista 2"></td>
 
-**Link de la entrevista:** https://youtu.be/hG3t9agu1Vc
+**Link de la entrevista:** https://youtu.be/kx7PcPc9oNI
 
 ##### Datos de la entrevista:
 
