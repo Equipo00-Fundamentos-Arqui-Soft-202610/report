@@ -55,7 +55,7 @@
 
 <br>
 
-<h5 style="text-align: center; font-style: italic;"> Abril 2026 </h5>
+<h5 style="text-align: center; font-style: italic;"> Junio 2026 </h5>
 
 <hr class="page-break">
 
@@ -87,7 +87,11 @@
 | 3.6     | 13/05/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo V: Microservices Documentation Evidence for Sprint Review y documentación de arquitectura de microservicios (5.3.1.5)                  |
 | 3.7     | 13/05/2026 | Quijada Magro, Jeremy Alexander            | Capítulo V: Software Deployment Evidence for Sprint Review y consolidación de evidencias del sprint (5.3.1.6)                                   |
 | 3.8     | 14/05/2026 | Todo el equipo                             | Revisión general, integración de capítulos, corrección de formato APA y validación final del informe TP1                                         |
-
+| 4.0    | 05/06/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo V: Sprint Backlog 2, Team Collaboration Insights during Sprint y Kanban Board (5.3.2.1, 5.3.2.7, 5.3.2.8)                             |
+| 4.1    | 06/06/2026 | Rojas Reategui, Victor Manuel              | Capítulo V: Testing Suite Evidence for Sprint Review y Execution Evidence for Sprint Review (5.3.2.3, 5.3.2.4)                                  |
+| 4.2    | 06/06/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo V: Microservices Documentation Evidence for Sprint Review y documentación de arquitectura de microservicios (5.3.2.5)                  |
+| 4.3    | 06/06/2026 | Quijada Magro, Jeremy Alexander            | Capítulo V: Software Deployment Evidence for Sprint Review y consolidación de evidencias del sprint 2 (5.3.2.6)                                   |
+| 4.4     | 07/06/2026 | Todo el equipo                             | Revisión general, corrección de formato APA y validación del informe TB3                                         |
 <hr class="page-break">
 
 # Contenido
