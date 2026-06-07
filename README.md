@@ -1254,7 +1254,7 @@ Los principios arquitectónicos de MediTrack actúan como reglas de gobierno par
 
 En esta sección se describen los enfoques metodológicos que rigen el desarrollo de la solución, garantizando que el software sea mantenible y fiel a las reglas de negocio.
 
-#### Enfoques adopatados:
+#### Enfoques adoptados:
 
 - **Domain-Driven Design (DDD):** Dado que el dominio de la salud es complejo, se adopta DDD para centrar el desarrollo en el modelo de negocio. Se identificarán **Bounded Contexts** claros permitiendo que el lenguaje ubicuo sea compartido entre desarrolladores y expertos del dominio médico.
 
