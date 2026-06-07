@@ -3148,6 +3148,9 @@ Durante este Sprint no se realizó un deployment formal de los Web Services en u
 #### 5.3.2.8. Kanban Board
 
 
+<hr class="page-break">
+
+ <td align="center"><img src="assets//images/kanbanboard2.png" alt="kanban-board-2" ></td>
 
 
 
