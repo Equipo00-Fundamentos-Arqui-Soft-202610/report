@@ -757,6 +757,21 @@ En resumen, nuestra real ventaja es la desorganización sistémica. Nosotros al 
 
 **Resumen:** Vicenta Ramos es una adulta mayor de 76 años que padece artritis, una enfermedad crónica que le causa dolor en las manos y la obliga a seguir un tratamiento con pastillas, inyecciones y citas médicas cada tres meses. Aunque actualmente ya se ha acostumbrado a sus medicamentos y puede recordarlos con facilidad, al inicio le resultaba complicado. Sus hijas se encargan de coordinar sus citas médicas, y aunque ella está agradecida por su apoyo, le gustaría ser más independiente. Por eso, considera que una aplicación que le ayude a recordar sus medicamentos y citas sería de gran utilidad.
 
+##### Entrevista 2:
+
+<td align="center"><img src="assets/images//entrevistas//Entrevista 4.png" alt="Entrevista 2"></td>
+
+**Link de la entrevista:** https://youtu.be/hG3t9agu1Vc
+
+##### Datos de la entrevista:
+
+**Nombre:** Alicia Avril Navarro Chang
+**Edad:** 21 años
+**Fecha:** 05/06/2026
+**Duración:** 6 minutos
+
+**Resumen:** Alicia Avril Navarro Chang es una estudiante universitaria de 21 años de San Miguel que, desde hace unos dos meses, sigue dos tratamientos —por riesgo de diabetes y por desórdenes hormonales— tomando dos medicamentos al día con sus comidas. Su mayor dificultad es el olvido: ha interrumpido y reiniciado su tratamiento varias veces, y hoy no usa ninguna herramienta digital, solo notas ocasionales en el celular. Le resultaría útil una aplicación sencilla con recordatorios, calendario y seguimiento del cumplimiento por rachas; valora la facilidad de uso y le preocupa la privacidad de sus datos. El apoyo de su madre y la comunicación con su médico por WhatsApp complementan su seguimiento.
+
 #### B. Segmento: Personal de Apoyo
 
 ##### Entrevista 1:
