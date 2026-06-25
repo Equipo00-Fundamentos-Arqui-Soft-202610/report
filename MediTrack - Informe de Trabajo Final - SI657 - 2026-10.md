@@ -55,7 +55,7 @@
 
 <br>
 
-<h5 style="text-align: center; font-style: italic;"> Junio 2026 </h5>
+<h5 style="text-align: center; font-style: italic;"> Junio de 2026 </h5>
 
 <hr class="page-break">
 
@@ -77,7 +77,7 @@
 | 2.2     | 29/04/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo IV: Tactics, Architectural Drivers y Design Purpose (4.1.7, 4.2, 4.1.8)                                                                |
 | 2.3     | 30/04/2026 | Rojas Reategui, Victor Manuel              | Capítulo IV: Primary Functionality (Primary User Stories) y Quality Attribute Scenarios (4.1.9, 4.1.10)                                         |
 | 2.4     | 01/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo IV: Constraints y Architectural Concerns (4.1.11, 4.1.12)                                                                               |
-| 2.5     | 02/05/2026 | Jeremy Quijada Magro y Piero Sulca Sanchez | Capítulo IV: ADD Iterations 1 & 2                                                                                                                 |
+| 2.5     | 02/05/2026 | Quijada Magro, Jeremy Alexander | Capítulo IV: ADD Iterations 1 & 2                                                                                                                 |
 | 3.0     | 10/05/2026 | Rojas Reategui, Victor Manuel              | Capítulo V: Backend Application Core Testing Suite y Pattern Based Backend Application(s) (5.1.1, 5.1.2)                                        |
 | 3.1     | 10/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo V: Pattern Based Custom Software Library y Framework Pattern Driven Refactoring Report (5.1.3, 5.1.4)                                  |
 | 3.2     | 11/05/2026 | Sulca Sanchez, Piero Angel                 | Capítulo V: Software Development Environment Configuration, Source Code Management y Source Code Style Guide & Conventions (5.2.1 - 5.2.3)     |
@@ -91,7 +91,25 @@
 | 4.1    | 06/06/2026 | Rojas Reategui, Victor Manuel              | Capítulo V: Testing Suite Evidence for Sprint Review y Execution Evidence for Sprint Review (5.3.2.3, 5.3.2.4)                                  |
 | 4.2    | 06/06/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo V: Microservices Documentation Evidence for Sprint Review y documentación de arquitectura de microservicios (5.3.2.5)                  |
 | 4.3    | 06/06/2026 | Quijada Magro, Jeremy Alexander            | Capítulo V: Software Deployment Evidence for Sprint Review y consolidación de evidencias del sprint 2 (5.3.2.6)                                   |
-| 4.4     | 07/06/2026 | Todo el equipo                             | Revisión general, corrección de formato APA y validación del informe TB3                                         |
+| 4.4     | 21/06/2026 | Todo el equipo                             | Revisión general, corrección de formato APA y validación del informe TB3                                         |
+| 4.5     | 21/06/2026 | Gonzales Alvarado, Javier Sebastian        | Corrección de leyendas de figuras 14–26 (eliminación de "Anexo"), completado texto truncado de Figura 22 y corrección de fecha en portada según formato APA |
+| 4.6     | 22/06/2026 | Rivera Ratachi, Renzo Sebastian            | Corrección del orden de secciones 3.2 y 3.3 en TOC y cuerpo del Capítulo III según convención del curso; actualización de registro de versiones con entradas de mejora continua |
+| 4.7     | 23/06/2026 | Rojas Reategui, Victor Manuel              | Reescritura de conclusiones del Student Outcome TB3 para criterios A y B: diferenciación por criterio y vinculación explícita a aprendizajes concretos del sprint |
+| 4.8     | 23/06/2026 | Todo el equipo                             | Adición de cláusulas de aprendizaje en acciones TB3 del Student Outcome; corrección de nombre de autor en versión 2.5 al formato APA; adición de nota de convención de idioma en secciones |
+
+> **Nota de versionado:** El número mayor del campo Versión indica el hito académico (1.x = TB1, 2.x = TB2, 3.x = TP1, 4.x = TB3, 5.x = TB4). El número menor indica el orden de contribución dentro del hito.
+
+<hr class="page-break">
+
+
+## Resumen Ejecutivo
+
+MediTrack es una plataforma digital de salud desarrollada por Pafi Solutions que busca resolver el incumplimiento terapéutico en pacientes peruanos con enfermedades crónicas. El sistema se compone de una aplicación móvil Android para el segmento paciente y un portal web para el personal técnico de clínicas y hospitales, conectados a través de una arquitectura de seis microservicios independientes (Identity & Profile, Treatment, Medical Appointment, Follow-up, Reminder y Medical Analysis).
+
+El problema central abordado es que entre el 44% y el 76% de pacientes crónicos en el Perú no siguen correctamente sus tratamientos farmacológicos, principalmente por olvido y falta de herramientas accesibles. MediTrack resuelve esto mediante recordatorios automáticos generados a partir de recetas cargadas digitalmente por el personal médico, registro de cumplimiento con soporte offline y dashboards de adherencia para seguimiento clínico.
+
+Al cierre de TB4 (Sprint 3), el equipo cuenta con cinco microservicios funcionales con endpoints documentados en Swagger UI, una aplicación móvil Flutter con pantallas de inicio y listado de medicamentos, una aplicacion web React con pantallas de inicio y busqueda de pacientes. La arquitectura implementada aplica los patrones DDD, Clean Architecture, Factory Method, Strategy y Observer, alineados con los atributos de calidad definidos en el proceso ADD del Capítulo IV.
+
 <hr class="page-break">
 
 # Contenido
@@ -122,8 +140,8 @@
 
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
   - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-  - [3.2. User Stories](#32-user-stories)
-  - [3.3. Impact Map](#33-impact-map)
+  - [3.2. Impact Map](#32-impact-map)
+  - [3.3. User Stories](#33-user-stories)
   - [3.4. Product Backlog](#34-product-backlog)
 
 - [Capítulo IV: Product Architecture Design](#capítulo-iv-product-architecture-design)
@@ -132,9 +150,10 @@
     - [4.1.2. Approaches Statements Architectural Styles & Patterns](#412-approaches-statements-architectural-styles--patterns)
     - [4.1.3. Context Diagram](#413-context-diagram)
     - [4.1.4. Approach driven ViewPoints Diagrams](#414-approach-driven-viewpoints-diagrams)
-    - [4.1.5. Relational/Non Relational Database Diagram](#415-relationalnon-relational-database-diagram)
-    - [4.1.6. Design Patterns](#416-design-patterns)
-    - [4.1.7. Tactics](#417-tactics)
+    - [4.1.5. Behavioral Diagram](#415-behavioral-diagram)
+    - [4.1.6. Relational/Non Relational Database Diagram](#416-relationalnon-relational-database-diagram)
+    - [4.1.7. Design Patterns](#417-design-patterns)
+    - [4.1.8. Tactics](#418-tactics)
   - [4.2. Architectural Drivers](#42-architectural-drivers)
     - [4.2.1. Design Purpose](#421-design-purpose)
     - [4.2.2. Primary Functionality (Primary User Stories)](#422-primary-functionality-primary-user-stories)
@@ -198,7 +217,6 @@
 
 # Student Outcome
 
-
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
 
@@ -213,37 +231,37 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   <tbody>
     <tr>
       <td rowspan="5"><strong>A: Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.</strong></td>
-      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Análisis de competidores, entrevistas y needfinding.<br><b>TB2:</b> Desarrollo de Problem Statements, definición de enfoques arquitectónicos (Architectural Styles & Patterns), elaboración del Context Diagram y participación en ADD iteration 2.<br><b>TP1:</b> Investigó y aplicó conceptos de Static Testing & Verification, además de participar en el desarrollo del prototipo visual y evidencias del Sprint Review. <br><b>TB3: </b>Desarrollo del microservicio Medical Appointment en C# y .NET: implementación del agendamiento y gestión de citas, registro de asistencia, control de exámenes clínicos pendientes </td>
-      <td rowspan="5"><b>TB1:</b> El equipo aplicó conceptos clave de ingeniería de software y diseño centrado en el usuario, estructurando una base sólida del proyecto.<br><br><b>TB2:</b> El equipo profundizó en el diseño arquitectónico del sistema, aplicando patrones, tácticas y metodologías como ADD. Esto permitió consolidar una estructura más robusta, alineada a atributos de calidad y necesidades del sistema.<br><br><b>TP1:</b> El equipo fortaleció conocimientos técnicos relacionados al desarrollo de soluciones modernas de software, aplicando conceptos de testing, arquitectura de microservicios, gestión ágil y configuración de entornos de desarrollo, permitiendo mejorar la calidad y organización del proyecto Meditrack. <br><br><b>TB3:</b> El equipo fortaleció conocimientos técnicos relacionados al desarrollo de soluciones modernas de software, aplicando conceptos de testing, arquitectura de microservicios, para finalizar el desarrollo de los microservicios y un avance en la calidad del frontend.</td>
+      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Análisis de competidores, entrevistas y needfinding.<br><b>TB2:</b> Desarrollo de Problem Statements, definición de enfoques arquitectónicos (Architectural Styles & Patterns), elaboración del Context Diagram y participación en ADD iteration 2.<br><b>TP1:</b> Investigó y aplicó conceptos de Static Testing & Verification, además de participar en el desarrollo del prototipo visual y evidencias del Sprint Review. <br><b>TB3: </b>Desarrollo del microservicio Medical Appointment en C# y .NET: implementación del agendamiento y gestión de citas, registro de asistencia y control de exámenes clínicos pendientes, lo que implicó investigar y aplicar el patrón Aggregate Root de DDD para dominios de agendamiento médico y la publicación de eventos de integración hacia RabbitMQ.</td>
+      <td rowspan="5"><b>TB1:</b> El equipo aplicó conceptos clave de ingeniería de software y diseño centrado en el usuario, estructurando una base sólida del proyecto.<br><br><b>TB2:</b> El equipo profundizó en el diseño arquitectónico del sistema, aplicando patrones, tácticas y metodologías como ADD. Esto permitió consolidar una estructura más robusta, alineada a atributos de calidad y necesidades del sistema.<br><br><b>TP1:</b> El equipo fortaleció conocimientos técnicos relacionados al desarrollo de soluciones modernas de software, aplicando conceptos de testing, arquitectura de microservicios, gestión ágil y configuración de entornos de desarrollo, permitiendo mejorar la calidad y organización del proyecto Meditrack. <br><br><b>TB3:</b> El equipo profundizó en la implementación práctica de arquitecturas de microservicios mediante el desarrollo de servicios reales en C# y .NET 8 con Clean Architecture y DDD. La implementación del microservicio Medical Appointment permitió comprender la separación de responsabilidades entre dominios de negocio independientes.</td>
     </tr>
     <tr>
-      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> To-Be Scenario Mapping, User Stories e Impact Map.<br><b>TB2:</b> Desarrollo de ViewPoint Diagrams basados en enfoques arquitectónicos y diseño de diagramas de base de datos relacionales y no relacionales.<br><b>TP1:</b> Desarrollo del Sprint Backlog 1 y Kanban Board, aplicando metodologías ágiles y herramientas de gestión colaborativa.<br><b>TB3:</b> Desarrollo del frontend de la aplicación móvil en Flutter: estructuración de las interfaces principales, navegación base y maquetación de la pantalla de inicio.</td>
+      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> To-Be Scenario Mapping, User Stories e Impact Map.<br><b>TB2:</b> Desarrollo de ViewPoint Diagrams basados en enfoques arquitectónicos y diseño de diagramas de base de datos relacionales y no relacionales.<br><b>TP1:</b> Desarrollo del Sprint Backlog 1 y Kanban Board, aplicando metodologías ágiles y herramientas de gestión colaborativa.<br><b>TB3:</b> Desarrollo del frontend de la aplicación móvil en Flutter: estructuración de las interfaces principales, navegación base y maquetación de la pantalla de inicio, lo que requirió aprender el modelo de widgets de Flutter y las convenciones de diseño para aplicaciones móviles orientadas a usuarios con baja alfabetización digital.</td>
     </tr>
     <tr>
-      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Definición de startup, problemática, Lean UX Process y segmentos objetivo.<br><b>TB2:</b> Aplicación de Design Patterns, definición de tácticas arquitectónicas y establecimiento del propósito del diseño.<br><b>TP1:</b> Elaboración de documentación de microservicios y organización de evidencias técnicas para el Sprint Review. <br><b>TB3: Desarrollo del frontend de la aplicación móvil en Flutter: colaboración en la estructura inicial del proyecto, maquetación de la pantalla de listado de medicamentos y refinamiento general de la interfaz de usuario.</b></td>
+      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Definición de startup, problemática, Lean UX Process y segmentos objetivo.<br><b>TB2:</b> Aplicación de Design Patterns, definición de tácticas arquitectónicas y establecimiento del propósito del diseño.<br><b>TP1:</b> Elaboración de documentación de microservicios y organización de evidencias técnicas para el Sprint Review. <br><b>TB3:</b> Desarrollo del frontend de la aplicación móvil en Flutter: colaboración en la estructura inicial del proyecto, maquetación de la pantalla de listado de medicamentos y refinamiento general de la interfaz de usuario, lo que implicó investigar principios de accesibilidad móvil y el sistema de diseño de Flutter para garantizar usabilidad en el segmento de pacientes mayores.</td>
     </tr>
     <tr>
-      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Elaboración del Product Backlog.<br><b>TB2:</b> Definición de funcionalidades principales del sistema y desarrollo de Quality Attribute Scenarios.<br><b>TP1:</b> Implementación de Testing Suites y General Patterns para reforzar buenas prácticas de desarrollo y pruebas de software.<br><b>TB3:</b> Desarrollo del microservicio Medical Analysis en C# y .NET: implementación de la gestión de historiales clínicos, dashboards de tendencia de adherencia, cálculos estadísticos</td>
+      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Elaboración del Product Backlog.<br><b>TB2:</b> Definición de funcionalidades principales del sistema y desarrollo de Quality Attribute Scenarios.<br><b>TP1:</b> Implementación de Testing Suites y General Patterns para reforzar buenas prácticas de desarrollo y pruebas de software.<br><b>TB3:</b> Desarrollo del microservicio Medical Analysis en C# y .NET: implementación de la gestión de historiales clínicos, dashboards de tendencia de adherencia y cálculos estadísticos, lo que requirió investigar el patrón Strategy para cálculo de métricas de adherencia diferenciadas por categoría (medicación vs. citas) y el uso del Observer Pattern con un bus de eventos en memoria para desacoplar la lógica analítica.</td>
     </tr>
     <tr>
-      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en entrevistas.<br><b>TB2:</b> Identificación de restricciones (Constraints), preocupaciones arquitectónicas (Architectural Concerns) y desarrollo de ADD iteration 1.<br><b>TP1:</b> Trabajo en Software Configuration Management aplicando herramientas de control de versiones y configuración del entorno de desarrollo.<br><b>TB3:</b> Desarrollo del microservicio Reminder en C# y .NET: construcción del motor de notificaciones asíncronas</td>
+      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en entrevistas.<br><b>TB2:</b> Identificación de restricciones (Constraints), preocupaciones arquitectónicas (Architectural Concerns) y desarrollo de ADD iteration 1.<br><b>TP1:</b> Trabajo en Software Configuration Management aplicando herramientas de control de versiones y configuración del entorno de desarrollo.<br><b>TB3:</b> Desarrollo del microservicio Reminder en C# y .NET: construcción del motor de notificaciones asíncronas con RabbitMQ y Firebase Cloud Messaging, lo que implicó investigar y aplicar el patrón Factory Method para la creación de recordatorios por tipo de evento, el patrón Outbox para garantía de entrega idempotente y la configuración de reintentos con backoff exponencial.</td>
     </tr>
     <tr>
       <td rowspan="5"><strong>B: Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.</strong></td>
-      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Análisis de competidores, entrevistas y needfinding.<br><b>TB2:</b> Desarrollo de Problem Statements, definición de enfoques arquitectónicos (Architectural Styles & Patterns), elaboración del Context Diagram y participación en ADD iteration 2.<br><b>TP1:</b> Investigó y aplicó conceptos de Static Testing & Verification, además de participar en el desarrollo del prototipo visual y evidencias del Sprint Review. <br><b>TB3:</b>Desarrollo del microservicio Medical Appointment en C# y .NET: implementación del agendamiento y gestión de citas, registro de asistencia, control de exámenes clínicos pendientes </td>
-      <td rowspan="5"><b>TB1:</b> El equipo demostró una actitud orientada al aprendizaje continuo, incorporando nuevas metodologías.<br><br><b>TB2:</b> Los integrantes fortalecieron su aprendizaje en arquitectura de software, adoptando nuevas herramientas y enfoques como ADD, patrones y modelado de datos, lo que evidencia una evolución técnica y compromiso con su desarrollo profesional.<br><br><b>TP1:</b> El equipo reforzó su aprendizaje continuo mediante el uso de nuevas herramientas, metodologías ágiles, testing y gestión de configuración, fortaleciendo competencias técnicas necesarias para el desarrollo profesional y la construcción de soluciones de software modernas.<br><br><b>TB3:</b> El equipo fortaleció conocimientos técnicos relacionados al desarrollo de soluciones modernas de software, aplicando conceptos de testing, arquitectura de microservicios, para finalizar el desarrollo de los microservicios y un avance en la calidad del frontend.</td>
+      <td><strong>Quijada Magro, Jeremy Alexander</strong><br><b>TB1:</b> Análisis de competidores, entrevistas y needfinding.<br><b>TB2:</b> Desarrollo de Problem Statements, definición de enfoques arquitectónicos (Architectural Styles & Patterns), elaboración del Context Diagram y participación en ADD iteration 2.<br><b>TP1:</b> Investigó y aplicó conceptos de Static Testing & Verification, además de participar en el desarrollo del prototipo visual y evidencias del Sprint Review. <br><b>TB3:</b>Desarrollo del microservicio Medical Appointment en C# y .NET: implementación del agendamiento y gestión de citas, registro de asistencia y control de exámenes clínicos pendientes, lo que implicó investigar y aplicar el patrón Aggregate Root de DDD para dominios de agendamiento médico y la publicación de eventos de integración hacia RabbitMQ.</td>
+      <td rowspan="5"><b>TB1:</b> El equipo demostró una actitud orientada al aprendizaje continuo, incorporando nuevas metodologías.<br><br><b>TB2:</b> Los integrantes fortalecieron su aprendizaje en arquitectura de software, adoptando nuevas herramientas y enfoques como ADD, patrones y modelado de datos, lo que evidencia una evolución técnica y compromiso con su desarrollo profesional.<br><br><b>TP1:</b> El equipo reforzó su aprendizaje continuo mediante el uso de nuevas herramientas, metodologías ágiles, testing y gestión de configuración, fortaleciendo competencias técnicas necesarias para el desarrollo profesional y la construcción de soluciones de software modernas.<br><br><b>TB3:</b> Los integrantes demostraron compromiso con el aprendizaje continuo al adoptar tecnologías nuevas para el equipo, como Flutter para el desarrollo móvil y sistemas de mensajería asíncrona con RabbitMQ. La necesidad de integrar múltiples microservicios con contratos REST bien definidos impulsó la actualización de conocimientos en OpenAPI, JWT y patrones de comunicación entre servicios.</td>
     </tr>
    <tr>
-      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> To-Be Scenario Mapping, User Stories e Impact Map.<br><b>TB2:</b> Desarrollo de ViewPoint Diagrams basados en enfoques arquitectónicos y diseño de diagramas de base de datos relacionales y no relacionales.<br><b>TP1:</b> Desarrollo del Sprint Backlog 1 y Kanban Board, aplicando metodologías ágiles y herramientas de gestión colaborativa.<br><b>TB3:</b> Desarrollo del frontend de la aplicación móvil en Flutter: estructuración de las interfaces principales, navegación base y maquetación de la pantalla de inicio.</td>
+      <td><strong>Rivera Ratachi, Renzo</strong><br><b>TB1:</b> To-Be Scenario Mapping, User Stories e Impact Map.<br><b>TB2:</b> Desarrollo de ViewPoint Diagrams basados en enfoques arquitectónicos y diseño de diagramas de base de datos relacionales y no relacionales.<br><b>TP1:</b> Desarrollo del Sprint Backlog 1 y Kanban Board, aplicando metodologías ágiles y herramientas de gestión colaborativa.<br><b>TB3:</b> Desarrollo del frontend de la aplicación móvil en Flutter: estructuración de las interfaces principales, navegación base y maquetación de la pantalla de inicio, lo que requirió aprender el modelo de widgets de Flutter y las convenciones de diseño para aplicaciones móviles orientadas a usuarios con baja alfabetización digital.</td>
     </tr>
     <tr>
-      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Definición de startup, problemática, Lean UX Process y segmentos objetivo.<br><b>TB2:</b> Aplicación de Design Patterns, definición de tácticas arquitectónicas y establecimiento del propósito del diseño.<br><b>TP1:</b> Elaboración de documentación de microservicios y organización de evidencias técnicas para el Sprint Review. <br><b>TB3: Desarrollo del frontend de la aplicación móvil en Flutter: colaboración en la estructura inicial del proyecto, maquetación de la pantalla de listado de medicamentos y refinamiento general de la interfaz de usuario.</b></td>
+      <td><strong>Javier Sebastian Gonzales Alvarado</strong><br><b>TB1:</b> Definición de startup, problemática, Lean UX Process y segmentos objetivo.<br><b>TB2:</b> Aplicación de Design Patterns, definición de tácticas arquitectónicas y establecimiento del propósito del diseño.<br><b>TP1:</b> Elaboración de documentación de microservicios y organización de evidencias técnicas para el Sprint Review. <br><b>TB3:</b> Desarrollo del frontend de la aplicación móvil en Flutter: colaboración en la estructura inicial del proyecto, maquetación de la pantalla de listado de medicamentos y refinamiento general de la interfaz de usuario, lo que implicó investigar principios de accesibilidad móvil y el sistema de diseño de Flutter para garantizar usabilidad en el segmento de pacientes mayores.</td>
     </tr>
     <tr>
-      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Elaboración del Product Backlog.<br><b>TB2:</b> Definición de funcionalidades principales del sistema y desarrollo de Quality Attribute Scenarios.<br><b>TP1:</b> Implementación de Testing Suites y General Patterns para reforzar buenas prácticas de desarrollo y pruebas de software.<br><b>TB3:</b> Desarrollo del microservicio Medical Analysis en C# y .NET: implementación de la gestión de historiales clínicos, dashboards de tendencia de adherencia, cálculos estadísticos</td>
+      <td><strong>Victor Manuel Rojas Reategui</strong><br><b>TB1:</b> Elaboración del Product Backlog.<br><b>TB2:</b> Definición de funcionalidades principales del sistema y desarrollo de Quality Attribute Scenarios.<br><b>TP1:</b> Implementación de Testing Suites y General Patterns para reforzar buenas prácticas de desarrollo y pruebas de software.<br><b>TB3:</b> Desarrollo del microservicio Medical Analysis en C# y .NET: implementación de la gestión de historiales clínicos, dashboards de tendencia de adherencia y cálculos estadísticos, lo que requirió investigar el patrón Strategy para cálculo de métricas de adherencia diferenciadas por categoría (medicación vs. citas) y el uso del Observer Pattern con un bus de eventos en memoria para desacoplar la lógica analítica.</td>
     </tr>
     <tr>
-      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en entrevistas.<br><b>TB2:</b> Identificación de restricciones (Constraints), preocupaciones arquitectónicas (Architectural Concerns) y desarrollo de ADD iteration 1.<br><b>TP1:</b> Trabajo en Software Configuration Management aplicando herramientas de control de versiones y configuración del entorno de desarrollo.<br><b>TB3:</b> Desarrollo del microservicio Reminder en C# y .NET: construcción del motor de notificaciones asíncronas</td>
+      <td><strong>Piero Angel Sulca Sanchez</strong><br><b>TB1:</b> Participación en entrevistas.<br><b>TB2:</b> Identificación de restricciones (Constraints), preocupaciones arquitectónicas (Architectural Concerns) y desarrollo de ADD iteration 1.<br><b>TP1:</b> Trabajo en Software Configuration Management aplicando herramientas de control de versiones y configuración del entorno de desarrollo.<br><b>TB3:</b> Desarrollo del microservicio Reminder en C# y .NET: construcción del motor de notificaciones asíncronas con RabbitMQ y Firebase Cloud Messaging, lo que implicó investigar y aplicar el patrón Factory Method para la creación de recordatorios por tipo de evento, el patrón Outbox para garantía de entrega idempotente y la configuración de reintentos con backoff exponencial.</td>
     </tr>
   </tbody>
 </table>
@@ -1035,11 +1053,33 @@ _Figura 9. To-Be Scenario Mapping del segmento Personal de Apoyo. Elaboración p
 
 <hr class="page-break">
 
-## 3.2. User Stories
+## 3.2. Impact Map
 
+<td align="center"><img src="assets/images/chapter3/paciente1impact.png" alt="impact map" ></td>
 
+<td align="center"><img src="assets/images/chapter3/image.png" alt="impact map" ></td>
 
+<div align = center>
 
+_Figura 10. Impact Mapping del segmento Pacientes. Elaboración propia._
+
+</div>
+
+<hr class="page-break">
+
+<td align="center"><img src="assets/images/chapter3/impactmappingtecnico1.png" alt="impact map" ></td>
+
+<td align="center"><img src="assets/images/chapter3/impactmappingtecnico2.png" alt="impact map" ></td>
+
+<div align = center>
+
+_Figura 11. Impact Mapping del segmento Personal de Apoyo. Elaboración propia._
+
+</div>
+
+<hr class="page-break">
+
+## 3.3. User Stories
 
 #### Requisitos Funcionales
 
@@ -1153,69 +1193,53 @@ _Figura 9. To-Be Scenario Mapping del segmento Personal de Apoyo. Elaboración p
 
 <hr class="page-break">
 
-## 3.3. Impact Map
-
-<td align="center"><img src="assets/images/chapter3/paciente1impact.png" alt="impact map" ></td>
-
-<td align="center"><img src="assets/images/chapter3/image.png" alt="impact map" ></td>
-
-<div align = center>
-
-_Figura 10. Impact Mapping del segmento Pacientes. Elaboración propia._
-
-</div>
-
-<hr class="page-break">
-
-<td align="center"><img src="assets/images/chapter3/impactmappingtecnico1.png" alt="impact map" ></td>
-
-<td align="center"><img src="assets/images/chapter3/impactmappingtecnico2.png" alt="impact map" ></td>
-
-<div align = center>
-
-_Figura 11. Impact Mapping del segmento Personal de Apoyo. Elaboración propia._
-
-</div>
-
-<hr class="page-break">
-
 ## 3.4. Product Backlog
 
-El orden del Product Backlog se determina por el valor de negocio que aporta cada User Story, priorizando aquellas que resuelven directamente los Pain Points identificados (adherencia al tratamiento, digitalización de recetas y seguimiento de pacientes). Las User Stories relacionadas con autenticación, recuperación de contraseña y operaciones de soporte se ubican al final, ya que son habilitadoras del flujo pero no representan el valor core que MediTrack ofrece a pacientes e instituciones de salud.
+El orden del Product Backlog se determina por el valor de negocio que aporta cada User Story, priorizando aquellas que resuelven directamente los Pain Points identificados: adherencia al tratamiento, digitalización de recetas y seguimiento de pacientes. Para la priorización se aplicó el marco **MoSCoW**, clasificando cada historia según su criticidad para el flujo de valor del sistema.
 
-Para la estimación del esfuerzo de los elementos del Product Backlog, se ha optado por utilizar la sucesión de Fibonacci (1,2,3,5,8,…).
+Las US de autenticación (US01–US03) se ubican al final del backlog no porque carezcan de importancia arquitectónica —sin identidad de usuario ningún flujo es ejecutable— sino porque el módulo Identity cuenta con implementación funcional desde el Sprint 1, por lo que su desarrollo no representa trabajo pendiente para los sprints actuales. Su posición al final refleja el estado de avance del equipo, no su peso en la arquitectura.
 
-| # Orden | User Story ID | Título                                          | Descripción                                                                                                                                      | Story Points |
-| ------- | ------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
-| 1       | US13          | Subir receta médica con horarios                | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su aplicación. | 8            |
-| 2       | US04          | Ver lista de medicamentos                       | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora.                                       | 5            |
-| 3       | US05          | Recibir recordatorio de medicamento             | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo.                                         | 8            |
-| 4       | US06          | Registrar cumplimiento de medicamento           | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento.                               | 5            |
-| 5       | US14          | Subir historial clínico                         | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos.                                    | 8            |
-| 6       | US15          | Buscar paciente individual                      | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento.                                        | 5            |
-| 7       | US26          | Ver próxima toma pendiente                      | Como paciente, quiero ver cuál es mi próxima toma programada y en cuánto tiempo es, para estar preparado.                                        | 5            |
-| 8       | US07          | Alerta de stock bajo                            | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento.              | 5            |
-| 9       | US24          | Editar o cancelar medicamento                   | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                  | 3            |
-| 10      | US22          | Configurar preferencias de notificaciones       | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.           | 5            |
-| 11      | US08          | Agendar cita médica                             | Como paciente, quiero registrar una nueva cita médica en la aplicación, para tenerla en mi calendario y recibir recordatorios.                   | 5            |
-| 12      | US09          | Recibir recordatorio de cita médica             | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla.                                                              | 5            |
-| 13      | US10          | Registrar cumplimiento de cita                  | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado.                                                   | 3            |
-| 14      | US11          | Ver requisitos de cita                          | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado.                                                              | 3            |
-| 15      | US29          | Editar o cancelar cita médica                   | Como paciente, quiero editar o cancelar una cita médica, para corregir errores en mi agenda.                                                     | 3            |
-| 16      | US12          | Recordatorio de examen clínico                  | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados.                          | 5            |
-| 17      | US25          | Ver historial de adherencia y progreso          | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                  | 8            |
-| 18      | US16          | Ver dashboard de tendencias de adherencia       | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento.  | 8            |
-| 19      | US17          | Ver estadísticas de cumplimiento de recetas     | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento.                       | 8            |
-| 20      | US27          | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo.           | 5            |
-| 21      | US18          | Ver estadísticas de citas                       | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones.                           | 5            |
-| 22      | US23          | Funcionar en modo offline                       | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar.                 | 8            |
-| 23      | US19          | Editar perfil de usuario                        | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada.                      | 3            |
-| 24      | US01          | Registro de paciente                            | Como paciente, quiero crear una cuenta en la aplicación móvil, para gestionar mis tratamientos y citas.                                          | 5            |
-| 25      | US02          | Registro de personal técnico                    | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes.                              | 5            |
-| 26      | US03          | Inicio de sesión                                | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol.                             | 3            |
-| 27      | US20          | Recuperar contraseña                            | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta.                                                | 3            |
-| 28      | US21          | Cerrar sesión                                   | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información.                                                                | 3            |
-| 29      | US28          | Cambiar contraseña                              | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura.                                                                      | 3            |
+Las User Stories relacionadas con la carga de recetas (US13), visualización de medicamentos (US04) y recordatorios (US05) encabezan el backlog por ser el núcleo diferenciador de MediTrack y los flujos de mayor impacto directo en la adherencia del paciente.
+
+Para la estimación del esfuerzo de los elementos del Product Backlog, se ha optado por utilizar la sucesión de Fibonacci (1, 2, 3, 5, 8, …).
+
+
+| # Orden | User Story ID | Epic ID | Epic Name | Título | Descripción | Story Points |
+| ------- | ------------- | ------- | --------- | ------ | ----------- | ------------ |
+| 1       | US13          | EP04    | Carga de datos clínicos para personal técnico | Subir receta médica con horarios | Como personal técnico, quiero subir una receta indicando medicamento, dosis y horarios de toma, para que el paciente la reciba en su aplicación. | 8 |
+| 2       | US04          | EP02    | Gestión de medicamentos para pacientes | Ver lista de medicamentos | Como paciente, quiero ver todos mis medicamentos con sus horarios, para saber qué debo tomar y a qué hora. | 5 |
+| 3       | US05          | EP02    | Gestión de medicamentos para pacientes | Recibir recordatorio de medicamento | Como paciente, quiero recibir una notificación en el horario de mi medicamento, para no olvidar tomarlo. | 8 |
+| 4       | US06          | EP02    | Gestión de medicamentos para pacientes | Registrar cumplimiento de medicamento | Como paciente, quiero marcar si tomé o no mi medicamento, para llevar un registro de mi adherencia al tratamiento. | 5 |
+| 5       | US14          | EP04    | Carga de datos clínicos para personal técnico | Subir historial clínico | Como personal técnico, quiero cargar el historial clínico de un paciente para evitar ingreso manual de datos. | 8 |
+| 6       | US15          | EP04    | Carga de datos clínicos para personal técnico | Buscar paciente individual | Como personal técnico, quiero buscar un paciente por nombre o DNI, para ver su información y seguimiento. | 5 |
+| 7       | US26          | EP02    | Gestión de medicamentos para pacientes | Ver próxima toma pendiente | Como paciente, quiero ver cuál es mi próxima toma programada y en cuánto tiempo es, para estar preparado. | 5 |
+| 8       | US07          | EP02    | Gestión de medicamentos para pacientes | Alerta de stock bajo | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento. | 5 |
+| 9       | US24          | EP02    | Gestión de medicamentos para pacientes | Editar o cancelar medicamento | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento. | 3 |
+| 10      | US22          | EP02    | Gestión de medicamentos para pacientes | Configurar preferencias de notificaciones | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad. | 5 |
+| 11      | US08          | EP03    | Gestión de citas y exámenes | Agendar cita médica | Como paciente, quiero registrar una nueva cita médica en la aplicación, para tenerla en mi calendario y recibir recordatorios. | 5 |
+| 12      | US09          | EP03    | Gestión de citas y exámenes | Recibir recordatorio de cita médica | Como paciente, quiero recibir una notificación antes de mi cita, para no olvidarla. | 5 |
+| 13      | US10          | EP03    | Gestión de citas y exámenes | Registrar cumplimiento de cita | Como paciente, quiero marcar si asistí o no a mi cita, para mantener mi historial actualizado. | 3 |
+| 14      | US11          | EP03    | Gestión de citas y exámenes | Ver requisitos de cita | Como paciente, quiero ver los requisitos previos de mi cita, para llegar preparado. | 3 |
+| 15      | US29          | EP03    | Gestión de citas y exámenes | Editar o cancelar cita médica | Como paciente, quiero editar o cancelar una cita médica, para corregir errores en mi agenda. | 3 |
+| 16      | US12          | EP03    | Gestión de citas y exámenes | Recordatorio de examen clínico | Como paciente, quiero recibir un recordatorio cuando tengo un examen pendiente, para no olvidar recoger mis resultados. | 5 |
+| 17      | US25          | EP02    | Gestión de medicamentos para pacientes | Ver historial de adherencia y progreso | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución. | 8 |
+| 18      | US16          | EP05    | Estadísticas y tendencias para personal técnico | Ver dashboard de tendencias de adherencia | Como personal técnico, quiero ver un dashboard con la tendencia de adherencia de mis pacientes, para identificar quiénes necesitan seguimiento. | 8 |
+| 19      | US17          | EP05    | Estadísticas y tendencias para personal técnico | Ver estadísticas de cumplimiento de recetas | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento. | 8 |
+| 20      | US27          | EP05    | Estadísticas y tendencias para personal técnico | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo. | 5 |
+| 21      | US18          | EP05    | Estadísticas y tendencias para personal técnico | Ver estadísticas de citas | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones. | 5 |
+| 22      | US23          | EP02    | Gestión de medicamentos para pacientes | Funcionar en modo offline | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar. | 8 |
+| 23      | US19          | EP06    | Edición de perfil | Editar perfil de usuario | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada. | 3 |
+| 24      | US30          | EP07    | Landing Page | Ver propuesta de valor | Como visitante, quiero entender qué hace MediTrack en la página principal, para decidir si me interesa. | 3 |
+| 25      | US31          | EP07    | Landing Page | Ver funcionalidades por segmento | Como visitante, quiero ver qué funciones ofrece MediTrack para pacientes y para personal médico, para saber si aplica a mi caso. | 3 |
+| 26      | US32          | EP07    | Landing Page | Ver testimonios o casos de uso | Como visitante, quiero ver ejemplos de uso real, para generar confianza en la plataforma. | 2 |
+| 27      | US33          | EP07    | Landing Page | Navegar a registro desde landing | Como visitante interesado, quiero acceder al registro desde la landing, para crear mi cuenta fácilmente. | 2 |
+| 28      | US34          | EP07    | Landing Page | Ver información de contacto | Como visitante, quiero encontrar información de contacto o soporte, para resolver dudas antes de registrarme. | 1 |
+| 29      | US01          | EP01    | Registro y roles | Registro de paciente | Como paciente, quiero crear una cuenta en la aplicación móvil, para gestionar mis tratamientos y citas. | 5 |
+| 30      | US02          | EP01    | Registro y roles | Registro de personal técnico | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes. | 5 |
+| 31      | US03          | EP01    | Registro y roles | Inicio de sesión | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol. | 3 |
+| 32      | US20          | EP01    | Registro y roles | Recuperar contraseña | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta. | 3 |
+| 33      | US21          | EP01    | Registro y roles | Cerrar sesión | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información. | 3 |
+| 34      | US28          | EP01    | Registro y roles | Cambiar contraseña | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura. | 3 |
 
 ![trello](assets/images/chapter3/product-backlog-trello.png)
 
@@ -1244,7 +1268,7 @@ Los principios arquitectónicos de MediTrack actúan como reglas de gobierno par
 
 - **Seguridad y Privacidad por Diseño:** Tratándose de información de salud sensible, el acceso a los datos debe regirse por el principio de "menor privilegio". La separación de roles (Paciente vs. Personal Técnico) debe ser estricta a nivel de servicios y base de datos, asegurando el cumplimiento de normativas de protección de datos personales.
 
-- **Desacoplamiento mediante Microservicios:** Se adoptará un enfoque de servicios independientes para las funcionalidades de "Gestión de Tratamientos", "Notificaciones" y "Analítica de Datos". Esto permite que un fallo en el módulo de estadísticas no afecte la entrega crítica de recordatorios de medicación a los pacientes.
+- **Desacoplamiento mediante Microservicios:** El sistema se descompone en seis servicios independientes, cada uno con su propio Bounded Context, base de datos y ciclo de despliegue: **Identity & Profile Service** (autenticación y gestión de cuentas), **Treatment Service** (recetas médicas y catálogo de medicamentos), **Medical Appointment Service** (citas y exámenes clínicos), **Follow-up Service** (registro de cumplimiento y modo offline), **Reminder Service** (motor de notificaciones push) y **Medical Analysis Service** (dashboards de adherencia y estadísticas). Esta separación garantiza que un fallo en el módulo de estadísticas no interrumpa la entrega crítica de recordatorios de medicación, y que cada servicio pueda desplegarse, escalarse y modificarse de forma autónoma sin afectar a los demás.
 
 - **Escalabilidad Horizontal sobre Vertical:** La infraestructura debe estar preparada para crecer en número de usuarios (pacientes) sin comprometer el rendimiento, utilizando servicios en la nube que permitan replicar instancias de los microservicios según la demanda.
 
@@ -1267,11 +1291,23 @@ En esta sección se describen los enfoques metodológicos que rigen el desarroll
 #### Patrones de diseño:
 
 - **API Gateway:** Se implementará un punto de entrada único que actúe como intermediario entre los clientes (App Móvil y Portal Web) y los microservicios. El Gateway se encargará de la autenticación, el enrutamiento de peticiones y la agregación de respuestas, simplificando la lógica en el lado del cliente.
-- **CQRS (Command Query Responsibility Segregation):** Para módulos con alta carga de lectura (como los dashboards de estadísticas para el personal técnico), se evaluará la separación de las operaciones de lectura y escritura. Esto optimiza el rendimiento al permitir modelos de datos específicos para consultas complejas sin penalizar las actualizaciones del tratamiento.
+- **Separación Command/Query mediante servicios especializados:** En lugar de implementar CQRS con modelos de lectura y escritura físicamente separados, el equipo adoptó una separación lógica de responsabilidades mediante servicios especializados: los `CommandService` orquestan operaciones de escritura con validaciones de negocio y publicación de eventos, mientras que los `QueryService` atienden exclusivamente consultas de lectura optimizadas para la presentación. Esta decisión se tomó considerando que el volumen de tráfico actual no justifica la complejidad operativa de mantener read models y write models sobre bases de datos separadas, y que la separación lógica en servicios dedicados cumple el objetivo de evitar que las consultas analíticas del Personal Técnico degraden la latencia de las operaciones del Paciente (QAS-0: ≤ 2 s p95). La migración a CQRS completo con read models independientes queda documentada como decisión arquitectónica diferida para cuando el volumen de usuarios justifique el costo operativo adicional.
 
 ### 4.1.3. Context Diagram
 
-El Diagrama de Contexto del Sistema nos permite visualizar el ecosistema en el que opera la solución. En el centro se ubica el sistema MediTrack, el cual actúa como el núcleo de interacción entre los dos actores principales: el Paciente, quien consume la información de su tratamiento, y el Personal Técnico, encargado de la gestión clínica. Asimismo, se detallan las dependencias con sistemas externos.
+El Diagrama de Contexto del Sistema permite visualizar el ecosistema en el que opera MediTrack. En el centro se ubica el sistema como núcleo de interacción, y a su alrededor se distribuyen los actores y sistemas externos con los que se relaciona.
+
+**Actores principales:**
+
+- **Paciente:** consume la aplicación móvil Android para visualizar su tratamiento, registrar cumplimiento de dosis y citas, y recibir recordatorios. Su interacción con el sistema es de alta frecuencia y se produce en contextos de conectividad variable, por lo que el sistema soporta operación offline.
+- **Personal Técnico:** accede al portal web para cargar recetas médicas, registrar historiales clínicos, buscar pacientes y consultar dashboards de adherencia. Su interacción es principalmente de escritura y lectura analítica, desde entornos con conectividad estable.
+
+**Sistemas externos integrados:**
+
+- **Firebase Cloud Messaging (FCM):** el sistema se integra con FCM mediante HTTP/REST para el envío de notificaciones push a los dispositivos Android del segmento Paciente. La comunicación es asíncrona y unidireccional: el Reminder Service publica la notificación hacia FCM, que la entrega al dispositivo.
+- **Azure Blob Storage:** el sistema almacena en este servicio los videos de evidencia de cumplimiento subidos por los pacientes y los archivos de historial clínico cargados por el personal técnico. La integración es sincrónica mediante SDK de Azure.
+- **Azure Communication Services (Email):** el Identity & Profile Service consume este servicio para el envío de correos transaccionales de recuperación de cuenta. La comunicación es sincrónica mediante API REST de Azure.
+- **RabbitMQ (Message Bus):** actúa como broker de mensajería para la comunicación asíncrona entre microservicios internos. No es un sistema externo al dominio, sino parte de la infraestructura de integración del sistema.
 
 <td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
 
@@ -1282,10 +1318,29 @@ _Figura 13. Diagrama de contexto del sistema MediTrack. Elaboración propia._
 </div>
 
 
-
 ### 4.1.4. Approach driven ViewPoints Diagrams
 
-#### Container Diagram:
+#### Container Diagram
+
+El Diagrama de Contenedores descompone el sistema MediTrack en sus unidades desplegables independientes, mostrando la tecnología de cada una y los protocolos de comunicación entre ellas.
+
+| Contenedor | Tipo | Tecnología | Comunicación |
+|---|---|---|---|
+| Aplicación Móvil | Mobile App | Flutter (Android) | HTTP/REST hacia API Gateway; SQLite local para modo offline |
+| Aplicación Web | Web App | React | HTTP/REST hacia API Gateway |
+| API Gateway | Reverse Proxy / Auth | .NET 8 + YARP | Valida JWT, enruta hacia microservicios internos mediante HTTP/REST |
+| Identity & Profile Service | Microservice | .NET 8 | HTTP/REST; publica eventos a RabbitMQ |
+| Treatment Service | Microservice | .NET 8 | HTTP/REST; publica eventos `RecetaCargada` y `StockBajo` a RabbitMQ |
+| Medical Appointment Service | Microservice | .NET 8 | HTTP/REST; publica evento `CitaAgendada` a RabbitMQ |
+| Follow-up Service | Microservice | .NET 8 | HTTP/REST; publica evento `CumplimientoRegistrado` a RabbitMQ |
+| Reminder Service | Microservice | .NET 8 | Consume eventos de RabbitMQ; envía notificaciones push mediante FCM |
+| Medical Analysis Service | Microservice | .NET 8 | Consume eventos de RabbitMQ; HTTP/REST para dashboards |
+| MySQL (x6) | Base de datos relacional | Azure Database for MySQL Flexible Server | Acceso exclusivo por su microservicio (Database per Service) |
+| RabbitMQ | Message Broker | Azure Container Apps | AMQP; comunicación asíncrona entre microservicios |
+| Azure Blob Storage | Almacenamiento de objetos | Azure Storage SDK | Accedido por Follow-up Service e Identity Service |
+
+Los clientes se comunican exclusivamente con el API Gateway mediante HTTPS. El Gateway valida el JWT y redirige la petición al microservicio correspondiente. Los microservicios no se comunican entre sí de forma sincrónica: toda interacción entre servicios internos ocurre de forma asíncrona a través de RabbitMQ, garantizando el desacoplamiento definido en los principios arquitectónicos (sección 4.1.1).
+
 
 <td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Container Diagram" ></td>
 
@@ -1297,139 +1352,135 @@ _Figura 14. Anexo del diagrama de contenedores del sistema MediTrack. Elaboraci�
 
 #### Component Diagrams:
 
-#### Identity & Profiles Service:
+Los diagramas de componentes detallan la estructura interna de cada microservicio, mostrando cómo se descomponen sus responsabilidades siguiendo los principios de Clean Architecture: la capa de Interfaces/REST expone los endpoints, la capa Application orquesta los casos de uso mediante Command y Query Services, la capa Domain define los agregados y contratos, y la capa Infrastructure implementa la persistencia con EF Core y MySQL.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/identityservicecomponent.png" alt="" ></td>
+#### Identity & Profiles Service
 
-<div align = center>
+El Identity & Profiles Service gestiona el ciclo de vida de las cuentas de usuario y la autenticación. Sus componentes principales son el `AuthController`, que recibe las solicitudes de registro e inicio de sesión; el `TokenService`, que genera y valida los JWT; el `UserCommandService`, que orquesta la creación y actualización de perfiles; y el `UserRepository`, que persiste las entidades en su base de datos MySQL exclusiva. El servicio consume Azure Communication Services para el envío de correos de recuperación de cuenta.
 
-_Figura 15. Anexo del diagrama de componentes de Identity & Profiles Service . Elaboración propia._
+<td align="center"><img src="assets/images/chapter4/diagrams/component/identityservicecomponent.png" alt=""></td>
 
-</div>
+<div align="center">
 
-#### Treatment Service:
-
-<td align="center"><img src="assets/images/chapter4/diagrams/component/treatmentservicecomponent.png" alt="analytics" ></td>
-
-<div align = center>
-
-_Figura 16. Anexo del diagrama de componentes de Treatment Service . Elaboración propia._
+_Figura 15. Diagrama de componentes de Identity & Profiles Service. Elaboración propia._
 
 </div>
 
-#### Reminder Service:
+#### Treatment Service
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/reminderservicomponent.png" alt="reminder service" ></td>
+El Treatment Service gestiona la carga de recetas médicas y el catálogo de medicamentos. El `PrescriptionController` recibe las recetas del personal técnico y las delega al `PrescriptionCommandService`, que ejecuta el pipeline de validación mediante el patrón Decorator: verifica la existencia del paciente, valida el medicamento contra el catálogo oficial y comprueba que los horarios estén completos antes de persistir. Al confirmar la persistencia, publica el evento `RecetaCargada` hacia RabbitMQ. El `MedicationCommandService` gestiona ediciones y cancelaciones autorizadas, y publica `StockBajo` cuando el conteo de pastillas alcanza el umbral configurado.
 
-<div align = center>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/treatmentservicecomponent.png" alt="analytics"></td>
 
-_Figura 17. Anexo del diagrama de componentes de Reminder Service. Elaboración propia._
+<div align="center">
 
-</div>
-
-#### Follow-up Service:
-
-<td align="center"><img src="assets/images/chapter4/diagrams/component/followupserviceomponent.png" ></td>
-
-<div align = center>
-
-_Figura 18. Anexo del diagrama de componentes de Follow-up Service. Elaboración propia._
+_Figura 16. Diagrama de componentes de Treatment Service. Elaboración propia._
 
 </div>
 
-#### Medical Analysis Service:
+#### Reminder Service
 
-<td align="center"><img src="assets/images/chapter4/diagrams//component/analysisservice.png" alt="medical analysis" ></td>
+El Reminder Service es el componente de mayor criticidad clínica. Al consumir el evento `RecetaCargada` desde RabbitMQ, el `ReminderEventConsumer` invoca la `ReminderFactory` correspondiente (Medication, Appointment o Exam) mediante el patrón Factory Method para crear los recordatorios con su mensaje y tiempo de anticipación propios. El `ReminderScheduler` (BackgroundService) barre periódicamente los recordatorios vencidos y los despacha mediante el `FcmNotificationService` con reintentos de backoff exponencial. Al consumir `CumplimientoRegistrado`, el `CancellationHandler` cancela el recordatorio pendiente asociado, evitando notificaciones redundantes.
 
-<div align = center>
+<td align="center"><img src="assets/images/chapter4/diagrams/component/reminderservicomponent.png" alt="reminder service"></td>
 
-_Figura 19. Anexo del diagrama de componentes de Medical Analysis Service. Elaboración propia._
+<div align="center">
 
-</div>
-
-#### Appointment Service:
-
-<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
-
-<div align = center>
-
-_Figura 20. Anexo del diagrama de componentes de Appointment Service. Elaboración propia._
+_Figura 17. Diagrama de componentes de Reminder Service. Elaboración propia._
 
 </div>
 
+#### Follow-up Service
+
+El Follow-up Service registra el cumplimiento de medicamentos y citas por parte del paciente. El `ComplianceController` recibe los registros de toma con soporte para video de evidencia y marca de tiempo offline. El `MedicationComplianceCommandService` valida el estado (`taken`/`skipped`) mediante el Value Object `ComplianceStatus`, verifica la existencia del `DoseSchedule` en base de datos y persiste el cumplimiento. Al confirmar la escritura, publica el evento `CumplimientoRegistrado` hacia RabbitMQ. El `NextPendingDoseQueryService` calcula la próxima dosis pendiente con ajuste de zona horaria de Lima.
+
+<td align="center"><img src="assets/images/chapter4/diagrams/component/followupserviceomponent.png"></td>
+
+<div align="center">
+
+_Figura 18. Diagrama de componentes de Follow-up Service. Elaboración propia._
+
+</div>
+
+#### Medical Analysis Service
+
+El Medical Analysis Service genera los dashboards de adherencia y estadísticas de cumplimiento para el personal técnico. El `DashboardController` y el `StatisticsController` delegan las consultas al `DashboardQueryService` y al `StatisticsQueryService`, que aplican el patrón Strategy para calcular métricas diferenciadas por categoría: `MedicationAdherenceStrategy` (umbral de alerta al 70%) y `AppointmentAdherenceStrategy` (umbral al 80%). El `HostedEventConsumer` consume eventos de integración desde RabbitMQ (`CumplimientoRegistrado`, `AppointmentAttendanceRegistered`) para actualizar los modelos analíticos. El `AlertCommandService` publica alertas automáticas cuando la adherencia cae por debajo del umbral configurado.
+
+<td align="center"><img src="assets/images/chapter4/diagrams//component/analysisservice.png" alt="medical analysis"></td>
+
+<div align="center">
+
+_Figura 19. Diagrama de componentes de Medical Analysis Service. Elaboración propia._
+
+
+</div>
+
+### 4.1.5. Behavioral Diagrams
 #### Diagramas de Actividades
+
+Los diagramas de actividad complementan el modelo C4 describiendo el comportamiento dinámico de cada Bounded Context. Mientras los diagramas C4 muestran la estructura estática (qué existe y cómo se conecta), los diagramas de actividad modelan los flujos de control y decisión dentro de cada microservicio, permitiendo validar que la lógica de negocio es coherente con las responsabilidades asignadas a cada componente en la arquitectura.
 
 ##### Medical Analysis Activity
 
-<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Empathy Map - Pacientes" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/analytics_activity.png" alt="Diagrama de actividades de Medical Analysis"></td>
 
-<div align = center>
+<div align="center">
 
-_Figura 21. Anexo del diagrama de actividades de Medical Analysis. Elaboración propia._
+_Figura 21. Diagrama de actividades de Medical Analysis. Elaboración propia._
 
 </div>
 
 ##### Appointment Activity
 
-<td align="center"><img src="assets/images/chapter4/diagrams/activities/appointment_activity.png" alt="Empathy Map - Pacientes" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/appointment_activity.png" alt="Diagrama de actividades de Appointment"></td>
 
-<div align = center>
+<div align="center">
 
-_Figura 22. Anexo del diagrama de actividades de Appointment. Elaboración propia._
+_Figura 22. Diagrama de actividades de Appointment. Elaboración propia._
 
 </div>
 
 ##### Follow-up Activity
 
-<td align="center"><img src="assets/images/chapter4/diagrams/activities/followup_activity.png" alt="Empathy Map - Pacientes" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/followup_activity.png" alt="Diagrama de actividades de Follow-up"></td>
 
-<div align = center>
+<div align="center">
 
-_Figura 23. Anexo del diagrama de actividades de Follow-up. Elaboración propia._
+_Figura 23. Diagrama de actividades de Follow-up. Elaboración propia._
 
 </div>
 
 ##### Identity & Profiles Activity
 
-<td align="center"><img src="assets/images/chapter4/diagrams/activities/profilesactivity.png" alt="Empathy Map - Pacientes" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/profilesactivity.png" alt="Diagrama de actividades de Identity & Profiles"></td>
 
-<div align = center>
+<div align="center">
 
-_Figura 24. Anexo del diagrama de actividades de Identity & Profiles. Elaboración propia._
+_Figura 24. Diagrama de actividades de Identity & Profiles. Elaboración propia._
 
 </div>
 
 ##### Treatment Activity
 
-<td align="center"><img src="assets/images/chapter4/diagrams/activities/treatment_activity.png" alt="Empathy Map - Pacientes" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/treatment_activity.png" alt="Diagrama de actividades de Treatment"></td>
 
-<div align = center>
+<div align="center">
 
-_Figura 25. Anexo del diagrama de actividades de Treatment. Elaboración propia._
+_Figura 25. Diagrama de actividades de Treatment. Elaboración propia._
 
 </div>
 
 ##### Reminder Activity
 
-<td align="center"><img src="assets/images/chapter4/diagrams/activities/reminder_activity.png" alt="Empathy Map - Pacientes" ></td>
+<td align="center"><img src="assets/images/chapter4/diagrams/activities/reminder_activity.png" alt="Diagrama de actividades de Reminder"></td>
 
-<div align = center>
+<div align="center">
 
-_Figura 26. Anexo del diagrama de actividades de Reminder. Elaboración propia._
-
-</div>
-
-#### Class Diagram
-
-<td align="center"><img src="assets/images/chapter4/diagrams/classdiagram.png" alt="Class diagram" ></td>
-
-<div align = center>
-
-_Figura 27. Anexo del diagrama de clases del sistema MediTrack. Elaboración propia._
+_Figura 26. Diagrama de actividades de Reminder. Elaboración propia._
 
 </div>
 
-### 4.1.5. Relational/Non Relational Database Diagram
+### 4.1.6. Relational/Non Relational Database Diagram
 
 <td align="center"><img src="assets/images/chapter4/diagrams/Meditrack_Schema-2026-04-28_07-34.png" alt="DB diagram" ></td>
 
@@ -1439,7 +1490,7 @@ _Figura 28. Anexo del diagrama de la base de datos relacional de MediTrack. Elab
 
 </div>
 
-### 4.1.6. Design Patterns
+### 4.1.7. Design Patterns
 
 #### Repository
 
@@ -1527,7 +1578,7 @@ Service cuando el conteo de pastillas alcanza el umbral definido:
 - Garantiza que la información crítica, como el stock bajo o el cumplimiento
   registrado, llegue a los servicios correctos en el momento oportuno.
 
-### 4.1.7. Tactics
+### 4.1.8. Tactics
 
 - **Optimización de la Base de Datos:**
   - Utilizar índices en las consultas relacionadas con pacientes, medicamentos, recetas e historiales clínicos para mejorar la velocidad de acceso a la información.
