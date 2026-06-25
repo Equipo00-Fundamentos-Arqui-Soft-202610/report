@@ -3427,7 +3427,7 @@ Durante este Sprint se incorporaron nuevos endpoints y controladores en los micr
 **Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Treatment-service
 
 **Imagen de prueba:**
-<td align="center"><img src="assets/images/chapter5/sprint3/treatment-service.png" alt="treatment-service-sprint3"></td>
+
 
 | Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
 | --- | --- | --- | --- | --- |
@@ -3441,7 +3441,7 @@ Durante este Sprint se incorporaron nuevos endpoints y controladores en los micr
 **Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/FollowUp-Service
 
 **Imagen de prueba:**
-<td align="center"><img src="assets/images/chapter5/sprint3/followup-service.png" alt="followup-service-sprint3"></td>
+
 
 | Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
 | --- | --- | --- | --- | --- |
@@ -3459,7 +3459,7 @@ Durante este Sprint se incorporaron nuevos endpoints y controladores en los micr
 **Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Medical-Appointment-Service
 
 **Imagen de prueba:**
-<td align="center"><img src="assets/images/chapter5/sprint3/appointment-service.png" alt="appointment-service-sprint3"></td>
+
 
 | Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
 | --- | --- | --- | --- | --- |
@@ -3471,7 +3471,7 @@ Durante este Sprint se incorporaron nuevos endpoints y controladores en los micr
 **Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/MediTrack-Api-Gateway
 
 **Imagen de prueba:**
-<td align="center"><img src="assets/images/chapter5/sprint3/api-gateway.png" alt="api-gateway-sprint3"></td>
+
 
 | Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
 | --- | --- | --- | --- | --- |
@@ -3484,6 +3484,48 @@ Durante este Sprint se incorporaron nuevos endpoints y controladores en los micr
 Base URL del Gateway: ``http://localhost:5000``. Middleware configurado: validación JWT, rate limiting y logging centralizado.
 
 #### 5.3.3.6. Software Deployment Evidence for Sprint Review
+
+Durante este Sprint se avanzó significativamente en la consolidación del sistema, enfocándose en la corrección de endpoints de los microservicios y en la finalización de las interfaces de la aplicación móvil y la aplicación web. Estos avances permitieron validar de manera interna la integración entre frontend y backend, así como garantizar la estabilidad de los servicios desarrollados.
+
+**Actividades realizadas**:
+
+* **Corrección y optimización de endpoints**: se realizaron ajustes en distintos endpoints de los microservicios para mejorar su funcionamiento, corregir errores y asegurar una comunicación estable entre servicios.
+* **Desarrollo de la aplicación móvil**: se completaron las pantallas principales de la aplicación móvil MediTrack en Flutter, permitiendo visualizar funcionalidades clave como la gestión de medicamentos y seguimiento de pacientes.
+* **Desarrollo de la aplicación web**: se avanzó y consolidó la estructura visual de la aplicación web en React, implementando las vistas principales y mejorando la experiencia de navegación.
+* **Integración mediante API Gateway**: se desarrolló e integró el API Gateway, validando su correcta conexión con los distintos backends para centralizar la comunicación del sistema.
+* **Validación interna**: se realizaron pruebas locales y de integración para comprobar la correcta respuesta de los servicios y la interoperabilidad entre los componentes del sistema.
+
+**Evidencias:**
+
++ Treatment Service:
+
+
+
+<br>
+
++ Follow-up Service:
+
+
+
+<br>
+
++ Medical Appointment Service:
+
+
+
+<br>
+
++ Reminder Service:
+
+
+<br>
+
++ Meditrack Mobile:
+
+
+
+<br>
+
 
 #### 5.3.3.7. Team Collaboration Insights during Sprint
 
