@@ -208,6 +208,15 @@ Al cierre de TB4 (Sprint 3), el equipo cuenta con cinco microservicios funcional
       - [5.3.2.6. Software Deployment Evidence for Sprint Review](#5326-software-deployment-evidence-for-sprint-review)
       - [5.3.2.7. Team Collaboration Insights during Sprint](#5327-team-collaboration-insights-during-sprint)
       - [5.3.2.8. Kanban Board](#5328-kanban-board)
+    - [5.3.3. Sprint 3](#533-sprint-3)
+      - [5.3.3.1. Sprint Backlog 3](#5331-sprint-backlog-3)
+      - [5.3.3.2. Development Evidence for Sprint Review](#5332-development-evidence-for-sprint-review)
+      - [5.3.3.3. Testing Suite Evidence for Sprint Review](#5333-testing-suite-evidence-for-sprint-review)
+      - [5.3.3.4. Execution Evidence for Sprint Review](#5334-execution-evidence-for-sprint-review)
+      - [5.3.3.5. Microservices Documentation Evidence for Sprint Review](#5335-microservices-documentation-evidence-for-sprint-review)
+      - [5.3.3.6. Software Deployment Evidence for Sprint Review](#5336-software-deployment-evidence-for-sprint-review)
+      - [5.3.3.7. Team Collaboration Insights during Sprint](#5337-team-collaboration-insights-during-sprint)
+      - [5.3.3.8. Kanban Board](#5338-kanban-board)
 
 - [Conclusiones](#conclusiones)
 - [Referencias Bibliográficas](#referencias-bibliográficas)
@@ -3263,6 +3272,231 @@ Durante este Sprint no se realizó un deployment formal de los Web Services en u
  <td align="center"><img src="assets//images/kanbanboard2.png" alt="kanban-board-2" ></td>
 
 
+### 5.3.3 Sprint 3
+
+Durante este Sprint, el equipo tuvo como objetivo principal la corrección y optimización de diversos endpoints de los microservicios, así como la culminación de las pantallas correspondientes tanto a la aplicación móvil como a la aplicación web. Para la organización y gestión de las actividades asignadas a cada integrante, se utilizó Trello como herramienta de planificación. Esta plataforma permitió distribuir de manera eficiente las tareas, realizar seguimiento al progreso y coordinar el trabajo colaborativo del equipo.
+
+
+#### 5.3.3.1. Sprint Backlog 3
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th colspan="8">Sprint 3</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="2">WorkItem / Task</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status (To-do / In-Process / To-Review / Done)</th>
+    </tr>
+    <tr>
+      <th>Id</th><th>Title</th>
+      <th>Id</th><th>Title</th>
+      <th></th><th></th><th></th><th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>US02</td><td>Registro de personal técnico</td><td>TK01</td><td>Maquetar pantalla de registro web</td><td>Diseñar e implementar el formulario de registro para personal técnico en la aplicación web con React, incluyendo validación de campos y consumiendo el endpoint de registro</td><td>4</td><td>Jeremy Quijada</td><td>Done</td></tr>
+    <tr><td>US03</td><td>Inicio de sesión</td><td>TK01</td><td>Maquetar pantalla de inicio de sesión web</td><td>Implementar la pantalla de login en la aplicación web con React, integrando el formulario de autenticación y redirección por rol</td><td>3</td><td>Jeremy Quijada</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Maquetar pantalla de inicio de sesión móvil</td><td>Implementar la pantalla de login en la aplicación móvil con Flutter, integrando el formulario de autenticación y navegación post-login</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US01</td><td>Registro de paciente</td><td>TK01</td><td>Maquetar pantalla de registro móvil</td><td>Diseñar e implementar el formulario de registro para pacientes en la aplicación móvil con Flutter, incluyendo validación de campos y consumo del endpoint de registro</td><td>4</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Implementar validación de formulario y consumo de API</td><td>Implementar lógica de validación de datos del formulario de registro y conexión con el endpoint POST /api/v1/auth/register del Identity Service</td><td>3</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US25</td><td>Ver historial de adherencia y progreso</td><td>TK01</td><td>Maquetar pantalla de historial de adherencia móvil</td><td>Implementar la pantalla de historial de adherencia en la aplicación móvil con Flutter, mostrando gráfica de progreso y resumen de cumplimiento</td><td>4</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Consumir endpoint de adherencia desde el móvil</td><td>Conectar la pantalla de adherencia con el endpoint GET /api/v1/dashboards/adherence-trend del Medical Analysis Service</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US19</td><td>Editar perfil de usuario</td><td>TK01</td><td>Maquetar pantalla de edición de perfil web</td><td>Implementar la pantalla de edición de perfil en la aplicación web con React, permitiendo modificar nombre, teléfono y foto de perfil</td><td>3</td><td>Jeremy Quijada</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Consumir endpoint de actualización de perfil</td><td>Conectar la pantalla de edición de perfil con el endpoint PUT /api/v1/profiles/{id} del Identity Service</td><td>2</td><td>Jeremy Quijada</td><td>Done</td></tr>
+    <tr><td>US33</td><td>Navegar a registro desde landing</td><td>TK01</td><td>Agregar enlace de registro en la landing page</td><td>Agregar botón de "Registrarse" en la landing page que redirija al formulario de registro según el segmento seleccionado</td><td>1</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>—</td><td>API Gateway</td><td>TK01</td><td>Configurar Ocelot API Gateway</td><td>Configurar Ocelot como API Gateway centralizado, definiendo rutas de reenvío para los microservicios Treatment, FollowUp, Medical Appointment, Reminder, Medical Analysis e Identity</td><td>4</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Implementar autenticación JWT a nivel de Gateway</td><td>Configurar middleware de validación JWT en el API Gateway para autenticar las solicitudes entrantes antes de redirigirlas a los microservicios</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK03</td><td>Configurar rate limiting y logging</td><td>Implementar rate limiting por IP y logging centralizado de solicitudes en el API Gateway para monitorear el tráfico y prevenir abusos</td><td>2</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK04</td><td>Realizar pruebas de integración del Gateway con los backends</td><td>Ejecutar pruebas de conectividad entre el API Gateway y cada microservicio, verificando el correcto enrutamiento y respuesta de los endpoints</td><td>3</td><td>Piero Sulca</td><td>Done</td></tr>
+    <tr><td>—</td><td>Corrección de endpoints</td><td>TK01</td><td>Optimizar endpoint GET /api/v1/medications de FollowUp Service</td><td>Optimizar consulta de medicamentos añadiendo paginación, filtros por estado activo y reducción de datos anidados innecesarios en la respuesta</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Corregir validaciones en endpoint POST /api/v1/compliance</td><td>Corregir validaciones de integridad en el registro de cumplimiento, asegurando que el DoseSchedule exista y no haya sido previamente cumplido</td><td>2</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK03</td><td>Alinear respuestas REST de Treatment Service con el contrato OpenAPI</td><td>Revisar y corregir los formatos de respuesta de los endpoints de Treatment Service para que coincidan con la especificación OpenAPI definida</td><td>2</td><td>Piero Sulca</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK04</td><td>Optimizar endpoint GET /api/v1/appointments de Medical Appointment Service</td><td>Agregar filtros por rango de fechas y estado a la consulta de citas, mejorando el rendimiento para pacientes con múltiples citas registradas</td><td>2</td><td>Jeremy Quijada</td><td>Done</td></tr>
+  </tbody>
+</table>
+
+#### 5.3.3.2. Development Evidence for Sprint Review
+
+Durante este Sprint, el equipo se enfocó en la corrección y optimización de los endpoints de los microservicios existentes, la implementación del API Gateway para centralizar la comunicación, y la culminación de las pantallas de las aplicaciones móvil y web. Se consolidó la integración de los microservicios con RabbitMQ para la publicación de eventos, se corrigieron validaciones y se alinearon los contratos REST. Asimismo, se completaron los módulos principales del frontend web en React y las interfaces de la aplicación móvil en Flutter.
+
+#### Repositories:
+
+
+**Treatment service:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|----------------|---------------------|---------------------|
+| treatment-service | develop | 1dace497078f5933f255d1656c823df1cb60de71 | feat: publish RecetaCargada event with dose occurrences | | 2026-06-19 |
+| treatment-service | develop | 67a1f14b30c3696bdd30354107592799db6a62f3 | feat: add RabbitMQ event publishing for prescriptions | | 2026-06-19 |
+| treatment-service | develop | 95f12c82f6aeca99f7a14fd8937d03b6412e1877 | feat: add medication catalog feature and API | | 2026-06-19 |
+| treatment-service | develop | 7240915057a13ec8b6c8f0838db7997b54844812 | feat: auto-apply database migrations on startup | | 2026-06-24 |
+| treatment-service | develop | 42a00522bf9823635255242ba5503ecd0f7c1b1d | fix: expand mock patient validation to accept IDs 1-10 | | 2026-06-24 |
+
+<br>
+
+**Medical-Analysis-Service:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|----------------|---------------------|---------------------|
+| medical-analysis-service | develop | 89ce31e5f68142cde2a1443681214bd8e91d37e9 | feat: replace InMemory event bus with RabbitMQ consumer | | 2026-06-19 |
+| medical-analysis-service | develop | ffd9f14f333344d284a3ac662dbe166ede0e6b61 | feat: update event deserialization options and add logging for integration events | | 2026-06-23 |
+| medical-analysis-service | develop | 13d3b566e332c9495dcfe57b2bd211a0bb57bda3 | feat: update clinical data query and repository to include date range filtering | | 2026-06-23 |
+
+<br>
+
+**Medical-Appointment-Service:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|----------------|---------------------|---------------------|
+| medical-appointment-service | develop | 54d6f84068a12d9c743b36963175427e75e943e8 | feat: publish AppointmentScheduledEvent on scheduling | | 2026-06-19 |
+| medical-appointment-service | develop | e683513d0ee67e2f1efa9bd28adcfdcafe476f5f | feat: publish appointment attendance via RabbitMQ | | 2026-06-18 |
+| medical-appointment-service | develop | 541cd0cd252386d9e40f4cce0ce7ba8f63948e77 | fix: resolve database connection issues | | 2026-06-23 |
+
+<br>
+
+**FollowUp-Service:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|----------------|---------------------|---------------------|
+| follow-up-service | develop | 61c292132d2eb0fb7fdb4810870209065d7f9af7 | feat: publish low-stock event and update medication stock | | 2026-06-20 |
+| follow-up-service | develop | 126c71fc4cd46fc25ec32baeceed171bd22ce4dc | feat: add AppointmentReference, handler and consumer | | 2026-06-19 |
+| follow-up-service | develop | c8477f0cf08a8c77c1a851896721b604031bfd1b | feat: add PrescriptionCreated event consumer and persistence | | 2026-06-19 |
+| follow-up-service | develop | f10c84b92190af37c107ca3d2015d7ccd164fd52 | feat: add appointment compliance and offline sync | | 2026-06-19 |
+| follow-up-service | develop | f7aa40f80cbcde9e80d7a3b5673d6fd0975d380f | feat: publish compliance events via RabbitMQ | | 2026-06-18 |
+| follow-up-service | develop | edc18e298ce5a0ee093c82f4efa7aece50f310ef | feat: add recent compliance endpoint | | 2026-06-17 |
+
+<br>
+
+**Reminder-Service:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|----------------|---------------------|---------------------|
+| reminder-service | develop | 5c4e3fb00121b995fd6e0f6a5c9d1b4d5556b652 | fix: support string enum deserialization for integration events | | 2026-06-24 |
+| reminder-service | develop | 59dec4524e222f8bccc4e5863b36666c52519d22 | feat: disable JWT auth in development via configuration flag | | 2026-06-24 |
+
+<br>
+
+**MediTrack-Api-Gateway:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|----------------|---------------------|---------------------|
+| medi-track-api-gateway | develop | 5a9342443f55bbaed822925065bbc87193772b5a | feat: set gateway port and logging configuration | | 2026-06-24 |
+| medi-track-api-gateway | develop | 9634cb3b3ff6a4d31aaf11e78c249c5cf125f467 | feat: configure Ocelot as reverse proxy | | 2026-06-24 |
+| medi-track-api-gateway | develop | c532cb3815ec0bd6ce4771e6a80d2f0c8593c3a0 | feat: add local seed data requests and API Gateway service examples | | 2026-06-24 |
+
+<br>
+
+**Meditrack-Web:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|----------------|---------------------|---------------------|
+| meditrack-web | main | 83d368eb48422ac66e258f0033b64bffce2a90c4 | feat: add alerts module | | 2026-06-20 |
+| meditrack-web | main | c47969a55e9a09a8f3ba72788c3928357f7c4636 | feat: add clinical history module | | 2026-06-20 |
+| meditrack-web | main | f4219bd28a61d8eb1c6a1aa6c7e19f93dc5165a9 | feat: add prescriptions module | | 2026-06-20 |
+| meditrack-web | main | 8ec17a4287b3fd737c06432d07f31fe75baaee2e | feat: add patient search module | | 2026-06-20 |
+| meditrack-web | main | 7adaf05a62a0a1b5c9d1f3b7abc122793cd3f16c | feat: add main dashboard | | 2026-06-20 |
+| meditrack-web | main | 917d55f6856582076a60678a9fa6f694f262acec | feat: add login and registration module | | 2026-06-20 |
+| meditrack-web | main | 9455234e888d4d50b740c4378df0c58a447a0c84 | feat: initialize web project structure | | 2026-06-20 |
+
+<br>
+
+**MediTrack-Mobile:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|----------------|---------------------|---------------------|
+| meditrack-mobile | develop | aafa159e4190e34198e3888499efa2e15a19e5f6 | feat: add appointments screen | | 2026-06-18 |
+| meditrack-mobile | develop | 976f07287b1b6f236ea198ac622e152355dc5708 | feat: add sidebar navigation | | 2026-06-18 |
+| meditrack-mobile | develop | a8dd3ed063233af03c6dbba568435d14daadbb8c | feat: implement adherence screen with followup integration | | 2026-06-17 |
+| meditrack-mobile | develop | 3f9e05414a373f00bacaa279f32c366c05edb429 | feat: add recent compliance endpoint | | 2026-06-17 |
+| meditrack-mobile | develop | b56fa18af996c5aec2e03187113bc751142969f6 | feat: end notifications feature | | 2026-06-19 |
+
+#### 5.3.3.3. Testing Suite Evidence for Sprint Review
+
+#### 5.3.3.4. Execution Evidence for Sprint Review
+
+#### 5.3.3.5. Microservices Documentation Evidence for Sprint Review
+
+Durante este Sprint se incorporaron nuevos endpoints y controladores en los microservicios existentes, además de la implementación del API Gateway como punto central de entrada. A continuación se documentan los nuevos recursos REST expuestos durante el Sprint 3, detallando sus verbos, rutas, parámetros y ejemplos de respuesta.
+
+#### Treatment Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Treatment-service
+
+**Imagen de prueba:**
+<td align="center"><img src="assets/images/chapter5/sprint3/treatment-service.png" alt="treatment-service-sprint3"></td>
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| TreatmentService | GET | ``/api/v1/medication-catalog`` | — | ``[{ "id":1,"officialName":"Losartán","synonyms":"Losartan Potassium","category":"Antihypertensives" }]`` |
+| TreatmentService | GET | ``/api/v1/medication-catalog/search`` | Query: ``query`` (string, requerido) | ``[{ "id":1,"officialName":"Losartán","synonyms":"Losartan Potassium","category":"Antihypertensives" }]`` |
+| TreatmentService | POST | ``/api/v1/medication-catalog`` | Body: ``{ "officialName":"Losartán","synonyms":"Losartan Potassium","category":"Antihypertensives" }`` | ``{ "id":1,"officialName":"Losartán","synonyms":"Losartan Potassium","category":"Antihypertensives" }`` |
+
+<br>
+
+#### FollowUp Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/FollowUp-Service
+
+**Imagen de prueba:**
+<td align="center"><img src="assets/images/chapter5/sprint3/followup-service.png" alt="followup-service-sprint3"></td>
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| FollowUpService | GET | ``/api/v1/stock/low`` | Query: ``patientId`` (int, requerido) | ``[{ "medicationId":5,"medicationName":"Losartán","dose":"50 mg","stockCount":2,"message":"Stock bajo — quedan 2 unidades" }]`` |
+| FollowUpService | GET | ``/api/v1/appointment-compliance`` | Query: ``patientId`` (int, requerido) | ``[{ "id":1,"patientId":1,"appointmentId":10,"attended":true,"recordedAt":"2026-06-18T10:00:00","notes":"Paciente asistió puntual" }]`` |
+| FollowUpService | POST | ``/api/v1/appointment-compliance`` | Query: ``patientId`` (int), Body: ``{ "patientId":1,"appointmentId":10,"attended":true,"notes":"Paciente asistió puntual" }`` | ``{ "id":1,"patientId":1,"appointmentId":10,"attended":true,"recordedAt":"2026-06-18T10:00:00","notes":"Paciente asistió puntual" }`` |
+| FollowUpService | GET | ``/api/v1/appointment-compliance/{id}`` | Path: ``id`` (int) | ``{ "id":1,"patientId":1,"appointmentId":10,"attended":true,"recordedAt":"2026-06-18T10:00:00","notes":"Paciente asistió puntual" }`` |
+| FollowUpService | GET | ``/api/v1/compliance/recent`` | Query: ``patientId`` (int, requerido), ``limit`` (int, opcional, default 10) | ``[{ "id":15,"patientId":1,"doseScheduleId":42,"status":"Taken","recordedAt":"2026-06-17T08:05:00","videoUrl":null,"synced":true,"offlineRecordedAt":null }]`` |
+| FollowUpService | GET | ``/api/v1/medications/adherence-history`` | Query: ``patientId`` (int, requerido) | ``{ "overallAdherencePercentage":85.5,"weeks":[{"weekStart":"2026-06-10","weekEnd":"2026-06-16","takenDoses":12,"totalDoses":14,"adherencePercentage":85.71}] }`` |
+| FollowUpService | POST | ``/api/v1/sync/batch`` | Body: ``{ "items":[{"patientId":1,"entityType":"Compliance","payloadJson":"{\"doseScheduleId\":42,\"status\":\"Taken\"}","queuedAt":"2026-06-18T07:30:00"}] }`` | ``{ "totalProcessed":1,"syncedCount":1,"failedCount":0,"results":[{"entityType":"Compliance","createdId":16,"status":"synced","errorMessage":null}] }`` |
+
+<br>
+
+#### Medical Appointment Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Medical-Appointment-Service
+
+**Imagen de prueba:**
+<td align="center"><img src="assets/images/chapter5/sprint3/appointment-service.png" alt="appointment-service-sprint3"></td>
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| AppointmentService | GET | ``/api/v1/appointments/patient/{patientId}`` | Path: ``patientId`` (int) | ``[{ "id":1,"patientId":1,"type":"general","scheduledAt":"2026-06-10T10:00:00Z","location":"Consultorio 1","status":"scheduled","canBeModified":true,"createdAt":"2026-06-06T00:00:00Z","requirements":[{"id":1,"description":"Traer DNI"}] }]`` |
+
+<br>
+
+#### MediTrack API Gateway
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/MediTrack-Api-Gateway
+
+**Imagen de prueba:**
+<td align="center"><img src="assets/images/chapter5/sprint3/api-gateway.png" alt="api-gateway-sprint3"></td>
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| ApiGateway | GET,POST,PUT,PATCH,DELETE | ``/treatment/{everything}`` | Proxy hacia ``http://localhost:5162/{everything}`` | Reenvío transparente al Treatment Service |
+| ApiGateway | GET,POST,PUT,PATCH,DELETE | ``/followup/{everything}`` | Proxy hacia ``http://localhost:5267/{everything}`` | Reenvío transparente al FollowUp Service |
+| ApiGateway | GET,POST,PUT,PATCH,DELETE | ``/appointments/{everything}`` | Proxy hacia ``http://localhost:5186/{everything}`` | Reenvío transparente al Medical Appointment Service |
+| ApiGateway | GET,POST,PUT,PATCH,DELETE | ``/analysis/{everything}`` | Proxy hacia ``http://localhost:5188/{everything}`` | Reenvío transparente al Medical Analysis Service |
+| ApiGateway | GET,POST,PUT,PATCH,DELETE | ``/reminders/{everything}`` | Proxy hacia ``http://localhost:5080/reminders/{everything}`` | Reenvío transparente al Reminder Service |
+
+Base URL del Gateway: ``http://localhost:5000``. Middleware configurado: validación JWT, rate limiting y logging centralizado.
+
+#### 5.3.3.6. Software Deployment Evidence for Sprint Review
+
+#### 5.3.3.7. Team Collaboration Insights during Sprint
+
+| Integrantes | Tarea asignada |
+| --- | --- |
+| **Jeremy Quijada** | Corrección y mejora de las observaciones del documento técnico, asegurando consistencia y cumplimiento de los requisitos. Además, desarrollo y avance de las vistas principales de la **aplicación web** utilizando **React**, incluyendo la estructuración inicial de componentes y navegación base. |
+| **Javier Gonzales** | Desarrollo de las primeras interfaces de la **aplicación móvil** en **Flutter**, enfocándose en la maquetación inicial de pantallas y la construcción de la estructura visual del proyecto. |
+| **Renzo Rivera** | Desarrollo de las primeras interfaces de la **aplicación móvil** en **Flutter**, complementado con la corrección y ajuste de los **backends**, asegurando la correcta integración y funcionamiento de los servicios. |
+| **Victor Rojas** | Implementación del **API Gateway**, centralizando la comunicación entre los microservicios y verificando su correcta integración con los distintos backends del sistema. |
+| **Piero Sulca** | Desarrollo e implementación del **API Gateway**, realizando pruebas de conexión y validación de la comunicación con los backends para garantizar la interoperabilidad del sistema. |
+
+#### 5.3.3.8. Kanban Board
+
 
 # Referencias Bibliográficas
 
@@ -3298,4 +3532,18 @@ Durante este Sprint no se realizó un deployment formal de los Web Services en u
 
 Link del prototipo: https://stitch.withgoogle.com/preview/2917742923999304642?node-id=3f7c03713a40437494706973672a2c87
 
-## Links
+Repositorio Web: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Meditrack-Web
+
+Repositorio Mobile: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/MediTrack-Mobile
+
+Medical Analysis Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Medical-Analysis-Service
+
+Medical Reminder Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Meditrack-Reminder-Service
+
+FollowUp Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Meditrack-FollowUp-Service
+
+Medical Appointment Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Meditrack-Medical-Appointment-Service
+
+Treatment Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Treatment-service
+
+Api Gateway: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Meditrack-Api-Gateway
