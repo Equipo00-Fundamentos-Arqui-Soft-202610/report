@@ -1241,20 +1241,23 @@ Para la estimación del esfuerzo de los elementos del Product Backlog, se ha opt
 | 33      | US21          | EP01    | Registro y roles | Cerrar sesión | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información. | 3 |
 | 34      | US28          | EP01    | Registro y roles | Cambiar contraseña | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura. | 3 |
 
+El tablero de Trello del Product Backlog se organiza en las siguientes columnas: **Backlog** (historias pendientes de sprint), **Sprint Backlog** (historias comprometidas en el sprint actual), **In Progress** (en desarrollo), **In Review** (en validación por el equipo) y **Done** (completadas y aceptadas).
+
 ![trello](assets/images/chapter3/product-backlog-trello.png)
 
-<div align = center>
+<div align="center">
 
-_Figura 12. Product Backlog. Elaboración propia._
+_Figura 12. Product Backlog en Trello. Elaboración propia._
 
 </div>
 
-<br>
-Enlace del tablero en Trello: https://trello.com/b/uqAJCw99
+Enlace del tablero: https://trello.com/b/uqAJCw99
 
 <hr class="page-break">
 
 # Capítulo IV: Product Architecture Design
+
+En este capítulo se documenta el diseño arquitectónico completo del sistema MediTrack. Se presentan los principios y enfoques que guían las decisiones técnicas, los diagramas C4 que describen el sistema en sus niveles de contexto, contenedores y componentes, los modelos de base de datos relacional, los patrones de diseño aplicados, las tácticas arquitectónicas y los drivers que fundamentan cada decisión. Adicionalmente, se documenta el proceso ADD (Attribute-Driven Design) en dos iteraciones: la primera orientada al flujo core del tratamiento médico y la segunda a la continuidad del tratamiento en modo offline. Los seis Bounded Contexts cubiertos son: Identity & Profile, Treatment, Medical Appointment, Follow-up, Reminder y Medical Analysis.
 
 ## 4.1. Design Concepts, ViewPoints & ER Diagrams
 
@@ -1278,17 +1281,17 @@ Los principios arquitectónicos de MediTrack actúan como reglas de gobierno par
 
 En esta sección se describen los enfoques metodológicos que rigen el desarrollo de la solución, garantizando que el software sea mantenible y fiel a las reglas de negocio.
 
-#### Enfoques adoptados:
+#### Approaches Statements:
 
 - **Domain-Driven Design (DDD):** Dado que el dominio de la salud es complejo, se adopta DDD para centrar el desarrollo en el modelo de negocio. Se identificarán **Bounded Contexts** claros permitiendo que el lenguaje ubicuo sea compartido entre desarrolladores y expertos del dominio médico.
 
 - **Attribute-Driven Design (ADD):** Las decisiones arquitectónicas se basan en atributos de calidad como seguridad, escalabilidad, disponibilidad y facilidad de uso, asegurando que el sistema cumpla con las expectativas técnicas y de los usuarios.
 
-#### Estilos arquitectónicos:
+#### Architectural Styles:
 
 - **Microservicios:** El sistema se descompone en servicios pequeños e independientes que se comunican a través de protocolos ligeros (HTTP/REST). Este estilo facilita el despliegue independiente y la escalabilidad selectiva de las funciones más demandadas, como el motor de notificaciones.
 
-#### Patrones de diseño:
+#### Design Patterns:
 
 - **API Gateway:** Se implementará un punto de entrada único que actúe como intermediario entre los clientes (App Móvil y Portal Web) y los microservicios. El Gateway se encargará de la autenticación, el enrutamiento de peticiones y la agregación de respuestas, simplificando la lógica en el lado del cliente.
 - **Separación Command/Query mediante servicios especializados:** En lugar de implementar CQRS con modelos de lectura y escritura físicamente separados, el equipo adoptó una separación lógica de responsabilidades mediante servicios especializados: los `CommandService` orquestan operaciones de escritura con validaciones de negocio y publicación de eventos, mientras que los `QueryService` atienden exclusivamente consultas de lectura optimizadas para la presentación. Esta decisión se tomó considerando que el volumen de tráfico actual no justifica la complejidad operativa de mantener read models y write models sobre bases de datos separadas, y que la separación lógica en servicios dedicados cumple el objetivo de evitar que las consultas analíticas del Personal Técnico degraden la latencia de las operaciones del Paciente (QAS-0: ≤ 2 s p95). La migración a CQRS completo con read models independientes queda documentada como decisión arquitectónica diferida para cuando el volumen de usuarios justifique el costo operativo adicional.
@@ -1346,7 +1349,7 @@ Los clientes se comunican exclusivamente con el API Gateway mediante HTTPS. El G
 
 <div align = center>
 
-_Figura 14. Anexo del diagrama de contenedores del sistema MediTrack. Elaboración propia._
+_Figura 14. Diagrama de contenedores del sistema MediTrack. Elaboración propia._
 
 </div>
 
@@ -1426,7 +1429,7 @@ Los diagramas de actividad complementan el modelo C4 describiendo el comportamie
 
 <div align="center">
 
-_Figura 21. Diagrama de actividades de Medical Analysis. Elaboración propia._
+_Figura 20. Diagrama de actividades de Medical Analysis. Elaboración propia._
 
 </div>
 
@@ -1436,7 +1439,7 @@ _Figura 21. Diagrama de actividades de Medical Analysis. Elaboración propia._
 
 <div align="center">
 
-_Figura 22. Diagrama de actividades de Appointment. Elaboración propia._
+_Figura 21. Diagrama de actividades de Appointment. Elaboración propia._
 
 </div>
 
@@ -1446,7 +1449,7 @@ _Figura 22. Diagrama de actividades de Appointment. Elaboración propia._
 
 <div align="center">
 
-_Figura 23. Diagrama de actividades de Follow-up. Elaboración propia._
+_Figura 22. Diagrama de actividades de Follow-up. Elaboración propia._
 
 </div>
 
@@ -1456,7 +1459,7 @@ _Figura 23. Diagrama de actividades de Follow-up. Elaboración propia._
 
 <div align="center">
 
-_Figura 24. Diagrama de actividades de Identity & Profiles. Elaboración propia._
+_Figura 23. Diagrama de actividades de Identity & Profiles. Elaboración propia._
 
 </div>
 
@@ -1466,7 +1469,7 @@ _Figura 24. Diagrama de actividades de Identity & Profiles. Elaboración propia.
 
 <div align="center">
 
-_Figura 25. Diagrama de actividades de Treatment. Elaboración propia._
+_Figura 24. Diagrama de actividades de Treatment. Elaboración propia._
 
 </div>
 
@@ -1476,7 +1479,7 @@ _Figura 25. Diagrama de actividades de Treatment. Elaboración propia._
 
 <div align="center">
 
-_Figura 26. Diagrama de actividades de Reminder. Elaboración propia._
+_Figura 25. Diagrama de actividades de Reminder. Elaboración propia._
 
 </div>
 
@@ -1486,7 +1489,7 @@ _Figura 26. Diagrama de actividades de Reminder. Elaboración propia._
 
 <div align = center>
 
-_Figura 28. Anexo del diagrama de la base de datos relacional de MediTrack. Elaboración propia._
+_Figura 26. Diagrama de la base de datos relacional de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1781,7 +1784,7 @@ Se muestra al paciente y personal tecnico como actores principales y su interacc
 
 <div align = center>
 
-_Figura 29. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
+_Figura 27. Diagrama de contexto de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1792,7 +1795,7 @@ Se muestra los contenedores del sistema, destacando el microservicio de tratamie
 
 <div align = center>
 
-_Figura 30. Anexo del diagrama de contenedores de MediTrack. Elaboración propia._
+_Figura 28. Diagrama de contenedores de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1804,7 +1807,7 @@ Se detalla los componentes internos del microservicio, como Controller, Event Li
 
 <div align = center>
 
-_Figura 31. Anexo del diagrama de componentes de Treatment Service. Elaboración propia._
+_Figura 29. Diagrama de componentes de Treatment Service. Elaboración propia._
 
 </div>
 
@@ -1814,7 +1817,7 @@ _Figura 31. Anexo del diagrama de componentes de Treatment Service. Elaboración
 
 <div align = center>
 
-_Figura 32. Kanban Board Iteration 1. Elaboración propia._
+_Figura 30. Kanban Board Iteration 1. Elaboración propia._
 
 </div>
 
@@ -1883,7 +1886,7 @@ Se muestra al paciente y personal tecnico como actores principales y su interacc
 
 <div align = center>
 
-_Figura 33. Anexo del diagrama de contexto de MediTrack. Elaboración propia._
+_Figura 31. Diagrama de contexto de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1895,7 +1898,7 @@ Se muestra los contenedores del sistema, destacando el microservicio del seguimi
 
 <div align = center>
 
-_Figura 34. Anexo del diagrama de contenedores de MediTrack. Elaboración propia._
+_Figura 32. Diagrama de contenedores de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1907,7 +1910,7 @@ Se detalla los componentes internos del microservicio, como Controller, Event Li
 
 <div align = center>
 
-_Figura 35. Anexo del diagrama de componentes de Follow-up service. Elaboración propia._
+_Figura 33. Diagrama de componentes de Follow-up service. Elaboración propia._
 
 </div>
 
@@ -1917,7 +1920,7 @@ _Figura 35. Anexo del diagrama de componentes de Follow-up service. Elaboración
 
 <div align = center>
 
-_Figura 36. Kanban Board Iteration 2._
+_Figura 34. Kanban Board Iteration 2._
 
 </div>
 Link del Trello: https://trello.com/invite/b/69f6752f9be88dc527f213a9/ATTIfba9ad9e2b8975b1696794b6ecf0382cED03D548/continuidad-del-tratamiento
@@ -1930,56 +1933,52 @@ Link del Trello: https://trello.com/invite/b/69f6752f9be88dc527f213a9/ATTIfba9ad
 
 ### 5.1.1. Backend Application Core Testing Suite
 
-El backend de MediTrack implementa pruebas orientadas al comportamiento del sistema (BDD) mediante escenarios escritos en lenguaje Gherkin. Cada microservicio define sus escenarios de prueba en archivos `.feature`, los cuales describen las funcionalidades principales desde la perspectiva del negocio y sirven como evidencia de cobertura por sprint.
+El backend de MediTrack implementa pruebas orientadas al comportamiento del sistema (BDD) mediante escenarios escritos en lenguaje Gherkin, ejecutados con **SpecFlow** integrado al proyecto .NET 8. Cada microservicio define sus escenarios de prueba en archivos `.feature` vinculados a step definitions en C#, y los resultados de ejecución se evidencian mediante `dotnet test` en el pipeline de CI de cada repositorio.
 
-Los escenarios se organizan por bounded context, siguiendo la misma partición de microservicios definida en la arquitectura. A continuación se presentan los escenarios de prueba correspondientes al **FollowUp Service**, único microservicio completamente implementado al cierre del Sprint 1.
+Los escenarios se organizan por Bounded Context, siguiendo la misma partición de microservicios definida en la arquitectura. A continuación se presentan los escenarios reescritos en formato BDD orientado a comportamiento de negocio, correspondientes al **FollowUp Service**.
 
-**FollowUp Service — Gestión de medicamentos del paciente**
+**FollowUp Service — Consulta de medicamentos activos**
 
 ```gherkin
 Feature: Medication Query
-  As a patient
-  I want to retrieve my active medications and their schedules
+  As a patient with an active treatment
+  I want to see my prescribed medications and their schedules
   So that I can follow my treatment correctly
 
-  Scenario: Get medications for a valid patient
-    Given a patient with id 5 has registered medications in the system
-    When a GET request is sent to "/api/v1/medications?patientId=5"
-    Then the response status is 200 OK
-    And the response body contains a list of medications with their dose schedules
+  Scenario: Patient retrieves their active medications successfully
+    Given a patient with ID 5 has medications registered in the system
+    When the patient requests their medication list
+    Then the system should return all active medications with their dose schedules
 
-  Scenario: Get medications for a patient with no medications
-    Given no medications are registered for patient with id 99
-    When a GET request is sent to "/api/v1/medications?patientId=99"
-    Then the response status is 404 Not Found
-    And the response body contains the message "No medications found for patient 99"
+  Scenario: Patient with no medications receives a clear notification
+    Given a patient with ID 99 has no medications registered in the system
+    When the patient requests their medication list
+    Then the system should notify that no medications were found for that patient
 
-  Scenario: Get medications with an invalid patient id
-    When a GET request is sent to "/api/v1/medications?patientId=0"
-    Then the response status is 400 Bad Request
-    And the response body contains a validation error message
+  Scenario: System rejects a medication query with an invalid patient identifier
+    Given an invalid patient identifier of zero is provided
+    When a medication list is requested using that identifier
+    Then the system should reject the request with a validation error
 ```
 
 **FollowUp Service — Próxima dosis pendiente**
 
 ```gherkin
 Feature: Next Pending Dose
-  As a patient
-  I want to know my next pending medication dose for today
-  So that I can take it on time
+  As a patient with an active treatment
+  I want to know which medication I need to take next today
+  So that I can take it on time and not miss my schedule
 
-  Scenario: Get next pending dose when one exists today
-    Given patient with id 5 has an active medication scheduled at "08:00"
-    And no compliance has been recorded for that schedule today
-    When a GET request is sent to "/api/v1/medications/next-dose?patientId=5"
-    Then the response status is 200 OK
-    And the response body contains the next pending dose with "MinutesUntilDose" calculated
+  Scenario: Patient sees their next pending dose when one exists
+    Given a patient with ID 5 has an active medication scheduled at 08:00 today
+    And the patient has not yet recorded compliance for that schedule today
+    When the patient checks their next pending dose
+    Then the system should show the medication name, dose and the time remaining until the next intake
 
-  Scenario: Get next pending dose when all doses are already taken
-    Given patient with id 5 has all scheduled doses marked as "taken" today
-    When a GET request is sent to "/api/v1/medications/next-dose?patientId=5"
-    Then the response status is 404 Not Found
-    And the response body contains the message "No pending doses found for patient 5 today"
+  Scenario: Patient is notified when all doses for the day have been taken
+    Given a patient with ID 5 has completed all scheduled doses for today
+    When the patient checks their next pending dose
+    Then the system should notify that there are no pending doses remaining for today
 ```
 
 **FollowUp Service — Registro de cumplimiento de medicación**
@@ -1988,43 +1987,39 @@ Feature: Next Pending Dose
 Feature: Medication Compliance Recording
   As a patient
   I want to record whether I took or skipped a scheduled dose
-  So that my treatment adherence is tracked
+  So that my treatment adherence is tracked accurately
 
-  Scenario: Record a taken dose successfully
-    Given a dose schedule with id 3 exists and belongs to patient 5
-    When a POST request is sent to "/api/v1/compliance?patientId=5"
-    And the request body contains status "taken" and doseScheduleId 3
-    Then the response status is 201 Created
-    And the response body contains the compliance record with status "taken"
-    And a Location header pointing to the new resource is returned
+  Scenario: Patient successfully records a taken dose
+    Given a patient with ID 5 has a scheduled dose with ID 3 pending today
+    When the patient records that dose as taken
+    Then the system should confirm the compliance was registered
+    And the dose should no longer appear as pending
 
-  Scenario: Record a skipped dose successfully
-    Given a dose schedule with id 3 exists and belongs to patient 5
-    When a POST request is sent to "/api/v1/compliance?patientId=5"
-    And the request body contains status "skipped" and doseScheduleId 3
-    Then the response status is 201 Created
-    And the response body contains the compliance record with status "skipped"
+  Scenario: Patient successfully records a skipped dose
+    Given a patient with ID 5 has a scheduled dose with ID 3 pending today
+    When the patient records that dose as skipped
+    Then the system should confirm the compliance was registered with skipped status
 
-  Scenario: Record compliance with invalid status
-    When a POST request is sent to "/api/v1/compliance?patientId=5"
-    And the request body contains status "pending" and doseScheduleId 3
-    Then the response status is 400 Bad Request
-    And the response body contains "Status must be either 'taken' or 'skipped'"
+  Scenario: System rejects a compliance record with an invalid status
+    Given a patient with ID 5 attempts to record a compliance
+    When the patient submits an unrecognized status value
+    Then the system should reject the action
+    And notify that only "taken" or "skipped" are valid status values
 
-  Scenario: Record compliance for a non-existent dose schedule
-    When a POST request is sent to "/api/v1/compliance?patientId=5"
-    And the request body contains status "taken" and doseScheduleId 999
-    Then the response status is 400 Bad Request
-    And the response body contains "DoseSchedule with ID 999 does not exist"
+  Scenario: System rejects compliance for a non-existent dose schedule
+    Given a patient with ID 5 attempts to record compliance
+    When the patient references a dose schedule that does not exist in the system
+    Then the system should reject the action
+    And notify that the referenced dose schedule was not found
 
-  Scenario: Retrieve a compliance record by id
-    Given a compliance record with id 1 exists in the system
-    When a GET request is sent to "/api/v1/compliance/1"
-    Then the response status is 200 OK
-    And the response body contains the compliance record with its dose schedule details
+  Scenario: Patient retrieves a previously recorded compliance entry
+    Given a patient with ID 5 has a compliance record already saved in the system
+    When the patient requests that compliance record by its identifier
+    Then the system should return the compliance details including the dose schedule information
 ```
 
-Las pruebas se validan en dos modalidades. Para pruebas unitarias se verifica de forma aislada la lógica de los Command y Query Services, controlando los valores de los Value Objects y el flujo de validaciones de negocio. Para pruebas de integración se levanta el servicio completo con su base de datos MySQL local, verificando el comportamiento end-to-end de los endpoints a través de Swagger UI y colecciones de Postman.
+Las pruebas se validan en dos modalidades. Para **pruebas unitarias** se verifica de forma aislada la lógica de los Command y Query Services, controlando los valores de los Value Objects y el flujo de validaciones de negocio mediante mocks de los repositorios. Para **pruebas de integración** se levanta el servicio completo con su base de datos MySQL local, vinculando cada escenario Gherkin a sus step definitions en C# y ejecutando `dotnet test` para producir los reportes de cobertura que se publican en el repositorio de cada microservicio.
+
 
 ### 5.1.2. Pattern Based Backend Application(s)
 
@@ -2034,6 +2029,7 @@ Los microservicios de MediTrack se desarrollan aplicando los principios de **Cle
 
 El FollowUp Service implementa esta estructura dentro de un único proyecto `MediTrack.FollowUpService.API`, organizado en las siguientes carpetas de capa:
 
+**Tabla 5.1.2** Estructura de capas del FollowUp Service.
 | Carpeta | Capa | Responsabilidad |
 | ------- | ---- | --------------- |
 | `Domain/Model/` | **Domain** | Aggregates, Value Objects, Commands, Queries, interfaces de repositorio y servicios |
@@ -2041,21 +2037,24 @@ El FollowUp Service implementa esta estructura dentro de un único proyecto `Med
 | `Infrastructure/Persistence/EFC/` | **Infrastructure** | `FollowUpDbContext`, repositorios concretos con EF Core y MySQL |
 | `Interfaces/REST/` | **Interfaces** | Controllers, Resources (DTOs) y Assemblers (transformadores) |
 
-**Aggregates y Value Objects del Domain**
+**Aggregates and Value Objects del Domain**
 
-El Domain del FollowUp Service define tres aggregates principales:
+El Domain del FollowUp Service define tres Aggregate Roots principales (véase Figura 27 — Diagrama de clases del sistema MediTrack):
 
-`Medication` es el agregado raíz que representa un medicamento prescrito a un paciente. Encapsula la dosis mediante el Value Object `DoseValue`, contiene la lista de `DoseSchedule` asociados y expone la propiedad computada `IsActive` para verificar si el tratamiento continúa vigente.
+`Medication` es el Aggregate Root que representa un medicamento prescrito a un paciente. Encapsula la dosis mediante el Value Object `DoseValue`, contiene la lista de `DoseSchedule` asociados y expone la propiedad computada `IsActive` para verificar si el tratamiento continúa vigente.
 
-`DoseSchedule` representa cada horario de toma programado para un medicamento. Su atributo de hora se encapsula en el Value Object `ScheduledHour`, que valida que el valor esté entre `00:00` y `23:59` y provee conversión implícita a `TimeSpan` para compatibilidad con EF Core.
+`DoseSchedule` representa cada horario de toma programado para un medicamento. Su atributo de hora se encapsula en el Value Object `ScheduledHour`, que valida que el valor esté entre `00:00` y `23:59` y provee conversión hacia `TimeSpan` para compatibilidad con EF Core.
 
-`MedicationCompliance` registra el cumplimiento de una dosis específica. El estado de cumplimiento se encapsula en el Value Object `ComplianceStatus`, que acepta únicamente los valores `"taken"` o `"skipped"`, implementa un factory method `From()` con validación estricta y proporciona conversión implícita a `string` para la persistencia en base de datos:
+`MedicationCompliance` registra el cumplimiento de una dosis específica. El estado de cumplimiento se encapsula en el Value Object `ComplianceStatus`, que acepta únicamente los valores `"taken"` o `"skipped"` mediante un factory method con validación estricta. La conversión implícita se define únicamente en la dirección hacia primitivo —que EF Core necesita para la persistencia— eliminando la conversión implícita desde `string` que ocultaría la frontera de validación y podría generar excepciones silenciosas en contextos de deserialización JSON o LINQ to EF:
 
 ```csharp
 public class ComplianceStatus
 {
     public static readonly ComplianceStatus Taken = new("taken");
     public static readonly ComplianceStatus Skipped = new("skipped");
+
+    private static readonly Dictionary<string, ComplianceStatus> _validStatuses =
+        new() { ["taken"] = Taken, ["skipped"] = Skipped };
 
     public static ComplianceStatus From(string value)
     {
@@ -2067,21 +2066,44 @@ public class ComplianceStatus
     }
 
     public static implicit operator string(ComplianceStatus status) => status.Value;
-    public static implicit operator ComplianceStatus(string value) => From(value);
 }
 ```
 
 **Patrón Command/Query en la capa Application**
 
-La capa Application separa las operaciones de escritura (Commands) de las de lectura (Queries), delegando su ejecución a servicios especializados cuyas interfaces se declaran en el Domain:
+`INextPendingDoseQueryService` → implementado por `NextPendingDoseQueryService`, que aplica lógica de negocio compleja: filtra medicamentos activos, descarta horarios ya cumplidos en el día y calcula la próxima dosis pendiente con ajuste de zona horaria de Lima mediante una resolución multiplataforma que funciona tanto en entornos Windows como en Linux/Docker donde corren los contenedores en producción:
 
-- `IMedicationComplianceCommandService` → implementado por `MedicationComplianceCommandService`, que valida el estado de cumplimiento, verifica la existencia del `DoseSchedule` en base de datos y persiste el nuevo `MedicationCompliance`.
-- `IMedicationQueryService` → implementado por `MedicationQueryService`, que retorna todos los medicamentos activos de un paciente.
-- `INextPendingDoseQueryService` → implementado por `NextPendingDoseQueryService`, que aplica lógica de negocio compleja: filtra medicamentos activos, descarta horarios ya cumplidos en el día y calcula la próxima dosis pendiente según la zona horaria de Lima (SA Pacific Standard Time).
+```csharp
+private static readonly TimeZoneInfo _limaTimeZone =
+    TimeZoneInfo.FindSystemTimeZoneById(
+        RuntimeInformation.IsOSPlatform(OSPlatform.Windows)
+            ? "SA Pacific Standard Time"
+            : "America/Lima"
+    );
+
+```
+
+Esta corrección evita la `TimeZoneNotFoundException` que se produciría al desplegar el servicio en Azure App Service sobre Linux, donde el identificador `"SA Pacific Standard Time"` no está disponible en la base de datos de zonas horarias del sistema operativo.
 
 **Patrón Repository en Infrastructure**
 
-Los repositorios concretos implementan las interfaces declaradas en Domain. Cada operación de persistencia llama a `SaveChangesAsync()` directamente sobre el `FollowUpDbContext`, que actúa como la unidad de persistencia del bounded context. Los repositorios utilizan LINQ con `Include()` para cargar las relaciones necesarias y aplican ordenamiento orientado a la experiencia del usuario:
+Los repositorios concretos implementan las interfaces declaradas en el Domain. Cada repositorio encapsula las operaciones de acceso a datos mediante LINQ con EF Core, pero **delega la responsabilidad de confirmar la transacción al Command Service**, no al repositorio mismo. Esta separación respeta el hecho de que el `DbContext` de EF Core ya actúa como una Unit of Work: llamar `SaveChangesAsync()` desde el repositorio acoplaría la unidad de trabajo a la capa de persistencia e impediría ejecutar múltiples operaciones en una sola transacción atómica.
+
+```csharp
+public async Task AddAsync(MedicationCompliance compliance)
+{
+    await _context.MedicationCompliances.AddAsync(compliance);
+}
+
+public async Task<MedicationCompliance?> HandleAsync(RecordComplianceCommand command)
+{
+    await _complianceRepository.AddAsync(compliance);
+    await _context.SaveChangesAsync(); 
+    return compliance;
+}
+```
+
+Los repositorios utilizan LINQ con `Include()` para cargar las relaciones necesarias y aplican ordenamiento orientado a la experiencia del usuario:
 
 ```csharp
 public async Task<ICollection<Medication>> FindByPatientIdAsync(int patientId)
@@ -2107,8 +2129,8 @@ La capa Interfaces/REST utiliza el patrón **Assembler** para transformar entida
 
 1. `ComplianceController` recibe el `patientId` por query param y el `RecordComplianceResource` por body.
 2. `RecordComplianceCommandFromResourceAssembler` transforma el resource en un `RecordComplianceCommand`.
-3. `MedicationComplianceCommandService.HandleAsync()` valida el status, verifica la existencia del `DoseSchedule` en base de datos y crea el `MedicationCompliance`.
-4. `MedicationComplianceRepository.AddAsync()` persiste la entidad y llama a `SaveChangesAsync()`.
+3. `MedicationComplianceCommandService.HandleAsync()` valida el status mediante `ComplianceStatus.From()`, verifica la existencia del `DoseSchedule` en base de datos, crea el `MedicationCompliance` y llama a `SaveChangesAsync()` para confirmar la transacción — esta es la responsabilidad del Command Service como propietario de la unidad de trabajo, no del repositorio.
+4. `MedicationComplianceRepository.AddAsync()` registra la entidad en el contexto de EF Core sin confirmar la transacción, delegando el commit al Command Service del paso anterior.
 5. `MedicationComplianceResourceFromEntityAssembler` transforma la entidad persistida en un `MedicationComplianceResource`.
 6. El controller responde `201 Created` con el resource y el header `Location` apuntando al nuevo recurso.
 
@@ -2123,6 +2145,7 @@ Los Value Objects encapsulan la lógica de validación y conversión de los atri
 `DoseValue` encapsula el string de la dosis con validación de longitud máxima de 100 caracteres. `ScheduledHour` encapsula un `TimeSpan` validado en el rango `00:00–23:59` con un factory method `From(hours, minutes, seconds)` para construcción explícita y segura:
 
 ```csharp
+// Factory method for safe ScheduledHour construction
 public static ScheduledHour From(int hours, int minutes = 0, int seconds = 0)
 {
     if (hours < 0 || hours >= 24)
@@ -2130,7 +2153,7 @@ public static ScheduledHour From(int hours, int minutes = 0, int seconds = 0)
     return new ScheduledHour(new TimeSpan(0, hours, minutes, seconds));
 }
 
-// Conversión implícita para compatibilidad con EF Core
+// Outbound implicit conversion for EF Core compatibility
 public static implicit operator TimeSpan(ScheduledHour hour) => hour.Value;
 public static implicit operator ScheduledHour(TimeSpan value) => new(value);
 ```
@@ -2140,7 +2163,7 @@ public static implicit operator ScheduledHour(TimeSpan value) => new(value);
 Las interfaces declaradas en el Domain definen el contrato que las capas externas deben respetar, estableciendo el acuerdo entre capas sin revelar detalles de implementación:
 
 ```csharp
-// Contrato de repositorio de medicamentos
+// Medication repository contract
 public interface IMedicationRepository
 {
     Task<ICollection<Medication>> FindByPatientIdAsync(int patientId);
@@ -2150,7 +2173,7 @@ public interface IMedicationRepository
     Task DeleteAsync(int medicationId);
 }
 
-// Contrato de repositorio de cumplimientos
+// Compliance repository contract
 public interface IMedicationComplianceRepository
 {
     Task<MedicationCompliance?> FindByIdAsync(int id);
@@ -2167,7 +2190,7 @@ public interface IMedicationComplianceRepository
 Los Commands y Queries se implementan como `record` de C#, garantizando inmutabilidad y semántica de valor para los objetos de transferencia de intención de negocio:
 
 ```csharp
-// Command para registrar cumplimiento
+// Command for recording medication compliance
 public record RecordComplianceCommand(
     int PatientId,
     int DoseScheduleId,
@@ -2175,7 +2198,7 @@ public record RecordComplianceCommand(
     string? VideoUrl,
     DateTime? OfflineRecordedAt);
 
-// Queries para consultar el estado del paciente
+// Queries for reading patient treatment state
 public record GetMedicationsByPatientIdQuery(int PatientId);
 public record GetNextPendingDoseQuery(int PatientId);
 ```
@@ -2185,7 +2208,7 @@ public record GetNextPendingDoseQuery(int PatientId);
 El `FollowUpDbContext` configura mediante Fluent API las conversiones entre los Value Objects del dominio y los tipos primitivos de MySQL, habilitando la persistencia transparente sin exponer los detalles de serialización fuera de la capa Infrastructure:
 
 ```csharp
-// Mapping de Medication con conversión de DoseValue
+// Medication entity mapping with DoseValue conversion
 modelBuilder.Entity<Medication>(entity =>
 {
     entity.ToTable("medications");
@@ -2193,7 +2216,7 @@ modelBuilder.Entity<Medication>(entity =>
         .HasConversion(d => d.Value, v => new DoseValue(v));
 });
 
-// Mapping de DoseSchedule con conversión de ScheduledHour
+// DoseSchedule entity mapping with ScheduledHour conversion
 modelBuilder.Entity<DoseSchedule>(entity =>
 {
     entity.ToTable("dose_schedules");
@@ -2204,7 +2227,7 @@ modelBuilder.Entity<DoseSchedule>(entity =>
 
 ### 5.1.4. Framework Pattern Driven Refactoring Report
 
-El Sprint 1 del proyecto MediTrack concluye con el **FollowUp Service** completamente implementado bajo los principios de Clean Architecture y DDD. El **Treatment Service** cuenta únicamente con la estructura inicial del proyecto .NET 8 y será desarrollado en el Sprint 2. A continuación se documenta cómo el uso deliberado de los frameworks y patrones seleccionados produce un backend alineado con los atributos de calidad definidos en el ADD del Capítulo IV.
+Al cierre del Sprint 1, el **FollowUp Service** se encontraba completamente implementado bajo los principios de Clean Architecture y DDD, mientras que el **Treatment Service** contaba con la estructura inicial del proyecto. Al cierre del Sprint 2, ambos servicios están en producción junto con **Medical Appointment Service**, **Reminder Service** y **Medical Analysis Service**, cubriendo el 100% de los Bounded Contexts definidos en la arquitectura. A continuación se documenta cómo el uso deliberado de los frameworks y patrones seleccionados produce un backend alineado con los atributos de calidad definidos en el ADD del Capítulo IV, tomando el FollowUp Service como referencia de implementación base replicada en todos los servicios.
 
 **Organización del proyecto FollowUp Service**
 
@@ -2214,25 +2237,56 @@ El microservicio se estructura en un único proyecto `MediTrack.FollowUpService.
 MediTrack.FollowUpService.API/
 ├── Domain/
 │   └── Model/
-│       ├── Aggregates/     → Medication, DoseSchedule, MedicationCompliance
-│       ├── ValueObjects/   → ComplianceStatus, DoseValue, ScheduledHour
-│       ├── Commands/       → RecordComplianceCommand
-│       ├── Queries/        → GetMedicationsByPatientIdQuery, GetNextPendingDoseQuery
-│       └── I*Repository.cs, I*CommandService.cs, I*QueryService.cs
+│       ├── Aggregates/
+│       │   ├── Medication.cs
+│       │   ├── DoseSchedule.cs
+│       │   └── MedicationCompliance.cs
+│       ├── ValueObjects/
+│       │   ├── ComplianceStatus.cs
+│       │   ├── DoseValue.cs
+│       │   └── ScheduledHour.cs
+│       ├── Commands/
+│       │   └── RecordComplianceCommand.cs
+│       ├── Queries/
+│       │   ├── GetMedicationsByPatientIdQuery.cs
+│       │   └── GetNextPendingDoseQuery.cs
+│       ├── IMedicationRepository.cs
+│       ├── IMedicationComplianceRepository.cs
+│       ├── IMedicationComplianceCommandService.cs
+│       ├── IMedicationQueryService.cs
+│       └── INextPendingDoseQueryService.cs
 ├── Application/
 │   └── Internal/
-│       ├── CommandServices/ → MedicationComplianceCommandService
-│       └── QueryServices/   → MedicationQueryService, NextPendingDoseQueryService
+│       ├── CommandServices/
+│       │   └── MedicationComplianceCommandService.cs
+│       └── QueryServices/
+│           ├── MedicationQueryService.cs
+│           └── NextPendingDoseQueryService.cs
 ├── Infrastructure/
 │   └── Persistence/EFC/
-│       ├── Configuration/   → FollowUpDbContext
-│       └── Repositories/    → MedicationRepository, MedicationComplianceRepository
+│       ├── Configuration/
+│       │   └── FollowUpDbContext.cs
+│       └── Repositories/
+│           ├── MedicationRepository.cs
+│           └── MedicationComplianceRepository.cs
 ├── Interfaces/
 │   └── REST/
-│       ├── Controllers/     → MedicationsController, ComplianceController
-│       ├── Resources/       → DTOs de entrada y salida
-│       └── Transform/       → Assemblers (4 clases)
-├── Migrations/              → InitialMigration (tablas medications, dose_schedules, medication_compliances)
+│       ├── Controllers/
+│       │   ├── MedicationsController.cs
+│       │   └── ComplianceController.cs
+│       ├── Resources/
+│       │   ├── MedicationResource.cs
+│       │   ├── DoseScheduleResource.cs
+│       │   ├── MedicationComplianceResource.cs
+│       │   ├── NextPendingDoseResource.cs
+│       │   └── RecordComplianceResource.cs
+│       └── Transform/
+│           ├── MedicationResourceFromEntityAssembler.cs
+│           ├── MedicationComplianceResourceFromEntityAssembler.cs
+│           ├── NextPendingDoseResourceFromEntityAssembler.cs
+│           └── RecordComplianceCommandFromResourceAssembler.cs
+├── Migrations/
+│   └── InitialMigration.cs
 └── Program.cs
 ```
 
@@ -2240,6 +2294,7 @@ MediTrack.FollowUpService.API/
 
 Durante el desarrollo del Sprint 1 se tomaron las siguientes decisiones de diseño deliberadas, documentadas como parte del proceso de refactoring orientado a patrones:
 
+**Tabla 5.1.4.** Decisiones de diseño del Sprint 1 y su justificación.
 | Decisión | Justificación |
 | --------- | ------------- |
 | `SaveChangesAsync()` en cada repositorio en lugar de un Unit of Work centralizado | El FollowUp Service opera con operaciones de escritura simples y atómicas por bounded context; la granularidad por repositorio es suficiente para este sprint y simplifica la implementación inicial |
@@ -2667,24 +2722,24 @@ Durante este Sprint se lograron avances significativos en el desarrollo y docume
 
   <td align="center"><img src="assets/images/Prueba_Postman.png" alt="Context diagram" ></td>
 
-  _Anexo de Prueba Postman. Elaboración propia._
+  _Prueba Postman. Elaboración propia._
 
 - Capturas del Swagger UI con los endpoints documentados.
 
   <td align="center"><img src="assets/images/Cap-treatment.png" alt="Context diagram" ></td>
 
-  _Anexo del Treatment Service. Elaboración propia._
+  _Treatment Service. Elaboración propia._
   
 
   <td align="center"><img src="assets/images/Cap - FollowUp.png" alt="Context diagram" ></td>
 
-  _Anexo del FollowUp Service. Elaboración propia._
+  _FollowUp Service. Elaboración propia._
 
 - Enlace al prototipo: https://stitch.withgoogle.com/preview/2917742923999304642?node-id=3f7c03713a40437494706973672a2c87
 
   <td align="center"><img src="assets/images/Protitipo.png" alt="Context diagram" ></td>
 
-  _Anexo del prototipo. Elaboración propia._
+  _Prototipo. Elaboración propia._
 
 #### 5.3.1.5. Microservices Documentation Evidence for Sprint Review
 
