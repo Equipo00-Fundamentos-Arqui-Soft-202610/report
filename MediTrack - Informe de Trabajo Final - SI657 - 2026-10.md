@@ -3417,9 +3417,76 @@ Durante este Sprint, el equipo se enfocó en la corrección y optimización de l
 
 #### 5.3.3.3. Testing Suite Evidence for Sprint Review
 
+Durante este Sprint se ejecutaron pruebas funcionales básicas sobre los microservicios followup-service, treatment-service, medical-analysis-service, medical-appointment-service y reminder-service, con el objetivo de validar el correcto funcionamiento de sus endpoints principales y comprobar la integración entre servicios. Los resultados obtenidos fueron satisfactorios, evidenciando estabilidad y consistencia en la comunicación interna del sistema.
+
+| Test ID | Microservice | Description | Expected Result | Obtained Result | Status |
+|---------|--------------|-------------|-----------------|-----------------|--------|
+| TS-001 | followup-service | Validation of medication adherence endpoint | HTTP 200 response with adherence information correctly returned | HTTP 200 response with adherence information correctly returned | Passed |
+| TS-002 | treatment-service | Validation of medications query endpoint | Medication list returned successfully from the API | Medication list returned successfully from the API | Passed |
+| TS-003 | medical-analysis-service | POST /api/v1/clinical-records — Registration of a manual clinical record with patientId, recordDate, diagnosis and notes | HTTP 201 Created with the new record including id, source "manual" and createdAt timestamp | HTTP 201 Created with the clinical record correctly persisted and returned | Passed |
+| TS-004 | medical-analysis-service | GET /api/v1/clinical-records?patientId=1 — Query of the full clinical history for patient 1 | HTTP 200 OK with an array containing all clinical records for the patient ordered by date descending | HTTP 200 OK with the array of clinical records returned correctly | Passed |
+| TS-005 | medical-analysis-service | GET /api/v1/clinical-records?patientId=1&from=2026-01-01&to=2026-06-30 — Filter clinical history by date range | HTTP 200 OK with only the records whose recordDate falls within the specified range | HTTP 200 OK with the filtered records returned within the requested period | Passed |
+| TS-006 | medical-analysis-service | POST /api/v1/alerts — Creation of an adherence alert with severity "warning" and a custom reason | HTTP 201 Created with the alert containing status "open", triggeredAt timestamp and acknowledgedAt null | HTTP 201 Created with the alert correctly persisted and returned | Passed |
+| TS-007 | reminder-service | GET /reminders/patients/{patientId} without a JWT token — verifies local token validation (CON-04) | HTTP 401 Unauthorized with WWW-Authenticate: Bearer header | HTTP 401 Unauthorized returned correctly | Passed |
+| TS-008 | reminder-service | RecetaCargada event consumed from RabbitMQ then GET /reminders/patients/1 — verifies event-driven reminder generation via Factory Method | HTTP 200 OK with one medication reminder per dose, including the factory-built title and body | HTTP 200 OK with two reminders ("Es momento de tomar Losartán / Metformina") | Passed |
+| TS-009 | reminder-service | GET /reminders/preferences/patients/1 — query of notification preferences for a patient without explicit config | HTTP 200 OK with the default preferences (sound, vibration, repeatCount 1, globalEnabled true) | HTTP 200 OK with the default preferences returned | Passed |
+| TS-010 | reminder-service | PUT /reminders/preferences/patients/1 — update notification preferences (US22) | HTTP 200 OK with the persisted preferences reflecting the new values | HTTP 200 OK with repeatCount 2 and vibrationEnabled false persisted | Passed |
+| TS-011 | reminder-service | PUT /reminders/{id}/cancel — cancel a scheduled reminder | HTTP 204 No Content and the reminder leaves the active list | HTTP 204 No Content; subsequent GET no longer lists the reminder | Passed |
+| TS-012 | reminder-service | PUT /reminders/999/cancel — cancel a non-existent reminder | HTTP 404 Not Found | HTTP 404 Not Found returned correctly | Passed |
+
+
+<br>
+
+Además de las pruebas funcionales, se realizaron pruebas visuales utilizando Postman y la documentación interactiva de Swagger para verificar el comportamiento de los endpoints implementados en los microservicios. Estas herramientas permitieron validar de manera gráfica las solicitudes y respuestas HTTP, comprobando códigos de estado, estructuras JSON y consistencia en los datos devueltos.
+
+Las capturas de evidencia muestran la ejecución exitosa de los endpoints principales en los servicios followup-service, treatment-service, medical-analysis-service, medical-appointment-service y reminder-service, confirmando que los servicios responden correctamente a las operaciones de consulta, registro y actualización de información médica.
+<br>
+
++ **Medical-Analysis-Service:**
+
+Pruebas funcionales realizadas sobre los endpoints de estadísticas de cumplimiento y tendencia de adherencia.
+
+<td align="center"><img src="assets//images//chapter5/testing/clinical-records.png" alt="clinical-records" ></td>
+
+<br>
+
+<td align="center"><img src="assets//images//chapter5/testing/get-patient.png" alt="get-patient" ></td>
+
+<br>
+
+<td align="center"><img src="assets//images//chapter5/testing/period-time.png" alt="get-patient during period of time" ></td>
+
+<br>
+
+<td align="center"><img src="assets//images//chapter5/testing/alerts.png" alt="post alerts" ></td>
+
+<br>
+
++ **Reminder-Service:**
+
+Pruebas funcionales ejecutadas sobre la documentación OpenAPI (Swagger UI) del microservicio de recordatorios, validando la seguridad por JWT, la generación de recordatorios a partir del evento `RecetaCargada` mediante el patrón Factory Method, la consulta y actualización de preferencias de notificación (US22) y la cancelación de recordatorios.
+
+<td align="center"><img src="assets//images//chapter5/testing/reminder-swagger-overview.png" alt="reminder service swagger overview" ></td>
+
+<br>
+
+<td align="center"><img src="assets//images//chapter5/testing/reminder-get-patient.png" alt="reminder service get reminders by patient" ></td>
+
+<br>
+
+<td align="center"><img src="assets//images//chapter5/testing/reminder-preferences.png" alt="reminder service update notification preferences" ></td>
+
+<br>
+
 #### 5.3.3.4. Execution Evidence for Sprint Review
 
-Como evidencia de ejecución del Sprint 3 se muestran las interfaces Swagger UI de microservicios en funcionamiento, así como el exchange de RabbitMQ que centraliza la comunicación basada en eventos entre los servicios.
+Como evidencia de la ejecución del Sprint 3, se presentan las interfaces de **Swagger UI** correspondientes a los microservicios en funcionamiento, las cuales permiten visualizar y validar sus endpoints expuestos. Asimismo, se muestra la configuración y operatividad del **exchange de RabbitMQ**, encargado de centralizar y gestionar la comunicación basada en eventos entre los distintos servicios del sistema, garantizando la interoperabilidad y sincronización de procesos.
+
+
+**Identity & Profile Service (Swagger UI):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-identity-service.png" alt="identity-service-swagger" ></td>
+
 
 **Reminder Service (Swagger UI):**
 
@@ -3432,6 +3499,25 @@ Como evidencia de ejecución del Sprint 3 se muestran las interfaces Swagger UI 
 <td align="center"><img src="assets/images/chapter5/sprint3/swagger-medical-analysis-service.jpeg" alt="medical-analysis-service-swagger" ></td>
 
 <br>
+
+**Medical Appoinment Service (Swagger UI):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-medical-appointment-service.jpeg" alt="medical-appointment-service-swagger" ></td>
+
+<br>
+
+**Followup Service (Swagger UI):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-followup-service.jpeg" alt="followup-service-swagger" ></td>
+
+<br>
+
+**Tre Service (Swagger UI):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-treatment-service.jpeg" alt="treatment-service-swagger" ></td>
+
+<br>
+
 
 **Integración por eventos — RabbitMQ (exchange meditrack.events):**
 
