@@ -3512,7 +3512,7 @@ Como evidencia de la ejecución del Sprint 3, se presentan las interfaces de **S
 
 <br>
 
-**Tre Service (Swagger UI):**
+**Treatment Service (Swagger UI):**
 
 <td align="center"><img src="assets/images/chapter5/sprint3/swagger-treatment-service.jpeg" alt="treatment-service-swagger" ></td>
 
@@ -3619,34 +3619,45 @@ Durante este Sprint se avanzó significativamente en la consolidación del siste
 
 **Evidencias:**
 
++ Identity & Profile Service:
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-identity-service.png" alt="identity-service-swagger" ></td>
+
 + Treatment Service:
 
-
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-treatment-service.jpeg" alt="treatment-service-swagger" ></td>
 
 <br>
 
 + Follow-up Service:
 
-
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-followup-service.jpeg" alt="followup-service-swagger" ></td>
 
 <br>
 
 + Medical Appointment Service:
 
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-medical-appointment-service.jpeg" alt="medical-appointment-service-swagger" ></td>
+
+
+<br>
+
++ Medical Analysis Service:
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-medical-analysis-service.jpeg" alt="medical-analysis-service-swagger" ></td>
 
 
 <br>
 
 + Reminder Service:
 
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-reminder-service.jpeg" alt="reminder-service-swagger" ></td>
 
 <br>
 
-+ Meditrack Mobile:
++ RabbitMQ :
 
-
-
-<br>
+<td align="center"><img src="assets/images/chapter5/sprint3/rabbitmq-meditrack-events.jpeg" alt="rabbitmq-meditrack-events" ></td>
 
 
 #### 5.3.3.7. Team Collaboration Insights during Sprint
@@ -3659,7 +3670,20 @@ Durante este Sprint se avanzó significativamente en la consolidación del siste
 | **Victor Rojas** | Implementación del **API Gateway**, centralizando la comunicación entre los microservicios y verificando su correcta integración con los distintos backends del sistema. |
 | **Piero Sulca** | Desarrollo e implementación del **API Gateway**, realizando pruebas de conexión y validación de la comunicación con los backends para garantizar la interoperabilidad del sistema. |
 
+<td align="center"><img src="assets/images/chapter5/Commits-Av3.png" alt="commits" ></td>
+
+<td align="center"><img src="assets/images/chapter5/NETWORK-AV3.png" alt="network" ></td>
+
+Durante el desarrollo del Sprint 3 se evidencia una participación activa y distribuida de los integrantes del equipo a través del historial de commits registrados en el repositorio. Las métricas muestran un aporte constante en la implementación, corrección y mejora de funcionalidades, destacando tanto en cantidad de commits como en líneas de código añadidas y modificadas. Asimismo, el gráfico de red (network graph) refleja la estrategia de trabajo colaborativo basada en ramas, donde cada miembro desarrolló sus tareas de manera independiente antes de integrarlas a la rama principal. Esto demuestra una correcta gestión del control de versiones, una integración progresiva de cambios y una coordinación efectiva en el flujo de trabajo del proyecto.
+
 #### 5.3.3.8. Kanban Board
+
+<hr class="page-break">
+
+ <td align="center"><img src="assets//images/kanban-board.png" alt="kanban-board" ></td>
+
+<hr/>
+
 
 
 # Referencias Bibliográficas
