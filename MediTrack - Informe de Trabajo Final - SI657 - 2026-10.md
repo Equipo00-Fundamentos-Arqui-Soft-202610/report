@@ -1341,7 +1341,7 @@ El Diagrama de Contenedores descompone el sistema MediTrack en sus unidades desp
 | Aplicación Móvil | Mobile App | Flutter (Android) | HTTP/REST hacia API Gateway; SQLite local para modo offline |
 | Aplicación Web | Web App | React | HTTP/REST hacia API Gateway |
 | API Gateway | Reverse Proxy / Auth | .NET 8 + YARP | Valida JWT, enruta hacia microservicios internos mediante HTTP/REST |
-| Identity & Profile Service | Microservice | .NET 8 | HTTP/REST; publica eventos a RabbitMQ |
+| Identity & Profile Service | Microservice | .NET 8 | HTTP/REST; emite JWT y publica el evento `PacienteRegistrado` a RabbitMQ |
 | Treatment Service | Microservice | .NET 8 | HTTP/REST; publica eventos `RecetaCargada` y `StockBajo` a RabbitMQ |
 | Medical Appointment Service | Microservice | .NET 8 | HTTP/REST; publica evento `CitaAgendada` a RabbitMQ |
 | Follow-up Service | Microservice | .NET 8 | HTTP/REST; publica evento `CumplimientoRegistrado` a RabbitMQ |
@@ -1349,7 +1349,7 @@ El Diagrama de Contenedores descompone el sistema MediTrack en sus unidades desp
 | Medical Analysis Service | Microservice | .NET 8 | Consume eventos de RabbitMQ; HTTP/REST para dashboards |
 | MySQL (x6) | Base de datos relacional | Azure Database for MySQL Flexible Server | Acceso exclusivo por su microservicio (Database per Service) |
 | RabbitMQ | Message Broker | Azure Container Apps | AMQP; comunicación asíncrona entre microservicios |
-| Azure Blob Storage | Almacenamiento de objetos | Azure Storage SDK | Accedido por Follow-up Service e Identity Service |
+| Azure Blob Storage | Almacenamiento de objetos | Azure Storage SDK | Accedido por Follow-up Service |
 
 Los clientes se comunican exclusivamente con el API Gateway mediante HTTPS. El Gateway valida el JWT y redirige la petición al microservicio correspondiente. Los microservicios no se comunican entre sí de forma sincrónica: toda interacción entre servicios internos ocurre de forma asíncrona a través de RabbitMQ, garantizando el desacoplamiento definido en los principios arquitectónicos (sección 4.1.1).
 
@@ -2570,7 +2570,7 @@ La siguiente tabla enumera los productos digitales del sistema y la configuraci�
 | Reminder Service | .NET 8 | Azure App Service Linux sobre `plan-meditrack-reminder-prod` (SKU B1). Plan dedicado por su necesidad de escalado independiente. |
 | Identity DB, Treatment DB, Appointment DB, Follow-up DB, Analysis DB, Reminder DB | MySQL 8 | Una instancia de Azure Database for MySQL Flexible Server (Burstable B1ms) por microservicio, alineada con el patrón Database per Service. |
 | Message Bus | RabbitMQ 3 | Azure Container Apps con imagen oficial `rabbitmq:3-management`, configurada para escalar a cero cuando no recibe tráfico. |
-| Almacenamiento de evidencias | Azure Blob Storage | Storage Account con contenedor privado, consumido por Follow-up Service e Identity & Profile Service. |
+| Almacenamiento de evidencias | Azure Blob Storage | Storage Account con contenedor privado, consumido por Follow-up Service. |
 | Gestor de secretos | Azure Key Vault | Recurso compartido por todos los Web Services mediante Managed Identity. |
 | Observabilidad | Application Insights | Instancia centralizada que recibe métricas y trazas distribuidas de los siete Web Services. |
 | Aplicación móvil del Paciente | Flutter (Android) | APK firmado distribuido al dispositivo del paciente. |
