@@ -3419,6 +3419,24 @@ Durante este Sprint, el equipo se enfocó en la corrección y optimización de l
 
 #### 5.3.3.4. Execution Evidence for Sprint Review
 
+Como evidencia de ejecución del Sprint 3 se muestran las interfaces Swagger UI de microservicios en funcionamiento, así como el exchange de RabbitMQ que centraliza la comunicación basada en eventos entre los servicios.
+
+**Reminder Service (Swagger UI):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-reminder-service.jpeg" alt="reminder-service-swagger" ></td>
+
+<br>
+
+**Medical Analysis Service (Swagger UI):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-medical-analysis-service.jpeg" alt="medical-analysis-service-swagger" ></td>
+
+<br>
+
+**Integración por eventos — RabbitMQ (exchange meditrack.events):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/rabbitmq-meditrack-events.jpeg" alt="rabbitmq-meditrack-events" ></td>
+
 #### 5.3.3.5. Microservices Documentation Evidence for Sprint Review
 
 Durante este Sprint se incorporaron nuevos endpoints y controladores en los microservicios existentes, además de la implementación del API Gateway como punto central de entrada. A continuación se documentan los nuevos recursos REST expuestos durante el Sprint 3, detallando sus verbos, rutas, parámetros y ejemplos de respuesta.
@@ -3428,6 +3446,7 @@ Durante este Sprint se incorporaron nuevos endpoints y controladores en los micr
 
 **Imagen de prueba:**
 
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-treatment-service.jpeg" alt="treatment-service-swagger" ></td>
 
 | Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
 | --- | --- | --- | --- | --- |
@@ -3442,6 +3461,7 @@ Durante este Sprint se incorporaron nuevos endpoints y controladores en los micr
 
 **Imagen de prueba:**
 
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-followup-service.jpeg" alt="followup-service-swagger" ></td>
 
 | Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
 | --- | --- | --- | --- | --- |
@@ -3460,6 +3480,7 @@ Durante este Sprint se incorporaron nuevos endpoints y controladores en los micr
 
 **Imagen de prueba:**
 
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-medical-appointment-service.jpeg" alt="medical-appointment-service-swagger" ></td>
 
 | Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
 | --- | --- | --- | --- | --- |
@@ -3582,9 +3603,9 @@ Medical Analysis Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202
 
 Medical Reminder Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Meditrack-Reminder-Service
 
-FollowUp Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Meditrack-FollowUp-Service
+FollowUp Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/FollowUp-Service
 
-Medical Appointment Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Meditrack-Medical-Appointment-Service
+Medical Appointment Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Medical-Appointment-Service
 
 Treatment Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Treatment-service
 
