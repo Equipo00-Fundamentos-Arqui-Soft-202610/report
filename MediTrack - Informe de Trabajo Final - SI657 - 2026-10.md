@@ -1340,7 +1340,7 @@ El Diagrama de Contenedores descompone el sistema MediTrack en sus unidades desp
 |---|---|---|---|
 | Aplicación Móvil | Mobile App | Flutter (Android) | HTTP/REST hacia API Gateway; SQLite local para modo offline |
 | Aplicación Web | Web App | React | HTTP/REST hacia API Gateway |
-| API Gateway | Reverse Proxy / Auth | .NET 8 + YARP | Valida JWT, enruta hacia microservicios internos mediante HTTP/REST |
+| API Gateway | Reverse Proxy / Auth | .NET 8 + Ocelot | Valida JWT, enruta hacia microservicios internos mediante HTTP/REST |
 | Identity & Profile Service | Microservice | .NET 8 | HTTP/REST; emite JWT y publica el evento `PacienteRegistrado` a RabbitMQ |
 | Treatment Service | Microservice | .NET 8 | HTTP/REST; publica eventos `RecetaCargada` y `StockBajo` a RabbitMQ |
 | Medical Appointment Service | Microservice | .NET 8 | HTTP/REST; publica evento `CitaAgendada` a RabbitMQ |
@@ -2561,7 +2561,7 @@ La siguiente tabla enumera los productos digitales del sistema y la configuraci�
 
 | Producto digital | Tecnología | Configuración de despliegue |
 | ---------------- | ---------- | --------------------------- |
-| API Gateway | .NET 8 + YARP | Azure App Service Linux sobre `plan-meditrack-gateway-prod` (SKU B1). Plan dedicado por su rol como punto único de entrada. |
+| API Gateway | .NET 8 + Ocelot | Azure App Service Linux sobre `plan-meditrack-gateway-prod` (SKU B1). Plan dedicado por su rol como punto único de entrada. |
 | Identity & Profile Service | .NET 8 | Azure App Service Linux sobre `plan-meditrack-care-prod` (SKU B1). |
 | Treatment Service | .NET 8 | Azure App Service Linux sobre `plan-meditrack-care-prod` (SKU B1). |
 | Medical Appointment Service | .NET 8 | Azure App Service Linux sobre `plan-meditrack-care-prod` (SKU B1). |
