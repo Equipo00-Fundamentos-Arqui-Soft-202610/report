@@ -3488,6 +3488,21 @@ Durante este Sprint se incorporaron nuevos endpoints y controladores en los micr
 
 <br>
 
+#### Identity & Profile Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/meditrack-identity-service
+
+**Imagen de prueba:**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-identity-service.png" alt="identity-service-swagger" ></td>
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| IdentityService | POST | ``/api/v1/authentication/sign-up`` | Body: ``{ "email":"paciente@meditrack.pe","password":"Secret123!","fullName":"Juan Perez","role":"Patient" }`` | ``{ "id":1,"email":"paciente@meditrack.pe","fullName":"Juan Perez","role":"Patient","token":"eyJhbGciOiJIUzI1Ni..." }`` |
+| IdentityService | POST | ``/api/v1/authentication/sign-in`` | Body: ``{ "email":"paciente@meditrack.pe","password":"Secret123!" }`` | ``{ "id":1,"email":"paciente@meditrack.pe","fullName":"Juan Perez","role":"Patient","token":"eyJhbGciOiJIUzI1Ni..." }`` |
+| IdentityService | GET | ``/api/v1/users/{id}`` | Path: ``id`` (int); Header: ``Authorization: Bearer <token>`` | ``{ "id":1,"email":"paciente@meditrack.pe","fullName":"Juan Perez","role":"Patient","createdAt":"2026-06-26T02:10:39" }`` |
+
+<br>
+
 #### MediTrack API Gateway
 **Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/MediTrack-Api-Gateway
 
@@ -3610,3 +3625,5 @@ Medical Appointment Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-
 Treatment Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Treatment-service
 
 Api Gateway: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Meditrack-Api-Gateway
+
+Identity & Profile Service: https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/meditrack-identity-service
