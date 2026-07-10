@@ -1,25 +1,30 @@
-<h2 style="text-align: center;"> Universidad Peruana de Ciencias Aplicadas </h2>
 
-<h4 style="text-align: center"> Ingeniería de Software </h4>
-
-<h4 style="text-align: center"> Periodo: 202610 </h4>
 <br>
  <p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="upc-logo" width="80px" height="80px"/>
 </p>
 
-<h4 style="text-align: center"> Fundamentos de Arquitectura de Software </h4>
 
-<h4 style="text-align: center"> Sección: 7944 </h4>
+<h2 style="text-align: center;"> Universidad Peruana de Ciencias Aplicadas </h2>
 
-<h4 style="text-align: center"> Docente: Abel Nehemias Rosales Caururu </h4>
-
-<h3 style="text-align: center;"> Informe de Trabajo Final </h3>
+<h4 style="text-align: center"> Ingeniería de Software </h4>
 
 
-<h4 style="text-align: center"> Startup: Pafi Solutions </h4>
 
-<h4 style="text-align: center"> Producto: MediTrack </h4>
+<h4 style="text-align: center"> 1ASI0657 Fundamentos de Arquitectura de Software </h4>
+
+<h4 style="text-align: center"> Periodo: 202610 </h4>
+
+
+<h4 style="text-align: center"> NRC: 7944 </h4>
+
+<h4 style="text-align: center"> Profesor: Abel Nehemias Rosales Caururu </h4>
+
+<h3 style="text-align: center;"> Trabajo Final </h3>
+
+
+
+<h4 style="text-align: center"> Nombre del Producto: MediTrack </h4>
 
 
 <h4 style="text-align: center">Integrantes:</h4>
@@ -27,35 +32,35 @@
 <div style="text-align:center; margin-top: 10px; font-size: 90%; line-height: 1.6;">
    <table style="margin-left: auto; margin-right: auto;">
       <tr>
+         <th>Alumno</th>
          <th>Código</th>
-         <th>Apellidos y Nombres</th>
       </tr>
       <tr>
-         <td>U202312966</td>
          <td>Gonzales Alvarado, Javier Sebastian</td>
+         <td>U202312966</td>
       </tr>
       <tr>
-         <td>U202219657</td>
          <td>Quijada Magro, Jeremy Alexander</td>
+         <td>U202219657</td>
       </tr>
       <tr>
-         <td>U20231D974</td>
          <td>Rivera Ratachi, Renzo Sebastian</td>
+         <td>U20231D974</td>
       </tr>
       <tr>
-         <td>U202123655</td>
          <td>Rojas Reategui, Victor Manuel</td>
+         <td>U202123655</td>
       </tr>
       <tr>
-         <td>U202423711</td>
          <td>Sulca Sanchez, Piero Angel</td>
+         <td>U202423711</td>
       </tr>
    </table>
 </div>
 
 <br>
 
-<h5 style="text-align: center; font-style: italic;"> Junio de 2026 </h5>
+<h5 style="text-align: center; font-style: italic;"> Julio de 2026 </h5>
 
 <hr class="page-break">
 
@@ -102,6 +107,12 @@
 | 5.8     | 19/06/2026 | Quijada Magro, Jeremy Alexander            | Capítulo V: Software Deployment Evidence for Sprint Review y consolidación de evidencias del Sprint 3 (5.3.3.6)                                  |
 | 5.9    | 21/06/2026 | Sulca Sanchez, Piero Angel                 | Capítulo V: Development Evidence for Sprint Review (5.3.3.2)                                                                                     |
 | 5.10     | 24/06/2026 | Todo el equipo                             | Revisión general, corrección de formato APA y validación del informe TB4                                                                         |
+| 5.11     | 01/07/2026 | Rivera Ratachi, Renzo Sebastian            | Capítulo V: Sprint Backlog 4, Team Collaboration Insights during Sprint y Kanban Board (5.3.4.1, 5.3.4.7, 5.3.4.8)                             |
+| 5.12     | 04/07/2026 | Rojas Reategui, Victor Manuel              | Capítulo V: Testing Suite Evidence for Sprint Review y Execution Evidence for Sprint Review (5.3.4.3, 5.3.4.4)                                   |
+| 5.13     | 06/07/2026 | Gonzales Alvarado, Javier Sebastian        | Capítulo V: Microservices Documentation Evidence for Sprint Review (5.3.4.5)                                                                      |
+| 5.14     | 08/07/2026 | Quijada Magro, Jeremy Alexander            | Capítulo V: Software Deployment Evidence for Sprint Review y consolidación de evidencias del Sprint 4 (5.3.4.6)                                  |
+| 5.15     | 10/07/2026 | Sulca Sanchez, Piero Angel                 | Capítulo V: Development Evidence for Sprint Review (5.3.4.2)                                                                                     |
+| 5.16     | 10/07/2026 | Todo el equipo                             | Revisión general, corrección de formato APA y validación del informe final                                                                        |
 
 > **Nota de versionado:** El número mayor del campo Versión indica el hito académico (1.x = TB1, 2.x = TB2, 3.x = TP1, 4.x = TB3, 5.x = TB4). El número menor indica el orden de contribución dentro del hito.
 
@@ -223,6 +234,15 @@ Al cierre de TB4 (Sprint 3), el equipo cuenta con cinco microservicios funcional
       - [5.3.3.6. Software Deployment Evidence for Sprint Review](#5336-software-deployment-evidence-for-sprint-review)
       - [5.3.3.7. Team Collaboration Insights during Sprint](#5337-team-collaboration-insights-during-sprint)
       - [5.3.3.8. Kanban Board](#5338-kanban-board)
+    - [5.3.4. Sprint 4](#534-sprint-4)
+        - [5.3.4.1. Sprint Backlog 4](#5341-sprint-backlog-4)
+        - [5.3.4.2. Development Evidence for Sprint Review](#5342-development-evidence-for-sprint-review)
+        - [5.3.4.3. Testing Suite Evidence for Sprint Review](#5343-testing-suite-evidence-for-sprint-review)
+        - [5.3.4.4. Execution Evidence for Sprint Review](#5344-execution-evidence-for-sprint-review)
+        - [5.3.4.5. Microservices Documentation Evidence for Sprint Review](#5345-microservices-documentation-evidence-for-sprint-review)
+        - [5.3.4.6. Software Deployment Evidence for Sprint Review](#5346-software-deployment-evidence-for-sprint-review)
+        - [5.3.4.7. Team Collaboration Insights during Sprint](#5347-team-collaboration-insights-during-sprint)
+        - [5.3.4.8. Kanban Board](#5348-kanban-board)
 
 - [Conclusiones](#conclusiones)
 - [Referencias Bibliográficas](#referencias-bibliográficas)
@@ -3689,6 +3709,55 @@ Durante el desarrollo del Sprint 3 se evidencia una participación activa y dist
  <td align="center"><img src="assets//images/kanban-board.png" alt="kanban-board" ></td>
 
 <hr/>
+
+### 5.3.4. Sprint 4
+
+#### 5.3.4.1. Sprint Backlog 4
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th colspan="8">Sprint 4</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="2">WorkItem / Task</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status (To-do / In-Process / To-Review / Done)</th>
+    </tr>
+    <tr>
+      <th>Id</th><th>Title</th>
+      <th>Id</th><th>Title</th>
+      <th></th><th></th><th></th><th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>US20</td><td>Recuperar contraseña</td><td>TK01</td><td>Implementar endpoint de recuperación de contraseña</td><td>Implementar endpoints POST /api/v1/auth/forgot-password y POST /api/v1/auth/reset-password con generación de token temporal, expiración y envío de correo vía Azure Communication Services</td><td>4</td><td>Victor Rojas</td><td>To-do</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Maquetar pantalla de recuperación de contraseña</td><td>Diseñar e implementar el flujo de recuperación de contraseña en la aplicación web (React) y móvil (Flutter), incluyendo formulario de solicitud de correo, pantalla de confirmación y formulario de nueva contraseña con validaciones</td><td>3</td><td>Jeremy Quijada</td><td>To-do</td></tr>
+    <tr><td>US21</td><td>Cerrar sesión</td><td>TK01</td><td>Implementar endpoint de cierre de sesión</td><td>Implementar endpoint POST /api/v1/auth/logout con invalidación de token JWT mediante blacklist en caché y limpieza de sesión en el backend</td><td>2</td><td>Piero Sulca</td><td>To-do</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Agregar opción de cierre de sesión en la navegación</td><td>Agregar botón de cierre de sesión en el sidebar/navbar de la aplicación web (React) y móvil (Flutter) con diálogo de confirmación, limpieza de almacenamiento local y redirección al login</td><td>2</td><td>Javier Gonzales</td><td>To-do</td></tr>
+    <tr><td>US23</td><td>Funcionar en modo offline</td><td>TK01</td><td>Implementar almacenamiento local con SQLite</td><td>Implementar repositorio offline con SQLite para cachear medicamentos, horarios y datos de perfil; persistir la última data sincronizada y permitir visualización sin conexión</td><td>5</td><td>Renzo Rivera</td><td>To-do</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Implementar cola de sincronización offline</td><td>Implementar cola de registros de cumplimiento offline con sincronización automática al recuperar conexión, incluyendo reconciliación de conflictos y confirmación visual de estado de sync</td><td>5</td><td>Renzo Rivera</td><td>To-do</td></tr>
+    <tr><td>US28</td><td>Cambiar contraseña</td><td>TK01</td><td>Implementar endpoint de cambio de contraseña</td><td>Implementar endpoint PUT /api/v1/auth/change-password con validación de contraseña actual, reglas de complejidad y actualización segura del hash en base de datos</td><td>3</td><td>Victor Rojas</td><td>To-do</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Maquetar pantalla de cambio de contraseña</td><td>Diseñar e implementar la pantalla de cambio de contraseña en web (React) y móvil (Flutter) con campos de contraseña actual, nueva contraseña y confirmación, validaciones en cliente y mensajes de retroalimentación</td><td>2</td><td>Javier Gonzales</td><td>To-do</td></tr>
+  </tbody>
+</table>
+
+#### 5.3.4.2. Development Evidence for Sprint Review
+
+#### 5.3.4.3. Testing Suite Evidence for Sprint Review
+
+#### 5.3.4.4. Execution Evidence for Sprint Review
+
+#### 5.3.4.5. Microservices Documentation Evidence for Sprint Review
+
+#### 5.3.4.6. Software Deployment Evidence for Sprint Review
+
+#### 5.3.4.7. Team Collaboration Insights during Sprint
+
+#### 5.3.4.8. Kanban Board
 
 
 
