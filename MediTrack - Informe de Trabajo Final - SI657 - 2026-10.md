@@ -125,7 +125,7 @@ MediTrack es una plataforma digital de salud desarrollada por Pafi Solutions que
 
 El problema central abordado es que entre el 44% y el 76% de pacientes crónicos en el Perú no siguen correctamente sus tratamientos farmacológicos, principalmente por olvido y falta de herramientas accesibles. MediTrack resuelve esto mediante recordatorios automáticos generados a partir de recetas cargadas digitalmente por el personal médico, registro de cumplimiento con soporte offline y dashboards de adherencia para seguimiento clínico.
 
-Al cierre de TB4 (Sprint 3), el equipo cuenta con cinco microservicios funcionales con endpoints documentados en Swagger UI, una aplicación móvil Flutter con pantallas de inicio y listado de medicamentos, una aplicacion web React con pantallas de inicio y busqueda de pacientes. La arquitectura implementada aplica los patrones DDD, Clean Architecture, Factory Method, Strategy y Observer, alineados con los atributos de calidad definidos en el proceso ADD del Capítulo IV.
+Al cierre de TB4 (Sprint 3), el equipo cuenta con cinco microservicios funcionales con endpoints documentados en Swagger UI, una aplicación móvil Flutter con pantallas de inicio y listado de medicamentos, una aplicacion web React con pantallas de inicio y busqueda de pacientes. La arquitectura implementada aplica los patrones DDD, Clean Architecture, Factory Method, Strategy y Publish-Subscribe, alineados con los atributos de calidad definidos en el proceso ADD del Capítulo IV.
 
 <hr class="page-break">
 
@@ -1406,7 +1406,7 @@ _Figura 15. Diagrama de componentes de Identity & Profiles Service. Elaboración
 
 #### Treatment Service
 
-El Treatment Service gestiona la carga de recetas médicas y el catálogo de medicamentos. El `PrescriptionController` recibe las recetas del personal técnico y las delega al `PrescriptionCommandService`, que ejecuta el pipeline de validación mediante el patrón Decorator: verifica la existencia del paciente, valida el medicamento contra el catálogo oficial y comprueba que los horarios estén completos antes de persistir. Al confirmar la persistencia, publica el evento `RecetaCargada` hacia RabbitMQ. El `MedicationCommandService` gestiona ediciones y cancelaciones autorizadas, y publica `StockBajo` cuando el conteo de pastillas alcanza el umbral configurado.
+El Treatment Service gestiona la carga de recetas médicas y el catálogo de medicamentos. El `PrescriptionController` recibe las recetas del personal técnico y las delega al `PrescriptionCommandService`, que ejecuta el pipeline de validación mediante el patrón Chain of Responsibility: cada validador (existencia del paciente, catálogo de medicamentos, horarios completos) decide si la receta pasa al siguiente o se rechaza. Al confirmar la persistencia, publica el evento `RecetaCargada` hacia RabbitMQ. El `MedicationCommandService` gestiona ediciones y cancelaciones autorizadas, y publica `StockBajo` cuando el conteo de pastillas alcanza el umbral configurado.
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/treatmentservicecomponent.png" alt="analytics"></td>
 
@@ -1587,34 +1587,38 @@ implementaciones intercambiables: `MedicationAdherenceStrategy` y
 - Mejora la mantenibilidad al separar cada lógica de cálculo en una clase
   dedicada y fácilmente testeable.
 
-#### Decorator
+#### Chain of Responsibility
 
 El presente patrón se emplea en el Treatment Service durante la carga de recetas
-médicas. La receta pasa por capas de validación encadenadas:
+médicas. La receta pasa por una cadena de validadores independientes:
 verificación de existencia del paciente, validación del medicamento contra el
-catálogo oficial y verificación de horarios completos:
+catálogo oficial y verificación de horarios completos. Cada validador puede
+rechazar la receta o pasarla al siguiente eslabón de la cadena:
 
-- Permite agregar o quitar validaciones de forma independiente sin modificar las
-  capas existentes, respetando el principio Open/Closed.
+- Permite agregar o quitar validaciones de forma independiente sin modificar los
+  validadores existentes, respetando el principio Open/Closed.
 - Mejora la legibilidad del flujo de validación al separar cada responsabilidad
-  en su propio decorador.
+  en su propio validador.
 - Reduce el riesgo de errores en recetas cargadas al sistema, garantizando que
   toda prescripción pase por las verificaciones necesarias antes de persistirse.
 
-#### Observer
+#### Publish-Subscribe (Mensajería por Eventos)
 
-En MediTrack se aplica para la comunicación asíncrona entre microservicios. Cuando
-el Follow-up Service registra el cumplimiento de un medicamento, publica el evento
-`CumplimientoRegistrado`; el Reminder Service lo escucha y cancela el recordatorio
-pendiente. De forma similar, el evento `StockBajo` es publicado por el Treatment
-Service cuando el conteo de pastillas alcanza el umbral definido:
+En MediTrack se aplica para la comunicación asíncrona entre microservicios a
+través de un broker de mensajes (RabbitMQ). Cuando el Follow-up Service registra
+el cumplimiento de un medicamento, publica el evento `CumplimientoRegistrado` en
+el exchange `meditrack.events`; el Reminder Service lo consume desde su cola
+dedicada y cancela el recordatorio pendiente. De forma similar, el evento
+`StockBajo` es publicado por el Treatment Service cuando el conteo de pastillas
+alcanza el umbral definido:
 
 - Facilita la comunicación desacoplada entre microservicios, ya que el emisor no
-  necesita conocer a los receptores del evento.
-- Permite añadir nuevos suscriptores en el futuro (por ejemplo, un servicio de
-  alertas al médico) sin modificar el código del servicio emisor.
+  necesita conocer a los consumidores del evento.
+- Permite añadir nuevos consumidores en el futuro (por ejemplo, un servicio de
+  alertas al médico) sin modificar el código del servicio publicador.
 - Garantiza que la información crítica, como el stock bajo o el cumplimiento
-  registrado, llegue a los servicios correctos en el momento oportuno.
+  registrado, llegue a los servicios correctos en el momento oportuno a través
+  de colas duraderas con entrega confirmada.
 
 ### 4.1.8. Tactics
 
@@ -1789,7 +1793,7 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 | Elemento seleccionado | Justificación                                                                                                                                               |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Treatment Service** | Es el receptor del flujo de mayor prioridad (US13). Se refina el pipeline de validación de recetas mediante el patrón Decorator antes de la persistencia.   |
+| **Treatment Service** | Es el receptor del flujo de mayor prioridad (US13). Se refina el pipeline de validación de recetas mediante el patrón Chain of Responsibility antes de la persistencia.   |
 | **Reminder Service**  | Es el componente de mayor criticidad clínica. Se refina a nivel de componentes internos para garantizar la entrega de recordatorios vía FCM con reintentos. |
 | **Follow-up Service** | Es el responsable de registrar el cumplimiento del paciente y cerrar el ciclo del tratamiento.                                                              |
 
@@ -1797,9 +1801,9 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 | Concepto de Diseño                                                   | Relación con Drivers                                                                                                                                                                                                          |
 | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Pipeline de validación con patrón Decorator** en Treatment Service | AC-08, US13. Encadena validaciones (existencia del paciente, nombre del medicamento en catálogo, horarios completos) antes de persistir la receta, evitando que datos inválidos se propaguen a Reminder vía eventos.          |
+| **Pipeline de validación con patrón Chain of Responsibility** en Treatment Service | AC-08, US13. Encadena validaciones (existencia del paciente, nombre del medicamento en catálogo, horarios completos) antes de persistir la receta, evitando que datos inválidos se propaguen a Reminder vía eventos.          |
 | **Comunicación asíncrona por eventos**                               | AC-02, AC-04, AC-08, US06. El Follow-up Service publica `CumplimientoRegistrado`; el Reminder Service lo consume y cancela el recordatorio pendiente. Alternativa descartada: REST síncrono, por riesgo de fallos en cascada. |
-| **Patrón Observer entre servicios**                                  | US06. El registro de cumplimiento genera eventos que pueden ser consumidos por otros servicios sin acoplamiento directo.                                                                                                      |
+| **Publish-Subscribe entre servicios**                                | US06. El registro de cumplimiento genera eventos que pueden ser consumidos por otros servicios sin acoplamiento directo.                                                                                                      |
 
 #### 4.3.1.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 
@@ -2651,7 +2655,7 @@ El siguiente diagrama representa el modelo de despliegue de MediTrack siguiendo 
 
 ### 5.3.1. Sprint 1
 
-Durante el Sprint backlog, el equipo tuvo la tarea de completar la landing page y user stories principales . La herramienta para la organización y gestion a los mienbros fue Trello. Esta herramienta nos sirvio para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
+Durante el Sprint backlog, el equipo tuvo la tarea de completar la landing page y user stories principales . La herramienta para la organización y gestión a los miembros fue Trello. Esta herramienta nos sirvió para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
 
 #### 5.3.1.1. Sprint Backlog 1
 
@@ -2703,7 +2707,7 @@ Durante el Sprint backlog, el equipo tuvo la tarea de completar la landing page 
 
 #### 5.3.1.2. Development Evidence for Sprint Review
 
-Durante este Sprint, se lograron avances significativos en la implementación de la landing page Medritrack, destacando la creación del frontend usando HTML, un diseño responsivo y estilizado con CSS, y la incorporación de funcionalidades dinámicas mediante JavaScript. Realizado en el periado de 11 de Abril al 11 de Mayo. Ademas de avance en 2 de los mircroservicios.
+Durante este Sprint, se lograron avances significativos en la implementación de la landing page MediTrack, destacando la creación del frontend usando HTML, un diseño responsivo y estilizado con CSS, y la incorporación de funcionalidades dinámicas mediante JavaScript. Realizado en el período de 11 de Abril al 11 de Mayo. Además de avance en 2 de los microservicios.
 
 **Commits Report (Equipo00-Fundamentos-Arqui-Soft-202610):**
 
@@ -2854,7 +2858,7 @@ Durante este Sprint no se realizó un deployment formal de los Web Services en u
 
 ### 5.3.2. Sprint 2
 
-Durante el Sprint backlog, el equipo tuvo la tarea de completar los microservicios y tener un buen avance del Front-End . La herramienta para la organización y gestion a los mienbros fue Trello. Esta herramienta nos sirvio para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
+Durante el Sprint backlog, el equipo tuvo la tarea de completar los microservicios y tener un buen avance del Front-End . La herramienta para la organización y gestión a los miembros fue Trello. Esta herramienta nos sirvió para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
 
 
 #### 5.3.2.1. Sprint Backlog 2
@@ -3229,7 +3233,7 @@ Durante este Sprint se consolidó la realizacion de 5 Microservices mediante Ope
 
 #### 5.3.2.6. Software Deployment Evidence for Sprint Review
 
-Durante este Sprint no se realizó un deployment formal de los Web Services en un entorno productivo ni staging. Sin embargo, se avanzó con una primera version de la aplicacion front-end, el cual permite visualizar y validar la lógica de los servicios desarrollados. Ademas, se termino con el desarrollo de los microservisios.
+Durante este Sprint no se realizó un deployment formal de los Web Services en un entorno productivo ni staging. Sin embargo, se avanzó con una primera version de la aplicacion front-end, el cual permite visualizar y validar la lógica de los servicios desarrollados. Además, se termino con el desarrollo de los microservicios.
 
 **Actividades realizadas**:
 
