@@ -1347,7 +1347,7 @@ El Diagrama de Contexto del Sistema permite visualizar el ecosistema en el que o
 - **Azure Communication Services (Email):** el Identity & Profile Service consume este servicio para el envío de correos transaccionales de recuperación de cuenta. La comunicación es sincrónica mediante API REST de Azure.
 - **RabbitMQ (Message Bus):** actúa como broker de mensajería para la comunicación asíncrona entre microservicios internos. No es un sistema externo al dominio, sino parte de la infraestructura de integración del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/SystemContext.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1380,7 +1380,7 @@ El Diagrama de Contenedores descompone el sistema MediTrack en sus unidades desp
 Los clientes se comunican exclusivamente con el API Gateway mediante HTTPS. El Gateway valida el JWT y redirige la petición al microservicio correspondiente. Los microservicios no se comunican entre sí de forma sincrónica: toda interacción entre servicios internos ocurre de forma asíncrona a través de RabbitMQ, garantizando el desacoplamiento definido en los principios arquitectónicos (sección 4.1.1).
 
 
-<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Container Diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Containers.png" alt="Container Diagram" ></td>
 
 <div align = center>
 
@@ -1396,7 +1396,7 @@ Los diagramas de componentes detallan la estructura interna de cada microservici
 
 El Identity & Profiles Service gestiona el ciclo de vida de las cuentas de usuario y la autenticación. Sus componentes principales son el `AuthController`, que recibe las solicitudes de registro e inicio de sesión; el `TokenService`, que genera y valida los JWT; el `UserCommandService`, que orquesta la creación y actualización de perfiles; y el `UserRepository`, que persiste las entidades en su base de datos MySQL exclusiva. El servicio consume Azure Communication Services para el envío de correos de recuperación de cuenta.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/identityservicecomponent.png" alt=""></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_Identity.png" alt=""></td>
 
 <div align="center">
 
@@ -1408,7 +1408,7 @@ _Figura 15. Diagrama de componentes de Identity & Profiles Service. Elaboración
 
 El Treatment Service gestiona la carga de recetas médicas y el catálogo de medicamentos. El `PrescriptionController` recibe las recetas del personal técnico y las delega al `PrescriptionCommandService`, que ejecuta el pipeline de validación mediante el patrón Chain of Responsibility: cada validador (existencia del paciente, catálogo de medicamentos, horarios completos) decide si la receta pasa al siguiente o se rechaza. Al confirmar la persistencia, publica el evento `RecetaCargada` hacia RabbitMQ. El `MedicationCommandService` gestiona ediciones y cancelaciones autorizadas, y publica `StockBajo` cuando el conteo de pastillas alcanza el umbral configurado.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/treatmentservicecomponent.png" alt="analytics"></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_TreatmentService.png" alt="analytics"></td>
 
 <div align="center">
 
@@ -1416,15 +1416,27 @@ _Figura 16. Diagrama de componentes de Treatment Service. Elaboración propia._
 
 </div>
 
+#### Medical Appointment Service
+
+El Medical Appointment Service gestiona el ciclo de vida de las citas médicas y exámenes clínicos. El `AppointmentsController` expone endpoints para agendar, editar, cancelar y registrar asistencia a citas. El `ClinicalExamsController` gestiona la creación y recolección de exámenes clínicos. El `MedicalAppointmentCommandService` orquesta las operaciones y publica eventos `CitaAgendada`, `AppointmentAttendanceRegistered` y `ExamenCreado` hacia RabbitMQ. Cada cita y examen se persiste en su base de datos MySQL exclusiva.
+
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_AppointmentService.png" alt="appointment service"></td>
+
+<div align="center">
+
+_Figura 17. Diagrama de componentes de Medical Appointment Service. Elaboración propia._
+
+</div>
+
 #### Reminder Service
 
 El Reminder Service es el componente de mayor criticidad clínica. Al consumir el evento `RecetaCargada` desde RabbitMQ, el `ReminderEventConsumer` invoca la `ReminderFactory` correspondiente (Medication, Appointment o Exam) mediante el patrón Factory Method para crear los recordatorios con su mensaje y tiempo de anticipación propios. El `ReminderScheduler` (BackgroundService) barre periódicamente los recordatorios vencidos y los despacha mediante el `FcmNotificationService` con reintentos de backoff exponencial. Al consumir `CumplimientoRegistrado`, el `CancellationHandler` cancela el recordatorio pendiente asociado, evitando notificaciones redundantes.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/reminderservicomponent.png" alt="reminder service"></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_ReminderService.png" alt="reminder service"></td>
 
 <div align="center">
 
-_Figura 17. Diagrama de componentes de Reminder Service. Elaboración propia._
+_Figura 18. Diagrama de componentes de Reminder Service. Elaboración propia._
 
 </div>
 
@@ -1432,11 +1444,11 @@ _Figura 17. Diagrama de componentes de Reminder Service. Elaboración propia._
 
 El Follow-up Service registra el cumplimiento de medicamentos y citas por parte del paciente. El `ComplianceController` recibe los registros de toma con soporte para video de evidencia y marca de tiempo offline. El `MedicationComplianceCommandService` valida el estado (`taken`/`skipped`) mediante el Value Object `ComplianceStatus`, verifica la existencia del `DoseSchedule` en base de datos y persiste el cumplimiento. Al confirmar la escritura, publica el evento `CumplimientoRegistrado` hacia RabbitMQ. El `NextPendingDoseQueryService` calcula la próxima dosis pendiente con ajuste de zona horaria de Lima.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/followupserviceomponent.png"></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_FollowUpService.png"></td>
 
 <div align="center">
 
-_Figura 18. Diagrama de componentes de Follow-up Service. Elaboración propia._
+_Figura 19. Diagrama de componentes de Follow-up Service. Elaboración propia._
 
 </div>
 
@@ -1444,11 +1456,11 @@ _Figura 18. Diagrama de componentes de Follow-up Service. Elaboración propia._
 
 El Medical Analysis Service genera los dashboards de adherencia y estadísticas de cumplimiento para el personal técnico. El `DashboardController` y el `StatisticsController` delegan las consultas al `DashboardQueryService` y al `StatisticsQueryService`, que aplican el patrón Strategy para calcular métricas diferenciadas por categoría: `MedicationAdherenceStrategy` (umbral de alerta al 70%) y `AppointmentAdherenceStrategy` (umbral al 80%). El `HostedEventConsumer` consume eventos de integración desde RabbitMQ (`CumplimientoRegistrado`, `AppointmentAttendanceRegistered`) para actualizar los modelos analíticos. El `AlertCommandService` publica alertas automáticas cuando la adherencia cae por debajo del umbral configurado.
 
-<td align="center"><img src="assets/images/chapter4/diagrams//component/analysisservice.png" alt="medical analysis"></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_AnalysisService.png" alt="medical analysis"></td>
 
 <div align="center">
 
-_Figura 19. Diagrama de componentes de Medical Analysis Service. Elaboración propia._
+_Figura 20. Diagrama de componentes de Medical Analysis Service. Elaboración propia._
 
 
 </div>
@@ -1464,7 +1476,7 @@ Los diagramas de actividad complementan el modelo C4 describiendo el comportamie
 
 <div align="center">
 
-_Figura 20. Diagrama de actividades de Medical Analysis. Elaboración propia._
+_Figura 21. Diagrama de actividades de Medical Analysis. Elaboración propia._
 
 </div>
 
@@ -1474,7 +1486,7 @@ _Figura 20. Diagrama de actividades de Medical Analysis. Elaboración propia._
 
 <div align="center">
 
-_Figura 21. Diagrama de actividades de Appointment. Elaboración propia._
+_Figura 22. Diagrama de actividades de Appointment. Elaboración propia._
 
 </div>
 
@@ -1484,7 +1496,7 @@ _Figura 21. Diagrama de actividades de Appointment. Elaboración propia._
 
 <div align="center">
 
-_Figura 22. Diagrama de actividades de Follow-up. Elaboración propia._
+_Figura 23. Diagrama de actividades de Follow-up. Elaboración propia._
 
 </div>
 
@@ -1494,7 +1506,7 @@ _Figura 22. Diagrama de actividades de Follow-up. Elaboración propia._
 
 <div align="center">
 
-_Figura 23. Diagrama de actividades de Identity & Profiles. Elaboración propia._
+_Figura 24. Diagrama de actividades de Identity & Profiles. Elaboración propia._
 
 </div>
 
@@ -1504,7 +1516,7 @@ _Figura 23. Diagrama de actividades de Identity & Profiles. Elaboración propia.
 
 <div align="center">
 
-_Figura 24. Diagrama de actividades de Treatment. Elaboración propia._
+_Figura 25. Diagrama de actividades de Treatment. Elaboración propia._
 
 </div>
 
@@ -1514,7 +1526,7 @@ _Figura 24. Diagrama de actividades de Treatment. Elaboración propia._
 
 <div align="center">
 
-_Figura 25. Diagrama de actividades de Reminder. Elaboración propia._
+_Figura 26. Diagrama de actividades de Reminder. Elaboración propia._
 
 </div>
 
@@ -1524,7 +1536,7 @@ _Figura 25. Diagrama de actividades de Reminder. Elaboración propia._
 
 <div align = center>
 
-_Figura 26. Diagrama de la base de datos relacional de MediTrack. Elaboración propia._
+_Figura 27. Diagrama de la base de datos relacional de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1819,34 +1831,34 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/SystemContext.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 27. Diagrama de contexto de MediTrack. Elaboración propia._
+_Figura 28. Diagrama de contexto de MediTrack. Elaboración propia._
 
 </div>
 
 **C4 - Container Diagram**
 Se muestra los contenedores del sistema, destacando el microservicio de tratamiento y su base de datos dedicada, así como cómo se comunican con los otros servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Containers.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 28. Diagrama de contenedores de MediTrack. Elaboración propia._
+_Figura 29. Diagrama de contenedores de MediTrack. Elaboración propia._
 
 </div>
 
 **C4 - Component Diagram**
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
-<td align="center"><img src="assets/images/chapter4/diagrams/component/treatmentservicecomponent.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_TreatmentService.png" alt="Context diagram" ></td>
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 29. Diagrama de componentes de Treatment Service. Elaboración propia._
+_Figura 30. Diagrama de componentes de Treatment Service. Elaboración propia._
 
 </div>
 
@@ -1856,7 +1868,7 @@ _Figura 29. Diagrama de componentes de Treatment Service. Elaboración propia._
 
 <div align = center>
 
-_Figura 30. Kanban Board Iteration 1. Elaboración propia._
+_Figura 31. Kanban Board Iteration 1. Elaboración propia._
 
 </div>
 
@@ -1921,11 +1933,11 @@ Permitir la continuidad del tratamiento del paciente en tres frentes: soporte a 
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/SystemContext.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 31. Diagrama de contexto de MediTrack. Elaboración propia._
+_Figura 32. Diagrama de contexto de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1933,11 +1945,11 @@ _Figura 31. Diagrama de contexto de MediTrack. Elaboración propia._
 
 Se muestra los contenedores del sistema, destacando el microservicio del seguimiento del tratamiento y su base de datos dedicada, así como cómo lee los servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Containers.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 32. Diagrama de contenedores de MediTrack. Elaboración propia._
+_Figura 33. Diagrama de contenedores de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1945,11 +1957,11 @@ _Figura 32. Diagrama de contenedores de MediTrack. Elaboración propia._
 
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/followupserviceomponent.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_FollowUpService.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 33. Diagrama de componentes de Follow-up service. Elaboración propia._
+_Figura 34. Diagrama de componentes de Follow-up service. Elaboración propia._
 
 </div>
 
@@ -1959,7 +1971,7 @@ _Figura 33. Diagrama de componentes de Follow-up service. Elaboración propia._
 
 <div align = center>
 
-_Figura 34. Kanban Board Iteration 2._
+_Figura 35. Kanban Board Iteration 2._
 
 </div>
 Link del Trello: https://trello.com/invite/b/69f6752f9be88dc527f213a9/ATTIfba9ad9e2b8975b1696794b6ecf0382cED03D548/continuidad-del-tratamiento
@@ -2078,7 +2090,7 @@ El FollowUp Service implementa esta estructura dentro de un único proyecto `Med
 
 **Aggregates and Value Objects del Domain**
 
-El Domain del FollowUp Service define tres Aggregate Roots principales (véase Figura 27 — Diagrama de clases del sistema MediTrack):
+El Domain del FollowUp Service define tres Aggregate Roots principales (véase Figura 28 — Diagrama de clases del sistema MediTrack):
 
 `Medication` es el Aggregate Root que representa un medicamento prescrito a un paciente. Encapsula la dosis mediante el Value Object `DoseValue`, contiene la lista de `DoseSchedule` asociados y expone la propiedad computada `IsActive` para verificar si el tratamiento continúa vigente.
 
