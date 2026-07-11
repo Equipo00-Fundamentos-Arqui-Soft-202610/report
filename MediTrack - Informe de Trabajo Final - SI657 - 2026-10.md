@@ -4204,6 +4204,12 @@ Durante este Sprint el equipo completó la **migración de toda la infraestructu
 
 #### 5.3.4.8. Kanban Board
 
+<hr class="page-break">
+
+ <td align="center"><img src="assets//images/kanban-board.png" alt="kanban-board" ></td>
+
+<hr/>
+
 ####
 
 # Referencias Bibliográficas
