@@ -243,6 +243,9 @@ Al cierre de TB4 (Sprint 3), el equipo cuenta con cinco microservicios funcional
         - [5.3.4.6. Software Deployment Evidence for Sprint Review](#5346-software-deployment-evidence-for-sprint-review)
         - [5.3.4.7. Team Collaboration Insights during Sprint](#5347-team-collaboration-insights-during-sprint)
         - [5.3.4.8. Kanban Board](#5348-kanban-board)
+  - [5.4. Microservices Deployment](#54-microservices-deployment)
+    - [5.4.1. Cloud Architecture Diagram](#541-cloud-architecture-diagram)
+    - [5.4.2. Cloud Architecture Deployment](#542-cloud-architecture-deployment-aws-microsoft-azure-or-google-cloud)
 
 - [Conclusiones](#conclusiones)
 - [Referencias Bibliográficas](#referencias-bibliográficas)
@@ -1213,7 +1216,7 @@ _Figura 11. Impact Mapping del segmento Personal de Apoyo. Elaboración propia._
 | US20            | Registrar cumplimiento con video de evidencia   | Como paciente, quiero grabar un video de máximo 30 segundos como evidencia de mi toma de medicamento, para que el personal técnico valide mi cumplimiento. | **Escenario 1:** Dado que tengo un medicamento pendiente, cuando presiono "Grabar video", entonces la cámara se abre y grabo hasta 30 segundos. **Escenario 2:** Dado que subí el video, cuando el personal técnico lo aprueba, entonces el cumplimiento queda registrado. | EP02              |
 | US21            | Gestionar catálogo de medicamentos              | Como personal técnico, quiero gestionar un catálogo centralizado de medicamentos, para agilizar la creación de recetas y mantener datos normalizados. | **Escenario 1:** Dado que accedo al catálogo, cuando creo un medicamento con nombre y categoría, entonces queda disponible para todas las recetas. **Escenario 2:** Dado que busco por nombre, cuando hay coincidencias, entonces veo los resultados del catálogo. | EP04              |
 | US22            | Configurar preferencias de notificaciones       | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.                                 | **Escenario 1:** Dado que accedo a Configuración, cuando elijo sonido, vibración y número de repeticiones, entonces las notificaciones se aplican según mi elección. **Escenario 2:** Dado que desactivo temporalmente las notificaciones, entonces no recibo recordatorios hasta que las reactive.                                             | EP02              |
-| US23            | Funcionar en modo offline                       | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar.                                       | **Escenario 1:** Dado que no tengo internet, cuando abro la aplicación Y tengo una medicación por tomar, puedo marcar "Tomado". **Escenario 2:** Dado que registré tomas de medicamento offline, cuando recupere conexión a  internet entonces se sincronizan automáticamente los registros.                                                                                                      | EP02              |
+| US23            | Gestionar foto de perfil                        | Como usuario, quiero subir, actualizar y eliminar mi foto de perfil desde la aplicación móvil, para personalizar mi cuenta.                                            | **Escenario 1:** Dado que selecciono una foto desde la galería, cuando presiono "Subir", entonces la foto se guarda y se muestra en mi perfil. **Escenario 2:** Dado que el archivo supera los 5MB, cuando intento subirlo, entonces veo "El archivo es demasiado grande".                                                                  | EP06              |
 | US24            | Editar o cancelar medicamento                   | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                                        | **Escenario 1:** Dado que el personal técnico autoriza el cambio, cuando edito un medicamento, entonces se actualiza y se notifica al paciente. **Escenario 2:** Dado que intento cancelar sin autorización, entonces veo "Solo el personal técnico puede cancelar".                                                                            | EP02              |
 | US25            | Ver historial de adherencia y progreso          | Como paciente, quiero ver mi historial completo de adherencia y progreso del tratamiento, para motivarme y seguir mi evolución.                                        | **Escenario 1:** Dado que tengo registros de cumplimiento, cuando accedo a "Mi progreso", entonces veo gráfico de porcentaje de adherencia semanal. **Escenario 2:** Dado que no hay datos suficientes, cuando accedo al dashboard,  entonces veo "Aún no hay suficiente información para mostrar progreso".                                                                 | EP02 / EP03       |
 | US26            | Ver próxima toma pendiente                      | Como paciente, quiero ver cuál es mi próxima toma programada y en cuánto tiempo es, para estar preparado.                                                             | **Escenario 1:** Dado que el paciente tiene un tratamiento activo con medicamentos programados, cuando ingresa a la pantalla principal  de la aplicación móvil, entonces el sistema debe mostrar una tarjeta con el nombre del medicamento, la dosis y la hora exacta de la próxima toma más cercana al tiempo actual, y debe mostrar un contador regresivo en tiempo real. | EP02              |
@@ -1262,7 +1265,7 @@ Para la estimación del esfuerzo de los elementos del Product Backlog, se ha opt
 | 19      | US17          | EP05    | Estadísticas y tendencias para personal técnico | Ver estadísticas de cumplimiento de recetas | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento. | 8 |
 | 20      | US27          | EP05    | Estadísticas y tendencias para personal técnico | Recibir alertas automáticas por baja adherencia | Como personal técnico, quiero recibir alertas automáticas cuando la adherencia de un paciente baja del 70 %, para intervenir a tiempo. | 5 |
 | 21      | US18          | EP05    | Estadísticas y tendencias para personal técnico | Ver estadísticas de citas | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones. | 5 |
-| 22      | US23          | EP02    | Gestión de medicamentos para pacientes | Funcionar en modo offline | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar. | 8 |
+| 22      | US23          | EP06    | Edición de perfil | Gestionar foto de perfil | Como usuario, quiero subir, actualizar y eliminar mi foto de perfil desde la aplicación móvil, para personalizar mi cuenta. | 5 |
 | 23      | US19          | EP06    | Edición de perfil | Editar perfil de usuario | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada. | 3 |
 | 24      | US30          | EP07    | Landing Page | Ver propuesta de valor | Como visitante, quiero entender qué hace MediTrack en la página principal, para decidir si me interesa. | 3 |
 | 25      | US31          | EP07    | Landing Page | Ver funcionalidades por segmento | Como visitante, quiero ver qué funciones ofrece MediTrack para pacientes y para personal médico, para saber si aplica a mi caso. | 3 |
@@ -1729,7 +1732,7 @@ En esta sección se identifican las preocupaciones arquitectónicas de mayor imp
 | ----- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | AC-01 | Seguridad y control de acceso                         | El sistema atiende dos segmentos con permisos radicalmente distintos. Un fallo en la separación Paciente/Personal Técnico implicaría una violación de privacidad y un incumplimiento de CON-09 (Ley N° 29733).                                                                                                                   | La arquitectura debe aplicar autorización por rol en el API Gateway (validación JWT con claim de rol) y validación local de la firma del token en cada microservicio (defensa en profundidad, alineado con CON-04). Cada servicio expone únicamente la información correspondiente al rol autenticado.                                                                                       |
 | AC-02 | Disponibilidad de notificaciones críticas             | El Reminder Service es el componente de mayor impacto clínico. Un fallo en la entrega de un recordatorio puede derivar en una dosis omitida con consecuencias directas para la salud del paciente.                                                                                                                               | El Reminder Service debe implementar reintentos automáticos con backoff exponencial, colas de mensajes con garantía de entrega y comunicación asíncrona para desacoplarse de los servicios que originan los eventos.                                                                                                                                                                         |
-| AC-03 | Coherencia de datos en modo offline                   | Los pacientes deben poder registrar cumplimientos sin conexión a internet (situación frecuente en el contexto peruano). Cuando un mismo paciente sincroniza registros desde el dispositivo tras periodos prolongados sin conexión, pueden producirse conflictos entre el estado local y el estado remoto.                        | La arquitectura debe definir una estrategia explícita de resolución de conflictos en la sincronización entre el almacenamiento offline (CON-06) y los microservicios. La estrategia concreta (timestamp, vector clocks u otra) se decidirá en las iteraciones ADD (sección 4.3).                                                                                                             |
+| AC-03 | Cómputo automatizado de adherencia                  | La adherencia a medicamentos y a citas tienen distinto significado clínico y requieren umbrales diferenciados (70% para medicamentos, 80% para citas). Un único método de cómputo produciría resultados clínicamente engañosos y alertas incorrectas.           | La arquitectura debe implementar el patrón Strategy con calculadoras por categoría de cumplimiento, umbrales configurables y alertas automáticas integradas con el servicio de análisis. El Analysis Service debe consumir eventos de cumplimiento y aplicar la estrategia correspondiente mediante un factory.             |
 | AC-04 | Escalabilidad del motor de notificaciones             | El Reminder Service puede disparar miles de notificaciones simultáneas si múltiples pacientes comparten el mismo horario de medicación.                                                                                                                                                                                          | Debe diseñarse para escalar horizontalmente de forma independiente al resto de microservicios, dentro de los topes impuestos por CON-02, sin que su carga afecte la disponibilidad del Treatment Service o el Follow-up Service.                                                                                                                                                             |
 | AC-05 | Mantenibilidad e independencia entre servicios        | El equipo de desarrollo es pequeño. Un cambio en un servicio no debe obligar a modificar ni redesplegar otros servicios.                                                                                                                                                                                                         | Cada microservicio debe poder modificarse, testearse y desplegarse de forma autónoma. La comunicación entre servicios se realizará exclusivamente mediante interfaces bien definidas (REST o eventos), sin dependencias directas entre repositorios o bases de datos.                                                                                                                        |
 | AC-06 | Accesibilidad y simplicidad para el segmento Paciente | Una parte significativa del segmento Paciente tiene baja alfabetización digital, incluyendo adultos mayores identificados en las entrevistas. La interfaz móvil debe minimizar la carga cognitiva sin acoplar el dominio del backend a la presentación.                                                                          | La arquitectura debe incorporar un componente Backend-For-Frontend (BFF) específico para la app móvil, encargado de adaptar y simplificar las respuestas del dominio (ordenamiento, agregaciones, estados en lenguaje natural) a las necesidades de presentación móvil. Los microservicios de dominio se mantienen agnósticos de la UI, preservando el Principle 4.1.1 #3 (Desacoplamiento). |
@@ -1884,37 +1887,35 @@ En esta tabla se registran los requisitos priorizados que guían las decisiones 
 
 | ID  | Requisito / Historia de Usuario                                                                                                              | Prioridad | Estado    |
 | --- | -------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --------- |
-| 1   | Como paciente, quiero poder registrar cumplimiento sin internet para continuar mi tratamiento en cualquier contexto. (US23)                  | Alta      | Pendiente |
-| 2   | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento. (US07)   | Alta      | Pendiente |
-| 3   | Como paciente, quiero configurar las preferencias de notificaciones para ajustar sonido, vibración y repeticiones según mi necesidad. (US22) | Media     | Pendiente |
+| 1   | Como paciente, quiero recibir una alerta cuando me quedan pocas pastillas, para ir a la farmacia antes de quedarme sin tratamiento. (US07)   | Alta      | Pendiente |
+| 2   | Como paciente, quiero configurar las preferencias de notificaciones para ajustar sonido, vibración y repeticiones según mi necesidad. (US22) | Media     | Pendiente |
 
 #### 4.3.2.2. Establish Iteration Goal by Selecting Drivers
 
 **Objetivo:**
-Permitir la continuidad del tratamiento del paciente en tres frentes: soporte a funcionamiento sin conexión (offline-first)y resiliencia del motor de notificaciones ante alta concurrencia.
+Reforzar la adherencia del paciente mediante la entrega confiable de notificaciones, alertas automáticas de stock bajo y preferencias de notificación configurables.
 
 | Driver                                     | Justificación                                                                                                                                                              |
 | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| US23 — Modo offline                        | Define la necesidad de persistencia local en el cliente.                                                                                                                   |
 | US07 — Alerta de stock bajo                | El Treatment Service debe detectar cuando el conteo de pastillas cae al umbral y publicar el evento `StockBajo` para que el Reminder Service genere la alerta al paciente. |
 | US22 — Preferencias de notificaciones      | Los pacientes, especialmente adultos mayores, deben poder ajustar el comportamiento de los recordatorios. Requiere un módulo de preferencias en el Follow-up Service.      |
-| AC-03 — Coherencia offline                 | Justifica la estrategia de resolución de conflictos en sincronización.                                                                                                     |
+| AC-03 — Cómputo automatizado de adherencia | El sistema debe calcular adherencia con umbrales diferenciados (70% medicamentos, 80% citas) usando el patrón Strategy y generar alertas automáticas.                      |
 | AC-04 — Escalabilidad del Reminder Service | El servicio debe poder escalar horizontalmente ante picos de notificaciones simultáneas.                                                                                   |
-| QAS-1 — Durabilidad                        | Garantiza que los datos registrados offline no se pierdan.                                                                                                                 |
+| QAS-1 — Durabilidad                        | Garantiza que los eventos publicados no se pierdan mediante el patrón Outbox y la mensajería asíncrona.                                                                    |
 
 #### 4.3.2.3. Choose One or More Elements of the System to Refine
 
 | Elemento seleccionado | Justificación                                                                                                                                  |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| **App Móvil Flutter** | Se añade la capa de persistencia local SQLite y el mecanismo de sincronización batch con el Follow-up Service al reconectar.                   |
-| **Follow-up Service** | Se añade el endpoint de sincronización batch offline (`POST /followup/compliance/sync`) y la lógica de resolución de conflictos por timestamp. |
+| **Reminder Service**  | Se implementa el módulo de preferencias de notificación, la integración con FCM con reintentos exponenciales y el scheduler de recordatorios.  |
+| **Medical Analysis Service** | Se implementa el patrón Strategy para el cálculo de adherencia con umbrales diferenciados y alertas automáticas al superar el umbral.    |
 | **Treatment Service** | Se refina la lógica de conteo de stock y publicación del evento `StockBajo` al alcanzar el umbral de pastillas restantes.                      |
 
 #### 4.3.2.4. Choose One or More Design Concepts That Satisfy the Selected Drivers
 
 | Concepto de Diseño                                                           | Relación con Drivers                                                                                                                                                                                                                                                                                                                     |
 | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Persistencia local SQLite con sincronización optimista** en la app móvil   | AC-03, QAS-1, US23. La app persiste cumplimientos localmente. Al reconectar, envía los registros pendientes al Follow-up Service vía endpoint batch. El timestamp determina la precedencia en caso de conflicto. Alternativa descartada: solo funcionamiento online, no satisface QAS-1 ni el principio Offline-First definido en 4.1.1. |
+| **Patrón Strategy para cálculo de adherencia** en el Analysis Service            | AC-03, US07, US22. Implementa `MedicationAdherenceStrategy` (umbral 70%) y `AppointmentAdherenceStrategy` (umbral 80%) mediante un `AdherenceCalculatorFactory`. Al recibir eventos `ComplianceRegistered` y `AppointmentAttendanceRegistered`, recalcula métricas y genera alertas automáticas cuando la adherencia cae del umbral. |
 | **Módulo de preferencias de notificación** integrado en el Follow-up Service | US22, AC-06. Almacena la configuración de sonido, vibración y repeticiones por paciente, permitiendo simplificar la experiencia de notificación para el segmento Paciente (especialmente adultos mayores). El Reminder Service consulta estas preferencias antes de generar cada notificación.                                           |
 | **Detección de stock bajo y evento `StockBajo`** en el Treatment Service     | US07, AC-02. Cuando el conteo de pastillas restantes alcanza el umbral de 3 unidades, el Treatment Service publica `StockBajo`; el Reminder Service genera la notificación al paciente.                                                                                                                                                  |
 
@@ -2640,21 +2641,6 @@ Ante una falla detectada en producción, el rollback se realiza volviendo a desp
 A diferencia del esquema de stop/start manual usado con Azure for Students, los Web Services de Render en el nivel gratuito entran en reposo automáticamente tras un período de inactividad y se reactivan solos ante la primera petición entrante, con una latencia adicional de arranque (observada durante las pruebas del equipo como una primera respuesta con error 503 seguida de una segunda respuesta exitosa segundos después). No se requiere ningún script ni intervención manual para pausar o reanudar el entorno.
 
 Los datos persistidos en TiDB Cloud y en Cloudflare R2 permanecen intactos independientemente del estado de los Web Services, garantizando la continuidad del estado del sistema entre sesiones.
-
-#### Cloud Architecture Diagram
-
-El siguiente diagrama de arquitectura cloud representa el modelo de despliegue real de MediTrack sobre su infraestructura de producción. A diferencia de los diagramas del C4 Model (contexto, contenedores, componentes y código) presentados en el Capítulo IV, esta es una **vista de despliegue complementaria** — no forma parte del C4 —, cuyo propósito es mostrar en qué proveedor cloud se ejecuta físicamente cada pieza del sistema y cómo se comunican entre sí.
-
-El diagrama muestra:
-
-- Los nueve **Web Services publicados en Render** (la aplicación web, el API Gateway y los seis microservicios), cada uno con su propio ciclo de build y auto-deploy sobre `main`.
-- Las seis **bases de datos independientes** bajo el patrón Database per Service sobre **TiDB Cloud Serverless** (compatible con MySQL), todas dentro del mismo clúster serverless.
-- El broker **RabbitMQ 3 gestionado por CloudAMQP**, que desacopla la publicación y el consumo de eventos de dominio entre los microservicios.
-- El bucket de **Cloudflare R2** (compatible con S3), donde Follow-up Service almacena los videos de evidencia de cumplimiento.
-- La integración con el servicio externo de **Firebase Cloud Messaging**, que entrega las notificaciones push al dispositivo del paciente.
-- La **aplicación móvil Flutter**, que corre como APK en el dispositivo Android del paciente y consume el API Gateway sobre HTTPS.
-
-<div align="center"><img src="assets/images/chapter5/diagrams/cloud-architecture-diagram.png" alt="MediTrack — Cloud Architecture Diagram"></div>
 
 <hr class="page-break">
 
@@ -3751,8 +3737,8 @@ Durante el desarrollo del Sprint 3 se evidencia una participación activa y dist
     <tr><td></td><td></td><td>TK04</td><td>Implementar limpieza automática de videos expirados</td><td>Implementar background service que cada hora rechaza automáticamente videos pendientes de validación con más de 24 horas de antigüedad</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
     <tr><td>US21</td><td>Gestionar catálogo de medicamentos</td><td>TK01</td><td>Implementar endpoints del catálogo de medicamentos</td><td>Implementar endpoints POST /api/v1/medication-catalog, GET /api/v1/medication-catalog y GET /api/v1/medication-catalog/search en Treatment Service para gestionar el catálogo centralizado de medicamentos</td><td>4</td><td>Piero Sulca</td><td>Done</td></tr>
     <tr><td></td><td></td><td>TK02</td><td>Integrar validación de catálogo en creación de recetas</td><td>Integrar validación de medicamentos contra el catálogo al momento de crear recetas médicas, asegurando que solo se usen nombres del catálogo oficial</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
-    <tr><td>US23</td><td>Funcionar en modo offline</td><td>TK01</td><td>Implementar almacenamiento local con SQLite</td><td>Implementar repositorio offline con SQLite para cachear medicamentos, horarios y datos de perfil; persistir la última data sincronizada y permitir visualización sin conexión</td><td>5</td><td>Renzo Rivera</td><td>To-do</td></tr>
-    <tr><td></td><td></td><td>TK02</td><td>Implementar cola de sincronización offline</td><td>Implementar cola de registros de cumplimiento offline con sincronización automática al recuperar conexión, incluyendo endpoint POST /api/v1/sync/batch en Follow-Up Service con reconciliación de conflictos</td><td>5</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US23</td><td>Gestionar foto de perfil</td><td>TK01</td><td>Implementar endpoints de foto de perfil</td><td>Implementar endpoints POST /api/v1/profile/photo (subida multipart con validación de formato JPG/PNG/WEBP y tamaño máximo 5MB), GET /api/v1/profile/photo y DELETE /api/v1/profile/photo con almacenamiento seguro en sistema de archivos en Identity Service</td><td>5</td><td>Jeremy Quijada</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Implementar selector de foto en app móvil</td><td>Implementar selector de foto desde cámara/galería con preview, validación de formato y tamaño, upload y eliminación desde la pantalla de perfil en la app Flutter</td><td>4</td><td>Javier Gonzales</td><td>Done</td></tr>
     <tr><td>US28</td><td>Cambiar contraseña</td><td>TK01</td><td>Implementar endpoint de cambio de contraseña</td><td>Implementar endpoint PUT /api/v1/profile/password con validación de contraseña actual, reglas de complejidad y actualización segura del hash en base de datos</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
     <tr><td></td><td></td><td>TK02</td><td>Maquetar pantalla de cambio de contraseña</td><td>Diseñar e implementar la pantalla de cambio de contraseña en la app móvil (Flutter) con campos de contraseña actual, nueva contraseña y confirmación, validaciones en cliente y mensajes de retroalimentación</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
   </tbody>
@@ -4204,7 +4190,117 @@ Durante este Sprint el equipo completó la **migración de toda la infraestructu
 
 #### 5.3.4.8. Kanban Board
 
-####
+<hr class="page-break">
+
+ <td align="center"><img src="assets//images/kanban-board.png" alt="kanban-board" ></td>
+
+<hr/>
+
+#### 5.4 Cloud Architecture Diagram
+
+<hr class="page-break">
+
+ <td align="center"><img src="assets/images/Deployment.jpeg" alt="kanban-board" ></td>
+
+<hr/>
+
+#### 5.5 Cloud Architecture Deployment(AWS, Microsoft Azure or Google Cloud)
+
++ **Render — nueve Web Services desplegados (`Deployed`):** todos los servicios del sistema publicados y en estado activo sobre Render.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/render-dashboard-services.png" alt="render-dashboard-services"></td>
+
+<br>
+
++ **CloudAMQP — instancia `meditrack` sobre AWS US-East-1:** el proveedor administra el broker RabbitMQ del sistema.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/cloudamqp-instances.png" alt="cloudamqp-instances"></td>
+
+<br>
+
++ **CloudAMQP — detalle de conexión de la instancia:** región, clúster, vhost, puertos AMQP (5672 / 5671 TLS) y plan activo.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/cloudamqp-instance-details.png" alt="cloudamqp-instance-details"></td>
+
+<br>
+
++ **CloudAMQP — panel de administración del broker en operación:** conexiones, canales, consumidores, exchanges y colas activos procesando eventos de dominio.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/cloudamqp-broker-overview.png" alt="lavinmq-broker-overview"></td>
+
+<br>
+
++ **TiDB Cloud — clúster `meditrack` Active (TiDB v8.5.3, AWS N. Virginia):** base de datos serverless en estado activo con sus métricas de uso.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/tidb-cluster-overview.png" alt="tidb-cluster-overview"></td>
+
+<br>
+
++ **TiDB Cloud — patrón Database per Service:** las seis bases de datos independientes (`identity_db`, `treatment_db`, `appointment_db`, `followup_db`, `analysis_db`, `reminder_db`) dentro del mismo clúster.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/tidb-databases-per-service.png" alt="tidb-databases-per-service"></td>
+
+<br>
+
++ **Cloudflare R2 — bucket `meditrack-compliance-videos`:** almacenamiento de objetos compatible con S3 para los videos de evidencia de cumplimiento.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/cloudflare-r2-buckets.png" alt="cloudflare-r2-buckets"></td>
+
+<br>
+
++ **Firebase Cloud Messaging — API (V1) habilitada:** proyecto `meditrack-app-si657` con FCM operativo (Sender ID `538771602476`, el mismo configurado en la app móvil).
+
+<td align="center"><img src="assets/images/chapter5/sprint4/firebase-cloud-messaging.png" alt="firebase-cloud-messaging"></td>
+
+
+<hr class="page-break">
+
+## 5.4. Microservices Deployment
+
+Esta sección consolida la vista de despliegue final de MediTrack: cómo la arquitectura de microservicios descrita a lo largo del Capítulo V queda efectivamente publicada y en operación sobre proveedores cloud administrados. Mientras que la sección 5.2.4 documenta la *configuración* de despliegue (plataforma, repositorios, pasos y operación) y la evidencia por sprint acredita cada aprovisionamiento (5.3.4.6), aquí se presenta la fotografía arquitectónica completa: el diagrama de despliegue y la descripción del modelo cloud sobre el que corre el sistema.
+
+### 5.4.1. Cloud Architecture Diagram
+
+El siguiente diagrama de arquitectura cloud representa el modelo de despliegue real de MediTrack sobre su infraestructura de producción. A diferencia de los diagramas del C4 Model (contexto, contenedores, componentes y código) presentados en el Capítulo IV, esta es una **vista de despliegue complementaria** — no forma parte del C4 —, cuyo propósito es mostrar en qué proveedor cloud se ejecuta físicamente cada pieza del sistema y cómo se comunican entre sí.
+
+El diagrama muestra:
+
+- Los nueve **Web Services publicados en Render** (la aplicación web, el API Gateway y los seis microservicios), cada uno con su propio ciclo de build y auto-deploy sobre `main`.
+- Las seis **bases de datos independientes** bajo el patrón Database per Service sobre **TiDB Cloud Serverless** (compatible con MySQL), todas dentro del mismo clúster serverless.
+- El broker **RabbitMQ 3 gestionado por CloudAMQP**, que desacopla la publicación y el consumo de eventos de dominio entre los microservicios.
+- El bucket de **Cloudflare R2** (compatible con S3), donde Follow-up Service almacena los videos de evidencia de cumplimiento.
+- La integración con el servicio externo de **Firebase Cloud Messaging**, que entrega las notificaciones push al dispositivo del paciente.
+- La **aplicación móvil Flutter**, que corre como APK en el dispositivo Android del paciente y consume el API Gateway sobre HTTPS.
+
+<div align="center"><img src="assets/images/chapter5/diagrams/cloud-architecture-diagram.png" alt="MediTrack — Cloud Architecture Diagram"></div>
+
+### 5.4.2. Cloud Architecture Deployment (AWS, Microsoft Azure or Google Cloud)
+
+MediTrack se despliega bajo un modelo **cloud-native multi-proveedor** cuyo sustrato de cómputo y datos reside, en última instancia, sobre **Amazon Web Services (AWS)**. El equipo no administra servidores directamente: cada capa se apoya en un servicio administrado (PaaS/SaaS) que a su vez se ejecuta sobre infraestructura de AWS, evitando la gestión de máquinas virtuales, parches del sistema operativo o redes de bajo nivel. Esta decisión es consistente con la independencia operativa que persigue una arquitectura de microservicios: cada pieza se aprovisiona, escala y falla de forma aislada.
+
+**Capa de cómputo — Render (Web Services).** Los nueve productos ejecutables del sistema (la aplicación web React, el API Gateway Ocelot y los seis microservicios .NET 8) se publican como **Web Services independientes de Render**, cada uno sobre HTTPS con certificado TLS gestionado por la plataforma. Render construye cada servicio desde su propio repositorio (`dotnet publish` para el backend, build de Vite para el frontend) y lo mantiene con **auto-deploy sobre la rama `main`** vía GitHub App. El API Gateway es el **único punto de entrada** público: concentra el enrutamiento por ambiente (`ocelot.Production.json`) y expone hacia internet los seis microservicios downstream, que no se consumen directamente desde el cliente.
+
+**Capa de persistencia — TiDB Cloud Serverless sobre AWS (N. Virginia).** Las seis bases de datos del sistema siguen el patrón **Database per Service** (`identity_db`, `treatment_db`, `appointment_db`, `followup_db`, `analysis_db`, `reminder_db`) y viven dentro de un único clúster **TiDB Cloud Serverless** compatible con MySQL, desplegado en la región **AWS us-east-1 (N. Virginia)**. Cada microservicio aplica sus migraciones de Entity Framework Core automáticamente al arrancar, de modo que el esquema se reconstruye sin intervención manual en cada despliegue.
+
+**Capa de mensajería — CloudAMQP sobre AWS (US-East-1).** El bus de eventos de dominio es una instancia gestionada de **CloudAMQP (RabbitMQ 3)**, también sobre **AWS US-East-1**, con un vhost dedicado del equipo. Esta capa desacopla la publicación y el consumo de eventos entre los microservicios (patrón Outbox del lado de los publicadores) y sostiene los flujos asíncronos como `RecetaCargada`, `PrescriptionCreated` o `CumplimientoRegistrado`.
+
+**Capa de almacenamiento de objetos — Cloudflare R2.** Los videos de evidencia de cumplimiento se guardan en el bucket privado `meditrack-compliance-videos` sobre **Cloudflare R2**, un almacenamiento compatible con la API de S3 consumido exclusivamente por Follow-up Service. Se eligió R2 por su compatibilidad S3 y su ausencia de cargos por egreso, tras retirar una cuenta previa de almacenamiento con credenciales expuestas.
+
+**Servicios externos — Firebase Cloud Messaging.** Las notificaciones push al dispositivo del paciente se entregan a través de **Firebase Cloud Messaging (FCM API V1)**, sobre infraestructura de Google Cloud, consumido por Reminder Service.
+
+La siguiente tabla resume el mapeo entre cada capa arquitectónica, su proveedor administrado y el sustrato cloud subyacente:
+
+| Capa arquitectónica | Servicio administrado | Sustrato cloud | Región |
+| ------------------- | --------------------- | -------------- | ------ |
+| Cómputo (9 Web Services) | Render | AWS / GCP (gestionado por Render) | Oregon (US-West) |
+| Bases de datos (Database per Service) | TiDB Cloud Serverless | AWS | us-east-1 (N. Virginia) |
+| Message bus (RabbitMQ 3) | CloudAMQP | AWS | US-East-1 |
+| Almacenamiento de evidencias | Cloudflare R2 | Cloudflare | Global (S3-compatible) |
+| Notificaciones push | Firebase Cloud Messaging | Google Cloud | Global |
+
+En conjunto, el despliegue combina **AWS como sustrato dominante** (cómputo, datos y mensajería) con servicios especializados de Cloudflare y Google Cloud para almacenamiento de objetos y notificaciones, todos comunicándose sobre HTTPS/TLS. La evidencia visual de cada proveedor aprovisionado y en estado activo se documenta en la sección 5.3.4.6 (Software Deployment Evidence for Sprint Review), y los detalles de configuración y los pasos operativos del proceso de despliegue en la sección 5.2.4 (Software Deployment Configuration).
+
+<hr class="page-break">
 
 # Referencias Bibliográficas
 
