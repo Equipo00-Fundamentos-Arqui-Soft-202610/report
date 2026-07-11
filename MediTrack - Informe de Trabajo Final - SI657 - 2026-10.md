@@ -4208,7 +4208,62 @@ Durante este Sprint el equipo completó la **migración de toda la infraestructu
 
 <hr/>
 
-####
+#### 5.4 Cloud Architecture Diagram
+
+<hr class="page-break">
+
+ <td align="center"><img src="assets/images/Deployment.jpeg" alt="kanban-board" ></td>
+
+<hr/>
+
+#### 5.5 Cloud Architecture Deployment(AWS, Microsoft Azure or Google Cloud)
+
++ **Render — nueve Web Services desplegados (`Deployed`):** todos los servicios del sistema publicados y en estado activo sobre Render.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/render-dashboard-services.png" alt="render-dashboard-services"></td>
+
+<br>
+
++ **CloudAMQP — instancia `meditrack` sobre AWS US-East-1:** el proveedor administra el broker RabbitMQ del sistema.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/cloudamqp-instances.png" alt="cloudamqp-instances"></td>
+
+<br>
+
++ **CloudAMQP — detalle de conexión de la instancia:** región, clúster, vhost, puertos AMQP (5672 / 5671 TLS) y plan activo.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/cloudamqp-instance-details.png" alt="cloudamqp-instance-details"></td>
+
+<br>
+
++ **CloudAMQP — panel de administración del broker en operación:** conexiones, canales, consumidores, exchanges y colas activos procesando eventos de dominio.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/cloudamqp-broker-overview.png" alt="lavinmq-broker-overview"></td>
+
+<br>
+
++ **TiDB Cloud — clúster `meditrack` Active (TiDB v8.5.3, AWS N. Virginia):** base de datos serverless en estado activo con sus métricas de uso.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/tidb-cluster-overview.png" alt="tidb-cluster-overview"></td>
+
+<br>
+
++ **TiDB Cloud — patrón Database per Service:** las seis bases de datos independientes (`identity_db`, `treatment_db`, `appointment_db`, `followup_db`, `analysis_db`, `reminder_db`) dentro del mismo clúster.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/tidb-databases-per-service.png" alt="tidb-databases-per-service"></td>
+
+<br>
+
++ **Cloudflare R2 — bucket `meditrack-compliance-videos`:** almacenamiento de objetos compatible con S3 para los videos de evidencia de cumplimiento.
+
+<td align="center"><img src="assets/images/chapter5/sprint4/cloudflare-r2-buckets.png" alt="cloudflare-r2-buckets"></td>
+
+<br>
+
++ **Firebase Cloud Messaging — API (V1) habilitada:** proyecto `meditrack-app-si657` con FCM operativo (Sender ID `538771602476`, el mismo configurado en la app móvil).
+
+<td align="center"><img src="assets/images/chapter5/sprint4/firebase-cloud-messaging.png" alt="firebase-cloud-messaging"></td>
+
 
 # Referencias Bibliográficas
 
