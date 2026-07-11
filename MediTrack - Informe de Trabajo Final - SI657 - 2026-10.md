@@ -3924,6 +3924,49 @@ Las pruebas fueron ejecutadas utilizando Swagger UI de cada microservicio desple
 
 #### 5.3.4.4. Execution Evidence for Sprint Review
 
+Como evidencia de la ejecución del Sprint 4, se presentan las interfaces de **Swagger UI** correspondientes a los microservicios en funcionamiento, las cuales permiten visualizar y validar sus endpoints expuestos. Asimismo, se muestra la configuración y operatividad del **exchange de RabbitMQ**, encargado de centralizar y gestionar la comunicación basada en eventos entre los distintos servicios del sistema, garantizando la interoperabilidad y sincronización de procesos.
+
+
+**Identity & Profile Service (Swagger UI):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-identity-service.png" alt="identity-service-swagger" ></td>
+
+
+**Reminder Service (Swagger UI):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-reminder-service.jpeg" alt="reminder-service-swagger" ></td>
+
+<br>
+
+**Medical Analysis Service (Swagger UI):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-medical-analysis-service.jpeg" alt="medical-analysis-service-swagger" ></td>
+
+<br>
+
+**Medical Appoinment Service (Swagger UI):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-medical-appointment-service.jpeg" alt="medical-appointment-service-swagger" ></td>
+
+<br>
+
+**Followup Service (Swagger UI):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-followup-service.jpeg" alt="followup-service-swagger" ></td>
+
+<br>
+
+**Treatment Service (Swagger UI):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/swagger-treatment-service.jpeg" alt="treatment-service-swagger" ></td>
+
+<br>
+
+
+**Integración por eventos — RabbitMQ (exchange meditrack.events):**
+
+<td align="center"><img src="assets/images/chapter5/sprint3/rabbitmq-meditrack-events.jpeg" alt="rabbitmq-meditrack-events" ></td>
+
 #### 5.3.4.5. Microservices Documentation Evidence for Sprint Review
 
 Durante este Sprint se completó el despliegue en producción de los seis microservicios sobre Render.com. A continuación se documenta la totalidad de los recursos REST expuestos por cada servicio en sus URLs de producción, incluyendo los nuevos endpoints incorporados en Sprint 4 (autenticación y perfil, idempotencia de recetas, validación de pacientes por DNI, cancelación de ocurrencia individual de recordatorio, gestión de foto de perfil, exámenes clínicos y estadísticas de adherencia).
@@ -3935,7 +3978,7 @@ Durante este Sprint se completó el despliegue en producción de los seis micros
 
 **Imagen de prueba:**
 
-<td align="center"><img src="assets/images/chapter5/sprint4/swagger-identity-service.png" alt="identity-service-swagger"></td>
+<td align="center"><img src="assets\images\sprint-4\identity.png" alt="identity-service-swagger"></td>
 
 | Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
 | --- | --- | --- | --- | --- |
@@ -3957,7 +4000,7 @@ Durante este Sprint se completó el despliegue en producción de los seis micros
 
 **Imagen de prueba:**
 
-<td align="center"><img src="assets/images/chapter5/sprint4/swagger-treatment-service.png" alt="treatment-service-swagger"></td>
+<td align="center"><img src="assets\images\sprint-4\treatment.png" alt="treatment-service-swagger"></td>
 
 | Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
 | --- | --- | --- | --- | --- |
@@ -3979,7 +4022,7 @@ Durante este Sprint se completó el despliegue en producción de los seis micros
 
 **Imagen de prueba:**
 
-<td align="center"><img src="assets/images/chapter5/sprint4/swagger-followup-service.png" alt="followup-service-swagger"></td>
+<td align="center"><img src="assets\images\sprint-4\follow.png" alt="followup-service-swagger"></td>
 
 | Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
 | --- | --- | --- | --- | --- |
@@ -4004,7 +4047,7 @@ Durante este Sprint se completó el despliegue en producción de los seis micros
 
 **Imagen de prueba:**
 
-<td align="center"><img src="assets/images/chapter5/sprint4/swagger-medical-appointment-service.png" alt="medical-appointment-service-swagger"></td>
+<td align="center"><img src="assets\images\sprint-4\appoiment.png" alt="medical-appointment-service-swagger"></td>
 
 | Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
 | --- | --- | --- | --- | --- |
@@ -4028,7 +4071,7 @@ Durante este Sprint se completó el despliegue en producción de los seis micros
 
 **Imagen de prueba:**
 
-<td align="center"><img src="assets/images/chapter5/sprint4/swagger-medical-analysis-service.png" alt="medical-analysis-service-swagger"></td>
+<td align="center"><img src="assets\images\sprint-4\analysis.png" alt="medical-analysis-service-swagger"></td>
 
 | Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
 | --- | --- | --- | --- | --- |
@@ -4050,7 +4093,7 @@ Durante este Sprint se completó el despliegue en producción de los seis micros
 
 **Imagen de prueba:**
 
-<td align="center"><img src="assets/images/chapter5/sprint4/swagger-reminder-service.png" alt="reminder-service-swagger"></td>
+<td align="center"><img src="assets\images\sprint-4\reminder.png" alt="reminder-service-swagger"></td>
 
 | Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
 | --- | --- | --- | --- | --- |
