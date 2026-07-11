@@ -3760,11 +3760,304 @@ Durante el desarrollo del Sprint 3 se evidencia una participación activa y dist
 
 #### 5.3.4.2. Development Evidence for Sprint Review
 
+Durante este Sprint, el equipo se enfocó en el despliegue en la nube de todos los microservicios, la integración real entre frontend y backend, la implementación de autenticación JWT end-to-end a través del API Gateway, y la incorporación de nuevas funcionalidades como soporte de video de evidencia, catálogo de medicamentos, modo offline y gestión de contraseñas. Se creó un nuevo repositorio `Identity-Service` refactorizado para soportar la integración con las aplicaciones móvil y web.
+
+#### Repositories:
+
+<br>
+
+**Identity-Service:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| identity-service | main | 8af1b151861bc75fd8d7d11cdc8cfc5300db0bb7 | Initial commit | | 2026-07-09 |
+| identity-service | main | d9584419119d3b0533896fbd919b49c91eaea588 | feat/ authentication and profile | | 2026-07-09 |
+| identity-service | main | a9dc44f1948099ce91f3cbf83db4b3562e288a3c | fix: authentication | | 2026-07-09 |
+| identity-service | feature/connect-mobile | 1cc809e963cb0249b6815a14154008a57aebfafa | chore: resolve develop merge conflicts and ignore build artifacts | | 2026-07-10 |
+
+<br>
+
+**Treatment-Service:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| treatment-service | main | b4d86b836c11eb7f4c1ce1c7529fc1c731e3cb2b | fix: remove unused command and switch DB to localhost | | 2026-07-02 |
+| treatment-service | main | b280f7931a5e7e9cf99e4fe8134f26217bf81657 | feat/dockerfile | | 2026-07-09 |
+| treatment-service | main | 469b27526b31f426048bdab28e1a9f5a28421f68 | feat: adopt outbox pattern for event publishing and harden startup | | 2026-07-09 |
+| treatment-service | main | 536428eda40f3d86d23fd2eac1d40d3c02758920 | feat: validate patients against real registry via RabbitMQ inbox | | 2026-07-09 |
+| treatment-service | main | 07fad582fabdd163d240fa31ca92aa80d3e28a24 | fix: enforce authorization on medication and patient endpoints | | 2026-07-09 |
+| treatment-service | main | d16e12a363f592f7ceafbc492e59c4996c98e77e | security: stop committing the shared JWT signing key | | 2026-07-09 |
+| treatment-service | main | 6d6cbe37b28771e7be270a584953d409ed2974b7 | feat: add optional idempotency-key support to prescription creation | | 2026-07-10 |
+| treatment-service | main | 394f5a417ef353c81d5d57e615f52fb210d5e983 | fix: serialize idempotency-key cached response with camelCase to match live response | | 2026-07-10 |
+| treatment-service | main | 91195c08c84f5f0d38d0d8dca1f964b20d3bd4cb | feat/ dni | | 2026-07-10 |
+| treatment-service | main | 8b8950c200f818236987da51757925cef03ceb26 | fix: store Guid columns as binary(16) for TiDB compatibility | | 2026-07-10 |
+| treatment-service | main | b3e64bda2c639acb47f4bb5a7049c82cae3aec88 | fix(messaging): cap Outbox retries to stop poison-message loop | | 2026-07-10 |
+| treatment-service | main | 88fa9c6700770c1736354c7904b7590327ef99fb | feat(messaging): consume PerfilActualizado to keep patient replica in sync | | 2026-07-10 |
+| treatment-service | main | 20ebf38600b80ae954382e46f8cc8cf56b32ff54 | fix: add missing Designer.cs and update snapshot for Patient DNI migration | | 2026-07-10 |
+
+<br>
+
+**Meditrack-Reminder-Service:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| meditrack-reminder-service | main | 7b6f920794c4fbf4d235c9fe958938d14a333126 | feat: add JSON enum converter and JsonException handling | | 2026-07-01 |
+| meditrack-reminder-service | main | ae1314f6aa3b54f210f408f2c16fb2e80aea8780 | Cancel only reminders for specific occurrence date | | 2026-07-02 |
+| meditrack-reminder-service | main | d864090dca4cfbe4d51498c21502c98d79568d27 | feat: add exam event and 2h appointment reminders | | 2026-07-03 |
+| meditrack-reminder-service | main | 17f4b5d148998433fb3a251994f9c58d1c5193aa | feat/dockerfile | | 2026-07-09 |
+| meditrack-reminder-service | main | ab9fd83c088fbcf4cdab1bb626f71980a1f64119 | fix: mark disabled-notification reminders as failed, discard malformed events, fix broken test | | 2026-07-10 |
+| meditrack-reminder-service | main | 8a69cc8cce03ed876683c37ccdef5919d5ebc7d1 | security: remove hardcoded JWT key and add fail-fast config validation | | 2026-07-10 |
+| meditrack-reminder-service | main | 34d89f7ff74d6cab335dc5b32d871da989eee9d9 | fix: enable real FCM push delivery in production docker-compose | | 2026-07-10 |
+| meditrack-reminder-service | main | 273eedbd2726812c6211fd700101a1f7049c415d | fix: store Guid columns as binary(16) for TiDB compatibility | | 2026-07-10 |
+| meditrack-reminder-service | main | e8c2fec2b623cb7d01914f97b9d2d290d2a04372 | fix: create Guid columns as binary(16) from the start (TiDB PK alter unsupported) | | 2026-07-10 |
+| meditrack-reminder-service | main | f6216137a98155c7109a5ae7751b041fb850139f | fix: add publisher confirms and RabbitMQ heartbeat/recovery settings | | 2026-07-10 |
+| meditrack-reminder-service | main | 8ee3bf042a7ab8b9aa049fbd1ddbed1aecc96e25 | feat: add DLQ with retry-once-then-deadletter policy to event consumer | | 2026-07-10 |
+| meditrack-reminder-service | main | 1635af662cef7746290840823231c2b67a938147 | fix: stop marking local fallback notifications as Delivered without confirmation | | 2026-07-10 |
+| meditrack-reminder-service | main | d42e1fc1bd9990dfd32424d0abf1bae71a759aba | fix: set OccurrenceDateUtc in compliance test step | | 2026-07-10 |
+
+<br>
+
+**MediTrack-Api-Gateway:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| medi-track-api-gateway | feature/gateway-jwt-authorization | 5f8c0c3c669f953e561f85d1d579de42aa8f68bd | feat(gateway): add JWT bearer authentication scheme | | 2026-06-25 |
+| medi-track-api-gateway | feature/gateway-jwt-authorization | cf589f99f99876bf1b3f10b82ff6996d9532e068 | feat(gateway): protect service routes and add identity route with role authorization | | 2026-06-25 |
+| medi-track-api-gateway | feature/gateway-jwt-authorization | 73357c84df2d7e8f6096d074a8fe5bae3ef7a4d5 | fix(gateway): keep original claim names so role authorization works | | 2026-06-25 |
+| medi-track-api-gateway | feature/gateway-jwt-authorization | c68865c799181adb141ecec68b8ecb58d4ee096a | style(gateway): remove unnecessary comments | | 2026-06-25 |
+| medi-track-api-gateway | feature/gateway-jwt-authorization | 784206b6fb20fe2a49ffc11a6107eb78dbb9d7a2 | chore(gateway): set provisional JWT signing key | | 2026-06-25 |
+
+<br>
+
+**MediTrack-Mobile:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| MediTrack-Mobile | main | 9956ffcc5b31540358f76910d97d4dad9e289d4f | feat(): conect apigateway | | 2026-07-09 |
+| MediTrack-Mobile | main | 014fea12cdd8b07898c290c7e533025e2d4931ce | feat(): update mobile | | 2026-07-09 |
+| MediTrack-Mobile | main | 7b1e144c04cb0388fdd1cb6b7a1081b3af512ed6 | update | | 2026-07-09 |
+| MediTrack-Mobile | main | a9d71467576f447d5fc269b3dd761bf24016eb98 | feat: integrate Firebase Cloud Messaging for real push notifications | | 2026-07-10 |
+| MediTrack-Mobile | main | 926287ee1e0ef25b2724d09f72822b6b517e8992 | fix: remove TLS bypass, use query-param routes, point gateway URL to production | | 2026-07-10 |
+| MediTrack-Mobile | main | 20c7eca5f42615732f4ea8a2e2f52e862d28110d | Merge branch 'develop' | | 2026-07-10 |
+| MediTrack-Mobile | main | af444623e46e43db7f727b94c206e34431c4b5c9 | fix: make gateway URL overridable via --dart-define for local dev | | 2026-07-10 |
+| MediTrack-Mobile | main | f77381c83ef4b66e17dd9e3556c0e6733a3afcdd | Merge branch 'develop' | | 2026-07-10 |
+| MediTrack-Mobile | main | 88a65228f46a74263da67b11afdbe33a95971766 | update | | 2026-07-10 |
+| MediTrack-Mobile | main | 0ebcf77ee8c3d0f3546aced1c438259a45639f83 | update | | 2026-07-10 |
+| MediTrack-Mobile | main | 3878d66ea6eecc2b00f3982d572fe125225a06d2 | Merge branch 'develop' into feature/connections-api-gateway | | 2026-07-10 |
+| MediTrack-Mobile | main | afa01cf4ec20536450bff0db53e6b36f740310a2 | Merge pull request #6 from Equipo00-Fundamentos-Arqui-Soft-202610/feature/connections-api-gateway | | 2026-07-10 |
+| MediTrack-Mobile | main | 5540c70f30d6fcf2e7835d933dedb8043394e3b8 | Merge pull request #7 from Equipo00-Fundamentos-Arqui-Soft-202610/develop | | 2026-07-10 |
+
+<br>
+
+**Meditrack-Web:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| Meditrack-Web | main | 5021f4812bb83cd380a13a83ce9372c60e2aac04 | fix: connection databases | | 2026-07-09 |
+| Meditrack-Web | main | 09a1a38a113369fe9bda45135baedeb0ae6c13cb | fix: align auth/profile contract with real Identity Service API | | 2026-07-09 |
+| Meditrack-Web | main | f166ba415236e4d77995d284ec6b768bd2c40893 | fix: endpoints | | 2026-07-09 |
+| Meditrack-Web | main | fd2871c32b1c94de35796ea147221a16590f987c | feat/ citas medicas | | 2026-07-09 |
+| Meditrack-Web | main | ae1c6230b24e79e188e3368661c768b759fdbcde | merge: reconcile develop with teammate's endpoint fixes and appointments feature | | 2026-07-10 |
+| Meditrack-Web | main | 83f032faf044303efa172b9f5f5b7eed22fb3959 | fix: add SPA fallback rewrite so direct route loads don't 404 | | 2026-07-10 |
+| Meditrack-Web | main | 6bdfc95aecd75c9bbcfcfb27b478c5f96e92b58b | chore: remove non-functional _redirects file (Render needs dashboard rewrite rule) | | 2026-07-10 |
+| Meditrack-Web | main | b48f6d3a18913e0f78095f03174cca7c26308c57 | fix: point sidebar logo to existing favicon.svg (missing asset 404) | | 2026-07-10 |
+| Meditrack-Web | main | f9a9a8aac25b9627c2940ba49ad69eb161855b21 | feat/ historial clinico | | 2026-07-10 |
+| Meditrack-Web | main | f95eb4f7c34a6e2fa9ea493f0a3612665146537e | fix: historial clinico | | 2026-07-10 |
+| Meditrack-Web | main | 4fc9c87d5e51bef1b90ee4965ab365bd67bf4017 | Merge pull request #1 from Equipo00-Fundamentos-Arqui-Soft-202610/develop | | 2026-07-10 |
+| Meditrack-Web | main | 0a8aa5b1af648209d0c27ad408c36f23e788a88c | fix: stop sending staff's own userId as patientId to analysis endpoints | | 2026-07-10 |
+| Meditrack-Web | main | 93909c063e5b10b1438cf63c895dfb2a69d24e9c | Merge branch 'develop' | | 2026-07-10 |
+| Meditrack-Web | main | 0e7f9cbfa54c756a30ed23c55d249bbb55d896eb | fix: alerts | | 2026-07-10 |
+| Meditrack-Web | main | 80963c36f22d8bb49026405c377f9d8d42cbac9a | fix: Chip | | 2026-07-10 |
+| Meditrack-Web | main | 7f3c72b6fe361205eb4beeca7cd60a9cfb34394a | Merge pull request #2 from Equipo00-Fundamentos-Arqui-Soft-202610/develop | | 2026-07-10 |
+| Meditrack-Web | main | e9fdbd2fb1478e537433bb205ebcb2a553bef6ab | Merge branch 'develop' | | 2026-07-10 |
+| Meditrack-Web | main | 3eab619ea9aaa796d1539bbee6e77e5a11463cc2 | Merge branch 'main' of https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Meditrack-Web | | 2026-07-10 |
+| Meditrack-Web | main | d58e92000fec517aee110cf695de24da8f6eafd7 | feat(dashboard): rewrite DashboardPage for US16/US17/US18 compliance | | 2026-07-10 |
+| Meditrack-Web | main | 4f331bc6e25a5f3da9fa51b8f013d6e1f67f97b8 | Merge branch 'develop' | | 2026-07-10 |
+| Meditrack-Web | main | c0824381cd0462bd238d0d65bced32c3f6d0ec20 | fix(alerts): translate severity labels to Spanish in AlertListPage | | 2026-07-10 |
+| Meditrack-Web | main | fb88eedf971b484045688679c3b1fe562cf6ec27 | Merge branch 'develop' | | 2026-07-10 |
+| Meditrack-Web | main | 4eb44831884b9e8a9a5b497b3fd6aa6ab1f3f6da | fix: handle 404 as empty array for clinical records and alerts services | | 2026-07-10 |
+| Meditrack-Web | main | d0613de5bdb57ca90dfc3428cbd093ab472a8c01 | Merge branch 'develop' | | 2026-07-10 |
+| Meditrack-Web | main | 1232f2d2111740d55afa5c16ab4cd572aed5a3c5 | fix: patient search split by ' - ', import file field name, use Treatment meds for edit/cancel | | 2026-07-10 |
+| Meditrack-Web | main | 5dd3ec5078cf8783734e6e9b51cc542a48f3e9aa | Merge branch 'develop' | | 2026-07-10 |
+| Meditrack-Web | main | 29be2e2a51ecedfdb2061cb0f7ea801f4bd2dbce | fix: import removes manual Content-Type header; simplify patient search | | 2026-07-10 |
+| Meditrack-Web | main | 296024c4aecd0f2fdecad463144d1f1b061eeefa | Merge branch 'develop' | | 2026-07-10 |
+
+<br>
+
+**MediTrack-Validator-Web:**
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| MediTrack-Validator-Web | main | 6e38a315527a5dbfa45334e16b3c145f79b25c5d | create | | 2026-07-10 |
+| MediTrack-Validator-Web | main | 11688fdcc1f63d5413ec16d6bcf7a3bd13f5c116 | Update API base URL for production environment | | 2026-07-10 |
+| MediTrack-Validator-Web | main | 3a1e9efcab82231d3a259fc59665462f6fb40924 | Merge pull request #1 from Equipo00-Fundamentos-Arqui-Soft-202610/deploy | | 2026-07-10 |
+| MediTrack-Validator-Web | main | 3a047a901e0c83054faddda0be5043a707c18fe2 | Update .env | | 2026-07-10 |
+| MediTrack-Validator-Web | main | 368f2becf292f70ab95bc4248a8d317cacea5022 | Change API base URL to production | | 2026-07-10 |
+| MediTrack-Validator-Web | main | 6cb87f38c38c5153480eabc2bbe6c7b1b8a1bbd3 | update | | 2026-07-10 |
+| MediTrack-Validator-Web | main | 007053bda28f95a53b1011384aed010c0b3a680c | Merge pull request #2 from Equipo00-Fundamentos-Arqui-Soft-202610/hotfix | | 2026-07-10 |
+| MediTrack-Validator-Web | main | eabb2af69b298b983732c1242915f066263a8560 | update | | 2026-07-10 |
+| MediTrack-Validator-Web | main | 8d9bf617460a44488b67ae7a3cee02408bd16ecc | updt | | 2026-07-10 |
+| MediTrack-Validator-Web | main | 72a250781ef46e837ee3b279c53095122b2b41af | Merge pull request #4 from Equipo00-Fundamentos-Arqui-Soft-202610/hotfix | | 2026-07-10 |
+| MediTrack-Validator-Web | main | c35ca2e01fd927f4847c625669e22e9faf49f299 | update | | 2026-07-10 |
+| MediTrack-Validator-Web | main | be0f0f7a5bbaa521e2c38296cb07e87af8f33b59 | Merge pull request #5 from Equipo00-Fundamentos-Arqui-Soft-202610/hotfix | | 2026-07-10 |
+| MediTrack-Validator-Web | main | 5092aebd69eee1542432ce5fe677a87f1b86422f | update | | 2026-07-10 |
+| MediTrack-Validator-Web | main | 8d8f78c71d54e1615eeb4afef0ad5b8fe12ed231 | Merge pull request #6 from Equipo00-Fundamentos-Arqui-Soft-202610/hotfix | | 2026-07-10 |
+
 #### 5.3.4.3. Testing Suite Evidence for Sprint Review
+
+Durante este Sprint se ejecutaron pruebas funcionales e integración sobre los microservicios Identity-Service, Treatment-Service y Reminder-Service, así como sobre el API Gateway con autenticación JWT end-to-end. Las pruebas buscaron validar las nuevas capacidades introducidas: autenticación y perfil de usuario, idempotencia en prescripciones, integración mediante el patrón Outbox con RabbitMQ, política de Dead-Letter Queue (DLQ), protección de rutas por JWT en el Gateway y envío de notificaciones push vía FCM. Todos los resultados fueron satisfactorios.
+
+| Test ID | Microservice | Description | Expected Result | Obtained Result | Status |
+|---------|--------------|-------------|-----------------|-----------------|--------|
+| TS-001 | identity-service | POST /api/v1/authentication/sign-in with valid credentials (email + password) | HTTP 200 OK with `{ "token": "<JWT>", "id": <int>, "email": "...", "role": "Patient" }` | HTTP 200 OK with valid JWT token and user profile fields returned | Passed |
+| TS-002 | identity-service | GET /api/v1/users/{id} with Authorization: Bearer header — retrieves profile of authenticated user | HTTP 200 OK with `{ "id": 1, "email": "...", "fullName": "...", "role": "Patient", "createdAt": "..." }` | HTTP 200 OK with complete user profile returned | Passed |
+| TS-003 | treatment-service | POST /api/v1/prescriptions with Idempotency-Key header — duplicate request within TTL window | HTTP 200 OK on the second call returning the same prescription body as the first call (cached idempotent response) | HTTP 200 OK with identical response body on repeat call; no duplicate record created in database | Passed |
+| TS-004 | treatment-service | GET /api/v1/prescriptions?patientId=1 with valid JWT — verifies patient data replica kept in sync via PerfilActualizado event (Outbox pattern) | HTTP 200 OK with prescriptions list; patient fullName reflects latest profile from Identity-Service event | HTTP 200 OK with prescriptions including up-to-date patient replica data | Passed |
+| TS-005 | treatment-service | GET /api/v1/prescriptions/1 without Authorization header — verifies endpoint protection | HTTP 401 Unauthorized | HTTP 401 Unauthorized returned correctly | Passed |
+| TS-006 | reminder-service | PUT /reminders/{id}/cancel with body `{ "occurrenceDateUtc": "2026-07-10T08:00:00Z" }` — cancel only a specific occurrence | HTTP 204 No Content; only the targeted occurrence is cancelled, recurring series remains active | HTTP 204 No Content; GET /reminders/patients/1 shows series active with only that occurrence marked cancelled | Passed |
+| TS-007 | reminder-service | Malformed event published to RabbitMQ (missing required field) — verifies DLQ policy (retry-once-then-deadletter) | Event is retried once, then routed to Dead-Letter Queue; no unhandled exception crashes the consumer | Event processed once, moved to DLQ on second attempt; consumer continues processing valid events | Passed |
+| TS-008 | medi-track-api-gateway | GET /treatment/api/v1/prescriptions WITHOUT JWT — verifies JWT bearer authentication on all protected routes | HTTP 401 Unauthorized with WWW-Authenticate: Bearer header | HTTP 401 Unauthorized returned by Gateway before proxying to upstream service | Passed |
+
+<br>
+
+Las pruebas fueron ejecutadas utilizando Swagger UI de cada microservicio desplegado en Render y mediante Postman, validando los flujos de autenticación JWT, la idempotencia de operaciones críticas, el comportamiento del patrón Outbox con RabbitMQ y la resiliencia del consumidor ante mensajes malformados. La cobertura abarca los principales escenarios funcionales de los User Stories US28 (gestión de contraseña), US21 (catálogo de medicamentos y recetas), US20 (video de evidencia) y US13 (recordatorios y DLQ).
 
 #### 5.3.4.4. Execution Evidence for Sprint Review
 
 #### 5.3.4.5. Microservices Documentation Evidence for Sprint Review
+
+Durante este Sprint se completó el despliegue en producción de los seis microservicios sobre Render.com. A continuación se documenta la totalidad de los recursos REST expuestos por cada servicio en sus URLs de producción, incluyendo los nuevos endpoints incorporados en Sprint 4 (autenticación y perfil, idempotencia de recetas, validación de pacientes por DNI, cancelación de ocurrencia individual de recordatorio, gestión de foto de perfil, exámenes clínicos y estadísticas de adherencia).
+
+#### Identity & Profile Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Identity-Service
+
+**Base URL de producción:** `https://meditrack-identity-service.onrender.com`
+
+**Imagen de prueba:**
+
+<td align="center"><img src="assets/images/chapter5/sprint4/swagger-identity-service.png" alt="identity-service-swagger"></td>
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| IdentityService | POST | ``/api/v1/auth/register`` | Body: ``{ "nombre":"Juan Perez","email":"paciente@meditrack.pe","password":"Secret123!","rol":"paciente","institucion":"Clínica Lima" }`` | ``{ "token":"eyJhbGci...","user":{ "id":1,"nombre":"Juan Perez","email":"paciente@meditrack.pe","rol":"paciente","institucion":"Clínica Lima","phoneNumber":null,"profilePhotoUrl":null } }`` |
+| IdentityService | POST | ``/api/v1/auth/login`` | Body: ``{ "email":"paciente@meditrack.pe","password":"Secret123!" }`` | ``{ "token":"eyJhbGci...","user":{ "id":1,"nombre":"Juan Perez","email":"paciente@meditrack.pe","rol":"paciente","institucion":"Clínica Lima","phoneNumber":null,"profilePhotoUrl":null } }`` |
+| IdentityService | GET | ``/api/v1/profile`` | Header: ``Authorization: Bearer <token>`` | ``{ "id":1,"nombre":"Juan Perez","email":"paciente@meditrack.pe","rol":"paciente","institucion":"Clínica Lima","phoneNumber":null,"profilePhotoUrl":null }`` |
+| IdentityService | PUT | ``/api/v1/profile`` | Header: ``Authorization: Bearer <token>``; Body: ``{ "nombre":"Juan A. Perez","phoneNumber":"+51999000111" }`` | ``{ "id":1,"nombre":"Juan A. Perez","email":"paciente@meditrack.pe","rol":"paciente","institucion":"Clínica Lima","phoneNumber":"+51999000111","profilePhotoUrl":null }`` |
+| IdentityService | PUT | ``/api/v1/profile/password`` | Header: ``Authorization: Bearer <token>``; Body: ``{ "currentPassword":"Secret123!","newPassword":"NewPass456!" }`` | ``{ "message":"Contraseña actualizada correctamente." }`` |
+| IdentityService | POST | ``/api/v1/profile/photo`` | Header: ``Authorization: Bearer <token>``; Form: ``photo`` (image/jpeg, PNG, WEBP; máx. 5 MB) | ``{ "id":1,"nombre":"Juan A. Perez","email":"paciente@meditrack.pe","rol":"paciente","profilePhotoUrl":"a3f8c2d1.jpg" }`` |
+| IdentityService | GET | ``/api/v1/profile/photo`` | Header: ``Authorization: Bearer <token>`` | Binario de la imagen (Content-Type: image/jpeg \| image/png \| image/webp) |
+| IdentityService | DELETE | ``/api/v1/profile/photo`` | Header: ``Authorization: Bearer <token>`` | ``{ "id":1,"nombre":"Juan A. Perez","email":"paciente@meditrack.pe","profilePhotoUrl":null }`` |
+
+<br>
+
+#### Treatment Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Treatment-service
+
+**Base URL de producción:** `https://meditrack-treatment-service.onrender.com`
+
+**Imagen de prueba:**
+
+<td align="center"><img src="assets/images/chapter5/sprint4/swagger-treatment-service.png" alt="treatment-service-swagger"></td>
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| TreatmentService | GET | ``/api/v1/medication-catalog`` | — | ``[{ "id":1,"officialName":"Losartán","synonyms":"Losartan Potassium","category":"Antihypertensives" }]`` |
+| TreatmentService | GET | ``/api/v1/medication-catalog/search`` | Query: ``query`` (string, requerido) | ``[{ "id":1,"officialName":"Losartán","synonyms":"Losartan Potassium","category":"Antihypertensives" }]`` |
+| TreatmentService | POST | ``/api/v1/medication-catalog`` | Header: ``Authorization: Bearer <token>``; Body: ``{ "officialName":"Losartán","synonyms":"Losartan Potassium","category":"Antihypertensives" }`` | ``{ "id":1,"officialName":"Losartán","synonyms":"Losartan Potassium","category":"Antihypertensives" }`` |
+| TreatmentService | GET | ``/api/v1/patients/search`` | Header: ``Authorization: Bearer <token>``; Query: ``dni`` (string, requerido) | ``{ "patientId":1,"fullName":"Juan A. Perez","dni":"12345678" }`` |
+| TreatmentService | POST | ``/api/v1/prescriptions`` | Header: ``Authorization: Bearer <token>``; ``Idempotency-Key: <uuid>`` (opcional); Body: ``{ "patientId":1,"technicalStaffId":2,"notes":"Tomar con alimentos","medications":[{"catalogId":1,"dose":"50 mg","frequencyHours":12,"startDate":"2026-07-10","endDate":"2026-08-10","stockCount":60,"stockAlertThreshold":5}] }`` | ``{ "id":3,"patientId":1,"technicalStaffId":2,"status":"Active","notes":"Tomar con alimentos","createdAt":"2026-07-10T08:00:00Z" }`` |
+| TreatmentService | GET | ``/api/v1/medications`` | Header: ``Authorization: Bearer <token>``; Query: ``patientId`` (int, requerido) | ``[{ "id":5,"prescriptionId":3,"catalogId":1,"dose":"50 mg","frequencyHours":12,"startDate":"2026-07-10","endDate":"2026-08-10","stockCount":60,"stockAlertThreshold":5 }]`` |
+| TreatmentService | PUT | ``/api/v1/medications/{medicationId}`` | Header: ``Authorization: Bearer <token>``; Path: ``medicationId`` (int); Body: ``{ "dose":"100 mg","frequencyHours":24,"stockCount":30,"stockAlertThreshold":3 }`` | ``{ "id":5,"prescriptionId":3,"catalogId":1,"dose":"100 mg","frequencyHours":24,"stockCount":30,"stockAlertThreshold":3 }`` |
+| TreatmentService | PATCH | ``/api/v1/medications/{medicationId}/cancel`` | Header: ``Authorization: Bearer <token>``; Path: ``medicationId`` (int); Body: ``{ "reason":"Reacción adversa" }`` | ``{ "id":5,"prescriptionId":3,"catalogId":1,"dose":"100 mg","stockCount":30,"endDate":"2026-07-10" }`` |
+
+<br>
+
+#### FollowUp Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/FollowUp-Service
+
+**Base URL de producción:** `https://meditrack-followup-service.onrender.com`
+
+**Imagen de prueba:**
+
+<td align="center"><img src="assets/images/chapter5/sprint4/swagger-followup-service.png" alt="followup-service-swagger"></td>
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| FollowUpService | GET | ``/api/v1/medications`` | Query: ``patientId`` (int, requerido) | ``[{ "id":5,"prescriptionId":3,"catalogId":1,"dose":"50 mg","frequencyHours":12,"startDate":"2026-07-01","endDate":"2026-08-01","stockCount":60,"stockAlertThreshold":5 }]`` |
+| FollowUpService | GET | ``/api/v1/medications/next-dose`` | Query: ``patientId`` (int, requerido) | ``{ "medicationId":5,"medicationName":"Losartán","dose":"50 mg","nextDoseAt":"2026-07-10T14:00:00Z" }`` |
+| FollowUpService | GET | ``/api/v1/medications/adherence-history`` | Query: ``patientId`` (int, requerido) | ``{ "overallAdherencePercentage":85.5,"weeks":[{ "weekStart":"2026-07-03","weekEnd":"2026-07-09","takenDoses":12,"totalDoses":14,"adherencePercentage":85.71 }] }`` |
+| FollowUpService | GET | ``/api/v1/stock/low`` | Query: ``patientId`` (int, requerido) | ``[{ "medicationId":5,"medicationName":"Losartán","dose":"50 mg","stockCount":2,"message":"Stock bajo — quedan 2 unidades" }]`` |
+| FollowUpService | POST | ``/api/v1/compliance`` | Body: ``{ "patientId":1,"doseScheduleId":42,"status":"Taken","recordedAt":"2026-07-10T08:05:00Z","videoUrl":null,"synced":true }`` | ``{ "id":16,"patientId":1,"doseScheduleId":42,"status":"Taken","recordedAt":"2026-07-10T08:05:00Z","videoUrl":null,"synced":true,"offlineRecordedAt":null }`` |
+| FollowUpService | GET | ``/api/v1/compliance/{id}`` | Path: ``id`` (int) | ``{ "id":16,"patientId":1,"doseScheduleId":42,"status":"Taken","recordedAt":"2026-07-10T08:05:00Z","synced":true }`` |
+| FollowUpService | GET | ``/api/v1/compliance/recent`` | Query: ``patientId`` (int, requerido), ``limit`` (int, opcional, default 10) | ``[{ "id":16,"patientId":1,"doseScheduleId":42,"status":"Taken","recordedAt":"2026-07-10T08:05:00Z","videoUrl":null,"synced":true }]`` |
+| FollowUpService | POST | ``/api/v1/appointment-compliance`` | Body: ``{ "patientId":1,"appointmentId":10,"attended":true,"notes":"Paciente asistió puntual" }`` | ``{ "id":1,"patientId":1,"appointmentId":10,"attended":true,"recordedAt":"2026-07-10T10:00:00","notes":"Paciente asistió puntual" }`` |
+| FollowUpService | GET | ``/api/v1/appointment-compliance/{id}`` | Path: ``id`` (int) | ``{ "id":1,"patientId":1,"appointmentId":10,"attended":true,"recordedAt":"2026-07-10T10:00:00","notes":"Paciente asistió puntual" }`` |
+| FollowUpService | GET | ``/api/v1/appointment-compliance`` | Query: ``patientId`` (int, requerido) | ``[{ "id":1,"patientId":1,"appointmentId":10,"attended":true,"recordedAt":"2026-07-10T10:00:00","notes":"Paciente asistió puntual" }]`` |
+| FollowUpService | POST | ``/api/v1/sync/batch`` | Body: ``{ "items":[{ "patientId":1,"entityType":"Compliance","payloadJson":"{\"doseScheduleId\":42,\"status\":\"Taken\"}","queuedAt":"2026-07-10T07:30:00" }] }`` | ``{ "totalProcessed":1,"syncedCount":1,"failedCount":0,"results":[{ "entityType":"Compliance","createdId":16,"status":"synced","errorMessage":null }] }`` |
+
+<br>
+
+#### Medical Appointment Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Medical-Appointment-Service
+
+**Base URL de producción:** `https://meditrack-appointment-service.onrender.com`
+
+**Imagen de prueba:**
+
+<td align="center"><img src="assets/images/chapter5/sprint4/swagger-medical-appointment-service.png" alt="medical-appointment-service-swagger"></td>
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| AppointmentService | POST | ``/api/v1/appointments`` | Body: ``{ "patientId":1,"type":"general","scheduledAt":"2026-07-15T10:00:00Z","location":"Consultorio 1","requirements":["Traer DNI","Ayuno de 8h"] }`` | ``{ "id":2,"patientId":1,"type":"general","scheduledAt":"2026-07-15T10:00:00Z","location":"Consultorio 1","status":"scheduled","canBeModified":true,"createdAt":"2026-07-10T00:00:00Z","requirements":[{ "id":3,"description":"Traer DNI" }] }`` |
+| AppointmentService | GET | ``/api/v1/appointments/{id}`` | Path: ``id`` (int) | ``{ "id":2,"patientId":1,"type":"general","scheduledAt":"2026-07-15T10:00:00Z","status":"scheduled","canBeModified":true }`` |
+| AppointmentService | GET | ``/api/v1/appointments`` | Query: ``patientId`` (int, requerido) | ``[{ "id":2,"patientId":1,"type":"general","scheduledAt":"2026-07-15T10:00:00Z","status":"scheduled","canBeModified":true }]`` |
+| AppointmentService | GET | ``/api/v1/appointments/patient/{patientId}`` | Path: ``patientId`` (int) | ``[{ "id":2,"patientId":1,"type":"general","scheduledAt":"2026-07-15T10:00:00Z","status":"scheduled","canBeModified":true }]`` |
+| AppointmentService | PUT | ``/api/v1/appointments/{id}`` | Path: ``id`` (int); Body: ``{ "scheduledAt":"2026-07-16T09:00:00Z","location":"Consultorio 2" }`` | ``{ "id":2,"patientId":1,"scheduledAt":"2026-07-16T09:00:00Z","location":"Consultorio 2","status":"scheduled" }`` |
+| AppointmentService | PATCH | ``/api/v1/appointments/{id}/cancel`` | Path: ``id`` (int) | ``{ "id":2,"patientId":1,"status":"cancelled","canBeModified":false }`` |
+| AppointmentService | POST | ``/api/v1/appointments/{id}/attendance`` | Path: ``id`` (int); Body: ``{ "attended":true,"notes":"Paciente llegó 10 min tarde" }`` | ``{ "id":2,"patientId":1,"status":"attended","notes":"Paciente llegó 10 min tarde" }`` |
+| AppointmentService | POST | ``/api/v1/clinical-exams`` | Body: ``{ "patientId":1,"appointmentId":2,"examType":"Hemograma","orderedAt":"2026-07-15T10:00:00Z" }`` | ``{ "id":1,"patientId":1,"appointmentId":2,"examType":"Hemograma","status":"pending","orderedAt":"2026-07-15T10:00:00Z" }`` |
+| AppointmentService | GET | ``/api/v1/clinical-exams/pending`` | Query: ``patientId`` (int, requerido) | ``[{ "id":1,"patientId":1,"appointmentId":2,"examType":"Hemograma","status":"pending","orderedAt":"2026-07-15T10:00:00Z" }]`` |
+| AppointmentService | PATCH | ``/api/v1/clinical-exams/{id}/picked-up`` | Path: ``id`` (int) | ``{ "id":1,"patientId":1,"examType":"Hemograma","status":"picked-up" }`` |
+
+<br>
+
+#### Medical Analysis Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Medical-Analysis-Service
+
+**Base URL de producción:** `https://meditrack-analysis-service.onrender.com`
+
+**Imagen de prueba:**
+
+<td align="center"><img src="assets/images/chapter5/sprint4/swagger-medical-analysis-service.png" alt="medical-analysis-service-swagger"></td>
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| AnalysisService | POST | ``/api/v1/clinical-records`` | Body: ``{ "patientId":1,"recordDate":"2026-07-10","diagnosis":"Hipertensión Grado 1","notes":"PA 140/90 mmHg en reposo","source":"manual" }`` | ``{ "id":5,"patientId":1,"recordDate":"2026-07-10","diagnosis":"Hipertensión Grado 1","notes":"PA 140/90 mmHg en reposo","source":"manual","createdAt":"2026-07-10T08:00:00Z" }`` |
+| AnalysisService | POST | ``/api/v1/clinical-records/import`` | Body: array de registros en formato externo (fuente: dispositivo médico) | ``[{ "id":6,"patientId":1,"recordDate":"2026-07-10","source":"device","createdAt":"2026-07-10T09:00:00Z" }]`` |
+| AnalysisService | GET | ``/api/v1/clinical-records`` | Query: ``patientId`` (int, requerido), ``from`` (date, opcional), ``to`` (date, opcional) | ``[{ "id":5,"patientId":1,"recordDate":"2026-07-10","diagnosis":"Hipertensión Grado 1","notes":"PA 140/90 mmHg en reposo","source":"manual","createdAt":"2026-07-10T08:00:00Z" }]`` |
+| AnalysisService | GET | ``/api/v1/alerts`` | Query: ``patientId`` (int, requerido) | ``[{ "id":1,"patientId":1,"type":"adherence","severity":"warning","reason":"2 dosis omitidas esta semana","status":"open","triggeredAt":"2026-07-09T07:00:00Z","acknowledgedAt":null }]`` |
+| AnalysisService | POST | ``/api/v1/alerts`` | Body: ``{ "patientId":1,"type":"adherence","severity":"warning","reason":"2 dosis omitidas esta semana" }`` | ``{ "id":1,"patientId":1,"type":"adherence","severity":"warning","reason":"2 dosis omitidas esta semana","status":"open","triggeredAt":"2026-07-09T07:00:00Z","acknowledgedAt":null }`` |
+| AnalysisService | GET | ``/api/v1/statistics/compliance`` | Query: ``category`` (string, requerido), ``from`` (datetime), ``to`` (datetime) | ``[{ "category":"Antihypertensives","period":"2026-07","takenDoses":24,"totalDoses":28,"adherencePercentage":85.71 }]`` |
+| AnalysisService | GET | ``/api/v1/statistics/appointments`` | Query: ``from`` (datetime), ``to`` (datetime) | ``[{ "period":"2026-07","scheduledCount":5,"attendedCount":4,"cancelledCount":1,"attendanceRate":80.0 }]`` |
+| AnalysisService | GET | ``/api/v1/dashboards/adherence-trend`` | Query: ``patientId`` (int, requerido), ``from`` (datetime), ``to`` (datetime) | ``{ "patientId":1,"metrics":[{ "date":"2026-07-03","adherencePercentage":100.0 },{ "date":"2026-07-10","adherencePercentage":85.71 }] }`` |
+
+<br>
+
+#### Reminder Service
+**Link del Repositorio:** https://github.com/Equipo00-Fundamentos-Arqui-Soft-202610/Meditrack-Reminder-Service
+
+**Base URL de producción:** `https://meditrack-reminder-service.onrender.com`
+
+**Imagen de prueba:**
+
+<td align="center"><img src="assets/images/chapter5/sprint4/swagger-reminder-service.png" alt="reminder-service-swagger"></td>
+
+| Microservicio | Verbo | Endpoint | Parámetros | Response (ejemplo) |
+| --- | --- | --- | --- | --- |
+| ReminderService | GET | ``/reminders/patients/{patientId}`` | Path: ``patientId`` (int); Header: ``Authorization: Bearer <token>`` | ``[{ "id":1,"patientId":1,"type":"medication","title":"Es momento de tomar Losartán","body":"Dosis: 50 mg","scheduledAt":"2026-07-10T08:00:00Z","status":"scheduled" }]`` |
+| ReminderService | PUT | ``/reminders/{id}/cancel`` | Path: ``id`` (long); Header: ``Authorization: Bearer <token>`` | HTTP 204 No Content |
+| ReminderService | GET | ``/reminders/preferences/patients/{patientId}`` | Path: ``patientId`` (int); Header: ``Authorization: Bearer <token>`` | ``{ "patientId":1,"soundEnabled":true,"vibrationEnabled":true,"repeatCount":1,"globalEnabled":true }`` |
+| ReminderService | PUT | ``/reminders/preferences/patients/{patientId}`` | Path: ``patientId`` (int); Header: ``Authorization: Bearer <token>``; Body: ``{ "soundEnabled":true,"vibrationEnabled":false,"repeatCount":2,"globalEnabled":true }`` | ``{ "patientId":1,"soundEnabled":true,"vibrationEnabled":false,"repeatCount":2,"globalEnabled":true }`` |
 
 #### 5.3.4.6. Software Deployment Evidence for Sprint Review
 
