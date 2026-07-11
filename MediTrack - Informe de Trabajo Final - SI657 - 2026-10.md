@@ -243,6 +243,9 @@ Al cierre de TB4 (Sprint 3), el equipo cuenta con cinco microservicios funcional
         - [5.3.4.6. Software Deployment Evidence for Sprint Review](#5346-software-deployment-evidence-for-sprint-review)
         - [5.3.4.7. Team Collaboration Insights during Sprint](#5347-team-collaboration-insights-during-sprint)
         - [5.3.4.8. Kanban Board](#5348-kanban-board)
+  - [5.4. Microservices Deployment](#54-microservices-deployment)
+    - [5.4.1. Cloud Architecture Diagram](#541-cloud-architecture-diagram)
+    - [5.4.2. Cloud Architecture Deployment](#542-cloud-architecture-deployment-aws-microsoft-azure-or-google-cloud)
 
 - [Conclusiones](#conclusiones)
 - [Referencias Bibliográficas](#referencias-bibliográficas)
@@ -2639,21 +2642,6 @@ A diferencia del esquema de stop/start manual usado con Azure for Students, los 
 
 Los datos persistidos en TiDB Cloud y en Cloudflare R2 permanecen intactos independientemente del estado de los Web Services, garantizando la continuidad del estado del sistema entre sesiones.
 
-#### Cloud Architecture Diagram
-
-El siguiente diagrama de arquitectura cloud representa el modelo de despliegue real de MediTrack sobre su infraestructura de producción. A diferencia de los diagramas del C4 Model (contexto, contenedores, componentes y código) presentados en el Capítulo IV, esta es una **vista de despliegue complementaria** — no forma parte del C4 —, cuyo propósito es mostrar en qué proveedor cloud se ejecuta físicamente cada pieza del sistema y cómo se comunican entre sí.
-
-El diagrama muestra:
-
-- Los nueve **Web Services publicados en Render** (la aplicación web, el API Gateway y los seis microservicios), cada uno con su propio ciclo de build y auto-deploy sobre `main`.
-- Las seis **bases de datos independientes** bajo el patrón Database per Service sobre **TiDB Cloud Serverless** (compatible con MySQL), todas dentro del mismo clúster serverless.
-- El broker **RabbitMQ 3 gestionado por CloudAMQP**, que desacopla la publicación y el consumo de eventos de dominio entre los microservicios.
-- El bucket de **Cloudflare R2** (compatible con S3), donde Follow-up Service almacena los videos de evidencia de cumplimiento.
-- La integración con el servicio externo de **Firebase Cloud Messaging**, que entrega las notificaciones push al dispositivo del paciente.
-- La **aplicación móvil Flutter**, que corre como APK en el dispositivo Android del paciente y consume el API Gateway sobre HTTPS.
-
-<div align="center"><img src="assets/images/chapter5/diagrams/cloud-architecture-diagram.png" alt="MediTrack — Cloud Architecture Diagram"></div>
-
 <hr class="page-break">
 
 ## 5.3. Microservices Implementation
@@ -4264,6 +4252,55 @@ Durante este Sprint el equipo completó la **migración de toda la infraestructu
 
 <td align="center"><img src="assets/images/chapter5/sprint4/firebase-cloud-messaging.png" alt="firebase-cloud-messaging"></td>
 
+
+<hr class="page-break">
+
+## 5.4. Microservices Deployment
+
+Esta sección consolida la vista de despliegue final de MediTrack: cómo la arquitectura de microservicios descrita a lo largo del Capítulo V queda efectivamente publicada y en operación sobre proveedores cloud administrados. Mientras que la sección 5.2.4 documenta la *configuración* de despliegue (plataforma, repositorios, pasos y operación) y la evidencia por sprint acredita cada aprovisionamiento (5.3.4.6), aquí se presenta la fotografía arquitectónica completa: el diagrama de despliegue y la descripción del modelo cloud sobre el que corre el sistema.
+
+### 5.4.1. Cloud Architecture Diagram
+
+El siguiente diagrama de arquitectura cloud representa el modelo de despliegue real de MediTrack sobre su infraestructura de producción. A diferencia de los diagramas del C4 Model (contexto, contenedores, componentes y código) presentados en el Capítulo IV, esta es una **vista de despliegue complementaria** — no forma parte del C4 —, cuyo propósito es mostrar en qué proveedor cloud se ejecuta físicamente cada pieza del sistema y cómo se comunican entre sí.
+
+El diagrama muestra:
+
+- Los nueve **Web Services publicados en Render** (la aplicación web, el API Gateway y los seis microservicios), cada uno con su propio ciclo de build y auto-deploy sobre `main`.
+- Las seis **bases de datos independientes** bajo el patrón Database per Service sobre **TiDB Cloud Serverless** (compatible con MySQL), todas dentro del mismo clúster serverless.
+- El broker **RabbitMQ 3 gestionado por CloudAMQP**, que desacopla la publicación y el consumo de eventos de dominio entre los microservicios.
+- El bucket de **Cloudflare R2** (compatible con S3), donde Follow-up Service almacena los videos de evidencia de cumplimiento.
+- La integración con el servicio externo de **Firebase Cloud Messaging**, que entrega las notificaciones push al dispositivo del paciente.
+- La **aplicación móvil Flutter**, que corre como APK en el dispositivo Android del paciente y consume el API Gateway sobre HTTPS.
+
+<div align="center"><img src="assets/images/chapter5/diagrams/cloud-architecture-diagram.png" alt="MediTrack — Cloud Architecture Diagram"></div>
+
+### 5.4.2. Cloud Architecture Deployment (AWS, Microsoft Azure or Google Cloud)
+
+MediTrack se despliega bajo un modelo **cloud-native multi-proveedor** cuyo sustrato de cómputo y datos reside, en última instancia, sobre **Amazon Web Services (AWS)**. El equipo no administra servidores directamente: cada capa se apoya en un servicio administrado (PaaS/SaaS) que a su vez se ejecuta sobre infraestructura de AWS, evitando la gestión de máquinas virtuales, parches del sistema operativo o redes de bajo nivel. Esta decisión es consistente con la independencia operativa que persigue una arquitectura de microservicios: cada pieza se aprovisiona, escala y falla de forma aislada.
+
+**Capa de cómputo — Render (Web Services).** Los nueve productos ejecutables del sistema (la aplicación web React, el API Gateway Ocelot y los seis microservicios .NET 8) se publican como **Web Services independientes de Render**, cada uno sobre HTTPS con certificado TLS gestionado por la plataforma. Render construye cada servicio desde su propio repositorio (`dotnet publish` para el backend, build de Vite para el frontend) y lo mantiene con **auto-deploy sobre la rama `main`** vía GitHub App. El API Gateway es el **único punto de entrada** público: concentra el enrutamiento por ambiente (`ocelot.Production.json`) y expone hacia internet los seis microservicios downstream, que no se consumen directamente desde el cliente.
+
+**Capa de persistencia — TiDB Cloud Serverless sobre AWS (N. Virginia).** Las seis bases de datos del sistema siguen el patrón **Database per Service** (`identity_db`, `treatment_db`, `appointment_db`, `followup_db`, `analysis_db`, `reminder_db`) y viven dentro de un único clúster **TiDB Cloud Serverless** compatible con MySQL, desplegado en la región **AWS us-east-1 (N. Virginia)**. Cada microservicio aplica sus migraciones de Entity Framework Core automáticamente al arrancar, de modo que el esquema se reconstruye sin intervención manual en cada despliegue.
+
+**Capa de mensajería — CloudAMQP sobre AWS (US-East-1).** El bus de eventos de dominio es una instancia gestionada de **CloudAMQP (RabbitMQ 3)**, también sobre **AWS US-East-1**, con un vhost dedicado del equipo. Esta capa desacopla la publicación y el consumo de eventos entre los microservicios (patrón Outbox del lado de los publicadores) y sostiene los flujos asíncronos como `RecetaCargada`, `PrescriptionCreated` o `CumplimientoRegistrado`.
+
+**Capa de almacenamiento de objetos — Cloudflare R2.** Los videos de evidencia de cumplimiento se guardan en el bucket privado `meditrack-compliance-videos` sobre **Cloudflare R2**, un almacenamiento compatible con la API de S3 consumido exclusivamente por Follow-up Service. Se eligió R2 por su compatibilidad S3 y su ausencia de cargos por egreso, tras retirar una cuenta previa de almacenamiento con credenciales expuestas.
+
+**Servicios externos — Firebase Cloud Messaging.** Las notificaciones push al dispositivo del paciente se entregan a través de **Firebase Cloud Messaging (FCM API V1)**, sobre infraestructura de Google Cloud, consumido por Reminder Service.
+
+La siguiente tabla resume el mapeo entre cada capa arquitectónica, su proveedor administrado y el sustrato cloud subyacente:
+
+| Capa arquitectónica | Servicio administrado | Sustrato cloud | Región |
+| ------------------- | --------------------- | -------------- | ------ |
+| Cómputo (9 Web Services) | Render | AWS / GCP (gestionado por Render) | Oregon (US-West) |
+| Bases de datos (Database per Service) | TiDB Cloud Serverless | AWS | us-east-1 (N. Virginia) |
+| Message bus (RabbitMQ 3) | CloudAMQP | AWS | US-East-1 |
+| Almacenamiento de evidencias | Cloudflare R2 | Cloudflare | Global (S3-compatible) |
+| Notificaciones push | Firebase Cloud Messaging | Google Cloud | Global |
+
+En conjunto, el despliegue combina **AWS como sustrato dominante** (cómputo, datos y mensajería) con servicios especializados de Cloudflare y Google Cloud para almacenamiento de objetos y notificaciones, todos comunicándose sobre HTTPS/TLS. La evidencia visual de cada proveedor aprovisionado y en estado activo se documenta en la sección 5.3.4.6 (Software Deployment Evidence for Sprint Review), y los detalles de configuración y los pasos operativos del proceso de despliegue en la sección 5.2.4 (Software Deployment Configuration).
+
+<hr class="page-break">
 
 # Referencias Bibliográficas
 
