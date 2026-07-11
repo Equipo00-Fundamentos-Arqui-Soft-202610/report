@@ -3757,6 +3757,44 @@ Durante el desarrollo del Sprint 3 se evidencia una participación activa y dist
 
 #### 5.3.4.7. Team Collaboration Insights during Sprint
 
+- Webapp:
+
+<td align="center"><img src="assets/images/funda-insights-last-sprint/web-i.png" alt="network" ></td>
+
+- Mobile:
+
+<td align="center"><img src="assets/images/funda-insights-last-sprint/mobile-i.png" alt="network" ></td>
+
+- Treatment Service:
+
+<td align="center"><img src="assets/images/funda-insights-last-sprint/treatment-i.png" alt="network" ></td>
+
+- Appoinment Service:
+
+<td align="center"><img src="assets/images/funda-insights-last-sprint/medical-appointment-i.png" alt="network" ></td>
+
+- Reminder Service:
+
+<td align="center"><img src="assets/images/funda-insights-last-sprint/reminder-i.png" alt="network" ></td>
+
+- Analisis Service:
+
+<td align="center"><img src="assets/images/funda-insights-last-sprint/medical-analysis-i.png" alt="network" ></td>
+
+- Follow Up Service:
+
+<td align="center"><img src="assets/images/funda-insights-last-sprint/follow-up-i.png" alt="network" ></td>
+
+- IAM Service:
+
+<td align="center"><img src="assets/images/funda-insights-last-sprint/iam-i.png" alt="network" ></td>
+
+- API Gateway:
+
+<td align="center"><img src="assets/images/funda-insights-last-sprint//apigateway-i.png" alt="network" ></td>
+
+
+
 #### 5.3.4.8. Kanban Board
 
 
