@@ -13,7 +13,7 @@
 
 <h4 style="text-align: center"> 1ASI0657 Fundamentos de Arquitectura de Software </h4>
 
-<h4 style="text-align: center"> Periodo: 202610 </h4>
+<h4 style="text-align: center"> 202610 </h4>
 
 
 <h4 style="text-align: center"> NRC: 7944 </h4>
@@ -125,7 +125,7 @@ MediTrack es una plataforma digital de salud desarrollada por Pafi Solutions que
 
 El problema central abordado es que entre el 44% y el 76% de pacientes crónicos en el Perú no siguen correctamente sus tratamientos farmacológicos, principalmente por olvido y falta de herramientas accesibles. MediTrack resuelve esto mediante recordatorios automáticos generados a partir de recetas cargadas digitalmente por el personal médico, registro de cumplimiento con soporte offline y dashboards de adherencia para seguimiento clínico.
 
-Al cierre de TB4 (Sprint 3), el equipo cuenta con cinco microservicios funcionales con endpoints documentados en Swagger UI, una aplicación móvil Flutter con pantallas de inicio y listado de medicamentos, una aplicacion web React con pantallas de inicio y busqueda de pacientes. La arquitectura implementada aplica los patrones DDD, Clean Architecture, Factory Method, Strategy y Observer, alineados con los atributos de calidad definidos en el proceso ADD del Capítulo IV.
+Al cierre de TB4 (Sprint 3), el equipo cuenta con cinco microservicios funcionales con endpoints documentados en Swagger UI, una aplicación móvil Flutter con pantallas de inicio y listado de medicamentos, una aplicacion web React con pantallas de inicio y busqueda de pacientes. La arquitectura implementada aplica los patrones DDD, Clean Architecture, Factory Method, Strategy y Publish-Subscribe, alineados con los atributos de calidad definidos en el proceso ADD del Capítulo IV.
 
 <hr class="page-break">
 
@@ -1210,8 +1210,8 @@ _Figura 11. Impact Mapping del segmento Personal de Apoyo. Elaboración propia._
 | US17            | Ver estadísticas de cumplimiento de recetas     | Como personal técnico, quiero ver estadísticas de qué recetas se cumplen más, para evaluar la efectividad del tratamiento.                                             | **Escenario 1:** Dado que hay múltiples recetas activas, cuando accedo a estadísticas, entonces veo porcentaje de cumplimiento por cada receta. **Escenario 2:** Dado que una receta tiene bajo cumplimiento, cuando accedo al dashboard, entonces aparece resaltada en el gráfico.                                                                                         | EP05              |
 | US18            | Ver estadísticas de citas                       | Como personal técnico, quiero ver un diagrama circular de citas por tipo, para entender la distribución de atenciones.                                                 | **Escenario 1:** Dado que hay citas registradas, cuando accedo a la sección, entonces veo un gráfico circular con tipos de cita. **Escenario 2:** Dado que no hay citas, cuando accedo, entonces veo "No hay datos de citas disponibles".                                                                                                       | EP05              |
 | US19            | Editar perfil de usuario                        | Como usuario de MediTrack, quiero modificar mi nombre, teléfono o foto de perfil, para mantener mi información actualizada.                                            | **Escenario 1:** Dado que modifico mi teléfono o subo una nueva foto, cuando presiono "Guardar", entonces el cambio se refleja inmediatamente. **Escenario 2:** Dado que ingreso un formato inválido, cuando intento guardar, entonces veo "Formato incorrecto".                                                                                | EP06              |
-| US20            | Recuperar contraseña                            | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta.                                                                      | **Escenario 1:** Dado que ingreso mi correo registrado, cuando presiono "Recuperar contraseña", entonces recibo un enlace por correo. **Escenario 2:** Dado que el correo no existe, entonces veo "Correo no registrado". **Escenario 3:** Dado que uso el enlace, cuando ingreso una nueva contraseña válida, entonces la cuenta se actualiza. | EP01              |
-| US21            | Cerrar sesión                                   | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información.                                                                                      | **Escenario 1:** Dado que estoy logueado, cuando presiono "Cerrar sesión", entonces se cierra la sesión y regresa a la pantalla de login. **Escenario 2:** Dado que cierro la aplicación, cuando la abro nuevamente, entonces debo iniciar sesión otra vez.                                                                                     | EP01              |
+| US20            | Registrar cumplimiento con video de evidencia   | Como paciente, quiero grabar un video de máximo 30 segundos como evidencia de mi toma de medicamento, para que el personal técnico valide mi cumplimiento. | **Escenario 1:** Dado que tengo un medicamento pendiente, cuando presiono "Grabar video", entonces la cámara se abre y grabo hasta 30 segundos. **Escenario 2:** Dado que subí el video, cuando el personal técnico lo aprueba, entonces el cumplimiento queda registrado. | EP02              |
+| US21            | Gestionar catálogo de medicamentos              | Como personal técnico, quiero gestionar un catálogo centralizado de medicamentos, para agilizar la creación de recetas y mantener datos normalizados. | **Escenario 1:** Dado que accedo al catálogo, cuando creo un medicamento con nombre y categoría, entonces queda disponible para todas las recetas. **Escenario 2:** Dado que busco por nombre, cuando hay coincidencias, entonces veo los resultados del catálogo. | EP04              |
 | US22            | Configurar preferencias de notificaciones       | Como paciente, quiero configurar las preferencias de notificaciones, para ajustar sonido, vibración y repeticiones según mi necesidad.                                 | **Escenario 1:** Dado que accedo a Configuración, cuando elijo sonido, vibración y número de repeticiones, entonces las notificaciones se aplican según mi elección. **Escenario 2:** Dado que desactivo temporalmente las notificaciones, entonces no recibo recordatorios hasta que las reactive.                                             | EP02              |
 | US23            | Funcionar en modo offline                       | Como paciente, quiero poder ver mis medicamentos y marcar cumplimiento sin internet, para usar la aplicación en cualquier lugar.                                       | **Escenario 1:** Dado que no tengo internet, cuando abro la aplicación Y tengo una medicación por tomar, puedo marcar "Tomado". **Escenario 2:** Dado que registré tomas de medicamento offline, cuando recupere conexión a  internet entonces se sincronizan automáticamente los registros.                                                                                                      | EP02              |
 | US24            | Editar o cancelar medicamento                   | Como paciente, quiero editar o cancelar un medicamento (cuando el médico lo autorice), para corregir errores en mi tratamiento.                                        | **Escenario 1:** Dado que el personal técnico autoriza el cambio, cuando edito un medicamento, entonces se actualiza y se notifica al paciente. **Escenario 2:** Dado que intento cancelar sin autorización, entonces veo "Solo el personal técnico puede cancelar".                                                                            | EP02              |
@@ -1272,8 +1272,8 @@ Para la estimación del esfuerzo de los elementos del Product Backlog, se ha opt
 | 29      | US01          | EP01    | Registro y roles | Registro de paciente | Como paciente, quiero crear una cuenta en la aplicación móvil, para gestionar mis tratamientos y citas. | 5 |
 | 30      | US02          | EP01    | Registro y roles | Registro de personal técnico | Como personal técnico, quiero registrarme en la plataforma web, para subir recetas y ver estadísticas de pacientes. | 5 |
 | 31      | US03          | EP01    | Registro y roles | Inicio de sesión | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi dashboard según mi rol. | 3 |
-| 32      | US20          | EP01    | Registro y roles | Recuperar contraseña | Como usuario, quiero recuperar mi contraseña olvidada, para poder acceder nuevamente a mi cuenta. | 3 |
-| 33      | US21          | EP01    | Registro y roles | Cerrar sesión | Como usuario, quiero cerrar sesión de forma segura, para proteger mi información. | 3 |
+| 32      | US20          | EP02    | Gestión de medicamentos para pacientes | Registrar cumplimiento con video de evidencia | Como paciente, quiero grabar un video de máximo 30 segundos como evidencia de mi toma de medicamento, para que el personal técnico valide mi cumplimiento. | 8 |
+| 33      | US21          | EP04    | Carga de datos clínicos para personal técnico | Gestionar catálogo de medicamentos | Como personal técnico, quiero gestionar un catálogo centralizado de medicamentos, para agilizar la creación de recetas y mantener datos normalizados. | 5 |
 | 34      | US28          | EP01    | Registro y roles | Cambiar contraseña | Como usuario, quiero cambiar mi contraseña, para mantener mi cuenta segura. | 3 |
 
 El tablero de Trello del Product Backlog se organiza en las siguientes columnas: **Backlog** (historias pendientes de sprint), **Sprint Backlog** (historias comprometidas en el sprint actual), **In Progress** (en desarrollo), **In Review** (en validación por el equipo) y **Done** (completadas y aceptadas).
@@ -1347,7 +1347,7 @@ El Diagrama de Contexto del Sistema permite visualizar el ecosistema en el que o
 - **Azure Communication Services (Email):** el Identity & Profile Service consume este servicio para el envío de correos transaccionales de recuperación de cuenta. La comunicación es sincrónica mediante API REST de Azure.
 - **RabbitMQ (Message Bus):** actúa como broker de mensajería para la comunicación asíncrona entre microservicios internos. No es un sistema externo al dominio, sino parte de la infraestructura de integración del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/SystemContext.png" alt="Context diagram" ></td>
 
 <div align = center>
 
@@ -1380,7 +1380,7 @@ El Diagrama de Contenedores descompone el sistema MediTrack en sus unidades desp
 Los clientes se comunican exclusivamente con el API Gateway mediante HTTPS. El Gateway valida el JWT y redirige la petición al microservicio correspondiente. Los microservicios no se comunican entre sí de forma sincrónica: toda interacción entre servicios internos ocurre de forma asíncrona a través de RabbitMQ, garantizando el desacoplamiento definido en los principios arquitectónicos (sección 4.1.1).
 
 
-<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Container Diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Containers.png" alt="Container Diagram" ></td>
 
 <div align = center>
 
@@ -1396,7 +1396,7 @@ Los diagramas de componentes detallan la estructura interna de cada microservici
 
 El Identity & Profiles Service gestiona el ciclo de vida de las cuentas de usuario y la autenticación. Sus componentes principales son el `AuthController`, que recibe las solicitudes de registro e inicio de sesión; el `TokenService`, que genera y valida los JWT; el `UserCommandService`, que orquesta la creación y actualización de perfiles; y el `UserRepository`, que persiste las entidades en su base de datos MySQL exclusiva. El servicio consume Azure Communication Services para el envío de correos de recuperación de cuenta.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/identityservicecomponent.png" alt=""></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_Identity.png" alt=""></td>
 
 <div align="center">
 
@@ -1406,9 +1406,9 @@ _Figura 15. Diagrama de componentes de Identity & Profiles Service. Elaboración
 
 #### Treatment Service
 
-El Treatment Service gestiona la carga de recetas médicas y el catálogo de medicamentos. El `PrescriptionController` recibe las recetas del personal técnico y las delega al `PrescriptionCommandService`, que ejecuta el pipeline de validación mediante el patrón Decorator: verifica la existencia del paciente, valida el medicamento contra el catálogo oficial y comprueba que los horarios estén completos antes de persistir. Al confirmar la persistencia, publica el evento `RecetaCargada` hacia RabbitMQ. El `MedicationCommandService` gestiona ediciones y cancelaciones autorizadas, y publica `StockBajo` cuando el conteo de pastillas alcanza el umbral configurado.
+El Treatment Service gestiona la carga de recetas médicas y el catálogo de medicamentos. El `PrescriptionController` recibe las recetas del personal técnico y las delega al `PrescriptionCommandService`, que ejecuta el pipeline de validación mediante el patrón Chain of Responsibility: cada validador (existencia del paciente, catálogo de medicamentos, horarios completos) decide si la receta pasa al siguiente o se rechaza. Al confirmar la persistencia, publica el evento `RecetaCargada` hacia RabbitMQ. El `MedicationCommandService` gestiona ediciones y cancelaciones autorizadas, y publica `StockBajo` cuando el conteo de pastillas alcanza el umbral configurado.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/treatmentservicecomponent.png" alt="analytics"></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_TreatmentService.png" alt="analytics"></td>
 
 <div align="center">
 
@@ -1416,15 +1416,27 @@ _Figura 16. Diagrama de componentes de Treatment Service. Elaboración propia._
 
 </div>
 
+#### Medical Appointment Service
+
+El Medical Appointment Service gestiona el ciclo de vida de las citas médicas y exámenes clínicos. El `AppointmentsController` expone endpoints para agendar, editar, cancelar y registrar asistencia a citas. El `ClinicalExamsController` gestiona la creación y recolección de exámenes clínicos. El `MedicalAppointmentCommandService` orquesta las operaciones y publica eventos `CitaAgendada`, `AppointmentAttendanceRegistered` y `ExamenCreado` hacia RabbitMQ. Cada cita y examen se persiste en su base de datos MySQL exclusiva.
+
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_AppointmentService.png" alt="appointment service"></td>
+
+<div align="center">
+
+_Figura 17. Diagrama de componentes de Medical Appointment Service. Elaboración propia._
+
+</div>
+
 #### Reminder Service
 
 El Reminder Service es el componente de mayor criticidad clínica. Al consumir el evento `RecetaCargada` desde RabbitMQ, el `ReminderEventConsumer` invoca la `ReminderFactory` correspondiente (Medication, Appointment o Exam) mediante el patrón Factory Method para crear los recordatorios con su mensaje y tiempo de anticipación propios. El `ReminderScheduler` (BackgroundService) barre periódicamente los recordatorios vencidos y los despacha mediante el `FcmNotificationService` con reintentos de backoff exponencial. Al consumir `CumplimientoRegistrado`, el `CancellationHandler` cancela el recordatorio pendiente asociado, evitando notificaciones redundantes.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/reminderservicomponent.png" alt="reminder service"></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_ReminderService.png" alt="reminder service"></td>
 
 <div align="center">
 
-_Figura 17. Diagrama de componentes de Reminder Service. Elaboración propia._
+_Figura 18. Diagrama de componentes de Reminder Service. Elaboración propia._
 
 </div>
 
@@ -1432,11 +1444,11 @@ _Figura 17. Diagrama de componentes de Reminder Service. Elaboración propia._
 
 El Follow-up Service registra el cumplimiento de medicamentos y citas por parte del paciente. El `ComplianceController` recibe los registros de toma con soporte para video de evidencia y marca de tiempo offline. El `MedicationComplianceCommandService` valida el estado (`taken`/`skipped`) mediante el Value Object `ComplianceStatus`, verifica la existencia del `DoseSchedule` en base de datos y persiste el cumplimiento. Al confirmar la escritura, publica el evento `CumplimientoRegistrado` hacia RabbitMQ. El `NextPendingDoseQueryService` calcula la próxima dosis pendiente con ajuste de zona horaria de Lima.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/followupserviceomponent.png"></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_FollowUpService.png"></td>
 
 <div align="center">
 
-_Figura 18. Diagrama de componentes de Follow-up Service. Elaboración propia._
+_Figura 19. Diagrama de componentes de Follow-up Service. Elaboración propia._
 
 </div>
 
@@ -1444,11 +1456,11 @@ _Figura 18. Diagrama de componentes de Follow-up Service. Elaboración propia._
 
 El Medical Analysis Service genera los dashboards de adherencia y estadísticas de cumplimiento para el personal técnico. El `DashboardController` y el `StatisticsController` delegan las consultas al `DashboardQueryService` y al `StatisticsQueryService`, que aplican el patrón Strategy para calcular métricas diferenciadas por categoría: `MedicationAdherenceStrategy` (umbral de alerta al 70%) y `AppointmentAdherenceStrategy` (umbral al 80%). El `HostedEventConsumer` consume eventos de integración desde RabbitMQ (`CumplimientoRegistrado`, `AppointmentAttendanceRegistered`) para actualizar los modelos analíticos. El `AlertCommandService` publica alertas automáticas cuando la adherencia cae por debajo del umbral configurado.
 
-<td align="center"><img src="assets/images/chapter4/diagrams//component/analysisservice.png" alt="medical analysis"></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_AnalysisService.png" alt="medical analysis"></td>
 
 <div align="center">
 
-_Figura 19. Diagrama de componentes de Medical Analysis Service. Elaboración propia._
+_Figura 20. Diagrama de componentes de Medical Analysis Service. Elaboración propia._
 
 
 </div>
@@ -1464,7 +1476,7 @@ Los diagramas de actividad complementan el modelo C4 describiendo el comportamie
 
 <div align="center">
 
-_Figura 20. Diagrama de actividades de Medical Analysis. Elaboración propia._
+_Figura 21. Diagrama de actividades de Medical Analysis. Elaboración propia._
 
 </div>
 
@@ -1474,7 +1486,7 @@ _Figura 20. Diagrama de actividades de Medical Analysis. Elaboración propia._
 
 <div align="center">
 
-_Figura 21. Diagrama de actividades de Appointment. Elaboración propia._
+_Figura 22. Diagrama de actividades de Appointment. Elaboración propia._
 
 </div>
 
@@ -1484,7 +1496,7 @@ _Figura 21. Diagrama de actividades de Appointment. Elaboración propia._
 
 <div align="center">
 
-_Figura 22. Diagrama de actividades de Follow-up. Elaboración propia._
+_Figura 23. Diagrama de actividades de Follow-up. Elaboración propia._
 
 </div>
 
@@ -1494,7 +1506,7 @@ _Figura 22. Diagrama de actividades de Follow-up. Elaboración propia._
 
 <div align="center">
 
-_Figura 23. Diagrama de actividades de Identity & Profiles. Elaboración propia._
+_Figura 24. Diagrama de actividades de Identity & Profiles. Elaboración propia._
 
 </div>
 
@@ -1504,7 +1516,7 @@ _Figura 23. Diagrama de actividades de Identity & Profiles. Elaboración propia.
 
 <div align="center">
 
-_Figura 24. Diagrama de actividades de Treatment. Elaboración propia._
+_Figura 25. Diagrama de actividades de Treatment. Elaboración propia._
 
 </div>
 
@@ -1514,7 +1526,7 @@ _Figura 24. Diagrama de actividades de Treatment. Elaboración propia._
 
 <div align="center">
 
-_Figura 25. Diagrama de actividades de Reminder. Elaboración propia._
+_Figura 26. Diagrama de actividades de Reminder. Elaboración propia._
 
 </div>
 
@@ -1524,7 +1536,7 @@ _Figura 25. Diagrama de actividades de Reminder. Elaboración propia._
 
 <div align = center>
 
-_Figura 26. Diagrama de la base de datos relacional de MediTrack. Elaboración propia._
+_Figura 27. Diagrama de la base de datos relacional de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1587,34 +1599,38 @@ implementaciones intercambiables: `MedicationAdherenceStrategy` y
 - Mejora la mantenibilidad al separar cada lógica de cálculo en una clase
   dedicada y fácilmente testeable.
 
-#### Decorator
+#### Chain of Responsibility
 
 El presente patrón se emplea en el Treatment Service durante la carga de recetas
-médicas. La receta pasa por capas de validación encadenadas:
+médicas. La receta pasa por una cadena de validadores independientes:
 verificación de existencia del paciente, validación del medicamento contra el
-catálogo oficial y verificación de horarios completos:
+catálogo oficial y verificación de horarios completos. Cada validador puede
+rechazar la receta o pasarla al siguiente eslabón de la cadena:
 
-- Permite agregar o quitar validaciones de forma independiente sin modificar las
-  capas existentes, respetando el principio Open/Closed.
+- Permite agregar o quitar validaciones de forma independiente sin modificar los
+  validadores existentes, respetando el principio Open/Closed.
 - Mejora la legibilidad del flujo de validación al separar cada responsabilidad
-  en su propio decorador.
+  en su propio validador.
 - Reduce el riesgo de errores en recetas cargadas al sistema, garantizando que
   toda prescripción pase por las verificaciones necesarias antes de persistirse.
 
-#### Observer
+#### Publish-Subscribe (Mensajería por Eventos)
 
-En MediTrack se aplica para la comunicación asíncrona entre microservicios. Cuando
-el Follow-up Service registra el cumplimiento de un medicamento, publica el evento
-`CumplimientoRegistrado`; el Reminder Service lo escucha y cancela el recordatorio
-pendiente. De forma similar, el evento `StockBajo` es publicado por el Treatment
-Service cuando el conteo de pastillas alcanza el umbral definido:
+En MediTrack se aplica para la comunicación asíncrona entre microservicios a
+través de un broker de mensajes (RabbitMQ). Cuando el Follow-up Service registra
+el cumplimiento de un medicamento, publica el evento `CumplimientoRegistrado` en
+el exchange `meditrack.events`; el Reminder Service lo consume desde su cola
+dedicada y cancela el recordatorio pendiente. De forma similar, el evento
+`StockBajo` es publicado por el Treatment Service cuando el conteo de pastillas
+alcanza el umbral definido:
 
 - Facilita la comunicación desacoplada entre microservicios, ya que el emisor no
-  necesita conocer a los receptores del evento.
-- Permite añadir nuevos suscriptores en el futuro (por ejemplo, un servicio de
-  alertas al médico) sin modificar el código del servicio emisor.
+  necesita conocer a los consumidores del evento.
+- Permite añadir nuevos consumidores en el futuro (por ejemplo, un servicio de
+  alertas al médico) sin modificar el código del servicio publicador.
 - Garantiza que la información crítica, como el stock bajo o el cumplimiento
-  registrado, llegue a los servicios correctos en el momento oportuno.
+  registrado, llegue a los servicios correctos en el momento oportuno a través
+  de colas duraderas con entrega confirmada.
 
 ### 4.1.8. Tactics
 
@@ -1789,7 +1805,7 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 | Elemento seleccionado | Justificación                                                                                                                                               |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Treatment Service** | Es el receptor del flujo de mayor prioridad (US13). Se refina el pipeline de validación de recetas mediante el patrón Decorator antes de la persistencia.   |
+| **Treatment Service** | Es el receptor del flujo de mayor prioridad (US13). Se refina el pipeline de validación de recetas mediante el patrón Chain of Responsibility antes de la persistencia.   |
 | **Reminder Service**  | Es el componente de mayor criticidad clínica. Se refina a nivel de componentes internos para garantizar la entrega de recordatorios vía FCM con reintentos. |
 | **Follow-up Service** | Es el responsable de registrar el cumplimiento del paciente y cerrar el ciclo del tratamiento.                                                              |
 
@@ -1797,9 +1813,9 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 | Concepto de Diseño                                                   | Relación con Drivers                                                                                                                                                                                                          |
 | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Pipeline de validación con patrón Decorator** en Treatment Service | AC-08, US13. Encadena validaciones (existencia del paciente, nombre del medicamento en catálogo, horarios completos) antes de persistir la receta, evitando que datos inválidos se propaguen a Reminder vía eventos.          |
+| **Pipeline de validación con patrón Chain of Responsibility** en Treatment Service | AC-08, US13. Encadena validaciones (existencia del paciente, nombre del medicamento en catálogo, horarios completos) antes de persistir la receta, evitando que datos inválidos se propaguen a Reminder vía eventos.          |
 | **Comunicación asíncrona por eventos**                               | AC-02, AC-04, AC-08, US06. El Follow-up Service publica `CumplimientoRegistrado`; el Reminder Service lo consume y cancela el recordatorio pendiente. Alternativa descartada: REST síncrono, por riesgo de fallos en cascada. |
-| **Patrón Observer entre servicios**                                  | US06. El registro de cumplimiento genera eventos que pueden ser consumidos por otros servicios sin acoplamiento directo.                                                                                                      |
+| **Publish-Subscribe entre servicios**                                | US06. El registro de cumplimiento genera eventos que pueden ser consumidos por otros servicios sin acoplamiento directo.                                                                                                      |
 
 #### 4.3.1.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 
@@ -1815,34 +1831,34 @@ Partiendo del Diagrama de Contexto, en esta iteración se refinan los siguientes
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/SystemContext.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 27. Diagrama de contexto de MediTrack. Elaboración propia._
+_Figura 28. Diagrama de contexto de MediTrack. Elaboración propia._
 
 </div>
 
 **C4 - Container Diagram**
 Se muestra los contenedores del sistema, destacando el microservicio de tratamiento y su base de datos dedicada, así como cómo se comunican con los otros servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Containers.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 28. Diagrama de contenedores de MediTrack. Elaboración propia._
+_Figura 29. Diagrama de contenedores de MediTrack. Elaboración propia._
 
 </div>
 
 **C4 - Component Diagram**
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
-<td align="center"><img src="assets/images/chapter4/diagrams/component/treatmentservicecomponent.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_TreatmentService.png" alt="Context diagram" ></td>
 
 <td align="center"><img src="assets/images/chapter4/diagrams/component/treatment.jpeg" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 29. Diagrama de componentes de Treatment Service. Elaboración propia._
+_Figura 30. Diagrama de componentes de Treatment Service. Elaboración propia._
 
 </div>
 
@@ -1852,7 +1868,7 @@ _Figura 29. Diagrama de componentes de Treatment Service. Elaboración propia._
 
 <div align = center>
 
-_Figura 30. Kanban Board Iteration 1. Elaboración propia._
+_Figura 31. Kanban Board Iteration 1. Elaboración propia._
 
 </div>
 
@@ -1917,11 +1933,11 @@ Permitir la continuidad del tratamiento del paciente en tres frentes: soporte a 
 
 Se muestra al paciente y personal tecnico como actores principales y su interacción con el microservicio de tratamiento.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/ContextDiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/SystemContext.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 31. Diagrama de contexto de MediTrack. Elaboración propia._
+_Figura 32. Diagrama de contexto de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1929,11 +1945,11 @@ _Figura 31. Diagrama de contexto de MediTrack. Elaboración propia._
 
 Se muestra los contenedores del sistema, destacando el microservicio del seguimiento del tratamiento y su base de datos dedicada, así como cómo lee los servicios internos del sistema.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/ContainersDiagram.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Containers.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 32. Diagrama de contenedores de MediTrack. Elaboración propia._
+_Figura 33. Diagrama de contenedores de MediTrack. Elaboración propia._
 
 </div>
 
@@ -1941,11 +1957,11 @@ _Figura 32. Diagrama de contenedores de MediTrack. Elaboración propia._
 
 Se detalla los componentes internos del microservicio, como Controller, Event Listener, Manager, Service y muestra cómo se comunican entre sí y con la base de datos.
 
-<td align="center"><img src="assets/images/chapter4/diagrams/component/followupserviceomponent.png" alt="Context diagram" ></td>
+<td align="center"><img src="assets/images/sprint-4/fixes/Components_FollowUpService.png" alt="Context diagram" ></td>
 
 <div align = center>
 
-_Figura 33. Diagrama de componentes de Follow-up service. Elaboración propia._
+_Figura 34. Diagrama de componentes de Follow-up service. Elaboración propia._
 
 </div>
 
@@ -1955,7 +1971,7 @@ _Figura 33. Diagrama de componentes de Follow-up service. Elaboración propia._
 
 <div align = center>
 
-_Figura 34. Kanban Board Iteration 2._
+_Figura 35. Kanban Board Iteration 2._
 
 </div>
 Link del Trello: https://trello.com/invite/b/69f6752f9be88dc527f213a9/ATTIfba9ad9e2b8975b1696794b6ecf0382cED03D548/continuidad-del-tratamiento
@@ -2074,7 +2090,7 @@ El FollowUp Service implementa esta estructura dentro de un único proyecto `Med
 
 **Aggregates and Value Objects del Domain**
 
-El Domain del FollowUp Service define tres Aggregate Roots principales (véase Figura 27 — Diagrama de clases del sistema MediTrack):
+El Domain del FollowUp Service define tres Aggregate Roots principales (véase Figura 28 — Diagrama de clases del sistema MediTrack):
 
 `Medication` es el Aggregate Root que representa un medicamento prescrito a un paciente. Encapsula la dosis mediante el Value Object `DoseValue`, contiene la lista de `DoseSchedule` asociados y expone la propiedad computada `IsActive` para verificar si el tratamiento continúa vigente.
 
@@ -2651,7 +2667,7 @@ El siguiente diagrama representa el modelo de despliegue de MediTrack siguiendo 
 
 ### 5.3.1. Sprint 1
 
-Durante el Sprint backlog, el equipo tuvo la tarea de completar la landing page y user stories principales . La herramienta para la organización y gestion a los mienbros fue Trello. Esta herramienta nos sirvio para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
+Durante el Sprint backlog, el equipo tuvo la tarea de completar la landing page y user stories principales . La herramienta para la organización y gestión a los miembros fue Trello. Esta herramienta nos sirvió para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
 
 #### 5.3.1.1. Sprint Backlog 1
 
@@ -2703,7 +2719,7 @@ Durante el Sprint backlog, el equipo tuvo la tarea de completar la landing page 
 
 #### 5.3.1.2. Development Evidence for Sprint Review
 
-Durante este Sprint, se lograron avances significativos en la implementación de la landing page Medritrack, destacando la creación del frontend usando HTML, un diseño responsivo y estilizado con CSS, y la incorporación de funcionalidades dinámicas mediante JavaScript. Realizado en el periado de 11 de Abril al 11 de Mayo. Ademas de avance en 2 de los mircroservicios.
+Durante este Sprint, se lograron avances significativos en la implementación de la landing page MediTrack, destacando la creación del frontend usando HTML, un diseño responsivo y estilizado con CSS, y la incorporación de funcionalidades dinámicas mediante JavaScript. Realizado en el período de 11 de Abril al 11 de Mayo. Además de avance en 2 de los microservicios.
 
 **Commits Report (Equipo00-Fundamentos-Arqui-Soft-202610):**
 
@@ -2854,7 +2870,7 @@ Durante este Sprint no se realizó un deployment formal de los Web Services en u
 
 ### 5.3.2. Sprint 2
 
-Durante el Sprint backlog, el equipo tuvo la tarea de completar los microservicios y tener un buen avance del Front-End . La herramienta para la organización y gestion a los mienbros fue Trello. Esta herramienta nos sirvio para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
+Durante el Sprint backlog, el equipo tuvo la tarea de completar los microservicios y tener un buen avance del Front-End . La herramienta para la organización y gestión a los miembros fue Trello. Esta herramienta nos sirvió para dividirnos las tareas y trabajos a realizar por el equipo de trabajo.
 
 
 #### 5.3.2.1. Sprint Backlog 2
@@ -3229,7 +3245,7 @@ Durante este Sprint se consolidó la realizacion de 5 Microservices mediante Ope
 
 #### 5.3.2.6. Software Deployment Evidence for Sprint Review
 
-Durante este Sprint no se realizó un deployment formal de los Web Services en un entorno productivo ni staging. Sin embargo, se avanzó con una primera version de la aplicacion front-end, el cual permite visualizar y validar la lógica de los servicios desarrollados. Ademas, se termino con el desarrollo de los microservisios.
+Durante este Sprint no se realizó un deployment formal de los Web Services en un entorno productivo ni staging. Sin embargo, se avanzó con una primera version de la aplicacion front-end, el cual permite visualizar y validar la lógica de los servicios desarrollados. Además, se termino con el desarrollo de los microservicios.
 
 **Actividades realizadas**:
 
@@ -3734,14 +3750,16 @@ Durante el desarrollo del Sprint 3 se evidencia una participación activa y dist
     </tr>
   </thead>
   <tbody>
-    <tr><td>US20</td><td>Recuperar contraseña</td><td>TK01</td><td>Implementar endpoint de recuperación de contraseña</td><td>Implementar endpoints POST /api/v1/auth/forgot-password y POST /api/v1/auth/reset-password con generación de token temporal, expiración y envío de correo vía Azure Communication Services</td><td>4</td><td>Victor Rojas</td><td>To-do</td></tr>
-    <tr><td></td><td></td><td>TK02</td><td>Maquetar pantalla de recuperación de contraseña</td><td>Diseñar e implementar el flujo de recuperación de contraseña en la aplicación web (React) y móvil (Flutter), incluyendo formulario de solicitud de correo, pantalla de confirmación y formulario de nueva contraseña con validaciones</td><td>3</td><td>Jeremy Quijada</td><td>To-do</td></tr>
-    <tr><td>US21</td><td>Cerrar sesión</td><td>TK01</td><td>Implementar endpoint de cierre de sesión</td><td>Implementar endpoint POST /api/v1/auth/logout con invalidación de token JWT mediante blacklist en caché y limpieza de sesión en el backend</td><td>2</td><td>Piero Sulca</td><td>To-do</td></tr>
-    <tr><td></td><td></td><td>TK02</td><td>Agregar opción de cierre de sesión en la navegación</td><td>Agregar botón de cierre de sesión en el sidebar/navbar de la aplicación web (React) y móvil (Flutter) con diálogo de confirmación, limpieza de almacenamiento local y redirección al login</td><td>2</td><td>Javier Gonzales</td><td>To-do</td></tr>
+    <tr><td>US20</td><td>Registrar cumplimiento con video de evidencia</td><td>TK01</td><td>Implementar backend de video evidencia</td><td>Implementar endpoints POST /api/v1/compliance/video (subida multipart), GET /api/v1/compliance/pending-validation, PATCH /api/v1/compliance/{id}/approve, PATCH /api/v1/compliance/{id}/reject, GET /api/v1/compliance/{id}/status, GET /api/v1/compliance/{id}/video en Follow-Up Service</td><td>8</td><td>Jeremy Quijada</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Implementar captura de video desde app móvil</td><td>Implementar grabación de video (máx 30s) con cámara, preview antes de subir, upload con progreso y polling de estado de validación cada 10s en la app Flutter</td><td>6</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK03</td><td>Configurar rutas de validación en API Gateway</td><td>Configurar rutas en ocelot.json para los endpoints de validación con role gating de TechnicalStaff para approve/reject</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK04</td><td>Implementar limpieza automática de videos expirados</td><td>Implementar background service que cada hora rechaza automáticamente videos pendientes de validación con más de 24 horas de antigüedad</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td>US21</td><td>Gestionar catálogo de medicamentos</td><td>TK01</td><td>Implementar endpoints del catálogo de medicamentos</td><td>Implementar endpoints POST /api/v1/medication-catalog, GET /api/v1/medication-catalog y GET /api/v1/medication-catalog/search en Treatment Service para gestionar el catálogo centralizado de medicamentos</td><td>4</td><td>Piero Sulca</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Integrar validación de catálogo en creación de recetas</td><td>Integrar validación de medicamentos contra el catálogo al momento de crear recetas médicas, asegurando que solo se usen nombres del catálogo oficial</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
     <tr><td>US23</td><td>Funcionar en modo offline</td><td>TK01</td><td>Implementar almacenamiento local con SQLite</td><td>Implementar repositorio offline con SQLite para cachear medicamentos, horarios y datos de perfil; persistir la última data sincronizada y permitir visualización sin conexión</td><td>5</td><td>Renzo Rivera</td><td>To-do</td></tr>
-    <tr><td></td><td></td><td>TK02</td><td>Implementar cola de sincronización offline</td><td>Implementar cola de registros de cumplimiento offline con sincronización automática al recuperar conexión, incluyendo reconciliación de conflictos y confirmación visual de estado de sync</td><td>5</td><td>Renzo Rivera</td><td>To-do</td></tr>
-    <tr><td>US28</td><td>Cambiar contraseña</td><td>TK01</td><td>Implementar endpoint de cambio de contraseña</td><td>Implementar endpoint PUT /api/v1/auth/change-password con validación de contraseña actual, reglas de complejidad y actualización segura del hash en base de datos</td><td>3</td><td>Victor Rojas</td><td>To-do</td></tr>
-    <tr><td></td><td></td><td>TK02</td><td>Maquetar pantalla de cambio de contraseña</td><td>Diseñar e implementar la pantalla de cambio de contraseña en web (React) y móvil (Flutter) con campos de contraseña actual, nueva contraseña y confirmación, validaciones en cliente y mensajes de retroalimentación</td><td>2</td><td>Javier Gonzales</td><td>To-do</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Implementar cola de sincronización offline</td><td>Implementar cola de registros de cumplimiento offline con sincronización automática al recuperar conexión, incluyendo endpoint POST /api/v1/sync/batch en Follow-Up Service con reconciliación de conflictos</td><td>5</td><td>Renzo Rivera</td><td>Done</td></tr>
+    <tr><td>US28</td><td>Cambiar contraseña</td><td>TK01</td><td>Implementar endpoint de cambio de contraseña</td><td>Implementar endpoint PUT /api/v1/profile/password con validación de contraseña actual, reglas de complejidad y actualización segura del hash en base de datos</td><td>3</td><td>Victor Rojas</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>TK02</td><td>Maquetar pantalla de cambio de contraseña</td><td>Diseñar e implementar la pantalla de cambio de contraseña en la app móvil (Flutter) con campos de contraseña actual, nueva contraseña y confirmación, validaciones en cliente y mensajes de retroalimentación</td><td>2</td><td>Javier Gonzales</td><td>Done</td></tr>
   </tbody>
 </table>
 
